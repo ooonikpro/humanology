@@ -1,0 +1,29 @@
+@font-face {
+	font-family: 'HalvarMittelschrift';
+	src: url('./HalvarMittel-Lt.woff2') format('woff2'),
+			url('./HalvarMittel-Lt.woff') format('woff'),
+			url('./HalvarMittel-Lt.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'HalvarMittelschrift';
+	src: url('./HalvarMittel-Lt.woff2') format('woff2'),
+			url('./HalvarMittel-Lt.woff') format('woff'),
+			url('./HalvarMittel-Lt.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'HalvarMittelschrift';
+	src: url('./HalvarMittel-Lt.woff2') format('woff2'),
+			url('./HalvarMittel-Lt.woff') format('woff'),
+			url('./HalvarMittel-Lt.ttf') format('truetype');
+	font-weight: 300;
+	font-style: italic;
+	font-display: swap;
+}

@@ -1,0 +1,50 @@
+$color-elements: (
+	'air': 		#de64d2,
+	'fire':		#ea5c3d,
+	'water':	#2992de,
+	'earth': 	#559d3e
+);
+
+$color-planets: (
+	'sun':			#f57f1f,
+	'moon':			#868686,
+	'earth': 		#72a118,
+	'mercury':	#907512,
+	'venus': 		#ea5Da9,
+	'mars':			#a71714,
+	'jupiter':	#d48051,
+	'saturn':		#8555ab,
+	'uranus':		#049ee2,
+	'neptune':	#29b1c2,
+	'pluto':		#742500,
+	'сhiron':		#333333
+);
+
+:root {
+	$color-basic-white: 				#fff;
+	$color-basic-black: 				#202322;
+	$color-basic-beige: 				#f9f5f2;
+	$color-basic-accent: 				#6b360d;
+	$color-pastel-green: 				#d7dd93;
+	$color-pastel-yellow: 			#fece30;
+	$color-pastel-pink: 				#f6c0b1;
+	$color-pastel-turquoise: 		#b6d1c5;
+
+	$color-element-air: 		#{map-get($color-elements, 'air')};
+	$color-element-fire: 		#{map-get($color-elements, 'fire')};
+	$color-element-water: 	#{map-get($color-elements, 'water')};
+	$color-element-earth: 	#{map-get($color-elements, 'earth')};
+
+	$color-planet-sun:			#{map-get($color-planets, 'sun')};
+	$color-planet-moon: 		#{map-get($color-planets, 'moon')};
+	$color-planet-earth:		#{map-get($color-planets, 'earth')};
+	$color-planet-mercury: 	#{map-get($color-planets, 'mercury')};
+	$color-planet-venus: 		#{map-get($color-planets, 'venus')};
+	$color-planet-mars: 		#{map-get($color-planets, 'mars')};
+	$color-planet-jupiter: 	#{map-get($color-planets, 'jupiter')};
+	$color-planet-saturn: 	#{map-get($color-planets, 'saturn')};
+	$color-planet-uranus: 	#{map-get($color-planets, 'uranus')};
+	$color-planet-neptune: 	#{map-get($color-planets, 'neptune')};
+	$color-planet-pluto: 		#{map-get($color-planets, 'pluto')};
+	$color-planet-chiron: 	#{map-get($color-planets, 'сhiron')};
+}

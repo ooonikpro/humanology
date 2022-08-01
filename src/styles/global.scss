@@ -1,0 +1,18 @@
+@import '../fonts';
+@import './variables';
+
+:root {
+	font-size: 67.5%;
+	-webkit-font-smoothing: antialiased;
+	height: 100vh;
+
+	@media screen and (min-width: 992px) {
+			font-size: 100%;
+	}
+};
+
+html,
+body {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
