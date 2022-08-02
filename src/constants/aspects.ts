@@ -1,25 +1,25 @@
 import { Humanology } from '../types';
 
 export const ASPECTS: Record<Humanology.Aspect, string> = {
-    ideas:      'Идеи',
     business:   'Дела',
-    will:       'Воля',
-    emotions:   'Эмоции',
-    time:       'Время',
     logic:      'Разум',
-    comfort:    'Комфорт',
+    emotions:   'Эмоции',
     relations:  'Люди',
+    will:       'Воля',
+    comfort:    'Комфорт',
+    ideas:      'Идеи',
+    time:       'Время',
 } as const;
 
 export const ASPECTS_LABEL: Record<Humanology.Aspect, string> = {
-    ideas:      'Интуиция возможностей',
     business:   'Деловая логика',
-    will:       'Волевая сенсорика',
-    emotions:   'Этика эмоций',
-    time:       'Интуиция времени',
     logic:      'Структурная логика',
-    comfort:    'Сенсорика ощущений',
+    emotions:   'Этика эмоций',
     relations:  'Этика отношений',
+    will:       'Волевая сенсорика',
+    comfort:    'Сенсорика ощущений',
+    ideas:      'Интуиция возможностей',
+    time:       'Интуиция времени',
 } as const;
 
 export const MACROASPECTS: Array<{ title: string; subtitle: string; aspects: Humanology.Aspect[] }> = [
