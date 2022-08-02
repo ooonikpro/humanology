@@ -1,8 +1,10 @@
+import { AppHeader } from "../AppHeader";
+
 export const App = () => {
   return (
      <div className='app'>
-      <h1>Привет</h1>
-      <p>Прикольная тема.</p>
+        <AppHeader />
+        <div>Future card</div>
      </div>
   );
 };
