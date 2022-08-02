@@ -1,0 +1,26 @@
+import { Humanology } from '../types';
+
+export const REININ_SIGNS: Record<Humanology.ReininSign, string> = {
+    static:         'Статик',
+    dynamic:        'Динамик',
+    positivist:     'Позитивист',
+    negativist:     'Негативист',
+    asking:         'Квестим',
+    declaring:      'Декламтим',
+    tactician:      'Тактик',
+    strategist:     'Стратег',
+    constructive:   'Конструктивист',
+    emotive:        'Эмотивист',
+    process:        'Правые / Процесс',
+    result:         'Левые / Результат',
+    compliant:      'Уступчивый',
+    stubborn:       'Упрямый',
+    careless:       'Беспечный',
+    provident:      'Предусмотрительный',
+    reasonable:     'Рассудительный',
+    decisive:       'Решительный',
+    subjective:     'Субъективный',
+    objective:      'Объективный',
+    democrat:       'Демократ',
+    aristocrat:     'Аристократ',
+};
