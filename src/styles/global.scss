@@ -2,17 +2,59 @@
 @import './variables';
 
 :root {
-	font-size: 67.5%;
+	font-size: 62.5%;
 	-webkit-font-smoothing: antialiased;
 	height: 100vh;
-
-	@media screen and (min-width: 992px) {
-			font-size: 100%;
-	}
-};
+}
 
 html,
 body {
-    overflow-y: auto;
-    overflow-x: hidden;
+	overflow-y: auto;
+	overflow-x: hidden;
+	font-family: $font-family-base;
+}
+
+html.no-scroll {
+	&,
+	& > body {
+			overflow-y: hidden;
+	}
+}
+
+* {
+	&,
+	&::before,
+	&::after {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			-webkit-tap-highlight-color: transparent;
+			-webkit-appearance: none;
+	}
+}
+
+body {
+	background-color: var(--color-basic-beige);
+
+	&::-webkit-scrollbar {
+			width: 4px;
+	}
+
+	&::-webkit-scrollbar-thumb {
+			border: 1px solid var(--color-basic-beige);
+			border-radius: 2px;
+			background-color: rgba(var(---color-basic-black), 0.5);
+	}
+}
+
+#app {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	max-width: 48rem;
+	min-width: 36rem;
+	min-height: 100vh;
+	margin: auto;
+	padding-top: $size-header-height;
+	padding-bottom: $spacing-40;
 }
