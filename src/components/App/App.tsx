@@ -1,10 +1,13 @@
+import React from 'react'
+
 import { AppHeader } from "../AppHeader";
+import { AppContent } from "../AppContent"
 
 export const App = () => {
   return (
-     <div className='app'>
+     <>
         <AppHeader />
-        <div>Future card</div>
-     </div>
+        <AppContent />
+      </>
   );
 };

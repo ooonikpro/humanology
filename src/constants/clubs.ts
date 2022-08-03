@@ -1,6 +1,6 @@
-import { Humanology } from '../types';
+import { SocionicsType } from '../types';
 
-export const CLUBS: Record<Humanology.Club, string> = {
+export const CLUBS: Record<SocionicsType.Club, string> = {
     social:         'Социал',
     scientific:     'Исследователь',
     practice:       'Практик',

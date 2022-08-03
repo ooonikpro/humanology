@@ -21,7 +21,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build"
+    "build": "react-scripts build",
+    "svgr": "svgr -d src/components/Icon/icons src/assets/icons --config-file .svgrrc"
   },
   "eslintConfig": {
     "extends": [
@@ -42,6 +43,7 @@
     ]
   },
   "devDependencies": {
+    "@svgr/cli": "^6.3.1",
     "@svgr/webpack": "^6.3.1"
   }
 }

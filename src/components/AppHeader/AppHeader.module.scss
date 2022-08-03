@@ -1,16 +1,9 @@
 @import '../../styles/variables';
 
-.root {
-	position: fixed;
-	top: 0;
-	right: 0;
-	left: 50%;
-	transform: translateX(-50%);
+.header {
 	width: 100%;
-	max-width: 48rem;
 	height: $size-header-height;
-	background-color: var(--color-basic-bge);
+	background-color: var(--color-basic-beige);
 	color: var(--color-basic-black);
-	padding: $spacing-16 $spacing-4 0 $spacing-4;
-	z-index: 2;
+	padding: $spacing-4;
 }

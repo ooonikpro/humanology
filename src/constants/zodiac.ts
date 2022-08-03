@@ -1,6 +1,6 @@
-import { Humanology } from '../types';
+import { SocionicsType } from '../types';
 
-export const ZODIAC_PROP: Record<Humanology.Zodiac, Humanology.ZodiacProp> = {
+export const ZODIAC_PROP: Record<SocionicsType.Zodiac, SocionicsType.ZodiacProp> = {
     aries: {
         label:      'Овен',
         element:    'fire',

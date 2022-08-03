@@ -1,6 +1,6 @@
-import { Humanology } from '../types';
+import { SocionicsType } from '../types';
 
-export const BAZI_SIGNS: Record<Humanology.Bazi, Humanology.BaziProp > = {
+export const BAZI_SIGNS: Record<SocionicsType.Bazi, SocionicsType.BaziProp > = {
     bull: {
         label:      'Бык',
         element:    'earth',
@@ -51,7 +51,7 @@ export const BAZI_SIGNS: Record<Humanology.Bazi, Humanology.BaziProp > = {
     },
 } as const;
 
-export const BaziElement: Record<Humanology.BaziElement, string > = {
+export const BAZI_ELEMENTS: Record<SocionicsType.BaziElement, string > = {
     wood:  'Дерево',
     fire:  'Огонь',
     earth: 'Земля',

@@ -3,22 +3,12 @@
 
 :root {
 	font-size: 62.5%;
-	-webkit-font-smoothing: antialiased;
-	height: 100vh;
+	-webkit-font-smoothing: subpixel-antialiased;
 }
 
 html,
 body {
-	overflow-y: auto;
-	overflow-x: hidden;
-	font-family: $font-family-base;
-}
-
-html.no-scroll {
-	&,
-	& > body {
-			overflow-y: hidden;
-	}
+	overflow: hidden;
 }
 
 * {
@@ -35,26 +25,7 @@ html.no-scroll {
 
 body {
 	background-color: var(--color-basic-beige);
+	color: var(--color-basic-black);
+	font-family: $font-family-base;
 
-	&::-webkit-scrollbar {
-			width: 4px;
-	}
-
-	&::-webkit-scrollbar-thumb {
-			border: 1px solid var(--color-basic-beige);
-			border-radius: 2px;
-			background-color: rgba(var(---color-basic-black), 0.5);
-	}
-}
-
-#app {
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	max-width: 48rem;
-	min-width: 36rem;
-	min-height: 100vh;
-	margin: auto;
-	padding-top: $size-header-height;
-	padding-bottom: $spacing-40;
 }

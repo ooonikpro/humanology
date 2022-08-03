@@ -1,4 +1,4 @@
-export const Blocks: Record<string, string> = {
+export const BLOCKS: Record<string, string> = {
     ego:        'Блок Эго',
     superEgo:   'Блок Суперэго',
     id:         'Блок Айди',

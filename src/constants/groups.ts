@@ -1,6 +1,6 @@
-import { Humanology } from '../types';
+import { SocionicsType } from '../types';
 
-export const GROUPS: Record<Humanology.Psychotype, string> = {
+export const GROUPS: Record<SocionicsType.Psychotype, string> = {
     infantile:  'Инфантил',
     aggressor:  'Агрессор',
     care:       'Заботливый',

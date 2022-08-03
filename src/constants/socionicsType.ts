@@ -1,6 +1,6 @@
-import { Humanology } from '../types';
+import { SocionicsType } from '../types';
 
-export const SOCIONICS_TYPE: Record<Humanology.SocionicsType, Humanology.SocionicsTypeProp> = {
+export const SOCIONICS_TYPE: Record<SocionicsType.SocionicsType, SocionicsType.SocionicsTypeProp> = {
     innovator: {
         quadra:                 'air',
         role:                   'knight',

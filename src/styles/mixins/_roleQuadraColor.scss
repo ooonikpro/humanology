@@ -1,0 +1,7 @@
+@mixin colorQuadra($var) {
+	#{$var}: var(--color-quadra);
+}
+
+@mixin colorRole($var) {
+	#{$var}: var(--color-role);
+}

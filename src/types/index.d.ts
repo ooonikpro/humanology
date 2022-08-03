@@ -1,4 +1,4 @@
-export namespace Humanology {
+export namespace SocionicsType {
 
 	export type GenderRole = 
 		| 'male' 
