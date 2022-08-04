@@ -17,7 +17,7 @@ const SvgFunction06Activate = (props: SVGProps<SVGSVGElement>) => (
       height={20}
       rx={1}
       transform="rotate(90 26 15)"
-      fill="#202322"
+      fill="currentColor"
     />
   </svg>
 );

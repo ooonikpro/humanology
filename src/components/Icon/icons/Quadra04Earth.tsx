@@ -14,7 +14,7 @@ const SvgQuadra04Earth = (props: SVGProps<SVGSVGElement>) => (
       fillRule="evenodd"
       clipRule="evenodd"
       d="M13.421 5.423 2.584 5.24 2.5 3.574l11-.074-.079 1.923Zm-.151 3.452H2.768l-.084-1.661 10.668-.238-.082 1.9Zm-.158 3.625H2.956l-.083-1.667 10.327-.23-.088 1.897Z"
-      fill="#559D3E"
+      fill="currentColor"
     />
   </svg>
 );

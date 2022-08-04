@@ -12,7 +12,7 @@ const SvgFunction01Base = (props: SVGProps<SVGSVGElement>) => (
   >
     <path
       d="M16 6a1 1 0 0 0-1 1v8H7a1 1 0 1 0 0 2h8v8a1 1 0 1 0 2 0v-8h8a1 1 0 1 0 0-2h-8V7a1 1 0 0 0-1-1Z"
-      fill="#202322"
+      fill="currentColor"
     />
   </svg>
 );

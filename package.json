@@ -22,7 +22,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "svgr": "svgr -d src/components/Icon/icons src/assets/icons --config-file .svgrrc"
+    "svgr-icons": "svgr -d src/components/Icon/icons src/assets/icons --config-file .svgrrc",
+    "svgr-circles": "svgr -d src/components/IllustrationQuadraCircle/quadraCircles src/assets/illustrations/quadra-circles --config-file .svgrrc"
   },
   "eslintConfig": {
     "extends": [

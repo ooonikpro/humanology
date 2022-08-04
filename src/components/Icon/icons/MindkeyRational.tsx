@@ -10,7 +10,7 @@ const SvgMindkeyRational = (props: SVGProps<SVGSVGElement>) => (
     xmlns="http://www.w3.org/2000/svg"
     {...props}
   >
-    <path fill="#202322" d="M1.5 1.5h9v9h-9z" />
+    <path fill="currentColor" d="M1.5 1.5h9v9h-9z" />
   </svg>
 );
 

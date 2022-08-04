@@ -1,11 +1,11 @@
 export { default as Aspect01Business } from "./Aspect01Business";
 export { default as Aspect02Logic } from "./Aspect02Logic";
-export { default as Aspect03Time } from "./Aspect03Time";
-export { default as Aspect04Ideas } from "./Aspect04Ideas";
+export { default as Aspect03Emotions } from "./Aspect03Emotions";
+export { default as Aspect04Relations } from "./Aspect04Relations";
 export { default as Aspect05Will } from "./Aspect05Will";
 export { default as Aspect06Comfort } from "./Aspect06Comfort";
-export { default as Aspect07Relations } from "./Aspect07Relations";
-export { default as Aspect08Emotions } from "./Aspect08Emotions";
+export { default as Aspect07Ideas } from "./Aspect07Ideas";
+export { default as Aspect08Time } from "./Aspect08Time";
 export { default as AspectMini01Business } from "./AspectMini01Business";
 export { default as AspectMini02Logic } from "./AspectMini02Logic";
 export { default as AspectMini03Emotions } from "./AspectMini03Emotions";

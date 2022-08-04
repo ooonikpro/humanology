@@ -12,7 +12,7 @@ const SvgFunction07Limit = (props: SVGProps<SVGSVGElement>) => (
   >
     <path
       d="M9 9a1 1 0 0 1 2 0v14a1 1 0 1 1-2 0V9ZM15 9a1 1 0 1 1 2 0v14a1 1 0 1 1-2 0V9ZM22 8a1 1 0 0 0-1 1v14a1 1 0 1 0 2 0V9a1 1 0 0 0-1-1Z"
-      fill="#202322"
+      fill="currentColor"
     />
   </svg>
 );

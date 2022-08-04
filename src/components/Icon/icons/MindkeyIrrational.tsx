@@ -10,7 +10,7 @@ const SvgMindkeyIrrational = (props: SVGProps<SVGSVGElement>) => (
     xmlns="http://www.w3.org/2000/svg"
     {...props}
   >
-    <circle cx={6} cy={6} r={4.5} fill="#202322" />
+    <circle cx={6} cy={6} r={4.5} fill="currentColor" />
   </svg>
 );
 
