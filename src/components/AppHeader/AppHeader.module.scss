@@ -14,7 +14,37 @@
 	justify-content: space-between;
 	width: 100%;
 	height: $size-header-section-height;
-	margin-bottom: $spacing-4;
+	margin-bottom: $spacing-12;
 	color: inherit;
 	overflow: hidden;
+}
+
+.logo-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: $size-header-section-height;
+	height: $size-header-section-height;
+}
+
+.btn {
+	width: $size-header-section-height;
+	height: $size-header-section-height;
+	color: inherit;
+	border: 0;
+
+	&-o25 {
+			opacity: 0.25;
+	}
+
+	&-o50 {
+			opacity: 0.5;
+	}
+}
+
+.menu {
+	width: $size-header-section-height;
+	height: $size-header-section-height;
+	opacity: 0.25;
+	margin-right: $spacing-12;
 }
