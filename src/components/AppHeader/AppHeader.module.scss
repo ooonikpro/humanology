@@ -7,3 +7,14 @@
 	color: var(--color-basic-black);
 	padding: $spacing-4;
 }
+
+.section {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: $size-header-section-height;
+	margin-bottom: $spacing-4;
+	color: inherit;
+	overflow: hidden;
+}

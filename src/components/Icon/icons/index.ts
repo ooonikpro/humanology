@@ -104,6 +104,7 @@ export { default as IntertypeLevel02KnownMaleMale } from "./IntertypeLevel02Know
 export { default as IntertypeLevel03FriendMaleFemale } from "./IntertypeLevel03FriendMaleFemale";
 export { default as IntertypeLevel03FriendMaleMale } from "./IntertypeLevel03FriendMaleMale";
 export { default as IntertypeLevel04FamilyMaleFemale } from "./IntertypeLevel04FamilyMaleFemale";
+export { default as Logo } from "./Logo";
 export { default as MindkeyIrrational } from "./MindkeyIrrational";
 export { default as MindkeyRational } from "./MindkeyRational";
 export { default as PsychotypeAgressor } from "./PsychotypeAgressor";
