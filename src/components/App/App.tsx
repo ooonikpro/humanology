@@ -5,7 +5,7 @@ import { AppContent } from "../AppContent"
 
 export const App = () => {
   return (
-     <>
+      <>
         <AppHeader />
         <AppContent />
       </>

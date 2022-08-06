@@ -7,7 +7,7 @@ type Props = {
 	solid?: boolean;
 	dashed?: boolean;
 	color?: 'air' | 'fire' | 'water' | 'earth' | 'black' | 'white' | 'accent'
-	opacity?: 'o10' | 'o25' | 'o50' | 'o75' | 'o100'
+	opacity?: 'o05' | 'o10' | 'o25' | 'o50' | 'o75' | 'o100'
 }
 
 export const Line: React.FC<Props> = ({dashed, solid, color='black', opacity='o100'}) => {

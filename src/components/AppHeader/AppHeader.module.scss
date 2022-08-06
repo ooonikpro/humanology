@@ -5,7 +5,7 @@
 	height: $size-header-height;
 	background-color: var(--color-basic-beige);
 	color: var(--color-basic-black);
-	padding: $spacing-4;
+	padding: $spacing-4 $spacing-4 0 $spacing-4;
 }
 
 .top_section {
@@ -26,7 +26,6 @@
 	width: 100%;
 	height: $size-header-bottom-section-height;
 	margin-top: $spacing-12;
-	margin-bottom: $spacing-4;
 	color: inherit;
 	overflow: hidden;
 
@@ -67,9 +66,13 @@
 }
 
 .menu {
+	display: flex;
+	gap: 0.4rem;
 	opacity: 0.5;
 }
 
 .book {
+	display: flex;
+	gap: 0.4rem;
 	opacity: 0.5;
 }
