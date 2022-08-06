@@ -19,7 +19,7 @@ export const Illustration: React.FC<Props> = ({ name, color, size, className}) =
 		height: `${height / 10}rem`,
 	};
 	const classes = [
-		styles.root,
+		styles.illustrationCircle,
 		styles[color || 'black'],
 		className
 	].join(' ');

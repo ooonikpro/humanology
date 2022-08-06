@@ -26,6 +26,11 @@ body {
 body {
 	background-color: var(--color-basic-beige);
 	color: var(--color-basic-black);
-	font-family: $font-family-base;
+	font-family: $font-family-primary;
 
+}
+
+button {
+	background: none;
+	border: none;
 }

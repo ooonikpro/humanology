@@ -12,13 +12,13 @@ const SvgIconRubleSquare = (props: SVGProps<SVGSVGElement>) => (
   >
     <path
       d="M11 8v9M9 15h6M11 8h2.5c3 0 3 4 0 4H9"
-      stroke="#6B360D"
+      stroke="currentColor"
       strokeLinecap="round"
       strokeLinejoin="round"
     />
     <path
       d="M3 12c0-7.412 1.588-9 9-9s9 1.588 9 9-1.588 9-9 9-9-1.588-9-9Z"
-      stroke="#6B360D"
+      stroke="currentColor"
     />
   </svg>
 );

@@ -10,10 +10,10 @@ const SvgIconGitCommit = (props: SVGProps<SVGSVGElement>) => (
     xmlns="http://www.w3.org/2000/svg"
     {...props}
   >
-    <path d="M12 8.625a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z" stroke="#6B360D" />
+    <path d="M12 8.625a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z" stroke="currentColor" />
     <path
       d="M3 11.625h6M15 11.625h6"
-      stroke="#6B360D"
+      stroke="currentColor"
       strokeLinecap="round"
       strokeLinejoin="round"
     />

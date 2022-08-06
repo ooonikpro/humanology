@@ -5,7 +5,7 @@ import * as Icons from './icons';
 
 export interface Props {
 	name: keyof typeof Icons;
-	color?: 'white' | 'black' | 'accent' | 'quadra' | 'role';
+	color?: 'white' | 'black' | 'accent' | 'beige' | 'quadra' | 'role';
 	size: number | { width: number; height: number }
 	className?: string;
 }
@@ -19,7 +19,7 @@ export const Icon: React.FC<Props> = ({ name, color, size, className}) => {
 		height: `${height / 10}rem`,
 	};
 	const classes = [
-		styles.root,
+		styles.icon,
 		styles[color || 'black'],
 		className
 	].join(' ');

@@ -10,10 +10,10 @@ const SvgIconClock = (props: SVGProps<SVGSVGElement>) => (
     xmlns="http://www.w3.org/2000/svg"
     {...props}
   >
-    <path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" stroke="#6B360D" />
+    <path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" stroke="currentColor" />
     <path
       d="M12 7v5M21 4l-1-1"
-      stroke="#6B360D"
+      stroke="currentColor"
       strokeLinecap="round"
       strokeLinejoin="round"
     />

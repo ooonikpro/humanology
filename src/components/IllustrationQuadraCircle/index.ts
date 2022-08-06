@@ -1,1 +1,1 @@
-export * from '../IllustrationQuadraCircle'
+export * from './IllustrationQuadraCircle'

@@ -12,12 +12,12 @@ const SvgIconAlertSquare = (props: SVGProps<SVGSVGElement>) => (
   >
     <path
       d="M12.5 7.625v5M12.5 15.625v-.011"
-      stroke="#6B360D"
+      stroke="currentColor"
       strokeLinecap="round"
     />
     <path
       d="M3.5 11.625c0-7.412 1.588-9 9-9s9 1.588 9 9-1.588 9-9 9-9-1.588-9-9Z"
-      stroke="#6B360D"
+      stroke="currentColor"
     />
   </svg>
 );

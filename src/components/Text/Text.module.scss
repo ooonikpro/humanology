@@ -24,42 +24,42 @@ h4 {
 .size {
 	&-body {
 		--text-size: #{$font-size-body};
-		--text-line-height: #{$spacing20};
+		--text-line-height: #{$spacing-20};
 	}
 
 	&-small {
 		--text-size: #{$font-size-small};
-		--text-line-height: #{$spacing16};
+		--text-line-height: #{$spacing-16};
 	}
 
 	&-caption {
 		--text-size: #{$font-size-caption};
-		--text-line-height: #{$spacing12};
+		--text-line-height: #{$spacing-12};
 	}
 
 	&-large {
 		--text-size: #{$font-size-large};
-		--text-line-height: #{$spacing24};
+		--text-line-height: #{$spacing-24};
 	}
 
 	&-h4 {
 		--text-size: #{$font-size-h4};
-		--text-line-height: #{$spacing24};
+		--text-line-height: #{$spacing-24};
 	}
 	
 	&-h3 {
 		--text-size: #{$font-size-h3};
-		--text-line-height: #{$spacing32};
+		--text-line-height: #{$spacing-32};
 	}
 
 	&-h2 {
 		--text-size: #{$font-size-h2};
-		--text-line-height: #{$spacing40};
+		--text-line-height: #{$spacing-40};
 	}
 
 	&-h1 {
 		--text-size: #{$font-size-h1};
-		--text-line-height: #{$spacing40};
+		--text-line-height: #{$spacing-40};
 	}
 }
 
@@ -73,7 +73,7 @@ h4 {
 	}
 
 	&-accent {
-		--text-color: var(--color-basic-accent)
+		--text-color: var(--color-basic-accent);
 	}
 
 	&-grey {
@@ -117,11 +117,11 @@ strong.text {
 ul.text {
 	position: relative;
 	list-style: none;
-	padding-left: $spacing4;
+	padding-left: $spacing-4;
 
 	li {
-			padding-left: $spacing12;
-			margin-bottom: $spacing8;
+			padding-left: $spacing-12;
+			margin-bottom: $spacing-8;
 
 		&::before {
 			--color-li-marker: var(--color-basic-black);
@@ -133,8 +133,8 @@ ul.text {
 			content: '';
 			width: 0.8rem;
 			height: 0.8rem;
-			margin-top: $spacing4;
-			margin-right: $spacing12;
+			margin-top: $spacing-4;
+			margin-right: $spacing-12;
 			border-radius: 50%;
 			opacity: 0.25;
 			background-color: var(--color-li-bullet)

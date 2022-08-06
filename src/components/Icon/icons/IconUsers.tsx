@@ -12,10 +12,13 @@ const SvgIconUsers = (props: SVGProps<SVGSVGElement>) => (
   >
     <path
       d="M15.631 7.28a2.5 2.5 0 1 1 0 4.69M3 19.125c.691-2.307 2.47-3 6.5-3 4.03 0 5.809.693 6.5 3M17 15.125c2.403.095 3.53.638 4 2"
-      stroke="#6B360D"
+      stroke="currentColor"
       strokeLinecap="round"
     />
-    <path d="M13 9.625a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z" stroke="#6B360D" />
+    <path
+      d="M13 9.625a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+      stroke="currentColor"
+    />
   </svg>
 );
 

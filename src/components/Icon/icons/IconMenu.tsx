@@ -11,10 +11,10 @@ const SvgIconMenu = (props: SVGProps<SVGSVGElement>) => (
     {...props}
   >
     <path
-      d="M4 8h16M4 16h16M4 12h16"
-      stroke="#6B360D"
-      strokeLinecap="round"
-      strokeLinejoin="round"
+      fillRule="evenodd"
+      clipRule="evenodd"
+      d="M3.5 8a.5.5 0 0 1 .5-.5h16a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.5-.5ZM3.5 16a.5.5 0 0 1 .5-.5h16a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.5-.5ZM3.5 12a.5.5 0 0 1 .5-.5h16a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.5-.5Z"
+      fill="currentColor"
     />
   </svg>
 );

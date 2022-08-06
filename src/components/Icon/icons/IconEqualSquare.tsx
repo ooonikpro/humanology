@@ -12,13 +12,13 @@ const SvgIconEqualSquare = (props: SVGProps<SVGSVGElement>) => (
   >
     <path
       d="M9 9h6M9 12h6M9 15h6"
-      stroke="#6B360D"
+      stroke="currentColor"
       strokeLinecap="round"
       strokeLinejoin="round"
     />
     <path
       d="M3 12c0-7.412 1.588-9 9-9s9 1.588 9 9-1.588 9-9 9-9-1.588-9-9Z"
-      stroke="#6B360D"
+      stroke="currentColor"
     />
   </svg>
 );
