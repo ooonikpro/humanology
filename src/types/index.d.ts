@@ -3,7 +3,6 @@ export namespace SocionicsType {
 	export type GenderRole = 
 		| 'male' 
 		| 'female'
-		| 'androgyne';
 
 	export type Quadra = 
 		| 'air' 
@@ -82,6 +81,24 @@ export namespace SocionicsType {
 		| 'dialectic'
 		| 'vortex'
 		| 'holo';
+
+	export type Mbti =
+		| 'ENTP'
+		| 'ISFP'
+		| 'ESFJ'
+		| 'INTJ'
+		| 'ISTJ'
+		| 'ENFJ'
+		| 'INFP'
+		| 'ESTP'
+		| 'INTP'
+		| 'ESFP'
+		| 'ISFJ'
+		| 'ENTJ'
+		| 'ESTJ'
+		| 'INFJ'
+		| 'ENFP'
+		| 'ISTP';
 
 	export type SocionicsType =
 		| 'innovator'

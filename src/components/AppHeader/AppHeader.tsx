@@ -27,7 +27,7 @@ export const AppHeader = () => {
 
 			</div>
 			
-			<Line solid color='accent' opacity='o10' />
+			<Line solid color='accent' opacity='o05' />
 
 			<div className={styles.bottom_section}>
 				<span className={styles['menu']}>

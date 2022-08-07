@@ -1,0 +1,25 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.tag {
+	--tag-color: var(--color-basic-accent);
+
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	vertical-align: middle;
+	min-width: 2.4rem;
+	width: auto;
+	height: 1.6rem;
+	color: var (--tag-color);
+}
+
+.color {
+	&-quadra {
+		@include colorQuadra(--tag-color);
+	}
+	
+	&-role {
+		@include colorRole(--tag-color);
+	}
+}

@@ -10,7 +10,7 @@ export interface Props {
 	className?: string;
 }
 
-export const Illustration: React.FC<Props> = ({ name, color, size, className}) => {
+export const QuadraCircle: React.FC<Props> = ({ name, color, size, className}) => {
 	const Component = quadraCircles[name];
 	const width = typeof size === 'object' ? size.width : size;
 	const height = typeof size === 'object' ? size.height : size;

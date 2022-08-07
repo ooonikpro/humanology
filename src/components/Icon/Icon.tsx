@@ -2,6 +2,7 @@ import React from 'react'
 
 import styles from './Icon.module.scss';
 import * as Icons from './icons';
+import { toPascalCase } from '../../utils/toPascalCase';
 
 export interface Props {
 	name: keyof typeof Icons;
@@ -9,6 +10,8 @@ export interface Props {
 	size: number | { width: number; height: number }
 	className?: string;
 }
+
+export const getIconName = (iconName: string) => toPascalCase<Props['name']>(iconName);
 
 export const Icon: React.FC<Props> = ({ name, color, size, className}) => {
 	const Component = Icons[name];
