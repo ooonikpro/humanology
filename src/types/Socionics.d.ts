@@ -5,7 +5,7 @@ export namespace Socionics {
 	export type Psychotype = 'infantile' | 'care' | 'aggressor' | 'victim';
 	export type Tarot = 'swords' | 'cups' | 'wands' | 'pentacles';
 	export type Club = 'scientific' | 'practice' | 'social' | 'humanitarian';
-	export type Mindkey = 'irratio1' | 'irratio2' | 'ratio1' | 'ratio4';
+	export type Mindkey = 'irratio-1' | 'irratio-2' | 'ratio-1' | 'ratio-4';
 	export type Mindset = 'causal' | 'dialectic' | 'vortex' | 'holo';
 	export type SocionicsType = 'innovator' | 'diplomat' | 'enthusiast' | 'analytic' | 'inspector' | 'mentor' | 'lyricist' | 'leader' | 'critic' | 'politic' | 'guardian' | 'businessman' | 'administrator' | 'humanist' | 'adviser' | 'master';
 	export type MBTI = 'ENTP' | 'ISFP' | 'ESFJ' | 'INTJ' | 'ISTJ' | 'ENFJ' | 'INFP' | 'ESTP' | 'INTP' | 'ESFP' | 'ISFJ' | 'ENTJ' | 'ESTJ' | 'INFJ' | 'ENFP' | 'ISTP';
