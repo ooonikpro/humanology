@@ -1,0 +1,6 @@
+{
+  "icon": true,
+  "expandProps": true,
+  "typescript": true,
+  "ignoreExisting": true
+}

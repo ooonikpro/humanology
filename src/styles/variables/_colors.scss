@@ -1,0 +1,53 @@
+$color-quadras: (
+	'air': #de64d2,
+	'fire': #ea5c3d,
+	'water': #2992de,
+	'earth': #559d3e,
+	'airDark': #903e88,
+	'fireDark': #a83c24,
+	'waterDark': #2449a8,
+	'earthDark': #15711E
+);
+
+$color-pastels: (
+	'green': #d7dd93,
+	'turquoise': #b6d1c5,
+	'yellow': #fece30,
+	'pink': #f6c0b1
+);
+
+$color-planets: (
+	'sun': #f57f1f,
+	'earth': #72a118,
+	'moon': #868686,
+	'mercury': #907512,
+	'venus': #ea5da9,
+	'mars': #a71714,
+	'jupiter': #d48051,
+	'saturn': #8555ab,
+	'uranus': #049ee2,
+	'pluto': #742500,
+	'hiron': #333333
+);
+
+:root {
+	--color-basic-white: #fff;
+	--color-basic-beige: #f9f5f2;
+	--color-basic-black: #202322;
+	--color-basic-accent: #6b360d;
+
+	--color-pastel-green: #{map-get($color-pastels, 'green')};
+	--color-pastel-turquoise: #{map-get($color-pastels, 'turquoise')};
+	--color-pastel-yellow: #{map-get($color-pastels, 'yellow')};
+	--color-pastel-pink: #{map-get($color-pastels, 'pink')};
+
+	--color-quadra-air: #{map-get($color-quadras, 'air')};
+	--color-quadra-fire: #{map-get($color-quadras, 'fire')};
+	--color-quadra-water: #{map-get($color-quadras, 'water')};
+	--color-quadra-earth: #{map-get($color-quadras, 'earth')};
+	
+	--color-quadra-air-dark: #{map-get($color-quadras, 'airDark')};
+	--color-quadra-fire-dark: #{map-get($color-quadras, 'fireDark')};
+	--color-quadra-water-dark: #{map-get($color-quadras, 'waterDark')};
+	--color-quadra-earth-dark: #{map-get($color-quadras, 'earthDark')};
+}

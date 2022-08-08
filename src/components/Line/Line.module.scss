@@ -1,0 +1,74 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.line {
+    width: 100%;
+    flex: 1 0 auto;
+    outline: none;
+    border: 0;
+	border-bottom: 0.5px var(--line-color);
+;
+}
+
+.solid {
+	@extend .line;
+	border-style: solid;
+}
+
+.dashed {
+	@extend .line;
+	border-style: dashed;
+}
+
+
+// Colors
+
+.white {
+	--line-color: var(--color-basic-white);
+}
+
+.beige {
+	--line-color: var(--color-basic-beige);
+}
+
+.accent {
+	--line-color: var(--color-basic-accent);
+}
+
+.black {
+	--line-color: var(--color-basic-black);
+}
+
+.quadra {
+	@include colorQuadra(--line-color);
+}
+
+.role {
+	@include colorRole(--line-color);
+}
+
+// Opacity
+
+.o05 {
+	opacity: 0.05;
+}
+
+.o10 {
+	opacity: 0.1;
+}
+
+.o25 {
+	opacity: 0.25;
+}
+
+.o50 {
+	opacity: 0.5;
+}
+
+.o75 {
+	opacity: 0.75;
+}
+
+.o100 {
+	opacity: 1;
+}

@@ -1,0 +1,70 @@
+@import './variables';
+@import './mixins';
+@import '../fonts';
+
+:root {
+	font-size: 62.5%;
+	-webkit-font-smoothing: antialiased;
+	height: 100vh;
+}
+
+html,
+body {
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+html.no-scroll {
+	&,
+	& > body {
+		overflow-y: hidden;
+	}
+}
+
+* {
+	&,
+	&::before,
+	&::after {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		-webkit-tap-highlight-color: transparent;
+		-webkit-appearance: none;
+	}
+}
+
+body {
+	background-color: var(--color-basic-beige);
+
+	&::-webkit-scrollbar {
+		width: 4px;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		border: 1px solid var(--color-basic-beige);
+		border-radius: 10px;
+		background-color: rgba(#000, 0.5);
+	}
+}
+
+#app {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	min-width: 36rem;
+	min-height: 100vh;
+	margin: auto;
+	padding-top: $size-header-height;
+}
+
+@include fullscreen {
+	html,
+	body {
+		overflow: hidden;
+	}
+
+	#app {
+		min-height: initial;
+		height: 100vh;
+	}
+}

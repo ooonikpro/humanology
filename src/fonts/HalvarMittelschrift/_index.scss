@@ -1,0 +1,25 @@
+@font-face {
+	font-family: 'Halvar Mittelschrift Light';
+	src: url('./HalvarMittel-Lt.eot');
+	src: local('HalvarMittel-Lt'), 
+	url('./HalvarMittel-Lt.eot#iefix') format('embed-opentype'),
+	url('./HalvarMittel-Lt.woff2') format('woff2'),
+	url('./HalvarMittel-Lt.woff') format('woff'),
+	url('./HalvarMittel-Lt.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Halvar Mittelshcrift Regular';
+	src: url('./HalvarMittel-Rg.eot');
+	src: local('HalvarMittel-Rg'), 
+	url('./HalvarMittel-Rg.eot#iefix') format('embed-opentype'),
+	url('./HalvarMittel-Rg.woff2') format('woff2'),
+	url('./HalvarMittel-Rg.woff') format('woff'),
+	url('./HalvarMittel-Rg.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}

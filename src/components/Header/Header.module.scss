@@ -1,0 +1,52 @@
+@import '../../styles/variables/';
+
+.header {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	height: $size-header-height;
+	background-color: var(--color-basic-beige);
+	color: var(--color-basic-black);
+	padding: $spacing-8 $spacing-4 0 $spacing-4;
+	z-index: 2;
+}
+
+.section {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	overflow: hidden;
+	
+	&Top {
+		@extend .section;
+		height: $size-header-top-section;
+		margin-bottom: $spacing-12;
+	}
+
+	&Bottom {
+		@extend .section;
+		height: $size-header-bottom-section;
+		margin-top: $spacing-8;
+		margin-bottom: $spacing-8;
+	}
+}
+
+.right {
+	display: inline-flex;
+	flex-direction: row;
+	gap: $spacing-4;
+}
+
+.left {
+	display: inline-flex;
+	gap: $spacing-4;
+}
+
+.rightMenu {
+	display: inline-flex;
+	gap: $spacing-12
+}

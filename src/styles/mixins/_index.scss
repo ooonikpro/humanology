@@ -1,0 +1,13 @@
+@mixin fullscreen() {
+  @media screen and (display-mode: standalone) {
+    @content;
+  }
+}
+
+@mixin colorQuadra($var) {
+  #{$var}: var(--color-quadra);
+}
+
+@mixin colorRole($var) {
+  #{$var}: var(--color-role);
+}
