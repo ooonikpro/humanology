@@ -52,6 +52,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	min-width: 36rem;
+	max-width: 48rem;
 	min-height: 100vh;
 	margin: auto;
 	padding-top: $size-header-height;

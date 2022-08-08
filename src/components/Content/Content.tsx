@@ -3,13 +3,19 @@ import React from "react";
 import styles from "./Content.module.scss";
 import { Text } from '../Text';
 import { Line } from '../Line'
-import { Whitecard } from "../WhiteCard";
+import { Whitecard } from '../WhiteCard';
+import { AttributesRow } from '../AttributesRow'
 
 export const Content: React.FC = () => {
   return (
     <main className={styles.content}>
       <div className={styles.container}>
-        <Whitecard color='white' >
+
+        <Whitecard color='white'>
+          <AttributesRow />
+        </Whitecard>
+
+        {/* <Whitecard color='white'>
           <Text tag='h1' color='accent' font='primary' size='h1'>Заголовок 1</Text>
           <Line color='accent' opacity="o05" />
           <Text tag='h2' color='accent' font='secondary' size='h2'>Заголовок 2</Text>
@@ -25,7 +31,7 @@ export const Content: React.FC = () => {
           <Text tag='div' color='black' font='primary' size='small'>Маленький текст</Text>
           <Line color='black' opacity="o25" />
           <Text tag='div' color='black' font='primary' size='caption'>Очень маленький текст</Text>
-        </Whitecard>
+        </Whitecard> */}
       </div>
     </main>
   );

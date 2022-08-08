@@ -7,6 +7,7 @@
 	left: 50%;
 	transform: translateX(-50%);
 	width: 100%;
+	max-width: 48rem;
 	height: $size-header-height;
 	background-color: var(--color-basic-beige);
 	color: var(--color-basic-black);
@@ -36,17 +37,16 @@
 }
 
 .right {
-	display: inline-flex;
-	flex-direction: row;
+	display: flex;
 	gap: $spacing-4;
 }
 
 .left {
-	display: inline-flex;
+	display: flex;
 	gap: $spacing-4;
 }
 
 .rightMenu {
-	display: inline-flex;
+	display: flex;
 	gap: $spacing-12
 }
