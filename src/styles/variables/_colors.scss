@@ -3,10 +3,6 @@ $color-quadras: (
 	'fire': #ea5c3d,
 	'water': #2992de,
 	'earth': #559d3e,
-	'airDark': #903e88,
-	'fireDark': #a83c24,
-	'waterDark': #2449a8,
-	'earthDark': #15711E
 );
 
 $color-pastels: (
@@ -45,9 +41,4 @@ $color-planets: (
 	--color-quadra-fire: #{map-get($color-quadras, 'fire')};
 	--color-quadra-water: #{map-get($color-quadras, 'water')};
 	--color-quadra-earth: #{map-get($color-quadras, 'earth')};
-	
-	--color-quadra-air-dark: #{map-get($color-quadras, 'airDark')};
-	--color-quadra-fire-dark: #{map-get($color-quadras, 'fireDark')};
-	--color-quadra-water-dark: #{map-get($color-quadras, 'waterDark')};
-	--color-quadra-earth-dark: #{map-get($color-quadras, 'earthDark')};
 }
