@@ -1,18 +1,17 @@
 import React from 'react';
+import { Humanology } from '../types';
+import { ROLE } from '../constants/role';
 
-import { Socionics } from '../types/Socionics';
-import { Roles } from '../constants/roles';
-
-export type ColorRole = {
-	label: string,
-	color: React.CSSProperties
+export type UserColorRole = {
+    label: string,
+    color: React.CSSProperties
 }
 
-export const useColorRole = (role: Socionics.Role): ColorRole => {
-	return {
-		label: Roles[role].label,
-		color: {
-			'--color-role': `var(--color-role-${Roles[role].quadra})`
-		}
-	}
-}
+export const useColorRole = (role: Humanology.Role): UserColorRole => {
+    return {
+        label: ROLE[role].label,
+        color: {
+            '--color-role': `var(--color-elements-${ROLE[role].element})`
+        }
+    };
+};

@@ -1,2 +1,2 @@
-export * from './useColorQuadra';
+export * from './useColorElement';
 export * from './useColorRole';

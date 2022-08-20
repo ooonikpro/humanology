@@ -1,0 +1,13 @@
+@import '../../styles/utils.scss';
+
+
+.title {
+    display: block;
+    margin-bottom: $spacing-3;
+}
+
+.text {
+    p {
+        margin-bottom: $spacing-3;
+    }
+}

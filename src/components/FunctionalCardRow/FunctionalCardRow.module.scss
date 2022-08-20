@@ -1,0 +1,19 @@
+@import '../../styles/utils';
+
+.root {
+    @include colorElement(--line-color);
+
+    display: flex;
+    column-gap: $spacing-0;
+    cursor: pointer;
+
+    &:nth-child(2) {
+        margin-bottom: $spacing-1;
+    }
+}
+
+.divinder {
+    width: 0;
+    border-left: 1px dashed var(--line-color);
+    opacity: 0.5;
+}

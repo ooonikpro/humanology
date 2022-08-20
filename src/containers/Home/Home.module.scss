@@ -1,0 +1,15 @@
+@import '../../styles/utils.scss';
+
+.root {
+    display: flex;
+    flex-direction: column;
+    row-gap: $spacing-6;
+    margin-left: -$spacing-1;
+    margin-right: -$spacing-1;
+}
+
+.link {
+    width: calc(50% - #{calc($spacing-1 / 2)});
+    min-width: 16rem;
+    text-decoration: none;
+}

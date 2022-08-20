@@ -1,13 +1,23 @@
-@mixin fullscreen() {
-  @media screen and (display-mode: standalone) {
-    @content;
-  }
+@mixin transition($props) {
+    $str: '';
+
+    @each $prop in $props {
+        $str: '#{$prop} 0.3s ease, #{$str}';
+    }
+
+    transition: #{$str};
 }
 
-@mixin colorQuadra($var) {
-  #{$var}: var(--color-quadra);
+@mixin fullscreen() {
+    @media screen and (display-mode: standalone) {
+        @content;
+    }
+}
+
+@mixin colorElement($var) {
+    #{$var}: var(--color-element);
 }
 
 @mixin colorRole($var) {
-  #{$var}: var(--color-role);
+    #{$var}: var(--color-role);
 }

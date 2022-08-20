@@ -1,0 +1,26 @@
+@import '../../styles/utils';
+
+.root {
+    --tag-color: var(--color-basic-accent);
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    min-width: 2.4rem;
+    width: auto;
+    height: 2rem;
+    border: 0.1rem solid var(--tag-color);
+    border-radius: 0.4rem;
+    color: var(--tag-color);
+}
+
+.color {
+    &-element {
+        @include colorElement(--tag-color);
+    }
+
+    &-role {
+        @include colorRole(--tag-color);
+    }
+}

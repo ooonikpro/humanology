@@ -1,0 +1,31 @@
+.root {
+    display: inline-flex;
+    height: 2rem;
+    padding: 1px;
+    border-radius: 4px;
+    background-clip: border-box;
+    background: linear-gradient(
+                    to right,
+                    var(--color-element),
+                    var(--color-role)
+    );
+}
+
+.content {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-basic-white);
+    border-radius: 3px;
+}
+
+.divider {
+    width: 1px;
+    height: 1.2rem;
+    background-color: var(--color-basic-black);
+    opacity: .1;
+}
+
+.icon {
+    margin: 0.1rem 0.4rem;
+}

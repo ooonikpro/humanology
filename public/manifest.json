@@ -1,8 +1,8 @@
 {
     "name": "Humanology",
     "short_name": "Humanology",
-    "theme_color": "#f9f5f2",
-    "background_color": "#f9f5f2",
+    "theme_color": "#faf5ec",
+    "background_color": "#faf5ec",
     "display": "standalone",
     "orientation": "portrait",
     "lang": "ru",
@@ -11,12 +11,12 @@
     "scope": "/",
     "icons": [
         {
-            "src": "favicon.svg",
+            "src": "assets/favicon.svg",
             "sizes": "any",
             "type": "image/svg"
         },
         {
-            "src": "google-touch-icon.png",
+            "src": "assets/google-touch-icon.png",
             "sizes": "512x512",
             "type": "image/png"
         }

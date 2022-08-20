@@ -1,13 +1,13 @@
 import React from 'react';
-
-import { Header } from '../Header';
-import { Content } from '../Content';
+import { BrowserRouter } from 'react-router-dom';
+import { AppHeader } from '../AppHeader';
+import { AppContent } from '../AppContent';
 
 export const App = () => {
     return (
-        <>
-            <Header />
-            <Content />
-        </>
+        <BrowserRouter>
+            <AppHeader />
+            <AppContent />
+        </BrowserRouter>
     );
 };

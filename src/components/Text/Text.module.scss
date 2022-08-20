@@ -1,7 +1,6 @@
-@import '../../styles/variables';
-@import '../../styles/mixins';
+@import '../../styles/utils.scss';
 
-.text {
+.root {
     font-family: var(--text-font-family);
     font-size: var(--text-size);
     line-height: var(--text-line-height);
@@ -14,114 +13,132 @@ strong,
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5,
+h6 {
     &,
-    &.text {
-        font-weight: $font-weight-bold;
+    &.root {
+        font-weight: $font-weight-bolder;
     }
 }
 
 .size {
-    &Caption {
-        --text-size: #{$font-size-caption};
-        --text-line-height: #{$spacing-12};
-    }
-
-    &Small {
+    &-small {
         --text-size: #{$font-size-small};
-        --text-line-height: #{$spacing-16};
+        --text-line-height: #{$spacing-3};
     }
 
-    &Body {
-        --text-size: #{$font-size-body};
-        --text-line-height: #{$spacing-20};
+    &-smaller {
+        --text-size: #{$font-size-smaller};
+        --text-line-height: #{$spacing-3};
     }
 
-    &Large {
-        --text-size: #{$font-size-large};
-        --text-line-height: #{$spacing-24};
+    &-base {
+        --text-size: #{$font-size-base};
+        --text-line-height: #{$spacing-4};
     }
 
-    &H4 {
-        --text-size: #{$font-size-h4};
-        --text-line-height: #{$spacing-24};
+    &-h6 {
+        --text-size: #{$font-size-h6};
+        --text-line-height: #{$spacing-5};
     }
 
-    &H3 {
+    &-h5 {
+        --text-size: #{$font-size-h5};
+        --text-line-height: #{$spacing-5};
+    }
+
+    &-h3 {
         --text-size: #{$font-size-h3};
-        --text-line-height: #{$spacing-32};
+        --text-line-height: #{$spacing-5};
     }
 
-    &H2 {
+    &-h2 {
         --text-size: #{$font-size-h2};
-        --text-line-height: #{$spacing-40};
+        --text-line-height: #{$spacing-5};
     }
 
-    &H1 {
+    &-h1 {
         --text-size: #{$font-size-h1};
-        --text-line-height: #{$spacing-48};
+        --text-line-height: #{$spacing-5};
     }
 }
 
 .color {
-    &White {
+    &-white {
         --text-color: var(--color-basic-white);
     }
 
-    &Black {
+    &-black {
         --text-color: var(--color-basic-black);
     }
 
-    &Accent {
+    &-accent {
         --text-color: var(--color-basic-accent);
     }
 
-    &Quadra {
-        @include colorQuadra(--text-color);
+    &-grey {
+        opacity: 0.5;
     }
 
-    &Role {
+    &-element {
+        @include colorElement(--text-color);
+    }
+
+    &-role {
         @include colorRole(--text-color);
     }
 }
 
+.marker-color {
+    &-element {
+        @include colorElement(--color-li-marker);
+    }
+
+    &-role {
+        @include colorRole(--color-li-marker);
+    }
+}
+
 .font {
-    &Primary {
-        --text-font-family: #{$font-family-primary};
+    &-base {
+        --text-font-family: #{$font-family-base};
     }
 
-    &Secondary {
-        --text-font-family: #{$font-family-secondary};
+    &-additional {
+        --text-font-family: #{$font-family-alternative};
     }
 }
 
-b.icon,
-strong.icon {
-    font-weight: $font-weight-bold;
+b.root,
+strong.root {
+    font-weight: $font-weight-bolder;
 }
 
-// Opacity
+ul.root {
+    position: relative;
+    list-style: none;
+    padding-left: $spacing-1;
 
-.o05 {
-	opacity: 0.05;
-}
+    li {
+        padding-left: $spacing-3;
+        margin-bottom: $spacing-2;
 
-.o10 {
-	opacity: 0.1;
-}
+        &::before {
+            --color-li-marker: var(--color-basic-black);
 
-.o25 {
-	opacity: 0.25;
-}
-
-.o50 {
-	opacity: 0.5;
-}
-
-.o75 {
-	opacity: 0.75;
-}
-
-.o100 {
-	opacity: 1;
+            position: absolute;
+            left: 0;
+            display: block;
+            flex-shrink: 0;
+            content: '';
+            width: 0.8rem;
+            height: 0.8rem;
+            margin-top: $spacing-1;
+            margin-right: $spacing-3;
+            border-radius: 50%;
+            opacity: 0.25;
+            background-color: var(--color-li-marker);
+        }
+    }
 }

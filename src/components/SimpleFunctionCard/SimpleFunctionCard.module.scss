@@ -1,0 +1,69 @@
+@import '../../styles/utils';
+
+.root {
+    --f-block-color: var(--color-basic-black);
+
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    min-width: 13.2rem;
+    background: var(--f-block-color);
+    border-radius: 2px;
+    padding: $spacing-1 $spacing-1 $spacing-1 $spacing-2;
+
+    &.size {
+        &-xl,
+        &-m {
+            width: 19.2rem;
+        }
+
+        &-l,
+        &-s {
+            width: 12rem;
+        }
+
+        &-xl,
+        &-l {
+            align-items: flex-end;
+            height: 8rem;
+
+            .functionIcon {
+                position: absolute;
+                top: $spacing-1;
+                right: $spacing-1;
+            }
+        }
+
+        &-s,
+        &-m {
+            align-items: center;
+            height: 4.8rem;
+        }
+    }
+
+    &.transparent,
+    &.outline,
+    &.striped {
+        border: 1px solid var(--f-block-color);
+        background: none;
+    }
+}
+
+.stripe {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: repeating-linear-gradient(
+                    -60deg,
+                    transparent,
+                    transparent 1.8rem,
+                    var(--f-block-color) 0,
+                    var(--f-block-color) 3.6rem
+    );
+    opacity: 0.05;
+    z-index: 0;
+}

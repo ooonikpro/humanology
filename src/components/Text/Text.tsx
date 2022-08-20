@@ -1,26 +1,23 @@
 import React from 'react';
-
 import styles from './Text.module.scss';
-import { capitalizeFirstLetter } from '../../utils/captalizeFirstLetter';
 
 export type Props<T extends keyof JSX.IntrinsicElements> = {
     tag?: T;
-    size?: 'caption' | 'small' | 'body' | 'large' | 'h4' | 'h3' | 'h2' | 'h1';
-    color?: 'black' | 'white' | 'accent' | 'quadra' | 'role';
-    font?: 'primary' | 'secondary';
-    markerColor?: 'quadra' | 'role';
-    opacity?: 'o05' | 'o10' | 'o25' | 'o50' | 'o75' | 'o100';
+    size?: 'base' | 'small' | 'smaller' | 'h6' | 'h5' | 'h3' | 'h2' | 'h1';
+    color?: 'black' | 'white' | 'accent' | 'grey' | 'element' | 'role';
+    font?: 'base' | 'additional';
+    markerColor?: 'element' | 'role';
     className?: string;
     children: React.ReactNode;
 } & JSX.IntrinsicElements[T];
 
+// eslint-disable-next-line
 export const Text = React.forwardRef<HTMLElement, Props<any>>(function Text(
     {
         tag: TagName = 'span',
-        size = 'body',
+        size = 'base',
         color = 'black',
-        font = 'primary',
-        opacity = 'o100',
+        font = 'base',
         markerColor,
         children,
         className,
@@ -29,11 +26,10 @@ export const Text = React.forwardRef<HTMLElement, Props<any>>(function Text(
     ref
 ) {
     const classNames: string = [
-        styles.text,
-        styles['size' + capitalizeFirstLetter(size)], 
-        styles['color' + capitalizeFirstLetter(color)],
-        styles['font' + capitalizeFirstLetter(font)],
-        styles[opacity],
+        styles.root,
+        styles['size-' + size],
+        styles['color-' + color],
+        styles['font-' + font],
         TagName === 'ul' && styles[`marker-color-${markerColor}`],
         className,
     ].join(' ');

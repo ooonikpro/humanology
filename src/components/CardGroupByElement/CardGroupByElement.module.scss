@@ -1,0 +1,50 @@
+@import '../../styles/utils';
+
+.root {
+    @include colorElement(--card-group-color);
+
+    position: relative;
+    min-height: 100px;
+    padding: $spacing-3 $spacing-3 0;
+    border-top: 1px solid var(--card-group-color);
+
+    &::before {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(
+            180deg, var(--card-group-color) 0,
+            transparent 100%
+        );
+        content: '';
+        display: block;
+        z-index: -1;
+        opacity: 0.1;
+    }
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: $spacing-3;
+    column-gap: $spacing-2;
+
+    &-title {
+        margin-right: auto;
+    }
+
+    &-icon {
+        color: var(--card-group-color);
+        opacity: 0.25;
+    }
+}
+
+.body {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: $spacing-1;
+    row-gap: $spacing-1;
+}

@@ -1,0 +1,146 @@
+@import '../../styles/utils';
+
+.root {
+    @include colorElement(--f-block-color);
+    --lvl-color: var(--color-basic-white);
+
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    min-width: 13.2rem;
+    background: linear-gradient(
+                    190deg,
+                    var(--f-block-color) 0%,
+                    transparent 250%
+    );
+    border-radius: 2px;
+    padding: $spacing-1 $spacing-1 $spacing-1 $spacing-2;
+
+    &.size {
+        &-xl,
+        &-m {
+            min-width: 19.2rem;
+        }
+
+        &-l,
+        &-s {
+            min-width: 12rem;
+        }
+
+        &-xl,
+        &-l {
+            height: 8rem;
+        }
+
+        &-s,
+        &-m {
+            height: 4.8rem;
+
+            .aspect {
+                top: 0;
+                right: $spacing-4;
+                bottom: 0;
+                margin: auto;
+            }
+
+            .bottom {
+                bottom: $spacing-0;
+            }
+        }
+    }
+
+    &.transparent,
+    &.outline,
+    &.striped {
+        --lvl-color: var(--f-block-color);
+        border: 1px solid var(--f-block-color);
+        background: none;
+    }
+
+    &.outline {
+        .stripe {
+            background: var(--f-block-color);
+            opacity: 0.1;
+        }
+    }
+}
+
+.stripe {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: repeating-linear-gradient(
+                    -60deg,
+                    transparent,
+                    transparent 1.8rem,
+                    var(--f-block-color) 0,
+                    var(--f-block-color) 3.6rem
+    );
+    opacity: 0.15;
+    z-index: 0;
+}
+
+.top,
+.bottom {
+    position: absolute;
+    right: $spacing-1;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.top {
+    top: $spacing-0;
+    left: $spacing-1;
+    justify-content: space-between;
+    opacity: 0.5;
+}
+
+.aspect {
+    position: absolute;
+    top: $spacing-1;
+    right: $spacing-1;
+    z-index: 1;
+}
+
+.bottom {
+    bottom: $spacing-1;
+    left: $spacing-0;
+}
+
+.function {
+    margin-right: $spacing-0;
+}
+
+.lvl {
+    position: absolute;
+    bottom: 0;
+    right: $spacing-0;
+    display: flex;
+    align-items: flex-end;
+    gap: $spacing-0;
+    opacity: 0.5;
+
+    span {
+        width: 0.1rem;
+        background: var(--lvl-color);
+
+        &:nth-child(1) {
+            height: 0.8rem;
+        }
+
+        &:nth-child(2) {
+            height: 1.6rem;
+        }
+
+        &:nth-child(3) {
+            height: 2.4rem;
+        }
+
+        &:nth-child(4) {
+            height: 3.2rem;
+        }
+    }
+}

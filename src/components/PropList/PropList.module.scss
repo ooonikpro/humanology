@@ -1,0 +1,39 @@
+@import '../../styles/utils';
+
+.root {
+
+}
+
+.row {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: $spacing-3 0;
+
+    &:after {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        content: '';
+        height: 1px;
+        opacity: 0.1;
+        background-color: var(--color-basic-black);
+    }
+}
+
+.value {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.icon {
+    margin-right: $spacing-1;
+}
+
+.sublabel {
+    width: 100%;
+}

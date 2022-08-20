@@ -1,0 +1,30 @@
+@import '../_common/text.module';
+
+.header {
+    padding-bottom: 0;
+}
+
+.title-icon {
+    margin-right: $spacing-1;
+}
+
+.aspect-details {
+    position: relative;
+    align-items: center;
+
+    &,
+    &-text {
+        display: flex;
+    }
+
+    &-text {
+        flex-direction: column;
+        row-gap: $spacing-0;
+    }
+}
+
+.icon-mini {
+    position: absolute;
+    top: $spacing-1;
+    left: $spacing-0;
+}

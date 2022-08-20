@@ -1,0 +1,38 @@
+@import '../../styles/utils';
+
+.root {
+    display: flex;
+    flex: 1 1 auto;
+    gap: $spacing-1;
+    margin-bottom: $spacing-1;
+
+    &.align {
+        &-start {
+            align-items: flex-start;
+        }
+
+        &-stretch {
+            align-items: stretch;
+        }
+
+        &-center {
+            align-items: center;
+        }
+    }
+
+    &.justify {
+        &-start {
+            justify-content: flex-start;
+        }
+
+        &-between {
+            justify-content: space-between;
+        }
+    }
+
+    hr {
+        flex: 1 1 auto;
+        border-bottom-style: dashed;
+        margin: 0;
+    }
+}

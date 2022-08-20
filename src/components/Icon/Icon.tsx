@@ -1,18 +1,17 @@
 import React from 'react';
-import { toPascalCase } from 'src/utils/toPascalCase';
-
 import styles from './Icon.module.scss';
+
 import * as Icons from './icons';
+import { toPascalCase } from '../../utils/toPascalCase';
 
 export interface Props {
     name: keyof typeof Icons;
-    color?: 'white' | 'black' | 'accent' | 'quadra' | 'role';
+    color?: 'white' | 'black' | 'accent' | 'element' | 'role';
     size: number | { width: number; height: number };
     className?: string;
 }
 
 export const getIconName = (iconName: string) => toPascalCase<Props['name']>(iconName);
-    
 
 export const Icon: React.FC<Props> = ({ name, color, size, className }) => {
     const Component = Icons[name];
@@ -23,7 +22,7 @@ export const Icon: React.FC<Props> = ({ name, color, size, className }) => {
         height: `${height / 10}rem`,
     };
 
-    const classes = [styles.icon, styles[color || 'black'], className].join(
+    const classes = [styles.root, styles[color || 'black'], className].join(
         ' '
     );
 
