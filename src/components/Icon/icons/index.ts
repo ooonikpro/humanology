@@ -1,4 +1,5 @@
 export { default as Aggressor } from './Aggressor';
+export { default as Agressor } from './Agressor';
 export { default as AirStrong } from './AirStrong';
 export { default as AirWeak } from './AirWeak';
 export { default as Air } from './Air';

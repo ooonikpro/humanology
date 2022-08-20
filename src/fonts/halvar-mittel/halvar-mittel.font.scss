@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Halvar Mittelschrift Light';
+    src: url('./HalvarMittel-Lt.woff2') format('woff2'),
+        url('./HalvarMittel-Lt.woff') format('woff'),
+        url('./HalvarMittel-Lt.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Halvar Mittelschrift Light Slanted';
+    src: url('./HalvarMittel-LtSlanted.woff2') format('woff2'),
+        url('./HalvarMittel-LtSlanted.woff') format('woff'),
+        url('./HalvarMittel-LtSlanted.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Halvar Mittelschrift Regular';
+    src: url('./HalvarMittel-Rg.woff2') format('woff2'),
+        url('./HalvarMittel-Rg.woff') format('woff'),
+        url('./HalvarMittel-Rg.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Halvar Mittelschrift Regular Slanted';
+    src: url('./HalvarMittel-RgSlanted.woff2') format('woff2'),
+        url('./HalvarMittel-RgSlanted.woff') format('woff'),
+        url('./HalvarMittel-RgSlanted.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
