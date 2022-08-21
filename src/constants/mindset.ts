@@ -7,7 +7,7 @@ export const MIND_KEY: Record<Humanology.MindKey, string> = {
     'rational-4': 'Рационал',
 };
 
-export const MIND: Record<Humanology.Mind, string> = {
+export const mindset: Record<Humanology.mindset, string> = {
     casual: 'Причинно-следственное',
     algorithmic: 'Диалектико-алгоритмическое',
     vortical: 'Вихревое',

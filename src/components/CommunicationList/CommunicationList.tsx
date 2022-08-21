@@ -1,20 +1,20 @@
 import React from 'react';
 import { Humanology } from '../../types';
-import { STIMULANT } from '../../constants/stimulant';
+import { MOTIVATION } from '../../constants/motivation';
 import { COMMUNICATION_STYLE } from '../../constants/communicationStyle';
 import { COMPANION } from '../../constants/companion';
 import { TEMPERAMENT, TEMPERAMENT_LABEL } from '../../constants/temperament';
-import { MIND } from '../../constants/mind';
-import { IDEOLOGY } from '../../constants/ideology';
+import { mindset } from '../../constants/mindset';
+import { ALIGNMENT } from '../../constants/alignment';
 import { PropList, RowItem } from '../../components/PropList';
 
 interface Props {
-    mind: Humanology.Mind;
+    mindset: Humanology.mindset;
     stimulant: Humanology.Stimulant;
     communication: Humanology.CommunicationStyle;
     companion: Humanology.Companion;
     temperament: Humanology.Temperament;
-    ideology: Humanology.Ideology;
+    ideology: Humanology.Alignment;
     className?: string;
 }
 
@@ -23,7 +23,7 @@ export const CommunicationList: React.FC<Props> = (props) => {
         {
             textColor: 'role',
             label: 'Стимул',
-            value: STIMULANT[props.stimulant],
+            value: MOTIVATION[props.stimulant],
         },
         {
             textColor: 'black',
@@ -47,12 +47,12 @@ export const CommunicationList: React.FC<Props> = (props) => {
         {
             textColor: 'black',
             label: 'Мышление',
-            value: MIND[props.mind],
+            value: mindset[props.mindset],
         },
         {
             textColor: 'black',
             label: 'Мировоззрение',
-            value: IDEOLOGY[props.ideology],
+            value: ALIGNMENT[props.ideology],
         },
     ];
 

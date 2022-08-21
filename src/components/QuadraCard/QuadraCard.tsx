@@ -6,7 +6,7 @@ import { TitleInfo } from '../TitleInfo';
 import { Text } from '../Text';
 import { WhiteCard } from '../WhiteCard';
 import { useColorElement } from '../../hooks';
-import { NATURE_ELEMENTS } from '../../constants/natureElements';
+import { QUADRAS } from '../../constants/natureElements';
 import { Humanology } from '../../types';
 
 export interface Props {
@@ -30,7 +30,7 @@ export const QuadraCard: React.FC<Props> = ({
     description
 }) => {
     const { color: style } = useColorElement(element);
-    const title = NATURE_ELEMENTS[element];
+    const title = QUADRAS[element];
 
     return (
         <WhiteCard

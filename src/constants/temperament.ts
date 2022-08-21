@@ -1,7 +1,7 @@
 import { Humanology } from '../types';
 
 export const TEMPERAMENT: Record<Humanology.Temperament, string> = {
-    sanguine: 'Сангвинник',
+    sanguine: 'Сангвиник',
     melancholic: 'Меланхолик',
     phlegmatic: 'Флегматик',
     choleric: 'Холерик',

@@ -7,3 +7,10 @@
 .list {
     margin-bottom: $spacing-32;
 }
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-4;
+
+}

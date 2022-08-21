@@ -5,7 +5,7 @@ export default function INTJ() {
     return (
         <>
             
-            <Text tag="p" color="role">
+            <Text tag="p" color="role" size="h5">
             Мастер логического анализа, человек, способен разложить по полочкам все на свете.
             </Text>
 

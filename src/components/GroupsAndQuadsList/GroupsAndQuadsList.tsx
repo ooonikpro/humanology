@@ -1,7 +1,7 @@
 import React from 'react';
 import { Humanology } from '../../types';
 import { PropList, RowItem } from '../PropList';
-import { NATURE_ELEMENTS } from '../../constants/natureElements';
+import { QUADRAS } from '../../constants/natureElements';
 import { ROLE } from '../../constants/role';
 import { TAROT } from '../../constants/tarot';
 import { GROUPS } from '../../constants/groups';
@@ -34,7 +34,7 @@ export const GroupsAndQuadsList: React.FC<Props> = (props) => {
             textColor: 'element',
             icon: props.element,
             label: LABELS.element,
-            value: NATURE_ELEMENTS[props.element],
+            value: QUADRAS[props.element],
         },
         {
             iconColor: 'role',

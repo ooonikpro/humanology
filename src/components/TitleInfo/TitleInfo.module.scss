@@ -1,4 +1,20 @@
+@import '../../styles/utils.scss';
+
 .icon {
     flex-shrink: 0;
-    opacity: 0.25;
+    opacity: 0.5;
+}
+
+.background {
+    position: relative;
+    margin-top: -$spacing-8;
+    margin-left: -$spacing-8;
+    margin-right: -$spacing-8;
+    padding-top: $spacing-12;
+    padding-left: $spacing-8;
+    padding-right: $spacing-8;
+    margin-bottom: $spacing-8;
+    height: 4rem;
+    background: var(--color-basic-beige);
+    opacity: 0.5
 }

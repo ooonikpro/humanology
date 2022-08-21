@@ -5,7 +5,7 @@ import { SocietyCard } from '../../components/SocietyCard';
 import { Humanology } from '../../types';
 import { useIntertype } from '../../hooks/useIntertype';
 import { WhiteCard } from '../../components/WhiteCard';
-import { JUNGS_DICHTOMIES } from '../../constants/jungsDichotomies';
+import { YUNGS_DICHTOMIES } from '../../constants/yungsDichotomies';
 import { REININ_SIGNS } from '../../constants/reininSigns';
 import { FunctionalCardGroup } from '../../components/FunctionalCardGroup';
 import { CommunicationList } from '../../components/CommunicationList';
@@ -27,11 +27,11 @@ const getRow = (
     };
 };
 
-const dichotomie: Array<Humanology.Dichotomie[]> = [
-    ['intuit', 'sensoric'],
-    ['logic', 'etic'],
-    ['extravert', 'introvert'],
+const Dichotomy: Array<Humanology.Dichotomy[]> = [
     ['irrational', 'rational'],
+    ['intuit', 'sensory'],
+    ['logic', 'ethic'],
+    ['extravert', 'introvert'],
 ];
 
 const reininRows: Array<Humanology.ReininSign[]> = [
@@ -55,15 +55,15 @@ export default function SociatypesCard() {
     const id = params.id?.toUpperCase() as Humanology.Intertype;
     const { intertypeProps } = useIntertype(id);
 
-    const dichotomieJungs = intertypeProps.jungs.map(
-        getRow(dichotomie, JUNGS_DICHTOMIES)
+    const dichotomyYungs = intertypeProps.yungs.map(
+        getRow(Dichotomy, YUNGS_DICHTOMIES)
     );
 
     const list = intertypeProps.reinin.map(getRow(reininRows, REININ_SIGNS));
     const reininList = [list.slice(0, 5), list.slice(5, 8), list.slice(8)];
 
     return (
-        <>
+        <div className={styles.wrap}>
             <SocietyCard {...intertypeProps} />
 
             <WhiteCard>
@@ -72,24 +72,29 @@ export default function SociatypesCard() {
                     intertype={intertypeProps.id}
                     {...intertypeProps.aspects}
                 />
-
+            </WhiteCard>
+            <WhiteCard>
+                <TitleInfo className={styles.title}>Ментальность</TitleInfo>
                 <CommunicationList
                     {...intertypeProps}
                     className={styles.list}
                 />
-
+            </WhiteCard>
+            <WhiteCard>
                 <TitleInfo className={styles.title}>Группы и квадры</TitleInfo>
                 <GroupsAndQuadsList
                     {...intertypeProps}
                     className={styles.list}
                 />
-
+            </WhiteCard>
+            <WhiteCard>
                 <TitleInfo className={styles.title}>Дихотомии Юнга</TitleInfo>
                 <ListOptions
-                    options={dichotomieJungs}
+                    options={dichotomyYungs}
                     className={styles.list}
                 />
-
+            </WhiteCard>
+            <WhiteCard>
                 <TitleInfo className={styles.title}>Признаки Рейнина</TitleInfo>
                 {reininList.map((list, $i) => (
                     <ListOptions
@@ -99,6 +104,6 @@ export default function SociatypesCard() {
                     />
                 ))}
             </WhiteCard>
-        </>
+        </div>
     );
 }

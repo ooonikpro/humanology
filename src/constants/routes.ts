@@ -26,11 +26,6 @@ export const ROUTES = {
 
 export const MAIN_LINKS: Tabs[] = [
     {
-        label: 'Начало',
-        path: ROUTES.START,
-        order: 1,
-    },
-    {
         label: 'Дисклеймер',
         path: ROUTES.DISCLAIMER,
         order: 4,

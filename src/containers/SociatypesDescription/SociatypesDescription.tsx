@@ -18,7 +18,7 @@ export default function SociatypesDescription() {
             <SocietyCard {...intertypeProps} mini />
 
             <WhiteCard>
-                <Text tag="b" size="h5" className={styles.title}>Описание</Text>
+                <Text tag="b" size="h4" className={styles.title}>Описание</Text>
                 <div className={styles.text}>
                     <React.Suspense>
                         <Description />

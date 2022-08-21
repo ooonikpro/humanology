@@ -8,14 +8,14 @@ import { FunctionDescription } from 'src/modals/FunctionDescription';
 interface Props {
     intertype: Humanology.Intertype;
     element: Humanology.Elements;
-    good: Humanology.Aspect;
-    necessary: Humanology.Aspect;
-    bad: Humanology.Aspect;
-    noNeed: Humanology.Aspect;
-    fear: Humanology.Aspect;
-    problems: Humanology.Aspect;
+    lives: Humanology.Aspect;
+    creates: Humanology.Aspect;
+    mad: Humanology.Aspect;
+    does: Humanology.Aspect;
+    afraid: Humanology.Aspect;
+    suffers: Humanology.Aspect;
     desires: Humanology.Aspect;
-    solutions: Humanology.Aspect;
+    likes: Humanology.Aspect;
 }
 
 export const FunctionalCardGroup: React.FC<Props> = (props) => {
@@ -25,7 +25,7 @@ export const FunctionalCardGroup: React.FC<Props> = (props) => {
             blockId: 'ego',
             data: [
                 {
-                    aspect: props.good,
+                    aspect: props.lives,
                     function: 'base',
                     number: 1,
                     lvl: 4,
@@ -33,7 +33,7 @@ export const FunctionalCardGroup: React.FC<Props> = (props) => {
                 },
 
                 {
-                    aspect: props.necessary,
+                    aspect: props.creates,
                     function: 'creative',
                     number: 2,
                     lvl: 3,
@@ -46,7 +46,7 @@ export const FunctionalCardGroup: React.FC<Props> = (props) => {
             blockId: 'id',
             data: [
                 {
-                    aspect: props.bad,
+                    aspect: props.mad,
                     function: 'limit',
                     number: 7,
                     lvl: 3,
@@ -55,7 +55,7 @@ export const FunctionalCardGroup: React.FC<Props> = (props) => {
                 },
 
                 {
-                    aspect: props.noNeed,
+                    aspect: props.does,
                     function: 'back',
                     number: 8,
                     lvl: 4,
@@ -69,7 +69,7 @@ export const FunctionalCardGroup: React.FC<Props> = (props) => {
             blockId: 'superEgo',
             data: [
                 {
-                    aspect: props.fear,
+                    aspect: props.afraid,
                     function: 'role',
                     number: 3,
                     lvl: 2,
@@ -79,7 +79,7 @@ export const FunctionalCardGroup: React.FC<Props> = (props) => {
                 },
 
                 {
-                    aspect: props.problems,
+                    aspect: props.suffers,
                     function: 'pain',
                     number: 4,
                     lvl: 1,
@@ -103,7 +103,7 @@ export const FunctionalCardGroup: React.FC<Props> = (props) => {
                 },
 
                 {
-                    aspect: props.solutions,
+                    aspect: props.likes,
                     function: 'activate',
                     number: 6,
                     lvl: 2,

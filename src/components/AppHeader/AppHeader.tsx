@@ -28,7 +28,7 @@ export const AppHeader = () => {
                     <Icon name="Logo" color="accent" size={24} />
                 </button>
 
-                <button className={`${styles.btn} ${styles['btn-opacity-5']}`}>
+                <button className={`${styles.btn} ${styles['btn-opacity-2']}`}>
                     <Icon name="UserSquare" color="accent" size={24} />
                 </button>
             </div>

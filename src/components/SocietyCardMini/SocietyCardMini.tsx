@@ -1,31 +1,39 @@
 import React from 'react';
 import styles from './SocietyCardMini.module.scss';
 import { Humanology } from '../../types';
+import { QUADRAS } from '../../constants/natureElements';
+import { ROLE } from '../../constants/role';
 import { WhiteCard } from '../../components/WhiteCard';
 import { getIconName, Icon } from '../../components/Icon';
 import { Text } from '../../components/Text';
 import { useColorRole } from '../../hooks';
-import { MultiTag } from '../../components/MultiTag';
 import { CircleQuadra } from '../../components/CircleQuadra';
 import { Person } from '../../components/Person';
 
 type Props = Humanology.IntertypeProp & { id: Humanology.Intertype };
 
 export const SocietyCardMini: React.FC<Props> = (props) => {
+    const text = {
+        id: props.id,
+        element: QUADRAS[props.element],
+        role: ROLE[props.role].label,
+        name: props.name,
+        alias: props.alias,
+    };
+    
     const { color: roleColor } = useColorRole(props.role);
 
     return (
         <WhiteCard className={styles.root} style={roleColor}>
             <div className={styles.body}>
                 <div className={styles.tags}>
-                    <MultiTag element={props.element} role={props.role} />
+
                     <Icon
                         name={getIconName(props.mindKey)}
                         size={{ width: 32, height: 6 }}
-                        className={styles['mind-key']}
+                        className={styles['mindset-key']}
                     />
                 </div>
-
                 <CircleQuadra
                     element={props.element}
                     gender={props.gender}
@@ -36,12 +44,6 @@ export const SocietyCardMini: React.FC<Props> = (props) => {
             </div>
 
             <div className={styles.footer}>
-                <Text tag="b" size="small">
-                    {props.id}
-                </Text>
-                <Text tag="b" size="small">
-                    {props.alias}
-                </Text>
                 <Text
                     font="additional"
                     color="role"
@@ -50,6 +52,24 @@ export const SocietyCardMini: React.FC<Props> = (props) => {
                 >
                     {props.name}
                 </Text>
+
+                <span className={styles['element-role']}>
+                    <Text tag="p" size="smaller" color="element">
+                        {text.element}
+                    </Text>
+    
+                    <Text tag="p" size="smaller" color="role">
+                        {text.role}
+                    </Text>
+                </span>
+                <span className={styles['id-alias']}>
+                    <Text tag="p" size="smaller" color="grey">
+                        {props.alias}
+                    </Text>
+                    <Text tag="p" size="smaller" color="accent">
+                        {props.id}
+                    </Text>
+                </span>
             </div>
         </WhiteCard>
     );

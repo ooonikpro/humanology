@@ -1,32 +1,6 @@
 export namespace Humanology {
     export type Gender = 'male' | 'female';
     export type Elements = 'air' | 'fire' | 'earth' | 'water';
-    export type HoroSign =
-        | 'oven'
-        | 'telets'
-        | 'blizneci'
-        | 'rak'
-        | 'lev'
-        | 'deva'
-        | 'vesi'
-        | 'scorpion'
-        | 'strelec'
-        | 'kozerog'
-        | 'vodolei'
-        | 'ribi';
-    export type ChineseHoroSign =
-        | 'bik'
-        | 'drakon'
-        | 'koza'
-        | 'krisa'
-        | 'loshad'
-        | 'obezyana'
-        | 'petuh'
-        | 'sobaka'
-        | 'svinya'
-        | 'tigr'
-        | 'zayac'
-        | 'zmeya';
     export type Role = 'knight' | 'king' | 'queen' | 'paige' | 'lady';
     export type Psychotype = 'infantile' | 'aggressor' | 'care' | 'victim';
     export type Tarot = 'swords' | 'pentacles' | 'cups' | 'wands';
@@ -36,7 +10,7 @@ export namespace Humanology {
         | 'irrational-2'
         | 'rational-1'
         | 'rational-4';
-    export type Mind = 'casual' | 'algorithmic' | 'vortical' | 'holographic';
+    export type mindset = 'casual' | 'algorithmic' | 'vortical' | 'holographic';
     export type Intertype =
         | 'ENTP'
         | 'ISFP'
@@ -64,14 +38,14 @@ export namespace Humanology {
         | 'comfort'
         | 'people';
     export type AspectKey =
-        | 'good'
-        | 'necessary'
-        | 'bad'
-        | 'noNeed'
-        | 'fear'
-        | 'problems'
+        | 'lives'
+        | 'creates'
+        | 'mad'
+        | 'does'
+        | 'afraid'
+        | 'suffers'
         | 'desires'
-        | 'solutions';
+        | 'likes';
     export type Function =
         | 'base'
         | 'creative'
@@ -83,7 +57,7 @@ export namespace Humanology {
         | 'limit';
     export type Stimulant =
         | 'uniqueness'
-        | 'welfare'
+        | 'wealth'
         | 'status'
         | 'selfSufficiency';
     export type CommunicationStyle =
@@ -104,20 +78,20 @@ export namespace Humanology {
         | 'melancholic'
         | 'choleric'
         | 'phlegmatic';
-    export type Ideology =
+    export type Alignment =
         | 'chaoticNeutral'
-        | 'chaoticKindly'
-        | 'chaoticBad'
-        | 'lawAbidingNeutral'
-        | 'lawAbidingBad'
-        | 'neutral'
-        | 'neutralBad'
-        | 'neutralKindly';
-    export type Dichotomie =
+        | 'chaoticGood'
+        | 'chaoticEvil'
+        | 'lawfulNeutral'
+        | 'lawfulEvil'
+        | 'trueNeutral'
+        | 'neutralEvil'
+        | 'neutralGood';
+    export type Dichotomy =
         | 'intuit'
-        | 'sensoric'
+        | 'sensory'
         | 'logic'
-        | 'etic'
+        | 'ethic'
         | 'extravert'
         | 'introvert'
         | 'irrational'
@@ -156,7 +130,7 @@ export namespace Humanology {
         role: Role;
         alias: string;
         mindKey: MindKey;
-        mind: Mind;
+        mindset: mindset;
         name: string;
         gender: Humanology.Gender;
         club: Humanology.Club;
@@ -168,8 +142,8 @@ export namespace Humanology {
         communication: CommunicationStyle;
         companion: Companion;
         temperament: Temperament;
-        ideology: Ideology;
-        jungs: Dichotomie[];
+        ideology: Alignment;
+        yungs: Dichotomy[];
         reinin: ReininSign[];
     };
 }

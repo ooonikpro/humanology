@@ -1,51 +1,51 @@
-import { Humanology } from '../types';
+import { Zodiac } from '../types/zodiac';
 
-export const HORO_SIGNS: Record<Humanology.HoroSign, Humanology.SignProp> = {
-    oven: {
+export const ZODIAC_SIGNS: Record<Zodiac.ZodiacSign, Zodiac.SignProp> = {
+    aries: {
         label: 'Овен',
         element: 'fire',
     },
-    telets: {
+    taurus: {
         label: 'Телец',
         element: 'earth',
     },
-    blizneci: {
+    gemini: {
         label: 'Близнецы',
         element: 'air',
     },
-    rak: {
+    cancer: {
         label: 'Рак',
         element: 'water',
     },
-    lev: {
+    leo: {
         label: 'Лев',
         element: 'fire',
     },
-    deva: {
+    virgo: {
         label: 'Дева',
         element: 'earth',
     },
-    vesi: {
+    libra: {
         label: 'Весы',
         element: 'air',
     },
-    scorpion: {
+    scorpio: {
         label: 'Скорпион',
         element: 'water',
     },
-    strelec: {
+    sagittarius: {
         label: 'Стрелец',
         element: 'fire',
     },
-    kozerog: {
+    capricorn: {
         label: 'Козерог',
         element: 'earth',
     },
-    vodolei: {
+    aquarius: {
         label: 'Водолеи',
         element: 'air',
     },
-    ribi: {
+    pisces: {
         label: 'Рыбы',
         element: 'water',
     },

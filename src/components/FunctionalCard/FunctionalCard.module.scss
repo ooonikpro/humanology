@@ -31,12 +31,12 @@
 
         &-xl,
         &-l {
-            height: 8rem;
+            height: 9.6rem;
         }
 
         &-s,
         &-m {
-            height: 4.8rem;
+            height: 6rem;
 
             .aspect {
                 top: 0;
@@ -74,11 +74,11 @@
     bottom: 0;
     left: 0;
     background: repeating-linear-gradient(
-                    -60deg,
+                    30deg,
                     transparent,
-                    transparent 1.8rem,
+                    transparent 1.6rem,
                     var(--f-block-color) 0,
-                    var(--f-block-color) 3.6rem
+                    var(--f-block-color) 3.2rem
     );
     opacity: 0.15;
     z-index: 0;

@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import styles from './Home.module.scss';
 import { CardGroupByElement } from '../../components/CardGroupByElement';
-import { NATURE_ELEMENTS } from '../../constants/natureElements';
+import { QUADRAS } from '../../constants/natureElements';
 import { INTERTYPES } from '../../constants/intertypes';
 import { Humanology } from '../../types';
 import { SocietyCardMini } from '../../components/SocietyCardMini';
@@ -15,7 +15,7 @@ const intertypes = (Object.keys(INTERTYPES) as Humanology.Intertype[]).map(
     })
 );
 
-const elements = (Object.keys(NATURE_ELEMENTS) as Humanology.Elements[]).map(
+const elements = (Object.keys(QUADRAS) as Humanology.Elements[]).map(
     (element) => ({
         element,
         cards: intertypes.filter((type) => type.element === element),

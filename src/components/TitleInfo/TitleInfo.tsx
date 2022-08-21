@@ -18,7 +18,7 @@ interface Props {
 
 export const TitleInfo: React.FC<Props> = ({
     textColor = 'accent',
-    textSize = 'base',
+    textSize = 'smaller',
     iconColor = 'accent',
     iconSize = 24,
     align,
@@ -27,20 +27,22 @@ export const TitleInfo: React.FC<Props> = ({
     render,
 }) => {
     return (
-        <TextInline align={align} className={className} justify="between">
-            {
-                render ? render() :
-                    <Text tag="strong" color={textColor} size={textSize} className={styles.text}>
-                        {children}
-                    </Text>
-            }
+        <div className={styles.background} >
+            <TextInline align={align} className={className} justify="between">
+                {
+                    render ? render() :
+                        <Text tag="b" color={textColor} size={textSize} className={styles.text}>
+                            {children}
+                        </Text>
+                }
 
-            <Icon
-                name="Info"
-                color={iconColor}
-                size={iconSize}
-                className={styles.icon}
-            />
-        </TextInline>
+                <Icon
+                    name="Help"
+                    color={iconColor}
+                    size={iconSize}
+                    className={styles.icon}
+                />
+            </TextInline>
+        </div>
     );
 };

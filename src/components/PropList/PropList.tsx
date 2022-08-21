@@ -25,7 +25,12 @@ export const PropList: React.FC<Props> = (props) => {
                 props.rows.map((row, $i) => {
                     return (
                         <div key={$i} className={styles.row}>
+                            <div className={styles.label}>
+                                <Text size="smaller" color="grey">{row.label}</Text>
+                            </div>
                             <div className={styles.value}>
+                                <Text color={row.textColor}>{row.value}</Text>
+                                
                                 {
                                     row.icon &&
                                         <Icon
@@ -35,8 +40,6 @@ export const PropList: React.FC<Props> = (props) => {
                                             className={styles.icon}
                                         />
                                 }
-
-                                <Text color={row.textColor}>{row.value}</Text>
 
                                 {
                                     row.subLabel &&
@@ -48,9 +51,7 @@ export const PropList: React.FC<Props> = (props) => {
                                         </Text>
                                 }
                             </div>
-                            <div className={styles.label}>
-                                <Text size="smaller" color="grey">{row.label}</Text>
-                            </div>
+
                         </div>
                     );
                 })

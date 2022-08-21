@@ -1,16 +1,12 @@
 @import '../../styles/utils';
 
-.root {
-
-}
-
 .row {
     position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
-    padding: $spacing-12 0;
+    align-items: baseline;
+    padding: $spacing-8 0;
 
     &:after {
         position: absolute;
@@ -31,7 +27,7 @@
 }
 
 .icon {
-    margin-right: $spacing-8;
+    margin-left: $spacing-4;
 }
 
 .sublabel {

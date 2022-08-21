@@ -1,20 +1,19 @@
 import React from 'react';
 import styles from './SocietyCard.module.scss';
 import { Humanology } from '../../types';
-import { NATURE_ELEMENTS } from '../../constants/natureElements';
-import { MIND_KEY } from '../../constants/mind';
+import { QUADRAS } from '../../constants/natureElements';
+import { MIND_KEY } from '../../constants/mindset';
 import { ROLE } from '../../constants/role';
 import { CLUBS } from '../../constants/clubs';
 import { TAROT } from '../../constants/tarot';
 import { GROUPS } from '../../constants/groups';
 import { WhiteCard } from '../WhiteCard';
-import { MultiTag } from '../MultiTag';
 import { Tag } from '../Tag';
 import { Text } from '../Text';
 import { getIconName, Icon } from '../Icon';
 import { CircleQuadra } from '../CircleQuadra';
 import { Person } from '../Person';
-import { JUNGS_DICHTOMIES } from 'src/constants/jungsDichotomies';
+import { YUNGS_DICHTOMIES } from 'src/constants/yungsDichotomies';
 
 interface Props extends Humanology.IntertypeProp {
     id: Humanology.Intertype;
@@ -24,7 +23,7 @@ interface Props extends Humanology.IntertypeProp {
 export const SocietyCard: React.FC<Props> = (props) => {
     const text = {
         id: props.id,
-        element: NATURE_ELEMENTS[props.element],
+        element: QUADRAS[props.element],
         role: ROLE[props.role].label,
         mindKey: MIND_KEY[props.mindKey],
         name: props.name,
@@ -33,7 +32,7 @@ export const SocietyCard: React.FC<Props> = (props) => {
         tarot: TAROT[props.tarot],
         psychotype: GROUPS[props.psychotype],
         percentage: props.populationPercentage,
-        jungs: props.jungs.map((item) => JUNGS_DICHTOMIES[item]),
+        yungs: props.yungs.map((item) => YUNGS_DICHTOMIES[item]),
     };
 
     const rootClasses = [styles.root, props.mini && styles.mini].join(' ');
@@ -48,37 +47,55 @@ export const SocietyCard: React.FC<Props> = (props) => {
                     ].join(' ')}
                 >
                     <div className={styles['params-line']}>
-                        <Text tag="b" size="small" color="accent">
+                        <span className={styles.pair}>
+                            <Tag sign={props.element} color='element'/>
+                            <Text tag="p" color="element" size="small">
+                                {text.element}
+                            </Text>
+                        </span>
+                        <span className={styles.pair}>
+                            <Tag sign={props.role} color='role'/>
+                            <Text tag="p" color="role" size="small">
+                                {text.role}
+                            </Text>
+                        </span>
+                        <Text tag="p" size="small" color="accent">
                             {text.id}
                         </Text>
-                        <Text tag="b" size="small" color="accent">
+                        <Text tag="p" size="small" color="grey">
                             {text.alias}
                         </Text>
-                        {!props.mini && (
-                            <Text tag="span" color="grey" size="small">
-                                {text.club}
-                            </Text>
-                        )}
                     </div>
 
                     <div className={styles['params-line']}>
-                        <Text tag="span" color="element" size="small">
-                            {text.element}
-                        </Text>
-                        <Text tag="span" color="role" size="small">
-                            {text.role}
-                        </Text>
                         {!props.mini && (
-                            <Text tag="span" color="grey" size="small">
-                                {text.psychotype}
-                            </Text>
+                            <>
+                                <span className={styles.pair}>
+                                    <Tag sign={props.club} color='accent'/>
+                                    <Text tag="p" color="accent" size="small">
+                                        {text.club}
+                                    </Text>
+                                </span>
+                                <span className={styles.pair}>
+                                    <Tag sign={props.psychotype} color='accent'/>
+                                    <Text tag="p" color="accent" size="small">
+                                        {text.psychotype}
+                                    </Text>
+                                </span>
+                                <span className={styles.pair}>
+                                    <Tag sign={props.tarot} color='accent'/>
+                                    <Text tag="p" color="accent" size="small">
+                                        {text.tarot}
+                                    </Text>
+                                </span>
+                            </>
                         )}
                     </div>
                 </div>
 
                 <Icon
                     name={getIconName(props.mindKey)}
-                    size={{ width: 40, height: 8 }}
+                    size={{ width: 32, height: 6 }}
                     color="element"
                 />
             </div>
@@ -89,11 +106,21 @@ export const SocietyCard: React.FC<Props> = (props) => {
                         element={props.element}
                         gender={props.gender}
                         className={styles.quadra}
-                        size={144}
+                        size={160}
                     />
                 )}
 
                 <Person name={props.id} className={styles.person} />
+                
+                {!props.mini && (
+                    <Text
+                        color="role"
+                        size="small"
+                        className={styles.population}
+                    >
+                        {text.percentage}
+                    </Text>
+                )}
                 <Text
                     font="additional"
                     color="role"
@@ -104,30 +131,21 @@ export const SocietyCard: React.FC<Props> = (props) => {
                 </Text>
 
                 {!props.mini && (
-                    <div className={styles.tags}>
-                        <MultiTag element={props.element} role={props.role} />
-                        <Tag sign={props.tarot} />
-                        <Tag sign={props.psychotype} />
-                        <Tag sign={props.club} />
-                        <Tag sign={props.gender} />
+                    <div className={styles.footer}>
+                        {text.yungs.map((row, $i) => (
+                            <Text
+                                tag="span"
+                                size="small"
+                                color="accent"
+                                key={$i}
+                                className={styles['footer-text']}
+                            >
+                                {row}
+                            </Text>
+                        ))}
                     </div>
                 )}
             </div>
-
-            {!props.mini && (
-                <div className={styles.footer}>
-                    {text.jungs.map((row, $i) => (
-                        <Text
-                            size="small"
-                            color="role"
-                            key={$i}
-                            className={styles['footer-text']}
-                        >
-                            {row}
-                        </Text>
-                    ))}
-                </div>
-            )}
         </WhiteCard>
     );
 };

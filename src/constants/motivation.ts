@@ -1,8 +1,8 @@
 import { Humanology } from '../types';
 
-export const STIMULANT: Record<Humanology.Stimulant, string> = {
+export const MOTIVATION: Record<Humanology.Stimulant, string> = {
     uniqueness: 'Уникальность',
-    welfare: 'Благосостояние',
+    wealth: 'Благосостояние',
     status: 'Статус',
     selfSufficiency: 'Самодостаточность',
 };

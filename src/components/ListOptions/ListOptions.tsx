@@ -14,10 +14,11 @@ export const ListOptions: React.FC<Props> = (props) => {
                 props.options.map((item, $i) => {
                     return (
                         <div className={styles.row} key={$i}>
-                            <Text>{item.label}</Text>
-                            <Text color="grey">{item.value}</Text>
+                            <Text tag="b" color="grey" size="smaller">{item.label}</Text>
+                            <Text color="black">{item.value}</Text>
 
-                            <hr className={styles.divinder}/>
+
+                            <hr className={styles.divider}/>
                         </div>
                     );
                 })

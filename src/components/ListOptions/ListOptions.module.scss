@@ -11,16 +11,16 @@
     justify-content: space-between;
 
     &:not(:first-child) {
-        padding-top: $spacing-12;
+        padding-top: $spacing-8;
     }
     &:first-child {
-        padding-top: $spacing-12;
+        padding-top: $spacing-8;
     }
 
     padding-bottom: $spacing-12;
 }
 
-.divinder {
+.divider {
     @include colorElement(--dvd-color);
 
     position: absolute;

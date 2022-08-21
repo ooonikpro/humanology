@@ -22,7 +22,7 @@ export const ROLE: Record<Humanology.Role, Humanology.SignProp> = {
     },
 
     paige: {
-        label: 'Дворецкий',
+        label: 'Паж',
         element: 'air',
     },
 } as const;

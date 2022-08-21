@@ -9,7 +9,7 @@ interface Props {
 
 export const Tag: React.FC<Props> = ({
     sign = 'Unknown',
-    color = 'accent'
+    color = 'accent',
 }) => {
     const rootClasses = [
         styles.root,

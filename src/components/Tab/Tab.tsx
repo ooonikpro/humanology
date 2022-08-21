@@ -14,8 +14,6 @@ export const Tab: React.FC<Props> = ({ path, label }) => {
     const { pathname } = useResolvedPath(path);
     const location = useLocation();
 
-    // Таб начало остается активным… Потому что путь входит в любой путь роутера. Надо сделать исключение… Я не знаю как.
-
     const isActiveRoute = useMatch({ path: pathname }) || location.pathname.includes(pathname);
     const classes = [styles.root, isActiveRoute ? styles.active : ''].join(' ');
     const ref = useRef<HTMLElement>(null);

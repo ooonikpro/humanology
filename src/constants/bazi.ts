@@ -1,52 +1,52 @@
-import { Humanology } from '../types';
+import { Bazi } from '../types/bazi';
 
 // eslint-disable-next-line max-len
-export const CHINESE_HORO: Record<Humanology.ChineseHoroSign, Humanology.SignProp > = {
-    bik: {
+export const BAZI_SIGNS: Record<Bazi.BaziSign, Bazi.SignProp > = {
+    bull: {
         label: 'Бык',
         element: 'earth',
     },
-    drakon: {
+    dragon: {
         label: 'Дракон',
         element: 'air',
     },
-    koza: {
+    goat: {
         label: 'Коза',
         element: 'water',
     },
-    krisa: {
+    rat: {
         label: 'Крыса',
         element: 'air',
     },
-    loshad: {
+    horse: {
         label: 'Лошадь',
         element: 'fire',
     },
-    obezyana: {
+    monkey: {
         label: 'Обезьяна',
         element: 'air',
     },
-    petuh: {
+    chicken: {
         label: 'Петух',
         element: 'earth',
     },
-    sobaka: {
+    dog: {
         label: 'Собака',
         element: 'fire',
     },
-    svinya: {
+    pig: {
         label: 'Свинья',
         element: 'water',
     },
-    tigr: {
+    tiger: {
         label: 'Тигр',
         element: 'fire',
     },
-    zayac: {
+    hare: {
         label: 'Заяц',
         element: 'water',
     },
-    zmeya: {
+    snake: {
         label: 'Змея',
         element: 'earth',
     },

@@ -7,7 +7,7 @@ export default function Disclaimer() {
     return (
         <div className={styles.root}>
             <WhiteCard>
-                <Text tag="h3" size="h3" className={styles.title}>Дисклеймер</Text>
+                <Text tag="h3" size="h3" font="additional" className={styles.title}>Дисклеймер</Text>
                 
                 <Text tag="p" className={styles.text}>
                     Верить, проверять, доверять — дело ваше.

@@ -47,7 +47,7 @@ export { default as FunctionRole } from './FunctionRole';
 export { default as FunctionSuggestive } from './FunctionSuggestive';
 export { default as Humanitarian } from './Humanitarian';
 export { default as Infantile } from './Infantile';
-export { default as Info } from './Info';
+export { default as Help } from './Help';
 export { default as Introvertniy } from './Introvertniy';
 export { default as Irrational1 } from './Irrational1';
 export { default as Irrational2 } from './Irrational2';

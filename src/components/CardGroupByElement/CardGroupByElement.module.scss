@@ -7,7 +7,6 @@
 
     max-width: 48rem;
     padding: $spacing-16 $spacing-4;
-    border-top: 1px solid var(--card-group-color);
 
     &::before {
         position: absolute;
@@ -15,10 +14,7 @@
         right: 0;
         bottom: 0;
         left: 0;
-        background: linear-gradient(
-            180deg, var(--card-group-color) 0,
-            transparent 100%
-        );
+        background: var(--color-basic-white);
         content: '';
         display: block;
         z-index: -1;
@@ -30,7 +26,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: $spacing-16;
+    margin-bottom: $spacing-4;
     column-gap: $spacing-8;
 
     &-title {
