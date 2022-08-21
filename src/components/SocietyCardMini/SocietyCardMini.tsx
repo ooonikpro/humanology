@@ -47,26 +47,26 @@ export const SocietyCardMini: React.FC<Props> = (props) => {
                 <Text
                     font="additional"
                     color="role"
-                    size="h5"
+                    size="h6"
                     className={styles.name}
                 >
                     {props.name}
                 </Text>
 
                 <span className={styles['element-role']}>
-                    <Text tag="p" size="smaller" color="element">
+                    <Text tag="p" size="small" color="element">
                         {text.element}
                     </Text>
     
-                    <Text tag="p" size="smaller" color="role">
+                    <Text tag="p" size="small" color="role">
                         {text.role}
                     </Text>
                 </span>
                 <span className={styles['id-alias']}>
-                    <Text tag="p" size="smaller" color="grey">
+                    <Text tag="p" size="small" color="grey">
                         {props.alias}
                     </Text>
-                    <Text tag="p" size="smaller" color="accent">
+                    <Text tag="p" size="small" color="accent">
                         {props.id}
                     </Text>
                 </span>
