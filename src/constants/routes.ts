@@ -1,12 +1,12 @@
 import { Tabs } from 'src/types';
 
 export const ROUTES = {
-    HOME: '/',
-    SOCIATYPES: (id = ':id') => `/sociatypes/${id}`,
+    HOME: '/types',
+    SOCIATYPES: (id = ':id') => `/type/${id}`,
     SOCIATYPES_CARD: 'card',
     SOCIATYPES_DESCRIPTION: 'description',
     SOCIATYPES_COMPATIBILITY: 'compatibility',
-    MENU: '/menu',
+    START: '/',
     DISCLAIMER: '/disclaimer',
     HISTORY: '/history',
     METABOLISM: '/information-metabolism',
@@ -26,59 +26,64 @@ export const ROUTES = {
 
 export const MAIN_LINKS: Tabs[] = [
     {
+        label: 'Начало',
+        path: ROUTES.START,
+        order: 1,
+    },
+    {
         label: 'Дисклеймер',
         path: ROUTES.DISCLAIMER,
-        order: 11,
+        order: 4,
     },
     {
         label: 'История',
         path: ROUTES.HISTORY,
-        order: 10,
+        order: 5,
     },
     {
         label: 'Информационный метаболизм',
         path: ROUTES.METABOLISM,
-        order: 4,
+        order: 10,
     },
     {
         label: 'Функции',
         path: ROUTES.FUNCTIONS,
-        order: 7,
+        order: 6,
     },
     {
         label: 'Блоки',
         path: ROUTES.BLOCKS,
-        order: 6,
+        order: 7,
     },
     {
         label: 'Аспекты',
         path: ROUTES.ASPECTS,
-        order: 5,
+        order: 8,
     },
     {
         label: 'Карты и масти',
         path: ROUTES.SUITS,
-        order: 3,
+        order: 9,
     },
     {
         label: 'Квадры',
         path: ROUTES.QUADRAS,
-        order: 4,
+        order: 8,
     },
     {
         label: 'Социотипы',
         path: ROUTES.HOME,
-        order: 9,
+        order: 2,
     },
     {
         label: 'Интертипные отношения',
         path: ROUTES.RELATIONSHIPS,
-        order: 8,
+        order: 3,
     },
     {
         label: 'Типы мышления',
         path: ROUTES.MINDSETS,
-        order: 2
+        order: 11
     }
 ];
 
@@ -94,7 +99,7 @@ export const SOCIATYPES_LINKS = (id: string) => [
         order: 2,
     },
     {
-        label: 'Соместимость',
+        label: 'Совместимость',
         path: `${ROUTES.SOCIATYPES(id)}/${ROUTES.SOCIATYPES_COMPATIBILITY}`,
         order: 3,
     },

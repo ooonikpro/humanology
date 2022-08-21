@@ -1,7 +1,7 @@
 @import '../../styles/utils.scss';
 
 .root {
-    position: fixed;
+    position: relative;
     top: 0;
     right: 0;
     left: 50%;
@@ -24,11 +24,6 @@
     margin-bottom: $spacing-8;
     color: inherit;
     overflow: hidden;
-
-    &-small {
-        height: $size-header-section-height-small;
-        margin-top: $spacing-8;
-    }
 }
 
 .icon-wrap {
@@ -55,7 +50,7 @@
 }
 
 .menu {
-    opacity: 0.5;
+    opacity: 1;
 
     @include transition(opacity);
 
@@ -68,10 +63,10 @@
     align-self: flex-start;
     display: flex;
     width: 100%;
-    height: 2.4rem + 1.7rem;
+    height: calc(8.8rem + 18px);
     overflow-x: scroll;
     overflow-y: hidden;
-    column-gap: $spacing-8;
+    column-gap: $spacing-4;
     scroll-behavior: smooth;
 }
 
@@ -92,7 +87,13 @@
 .hr {
     border: 0px;
     margin: 0;
+    margin-bottom: $spacing-4;
     background: var(--color-basic-accent);
     height: 0.1rem;
     opacity: 0.1;
+}
+
+.section-big {
+    overflow: hidden;
+    height: 8.8rem;
 }

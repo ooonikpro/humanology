@@ -21,7 +21,7 @@ export const SocietyCardMini: React.FC<Props> = (props) => {
                     <MultiTag element={props.element} role={props.role} />
                     <Icon
                         name={getIconName(props.mindKey)}
-                        size={{ width: 40, height: 8 }}
+                        size={{ width: 32, height: 6 }}
                         className={styles['mind-key']}
                     />
                 </div>
@@ -29,7 +29,7 @@ export const SocietyCardMini: React.FC<Props> = (props) => {
                 <CircleQuadra
                     element={props.element}
                     gender={props.gender}
-                    size={144}
+                    size={160}
                     className={styles['quadra-img']}
                 />
                 <Person name={props.id} className={styles.person} />

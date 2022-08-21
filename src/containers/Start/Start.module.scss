@@ -1,10 +1,6 @@
 @import '../../styles/utils';
 
-$before-element-width: 1.5rem;
-
-.root {
-
-}
+$before-element-width: 2.4rem;
 
 .card {
     padding-top: 0 !important;
@@ -30,7 +26,7 @@ $before-element-width: 1.5rem;
         content: '';
         display: block;
         height: 1px;
-        background-color: var(--color-basic-black);
+        background-color: var(--color-basic-accent);
         opacity: 0.05;
     }
 }

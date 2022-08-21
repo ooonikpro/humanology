@@ -17,10 +17,10 @@ interface Props {
 }
 
 export const TitleInfo: React.FC<Props> = ({
-    textColor = 'black',
-    textSize = 'h5',
-    iconColor = 'black',
-    iconSize = 16,
+    textColor = 'accent',
+    textSize = 'base',
+    iconColor = 'accent',
+    iconSize = 24,
     align,
     children,
     className,

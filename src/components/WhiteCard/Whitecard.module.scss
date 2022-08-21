@@ -2,7 +2,7 @@
 
 .root {
     position: relative;
-    padding: $spacing-12;
+    padding: $spacing-8;
     border-radius: 2px;
 
     &:before {
@@ -25,7 +25,7 @@
     }
 
     &.small {
-        padding: $spacing-8;
+        padding: $spacing-6;
     }
 }
 

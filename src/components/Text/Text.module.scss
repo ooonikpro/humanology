@@ -48,19 +48,25 @@ h6 {
         --text-line-height: #{$spacing-24};
     }
 
+    &-h4 {
+        --text-size: #{$font-size-h4};
+        --text-line-height: #{$spacing-32};
+    }
+
+
     &-h3 {
         --text-size: #{$font-size-h3};
-        --text-line-height: #{$spacing-24};
+        --text-line-height: #{$spacing-40};
     }
 
     &-h2 {
         --text-size: #{$font-size-h2};
-        --text-line-height: #{$spacing-24};
+        --text-line-height: #{$spacing-48};
     }
 
     &-h1 {
         --text-size: #{$font-size-h1};
-        --text-line-height: #{$spacing-24};
+        --text-line-height: #{$spacing-48};
     }
 }
 

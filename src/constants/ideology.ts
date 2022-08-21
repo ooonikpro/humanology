@@ -2,7 +2,7 @@ import { Humanology } from '../types';
 
 export const IDEOLOGY: Record<Humanology.Ideology, string> = {
     chaoticNeutral: 'Хаотичный нейтральный',
-    chaoticKindly: 'Хаотичный Добрый',
+    chaoticKindly: 'Хаотичный добрый',
     chaoticBad: 'Хаотичный злой',
     lawAbidingNeutral: 'Законопослушный нейтральный',
     lawAbidingBad: 'Законопослушный плохой',

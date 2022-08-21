@@ -18,8 +18,8 @@ export const CardGroupByElement: React.FC<Props> = ({ element, children }) => {
         <div className={styles.root} style={color}>
             <div className={styles.header}>
                 <Tag sign={element} color="element"/>
-                <Text tag="strong" size="h5" color="element" className={styles['header-title']}>{label}</Text>
-                <Icon name="Info" size={18} className={styles['header-icon']}/>
+                <Text tag="strong" size="h4" font="additional" color="element" className={styles['header-title']}>{label}</Text>
+                <Icon name="Info" size={24} className={styles['header-icon']}/>
             </div>
 
             <div className={styles.body}>

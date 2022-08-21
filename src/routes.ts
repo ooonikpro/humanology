@@ -13,12 +13,12 @@ export interface Route {
 export const routes: Route[] = [
     {
         path: ROUTES.HOME,
-        index: true,
         container: () => import('./containers/Home'),
     },
     {
-        path: ROUTES.MENU,
-        container: () => import('./containers/Menu')
+        path: ROUTES.START,
+        index: true,
+        container: () => import('./containers/Start')
     },
     {
         path: ROUTES.SOCIATYPES(),

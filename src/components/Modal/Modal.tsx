@@ -67,7 +67,9 @@ export const Modal: React.FC<Props> = ({ isOpen, render, onClose }) => {
             <div className={styles.bg} onClick={closeModal} />
 
             <WhiteCard className={styles.container}>
-                <div className={styles.drag} onClick={closeModal}></div>
+                <div className={styles['top-background']}>
+                    <div className={styles.drag} onClick={closeModal} />
+                </div>
                 {render(closeModal)}
             </WhiteCard>
         </div>

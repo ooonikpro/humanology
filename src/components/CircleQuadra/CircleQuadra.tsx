@@ -5,7 +5,7 @@ import { Icon, getIconName } from '../Icon';
 interface Props {
     element: Humanology.Elements;
     gender: Humanology.Gender;
-    size: 96 | 144 | 160;
+    size: number;
     className: string
 }
 

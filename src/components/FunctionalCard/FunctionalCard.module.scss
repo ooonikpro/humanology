@@ -19,12 +19,14 @@
     &.size {
         &-xl,
         &-m {
-            min-width: 19.2rem;
+            flex-grow: 1;
+            width: 19.2rem;
         }
 
         &-l,
         &-s {
-            min-width: 12rem;
+            flex-grow: 1;
+            width: 12rem;
         }
 
         &-xl,

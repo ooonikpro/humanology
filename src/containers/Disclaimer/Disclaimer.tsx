@@ -14,7 +14,7 @@ export default function Disclaimer() {
                 </Text>
 
                 <Text tag="h6" size="h6" className={styles.text}>
-                    Все что тут написано, собрано в интернете и авторски переработано.
+                    Все что тут написано, собрано в интернете <br /> и авторски переработано.
                 </Text>
 
                 <Text tag="p" className={styles.text}>
@@ -37,11 +37,11 @@ export default function Disclaimer() {
                 </Text>
 
                 <Text tag="p" color="accent" className={styles.text}>
-                    Кроме того, есть люди с менее уравновешенной психикой. Это те, чье окружение образовано из людей с неподходящими типами.
+                    Кроме того, есть люди с менее уравновешенной психикой.<br /> Это те, чье окружение образовано из людей с неподходящими типами.
                 </Text>
 
                 <Text tag="p" color="accent" className={styles.text}>
-                    Есть люди с более уравновешенной психикой. Чье окружение образовано из людей с подходящими типами.
+                    Есть люди с более уравновешенной психикой.<br /> Чье окружение образовано из людей с подходящими типами.
                 </Text>
 
                 <Text tag="h6" size="h6" color="accent" className={styles.text}>
@@ -71,10 +71,13 @@ export default function Disclaimer() {
                 <hr />
 
                 <Text tag="p" className={styles.text}>
-                    Все претензии по оскорблению чувств верующих в науку, желательно в развернутом виде, принимаются на электронную почту <a href="mailto:feedback@humanology.app">feedback@humanology.app</a>. Если вы нашли ошибку или неточность — напишите, пожалуйста, туда же.
+                    Все претензии по оскорблению чувств верующих в науку, желательно в развернутом виде, принимаются на электронную почту <a href="mailto:feedback@humanology.app">feedback@humanology.app</a>.
                 </Text>
 
-
+                <Text tag="p" className={styles.text}>
+                    Если вы нашли ошибку или неточность — напишите, пожалуйста, туда же.
+                </Text>
+                
             </WhiteCard>
         </div>
     );

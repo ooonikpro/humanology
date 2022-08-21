@@ -24,7 +24,7 @@ export const ASPECTS_LABEL: Record<Humanology.Aspect, string> = {
 
 export const ASPECTS_GROUPS: Array<{ title: string; subtitle: string; aspects: Humanology.Aspect[] }> = [
     {
-        title: 'Обьекты',
+        title: 'Объекты',
         subtitle: 'Логика',
         aspects: ['business', 'logic']
     },

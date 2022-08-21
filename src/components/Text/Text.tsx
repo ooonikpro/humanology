@@ -3,7 +3,7 @@ import styles from './Text.module.scss';
 
 export type Props<T extends keyof JSX.IntrinsicElements> = {
     tag?: T;
-    size?: 'base' | 'small' | 'smaller' | 'h6' | 'h5' | 'h3' | 'h2' | 'h1';
+    size?: 'base' | 'small' | 'smaller' | 'h6' | 'h5' | 'h4' | 'h3' | 'h2' | 'h1';
     color?: 'black' | 'white' | 'accent' | 'grey' | 'element' | 'role';
     font?: 'base' | 'additional';
     markerColor?: 'element' | 'role';

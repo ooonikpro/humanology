@@ -19,7 +19,8 @@
         right: 0;
         bottom: 0;
         left: 0;
-        height: 2.4rem;
+        height: 4.8rem;
+        z-index: -1;
         display: block;
         content: '';
         background: radial-gradient(
@@ -39,13 +40,16 @@
 
 .quadra-img {
     position: absolute;
-    left: 20%;
-    bottom: $spacing-2;
+    left: 50%;
+    transform: translateX(-50%);
+    top: $spacing-8;
     opacity: 0.25;
 }
 
 .person {
     position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     right: $spacing-12;
     bottom: 0;
     width: 11.2rem;

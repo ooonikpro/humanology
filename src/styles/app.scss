@@ -13,7 +13,8 @@ hr {
 
 :root {
     font-size: 62.5%;
-    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: subpixel-antialiased;
     height: 100vh;
 
     // @media screen and (min-width: 992px) {
@@ -23,7 +24,7 @@ hr {
 
 html,
 body {
-    overflow-y: auto;
+    overflow-y: scroll;
     overflow-x: hidden;
 }
 
@@ -68,7 +69,6 @@ body {
     min-width: 36rem;
     min-height: 100vh;
     margin: auto;
-    padding-top: $size-header-height;
     padding-bottom: calc(#{$spacing-4} - #{$spacing-8});
 }
 

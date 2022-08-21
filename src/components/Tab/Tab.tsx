@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect } from 'react';
+import React, { useCallback } from 'react';
 import { useRef } from 'react';
 import { useLocation, useMatch, useNavigate, useResolvedPath } from 'react-router-dom';
 import { Text } from 'src/components/Text';
@@ -14,26 +14,19 @@ export const Tab: React.FC<Props> = ({ path, label }) => {
     const { pathname } = useResolvedPath(path);
     const location = useLocation();
 
+    // Таб начало остается активным… Потому что путь входит в любой путь роутера. Надо сделать исключение… Я не знаю как.
+
     const isActiveRoute = useMatch({ path: pathname }) || location.pathname.includes(pathname);
     const classes = [styles.root, isActiveRoute ? styles.active : ''].join(' ');
     const ref = useRef<HTMLElement>(null);
 
-    const scrollIntoView = useCallback(() => {
-        ref.current && ref.current.scrollIntoView({ inline: 'center' });
-    }, [ref]);
     const onClick = useCallback(() => goTo(path), [path]);
-
-    useEffect(() => {
-        if (isActiveRoute) {
-            scrollIntoView();
-        }
-    }, [isActiveRoute]);
 
     return (
         <Text
             ref={ref}
             tag="button"
-            size="small"
+            size="smaller"
             color="accent"
             className={classes}
             onClick={onClick}
