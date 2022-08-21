@@ -32,8 +32,6 @@ export const FunctionalCardRow: React.FC<Props> = ({
                 onClick={() => onClickLeft(items[0])}
             />
 
-            <span className={styles.divinder} />
-
             <FunctionalCard
                 {...items[1]}
                 onClick={() => onClickRight(items[1])}

@@ -39,7 +39,7 @@ $before-element-width: 1.5rem;
     position: relative;
     width: 100%;
     display: block;
-    padding: $spacing-3 $spacing-4 $spacing-3 calc(#{$spacing-4} + #{$before-element-width});
+    padding: $spacing-16 $spacing-4 $spacing-16 calc(#{$spacing-4} + #{$before-element-width});
     cursor: pointer;
     z-index: 1;
 

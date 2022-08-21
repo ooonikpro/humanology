@@ -5,7 +5,7 @@
 
     position: relative;
     min-height: 100px;
-    padding: $spacing-3 $spacing-3 0;
+    padding: $spacing-16 $spacing-16 0;
     border-top: 1px solid var(--card-group-color);
 
     &::before {
@@ -29,8 +29,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: $spacing-3;
-    column-gap: $spacing-2;
+    margin-bottom: $spacing-16;
+    column-gap: $spacing-12;
 
     &-title {
         margin-right: auto;
@@ -45,6 +45,6 @@
 .body {
     display: flex;
     flex-wrap: wrap;
-    column-gap: $spacing-1;
-    row-gap: $spacing-1;
+    column-gap: $spacing-8;
+    row-gap: $spacing-8;
 }

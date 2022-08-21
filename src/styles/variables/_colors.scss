@@ -1,18 +1,18 @@
 $color-elements: (
-    'air'  : #c031b2,
-    'fire' : #d16121,
-    'water': #2083cb,
-    'earth': #308415
+    'air'  : #de64d2,
+    'fire' : #ea5c3d,
+    'water': #2992de,
+    'earth': #559d3e
 );
 
 :root {
     --color-basic-white    : #fff;
-    --color-basic-biege    : #faf5ec;
-    --color-basic-black    : #230000;
-    --color-basic-accent   : #a35736;
+    --color-basic-beige    : #f9f5f2;
+    --color-basic-black    : #202322;
+    --color-basic-accent   : #6b360d;
     --color-basic-greener  : #d7dd93;
     --color-basic-pink     : #f6c0b1;
-    --color-basic-turquoise: #d6d1c5;
+    --color-basic-turquoise: #b6d1c5;
     --color-basic-yellow   : #fece30;
 
     --color-elements-air   : #{map-get($color-elements, 'air')};

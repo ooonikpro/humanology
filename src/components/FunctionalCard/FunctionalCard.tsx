@@ -83,7 +83,7 @@ export const FunctionalCard: React.FC<Props> = (props) => {
                     size={24}
                     className={styles.function}
                 />
-                <Text color={textColor} size="h5">
+                <Text color={textColor} font="additional" size="h5">
                     {aspectLabel}
                 </Text>
             </div>

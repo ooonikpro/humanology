@@ -1,6 +1,6 @@
 export namespace Humanology {
     export type Gender = 'male' | 'female';
-    export type Elements = 'fire' | 'air' | 'earth' | 'water';
+    export type Elements = 'air' | 'fire' | 'earth' | 'water';
     export type HoroSign =
         | 'oven'
         | 'telets'
@@ -27,7 +27,7 @@ export namespace Humanology {
         | 'tigr'
         | 'zayac'
         | 'zmeya';
-    export type Role = 'knight' | 'king' | 'queen' | 'butler' | 'lady';
+    export type Role = 'knight' | 'king' | 'queen' | 'paige' | 'lady';
     export type Psychotype = 'infantile' | 'aggressor' | 'care' | 'victim';
     export type Tarot = 'swords' | 'pentacles' | 'cups' | 'wands';
     export type Club = 'scientific' | 'practice' | 'social' | 'humanitarian';

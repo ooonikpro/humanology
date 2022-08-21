@@ -57,7 +57,7 @@ export const INTERTYPES: Record<Humanology.Intertype, Humanology.IntertypeProp> 
         alias: 'Дюма',
         mindKey: 'irrational-2',
         mind: 'algorithmic',
-        name: 'Димпломат',
+        name: 'Дипломат',
         gender: 'female',
         club: 'social',
         tarot: 'cups', // масть
@@ -153,7 +153,7 @@ export const INTERTYPES: Record<Humanology.Intertype, Humanology.IntertypeProp> 
 
     INTJ: {
         element: 'air',
-        role: 'butler',
+        role: 'paige',
         alias: 'Робеспьер',
         mindKey: 'rational-1',
         mind: 'holographic',
@@ -303,7 +303,7 @@ export const INTERTYPES: Record<Humanology.Intertype, Humanology.IntertypeProp> 
 
     INFP: {
         element: 'fire',
-        role: 'butler',
+        role: 'paige',
         alias: 'Есенин',
         mindKey: 'irrational-1',
         mind: 'vortical',
@@ -403,7 +403,7 @@ export const INTERTYPES: Record<Humanology.Intertype, Humanology.IntertypeProp> 
 
     INTP: {
         element: 'water',
-        role: 'butler',
+        role: 'paige',
         alias: 'Бальзак',
         mindKey: 'irrational-1',
         mind: 'algorithmic',
@@ -653,7 +653,7 @@ export const INTERTYPES: Record<Humanology.Intertype, Humanology.IntertypeProp> 
 
     INFJ: {
         element: 'earth',
-        role: 'butler',
+        role: 'paige',
         alias: 'Достоевский',
         mindKey: 'rational-1',
         mind: 'casual',

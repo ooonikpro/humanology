@@ -9,9 +9,9 @@
     width: 100%;
     max-width: 48rem;
     height: $size-header-height;
-    background-color: var(--color-basic-biege);
+    background-color: var(--color-basic-beige);
     color: var(--color-basic-black);
-    padding: $spacing-2 $spacing-1 0 $spacing-1;
+    padding: $spacing-8 $spacing-4 0 $spacing-4;
     z-index: 2;
 }
 
@@ -21,18 +21,13 @@
     justify-content: space-between;
     width: 100%;
     height: $size-header-section-height;
-    margin-bottom: $spacing-1;
+    margin-bottom: $spacing-8;
     color: inherit;
     overflow: hidden;
 
-    &-white {
-        background-color: var(--color-basic-white);
-        border-radius: 2px;
-        opacity: 0.5;
-    }
-
-    &-name {
-        margin-right: auto;
+    &-small {
+        height: $size-header-section-height-small;
+        margin-top: $spacing-8;
     }
 }
 
@@ -60,12 +55,7 @@
 }
 
 .menu {
-    width: $size-header-section-height;
-    height: $size-header-section-height;
-    background-color: var(--color-basic-white);
-    border-radius: 2px;
     opacity: 0.5;
-    margin-right: $spacing-1;
 
     @include transition(opacity);
 
@@ -81,6 +71,28 @@
     height: 2.4rem + 1.7rem;
     overflow-x: scroll;
     overflow-y: hidden;
-    column-gap: $spacing-1;
+    column-gap: $spacing-8;
     scroll-behavior: smooth;
+}
+
+.pair-icons {
+    width:fit-content;
+    display: flex;
+    flex-direction: row;
+    gap: $spacing-12;
+}
+
+.pair-icon-text {
+    width:fit-content;
+    display: flex;
+    flex-direction: row;
+    gap: $spacing-2;
+}
+
+.hr {
+    border: 0px;
+    margin: 0;
+    background: var(--color-basic-accent);
+    height: 0.1rem;
+    opacity: 0.1;
 }

@@ -34,6 +34,7 @@ export const Tab: React.FC<Props> = ({ path, label }) => {
             ref={ref}
             tag="button"
             size="small"
+            color="accent"
             className={classes}
             onClick={onClick}
         >

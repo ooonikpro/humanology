@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { SVGProps } from 'react';
 
-const SvgButler = (props: SVGProps<SVGSVGElement>) => (
+const SvgPaige = (props: SVGProps<SVGSVGElement>) => (
     <svg
         width="1em"
         height="1em"
@@ -19,4 +19,4 @@ const SvgButler = (props: SVGProps<SVGSVGElement>) => (
     </svg>
 );
 
-export default SvgButler;
+export default SvgPaige;

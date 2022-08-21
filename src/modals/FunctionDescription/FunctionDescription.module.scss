@@ -5,7 +5,7 @@
 }
 
 .title-icon {
-    margin-right: $spacing-1;
+    margin-right: $spacing-8;
 }
 
 .aspect-details {
@@ -19,12 +19,12 @@
 
     &-text {
         flex-direction: column;
-        row-gap: $spacing-0;
+        row-gap: $spacing-4;
     }
 }
 
 .icon-mini {
     position: absolute;
-    top: $spacing-1;
-    left: $spacing-0;
+    top: $spacing-8;
+    left: $spacing-4;
 }

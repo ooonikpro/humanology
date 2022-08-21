@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import styles from './Quadras.module.scss';
 import { Text } from '../../components/Text';
 import { WhiteCard } from '../../components/WhiteCard';
-import { Props as QuadraCardProps, QuadraCard } from '../../components/QudraCard';
+import { Props as QuadraCardProps, QuadraCard } from '../../components/QuadraCard';
 
 const QUADRAS_DATA: Array<Omit<QuadraCardProps, 'onClick'>> = [
     {

@@ -11,10 +11,13 @@
     justify-content: space-between;
 
     &:not(:first-child) {
-        padding-top: $spacing-1;
+        padding-top: $spacing-12;
+    }
+    &:first-child {
+        padding-top: $spacing-12;
     }
 
-    padding-bottom: $spacing-0;
+    padding-bottom: $spacing-12;
 }
 
 .divinder {

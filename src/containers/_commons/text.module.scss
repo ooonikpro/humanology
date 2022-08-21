@@ -1,21 +1,22 @@
-@import '../../styles/utils';
+@import '../../styles/utils.scss';
 
 .root {
     display: flex;
     flex-direction: column;
-    gap: $spacing-1;
+    gap: $spacing-4;
 }
 
 .title {
-    margin-bottom: $spacing-4;
+    margin-top: $spacing-12;
+    margin-bottom: $spacing-24;
 }
 
 .mb8 {
-    margin-bottom: $spacing-1;
+    margin-bottom: $spacing-8;
 }
 
 .text:not(:last-child), hr {
-    margin-bottom: $spacing-3;
+    margin-bottom: $spacing-12;
 }
 
 .grower {
@@ -23,5 +24,6 @@
 }
 
 hr {
-    margin-top: $spacing-3;
+    margin-top: $spacing-32;
+    margin-bottom: $spacing-16;
 }

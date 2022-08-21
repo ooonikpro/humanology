@@ -7,7 +7,7 @@ export default function Blocks() {
     return (
         <div className={styles.root}>
             <WhiteCard>
-                <Text tag="h3" size="h3" className={styles.title}>Блоки Функций</Text>
+                <Text tag="h3" size="h3" className={styles.title}>Блоки функций</Text>
 
                 <Text tag="p" size="h6" className={styles.text}>
                     Каждая функция работает с определенным аспектом жизни.

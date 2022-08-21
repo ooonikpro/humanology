@@ -10,7 +10,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: $spacing-3 0;
+    padding: $spacing-12 0;
 
     &:after {
         position: absolute;
@@ -31,7 +31,7 @@
 }
 
 .icon {
-    margin-right: $spacing-1;
+    margin-right: $spacing-8;
 }
 
 .sublabel {

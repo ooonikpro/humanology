@@ -48,10 +48,10 @@ export const SocietyCard: React.FC<Props> = (props) => {
                     ].join(' ')}
                 >
                     <div className={styles['params-line']}>
-                        <Text tag="b" size="small">
+                        <Text tag="b" size="small" color="accent">
                             {text.id}
                         </Text>
-                        <Text tag="b" size="small">
+                        <Text tag="b" size="small" color="accent">
                             {text.alias}
                         </Text>
                         {!props.mini && (
@@ -89,6 +89,7 @@ export const SocietyCard: React.FC<Props> = (props) => {
                         element={props.element}
                         gender={props.gender}
                         className={styles.quadra}
+                        size={144}
                     />
                 )}
 
@@ -96,7 +97,7 @@ export const SocietyCard: React.FC<Props> = (props) => {
                 <Text
                     font="additional"
                     color="role"
-                    size="h1"
+                    size="h3"
                     className={styles.name}
                 >
                     {text.name}

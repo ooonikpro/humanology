@@ -29,7 +29,7 @@ export const DATA_ROLES: DataRoleItem[] = [
         ],
     },
     {
-        role: 'butler',
+        role: 'paige',
         status: 'Самодостаточность',
         title: 'Пажи',
         types: ['Интроверты', 'Интуиты', 'Предусмотрительные'],

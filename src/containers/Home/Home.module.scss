@@ -3,13 +3,13 @@
 .root {
     display: flex;
     flex-direction: column;
-    row-gap: $spacing-6;
-    margin-left: -$spacing-1;
-    margin-right: -$spacing-1;
+    row-gap: $spacing-32;
+    margin-left: -$spacing-8;
+    margin-right: -$spacing-8;
 }
 
 .link {
-    width: calc(50% - #{calc($spacing-1 / 2)});
+    width: calc(50% - #{calc($spacing-8 / 2)});
     min-width: 16rem;
     text-decoration: none;
 }

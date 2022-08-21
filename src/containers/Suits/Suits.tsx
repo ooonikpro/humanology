@@ -142,7 +142,7 @@ export default function Suits() {
                 </TextInline>
             </WhiteCard>
 
-            <WhiteCard color="biege">
+            <WhiteCard color="beige">
                 <Text tag="h3" size="h3">
                     Карты
                 </Text>
@@ -152,7 +152,7 @@ export default function Suits() {
                 return <CardRole {...role} key={$i} onClick={goToSuitsCard(role.role)} />;
             })}
 
-            <WhiteCard color="biege">
+            <WhiteCard color="beige">
                 <Text tag="h3" size="h3">
                     Масти
                 </Text>

@@ -3,7 +3,7 @@
 .root {
     display: flex;
     flex-direction: column;
-    height: 19.2rem;
+    height: 20.8rem;
     overflow: hidden;
     text-decoration: none;
     outline: none;
@@ -39,17 +39,17 @@
 
 .quadra-img {
     position: absolute;
-    left: 0;
-    bottom: $spacing-1;
+    left: 20%;
+    bottom: $spacing-2;
     opacity: 0.25;
 }
 
 .person {
     position: absolute;
-    right: 0;
+    right: $spacing-12;
     bottom: 0;
-    width: 11rem;
-    height: 11rem;
+    width: 11.2rem;
+    height: 11.2rem;
 }
 
 .mind-key {
@@ -59,8 +59,8 @@
 .footer {
     display: flex;
     flex-wrap: wrap;
-    padding-top: $spacing-1;
-    gap: $spacing-1;
+    padding-top: $spacing-8;
+    gap: $spacing-8;
 }
 
 .name {

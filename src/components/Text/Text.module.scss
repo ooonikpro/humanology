@@ -25,42 +25,42 @@ h6 {
 .size {
     &-small {
         --text-size: #{$font-size-small};
-        --text-line-height: #{$spacing-3};
+        --text-line-height: #{$spacing-16};
     }
 
     &-smaller {
         --text-size: #{$font-size-smaller};
-        --text-line-height: #{$spacing-3};
+        --text-line-height: #{$spacing-16};
     }
 
     &-base {
         --text-size: #{$font-size-base};
-        --text-line-height: #{$spacing-4};
+        --text-line-height: #{$spacing-20};
     }
 
     &-h6 {
         --text-size: #{$font-size-h6};
-        --text-line-height: #{$spacing-5};
+        --text-line-height: #{$spacing-24};
     }
 
     &-h5 {
         --text-size: #{$font-size-h5};
-        --text-line-height: #{$spacing-5};
+        --text-line-height: #{$spacing-24};
     }
 
     &-h3 {
         --text-size: #{$font-size-h3};
-        --text-line-height: #{$spacing-5};
+        --text-line-height: #{$spacing-24};
     }
 
     &-h2 {
         --text-size: #{$font-size-h2};
-        --text-line-height: #{$spacing-5};
+        --text-line-height: #{$spacing-24};
     }
 
     &-h1 {
         --text-size: #{$font-size-h1};
-        --text-line-height: #{$spacing-5};
+        --text-line-height: #{$spacing-24};
     }
 }
 
@@ -78,6 +78,7 @@ h6 {
     }
 
     &-grey {
+        --text-color: var(--color-basic-accent);
         opacity: 0.5;
     }
 
@@ -118,11 +119,11 @@ strong.root {
 ul.root {
     position: relative;
     list-style: none;
-    padding-left: $spacing-1;
+    padding-left: $spacing-8;
 
     li {
-        padding-left: $spacing-3;
-        margin-bottom: $spacing-2;
+        padding-left: $spacing-16;
+        margin-bottom: $spacing-12;
 
         &::before {
             --color-li-marker: var(--color-basic-black);
@@ -134,8 +135,8 @@ ul.root {
             content: '';
             width: 0.8rem;
             height: 0.8rem;
-            margin-top: $spacing-1;
-            margin-right: $spacing-3;
+            margin-top: $spacing-8;
+            margin-right: $spacing-16;
             border-radius: 50%;
             opacity: 0.25;
             background-color: var(--color-li-marker);

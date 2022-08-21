@@ -12,9 +12,9 @@ export const MultiTag: React.FC<Props> = ({ element, role }) => {
     return (
         <div className={styles.root}>
             <div className={styles.content}>
-                <Icon name={getIconName(element)} color="element" className={styles.icon} size={16} />
+                <Icon name={getIconName(element)} color="element" className={styles.icon} size={24} />
                 <span className={styles.divider}></span>
-                <Icon name={getIconName(role)} color="role" className={styles.icon} size={16} />
+                <Icon name={getIconName(role)} color="role" className={styles.icon} size={24} />
             </div>
         </div>
     );

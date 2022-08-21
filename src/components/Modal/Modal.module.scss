@@ -1,9 +1,10 @@
 @import '../../styles/utils.scss';
 
-$transition-duration: 250ms;
+$transition-duration: 100ms;
 
 .root {
     position: fixed;
+    justify-content: center;
     top: 0;
     right: 0;
     bottom: 0;
@@ -29,7 +30,7 @@ $transition-duration: 250ms;
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: var(--color-basic-biege);
+    background-color: var(--color-basic-beige);
     opacity: 0;
     z-index: 0;
 }
@@ -37,17 +38,19 @@ $transition-duration: 250ms;
 .container {
     @include transition(transform);
     position: absolute;
-    right: $spacing-1;
-    bottom: $spacing-1;
-    left: $spacing-1;
-    height: 82vh;
+    bottom: $spacing-4;
+    left: $spacing-4;
+    right: $spacing-4;
+    margin-left: auto;
+    margin-right: auto;
+    height: 88vh;
+    max-width: 48rem;
     padding-top: 2.8rem;
-    padding-bottom: 0;
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px;
+    padding-bottom: $spacing-4;
+    border-radius: 2px;
     z-index: 1;
     cursor: auto;
-    transform: translateY(calc(100% + #{$spacing-1}));
+    transform: translateY(calc(100% + #{$spacing-8}));
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -55,7 +58,7 @@ $transition-duration: 250ms;
 
 .drag {
     position: absolute;
-    top: $spacing-1;
+    top: $spacing-8;
     left: 50%;
     transform: translateX(-50%);
     width: 9.5rem;

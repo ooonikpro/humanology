@@ -1,31 +1,25 @@
+@import '../../styles/utils.scss';
+
 .root {
     display: inline-flex;
-    height: 2rem;
-    padding: 1px;
-    border-radius: 4px;
-    background-clip: border-box;
-    background: linear-gradient(
-                    to right,
-                    var(--color-element),
-                    var(--color-role)
-    );
+    height: 2.4rem;
 }
 
 .content {
     display: inline-flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--color-basic-white);
-    border-radius: 3px;
 }
 
 .divider {
     width: 1px;
-    height: 1.2rem;
-    background-color: var(--color-basic-black);
+    height: 1.6rem;
+    margin-left: $spacing-4;
+    margin-right: $spacing-4;
+    background-color: var(--color-basic-accent);
     opacity: .1;
 }
 
 .icon {
-    margin: 0.1rem 0.4rem;
+    gap: $spacing-4;
 }

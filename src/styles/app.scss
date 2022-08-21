@@ -16,9 +16,9 @@ hr {
     -webkit-font-smoothing: antialiased;
     height: 100vh;
 
-    @media screen and (min-width: 992px) {
-        font-size: 100%;
-    }
+    // @media screen and (min-width: 992px) {
+    //     font-size: 100%;
+    // }
 }
 
 html,
@@ -47,15 +47,15 @@ html.no-scroll {
 }
 
 body {
-    background-color: var(--color-basic-biege);
+    background-color: var(--color-basic-beige);
 
     &::-webkit-scrollbar {
-        width: 5px;
+        width: 4px;
     }
 
     &::-webkit-scrollbar-thumb {
-        border: 1px solid var(--color-basic-biege);
-        border-radius: 10px;
+        border: 1px solid var(--color-basic-beige);
+        border-radius: 6px;
         background-color: rgba(#000, 0.5);
     }
 }
@@ -69,7 +69,7 @@ body {
     min-height: 100vh;
     margin: auto;
     padding-top: $size-header-height;
-    padding-bottom: calc(#{$spacing-4} - #{$spacing-1});
+    padding-bottom: calc(#{$spacing-4} - #{$spacing-8});
 }
 
 @include fullscreen {
@@ -81,6 +81,6 @@ body {
     #app {
         min-height: initial;
         height: 100vh;
-        padding-bottom: calc(#{$spacing-6} - #{$spacing-1});
+        padding-bottom: calc(#{$spacing-32} - #{$spacing-8});
     }
 }

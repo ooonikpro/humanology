@@ -4,16 +4,10 @@
     @include colorElement(--line-color);
 
     display: flex;
-    column-gap: $spacing-0;
+    column-gap: $spacing-4;
     cursor: pointer;
 
     &:nth-child(2) {
-        margin-bottom: $spacing-1;
+        margin-bottom: $spacing-12;
     }
-}
-
-.divinder {
-    width: 0;
-    border-left: 1px dashed var(--line-color);
-    opacity: 0.5;
 }

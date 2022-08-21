@@ -21,7 +21,7 @@ export const ROLE: Record<Humanology.Role, Humanology.SignProp> = {
         element: 'earth',
     },
 
-    butler: {
+    paige: {
         label: 'Дворецкий',
         element: 'air',
     },

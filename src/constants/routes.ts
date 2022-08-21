@@ -28,57 +28,57 @@ export const MAIN_LINKS: Tabs[] = [
     {
         label: 'Дисклеймер',
         path: ROUTES.DISCLAIMER,
-        order: 9,
+        order: 11,
     },
     {
         label: 'История',
         path: ROUTES.HISTORY,
-        order: 7,
+        order: 10,
     },
     {
         label: 'Информационный метаболизм',
         path: ROUTES.METABOLISM,
-        order: 8,
+        order: 4,
     },
     {
         label: 'Функции',
         path: ROUTES.FUNCTIONS,
-        order: 2,
+        order: 7,
     },
     {
         label: 'Блоки',
         path: ROUTES.BLOCKS,
-        order: 3,
+        order: 6,
     },
     {
         label: 'Аспекты',
         path: ROUTES.ASPECTS,
-        order: 4,
+        order: 5,
     },
     {
         label: 'Карты и масти',
         path: ROUTES.SUITS,
-        order: 6,
+        order: 3,
     },
     {
         label: 'Квадры',
         path: ROUTES.QUADRAS,
-        order: 5,
+        order: 4,
     },
     {
         label: 'Социотипы',
         path: ROUTES.HOME,
-        order: 1,
+        order: 9,
     },
     {
         label: 'Интертипные отношения',
         path: ROUTES.RELATIONSHIPS,
-        order: 6,
+        order: 8,
     },
     {
         label: 'Типы мышления',
         path: ROUTES.MINDSETS,
-        order: 6
+        order: 2
     }
 ];
 

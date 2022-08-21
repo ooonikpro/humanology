@@ -3,13 +3,13 @@
 .card {
     flex: 1 1 50%;
     position: relative;
-    padding: $spacing-3;
-    background-color: var(--color-basic-biege);
+    padding: $spacing-16;
+    background-color: var(--color-basic-beige);
     cursor: pointer;
 
     .mini-icon {
         position: absolute;
-        top: $spacing-3;
-        right: $spacing-3;
+        top: $spacing-16;
+        right: $spacing-16;
     }
 }

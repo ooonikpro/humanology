@@ -18,7 +18,7 @@ export const Tag: React.FC<Props> = ({
 
     return (
         <div className={rootClasses}>
-            <Icon name={getIconName(sign)} color={color} size={{ width: 24, height: 20 }}/>
+            <Icon name={getIconName(sign)} color={color} size={{ width: 24, height: 24 }}/>
         </div>
     );
 };
