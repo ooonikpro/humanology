@@ -1,6 +1,6 @@
-import { Humanology } from '../types';
+import { Socionics } from '../types';
 
-export const INTERTYPES: Record<Humanology.Intertype, Humanology.IntertypeProp> = {
+export const INTERTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp> = {
     ENTP: {
         element: 'air',
         role: 'knight',

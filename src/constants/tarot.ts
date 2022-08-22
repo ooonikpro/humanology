@@ -1,6 +1,6 @@
-import { Humanology } from '../types';
+import { Socionics } from '../types';
 
-export const TAROT: Record<Humanology.Tarot, string> = {
+export const TAROT: Record<Socionics.Tarot, string> = {
     swords: 'Мечи',
     pentacles: 'Пентакли',
     cups: 'Кубки',

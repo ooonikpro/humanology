@@ -1,5 +1,5 @@
 import React from 'react';
-import { Humanology } from '../types';
+import { Socionics } from '../types';
 import { ROLE } from '../constants/role';
 
 export type UserColorRole = {
@@ -7,7 +7,7 @@ export type UserColorRole = {
     color: React.CSSProperties
 }
 
-export const useColorRole = (role: Humanology.Role): UserColorRole => {
+export const useColorRole = (role: Socionics.Role): UserColorRole => {
     return {
         label: ROLE[role].label,
         color: {

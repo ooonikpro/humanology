@@ -1,12 +1,12 @@
 import React from 'react';
 import styles from './SimpleFunctionCard.module.scss';
-import { Humanology } from 'src/types';
+import { Socionics } from 'src/types';
 import { getIconName, Icon } from '../Icon';
 import { FUNCTION } from 'src/constants/functions';
 import { Text } from '../Text';
 
 export interface Props {
-    function: Humanology.Function;
+    function: Socionics.Function;
 }
 
 interface ICardSettings {
@@ -17,7 +17,7 @@ interface ICardSettings {
     size: 'xl' | 'l' | 'm' | 's';
 }
 
-const SETTINGS: Record<Humanology.Function, ICardSettings> = {
+const SETTINGS: Record<Socionics.Function, ICardSettings> = {
     base: {
         opacity: 1,
         transparent: false,

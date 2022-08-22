@@ -7,10 +7,10 @@ import { Text } from '../Text';
 import { WhiteCard } from '../WhiteCard';
 import { useColorElement } from '../../hooks';
 import { QUADRAS } from '../../constants/natureElements';
-import { Humanology } from '../../types';
+import { Socionics } from '../../types';
 
 export interface Props {
-    element: Humanology.Elements;
+    element: Socionics.Quadras;
     onClick: () => void;
     status: string;
     types: string[];

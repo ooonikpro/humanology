@@ -4,11 +4,11 @@ import { WhiteCard } from '../../components/WhiteCard';
 import { Text } from '../../components/Text';
 import { TextInline } from '../../components/TextInline';
 import { getIconName, Icon } from '../../components/Icon';
-import { Humanology } from '../../types';
+import { Socionics } from '../../types';
 import { ASPECTS, ASPECTS_GROUPS, ASPECTS_LABEL } from '../../constants/aspects';
 import { useNavigate } from 'react-router-dom';
 
-const AspectCard: React.FC<{ aspect: Humanology.Aspect; onClick: () => void; }> = ({ aspect, onClick }) => {
+const AspectCard: React.FC<{ aspect: Socionics.Aspect; onClick: () => void; }> = ({ aspect, onClick }) => {
     const aspectIconMini = getIconName(`aspect-${aspect}-mini`);
     const aspectIcon = getIconName(`aspect-${aspect}`);
     const aspectTitle = ASPECTS[aspect];

@@ -1,6 +1,6 @@
-import { Humanology } from '../types';
+import { Socionics } from '../types';
 
-export const MOTIVATION: Record<Humanology.Stimulant, string> = {
+export const MOTIVATION: Record<Socionics.Stimulant, string> = {
     uniqueness: 'Уникальность',
     wealth: 'Благосостояние',
     status: 'Статус',

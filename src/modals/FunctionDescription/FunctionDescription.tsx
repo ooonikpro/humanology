@@ -6,13 +6,13 @@ import { Text } from 'src/components/Text';
 import { TitleInfo } from 'src/components/TitleInfo';
 import { ASPECTS, ASPECTS_LABEL } from 'src/constants/aspects';
 import { FUNCTION } from 'src/constants/functions';
-import { Humanology } from 'src/types';
+import { Socionics } from 'src/types';
 import { useSwipeable } from 'react-swipeable';
 
 interface Props extends ModalProps {
-    function: Humanology.Function;
-    aspect: Humanology.Aspect;
-    intertype: Humanology.Intertype;
+    function: Socionics.Function;
+    aspect: Socionics.Aspect;
+    intertype: Socionics.SocionicsType;
 }
 
 export const FunctionDescription: React.FC<Props> = (props) => {

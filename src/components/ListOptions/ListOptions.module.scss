@@ -8,9 +8,11 @@ root {
     position: relative;
     display: flex;
     align-items: baseline;
+    flex-wrap: nowrap;
     justify-content: space-between;
     padding-top: $spacing-8;
     padding-bottom: $spacing-8;
+    gap: $spacing-8;
 
 }
 
@@ -20,6 +22,7 @@ root {
     position: relative;
     align-self: center;
     height: 1px;
+    width: auto;
     border: 0;
     opacity: 1;
     background: linear-gradient(

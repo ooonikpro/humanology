@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './SocietyCardMini.module.scss';
-import { Humanology } from '../../types';
+import { Socionics } from '../../types';
 import { QUADRAS } from '../../constants/natureElements';
 import { ROLE } from '../../constants/role';
 import { WhiteCard } from '../../components/WhiteCard';
@@ -10,7 +10,7 @@ import { useColorRole } from '../../hooks';
 import { CircleQuadra } from '../../components/CircleQuadra';
 import { Person } from '../../components/Person';
 
-type Props = Humanology.IntertypeProp & { id: Humanology.Intertype };
+type Props = Socionics.IntertypeProp & { id: Socionics.SocionicsType };
 
 export const SocietyCardMini: React.FC<Props> = (props) => {
     const text = {

@@ -1,10 +1,10 @@
 import React from 'react';
-import { Humanology } from '../../types';
+import { Socionics } from '../../types';
 import { Icon, getIconName } from '../Icon';
 
 interface Props {
-    element: Humanology.Elements;
-    gender: Humanology.Gender;
+    element: Socionics.Quadras;
+    gender: Socionics.Gender;
     size: number;
     className: string
 }

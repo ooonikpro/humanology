@@ -1,8 +1,8 @@
 import React from 'react';
-import { Humanology } from '../../types';
+import { Socionics } from '../../types';
 
 interface Props {
-    name: Humanology.Intertype
+    name: Socionics.SocionicsType
     className: string
 }
 

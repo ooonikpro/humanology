@@ -15,16 +15,17 @@
     border-top: 1px solid var(--card-border-top-color);
 
     &.mini {
-        height: 12.8rem;
-
-        .body {
-            padding-bottom: 0;
-        }
+        height: 12rem;
 
         .person {
-            width: 10.8rem;
-            height: 10.8rem;
+            width: 11.2rem;
+            height: 11.2rem;
             right: $spacing-24;
+        }
+
+        .body:before {
+            top: -2.4rem;
+            opacity: 0.1;
         }
     }
 }
@@ -68,11 +69,16 @@
     flex: 1 1 auto;
     border-bottom: 1px solid var(--color-role);
     padding-bottom: $spacing-8;
+    margin-bottom: -$spacing-8;
+    padding-right: $spacing-8;
+    padding-left: $spacing-8;
+    margin-right: -$spacing-8;
+    margin-left: -$spacing-8;
 
     &::before {
         position: absolute;
         right: 0;
-        top: -$spacing-48;
+        top: -4.4rem;
         left: 0;
         height: 6.4rem;
         display: block;
@@ -82,7 +88,7 @@
             var(--color-element) 0,
             transparent
         );
-        opacity: 0.5;
+        opacity: 0.25;
     }
 }
 
@@ -102,10 +108,10 @@
 
 .person {
     position: absolute;
-    right: 2%;
+    right: 4%;
     bottom: 0;
-    width: 15rem;
-    height: 15rem;
+    width: 16rem;
+    height: 16rem;
 }
 
 .footer {

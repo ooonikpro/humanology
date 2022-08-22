@@ -1,6 +1,6 @@
-import { Humanology } from '../types';
+import { Socionics } from '../types';
 
-export const ALIGNMENT: Record<Humanology.Alignment, string> = {
+export const ALIGNMENT: Record<Socionics.Alignment, string> = {
     chaoticNeutral: 'Хаотичный нейтральный',
     chaoticGood: 'Хаотичный добрый',
     chaoticEvil: 'Хаотичный злой',

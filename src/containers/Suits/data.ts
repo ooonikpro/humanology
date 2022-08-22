@@ -1,4 +1,4 @@
-import { Humanology } from 'src/types';
+import { Socionics } from 'src/types';
 
 export type DataCardItem = {
     status: string;
@@ -9,11 +9,11 @@ export type DataCardItem = {
 };
 
 export type DataRoleItem = {
-    role: Humanology.Role;
+    role: Socionics.Role;
 } & DataCardItem;
 
 export type DataSuitItem = {
-    tarot: Humanology.Tarot;
+    tarot: Socionics.Tarot;
 } & DataCardItem;
 
 export const DATA_ROLES: DataRoleItem[] = [

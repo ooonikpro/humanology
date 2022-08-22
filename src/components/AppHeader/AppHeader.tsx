@@ -23,7 +23,7 @@ export const AppHeader = () => {
 
                 <button
                     className={`${styles.btn} ${styles['btn-opacity-5']}`}
-                    onClick={() => goTo('/')}
+                    onClick={() => goTo(ROUTES.HOME)}
                 >
                     <Icon name="Logo" color="accent" size={24} />
                 </button>

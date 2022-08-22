@@ -1,6 +1,6 @@
-import { Humanology } from '../types';
+import { Socionics } from '../types';
 
-export const YUNGS_DICHTOMIES: Record<Humanology.Dichotomy, string> = {
+export const YUNGS_DICHTOMIES: Record<Socionics.Dichotomy, string> = {
     irrational: 'Иррационал',
     rational: 'Рационал',
     intuit: 'Интуит',

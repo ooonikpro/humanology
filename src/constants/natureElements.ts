@@ -1,6 +1,6 @@
-import { Humanology } from '../types';
+import { Socionics } from '../types';
 
-export const QUADRAS: Record<Humanology.Elements, string> = {
+export const QUADRAS: Record<Socionics.Quadras, string> = {
     air: 'Воздух',
     fire: 'Огонь',
     water: 'Вода',

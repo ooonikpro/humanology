@@ -94,8 +94,38 @@ export const SOCIATYPES_LINKS = (id: string) => [
         order: 2,
     },
     {
-        label: 'Совместимость',
-        path: `${ROUTES.SOCIATYPES(id)}/${ROUTES.SOCIATYPES_COMPATIBILITY}`,
+        label: 'Видео',
+        path: '#',
         order: 3,
+    },
+    {
+        label: 'Совместимость',
+        path: '#',
+        order: 4,
+    },
+    {
+        label: 'Деловые качества',
+        path: '#',
+        order: 5,
+    },
+    {
+        label: 'Развитие',
+        path: '#',
+        order: 6,
+    },
+    {
+        label: 'Истории',
+        path: '#',
+        order: 7,
+    },
+    {
+        label: 'Люди',
+        path: '#',
+        order: 8,
+    },
+    {
+        label: 'Мерзости',
+        path: '#',
+        order: 9,
     },
 ];

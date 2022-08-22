@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './FunctionalCard.module.scss';
-import { Humanology } from '../../types';
+import { Socionics } from '../../types';
 import { getIconName, Icon } from '../../components/Icon';
 import { ASPECTS } from '../../constants/aspects';
 import { FUNCTION_LABELS } from '../../constants/functions';
@@ -10,8 +10,8 @@ export interface Props {
     transparent?: boolean;
     outline?: boolean;
     striped?: boolean;
-    aspect: Humanology.Aspect;
-    function: Humanology.Function;
+    aspect: Socionics.Aspect;
+    function: Socionics.Function;
     number: number;
     opacity?: 1 | 0.75 | 0.5;
     lvl?: 1 | 2 | 3 | 4;

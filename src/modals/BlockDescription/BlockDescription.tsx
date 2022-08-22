@@ -7,11 +7,11 @@ import {
 import { Modal, ModalProps } from 'src/components/Modal';
 import { TitleInfo } from 'src/components/TitleInfo';
 import { BLOCKS } from 'src/constants/blocks';
-import { Humanology } from 'src/types';
+import { Socionics } from 'src/types';
 import { useSwipeable } from 'react-swipeable';
 
 export interface Props extends ModalProps {
-    intertype: Humanology.Intertype;
+    intertype: Socionics.SocionicsType;
     data: FunctionCardRowItem;
     onClickRowItem?: (
         item: FunctionCardRowItem['data'][0] | FunctionCardRowItem['data'][1]

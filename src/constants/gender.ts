@@ -1,6 +1,6 @@
-import { Humanology } from '../types';
+import { Socionics } from '../types';
 
-export const GENDER: Record<Humanology.Gender, string> = {
+export const GENDER: Record<Socionics.Gender, string> = {
     male: 'Мужской',
     female: 'Женский',
 };

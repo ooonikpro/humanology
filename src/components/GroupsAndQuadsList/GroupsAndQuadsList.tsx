@@ -1,5 +1,5 @@
 import React from 'react';
-import { Humanology } from '../../types';
+import { Socionics } from '../../types';
 import { PropList, RowItem } from '../PropList';
 import { QUADRAS } from '../../constants/natureElements';
 import { ROLE } from '../../constants/role';
@@ -9,12 +9,12 @@ import { CLUBS } from '../../constants/clubs';
 import { GENDER } from '../../constants/gender';
 
 interface Props {
-    element: Humanology.Elements
-    role: Humanology.Role
-    tarot: Humanology.Tarot
-    psychotype: Humanology.Psychotype
-    club: Humanology.Club
-    gender: Humanology.Gender
+    element: Socionics.Quadras
+    role: Socionics.Role
+    tarot: Socionics.Tarot
+    psychotype: Socionics.Psychotype
+    club: Socionics.Club
+    gender: Socionics.Gender
     className?: string
 }
 

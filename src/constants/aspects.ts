@@ -1,6 +1,6 @@
-import { Humanology } from '../types';
+import { Socionics } from '../types';
 
-export const ASPECTS: Record<Humanology.Aspect, string> = {
+export const ASPECTS: Record<Socionics.Aspect, string> = {
     ideas: 'Идеи',
     business: 'Дела',
     will: 'Воля',
@@ -11,7 +11,7 @@ export const ASPECTS: Record<Humanology.Aspect, string> = {
     people: 'Люди',
 } as const;
 
-export const ASPECTS_LABEL: Record<Humanology.Aspect, string> = {
+export const ASPECTS_LABEL: Record<Socionics.Aspect, string> = {
     ideas: 'Интуиция возможностей',
     business: 'Деловая логика',
     will: 'Волевая сенсорика',
@@ -22,7 +22,7 @@ export const ASPECTS_LABEL: Record<Humanology.Aspect, string> = {
     people: 'Этика отношений',
 } as const;
 
-export const ASPECTS_GROUPS: Array<{ title: string; subtitle: string; aspects: Humanology.Aspect[] }> = [
+export const ASPECTS_GROUPS: Array<{ title: string; subtitle: string; aspects: Socionics.Aspect[] }> = [
     {
         title: 'Объекты',
         subtitle: 'Логика',

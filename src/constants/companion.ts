@@ -1,6 +1,6 @@
-import { Humanology } from '../types';
+import { Socionics } from '../types';
 
-export const COMPANION: Record<Humanology.Companion, string> = {
+export const COMPANION: Record<Socionics.Companion, string> = {
     categorical: 'Категоричный',
     sensitive: 'Чувствительный',
     uncompromising: 'Бескомпромиссный',

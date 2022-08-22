@@ -1,21 +1,21 @@
 import React, { useState } from 'react';
 import styles from './FunctionalCardGroup.module.scss';
-import { Humanology } from '../../types';
+import { Socionics } from '../../types';
 import { FunctionalCardRow, FunctionCardRowItem } from '../FunctionalCardRow';
 import { BlockDescription, Props as DescriptionModalProps } from 'src/modals';
 import { FunctionDescription } from 'src/modals/FunctionDescription';
 
 interface Props {
-    intertype: Humanology.Intertype;
-    element: Humanology.Elements;
-    lives: Humanology.Aspect;
-    creates: Humanology.Aspect;
-    mad: Humanology.Aspect;
-    does: Humanology.Aspect;
-    afraid: Humanology.Aspect;
-    suffers: Humanology.Aspect;
-    desires: Humanology.Aspect;
-    likes: Humanology.Aspect;
+    intertype: Socionics.SocionicsType;
+    element: Socionics.Quadras;
+    lives: Socionics.Aspect;
+    creates: Socionics.Aspect;
+    mad: Socionics.Aspect;
+    does: Socionics.Aspect;
+    afraid: Socionics.Aspect;
+    suffers: Socionics.Aspect;
+    desires: Socionics.Aspect;
+    likes: Socionics.Aspect;
 }
 
 export const FunctionalCardGroup: React.FC<Props> = (props) => {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Humanology } from '../../types';
+import { Socionics } from '../../types';
 import { MOTIVATION } from '../../constants/motivation';
 import { COMMUNICATION_STYLE } from '../../constants/communicationStyle';
 import { COMPANION } from '../../constants/companion';
@@ -9,12 +9,12 @@ import { ALIGNMENT } from '../../constants/alignment';
 import { PropList, RowItem } from '../../components/PropList';
 
 interface Props {
-    mindset: Humanology.mindset;
-    stimulant: Humanology.Stimulant;
-    communication: Humanology.CommunicationStyle;
-    companion: Humanology.Companion;
-    temperament: Humanology.Temperament;
-    ideology: Humanology.Alignment;
+    mindset: Socionics.Mindset;
+    stimulant: Socionics.Stimulant;
+    communication: Socionics.CommunicationStyle;
+    companion: Socionics.Companion;
+    temperament: Socionics.Temperament;
+    ideology: Socionics.Alignment;
     className?: string;
 }
 

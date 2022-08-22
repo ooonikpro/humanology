@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './SocietyCard.module.scss';
-import { Humanology } from '../../types';
+import { Socionics } from '../../types';
 import { QUADRAS } from '../../constants/natureElements';
 import { MIND_KEY } from '../../constants/mindset';
 import { ROLE } from '../../constants/role';
@@ -15,8 +15,8 @@ import { CircleQuadra } from '../CircleQuadra';
 import { Person } from '../Person';
 import { YUNGS_DICHTOMIES } from 'src/constants/yungsDichotomies';
 
-interface Props extends Humanology.IntertypeProp {
-    id: Humanology.Intertype;
+interface Props extends Socionics.IntertypeProp {
+    id: Socionics.SocionicsType;
     mini?: boolean;
 }
 

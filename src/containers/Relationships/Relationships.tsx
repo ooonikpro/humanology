@@ -7,7 +7,7 @@ export default function Relationships() {
     return (
         <div className={styles.root}>
             <WhiteCard>
-                <Text tag="h3" size="h3" className={styles.title}>Интертипные отношения</Text>
+                <Text tag="h1" size="h4" font="additional" className={styles.title}>Интертипные отношения</Text>
 
                 <Text tag="p" size="h6" color="accent" className={styles.text}>
                     Одной из главных причин, почему

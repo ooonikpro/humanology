@@ -1,13 +1,13 @@
 import React from 'react';
 import styles from './CardGroupByElement.module.scss';
 import { useColorElement } from '../../hooks';
-import { Humanology } from '../../types';
+import { Socionics } from '../../types';
 import { Text } from '../Text';
 import { Icon } from '../Icon';
 import { Tag } from '../Tag';
 
 interface Props {
-    element: Humanology.Elements;
+    element: Socionics.Quadras;
     children: React.ReactChild[]
 }
 

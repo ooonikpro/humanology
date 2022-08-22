@@ -1,6 +1,6 @@
-import { Humanology } from '../types';
+import { Socionics } from '../types';
 
-export const REININ_SIGNS: Record<Humanology.ReininSign, string> = {
+export const REININ_SIGNS: Record<Socionics.ReininSign, string> = {
     static: 'Статик',
     dynamic: 'Динамик',
     positivist: 'Позитивист',

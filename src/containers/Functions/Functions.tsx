@@ -3,12 +3,12 @@ import styles from './Functions.module.scss';
 import { WhiteCard } from '../../components/WhiteCard';
 import { Text } from '../../components/Text';
 import { SimpleFunctionCard } from '../../components/SimpleFunctionCard';
-import { Humanology } from 'src/types';
+import { Socionics } from 'src/types';
 import { TextInline } from 'src/components/TextInline';
 import { TitleInfo } from 'src/components/TitleInfo';
 
 interface IData {
-    function: Humanology.Function;
+    function: Socionics.Function;
     labels: Array<string>
     intro: string;
     text: Array<string>;
@@ -91,7 +91,7 @@ export default function Functions() {
     return (
         <div className={styles.root}>
             <WhiteCard>
-                <Text tag="h3" size="h3" className={styles.title}>Функции</Text>
+                <Text tag="h1" size="h4" font="additional" className={styles.title}>Функции</Text>
 
                 <Text tag="p" className={styles.text}>
                     Целостное психологическое образование, которое также содержит: некоторое целостное внутренние

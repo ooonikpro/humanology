@@ -2,20 +2,20 @@ import React, { useMemo } from 'react';
 import styles from './Home.module.scss';
 import { CardGroupByElement } from '../../components/CardGroupByElement';
 import { QUADRAS } from '../../constants/natureElements';
-import { INTERTYPES } from '../../constants/intertypes';
-import { Humanology } from '../../types';
+import { INTERTYPES } from '../../constants/socionicsTypes';
+import { Socionics } from '../../types';
 import { SocietyCardMini } from '../../components/SocietyCardMini';
 import { ROUTES } from 'src/constants/routes';
 import { Link } from 'react-router-dom';
 
-const intertypes = (Object.keys(INTERTYPES) as Humanology.Intertype[]).map(
+const intertypes = (Object.keys(INTERTYPES) as Socionics.SocionicsType[]).map(
     (key) => ({
         id: key,
         ...INTERTYPES[key],
     })
 );
 
-const elements = (Object.keys(QUADRAS) as Humanology.Elements[]).map(
+const elements = (Object.keys(QUADRAS) as Socionics.Quadras[]).map(
     (element) => ({
         element,
         cards: intertypes.filter((type) => type.element === element),

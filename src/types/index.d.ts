@@ -1,6 +1,6 @@
-export namespace Humanology {
+export namespace Socionics {
     export type Gender = 'male' | 'female';
-    export type Elements = 'air' | 'fire' | 'earth' | 'water';
+    export type Quadras = 'air' | 'fire' | 'earth' | 'water';
     export type Role = 'knight' | 'king' | 'queen' | 'paige' | 'lady';
     export type Psychotype = 'infantile' | 'aggressor' | 'care' | 'victim';
     export type Tarot = 'swords' | 'pentacles' | 'cups' | 'wands';
@@ -10,8 +10,8 @@ export namespace Humanology {
         | 'irrational-2'
         | 'rational-1'
         | 'rational-4';
-    export type mindset = 'casual' | 'algorithmic' | 'vortical' | 'holographic';
-    export type Intertype =
+    export type Mindset = 'casual' | 'algorithmic' | 'vortical' | 'holographic';
+    export type SocionicsType =
         | 'ENTP'
         | 'ISFP'
         | 'ESFJ'
@@ -122,20 +122,20 @@ export namespace Humanology {
 
     export type SignProp = {
         label: string;
-        element: Humanology.Elements;
+        element: Socionics.Quadras;
     };
 
     export type IntertypeProp = {
-        element: Elements;
+        element: Quadras;
         role: Role;
         alias: string;
         mindKey: MindKey;
-        mindset: mindset;
+        mindset: Mindset;
         name: string;
-        gender: Humanology.Gender;
-        club: Humanology.Club;
-        tarot: Humanology.Tarot;
-        psychotype: Humanology.Psychotype;
+        gender: Gender;
+        club: Club;
+        tarot: Tarot;
+        psychotype: Psychotype;
         populationPercentage: string;
         aspects: Record<AspectKey, Aspect>;
         stimulant: Stimulant;

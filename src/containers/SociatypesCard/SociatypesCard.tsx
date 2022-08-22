@@ -2,8 +2,8 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import styles from './SociatypesCard.module.scss';
 import { SocietyCard } from '../../components/SocietyCard';
-import { Humanology } from '../../types';
-import { useIntertype } from '../../hooks/useIntertype';
+import { Socionics } from '../../types';
+import { useIntertype } from '../../hooks/useSocionicsType';
 import { WhiteCard } from '../../components/WhiteCard';
 import { YUNGS_DICHTOMIES } from '../../constants/yungsDichotomies';
 import { REININ_SIGNS } from '../../constants/reininSigns';
@@ -27,14 +27,14 @@ const getRow = (
     };
 };
 
-const Dichotomy: Array<Humanology.Dichotomy[]> = [
+const Dichotomy: Array<Socionics.Dichotomy[]> = [
     ['irrational', 'rational'],
     ['intuit', 'sensory'],
     ['logic', 'ethic'],
     ['extravert', 'introvert'],
 ];
 
-const reininRows: Array<Humanology.ReininSign[]> = [
+const reininRows: Array<Socionics.ReininSign[]> = [
     ['static', 'dynamic'],
     ['positivist', 'negativist'],
     ['questim', 'declamtim'],
@@ -52,7 +52,7 @@ const reininRows: Array<Humanology.ReininSign[]> = [
 
 export default function SociatypesCard() {
     const params = useParams();
-    const id = params.id?.toUpperCase() as Humanology.Intertype;
+    const id = params.id?.toUpperCase() as Socionics.SocionicsType;
     const { intertypeProps } = useIntertype(id);
 
     const dichotomyYungs = intertypeProps.yungs.map(

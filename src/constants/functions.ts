@@ -1,6 +1,6 @@
-import { Humanology } from '../types';
+import { Socionics } from '../types';
 
-export const FUNCTION: Record<Humanology.Function, string> = {
+export const FUNCTION: Record<Socionics.Function, string> = {
     base: 'Базовая',
     creative: 'Творческая',
     role: 'Ролевая',
@@ -11,7 +11,7 @@ export const FUNCTION: Record<Humanology.Function, string> = {
     suggestive: 'Суггестивная',
 } as const;
 
-export const FUNCTION_LABELS: Record<Humanology.Function, string> = {
+export const FUNCTION_LABELS: Record<Socionics.Function, string> = {
     base: 'Хорошо',
     creative: 'Надо',
     role: 'Боюсь',

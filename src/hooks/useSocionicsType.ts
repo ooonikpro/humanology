@@ -1,11 +1,11 @@
 import React from 'react';
-import { Humanology } from '../types';
-import { INTERTYPES } from '../constants/intertypes';
+import { Socionics } from '../types';
+import { INTERTYPES } from '../constants/socionicsTypes';
 import { useColorElement } from './useColorElement';
 import { useColorRole } from './useColorRole';
 
-export const useIntertype = (id: Humanology.Intertype) => {
-    const intertypeProps: Humanology.IntertypeProp & { id: Humanology.Intertype } = {
+export const useIntertype = (id: Socionics.SocionicsType) => {
+    const intertypeProps: Socionics.IntertypeProp & { id: Socionics.SocionicsType } = {
         id,
         ...INTERTYPES[id],
     };

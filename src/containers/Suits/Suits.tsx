@@ -4,7 +4,7 @@ import { WhiteCard } from '../../components/WhiteCard';
 import { Text } from '../../components/Text';
 import { TextInline } from '../../components/TextInline';
 import { getIconName } from '../../components/Icon';
-import { Humanology } from '../../types';
+import { Socionics } from '../../types';
 import { useColorRole } from '../../hooks';
 import { SuitCard, Props as SuitCardProps } from '../../components/SuitCard';
 import { DATA_ROLES, DATA_SUITS } from './data';
@@ -15,7 +15,7 @@ type CardRoleProps<K extends string, T> = {
     [key in K]: T;
 } & Omit<SuitCardProps, 'icon' | 'color' | 'style'>;
 
-const CardRole: React.FC<CardRoleProps<'role', Humanology.Role>> = ({
+const CardRole: React.FC<CardRoleProps<'role', Socionics.Role>> = ({
     role,
     ...otherProps
 }) => {
@@ -31,7 +31,7 @@ const CardRole: React.FC<CardRoleProps<'role', Humanology.Role>> = ({
     );
 };
 
-const CardTarot: React.FC<CardRoleProps<'tarot', Humanology.Tarot>> = ({
+const CardTarot: React.FC<CardRoleProps<'tarot', Socionics.Tarot>> = ({
     tarot,
     ...otherProps
 }) => {
@@ -43,8 +43,8 @@ const CardTarot: React.FC<CardRoleProps<'tarot', Humanology.Tarot>> = ({
 export default function Suits() {
     const navigate = useNavigate();
 
-    const goToSuitsCard = (cardName: Humanology.Role) => () => navigate(ROUTES.SUITS_CARD(cardName));
-    const goToSuitsTarot = (tarotName: Humanology.Tarot) => () => navigate(ROUTES.SUITS_TAROT(tarotName));
+    const goToSuitsCard = (cardName: Socionics.Role) => () => navigate(ROUTES.SUITS_CARD(cardName));
+    const goToSuitsTarot = (tarotName: Socionics.Tarot) => () => navigate(ROUTES.SUITS_TAROT(tarotName));
 
     return (
         <div className={styles.root}>

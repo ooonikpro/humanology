@@ -1,6 +1,6 @@
-import { Humanology } from '../types';
+import { Socionics } from '../types';
 
-export const ROLE: Record<Humanology.Role, Humanology.SignProp> = {
+export const ROLE: Record<Socionics.Role, Socionics.SignProp> = {
     knight: {
         label: 'Рыцарь',
         element: 'water',
