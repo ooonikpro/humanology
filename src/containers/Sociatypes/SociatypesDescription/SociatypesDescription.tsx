@@ -12,7 +12,7 @@ export default function SociatypesDescription() {
 
     return (
         <div className={styles.wrap}>
-            <WhiteCard>
+            <WhiteCard className={styles.white}>
                 <Text tag="h1" size="h4" font="additional" className={styles.title}>Описание</Text>
                 <div className={styles.text}>
                     <React.Suspense>

@@ -12,9 +12,8 @@ import { Tag } from '../Tag';
 import { Text } from '../Text';
 import { getIconName, Icon } from '../Icon';
 import { CircleQuadra } from '../CircleQuadra';
-import { Person } from '../Person';
 import { YUNGS_DICHTOMIES } from 'src/constants/yungsDichotomies';
-
+import { Portrait } from '../Portrait';
 interface Props extends Socionics.IntertypeProp {
     id: Socionics.SocionicsType;
     mini?: boolean;
@@ -47,6 +46,14 @@ export const SocietyCard: React.FC<Props> = (props) => {
                     ].join(' ')}
                 >
                     <div className={styles['params-line']}>
+                        <Text tag="p" size="small" color="accent">
+                            {text.id}
+                        </Text>
+                        <Text tag="p" size="small" color="grey">
+                            {text.alias}
+                        </Text>
+                    </div>
+                    <div className={styles['params-line']}>
                         <span className={styles.pair}>
                             <Tag sign={props.element} color='element' size={16}/>
                             <Text tag="p" color="element" size="small">
@@ -59,12 +66,12 @@ export const SocietyCard: React.FC<Props> = (props) => {
                                 {text.role}
                             </Text>
                         </span>
-                        <Text tag="p" size="small" color="accent">
-                            {text.id}
-                        </Text>
-                        <Text tag="p" size="small" color="grey">
-                            {text.alias}
-                        </Text>
+                        <span className={styles.pair}>
+                            <Tag sign={props.tarot} color='accent' size={16}/>
+                            <Text tag="p" color="accent" size="small">
+                                {text.tarot}
+                            </Text>
+                        </span>
                     </div>
 
                     <div className={styles['params-line']}>
@@ -82,18 +89,13 @@ export const SocietyCard: React.FC<Props> = (props) => {
                                         {text.psychotype}
                                     </Text>
                                 </span>
-                                <span className={styles.pair}>
-                                    <Tag sign={props.tarot} color='accent' size={16}/>
-                                    <Text tag="p" color="accent" size="small">
-                                        {text.tarot}
-                                    </Text>
-                                </span>
                             </>
                         )}
                     </div>
                 </div>
 
                 <Icon
+                    className={styles.mindkey}
                     name={getIconName(props.mindKey)}
                     size={{ width: 32, height: 6 }}
                     color="element"
@@ -109,8 +111,7 @@ export const SocietyCard: React.FC<Props> = (props) => {
                         size={160}
                     />
                 )}
-
-                <Person name={props.id} className={styles.person} />
+                <Portrait name={props.id} className={styles.portrait} />
                 
                 {!props.mini && (
                     <Text

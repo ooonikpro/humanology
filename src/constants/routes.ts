@@ -8,7 +8,7 @@ export const ROUTES = {
     SOCIATYPES_COMPATIBILITY: 'compatibility',
     SOCIATYPES_VIDEO: 'video',
     SOCIATYPES_BUSINESS: 'business',
-    SOCIATYPES_DEVELOPMENT: 'devvelopment',
+    SOCIATYPES_DEVELOPMENT: 'development',
     SOCIATYPES_STORIES: 'stories',
     SOCIATYPES_PEOPLE: 'people',
     SOCIATYPES_HUMOUR: 'humour',

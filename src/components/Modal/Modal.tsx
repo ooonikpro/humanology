@@ -65,11 +65,11 @@ export const Modal: React.FC<Props> = ({ isOpen, render, onClose }) => {
     return (
         <div className={[styles.root, animate ? styles.open : ''].join(' ')}>
             <div className={styles.bg} onClick={closeModal} />
-
             <WhiteCard className={styles.container}>
                 <div className={styles.drag} onClick={closeModal} />
                 {render(closeModal)}
             </WhiteCard>
+            
         </div>
     );
 };

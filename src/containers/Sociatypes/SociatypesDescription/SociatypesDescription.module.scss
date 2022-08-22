@@ -9,6 +9,7 @@
 
 .title {
     display: block;
+    margin-top: $spacing-24;
     margin-bottom: $spacing-16;
 }
 
@@ -16,4 +17,8 @@
     p {
         margin-bottom: $spacing-16;
     }
+}
+
+.white {
+    background-color: $color-basic-white;
 }

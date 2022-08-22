@@ -3,11 +3,13 @@
 .root {
 	overflow: hidden;
     height: 8.8rem;
+    margin-bottom: -$spacing-4;
 
 }
 
 .horizontal-scrollbar {
     align-self: flex-start;
+    background-color: var(--color-basic-beige);
     display: flex;
     width: 100%;
     height: calc(8.8rem + 17px);

@@ -30,8 +30,8 @@ $transition-duration: 100ms;
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(#000, 0.8);
-    opacity: 0;
+    background-color: var(--color-basic-beige);
+    opacity: 0.95;
     z-index: 0;
 }
 
@@ -50,14 +50,14 @@ $transition-duration: 100ms;
     z-index: 1;
     cursor: auto;
     transform: translateY(calc(100% + #{$spacing-4}));
-    overflow: hidden;
+    overflow: scroll;
     display: flex;
     flex-direction: column;
 }
 
 .drag {
     position: absolute;
-    top: $spacing-4;
+    top: $spacing-6;
     left: 50%;
     transform: translateX(-50%);
     width: 8.8rem;

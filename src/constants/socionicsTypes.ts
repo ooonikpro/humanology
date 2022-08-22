@@ -12,7 +12,7 @@ export const INTERTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         club: 'scientific',
         tarot: 'swords', // масть
         psychotype: 'infantile', // группа
-        populationPercentage: '2 — 5%',
+        populationPercentage: '2 ~ 5%',
         aspects: {
             lives: 'ideas',
             creates: 'logic',
@@ -62,7 +62,7 @@ export const INTERTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         club: 'social',
         tarot: 'cups', // масть
         psychotype: 'care', // группа
-        populationPercentage: '5 — 9%',
+        populationPercentage: '5 ~ 9%',
         aspects: {
             lives: 'comfort',
             creates: 'emotions',
@@ -112,7 +112,7 @@ export const INTERTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         club: 'social',
         tarot: 'wands', // масть
         psychotype: 'care', // группа
-        populationPercentage: '9 — 13%',
+        populationPercentage: '9 ~ 13%',
         aspects: {
             lives: 'emotions',
             creates: 'comfort',
@@ -129,10 +129,11 @@ export const INTERTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         temperament: 'choleric',
         ideology: 'chaoticGood',
         yungs: [
+            'rational',
             'sensory',
             'ethic',
             'extravert',
-            'rational',
+
         ],
         reinin: [
             'dynamic',
@@ -162,7 +163,7 @@ export const INTERTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         club: 'scientific',
         tarot: 'pentacles', // масть
         psychotype: 'infantile', // группа
-        populationPercentage: '2 — 4%',
+        populationPercentage: '2 ~ 4%',
         aspects: {
             lives: 'logic',
             creates: 'ideas',
@@ -212,7 +213,7 @@ export const INTERTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         club: 'practice',
         tarot: 'pentacles', // масть
         psychotype: 'aggressor', // группа
-        populationPercentage: '11 — 14%',
+        populationPercentage: '11 ~ 14%',
         aspects: {
             lives: 'logic',
             creates: 'will',
@@ -262,7 +263,7 @@ export const INTERTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         club: 'humanitarian',
         tarot: 'wands', // масть
         psychotype: 'victim', // группа
-        populationPercentage: '2 — 5%',
+        populationPercentage: '2 ~ 5%',
         aspects: {
             lives: 'emotions',
             creates: 'time',
@@ -312,7 +313,7 @@ export const INTERTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         club: 'humanitarian',
         tarot: 'cups', // масть
         psychotype: 'victim', // группа
-        populationPercentage: '4 — 5%',
+        populationPercentage: '4 ~ 5%',
         aspects: {
             lives: 'time',
             creates: 'emotions',
@@ -362,7 +363,7 @@ export const INTERTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         club: 'practice',
         tarot: 'swords', // масть
         psychotype: 'aggressor', // группа
-        populationPercentage: '4 — 5%',
+        populationPercentage: '4 ~ 5%',
         aspects: {
             lives: 'will',
             creates: 'logic',
@@ -412,7 +413,7 @@ export const INTERTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         club: 'scientific',
         tarot: 'swords', // масть
         psychotype: 'victim', // группа
-        populationPercentage: '3 — 5%',
+        populationPercentage: '3 ~ 5%',
         aspects: {
             lives: 'time',
             creates: 'business',
@@ -462,7 +463,7 @@ export const INTERTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         club: 'social',
         tarot: 'cups', // масть
         psychotype: 'aggressor', // группа
-        populationPercentage: '4 — 9%',
+        populationPercentage: '4 ~ 9%',
         aspects: {
             lives: 'will',
             creates: 'people',
@@ -512,7 +513,7 @@ export const INTERTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         club: 'social',
         tarot: 'wands', // масть
         psychotype: 'aggressor', // группа
-        populationPercentage: '9 — 14%',
+        populationPercentage: '9 ~ 14%',
         aspects: {
             lives: 'people',
             creates: 'will',
@@ -562,7 +563,7 @@ export const INTERTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         club: 'scientific',
         tarot: 'pentacles', // масть
         psychotype: 'victim', // группа
-        populationPercentage: '2 — 5%',
+        populationPercentage: '2 ~ 5%',
         aspects: {
             lives: 'business',
             creates: 'time',
@@ -612,7 +613,7 @@ export const INTERTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         club: 'practice',
         tarot: 'pentacles', // масть
         psychotype: 'care', // группа
-        populationPercentage: '8 — 12%',
+        populationPercentage: '8 ~ 12%',
         aspects: {
             lives: 'business',
             creates: 'comfort',
@@ -662,7 +663,7 @@ export const INTERTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         club: 'humanitarian',
         tarot: 'wands', // масть
         psychotype: 'infantile', // группа
-        populationPercentage: '1 — 3%',
+        populationPercentage: '1 ~ 3%',
         aspects: {
             lives: 'people',
             creates: 'ideas',
@@ -712,7 +713,7 @@ export const INTERTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         club: 'humanitarian',
         tarot: 'cups', // масть
         psychotype: 'infantile', // группа
-        populationPercentage: '6 — 8%',
+        populationPercentage: '6 ~ 8%',
         aspects: {
             lives: 'ideas',
             creates: 'people',
@@ -762,7 +763,7 @@ export const INTERTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         club: 'practice',
         tarot: 'swords', // масть
         psychotype: 'care', // группа
-        populationPercentage: '4 — 6%',
+        populationPercentage: '4 ~ 6%',
         aspects: {
             lives: 'comfort',
             creates: 'business',

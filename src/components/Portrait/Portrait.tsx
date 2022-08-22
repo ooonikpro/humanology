@@ -6,11 +6,11 @@ interface Props {
     className: string
 }
 
-export const Person: React.FC<Props> = ({ name,  className }) => {
+export const Portrait: React.FC<Props> = ({ name,  className }) => {
     // eslint-disable-next-line @typescript-eslint/no-var-requires
-    const src = require(`../../assets/persons/${name.toLowerCase()}.png`);
+    const src = require(`../../assets/portraits/${name.toLowerCase()}.png`);
 
     return (
-        <img src={src} alt={`${name}-person-image`} className={className}/>
+        <img src={src} alt={`${name}-portrait-image`} className={className}/>
     );
 };

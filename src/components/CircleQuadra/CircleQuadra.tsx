@@ -14,7 +14,7 @@ export const CircleQuadra: React.FC<Props> = ({ element, gender, size, className
         <Icon
             name={getIconName(`${element}-${gender === 'male' ? 'strong' : 'weak'}`)}
             size={size}
-            color="role"
+            color="element"
             className={className}
         />
     );

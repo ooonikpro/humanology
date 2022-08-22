@@ -2,7 +2,9 @@ import React, { useCallback, useEffect } from 'react';
 import { useRef } from 'react';
 import { useLocation, useMatch, useNavigate, useResolvedPath } from 'react-router-dom';
 import { Text } from 'src/components/Text';
+import { Icon } from '../Icon';
 import styles from './Tab.module.scss';
+
 
 interface Props {
     path: string;
@@ -30,6 +32,7 @@ export const Tab: React.FC<Props> = ({ path, label }) => {
     }, [isActiveRoute]);
 
     return (
+
         <Text
             ref={ref}
             tag="button"
@@ -38,7 +41,13 @@ export const Tab: React.FC<Props> = ({ path, label }) => {
             className={classes}
             onClick={onClick}
         >
-            {label}
+            <Icon
+                className={styles.icon}
+                size={24}
+                color='accent'
+                name='Aggressor'
+            />
+            {label}     
         </Text>
     );
 };

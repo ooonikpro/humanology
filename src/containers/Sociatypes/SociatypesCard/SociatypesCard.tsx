@@ -59,28 +59,28 @@ export default function SociatypesCard() {
 
     return (
         <div className={styles.wrap}>
-            <WhiteCard>
+            <WhiteCard className={styles.white}>
                 <TitleInfo className={styles.title}>Ментальность</TitleInfo>
                 <CommunicationList
                     {...intertypeProps}
                     className={styles.list}
                 />
             </WhiteCard>
-            <WhiteCard>
+            <WhiteCard className={styles.white}>
                 <TitleInfo className={styles.title}>Группы и квадры</TitleInfo>
                 <GroupsAndQuadsList
                     {...intertypeProps}
                     className={styles.list}
                 />
             </WhiteCard>
-            <WhiteCard>
+            <WhiteCard className={styles.white}>
                 <TitleInfo className={styles.title}>Дихотомии Юнга</TitleInfo>
                 <ListOptions
                     options={dichotomyYungs}
                     className={styles.list}
                 />
             </WhiteCard>
-            <WhiteCard>
+            <WhiteCard className={styles.white}>
                 <TitleInfo className={styles.title}>Признаки Рейнина</TitleInfo>
                 {reininList.map((list, $i) => (
                     <ListOptions

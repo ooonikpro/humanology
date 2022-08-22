@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './SocietyCardMini.module.scss';
+import { Portrait } from '../Portrait';
 import { Socionics } from '../../types';
 import { QUADRAS } from '../../constants/natureElements';
 import { ROLE } from '../../constants/role';
@@ -8,7 +9,7 @@ import { getIconName, Icon } from '../../components/Icon';
 import { Text } from '../../components/Text';
 import { useColorRole } from '../../hooks';
 import { CircleQuadra } from '../../components/CircleQuadra';
-import { Person } from '../../components/Person';
+import { Tag } from '../../components/Tag';
 
 type Props = Socionics.IntertypeProp & { id: Socionics.SocionicsType };
 
@@ -40,7 +41,7 @@ export const SocietyCardMini: React.FC<Props> = (props) => {
                     size={160}
                     className={styles['quadra-img']}
                 />
-                <Person name={props.id} className={styles.person} />
+                <Portrait name={props.id} className={styles.portrait}/>
             </div>
 
             <div className={styles.footer}>
@@ -54,13 +55,18 @@ export const SocietyCardMini: React.FC<Props> = (props) => {
                 </Text>
 
                 <span className={styles['element-role']}>
-                    <Text tag="p" size="small" color="element">
-                        {text.element}
-                    </Text>
-    
-                    <Text tag="p" size="small" color="role">
-                        {text.role}
-                    </Text>
+                    <span className={styles.pair}>
+                        <Tag sign={props.element} color='element' size={16}/>
+                        <Text tag="p" size="small" color="element">
+                            {text.element}
+                        </Text>
+                    </span>
+                    <span className={styles.pair}>
+                        <Tag sign={props.role} color='role' size={16}/>
+                        <Text tag="p" size="small" color="role">
+                            {text.role}
+                        </Text>
+                    </span>
                 </span>
                 <span className={styles['id-alias']}>
                     <Text tag="p" size="small" color="grey">

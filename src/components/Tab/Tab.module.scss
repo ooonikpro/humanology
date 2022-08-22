@@ -1,7 +1,8 @@
 @import '../../styles/utils.scss';
 
 .root {
-    flex: 1 0 6.4rem;
+    position: relative;
+    flex: 1 0 8rem;
     text-align: left;
     justify-content: left;
     align-items: flex-end;
@@ -16,5 +17,12 @@
     &.active {
         opacity: 1;
         background-color: var(--color-basic-white);
+        border-bottom: 1px solid rgba($color-basic-accent, 0.5);
     }
+}
+
+.icon {
+    position: absolute;
+    margin-left: 0;
+    margin-bottom: 4.4rem;  
 }

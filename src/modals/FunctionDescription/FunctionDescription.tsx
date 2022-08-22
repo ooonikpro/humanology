@@ -16,7 +16,6 @@ interface Props extends ModalProps {
 }
 
 export const FunctionDescription: React.FC<Props> = (props) => {
-    const icon = getIconName(`function-${props.function}`);
     const name = FUNCTION[props.function];
     const aspectTitle = ASPECTS[props.aspect];
     const aspectSubtitle = ASPECTS_LABEL[props.aspect];
