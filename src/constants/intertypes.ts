@@ -182,7 +182,7 @@ export const INTERTYPES: Record<Humanology.Intertype, Humanology.IntertypeProp> 
             'intuit',
             'logic',
             'introvert',
-            'irrational',
+            'rational',
         ],
         reinin: [
             'static',
