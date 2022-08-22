@@ -4,12 +4,16 @@ import styles from './AppHeader.module.scss';
 import { Icon } from '../Icon';
 import { MainTabs } from '../Tabs/MainTabs';
 import { ROUTES } from 'src/constants/routes';
-import { SociatypesTabs } from '../Tabs/SociatypesTabs';
 
 export const AppHeader = () => {
     const goTo = useNavigate();
     const { pathname } = useResolvedPath(ROUTES.START);
     const isActiveRoute = useMatch({ path: pathname });
+    
+    const { pathname:sociotypePath } = useResolvedPath(ROUTES.SOCIATYPES() + '/' + ROUTES.SOCIATYPES_CARD);
+    const isActiveRouteSociotype = useMatch({ path: sociotypePath });
+
+    console.log(isActiveRouteSociotype);
 
     return (
         <header className={styles.root}>
@@ -32,20 +36,17 @@ export const AppHeader = () => {
                     <Icon name="UserSquare" color="accent" size={24} />
                 </button>
             </div>
-
-            <hr className={styles.hr}/>
-
-            <nav className={styles['section-big']}>
-                <div className={styles['horizontal-scrollbar']}>
-                    <Routes>
-                        <Route
-                            path={`${ROUTES.SOCIATYPES()}/*`}
-                            element={<SociatypesTabs />}
-                        />
-                        <Route path="*" element={<MainTabs />} />
-                    </Routes>
-                </div>
-            </nav>
+            {
+                !isActiveRouteSociotype && 
+                <>
+                    <hr className={styles.hr}/>
+                    <nav className={styles['section-big']}>
+                        <div className={styles['horizontal-scrollbar']}>
+                            <MainTabs />
+                        </div>
+                    </nav>
+                </>
+            }            
         </header>
     );
 };

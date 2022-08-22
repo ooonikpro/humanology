@@ -37,7 +37,7 @@ export const BlockDescription: React.FC<Props> = ({
                 <div className={styles.header} {...swipeableHandlers}>
                     <TitleInfo
                         className={styles.title}
-                        iconSize={18}
+                        iconSize={16}
                         iconColor="element"
                     >
                         {title}

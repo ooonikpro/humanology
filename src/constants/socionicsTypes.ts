@@ -29,10 +29,10 @@ export const INTERTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         temperament: 'sanguine',
         ideology: 'chaoticNeutral',
         yungs: [
+            'irrational',
             'intuit',
             'logic',
             'extravert',
-            'irrational',
         ],
         reinin: [
             'static',
@@ -79,10 +79,10 @@ export const INTERTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         temperament: 'melancholic',
         ideology: 'chaoticGood',
         yungs: [
+            'irrational',
             'sensory',
             'ethic',
             'introvert',
-            'irrational',
         ],
         reinin: [
             'dynamic',
@@ -179,10 +179,10 @@ export const INTERTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         temperament: 'phlegmatic',
         ideology: 'lawfulNeutral',
         yungs: [
+            'rational',
             'intuit',
             'logic',
             'introvert',
-            'rational',
         ],
         reinin: [
             'static',
@@ -229,10 +229,10 @@ export const INTERTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         temperament: 'phlegmatic',
         ideology: 'lawfulEvil',
         yungs: [
+            'rational',
             'sensory',
             'logic',
             'introvert',
-            'rational',
         ],
         reinin: [
             'static',
@@ -279,10 +279,10 @@ export const INTERTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         temperament: 'choleric',
         ideology: 'chaoticEvil',
         yungs: [
+            'rational',
             'intuit',
             'ethic',
             'extravert',
-            'rational',
         ],
         reinin: [
             'dynamic',
@@ -329,10 +329,10 @@ export const INTERTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         temperament: 'melancholic',
         ideology: 'chaoticNeutral',
         yungs: [
+            'irrational',
             'intuit',
             'ethic',
             'introvert',
-            'irrational',
         ],
         reinin: [
             'dynamic',
@@ -379,10 +379,10 @@ export const INTERTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         temperament: 'sanguine',
         ideology: 'chaoticGood',
         yungs: [
+            'irrational',
             'sensory',
             'logic',
             'extravert',
-            'irrational',
         ],
         reinin: [
             'static',
@@ -429,10 +429,10 @@ export const INTERTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         temperament: 'melancholic',
         ideology: 'trueNeutral',
         yungs: [
+            'irrational',
             'intuit',
             'logic',
             'introvert',
-            'irrational',
         ],
         reinin: [
             'dynamic',
@@ -479,10 +479,10 @@ export const INTERTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         temperament: 'sanguine',
         ideology: 'chaoticEvil',
         yungs: [
+            'irrational',
             'sensory',
             'ethic',
             'extravert',
-            'irrational',
         ],
         reinin: [
             'static',
@@ -529,10 +529,10 @@ export const INTERTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         temperament: 'phlegmatic',
         ideology: 'lawfulEvil',
         yungs: [
+            'rational',
             'sensory',
             'ethic',
             'introvert',
-            'rational',
         ],
         reinin: [
             'static',
@@ -579,10 +579,10 @@ export const INTERTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         temperament: 'choleric',
         ideology: 'neutralEvil',
         yungs: [
+            'rational',
             'intuit',
             'logic',
             'extravert',
-            'rational',
         ],
         reinin: [
             'dynamic',
@@ -629,10 +629,10 @@ export const INTERTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         temperament: 'choleric',
         ideology: 'lawfulEvil',
         yungs: [
+            'rational',
             'sensory',
             'logic',
             'extravert',
-            'rational',
         ],
         reinin: [
             'dynamic',
@@ -679,10 +679,10 @@ export const INTERTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         temperament: 'phlegmatic',
         ideology: 'neutralGood',
         yungs: [
+            'rational',
             'intuit',
             'ethic',
             'introvert',
-            'rational',
         ],
         reinin: [
             'static',
@@ -729,10 +729,10 @@ export const INTERTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         temperament: 'sanguine',
         ideology: 'chaoticGood',
         yungs: [
+            'irrational',
             'intuit',
             'ethic',
             'extravert',
-            'irrational',
         ],
         reinin: [
             'static',
@@ -779,10 +779,10 @@ export const INTERTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         temperament: 'melancholic',
         ideology: 'trueNeutral',
         yungs: [
+            'irrational',
             'sensory',
             'logic',
             'introvert',
-            'irrational',
         ],
         reinin: [
             'dynamic',

@@ -12,6 +12,7 @@ import { CommunicationList } from '../../components/CommunicationList';
 import { TitleInfo } from '../../components/TitleInfo';
 import { ListOptions } from '../../components/ListOptions';
 import { GroupsAndQuadsList } from '../../components/GroupsAndQuadsList';
+import { SociotypeTabs } from '../../components/Tabs/SociotypeTabs';
 
 const getRow = (
     options: Array<string[]>,
@@ -66,13 +67,14 @@ export default function SociatypesCard() {
         <div className={styles.wrap}>
             <SocietyCard {...intertypeProps} />
 
-            <WhiteCard>
+            <WhiteCard className={styles.nopadding}>
                 <FunctionalCardGroup
                     element={intertypeProps.element}
                     intertype={intertypeProps.id}
                     {...intertypeProps.aspects}
                 />
             </WhiteCard>
+            <SociotypeTabs />
             <WhiteCard>
                 <TitleInfo className={styles.title}>Ментальность</TitleInfo>
                 <CommunicationList

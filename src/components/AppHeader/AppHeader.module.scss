@@ -1,14 +1,8 @@
 @import '../../styles/utils.scss';
 
 .root {
-    position: relative;
-    top: 0;
-    right: 0;
-    left: 50%;
-    transform: translateX(-50%);
     width: 100%;
     max-width: 48rem;
-    height: $size-header-height;
     background-color: var(--color-basic-beige);
     color: var(--color-basic-black);
     padding: $spacing-8 $spacing-4 0 $spacing-4;
@@ -63,7 +57,7 @@
     align-self: flex-start;
     display: flex;
     width: 100%;
-    height: calc(8.8rem + 18px);
+    height: calc(8.8rem + 17px);
     overflow-x: scroll;
     overflow-y: hidden;
     column-gap: $spacing-4;

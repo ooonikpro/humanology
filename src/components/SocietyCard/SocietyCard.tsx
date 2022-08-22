@@ -48,13 +48,13 @@ export const SocietyCard: React.FC<Props> = (props) => {
                 >
                     <div className={styles['params-line']}>
                         <span className={styles.pair}>
-                            <Tag sign={props.element} color='element'/>
+                            <Tag sign={props.element} color='element' size={16}/>
                             <Text tag="p" color="element" size="small">
                                 {text.element}
                             </Text>
                         </span>
                         <span className={styles.pair}>
-                            <Tag sign={props.role} color='role'/>
+                            <Tag sign={props.role} color='role' size={16}/>
                             <Text tag="p" color="role" size="small">
                                 {text.role}
                             </Text>
@@ -71,19 +71,19 @@ export const SocietyCard: React.FC<Props> = (props) => {
                         {!props.mini && (
                             <>
                                 <span className={styles.pair}>
-                                    <Tag sign={props.club} color='accent'/>
+                                    <Tag sign={props.club} color='accent' size={16}/>
                                     <Text tag="p" color="accent" size="small">
                                         {text.club}
                                     </Text>
                                 </span>
                                 <span className={styles.pair}>
-                                    <Tag sign={props.psychotype} color='accent'/>
+                                    <Tag sign={props.psychotype} color='accent' size={16}/>
                                     <Text tag="p" color="accent" size="small">
                                         {text.psychotype}
                                     </Text>
                                 </span>
                                 <span className={styles.pair}>
-                                    <Tag sign={props.tarot} color='accent'/>
+                                    <Tag sign={props.tarot} color='accent' size={16}/>
                                     <Text tag="p" color="accent" size="small">
                                         {text.tarot}
                                     </Text>
