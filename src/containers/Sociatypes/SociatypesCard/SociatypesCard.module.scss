@@ -1,0 +1,15 @@
+@import '../../../styles/utils';
+
+.title {
+    margin-bottom: $spacing-24;
+}
+
+.list {
+    margin-bottom: 0;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-4;
+}
