@@ -1,4 +1,11 @@
+@import '../../styles/utils';
+
 .root {
     width: 100%;
     height: 100%;
+}
+
+.functionalBlock {
+    margin-top: -$spacing-4;
+    margin-bottom: $spacing-6;
 }

@@ -12,32 +12,34 @@ export interface Route {
 
 export const routes: Route[] = [
     {
-        path: ROUTES.HOME,
+        path: ROUTES.HOME, // /types
         container: () => import('./containers/Home'),
+        children: [
+            {
+                path: ROUTES.SOCIATYPES(), // /types/:id
+                container: () => import('./containers/Sociatypes'),
+                children: [
+                    {
+                        path: ROUTES.SOCIATYPES_CARD,
+                        index: true,
+                        container: () => import('./containers/Sociatypes/SociatypesCard'),
+                    },
+                    {
+                        path: ROUTES.SOCIATYPES_DESCRIPTION,
+                        container: () => import('./containers/Sociatypes/SociatypesDescription'),
+                    },
+                    {
+                        path: ROUTES.SOCIATYPES_COMPATIBILITY,
+                        container: () => import('./containers/Sociatypes/SociatypesCompatibility'),
+                    },
+                ],
+            },
+        ]
     },
     {
         path: ROUTES.START,
         index: true,
         container: () => import('./containers/Start')
-    },
-    {
-        path: ROUTES.SOCIATYPES(),
-        container: () => import('./containers/Sociatypes'),
-        children: [
-            {
-                path: ROUTES.SOCIATYPES_CARD,
-                index: true,
-                container: () => import('./containers/SociatypesCard'),
-            },
-            {
-                path: ROUTES.SOCIATYPES_DESCRIPTION,
-                container: () => import('./containers/SociatypesDescription'),
-            },
-            {
-                path: ROUTES.SOCIATYPES_COMPATIBILITY,
-                container: () => import('./containers/SociatypesCompatibility'),
-            },
-        ],
     },
     {
         path: ROUTES.DISCLAIMER,

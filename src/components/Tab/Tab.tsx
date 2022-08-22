@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react';
+import React, { useCallback, useEffect } from 'react';
 import { useRef } from 'react';
 import { useLocation, useMatch, useNavigate, useResolvedPath } from 'react-router-dom';
 import { Text } from 'src/components/Text';
@@ -18,7 +18,16 @@ export const Tab: React.FC<Props> = ({ path, label }) => {
     const classes = [styles.root, isActiveRoute ? styles.active : ''].join(' ');
     const ref = useRef<HTMLElement>(null);
 
+    const scrollIntoView = useCallback(() => {
+        ref.current && ref.current.scrollIntoView(false);
+    }, [ref]);
     const onClick = useCallback(() => goTo(path), [path]);
+
+    useEffect(() => {
+        if (isActiveRoute) {
+            scrollIntoView();
+        }
+    }, [isActiveRoute]);
 
     return (
         <Text

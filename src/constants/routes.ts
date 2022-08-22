@@ -2,10 +2,16 @@ import { Tabs } from 'src/types';
 
 export const ROUTES = {
     HOME: '/types',
-    SOCIATYPES: (id = ':id') => `/type/${id}`,
+    SOCIATYPES: (id = ':id') => `/types/${id}`,
     SOCIATYPES_CARD: 'card',
     SOCIATYPES_DESCRIPTION: 'description',
     SOCIATYPES_COMPATIBILITY: 'compatibility',
+    SOCIATYPES_VIDEO: 'video',
+    SOCIATYPES_BUSINESS: 'business',
+    SOCIATYPES_DEVELOPMENT: 'devvelopment',
+    SOCIATYPES_STORIES: 'stories',
+    SOCIATYPES_PEOPLE: 'people',
+    SOCIATYPES_HUMOUR: 'humour',
     START: '/',
     DISCLAIMER: '/disclaimer',
     HISTORY: '/history',
@@ -29,56 +35,67 @@ export const MAIN_LINKS: Tabs[] = [
         label: 'Дисклеймер',
         path: ROUTES.DISCLAIMER,
         order: 4,
+        iconName: 'Aggressor'
     },
     {
         label: 'История',
         path: ROUTES.HISTORY,
         order: 5,
+        iconName: 'Aggressor'
     },
     {
         label: 'Информационный метаболизм',
         path: ROUTES.METABOLISM,
         order: 10,
+        iconName: 'Aggressor'
     },
     {
         label: 'Функции',
         path: ROUTES.FUNCTIONS,
         order: 6,
+        iconName: 'Aggressor'
     },
     {
         label: 'Блоки',
         path: ROUTES.BLOCKS,
         order: 7,
+        iconName: 'Aggressor'
     },
     {
         label: 'Аспекты',
         path: ROUTES.ASPECTS,
         order: 8,
+        iconName: 'Aggressor'
     },
     {
         label: 'Карты и масти',
         path: ROUTES.SUITS,
         order: 9,
+        iconName: 'Aggressor'
     },
     {
         label: 'Квадры',
         path: ROUTES.QUADRAS,
         order: 8,
+        iconName: 'Aggressor'
     },
     {
         label: 'Социотипы',
         path: ROUTES.HOME,
         order: 2,
+        iconName: 'Aggressor'
     },
     {
         label: 'Интертипные отношения',
         path: ROUTES.RELATIONSHIPS,
         order: 3,
+        iconName: 'Aggressor'
     },
     {
         label: 'Типы мышления',
         path: ROUTES.MINDSETS,
-        order: 11
+        order: 11,
+        iconName: 'Aggressor'
     }
 ];
 
@@ -95,37 +112,37 @@ export const SOCIATYPES_LINKS = (id: string) => [
     },
     {
         label: 'Видео',
-        path: '#',
+        path: '/video',
         order: 3,
     },
     {
         label: 'Совместимость',
-        path: '#',
+        path: `${ROUTES.SOCIATYPES(id)}/${ROUTES.SOCIATYPES_COMPATIBILITY}`,
         order: 4,
     },
     {
         label: 'Деловые качества',
-        path: '#',
+        path: `${ROUTES.SOCIATYPES(id)}/${ROUTES.SOCIATYPES_BUSINESS}`,
         order: 5,
     },
     {
         label: 'Развитие',
-        path: '#',
+        path: `${ROUTES.SOCIATYPES(id)}/${ROUTES.SOCIATYPES_DEVELOPMENT}`,
         order: 6,
     },
     {
         label: 'Истории',
-        path: '#',
+        path: `${ROUTES.SOCIATYPES(id)}/${ROUTES.SOCIATYPES_STORIES}`,
         order: 7,
     },
     {
         label: 'Люди',
-        path: '#',
+        path: `${ROUTES.SOCIATYPES(id)}/${ROUTES.SOCIATYPES_PEOPLE}`,
         order: 8,
     },
     {
         label: 'Мерзости',
-        path: '#',
+        path: `${ROUTES.SOCIATYPES(id)}/${ROUTES.SOCIATYPES_HUMOUR}`,
         order: 9,
     },
 ];

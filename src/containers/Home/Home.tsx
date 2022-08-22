@@ -6,7 +6,9 @@ import { INTERTYPES } from '../../constants/socionicsTypes';
 import { Socionics } from '../../types';
 import { SocietyCardMini } from '../../components/SocietyCardMini';
 import { ROUTES } from 'src/constants/routes';
-import { Link } from 'react-router-dom';
+import { Link, Outlet, useNavigate } from 'react-router-dom';
+import { Modal } from '../../components/Modal';
+import { useIsSociatypeRoute } from '../../hooks/useIsSociatypeRoute';
 
 const intertypes = (Object.keys(INTERTYPES) as Socionics.SocionicsType[]).map(
     (key) => ({
@@ -41,5 +43,11 @@ export default function Home() {
         });
     }, [elements]);
 
-    return <div className={styles.root}>{renderGroups}</div>;
+    return (
+        <div className={styles.root}>
+            {renderGroups}
+
+            <Outlet />
+        </div>
+    );
 }

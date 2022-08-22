@@ -1,3 +1,6 @@
+$color-basic-white: #fff;
+$color-basic-beige: #f9f5f2;
+
 $color-elements: (
     'air'  : #de64d2,
     'fire' : #ea5c3d,
@@ -6,8 +9,8 @@ $color-elements: (
 );
 
 :root {
-    --color-basic-white    : #fff;
-    --color-basic-beige    : #f9f5f2;
+    --color-basic-white    : #{$color-basic-white};
+    --color-basic-beige    : #{#f9f5f2};
     --color-basic-black    : #202322;
     --color-basic-accent   : #6b360d;
     --color-basic-greener  : #d7dd93;

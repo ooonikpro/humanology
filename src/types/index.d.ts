@@ -1,3 +1,5 @@
+import * as Icons from '../components/Icon/icons';
+
 export namespace Socionics {
     export type Gender = 'male' | 'female';
     export type Quadras = 'air' | 'fire' | 'earth' | 'water';
@@ -152,4 +154,5 @@ export type Tabs = {
     label: string;
     path: string;
     order: number;
+    iconName: keyof typeof Icons;
 };

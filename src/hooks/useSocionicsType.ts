@@ -3,8 +3,11 @@ import { Socionics } from '../types';
 import { INTERTYPES } from '../constants/socionicsTypes';
 import { useColorElement } from './useColorElement';
 import { useColorRole } from './useColorRole';
+import { useParams } from 'react-router-dom';
 
-export const useIntertype = (id: Socionics.SocionicsType) => {
+export const useIntertype = () => {
+    const params = useParams();
+    const id = params.id?.toUpperCase() as Socionics.SocionicsType;
     const intertypeProps: Socionics.IntertypeProp & { id: Socionics.SocionicsType } = {
         id,
         ...INTERTYPES[id],

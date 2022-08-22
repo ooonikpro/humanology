@@ -32,11 +32,6 @@ export const FunctionDescription: React.FC<Props> = (props) => {
             <>
                 <div className={styles.header} {...swipeableHandlers}>
                     <TitleInfo iconSize={18} iconColor="element" className={styles.title}>
-                        <Icon
-                            name={icon}
-                            size={32}
-                            className={styles['title-icon']}
-                        />
                         {name} функция
                     </TitleInfo>
 

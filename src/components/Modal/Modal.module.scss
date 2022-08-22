@@ -30,7 +30,7 @@ $transition-duration: 100ms;
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: var(--color-basic-beige);
+    background-color: rgba(#000, 0.8);
     opacity: 0;
     z-index: 0;
 }
@@ -38,15 +38,14 @@ $transition-duration: 100ms;
 .container {
     @include transition(transform);
     position: absolute;
-    bottom: $spacing-4;
+    bottom: 0;
     left: $spacing-4;
     right: $spacing-4;
     margin-left: auto;
     margin-right: auto;
-    height: 88vh;
+    height: calc(100vh - 4rem);
     max-width: 48rem;
-    padding-top: $spacing-16;
-    padding-bottom: $spacing-8;
+    padding: 0;
     border-radius: 2px;
     z-index: 1;
     cursor: auto;

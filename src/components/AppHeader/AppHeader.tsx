@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Routes, useMatch, useNavigate, useResolvedPath } from 'react-router-dom';
+import { useMatch, useNavigate, useResolvedPath } from 'react-router-dom';
 import styles from './AppHeader.module.scss';
 import { Icon } from '../Icon';
 import { MainTabs } from '../Tabs/MainTabs';
@@ -9,11 +9,6 @@ export const AppHeader = () => {
     const goTo = useNavigate();
     const { pathname } = useResolvedPath(ROUTES.START);
     const isActiveRoute = useMatch({ path: pathname });
-    
-    const { pathname:sociotypePath } = useResolvedPath(ROUTES.SOCIATYPES() + '/' + ROUTES.SOCIATYPES_CARD);
-    const isActiveRouteSociotype = useMatch({ path: sociotypePath });
-
-    console.log(isActiveRouteSociotype);
 
     return (
         <header className={styles.root}>
@@ -36,17 +31,14 @@ export const AppHeader = () => {
                     <Icon name="UserSquare" color="accent" size={24} />
                 </button>
             </div>
-            {
-                !isActiveRouteSociotype && 
-                <>
-                    <hr className={styles.hr}/>
-                    <nav className={styles['section-big']}>
-                        <div className={styles['horizontal-scrollbar']}>
-                            <MainTabs />
-                        </div>
-                    </nav>
-                </>
-            }            
+
+            <hr className={styles.hr}/>
+
+            <nav className={styles['section-big']}>
+                <div className={styles['horizontal-scrollbar']}>
+                    <MainTabs />
+                </div>
+            </nav>
         </header>
     );
 };

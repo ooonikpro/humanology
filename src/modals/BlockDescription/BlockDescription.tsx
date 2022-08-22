@@ -33,7 +33,7 @@ export const BlockDescription: React.FC<Props> = ({
     });
     const render = () => {
         return (
-            <>
+            <div className={styles.root}>
                 <div className={styles.header} {...swipeableHandlers}>
                     <TitleInfo
                         className={styles.title}
@@ -42,22 +42,22 @@ export const BlockDescription: React.FC<Props> = ({
                     >
                         {title}
                     </TitleInfo>
+                </div>
 
+                <div className={styles.body}>
                     <FunctionalCardRow
                         items={data.data}
                         onClickLeft={onClickRowItem}
                         onClickRight={onClickRowItem}
                     />
-                </div>
 
-                <hr />
+                    <hr />
 
-                <div className={styles.body}>
                     <React.Suspense>
                         <Description />
                     </React.Suspense>
                 </div>
-            </>
+            </div>
         );
     };
 

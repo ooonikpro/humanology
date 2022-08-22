@@ -140,7 +140,6 @@ export const FunctionalCardGroup: React.FC<Props> = (props) => {
             ...item,
         }));
         setIsOpenFunctionModal(true);
-        onCloseBlockModal();
     };
     const onCloseFunctionModal = () => setIsOpenFunctionModal(false);
 

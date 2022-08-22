@@ -1,1 +1,14 @@
 @import '../_common/text.module';
+
+.root {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    background-color: var(--color-basic-white);
+    z-index: 2;
+    height: auto;
+}

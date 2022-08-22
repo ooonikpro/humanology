@@ -6,21 +6,13 @@
     gap: $spacing-8;
 }
 
-.header {
-    padding-bottom: $spacing-24;
-}
-
 .title {
     margin-bottom: $spacing-4;
 }
 
 .body {
     height: 100%;
-    padding: $spacing-24 $spacing-8 $spacing-12 $spacing-12;
-    margin-left: -$spacing-12;
-    margin-right: -$spacing-12;
-    overflow: auto;
-    scroll-behavior: smooth;
+    padding: $spacing-8 $spacing-8 $spacing-12 $spacing-12;
 
     p, hr {
         margin-bottom: $spacing-16;
