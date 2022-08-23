@@ -5,7 +5,7 @@ interface Props {
     small?: boolean;
     children?: React.ReactNode | React.ReactNode[];
     className?: string;
-    color?: 'white' | 'beige';
+    color?: 'white' | 'beige' | 'beige-title';
     style?: React.CSSProperties;
     onClick?: () => void;
 }

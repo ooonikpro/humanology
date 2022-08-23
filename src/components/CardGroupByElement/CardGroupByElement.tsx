@@ -3,8 +3,7 @@ import styles from './CardGroupByElement.module.scss';
 import { useColorElement } from '../../hooks';
 import { Socionics } from '../../types';
 import { Text } from '../Text';
-import { Icon } from '../Icon';
-import { Tag } from '../Tag';
+import { Icon, getIconName } from '../Icon';
 
 interface Props {
     element: Socionics.Quadras;
@@ -17,8 +16,8 @@ export const CardGroupByElement: React.FC<Props> = ({ element, children }) => {
     return (
         <div className={styles.root} style={color}>
             <div className={styles.header}>
-                <Tag sign={element} color="element"/>
-                <Text tag="strong" size="h4" font="additional" color="element" className={styles['header-title']}>{label}</Text>
+                <Icon className={styles['quadracircle']} name={getIconName(element.concat('Mini'))} color="element" size={64}/>
+                <Text tag="p" size="h4" font="additional" color="element" className={styles['header-title']}>{label}</Text>
                 <Icon name="Help" size={24} className={styles['header-icon']}/>
             </div>
 

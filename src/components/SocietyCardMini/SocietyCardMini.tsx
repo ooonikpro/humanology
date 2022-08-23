@@ -16,6 +16,7 @@ type Props = Socionics.IntertypeProp & { id: Socionics.SocionicsType };
 export const SocietyCardMini: React.FC<Props> = (props) => {
     const text = {
         id: props.id,
+        gender: props.gender,
         element: QUADRAS[props.element],
         role: ROLE[props.role].label,
         name: props.name,
@@ -41,7 +42,7 @@ export const SocietyCardMini: React.FC<Props> = (props) => {
                     size={160}
                     className={styles['quadra-img']}
                 />
-                <Portrait name={props.id} className={styles.portrait}/>
+                <Portrait name={props.id} gender={props.gender} className={styles.portrait}/>
             </div>
 
             <div className={styles.footer}>

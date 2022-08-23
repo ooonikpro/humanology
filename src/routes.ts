@@ -99,6 +99,6 @@ export const routes: Route[] = [
     },
     {
         path: ROUTES.MINDSETS,
-        container: () => import('./containers/MindSets')
+        container: () => import('./containers/Mindsets')
     }
 ];

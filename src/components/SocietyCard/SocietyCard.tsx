@@ -22,6 +22,7 @@ interface Props extends Socionics.IntertypeProp {
 export const SocietyCard: React.FC<Props> = (props) => {
     const text = {
         id: props.id,
+        gender: props.gender,
         element: QUADRAS[props.element],
         role: ROLE[props.role].label,
         mindKey: MIND_KEY[props.mindKey],
@@ -73,25 +74,23 @@ export const SocietyCard: React.FC<Props> = (props) => {
                             </Text>
                         </span>
                     </div>
-
-                    <div className={styles['params-line']}>
-                        {!props.mini && (
-                            <>
+                    {!props.mini && (
+                        <>
+                            <div className={styles['params-line']}>       
                                 <span className={styles.pair}>
                                     <Tag sign={props.club} color='accent' size={16}/>
                                     <Text tag="p" color="accent" size="small">
                                         {text.club}
-                                    </Text>
+                                    </Text>                                
                                 </span>
                                 <span className={styles.pair}>
                                     <Tag sign={props.psychotype} color='accent' size={16}/>
                                     <Text tag="p" color="accent" size="small">
                                         {text.psychotype}
-                                    </Text>
-                                </span>
-                            </>
-                        )}
-                    </div>
+                                    </Text>                              
+                                </span>                            
+                            </div>
+                        </>)}
                 </div>
 
                 <Icon
@@ -111,7 +110,7 @@ export const SocietyCard: React.FC<Props> = (props) => {
                         size={160}
                     />
                 )}
-                <Portrait name={props.id} className={styles.portrait} />
+                <Portrait name={props.id} gender={props.gender} className={styles.portrait} />
                 
                 {!props.mini && (
                     <Text

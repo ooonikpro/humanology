@@ -13,3 +13,16 @@
         overflow-y: scroll;
     }
 }
+
+.endpoint {
+    
+    display: flex;
+    min-height: 8rem;
+    justify-content: space-around;
+    position: relative;
+    width: 100%;
+    opacity: 0.33;
+    align-items: center;
+    align-content: center;
+
+}

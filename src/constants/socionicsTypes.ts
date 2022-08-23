@@ -8,6 +8,7 @@ export const INTERTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         mindKey: 'irrational-1',
         mindset: 'casual',
         name: 'Новатор',
+        typeName: 'innovator',
         gender: 'male',
         club: 'scientific',
         tarot: 'swords', // масть
@@ -58,6 +59,7 @@ export const INTERTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         mindKey: 'irrational-2',
         mindset: 'algorithmic',
         name: 'Дипломат',
+        typeName: 'diplomat',
         gender: 'female',
         club: 'social',
         tarot: 'cups', // масть
@@ -108,6 +110,7 @@ export const INTERTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         mindKey: 'rational-4',
         mindset: 'vortical',
         name: 'Энтузиаст',
+        typeName: 'enthusiast',
         gender: 'female',
         club: 'social',
         tarot: 'wands', // масть
@@ -159,6 +162,7 @@ export const INTERTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         mindKey: 'rational-1',
         mindset: 'holographic',
         name: 'Аналитик',
+        typeName: 'analytic',
         gender: 'male',
         club: 'scientific',
         tarot: 'pentacles', // масть
@@ -209,7 +213,8 @@ export const INTERTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         mindKey: 'rational-4',
         mindset: 'casual',
         name: 'Инспектор',
-        gender: 'female',
+        typeName: 'inspector',
+        gender: 'male',
         club: 'practice',
         tarot: 'pentacles', // масть
         psychotype: 'aggressor', // группа
@@ -259,7 +264,8 @@ export const INTERTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         mindKey: 'rational-1',
         mindset: 'algorithmic',
         name: 'Наставник',
-        gender: 'male',
+        typeName: 'mentor',
+        gender: 'female',
         club: 'humanitarian',
         tarot: 'wands', // масть
         psychotype: 'victim', // группа
@@ -309,6 +315,7 @@ export const INTERTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         mindKey: 'irrational-1',
         mindset: 'vortical',
         name: 'Лирик',
+        typeName: 'lyricist',
         gender: 'female',
         club: 'humanitarian',
         tarot: 'cups', // масть
@@ -359,6 +366,7 @@ export const INTERTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         mindKey: 'irrational-1',
         mindset: 'vortical',
         name: 'Лидер',
+        typeName: 'leader',
         gender: 'male',
         club: 'practice',
         tarot: 'swords', // масть
@@ -409,6 +417,7 @@ export const INTERTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         mindKey: 'irrational-1',
         mindset: 'algorithmic',
         name: 'Критик',
+        typeName: 'critic',
         gender: 'male',
         club: 'scientific',
         tarot: 'swords', // масть
@@ -459,6 +468,7 @@ export const INTERTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         mindKey: 'irrational-2',
         mindset: 'casual',
         name: 'Политик',
+        typeName: 'politic',
         gender: 'female',
         club: 'social',
         tarot: 'cups', // масть
@@ -509,6 +519,7 @@ export const INTERTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         mindKey: 'rational-4',
         mindset: 'casual',
         name: 'Хранитель',
+        typeName: 'guardian',
         gender: 'female',
         club: 'social',
         tarot: 'wands', // масть
@@ -559,6 +570,7 @@ export const INTERTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         mindKey: 'rational-1',
         mindset: 'vortical',
         name: 'Предприниматель',
+        typeName: 'businessman',
         gender: 'male',
         club: 'scientific',
         tarot: 'pentacles', // масть
@@ -609,6 +621,7 @@ export const INTERTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         mindKey: 'rational-4',
         mindset: 'algorithmic',
         name: 'Администратор',
+        typeName: 'administrator',
         gender: 'male',
         club: 'practice',
         tarot: 'pentacles', // масть
@@ -659,6 +672,7 @@ export const INTERTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         mindKey: 'rational-1',
         mindset: 'casual',
         name: 'Гуманист',
+        typeName: 'humanist',
         gender: 'female',
         club: 'humanitarian',
         tarot: 'wands', // масть
@@ -709,7 +723,8 @@ export const INTERTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         mindKey: 'irrational-1',
         mindset: 'holographic',
         name: 'Советчик',
-        gender: 'male',
+        typeName: 'adviser',
+        gender: 'female',
         club: 'humanitarian',
         tarot: 'cups', // масть
         psychotype: 'infantile', // группа
@@ -759,7 +774,8 @@ export const INTERTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         mindKey: 'irrational-1',
         mindset: 'vortical',
         name: 'Мастер',
-        gender: 'female',
+        typeName: 'master',
+        gender: 'male',
         club: 'practice',
         tarot: 'swords', // масть
         psychotype: 'care', // группа

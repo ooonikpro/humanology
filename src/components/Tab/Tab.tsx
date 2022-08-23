@@ -4,14 +4,17 @@ import { useLocation, useMatch, useNavigate, useResolvedPath } from 'react-route
 import { Text } from 'src/components/Text';
 import { Icon } from '../Icon';
 import styles from './Tab.module.scss';
+import * as Icons from '../Icon/icons';
+
 
 
 interface Props {
     path: string;
     label: string;
+    icon: keyof typeof Icons;
 }
 
-export const Tab: React.FC<Props> = ({ path, label }) => {
+export const Tab: React.FC<Props> = ({ path, label, icon }) => {
     const goTo = useNavigate();
     const { pathname } = useResolvedPath(path);
     const location = useLocation();
@@ -45,7 +48,7 @@ export const Tab: React.FC<Props> = ({ path, label }) => {
                 className={styles.icon}
                 size={24}
                 color='accent'
-                name='Aggressor'
+                name={icon}
             />
             {label}     
         </Text>

@@ -30,10 +30,11 @@ export const FunctionDescription: React.FC<Props> = (props) => {
         return (
             <>
                 <div className={styles.header} {...swipeableHandlers}>
-                    <TitleInfo iconSize={18} iconColor="element" className={styles.title}>
+                    <TitleInfo iconSize={24} iconColor="accent" className={styles.title}>
                         {name} функция
                     </TitleInfo>
-
+                </div>
+                <div className={styles.body}>
                     <div className={styles['aspect-details']}>
                         <Icon
                             name={aspectIconMini}
@@ -47,14 +48,11 @@ export const FunctionDescription: React.FC<Props> = (props) => {
                             <Text size="h3" color="element">
                                 {aspectTitle}
                             </Text>
-                            <Text size="small">{aspectSubtitle}</Text>
+                            <Text size="smaller">{aspectSubtitle}</Text>
                         </div>
+
                     </div>
-                </div>
-
-                <hr />
-
-                <div className={styles.body}>
+                    <hr />
                     <React.Suspense>
                         <Description />
                     </React.Suspense>

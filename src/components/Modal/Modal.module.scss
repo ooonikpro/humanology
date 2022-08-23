@@ -43,14 +43,15 @@ $transition-duration: 100ms;
     right: $spacing-4;
     margin-left: auto;
     margin-right: auto;
-    height: calc(100vh - 4rem);
+    height: calc(100vh - #{$spacing-40});
     max-width: 48rem;
     padding: 0;
     border-radius: 2px;
     z-index: 1;
     cursor: auto;
     transform: translateY(calc(100% + #{$spacing-4}));
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
 }
@@ -59,10 +60,23 @@ $transition-duration: 100ms;
     position: absolute;
     top: $spacing-6;
     left: 50%;
+    z-index: 999;
     transform: translateX(-50%);
     width: 8.8rem;
     height: 0.4rem;
     border-radius: 2px;
     background-color: var(--color-basic-accent);
     opacity: 0.25;
+}
+
+.endpoint {
+    display: flex;
+    min-height: 8rem;
+    justify-content: space-around;
+    position: relative;
+    width: 100%;
+    opacity: 0.5;
+    align-items: center;
+    align-content: center;
+
 }

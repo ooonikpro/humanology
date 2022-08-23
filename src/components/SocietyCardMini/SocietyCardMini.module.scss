@@ -23,7 +23,7 @@
         top: -0.7rem;
         left: -$spacing-8;
         height: 2.4rem;
-        z-index: -1;
+        z-index: 0;
         display: block;
         content: '';
         background: radial-gradient(
@@ -42,10 +42,9 @@
 
 .quadra-img {
     position: absolute;
-    z-index: -1;
-    margin-top: $spacing-8;
+    margin-top: $spacing-4;
     left: 50%*1.1;
-    opacity: 0.25;
+    opacity: 0.33;
     transform: scale(1.1) translateX(-50%);
 }
 
@@ -54,8 +53,8 @@
     left: 50%;
     transform: translateX(-50%);
     bottom: 0;
-    width: 12.8rem;
-    height: 12.8rem;
+    width: 14.4rem;
+    height: 14.4rem;
 }
 
 .mindset-key {
@@ -77,11 +76,13 @@
 .element-role {
     display: flex;
     flex-direction: column;
+    gap: $spacing-2;
 }
 
 .id-alias {
     display: flex;
     flex-direction: column;
+    gap: $spacing-2;
     text-align: right;
 }
 

@@ -4,8 +4,6 @@
     @include colorElement(--card-group-color);
     
     position: relative;
-
-    max-width: 48rem;
     padding: $spacing-16 $spacing-4;
 
     &::before {
@@ -20,23 +18,28 @@
         z-index: -1;
         opacity: 0.1;
     }
+    
+    &:first-child {
+        margin-top: $spacing-8;
+    }
 }
 
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: $spacing-4;
+    margin-bottom: $spacing-8;
     column-gap: $spacing-8;
 
     &-title {
         margin-right: auto;
+        margin-left: 8.4rem;
     }
 
     &-icon {
         margin-right: $spacing-4;
         color: var(--card-group-color);
-        opacity: 0.25;
+        opacity: 0.5;
     }
 }
 
@@ -46,4 +49,11 @@
     flex-wrap: wrap;
     column-gap: $spacing-4;
     row-gap: $spacing-4;
+}
+
+.quadracircle {
+    position: absolute;
+    z-index: -1;
+    margin-top: $spacing-8;
+    margin-left: $spacing-8;
 }

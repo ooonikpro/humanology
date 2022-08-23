@@ -7,7 +7,7 @@ export default function Metabolism() {
     return (
         <div className={styles.root}>
             <WhiteCard>
-                <Text tag="h3" size="h3" className={styles.title}>Информационный метаболизм</Text>
+                <Text tag="h1" size="h4" font="additional" className={styles.title}>Информационный метаболизм</Text>
 
             </WhiteCard>
         </div>

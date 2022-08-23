@@ -11,7 +11,7 @@ export const MainTabs: React.FC = () => {
     return (
         <>
             {sortedLinks.map((item, $i) => (
-                <Tab {...item} key={$i}/>
+                <Tab {...item} key={$i} icon={item.iconName}/>
             ))}
         </>
     );

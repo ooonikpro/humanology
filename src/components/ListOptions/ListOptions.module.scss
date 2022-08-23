@@ -7,6 +7,7 @@ root {
 .row {
     position: relative;
     display: flex;
+    flex-direction: row;
     align-items: baseline;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -17,14 +18,15 @@ root {
 }
 
 .divider {
-    @include colorElement(--dvd-color);
+    @include colorRole(--dvd-color);
 
     position: relative;
-    align-self: center;
+    max-height: 1px;
     height: 1px;
     width: auto;
+    margin: 0;
     border: 0;
-    opacity: 1;
+    opacity: 0.5;
     background: linear-gradient(
                     90deg,
                     var(--color-basic-white) 0%,

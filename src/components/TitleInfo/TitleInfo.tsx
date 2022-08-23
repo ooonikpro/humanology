@@ -27,22 +27,20 @@ export const TitleInfo: React.FC<Props> = ({
     render,
 }) => {
     return (
-        <div className={styles.background} >
-            <TextInline align={align} className={className} justify="between">
-                {
-                    render ? render() :
-                        <Text tag="p" color={textColor} size={textSize} className={styles.text}>
-                            {children}
-                        </Text>
-                }
+        <TextInline align={align} className={className} justify="between">
+            {
+                render ? render() :
+                    <Text tag="p" color={textColor} size={textSize} className={styles.text}>
+                        {children}
+                    </Text>
+            }
 
-                <Icon
-                    name="Help"
-                    color={iconColor}
-                    size={iconSize}
-                    className={styles.icon}
-                />
-            </TextInline>
-        </div>
+            <Icon
+                name="Help"
+                color={iconColor}
+                size={iconSize}
+                className={styles.icon}
+            />
+        </TextInline>
     );
 };

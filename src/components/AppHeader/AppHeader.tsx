@@ -34,7 +34,7 @@ export const AppHeader = () => {
 
             <hr className={styles.hr}/>
 
-            <nav className={styles['section-big']}>
+            <nav className={styles.tabs}>
                 <div className={styles['horizontal-scrollbar']}>
                     <MainTabs />
                 </div>

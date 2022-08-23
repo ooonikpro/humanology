@@ -30,7 +30,7 @@ export default function Aspects() {
     return (
         <div className={styles.root}>
             <WhiteCard>
-                <Text tag="h3" size="h3" className={styles.title}>
+                <Text tag="h1" size="h4" font="additional" className={styles.title}>
                     Аспекты
                 </Text>
 

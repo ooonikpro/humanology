@@ -26,16 +26,6 @@ export const CommunicationList: React.FC<Props> = (props) => {
             value: MOTIVATION[props.stimulant],
         },
         {
-            textColor: 'black',
-            label: 'Стиль общения',
-            value: COMMUNICATION_STYLE[props.communication],
-        },
-        {
-            textColor: 'black',
-            label: 'Собеседник',
-            value: COMPANION[props.companion],
-        },
-        {
             icon: props.temperament,
             iconSize: { width: 38, height: 16 },
             iconColor: 'role',
@@ -48,6 +38,16 @@ export const CommunicationList: React.FC<Props> = (props) => {
             textColor: 'black',
             label: 'Мышление',
             value: mindset[props.mindset],
+        },
+        {
+            textColor: 'black',
+            label: 'Стиль общения',
+            value: COMMUNICATION_STYLE[props.communication],
+        },
+        {
+            textColor: 'black',
+            label: 'Собеседник',
+            value: COMPANION[props.companion],
         },
         {
             textColor: 'black',

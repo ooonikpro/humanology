@@ -30,6 +30,23 @@ export namespace Socionics {
         | 'INFJ'
         | 'ENFP'
         | 'ISTP';
+    export type SocionicsTypeName =
+		| 'innovator'
+		| 'diplomat'
+		| 'enthusiast'
+		| 'analytic'
+		| 'inspector'
+		| 'mentor'
+		| 'lyricist'
+		| 'leader'
+		| 'critic'
+		| 'politic'
+		| 'guardian'
+		| 'businessman'
+		| 'administrator'
+		| 'humanist'
+		| 'adviser'
+		| 'master';
     export type Aspect =
         | 'ideas'
         | 'business'
@@ -131,6 +148,7 @@ export namespace Socionics {
         element: Quadras;
         role: Role;
         alias: string;
+        typeName: SocionicsTypeName;
         mindKey: MindKey;
         mindset: Mindset;
         name: string;

@@ -7,7 +7,7 @@ export default function Mindsets() {
     return (
         <div className={styles.root}>
             <WhiteCard>
-                <Text tag="h3" size="h3" className={styles.title}>Типы мышления</Text>
+                <Text tag="h1" size="h4" font="additional" className={styles.title}>Типы мышления</Text>
 
                 <Text tag="p" className={styles.text}>
                     Разные стили мышления, соответствующие тем или иным типам личности определяют особенности интеллекта, а значит и склонность к тем или иным видам деятельности.

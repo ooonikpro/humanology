@@ -7,7 +7,7 @@ export default function History() {
     return (
         <div className={styles.root}>
             <WhiteCard>
-                <Text tag="h3" size="h3" className={styles.title}>История</Text>
+                <Text tag="h4" size="h4" font="additional" className={styles.title}>История</Text>
 
             </WhiteCard>
         </div>

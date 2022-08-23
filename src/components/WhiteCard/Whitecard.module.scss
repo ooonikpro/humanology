@@ -15,15 +15,24 @@
         z-index: -1;
     }
 
-    &.white::before {
+    &.white {
         background-color: var(--color-basic-white);
     }
 
-    &.beige::before {
-        background-color: var(--color-basic-white);
-        opacity: 0.5;
+    &.beige {
+        background-color: var(--color-basic-beige);
     }
 
+    &.beige-title {
+        background-color: var(--color-basic-white);
+
+        &::before {
+            height: 4rem;
+            z-index: 0;
+            background-color: rgba($color-basic-beige, 0.5);
+        }
+    }
+    
     &.small {
         padding: $spacing-6;
     }
