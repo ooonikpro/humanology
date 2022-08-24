@@ -29,7 +29,7 @@ export default function Home() {
                 <CardGroupByElement key={$i} element={item.element}>
                     {item.cards.map((card, $j) => (
                         <Link
-                            to={`${ROUTES.SOCIATYPES(card.id)}/card`}
+                            to={`${ROUTES.SOCIOTYPES(card.id)}/card`}
                             key={$j}
                             className={styles.link}
                         >

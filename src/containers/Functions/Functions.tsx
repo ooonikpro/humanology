@@ -6,6 +6,7 @@ import { SimpleFunctionCard } from '../../components/SimpleFunctionCard';
 import { Socionics } from 'src/types';
 import { TextInline } from 'src/components/TextInline';
 import { TitleInfo } from 'src/components/TitleInfo';
+import { AuthorLine } from '../../components/AuthorLine';
 
 interface IData {
     function: Socionics.Function;
@@ -90,15 +91,16 @@ const DATA: IData[] = [
 export default function Functions() {
     return (
         <div className={styles.root}>
-            <WhiteCard>
+            <WhiteCard color="beige-title-big">
                 <Text tag="h1" size="h4" font="additional" className={styles.title}>Функции</Text>
+                <AuthorLine readTime='5'>äлеша</AuthorLine> 
 
                 <Text tag="p" className={styles.text}>
                     Целостное психологическое образование, которое также содержит: некоторое целостное внутренние
                     пространство, внутреннюю сферу, память, составные части.
                 </Text>
 
-                <Text tag="p" size="h6" color="accent" className={styles.text}>
+                <Text tag="p" size="h5" color="accent" className={styles.text}>
                     Каждая функция работает
                     с определенным аспектом жизни.
                 </Text>

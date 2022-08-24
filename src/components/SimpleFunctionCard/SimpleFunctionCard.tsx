@@ -104,7 +104,7 @@ export const SimpleFunctionCard: React.FC<Props> = (props) => {
                 <div className={styles.stripe} />
             )}
 
-            <Text color={textColor} className={styles.function}>
+            <Text color={textColor} className={styles.function} font="additional">
                 {functionLabel}
             </Text>
 

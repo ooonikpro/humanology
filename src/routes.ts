@@ -16,25 +16,55 @@ export const routes: Route[] = [
         container: () => import('./containers/Home'),
         children: [
             {
-                path: ROUTES.SOCIATYPES(), // /types/:id
-                container: () => import('./containers/Sociatypes'),
+                path: ROUTES.SOCIOTYPES(), // /types/:id
+                container: () => import('./containers/Sociotypes'),
                 children: [
                     {
-                        path: ROUTES.SOCIATYPES_CARD,
+                        path: ROUTES.SOCIOTYPES_CARD,
                         index: true,
-                        container: () => import('./containers/Sociatypes/SociatypesCard'),
+                        container: () => import('./containers/Sociotypes/SociotypesCard'),
                     },
                     {
-                        path: ROUTES.SOCIATYPES_DESCRIPTION,
-                        container: () => import('./containers/Sociatypes/SociatypesDescription'),
+                        path: ROUTES.SOCIOTYPES_VIDEO,
+                        index: true,
+                        container: () => import('./containers/Sociotypes/SociotypesVideo'),
                     },
                     {
-                        path: ROUTES.SOCIATYPES_COMPATIBILITY,
-                        container: () => import('./containers/Sociatypes/SociatypesCompatibility'),
+                        path: ROUTES.SOCIOTYPES_DESCRIPTION,
+                        container: () => import('./containers/Sociotypes/SociotypesDescription'),
+                    },
+                    {
+                        path: ROUTES.SOCIOTYPES_COMPATIBILITY,
+                        container: () => import('./containers/Sociotypes/SociotypesCompatibility'),
+                    },
+                    {
+                        path: ROUTES.SOCIOTYPES_BUSINESS,
+                        container: () => import('./containers/Sociotypes/SociotypesBusiness'),
+                    },
+                    {
+                        path: ROUTES.SOCIOTYPES_DEVELOPMENT,
+                        container: () => import('./containers/Sociotypes/SociotypesDevelopment'),
+                    },
+                    {
+                        path: ROUTES.SOCIOTYPES_STORIES,
+                        container: () => import('./containers/Sociotypes/SociotypesStories'),
+                    },
+                    {
+                        path: ROUTES.SOCIOTYPES_PEOPLE,
+                        container: () => import('./containers/Sociotypes/SociotypesPeople'),
+                    },
+                    {
+                        path: ROUTES.SOCIOTYPES_HUMOUR,
+                        container: () => import('./containers/Sociotypes/SociotypesHumour'),
                     },
                 ],
             },
         ]
+    },
+    {
+        path: ROUTES.MENU,
+        index: true,
+        container: () => import('./containers/Menu')
     },
     {
         path: ROUTES.START,
@@ -100,5 +130,21 @@ export const routes: Route[] = [
     {
         path: ROUTES.MINDSETS,
         container: () => import('./containers/Mindsets')
+    },
+    {
+        path: ROUTES.CLUBS,
+        container: () => import('./containers/Clubs')
+    },
+    {
+        path: ROUTES.REININ,
+        container: () => import('./containers/ReininSigns')
+    },
+    {
+        path: ROUTES.YUNG,
+        container: () => import('./containers/DichotomiesYung')
+    },
+    {
+        path: ROUTES.OTHER,
+        container: () => import('./containers/Other')
     }
 ];

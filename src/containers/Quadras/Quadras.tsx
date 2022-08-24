@@ -4,6 +4,7 @@ import styles from './Quadras.module.scss';
 import { Text } from '../../components/Text';
 import { WhiteCard } from '../../components/WhiteCard';
 import { Props as QuadraCardProps, QuadraCard } from '../../components/QuadraCard';
+import { AuthorLine } from '../../components/AuthorLine';
 
 const QUADRAS_DATA: Array<Omit<QuadraCardProps, 'onClick'>> = [
     {
@@ -77,10 +78,11 @@ export default function Quadras() {
 
     return (
         <div className={styles.root}>
-            <WhiteCard>
+            <WhiteCard color="beige-title-big">
                 <Text tag="h1" size="h4" font="additional" className={styles.title}>
                     Квадры
                 </Text>
+                <AuthorLine readTime='5'>äлеша</AuthorLine> 
 
                 <Text tag="p" className={styles.text}>
                     Совокупность социотипов, которые совместимы между собой, их

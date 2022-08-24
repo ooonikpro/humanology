@@ -1,0 +1,29 @@
+@import '../../../styles/utils.scss';
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-4;
+}
+
+
+.title {
+    display: block;
+    margin-top: $spacing-16;
+}
+
+.text {
+    p {
+        margin-bottom: $spacing-12;
+    }
+    i {
+        opacity: 0.75;
+    }
+
+    hr {
+        border-color: var(--color-role);
+        margin-top: $spacing-24;
+        margin-bottom: $spacing-12;
+        opacity: 0.25;
+    }
+}

@@ -4,6 +4,19 @@
     display: flex;
     flex-direction: column;
     gap: $spacing-4;
+
+    p, hr {
+        margin-bottom: $spacing-12;
+        line-height: $spacing-24;
+    }
+
+    i {
+        opacity: 0.75;
+    }
+}
+
+.text-right {
+    text-align: right;
 }
 
 .title {
@@ -14,10 +27,6 @@
 
 .mb8 {
     margin-bottom: $spacing-8;
-}
-
-.text:not(:last-child), hr {
-    margin-bottom: $spacing-12;
 }
 
 .grower {

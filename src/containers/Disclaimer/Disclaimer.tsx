@@ -2,18 +2,20 @@ import React from 'react';
 import styles from './Disclaimer.module.scss';
 import { WhiteCard } from '../../components/WhiteCard';
 import { Text } from '../../components/Text';
+import { AuthorLine } from '../../components/AuthorLine';
 
 export default function Disclaimer() {
     return (
         <div className={styles.root}>
-            <WhiteCard>
+            <WhiteCard color="beige-title-big">
                 <Text tag="h1" size="h4" font="additional" className={styles.title}>Дисклеймер</Text>
+                <AuthorLine readTime='5'>äлеша</AuthorLine>
                 
                 <Text tag="p" className={styles.text}>
                     Верить, проверять, доверять — дело ваше.
                 </Text>
 
-                <Text tag="h6" size="h6" className={styles.text}>
+                <Text tag="p" size="h5" className={styles.text} color="accent">
                     Все что тут написано, собрано в интернете <br /> и авторски переработано.
                 </Text>
 
@@ -27,12 +29,12 @@ export default function Disclaimer() {
                 <Text tag="p" className={styles.text}>
                     Процитирую Аушру:
                 </Text>
-
-                <Text tag="h6" size="h6" color="accent" className={styles.text}>
+                
+                <Text tag="p" size="h6" color="accent" className={styles.text}>
                     Основная цель — показать, что в проявлениях любви, как и во всех других областях человеческого общения, нет правых и неправых, хороших и плохих.
                 </Text>
 
-                <Text tag="h6" size="h6" color="accent" className={styles.text}>
+                <Text tag="p" size="h6" color="accent" className={styles.text}>
                     Есть лишь люди с подходящими и неподходящими типами личности.
                 </Text>
 
@@ -44,7 +46,7 @@ export default function Disclaimer() {
                     Есть люди с более уравновешенной психикой.<br /> Чье окружение образовано из людей с подходящими типами.
                 </Text>
 
-                <Text tag="h6" size="h6" color="accent" className={styles.text}>
+                <Text tag="p" size="h6" color="accent" className={styles.text}>
                     Люди всегда мечтали жить в хороших отношениях с друг другом, мечтали быть понятыми и понимать других.
                 </Text>
 
@@ -60,12 +62,12 @@ export default function Disclaimer() {
                     Совершенно новым этапом в жизни общества будет такая его реорганизация, которая каждому человеку предоставит возможность для достаточно количества контактов с нужными для его психосоматического здоровья людьми.
                 </Text>
 
-                <Text tag="h6" size="h6" color="accent" className={styles.text}>
+                <Text tag="p" size="h6" color="accent" className={styles.text}>
                     Трудно сказать, когда сбудется эта мечта, но другой дороги нет.
                 </Text>
-
-                <Text tag="p" className={styles.text}>
-                    Аушра Аугустинавичюте, 1983
+                
+                <Text tag="p" size="smaller" color="accent" className={styles['text-right']}>
+                    <i>Аушра Аугустинавичюте, 1983</i>
                 </Text>
 
                 <hr />

@@ -3,6 +3,7 @@
 .root {    
     display: flex;
     min-height: 24rem;
+	padding-top: $spacing-12;
     justify-content: space-around;
     position: absolute;
     width: 100%;
@@ -20,6 +21,7 @@
 	text-align: center;
 	border-top: 1px solid rgba($color-basic-accent, 0.25);
 	padding-top: $spacing-4;
+	margin-top: $spacing-12;
 	margin-bottom: $spacing-24;
 	opacity: 0.25;
 }

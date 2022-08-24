@@ -7,7 +7,7 @@ import { ROUTES } from 'src/constants/routes';
 
 export const AppHeader = () => {
     const goTo = useNavigate();
-    const { pathname } = useResolvedPath(ROUTES.START);
+    const { pathname } = useResolvedPath(ROUTES.MENU);
     const isActiveRoute = useMatch({ path: pathname });
 
     return (
@@ -15,7 +15,7 @@ export const AppHeader = () => {
             <div className={styles.section}>
                 <button
                     className={[styles.menu, isActiveRoute ? styles.active : ''].join(' ')}
-                    onClick={() => goTo(ROUTES.START)}
+                    onClick={() => goTo(ROUTES.MENU)}
                 >
                     <Icon name="Menu" color="accent" size={24} />
                 </button>

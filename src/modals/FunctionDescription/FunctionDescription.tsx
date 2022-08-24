@@ -49,7 +49,7 @@ export const FunctionDescription: React.FC<Props> = (props) => {
                             <Icon name={aspectIcon} size={96} color="accent" />
 
                             <div className={styles['aspect-details-text']}>
-                                <Text size="h3" color="accent" font="additional">
+                                <Text size="h4" color="accent" font="additional">
                                     {aspectTitle}
                                 </Text>
                                 <Text size="base">{aspectSubtitle}</Text>

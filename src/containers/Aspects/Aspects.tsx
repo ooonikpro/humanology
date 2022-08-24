@@ -7,6 +7,7 @@ import { getIconName, Icon } from '../../components/Icon';
 import { Socionics } from '../../types';
 import { ASPECTS, ASPECTS_GROUPS, ASPECTS_LABEL } from '../../constants/aspects';
 import { useNavigate } from 'react-router-dom';
+import { AuthorLine } from '../../components/AuthorLine';
 
 const AspectCard: React.FC<{ aspect: Socionics.Aspect; onClick: () => void; }> = ({ aspect, onClick }) => {
     const aspectIconMini = getIconName(`aspect-${aspect}-mini`);
@@ -29,10 +30,11 @@ export default function Aspects() {
 
     return (
         <div className={styles.root}>
-            <WhiteCard>
+            <WhiteCard color="beige-title-big">
                 <Text tag="h1" size="h4" font="additional" className={styles.title}>
                     Аспекты
                 </Text>
+                <AuthorLine readTime='5'>äлеша</AuthorLine> 
 
                 <Text tag="p" color="accent" className={styles.text}>
                     Макроаспекты

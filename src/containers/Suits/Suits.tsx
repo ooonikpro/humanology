@@ -9,7 +9,8 @@ import { useColorRole } from '../../hooks';
 import { SuitCard, Props as SuitCardProps } from '../../components/SuitCard';
 import { DATA_ROLES, DATA_SUITS } from './data';
 import { useNavigate } from 'react-router-dom';
-import { ROUTES } from 'src/constants/routes';
+import { ROUTES } from '../../constants/routes';
+import { AuthorLine } from '../../components/AuthorLine';
 
 type CardRoleProps<K extends string, T> = {
     [key in K]: T;
@@ -48,10 +49,11 @@ export default function Suits() {
 
     return (
         <div className={styles.root}>
-            <WhiteCard>
+            <WhiteCard color="beige-title-big">
                 <Text tag="h1" size="h4" font="additional" className={styles.title}>
                     Карты и масти
                 </Text>
+                <AuthorLine readTime='5'>äлеша</AuthorLine> 
 
                 <Text tag="p" className={styles.text}>
                     Авторы этой идеи, Ирина и Сергей Савченко обратили внимание
