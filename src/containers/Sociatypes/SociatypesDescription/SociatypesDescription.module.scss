@@ -17,6 +17,16 @@
     p {
         margin-bottom: $spacing-16;
     }
+    i {
+        opacity: 0.75;
+    }
+
+    hr {
+        border-color: var(--color-role);
+        margin-top: $spacing-24;
+        margin-bottom: $spacing-12;
+        opacity: 0.25;
+    }
 }
 
 .white {

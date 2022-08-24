@@ -74,6 +74,11 @@ export namespace Socionics {
         | 'pain'
         | 'back'
         | 'limit';
+    export type FunctionLevel =
+        | '1'
+        | '2'
+        | '3'
+        | '4';
     export type Stimulant =
         | 'uniqueness'
         | 'wealth'

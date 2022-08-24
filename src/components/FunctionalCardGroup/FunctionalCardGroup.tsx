@@ -50,7 +50,7 @@ export const FunctionalCardGroup: React.FC<Props> = (props) => {
                     function: 'limit',
                     number: 7,
                     lvl: 3,
-                    opacity: 0.5,
+                    opacity: 0.75,
                     size: 's',
                 },
 
@@ -59,7 +59,7 @@ export const FunctionalCardGroup: React.FC<Props> = (props) => {
                     function: 'back',
                     number: 8,
                     lvl: 4,
-                    opacity: 0.5,
+                    opacity: 0.75,
                     size: 'm',
                 },
             ],

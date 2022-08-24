@@ -1,8 +1,11 @@
-@import '../../styles/utils';
+@import '../../styles/utils.scss';
 
 .root {
     @include colorElement(--f-block-color);
     --lvl-color: var(--color-basic-white);
+
+    @include colorRole(--f-block-color-role);
+    @include colorRoleDual(--f-block-color-role-dual);
 
     position: relative;
     width: 100%;
@@ -14,8 +17,23 @@
                     transparent 250%
     );
     border-radius: 2px;
-    padding: $spacing-8 $spacing-8 $spacing-8 $spacing-12;
 
+    &:nth-child(1) {
+        background: linear-gradient(
+                    220deg,
+                    var(--f-block-color) 25%,
+                    var(--f-block-color-role) 100%
+        );
+    }
+    
+    &:nth-child(2) {
+        background: linear-gradient(
+                    200deg,
+                    var(--f-block-color) 50%,
+                    var(--f-block-color-role) 150%
+        );
+    }
+    
     &.size {
         &-xl,
         &-m {
@@ -40,7 +58,7 @@
 
             .aspect {
                 top: 0;
-                right: $spacing-4;
+                right: $spacing-20;
                 bottom: 0;
                 margin: auto;
             }
@@ -61,7 +79,11 @@
 
     &.outline {
         .stripe {
-            background: var(--f-block-color);
+            background: linear-gradient(
+                200deg,
+                var(--f-block-color-role) 20%,
+                transparent 30%
+            );
             opacity: 0.1;
         }
     }
@@ -74,7 +96,7 @@
     bottom: 0;
     left: 0;
     background: repeating-linear-gradient(
-                    30deg,
+                    -30deg,
                     transparent,
                     transparent 1.6rem,
                     var(--f-block-color) 0,
@@ -87,62 +109,73 @@
 .top,
 .bottom {
     position: absolute;
-    right: $spacing-8;
+    right: $spacing-6;
+    padding-left: $spacing-4;
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100;
     z-index: 1;
 }
 
 .top {
     top: $spacing-4;
-    left: $spacing-8;
-    justify-content: space-between;
-    opacity: 0.5;
+    align-items: flex-start;
+    opacity: 0.75;
+    left: $spacing-4;
 }
 
 .aspect {
     position: absolute;
     top: $spacing-8;
-    right: $spacing-8;
+    right: $spacing-12;
     z-index: 1;
 }
 
 .bottom {
     bottom: $spacing-4;
     left: $spacing-4;
+    right: $spacing-8;
 }
 
 .function {
-    margin-right: $spacing-4;
+    margin-right: -$spacing-4;
 }
 
 .lvl {
-    position: absolute;
-    bottom: 0;
-    right: $spacing-4;
+    position: relative;
+    top: 0;
+    left: $spacing-2;
     display: flex;
     align-items: flex-end;
-    gap: $spacing-4;
+    gap: $spacing-2;
     opacity: 0.5;
 
     span {
-        width: 0.1rem;
+        width: 0.2rem;
         background: var(--lvl-color);
 
         &:nth-child(1) {
-            height: 0.8rem;
+            height: 0.2rem;
+            opacity: 1;
         }
 
         &:nth-child(2) {
-            height: 1.6rem;
+            height: 0.4rem;
         }
 
         &:nth-child(3) {
-            height: 2.4rem;
+            height: 0.6rem;
         }
 
         &:nth-child(4) {
-            height: 3.2rem;
+            height: 0.8rem;
         }
     }
+}
+
+.pair {
+    display: flex;
+    align-items: baseline;
+    gap: $spacing-6;
 }

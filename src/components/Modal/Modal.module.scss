@@ -63,20 +63,8 @@ $transition-duration: 100ms;
     z-index: 999;
     transform: translateX(-50%);
     width: 8.8rem;
-    height: 0.4rem;
+    height: 0.2rem;
     border-radius: 2px;
     background-color: var(--color-basic-accent);
     opacity: 0.25;
-}
-
-.endpoint {
-    display: flex;
-    min-height: 8rem;
-    justify-content: space-around;
-    position: relative;
-    width: 100%;
-    opacity: 0.5;
-    align-items: center;
-    align-content: center;
-
 }

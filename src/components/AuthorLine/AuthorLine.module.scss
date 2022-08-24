@@ -1,0 +1,17 @@
+@import '../../styles/utils.scss';
+
+.root {
+	display: flex;
+	justify-content: space-between;
+	margin-top: $spacing-32;
+	padding-bottom: $spacing-8;
+	margin-bottom: $spacing-16;
+	border-bottom: 1px solid rgba($color-basic-accent, 0.25);
+	opacity: 0.75;
+}
+
+.pair {
+	display: flex;
+	align-items: center;
+	gap: $spacing-4;
+}

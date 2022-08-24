@@ -14,7 +14,7 @@ export interface Props {
     function: Socionics.Function;
     number: number;
     opacity?: 1 | 0.75 | 0.5;
-    lvl?: 1 | 2 | 3 | 4;
+    lvl: 1 | 2 | 3 | 4 ;
     size: 'xl' | 'l' | 'm' | 's';
     onClick?: () => void;
 }
@@ -59,12 +59,26 @@ export const FunctionalCard: React.FC<Props> = (props) => {
             )}
 
             <div className={styles.top}>
-                <Text color={textColor} size="small">
-                    {functionLabel}
-                </Text>
-                <Text color={textColor} size="small">
-                    {props.number}
-                </Text>
+                <span className={styles.pair}>
+                    <div className={styles.lvl}>
+                        <span key={1} />
+                        <span key={2} />
+                        <span key={3} />
+                        <span key={4} />
+                        {new Array(props.lvl).map((_, $i) => (
+                            <span key={$i} />))
+                        }
+                    </div>
+                    <Text color={textColor} size="small">
+                        {functionLabel}
+                    </Text>
+                </span>
+                <Icon
+                    name={functionIcon}
+                    color={textColor}
+                    size={24}
+                    className={styles.function}
+                />
             </div>
 
             {Boolean(aspectIconSize) && (
@@ -77,21 +91,12 @@ export const FunctionalCard: React.FC<Props> = (props) => {
             )}
 
             <div className={styles.bottom}>
-                <Icon
-                    name={functionIcon}
-                    color={textColor}
-                    size={24}
-                    className={styles.function}
-                />
                 <Text color={textColor} font="additional" size="h5">
                     {aspectLabel}
                 </Text>
-            </div>
-
-            <div className={styles.lvl}>
-                {new Array(props.lvl).map((_, $i) => (
-                    <span key={$i} />
-                ))}
+                <Text color={textColor} size="small">
+                    {props.number}
+                </Text>
             </div>
         </div>
     );

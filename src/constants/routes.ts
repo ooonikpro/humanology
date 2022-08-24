@@ -104,7 +104,7 @@ export const SOCIATYPES_LINKS = (id: string) => [
         label: 'Карточка',
         path: `${ROUTES.SOCIATYPES(id)}/${ROUTES.SOCIATYPES_CARD}`,
         order: 1,
-        iconName: 'AlertSquare'
+        iconName: 'Card'
     },
     {
         label: 'Видео',

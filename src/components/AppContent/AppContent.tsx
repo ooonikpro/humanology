@@ -9,7 +9,7 @@ export const AppContent: React.FC = () => {
             <div className={styles.container}>
                 <AppRouter/>
             </div>
-            <EndPoint className={styles.endpoint} />
+            <EndPoint />
         </main> 
     );
 };

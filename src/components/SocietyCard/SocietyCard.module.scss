@@ -32,6 +32,14 @@
         .body:after {
             opacity: 0.1;
         }
+        
+        .quadra {
+            position: absolute;
+            right: 0;
+            top: -$spacing-8;
+            opacity: 0.5;
+            transform: scale(1.6);
+        }
     }
 }
 

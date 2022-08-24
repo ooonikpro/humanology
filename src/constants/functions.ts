@@ -12,12 +12,12 @@ export const FUNCTION: Record<Socionics.Function, string> = {
 } as const;
 
 export const FUNCTION_LABELS: Record<Socionics.Function, string> = {
-    base: 'Хорошо',
-    creative: 'Надо',
+    base: 'Живу',
+    creative: 'Творю',
     role: 'Боюсь',
-    back: 'Не надо',
-    limit: 'Плохо',
-    pain: 'Проблемы',
-    activate: 'Решения',
+    back: 'Делаю',
+    limit: 'Бесит',
+    pain: 'Страдаю',
+    activate: 'Нравится',
     suggestive: 'Хочу',
 } as const;

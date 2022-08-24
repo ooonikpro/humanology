@@ -21,3 +21,7 @@
 @mixin colorRole($var) {
     #{$var}: var(--color-role);
 }
+
+@mixin colorRoleDual($var) {
+    #{$var}: var(--color-role-dual);
+}

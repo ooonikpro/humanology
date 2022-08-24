@@ -102,14 +102,12 @@ export const SocietyCard: React.FC<Props> = (props) => {
             </div>
 
             <div className={styles.body}>
-                {!props.mini && (
-                    <CircleQuadra
-                        element={props.element}
-                        gender={props.gender}
-                        className={styles.quadra}
-                        size={160}
-                    />
-                )}
+                <CircleQuadra
+                    element={props.element}
+                    gender={props.gender}
+                    className={styles.quadra}
+                    size={160}
+                />
                 <Portrait name={props.id} gender={props.gender} className={styles.portrait} />
                 
                 {!props.mini && (
