@@ -5,8 +5,8 @@ import { AuthorLine } from '../../../../components/AuthorLine';
 export default function ENTP() {
     return (
         <>
-            <AuthorLine readTime='5'>Микелсоне Велта</AuthorLine>
-            <Text tag="p" size="h5" color="role">
+            <AuthorLine readTime='8'>Микелсоне Велта</AuthorLine>
+            <Text tag="b" size="h5" color="role">
                 Один из самых любознательных соционических типов во всем соционе.
             </Text>
 

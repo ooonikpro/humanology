@@ -8,6 +8,7 @@ import { ASPECTS, ASPECTS_LABEL } from 'src/constants/aspects';
 import { FUNCTION } from 'src/constants/functions';
 import { Socionics } from 'src/types';
 import { useSwipeable } from 'react-swipeable';
+import { WhiteCard } from 'src/components/WhiteCard';
 
 interface Props extends ModalProps {
     function: Socionics.Function;
@@ -29,34 +30,40 @@ export const FunctionDescription: React.FC<Props> = (props) => {
     const render = () => {
         return (
             <>
-                <div className={styles.header} {...swipeableHandlers}>
-                    <TitleInfo iconSize={24} iconColor="accent" className={styles.title}>
-                        {name} функция
-                    </TitleInfo>
-                </div>
-                <div className={styles.body}>
-                    <div className={styles['aspect-details']}>
-                        <Icon
-                            name={aspectIconMini}
-                            size={24}
-                            className={styles['icon-mini']}
-                        />
-
-                        <Icon name={aspectIcon} size={96} color="element" />
-
-                        <div className={styles['aspect-details-text']}>
-                            <Text size="h3" color="element">
-                                {aspectTitle}
-                            </Text>
-                            <Text size="smaller">{aspectSubtitle}</Text>
-                        </div>
-
+                <WhiteCard color="beige-title" className={styles.root}>
+                    <div className={styles.header} {...swipeableHandlers}>
+                        <TitleInfo iconSize={24} iconColor="accent" className={styles.title}>
+                            {name} функция
+                        </TitleInfo>
                     </div>
-                    <hr />
-                    <React.Suspense>
-                        <Description />
-                    </React.Suspense>
-                </div>
+                    <div className={styles.body}>
+                        <React.Suspense>
+                            <Description />
+                        </React.Suspense>
+                        <div className={styles['aspect-details']}>
+                            <Icon
+                                name={aspectIconMini}
+                                size={24}
+                                className={styles['icon-mini']}
+                            />
+                            <Icon name={aspectIcon} size={96} color="accent" />
+
+                            <div className={styles['aspect-details-text']}>
+                                <Text size="h3" color="accent" font="additional">
+                                    {aspectTitle}
+                                </Text>
+                                <Text size="base">{aspectSubtitle}</Text>
+                            </div>
+                            <Icon
+                                name="Help"
+                                color="accent"
+                                size={24}
+                                className={styles['icon-help']}
+                            />
+
+                        </div>
+                    </div>
+                </WhiteCard>
             </>
         );
     };

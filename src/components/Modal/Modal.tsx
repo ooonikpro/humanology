@@ -66,7 +66,7 @@ export const Modal: React.FC<Props> = ({ isOpen, render, onClose }) => {
     return (
         <div className={[styles.root, animate ? styles.open : ''].join(' ')}>
             <div className={styles.bg} onClick={closeModal} />
-            <WhiteCard className={styles.container}>
+            <WhiteCard color="beige" className={styles.container}>
                 <div className={styles.drag} onClick={closeModal} />
                 {render(closeModal)}
                 <EndPoint className={styles.endpoint}/>

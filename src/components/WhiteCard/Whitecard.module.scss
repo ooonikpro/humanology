@@ -4,6 +4,7 @@
     position: relative;
     padding: $spacing-8;
     border-radius: 2px;
+    z-index: 0;
 
     &:before {
         content: '';
@@ -12,7 +13,7 @@
         right: 0;
         bottom: 0;
         left: 0;
-        z-index: -1;
+        z-index: 0;
     }
 
     &.white {
@@ -29,9 +30,21 @@
         &::before {
             height: 4rem;
             z-index: 0;
-            background-color: rgba($color-basic-beige, 0.5);
+            background-color: rgba($color-basic-beige, 0.25);
         }
     }
+
+    &.beige-title-big {
+        background-color: var(--color-basic-white);
+        
+        &::before {
+            height: 10rem;
+            z-index: 0;
+            background-color: rgba($color-basic-beige, 0.25);
+        }
+    }
+    
+    
     
     &.small {
         padding: $spacing-6;

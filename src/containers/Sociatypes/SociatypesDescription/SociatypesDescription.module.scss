@@ -9,13 +9,13 @@
 
 .title {
     display: block;
-    margin-top: $spacing-8;
-    margin-bottom: $spacing-16;
+    margin-top: $spacing-16;
 }
 
 .text {
     p {
         margin-bottom: $spacing-16;
+        line-height: $spacing-24;
     }
     i {
         opacity: 0.75;
@@ -27,8 +27,4 @@
         margin-bottom: $spacing-12;
         opacity: 0.25;
     }
-}
-
-.white {
-    background-color: $color-basic-white;
 }

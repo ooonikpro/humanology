@@ -1,20 +1,37 @@
 @import '../_common/text.module';
 
+.root {
+    margin: 0;
+}
+
 .header {
     position: sticky;
     top: 0;
-    background-color: rgba($color-basic-beige, 0.5);
-    z-index: 2;
-    height: 4.8rem;
 }
 
 .title-icon {
     margin-right: $spacing-8;
 }
 
+.body {
+    margin-top: $spacing-8;
+
+    hr {
+        border-color: var(--color-element);
+        margin-top: $spacing-16;
+        margin-bottom: $spacing-12;
+        opacity: 0.25;
+    }
+}
+
 .aspect-details {
     position: relative;
     align-items: center;
+    background-color: rgba($color-basic-beige, 0.5);
+    border-radius: $spacing-2;
+    padding: $spacing-8;
+    margin-top: $spacing-16;
+    
 
     &,
     &-text {
@@ -23,27 +40,24 @@
 
     &-text {
         flex-direction: column;
-        row-gap: $spacing-4;
+        row-gap: $spacing-2;
     }
 }
 
 .icon-mini {
     position: absolute;
-    top: $spacing-20;
-    left: $spacing-4;
+    top: $spacing-12;
+    left: $spacing-8;
 }
 
-.header {
-    position: sticky;
-    top: 0;
-    background-color: rgba($color-basic-beige, 0.5);
-    z-index: 2;
-    height: 4.8rem;
+.icon-help {
+    position: absolute;
+    top: $spacing-12;
+    right: $spacing-8;
+    opacity: 0.5
 }
 
 .title {
     opacity: 0.5;
-    padding-top: $spacing-20;
-    padding-left: $spacing-8;
-    padding-right: $spacing-8;
+    padding-top: $spacing-4;
 }

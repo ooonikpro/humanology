@@ -4,9 +4,11 @@ import { Text } from '../../../components/Text';
 export default function ENTP() {
     return (
         <>
-            <Text tag="p" color="element">
+            <Text tag="h3" color="role" size="h5">
                 Живут идеями, причем, не одной идеей, а их круговоротом.
             </Text>
+
+            <hr />
 
             <Text tag="p">
                 Эти люди <b>всегда оценивают перспективность и интересность каждой идеи</b>, которая приходит им в голову, а приходит их много.

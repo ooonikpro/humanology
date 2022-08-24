@@ -11,11 +11,6 @@
     width: 100%;
     max-width: 100%;
     min-width: 13.2rem;
-    background: linear-gradient(
-                    190deg,
-                    var(--f-block-color) 0%,
-                    transparent 250%
-    );
     border-radius: 2px;
 
     &:nth-child(1) {
@@ -66,6 +61,15 @@
             .bottom {
                 bottom: $spacing-4;
             }
+        }
+        
+        &-m,
+        &-s {
+            background: linear-gradient(
+                60deg,
+                var(--f-block-color) 25%,
+                transparent 250%
+            );
         }
     }
 
