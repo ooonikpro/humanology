@@ -2,7 +2,7 @@
     $str: '';
 
     @each $prop in $props {
-        $str: '#{$prop} 0.3s ease, #{$str}';
+        $str: '#{$prop} 300ms ease, #{$str}';
     }
 
     transition: #{$str};

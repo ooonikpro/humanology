@@ -1,7 +1,5 @@
 @import '../../styles/utils.scss';
 
-$transition-duration: 100ms;
-
 .root {
     position: fixed;
     justify-content: center;
@@ -31,7 +29,7 @@ $transition-duration: 100ms;
     bottom: 0;
     left: 0;
     background-color: var(--color-basic-beige);
-    opacity: 0.95;
+    opacity: 0;
     z-index: 0;
 }
 
