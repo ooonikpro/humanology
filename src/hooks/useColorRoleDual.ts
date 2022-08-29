@@ -7,20 +7,19 @@ export type UserColorRoleDual = {
     color: React.CSSProperties
 }
 
-export const dualElementMap = {
-    'air': 'fire', 
-    'fire': 'air', 
-    'water': 'earth', 
-    'earth': 'water'
+export const dualElementMap : Record<Socionics.Role, Socionics.Quadras> = {
+    'king': 'air', 
+    'queen': 'air', 
+    'knight': 'earth', 
+    'lady': 'water',
+    'paige': 'fire'
 };
 
 export const useColorRoleDual = (role: Socionics.Role): UserColorRoleDual => {
-    const i = ROLE[role].element;
-    const DualElement = dualElementMap[i];
     return {
         label: ROLE[role].label,
         color: {
-            '--color-role-dual': `var(--color-elements-${DualElement})`
+            '--color-role-dual': `var(--color-elements-${dualElementMap[role]})`
         }
     };
 };
