@@ -7,7 +7,7 @@ import { AuthorLine } from '../../components/AuthorLine';
 export default function Menu() {
     return (
         <div className={styles.root}>
-            <WhiteCard color="beige-title-big">
+            <WhiteCard color="white">
                 <Text tag="h1" size="h4" font="additional" className={styles.title}>Начало</Text>
                 <AuthorLine readTime='2'>äлеша</AuthorLine> 
 

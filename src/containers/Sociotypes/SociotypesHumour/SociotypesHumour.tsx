@@ -12,7 +12,7 @@ export default function SociotypesHumour() {
 
     return (
         <div className={styles.wrap}>
-            <WhiteCard color="beige-title-big">
+            <WhiteCard color="white">
                 <Text tag="h1" size="h4" color="accent" font="additional" className={styles.title}>Юмор</Text>
                 <div className={styles.text}>
                     <React.Suspense>

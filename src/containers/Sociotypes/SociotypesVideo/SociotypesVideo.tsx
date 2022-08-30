@@ -12,7 +12,7 @@ export default function SociotypesVideo() {
 
     return (
         <div className={styles.wrap}>
-            <WhiteCard color="beige-title-big">
+            <WhiteCard color="white">
                 <Text tag="h1" size="h4" color="accent" font="additional" className={styles.title}>Видео</Text>
                 <div className={styles.text}>
                     <React.Suspense>

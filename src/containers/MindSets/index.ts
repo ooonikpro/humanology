@@ -1,1 +1,1 @@
-export { default } from './MindSets';
+export { default } from './Mindsets';

@@ -32,19 +32,7 @@
             z-index: 0;
             background-color: rgba($color-basic-beige, 0.25);
         }
-    }
-
-    &.beige-title-big {
-        background-color: var(--color-basic-white);
-        
-        &::before {
-            height: 10rem;
-            z-index: 0;
-            background-color: rgba($color-basic-beige, 0.25);
-        }
-    }
-    
-    
+    }      
     
     &.small {
         padding: $spacing-6;

@@ -91,7 +91,7 @@ const DATA: IData[] = [
 export default function Functions() {
     return (
         <div className={styles.root}>
-            <WhiteCard color="beige-title-big">
+            <WhiteCard color="white">
                 <Text tag="h1" size="h4" font="additional" className={styles.title}>Функции</Text>
                 <AuthorLine readTime='5'>äлеша</AuthorLine> 
 

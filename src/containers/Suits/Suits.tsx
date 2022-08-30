@@ -49,7 +49,7 @@ export default function Suits() {
 
     return (
         <div className={styles.root}>
-            <WhiteCard color="beige-title-big">
+            <WhiteCard color="white">
                 <Text tag="h1" size="h4" font="additional" className={styles.title}>
                     Карты и масти
                 </Text>

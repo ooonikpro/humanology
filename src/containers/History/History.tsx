@@ -7,7 +7,7 @@ import { AuthorLine } from '../../components/AuthorLine';
 export default function History() {
     return (
         <div className={styles.root}>
-            <WhiteCard color="beige-title-big">
+            <WhiteCard color="white">
                 <Text tag="h4" size="h4" font="additional" className={styles.title}>История</Text>
                 <AuthorLine readTime='5'>äлеша</AuthorLine> 
 

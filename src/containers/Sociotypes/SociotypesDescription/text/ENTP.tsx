@@ -6,6 +6,7 @@ export default function ENTP() {
     return (
         <>
             <AuthorLine readTime='8'>Микелсоне Велта</AuthorLine>
+            
             <Text tag="b" size="h5" color="role">
                 Один из самых любознательных соционических типов во всем соционе.
             </Text>
@@ -31,7 +32,7 @@ export default function ENTP() {
             <hr />
 
             <Text tag="p" size="h6" color="role">
-                Его социальная роль — Исследователь.
+                Его социальная роль — исследователь.
             </Text>   
 
             <Text tag="p">
