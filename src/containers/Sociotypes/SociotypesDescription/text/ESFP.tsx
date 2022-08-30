@@ -5,7 +5,7 @@ import { AuthorLine } from '../../../../components/AuthorLine';
 export default function ESFP() {
     return (
         <>
-            <AuthorLine readTime='8'>Микелсоне Велта</AuthorLine>
+            <AuthorLine readTime='8'>Велта Микелсоне</AuthorLine>
 
             <Text tag="b" size="h5" color="role">
                 Прирожденный политик, человек, который умеет убеждать и вести за собой.

@@ -5,7 +5,7 @@ import { AuthorLine } from '../../../../components/AuthorLine';
 export default function ISTJ() {
     return (
         <>
-            <AuthorLine readTime='8'>Микелсоне Велта</AuthorLine>
+            <AuthorLine readTime='8'>Велта Микелсоне</AuthorLine>
 
             <Text tag="b" size="h5" color="role">
                 Очень логичный тип, для которого жизнь — это система.

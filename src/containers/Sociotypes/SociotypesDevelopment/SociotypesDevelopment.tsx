@@ -14,7 +14,9 @@ export default function SociotypesDevelopment() {
     return (
         <div className={styles.wrap}>
             <WhiteCard color="white">
-                <Text tag="h1" size="h4" color="accent" font="additional" className={styles.title}>Развитие личности</Text>
+                <Text tag="h1" size="h4" color="accent" font="additional" className={styles.title}>
+                    Как развиваться
+                </Text>
                 <div className={styles.text}>
                     <React.Suspense>
                         <Description />

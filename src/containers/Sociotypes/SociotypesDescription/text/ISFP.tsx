@@ -5,7 +5,7 @@ import { AuthorLine } from '../../../../components/AuthorLine';
 export default function ISFP() {
     return (
         <>
-            <AuthorLine readTime='7'>Микелсоне Велта</AuthorLine>
+            <AuthorLine readTime='7'>Велта Микелсоне</AuthorLine>
             
             <Text tag="b" size="h5" color="role">
                 Умеет создать дружескую атмосферу и позаботиться о комфорте для себя и других.

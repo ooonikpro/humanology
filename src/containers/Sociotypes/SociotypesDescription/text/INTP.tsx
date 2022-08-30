@@ -5,7 +5,7 @@ import { AuthorLine } from '../../../../components/AuthorLine';
 export default function INTP() {
     return (
         <>
-            <AuthorLine readTime='7'>Микелсоне Велта</AuthorLine>
+            <AuthorLine readTime='7'>Велта Микелсоне</AuthorLine>
             
             <Text tag="b" size="h5" color="role">
                 Главный скептик и философ всего социона. Внимательный наблюдатель жизни.

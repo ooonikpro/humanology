@@ -5,7 +5,7 @@ import { AuthorLine } from '../../../../components/AuthorLine';
 export default function INTJ() {
     return (
         <>
-            <AuthorLine readTime='6'>Микелсоне Велта</AuthorLine>
+            <AuthorLine readTime='6'>Велта Микелсоне</AuthorLine>
 
             <Text tag="p" color="role" size="h5">
             Мастер логического анализа, человек, способен разложить по полочкам все на свете. Искатель истины и справедливости.

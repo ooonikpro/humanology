@@ -5,7 +5,7 @@ import { AuthorLine } from '../../../../components/AuthorLine';
 export default function ESTP() {
     return (
         <>
-            <AuthorLine readTime='8'>Микелсоне Велта</AuthorLine>
+            <AuthorLine readTime='8'>Велта Микелсоне</AuthorLine>
 
             <Text tag="b" size="h5" color="role">
                 Прирожденный лидер, человек, который умеет брать на себя ответственность не только за себя, но и за других.

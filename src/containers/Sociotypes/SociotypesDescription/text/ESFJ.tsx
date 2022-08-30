@@ -5,7 +5,7 @@ import { AuthorLine } from '../../../../components/AuthorLine';
 export default function ESFJ() {
     return (
         <>
-            <AuthorLine readTime='7'>Микелсоне Велта</AuthorLine>
+            <AuthorLine readTime='7'>Велта Микелсоне</AuthorLine>
 
             <Text tag="b" size="h5" color="role">
                 Миссия — радоваться самому и радовать других.

@@ -13,7 +13,7 @@
 }
 
 .text {
-    p {
+    p, h1, h2 {
         margin-bottom: $spacing-16;
         line-height: $spacing-24;
     }
