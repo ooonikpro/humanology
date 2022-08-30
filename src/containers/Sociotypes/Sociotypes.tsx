@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react';
+import React, { useCallback, useEffect } from 'react';
 import styles from './Sociotypes.module.scss';
 import { Outlet, useNavigate } from 'react-router-dom';
 import { useIntertype } from '../../hooks/useSocionicsType';
@@ -19,8 +19,12 @@ export default function Sociotypes() {
     const goTo = useNavigate();
     const goToHome = useCallback(() => goTo(ROUTES.HOME), [goTo, ROUTES.HOME]);
 
+    useEffect(() => {
+        document.documentElement.style.cssText=inlineStyles;
+    }, [intertypeProps]);
+
     const Container = (
-        <div className={styles.root} style={inlineStyles}>
+        <div className={styles.root}>
             <SocietyCard {...intertypeProps} mini={!isActiveRouteSociatypeCard}/>
 
             {
@@ -39,6 +43,6 @@ export default function Sociotypes() {
             <Outlet />
         </div>
     );
-    
+
     return <Modal isOpen={isActiveRouteSociatypeRoute} onClose={goToHome} render={() => Container}/>;
 }

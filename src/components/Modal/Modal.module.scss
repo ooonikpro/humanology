@@ -19,6 +19,24 @@
             transform: translateY(0);
         }
     }
+
+    &.lvl_1 {
+        .container {
+            top: $spacing-40;
+        }
+    }
+
+    &.lvl_2 {
+        .container {
+            top: $spacing-40 * 2;
+        }
+    }
+
+    &.lvl_3 {
+        .container {
+            top: $spacing-40 * 3;
+        }
+    }
 }
 
 .bg {
@@ -34,20 +52,20 @@
 }
 
 .container {
-    @include transition(transform);
     position: absolute;
+    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    height: calc(100vh - #{$spacing-40});
     max-width: 48rem;
     padding: 0;
     border-radius: 2px;
     z-index: 1;
     cursor: auto;
-    transform: translateY(calc(100% + #{$spacing-4}));
+    transform: translateY(100%);
+    transition: transform 230ms ease;
     overflow-y: scroll;
     overflow-x: hidden;
     display: flex;

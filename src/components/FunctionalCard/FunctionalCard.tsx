@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import styles from './FunctionalCard.module.scss';
 import { Socionics } from '../../types';
 import { getIconName, Icon } from '../../components/Icon';
@@ -48,6 +48,10 @@ export const FunctionalCard: React.FC<Props> = (props) => {
     };
     const aspectIconSize = getAspectIconSize(props.size);
 
+    const lines = useMemo(() => {
+        return new Array(props.lvl).fill(null).map((_, $i) => <span key={$i} />);
+    }, [props.lvl]);
+
     return (
         <div
             className={rootClasses}
@@ -61,13 +65,7 @@ export const FunctionalCard: React.FC<Props> = (props) => {
             <div className={styles.top}>
                 <span className={styles.pair}>
                     <div className={styles.lvl}>
-                        <span key={1} />
-                        <span key={2} />
-                        <span key={3} />
-                        <span key={4} />
-                        {new Array(props.lvl).map((_, $i) => (
-                            <span key={$i} />))
-                        }
+                        {lines}
                     </div>
                     <Text color={textColor} size="small">
                         {functionLabel}

@@ -61,6 +61,12 @@ export const Modal: React.FC<Props> = ({ isOpen, render, onClose }) => {
         document.removeEventListener('keydown', onEscPress);
     };
 
+    const rootClasses = [
+        styles.root,
+        animate ? styles.open : '',
+        styles[`lvl_${openedModals.length - 1}`]
+    ].join(' ');
+
     useEffect(() => {
         if (isOpen) {
             showModal();
@@ -79,7 +85,7 @@ export const Modal: React.FC<Props> = ({ isOpen, render, onClose }) => {
 
     return createPortal(
         (
-            <div className={[styles.root, animate ? styles.open : ''].join(' ')}>
+            <div className={rootClasses}>
                 <div className={styles.bg} onClick={closeModal} />
                 <div className={styles.inner}>
                     <WhiteCard color="beige" className={styles.container}>

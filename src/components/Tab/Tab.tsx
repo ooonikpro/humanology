@@ -24,7 +24,7 @@ export const Tab: React.FC<Props> = ({ path, label, icon }) => {
     const ref = useRef<HTMLElement>(null);
 
     const scrollIntoView = useCallback(() => {
-        ref.current && ref.current.scrollIntoView(false);
+        ref.current && ref.current.scrollIntoView({ inline: 'center', block: 'end' });
     }, [ref]);
     const onClick = useCallback(() => goTo(path), [path]);
 
@@ -50,7 +50,7 @@ export const Tab: React.FC<Props> = ({ path, label, icon }) => {
                 color='accent'
                 name={icon}
             />
-            {label}     
+            {label}
         </Text>
     );
 };

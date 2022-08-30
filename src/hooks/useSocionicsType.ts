@@ -16,7 +16,7 @@ export const useIntertype = () => {
     const { color: colorElement } = useColorElement(intertypeProps.element);
     const { color: colorRole } = useColorRole(intertypeProps.role);
     const { color: colorRoleDual } = useColorRoleDual(intertypeProps.role);
-    const styles: React.CSSProperties = {
+    const styles = {
         ...colorElement,
         ...colorRole,
         ...colorRoleDual,
@@ -24,6 +24,6 @@ export const useIntertype = () => {
 
     return {
         intertypeProps,
-        styles,
+        styles: Object.entries(styles).reduce((str, [key, val]) => str += `${key}:${val};`, ''),
     };
 };
