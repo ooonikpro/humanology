@@ -11,9 +11,6 @@ interface Props {
 export const EndPoint: React.FC<Props> = ({ className }) => {
     return (
         <div className={className}>
-            <Text className={styles.text} size="smaller" color="accent">
-                …
-            </Text>
             <Icon className={styles.icon} name="Logo" size={24} color="accent" />
         </div>
     );

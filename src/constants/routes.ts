@@ -37,7 +37,7 @@ export const ROUTES = {
 
 export const MAIN_LINKS: Tabs[] = [
     {
-        label: 'Начало',
+        label: 'Быстрый старт',
         path: ROUTES.START,
         order: 1,
         iconName: 'StarSquare'

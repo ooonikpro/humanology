@@ -9,6 +9,7 @@ import { CommunicationList } from '../../../components/CommunicationList';
 import { TitleInfo } from '../../../components/TitleInfo';
 import { ListOptions } from '../../../components/ListOptions';
 import { GroupsAndQuadsList } from '../../../components/GroupsAndQuadsList';
+import { EndPoint } from '../../../components/EndPoint';
 
 const getRow = (
     options: Array<string[]>,
@@ -90,6 +91,7 @@ export default function SociotypesCard() {
                     />
                 ))}
             </WhiteCard>
+            <EndPoint />
         </div>
     );
 }

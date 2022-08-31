@@ -12,17 +12,18 @@
 }
 
 .title {
+    display: sticky;
     padding-top: $spacing-4;
 }
 
 .body {
-
+    
     div:first-child {
         margin-bottom: $spacing-8;
     }
     
     hr {
-        border-color: var(--color-element);
+        border-color: var(--color-role);
         margin-top: $spacing-16;
         margin-bottom: $spacing-12;
         opacity: 0.25;

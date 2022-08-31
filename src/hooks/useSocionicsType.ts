@@ -1,4 +1,3 @@
-import React from 'react';
 import { Socionics } from '../types';
 import { INTERTYPES } from '../constants/socionicsTypes';
 import { useColorElement } from './useColorElement';

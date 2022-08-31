@@ -10,6 +10,7 @@ import { BLOCKS } from '../../constants/blocks';
 import { Socionics } from 'src/types';
 import { useSwipeable } from 'react-swipeable';
 import { WhiteCard } from '../../components/WhiteCard';
+import { EndPoint } from '../../components/EndPoint';
 
 export interface Props extends ModalProps {
     intertype: Socionics.SocionicsType;
@@ -56,6 +57,7 @@ export const BlockDescription: React.FC<Props> = ({
                         <Description />
                     </React.Suspense>
                 </div>
+                <EndPoint />
             </WhiteCard>
         );
     };

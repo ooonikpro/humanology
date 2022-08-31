@@ -44,7 +44,7 @@ export const PropList: React.FC<Props> = (props) => {
                                 {
                                     row.subLabel &&
                                         <Text
-                                            color="grey" size="small"
+                                            color="grey" size="smaller"
                                             className={styles.sublabel}
                                         >
                                             { row.subLabel }

@@ -1,6 +1,5 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { createPortal } from 'react-dom';
-import { EndPoint } from '../EndPoint';
 import { WhiteCard } from '../WhiteCard';
 import styles from './Modal.module.scss';
 
@@ -91,7 +90,6 @@ export const Modal: React.FC<Props> = ({ isOpen, render, onClose }) => {
                     <WhiteCard color="beige" className={styles.container}>
                         <div className={styles.drag} onClick={closeModal} />
                         {render(closeModal)}
-                        <EndPoint className={styles.endpoint}/>
                     </WhiteCard>
                 </div>
             </div>
