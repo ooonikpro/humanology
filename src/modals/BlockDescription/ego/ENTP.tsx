@@ -5,7 +5,6 @@ import { AuthorLine } from '../../../components/AuthorLine';
 export default function ENTP() {
     return (
         <>
-
             <AuthorLine readTime='2'>Виктор Пятницкий</AuthorLine>
             
             <Text tag="p" color="role" size="h5">
