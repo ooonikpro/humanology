@@ -1,21 +1,16 @@
 import React from 'react';
 import { Socionics } from '../../types';
-import { Icon, getIconName } from '../Icon';
 
 interface Props {
-    element: Socionics.Quadras;
-    gender: Socionics.Gender;
-    size: number;
+    id: Socionics.SocionicsType;
     className: string
 }
 
-export const CircleQuadra: React.FC<Props> = ({ element, gender, size, className }) => {
+export const CircleQuadra: React.FC<Props> = ({ id, className }) => {
+    // eslint-disable-next-line @typescript-eslint/no-var-requires
+    const src = require(`../../assets/circles/${id}-circle.svg`);
+
     return (
-        <Icon
-            name={getIconName(`${element}-${gender === 'male' ? 'strong' : 'weak'}`)}
-            size={size}
-            color="role"
-            className={className}
-        />
+        <img src={src} className={className}/>
     );
 };

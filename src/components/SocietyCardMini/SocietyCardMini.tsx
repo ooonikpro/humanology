@@ -37,9 +37,7 @@ export const SocietyCardMini: React.FC<Props> = (props) => {
                     />
                 </div>
                 <CircleQuadra
-                    element={props.element}
-                    gender={props.gender}
-                    size={160}
+                    id={props.id}
                     className={styles['quadra-img']}
                 />
                 <Portrait name={props.id} gender={props.gender} className={styles.portrait}/>

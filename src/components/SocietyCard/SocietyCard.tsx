@@ -103,10 +103,8 @@ export const SocietyCard: React.FC<Props> = (props) => {
 
             <div className={styles.body}>
                 <CircleQuadra
-                    element={props.element}
-                    gender={props.gender}
+                    id={props.id}
                     className={styles.quadra}
-                    size={160}
                 />
                 <Portrait name={props.id} gender={props.gender} className={styles.portrait} />
                 
