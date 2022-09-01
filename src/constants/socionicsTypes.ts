@@ -1,4 +1,3 @@
-import ISFP from 'src/modals/BlockDescription/ego/ISFP';
 import { Socionics } from '../types';
 
 export const INTERTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp> = {
