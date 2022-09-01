@@ -1,6 +1,5 @@
 import React from 'react';
 import { Icon } from '../Icon';
-import { Text } from '../Text';
 import styles from './EndPoint.module.scss';
 
 
