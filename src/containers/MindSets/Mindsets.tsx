@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Mindsets.module.scss';
+import styles from './MindSets.module.scss';
 import { WhiteCard } from '../../components/WhiteCard';
 import { Text } from '../../components/Text';
 import { AuthorLine } from '../../components/AuthorLine';
