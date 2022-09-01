@@ -120,6 +120,24 @@ export namespace Socionics {
         | 'introvert'
         | 'irrational'
         | 'rational';
+
+    export type intertypeRelations =
+        | 'dual'
+        | 'activity'
+        | 'mirror'
+        | 'identical'
+        | 'kindred'
+        | 'semidual'
+        | 'pragmatic'
+        | 'illusionary'
+        | 'beneficiary'
+        | 'giver'
+        | 'supervisor'
+        | 'underling'
+        | 'quasidentical'
+        | 'parallel'
+        | 'contrary'
+        | 'superego';
     export type ReininSign =
         | 'static'
         | 'dynamic'
@@ -170,6 +188,7 @@ export namespace Socionics {
         ideology: Alignment;
         yungs: Dichotomy[];
         reinin: ReininSign[];
+        intertypeRelations: Record<intertypeRelations, SocionicsType>
     };
 }
 
