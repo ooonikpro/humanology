@@ -12,9 +12,9 @@ $color-elements: (
 
 :root {
     --color-basic-white    : #{$color-basic-white};
-    --color-basic-beige    : #{#f9f5f2};
-    --color-basic-black    : #202322;
-    --color-basic-accent   : #6b360d;
+    --color-basic-beige    : #{$color-basic-beige};
+    --color-basic-black    : #{$color-basic-black};
+    --color-basic-accent   : #{$color-basic-accent};
     --color-basic-greener  : #d7dd93;
     --color-basic-pink     : #f6c0b1;
     --color-basic-turquoise: #b6d1c5;

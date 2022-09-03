@@ -6,7 +6,7 @@ import { toPascalCase } from '../../utils/toPascalCase';
 
 export interface Props {
     name: keyof typeof Icons;
-    color?: 'white' | 'black' | 'accent' | 'element' | 'role';
+    color?: 'white' | 'black' | 'accent' | 'element' | 'role' | 'air' | 'fire' | 'water' | 'earth';
     size: number | { width: number; height: number };
     className?: string;
 }

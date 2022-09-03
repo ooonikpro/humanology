@@ -29,3 +29,19 @@
 .role {
     @include colorRole(--icon-color);
 }
+
+.air {
+    --icon-color: #{map-get($color-elements, 'air')};
+}
+
+.fire {
+    --icon-color: #{map-get($color-elements, 'fire')};
+}
+
+.water {
+    --icon-color: #{map-get($color-elements, 'water')};
+}
+
+.earth {
+    --icon-color: #{map-get($color-elements, 'earth')};
+}

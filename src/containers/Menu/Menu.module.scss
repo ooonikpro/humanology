@@ -59,8 +59,75 @@
 }
 
 .icon {
-    position: absolute;
-    bottom: $spacing-32;
-    left: $spacing-6;
+    position: relative;
+    bottom: $spacing-6;
     opacity: 0.5;
+}
+
+.image {
+    position: absolute;
+    right: $spacing-12;
+    top: $spacing-12;
+}
+
+.elements {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    top: $spacing-12;
+    left: $spacing-6;
+    gap: $spacing-4;
+}
+
+.adult1 {
+    position: absolute;
+    height: 10.8rem;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.adult2 {
+    position: absolute;
+    height: 9.6rem;
+    bottom: 0;
+    right: 6.4rem;
+    z-index: 0;
+    opacity: 0.75;
+}
+
+.dualstring {
+  position: absolute;
+  top: $spacing-8;
+  right: $spacing-12;
+  display: flex;
+  gap: $spacing-6;
+  opacity: 0.75;
+}
+
+.kid1 {
+    position: absolute;
+    height: 9.6rem;
+    bottom: -$spacing-8;
+    right: 3.2rem;
+    z-index: 1;
+}
+
+.kid2 {
+    position: absolute;
+    height: 8rem;
+    bottom: -$spacing-8;
+    right: 0rem;
+    z-index: 0;
+    opacity: 0.75;
+}
+
+.kid3 {
+    position: absolute;
+    height: 8rem;
+    bottom: -$spacing-8;
+    right: 8rem;
+    z-index: 0;
+    opacity: 0.75;
 }

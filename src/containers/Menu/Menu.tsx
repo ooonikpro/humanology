@@ -4,6 +4,7 @@ import { ROUTES } from '../../constants/routes';
 import { useNavigate } from 'react-router-dom';
 import { Text } from '../../components/Text';
 import { Icon } from '../../components/Icon';
+import { Portrait } from '../../components/Portrait';
 
 interface MenuItemProps {
     children: React.ReactNode;
@@ -45,32 +46,48 @@ export default function Menu() {
     return (
         <>
             <div className={styles.menuList}>
+
+                <MenuItem onClick={goTo(ROUTES.START)}>
+                    <Icon size={24} className={styles.icon} color="accent" name="Square0" />
+                    <Text size="smaller" color="accent">Начало</Text>
+                </MenuItem>
+
                 <MenuItem onClick={goTo(ROUTES.DISCLAIMER)}>
                     <Icon size={24} className={styles.icon} color="accent" name="AlertSquare" />
                     <Text size="smaller" color="accent">Дисклеймер</Text>
-                </MenuItem>
-
-                <MenuItem onClick={goTo(ROUTES.HISTORY)}>
-                    <Icon size={24} className={styles.icon} color="accent" name="Time" />
-                    <Text size="smaller" color="accent">История</Text>
-                </MenuItem>
+                </MenuItem>               
 
                 <MenuItem fullWidth big onClick={goTo(ROUTES.SOCIOTYPES(''))}>
+                    <div className={styles.elements}>
+                        <Icon name="AirMini" color="air" size={32} />
+                        <Icon name="FireMini" color="fire" size={32} />
+                        <Icon name="WaterMini" color="water" size={32} />
+                        <Icon name="EarthMini" color="earth" size={32} />
+                    </div>
                     <Icon size={24} className={styles.icon} color="accent" name="Square1" />
-                    <Text size="smaller" color="accent">Социотипы</Text>
+                    <Text size="h5" color="accent">Социотипы</Text>
+                    <div className={styles.dualstring}>
+                        <Text size="small" color="earth">Мастер</Text>
+                        <Text size="small" color="water">Советчик</Text>
+                    </div>
+                    <Portrait name="ENFP" gender="female" className={styles.adult1} /> 
+                    <Portrait name="ISTP" gender="male" className={styles.adult2} />
                 </MenuItem>
 
                 <MenuItem onClick={goTo(ROUTES.SOCIOTYPES_PEOPLE)} doubleHeight>
                     <Icon size={24} className={styles.icon} color="accent" name="Users" />
-                    <Text size="smaller" color="accent">Люди</Text>
+                    <Text size="h6" color="accent">Люди</Text>
                 </MenuItem>
 
                 <MenuItem doubleHeight inactive>
-                    <Icon size={24} className={styles.icon} color="accent" name="Square0" />
-                    <Text size="smaller" color="accent">Дети</Text>
+                    <Icon size={24} className={styles.icon} color="accent" name="StarSquare" />
+                    <Text size="h6" color="accent">Дети</Text>
+                    <Portrait name="ESFJ" gender="female" kid className={styles.kid1} /> 
+                    <Portrait name="INTJ" gender="female" kid className={styles.kid2} />
+                    <Portrait name="ENTP" gender="male" kid className={styles.kid3} />
                 </MenuItem>
 
-                <MenuItem fullWidth>
+                <MenuItem fullWidth onClick={goTo(ROUTES.RELATIONSHIPS)}>
                     <Icon size={24} className={styles.icon} color="accent" name="Square2" />
                     <Text size="smaller" color="accent">Интертипные отношения</Text>
                 </MenuItem>
@@ -104,6 +121,10 @@ export default function Menu() {
             </div>
 
             <div className={styles.menuList}>
+                <MenuItem onClick={goTo(ROUTES.HISTORY)}>
+                    <Icon size={24} className={styles.icon} color="accent" name="Time" />
+                    <Text size="smaller" color="accent">История</Text>
+                </MenuItem>
                 <MenuItem fullWidth onClick={goTo(ROUTES.METABOLISM)}>
                     <Icon size={24} className={styles.icon} color="accent" name="Square3" />
                     <Text size="smaller" color="accent">Информационный метаболизм</Text>
@@ -112,6 +133,7 @@ export default function Menu() {
                 <MenuItem onClick={goTo(ROUTES.FUNCTIONS)}>
                     <Icon size={24} className={styles.icon} color="accent" name="Square4" />
                     <Text size="smaller" color="accent">Функции</Text>
+                    <img src="../../assets/images/functions.svg" className={styles.image}/>
                 </MenuItem>
 
                 <MenuItem onClick={goTo(ROUTES.BLOCKS)}>
@@ -127,31 +149,34 @@ export default function Menu() {
                 <MenuItem onClick={goTo(ROUTES.QUADRAS)}>
                     <Icon size={24} className={styles.icon} color="accent" name="Square7" />
                     <Text size="smaller" color="accent">Квадры</Text>
+                    <img src="../../assets/images/quadras.svg" className={styles.image}/>
                 </MenuItem>
 
                 <MenuItem onClick={goTo(ROUTES.SUITS)}>
                     <Icon size={24} className={styles.icon} color="accent" name="Square8" />
                     <Text size="smaller" color="accent">Карты и масти</Text>
+                    <img src="../../assets/images/suits.svg" className={styles.image}/> 
                 </MenuItem>
 
                 <MenuItem onClick={goTo(ROUTES.CLUBS)}>
                     <Icon size={24} className={styles.icon} color="accent" name="Square9" />
-                    <Text size="smaller" color="accent">Клубы</Text>
-                </MenuItem>
-
-                <MenuItem onClick={goTo(ROUTES.MINDSETS)}>
-                    <Icon size={24} className={styles.icon} color="accent" name="Square10" />
-                    <Text size="smaller" color="accent">Типы мышления</Text>
+                    <Text size="smaller" color="accent">Клубы и психотипы</Text>
+                    <img src="../../assets/images/clubs.svg" className={styles.image}/>
                 </MenuItem>
 
                 <MenuItem onClick={goTo(ROUTES.YUNG)}>
-                    <Icon size={24} className={styles.icon} color="accent" name="Square11" />
+                    <Icon size={24} className={styles.icon} color="accent" name="Square10" />
                     <Text size="smaller" color="accent">Дихотомии Юнга</Text>
                 </MenuItem>
 
                 <MenuItem onClick={goTo(ROUTES.REININ)}>
-                    <Icon size={24} className={styles.icon} color="accent" name="Square12" />
+                    <Icon size={24} className={styles.icon} color="accent" name="Square11" />
                     <Text size="smaller" color="accent">Признаки Рейнина</Text>
+                </MenuItem>
+
+                <MenuItem fullWidth onClick={goTo(ROUTES.MINDSETS)}>
+                    <Icon size={24} className={styles.icon} color="accent" name="Square12" />
+                    <Text size="smaller" color="accent">Типы мышления</Text>
                 </MenuItem>
 
                 <MenuItem fullWidth onClick={goTo(ROUTES.OTHER)}>
