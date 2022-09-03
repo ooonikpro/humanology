@@ -19,7 +19,10 @@
         "lint": "eslint --ext .ts,.tsx src --color",
         "lint:fix": "npm run lint -- --fix",
         "prepare": "husky install",
-        "svgr": "svgr -d src/components/Icon/icons src/assets/icons --config-file .svgrrc",
+        "svgr": "npm run svgr:icons & npm run svgr:images & npm run svgr:circles",
+        "svgr:icons": "svgr -d src/components/Icon/icons src/assets/icons --config-file .svgrrc",
+        "svgr:images": "svgr -d src/components/Icon/images src/assets/images --config-file .svgrrc",
+        "svgr:circles": "svgr -d src/components/Icon/circles src/assets/circles --config-file .svgrrc",
         "lint-staged": "lint-staged"
     },
     "browserslist": {
@@ -49,6 +52,7 @@
         "react-scripts": "^5.0.1",
         "sass": "^1.50.0",
         "svg-sprite-loader": "^6.0.11",
+        "svg-url-loader": "^7.1.1",
         "typescript": "^4.6.3"
     },
     "lint-staged": {

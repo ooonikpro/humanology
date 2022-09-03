@@ -6,6 +6,9 @@ import { Text } from '../../components/Text';
 import { Icon } from '../../components/Icon';
 import { Portrait } from '../../components/Portrait';
 
+import FunctionsImage from '../../components/Icon/images/Functions';
+
+
 interface MenuItemProps {
     children: React.ReactNode;
     className?: string;
@@ -55,7 +58,7 @@ export default function Menu() {
                 <MenuItem onClick={goTo(ROUTES.DISCLAIMER)}>
                     <Icon size={24} className={styles.icon} color="accent" name="AlertSquare" />
                     <Text size="smaller" color="accent">Дисклеймер</Text>
-                </MenuItem>               
+                </MenuItem>
 
                 <MenuItem fullWidth big onClick={goTo(ROUTES.SOCIOTYPES(''))}>
                     <div className={styles.elements}>
@@ -70,7 +73,7 @@ export default function Menu() {
                         <Text size="small" color="earth">Мастер</Text>
                         <Text size="small" color="water">Советчик</Text>
                     </div>
-                    <Portrait name="ENFP" gender="female" className={styles.adult1} /> 
+                    <Portrait name="ENFP" gender="female" className={styles.adult1} />
                     <Portrait name="ISTP" gender="male" className={styles.adult2} />
                 </MenuItem>
 
@@ -82,7 +85,7 @@ export default function Menu() {
                 <MenuItem doubleHeight inactive>
                     <Icon size={24} className={styles.icon} color="accent" name="StarSquare" />
                     <Text size="h6" color="accent">Дети</Text>
-                    <Portrait name="ESFJ" gender="female" kid className={styles.kid1} /> 
+                    <Portrait name="ESFJ" gender="female" kid className={styles.kid1} />
                     <Portrait name="INTJ" gender="female" kid className={styles.kid2} />
                     <Portrait name="ENTP" gender="male" kid className={styles.kid3} />
                 </MenuItem>
@@ -117,7 +120,7 @@ export default function Menu() {
                 <MenuItem inactive>
                     <Icon size={24} className={styles.icon} color="accent" name="Unknown" />
                     <Text size="smaller" color="accent">Коллективы</Text>
-                </MenuItem>    
+                </MenuItem>
             </div>
 
             <div className={styles.menuList}>
@@ -133,7 +136,7 @@ export default function Menu() {
                 <MenuItem onClick={goTo(ROUTES.FUNCTIONS)}>
                     <Icon size={24} className={styles.icon} color="accent" name="Square4" />
                     <Text size="smaller" color="accent">Функции</Text>
-                    <img src={require('svg-loader!../../assets/images/functions.svg')} className={styles.image}/>
+                    <FunctionsImage/>
                 </MenuItem>
 
                 <MenuItem onClick={goTo(ROUTES.BLOCKS)}>
@@ -149,7 +152,7 @@ export default function Menu() {
                 <MenuItem onClick={goTo(ROUTES.QUADRAS)}>
                     <Icon size={24} className={styles.icon} color="accent" name="Square7" />
                     <Text size="smaller" color="accent">Квадры</Text>
-                    <img src={require('svg-loader!../../assets/images/quadras.svg')} className={styles.image}/>
+                    {/* <img src={require('../../assets/images/quadras.svg')} className={styles.image}/> */}
                 </MenuItem>
 
                 <MenuItem onClick={goTo(ROUTES.SUITS)}>
