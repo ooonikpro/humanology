@@ -1,65 +1,30 @@
 @import '../../styles/utils';
 
-$before-element-width: 2.4rem;
 
-.card {
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
+.menuList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacing-4;
+    margin-bottom: $spacing-24;
 }
 
-.menu {
+
+.menuItem {
     display: flex;
     flex-direction: column;
-    counter-reset: section;
-    list-style: none;
-    background-color: var(--color-basic-white);
-}
-
-.item {
+    justify-content: flex-end;
+    flex: 1 1 auto;
     position: relative;
-
-    &:not(:last-child)::after {
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        content: '';
-        display: block;
-        height: 1px;
-        background-color: var(--color-basic-accent);
-        opacity: 0.05;
-    }
-}
-
-.link {
-    position: relative;
-    width: 100%;
-    display: block;
-    padding: $spacing-16 $spacing-4 $spacing-16 calc(#{$spacing-4} + #{$before-element-width});
+    border-radius: 2px;
+    padding: $spacing-6;
+    background-color: $color-basic-white;
+    color: $color-basic-accent;
+    border-top: 1px solid $color-basic-accent;
     cursor: pointer;
-    z-index: 1;
+    padding: $spacing-24 $spacing-4 $spacing-4 $spacing-4;
+    min-width: 40%;
 
-    @include transition(color);
-
-    &:active {
-        &::before {
-            opacity: 1;
-        }
-    }
-
-    &::before {
-        position: absolute;
-        top: 50%;
-        left: 0;
-        width: $before-element-width;
-        font-size: $font-size-base;
-        transform: translateY(-50%);
-        counter-increment: section;
-        content: counter(section);
-        z-index: 0;
-    }
-
-    &:not(&--active)::before {
-        opacity: 0.5;
+    &.fullWidth {
+        width: 100%;
     }
 }

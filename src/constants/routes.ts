@@ -39,7 +39,7 @@ export const MAIN_LINKS: Tabs[] = [
     {
         label: 'Быстрый старт',
         path: ROUTES.START,
-        order: 1,
+        order: 0,
         iconName: 'StarSquare'
     },
     {

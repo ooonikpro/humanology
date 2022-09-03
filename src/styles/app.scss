@@ -62,8 +62,8 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
-    max-width: 48rem;
-    min-width: 36rem;
+    max-width: $app-max-width;
+    min-width: $app-min-width;
     min-height: 100vh;
     margin: auto;
     padding-bottom: calc(#{$spacing-4} - #{$spacing-8});

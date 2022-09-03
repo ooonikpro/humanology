@@ -2,14 +2,14 @@
 
 .root {
     width: 100%;
-    max-width: 48rem;
+    max-width: $app-max-width;
     background-color: var(--color-basic-beige);
     color: var(--color-basic-black);
     padding: $spacing-8 $spacing-4 0 $spacing-4;
     z-index: 2;
 }
 
-.section {
+.headerTop {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -53,7 +53,7 @@
     }
 }
 
-.horizontal-scrollbar {
+.horizontalScrollbar {
     align-self: flex-start;
     display: flex;
     width: 100%;
