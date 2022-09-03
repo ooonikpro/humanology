@@ -1,10 +1,13 @@
 import React from 'react';
 import { Text } from '../../../components/Text';
+import { AuthorLine } from '../../../components/AuthorLine';
 
 export default function ENTP() {
     return (
         <>
-            <Text tag="p" color="element">
+            <AuthorLine readTime='1'>О соционике</AuthorLine>
+            
+            <Text tag="p" color="role" size="h5">
                 Умеет и любит объяснять различные явления и ситуации.
             </Text>
 
@@ -13,7 +16,7 @@ export default function ENTP() {
             </Text>
 
             <Text tag="p">
-                Он легко может <b>увидеть связь между различными схемами, определениями, он умеет жонглировать понятиями и доказывать недоказуемое.</b>
+                Он легко может увидеть связь между различными схемами, определениями, он умеет жонглировать понятиями и доказывать недоказуемое.
             </Text>
 
             <Text tag="p">

@@ -1,10 +1,13 @@
 import React from 'react';
 import { Text } from '../../../components/Text';
+import { AuthorLine } from '../../../components/AuthorLine';
 
 export default function ENTP() {
     return (
         <>
-            <Text tag="p" color="element">
+            <AuthorLine readTime='1'>О соционике</AuthorLine>
+
+            <Text tag="p" color="role" size="h5">
                 Если довести до ручки может довольно резко дать отпор.
             </Text>
 
@@ -17,8 +20,11 @@ export default function ENTP() {
             </Text>
 
             <Text tag="p">
-                <b>Чтобы отвечать на агрессию, требуется много сил</b>, поэтому он старается избежать вражды и соперничества.
+                Чтобы отвечать на агрессию, требуется много сил, поэтому он старается избежать вражды и соперничества.
             </Text>
+
+            <hr />
         </>
     );
 }
+

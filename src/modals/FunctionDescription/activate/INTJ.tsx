@@ -1,5 +1,34 @@
 import React from 'react';
+import { Text } from '../../../components/Text';
+import { AuthorLine } from '../../../components/AuthorLine';
 
-export default function INTJ() {
-    return <div>INTJ</div>;
+export default function ENTP() {
+    return (
+        <>
+            <AuthorLine readTime='1'>О соционике</AuthorLine>
+
+            <Text tag="p" color="role" size="h5">
+                Нужен хотя бы минимальный сенсорный комфорт для того, чтобы его работоспособность стала выше.
+            </Text>
+
+            <Text tag="p">
+                Ему приятно, когда дома чисто, еда вкусная, а кровать удобная.
+            </Text>
+
+            <Text tag="p">
+                Любит красиво и функционально одеваться, он чувствует гармоничные сочетания цветов и фактур. 
+            </Text>
+
+            <Text tag="p">
+                При этом представители этого типа не любят роскошь, им достаточно иметь функциональный и удобный дом, в котором они смогут предаваться мыслям.
+            </Text>
+
+            <Text tag="p">
+                Если его окружить дискомфортом, то вскоре он начнет ругаться, злиться и быстрее уставать.
+            </Text>
+
+            <hr />
+        </>
+    );
 }
+

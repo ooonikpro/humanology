@@ -5,9 +5,9 @@ export const FUNCTION: Record<Socionics.Function, string> = {
     creative: 'Творческая',
     role: 'Ролевая',
     back: 'Фоновая',
-    limit: 'Защита',
+    limit: 'Защитная',
     pain: 'Болевая',
-    activate: 'Активация',
+    activate: 'Активационная',
     suggestive: 'Суггестивная',
 } as const;
 

@@ -2,8 +2,8 @@
 
 .root {
     margin: 0;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    height: 100%;
+    margin-bottom: $spacing-8;
 }
 
 .header {

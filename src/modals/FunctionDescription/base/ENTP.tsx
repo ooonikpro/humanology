@@ -1,17 +1,18 @@
 import React from 'react';
 import { Text } from '../../../components/Text';
+import { AuthorLine } from '../../../components/AuthorLine';
 
 export default function ENTP() {
     return (
         <>  
-            <hr />
-
+            <AuthorLine readTime='1'>О соционике</AuthorLine>
+            
             <Text tag="p" color="role" size="h5">
                 Живут идеями, причем, не одной идеей, а их круговоротом.
             </Text>            
 
             <Text tag="p">
-                Эти люди <b>всегда оценивают перспективность и интересность каждой идеи</b>, которая приходит им в голову, а приходит их много.
+                Эти люди всегда оценивают перспективность и интересность каждой идеи, которая приходит им в голову, а приходит их много.
             </Text>
 
             <Text tag="p">
@@ -21,6 +22,8 @@ export default function ENTP() {
             <Text tag="p">
                 Очень не любит быть «обычным», «таким как все», для него рутина — это скука смертная, он всячески пытается ее избежать.
             </Text>
+
+            <hr />
         </>
     );
 }
