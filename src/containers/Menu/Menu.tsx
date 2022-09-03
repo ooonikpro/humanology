@@ -133,7 +133,7 @@ export default function Menu() {
                 <MenuItem onClick={goTo(ROUTES.FUNCTIONS)}>
                     <Icon size={24} className={styles.icon} color="accent" name="Square4" />
                     <Text size="smaller" color="accent">Функции</Text>
-                    <img src="../../assets/images/functions.svg" className={styles.image}/>
+                    <img src={require('svg-loader!../../assets/images/functions.svg')} className={styles.image}/>
                 </MenuItem>
 
                 <MenuItem onClick={goTo(ROUTES.BLOCKS)}>
@@ -149,19 +149,19 @@ export default function Menu() {
                 <MenuItem onClick={goTo(ROUTES.QUADRAS)}>
                     <Icon size={24} className={styles.icon} color="accent" name="Square7" />
                     <Text size="smaller" color="accent">Квадры</Text>
-                    <img src="../../assets/images/quadras.svg" className={styles.image}/>
+                    <img src={require('svg-loader!../../assets/images/quadras.svg')} className={styles.image}/>
                 </MenuItem>
 
                 <MenuItem onClick={goTo(ROUTES.SUITS)}>
                     <Icon size={24} className={styles.icon} color="accent" name="Square8" />
                     <Text size="smaller" color="accent">Карты и масти</Text>
-                    <img src="../../assets/images/suits.svg" className={styles.image}/> 
+                    {/* <img src={require('../../assets/images/suits.svg')} className={styles.image}/>  */}
                 </MenuItem>
 
                 <MenuItem onClick={goTo(ROUTES.CLUBS)}>
                     <Icon size={24} className={styles.icon} color="accent" name="Square9" />
                     <Text size="smaller" color="accent">Клубы и психотипы</Text>
-                    <img src="../../assets/images/clubs.svg" className={styles.image}/>
+                    {/* <img src={require('../../assets/images/clubs.svg')} className={styles.image}/> */}
                 </MenuItem>
 
                 <MenuItem onClick={goTo(ROUTES.YUNG)}>
