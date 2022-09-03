@@ -16,15 +16,51 @@
     flex: 1 1 auto;
     position: relative;
     border-radius: 2px;
-    padding: $spacing-6;
     background-color: $color-basic-white;
     color: $color-basic-accent;
-    border-top: 1px solid $color-basic-accent;
+    border-top: 1px solid rgba($color-basic-accent, 0.25);
     cursor: pointer;
-    padding: $spacing-24 $spacing-4 $spacing-4 $spacing-4;
-    min-width: 40%;
+    padding: 0 $spacing-6 $spacing-6 $spacing-6;
+    width: 40%;
+    height: 6.4rem;
+    
+    &::before {
+        position: absolute;
+        right: 0;
+        top: 0;
+        left: 0;
+        height: 2.4rem;
+        z-index: 0;
+        display: block;
+        content: '';
+        background: radial-gradient(
+            50% 25% at 50% 0%,
+            $color-basic-accent 0,
+            transparent
+        );
+        opacity: 0.05;
+    }
 
     &.fullWidth {
         width: 100%;
     }
+
+    &.doubleHeight {
+        height: 9.6rem;
+    }
+
+    &.big {
+        height: 12.8rem;
+    }
+
+    &.inactive {
+        opacity: 0.5;
+    }
+}
+
+.icon {
+    position: absolute;
+    bottom: $spacing-32;
+    left: $spacing-6;
+    opacity: 0.5;
 }
