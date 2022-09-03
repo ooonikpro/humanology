@@ -7,7 +7,7 @@ export default function INTJ() {
         <>
             <AuthorLine readTime='2'>Виктор Пятницкий</AuthorLine>
 
-            <Text tag="p" color="role">
+            <Text tag="p" color="role" size="h5">
                 Стереотипные представления об отношениях между людьми и о способах выхода из неприятных этических ситуаций.
             </Text>
             
