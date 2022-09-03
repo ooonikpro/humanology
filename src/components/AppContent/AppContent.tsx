@@ -1,15 +1,14 @@
 import React from 'react';
 import styles from './AppContent.module.scss';
-import { AppRouter } from '../../components/AppRouter';
 import { EndPoint } from '../../components/EndPoint';
 
-export const AppContent: React.FC = () => {
+export const AppContent: React.FC<{ children: React.ReactNode | React.ReactNode[] }> = ({ children }) => {
     return (
         <main className={styles.root}>
             <div className={styles.container}>
-                <AppRouter/>
+                { children }
             </div>
             <EndPoint />
-        </main> 
+        </main>
     );
 };

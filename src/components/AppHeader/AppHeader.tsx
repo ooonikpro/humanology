@@ -1,20 +1,20 @@
 import React from 'react';
-import { useMatch, useNavigate, useResolvedPath } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import styles from './AppHeader.module.scss';
 import { Icon } from '../Icon';
-import { MainTabs } from '../Tabs/MainTabs';
 import { ROUTES } from 'src/constants/routes';
+import { MainTabs } from '../Tabs/MainTabs';
+import { useIsActiveRoute } from 'src/hooks';
 
-export const AppHeader = () => {
+export const AppHeader: React.FC<{ isShowTabs?: boolean }> = ({ isShowTabs = true }) => {
     const goTo = useNavigate();
-    const { pathname } = useResolvedPath(ROUTES.MENU);
-    const isActiveRoute = useMatch({ path: pathname });
+    const isActiveMenuRoute = useIsActiveRoute(ROUTES.MENU);
 
     return (
         <header className={styles.root}>
-            <div className={styles.section}>
+            <div className={styles.headerTop}>
                 <button
-                    className={[styles.menu, isActiveRoute ? styles.active : ''].join(' ')}
+                    className={[styles.menu, isActiveMenuRoute ? styles.active : ''].join(' ')}
                     onClick={() => goTo(ROUTES.MENU)}
                 >
                     <Icon name="Menu" color="accent" size={24} />
@@ -34,11 +34,15 @@ export const AppHeader = () => {
 
             <hr className={styles.hr}/>
 
-            <nav className={styles.tabs}>
-                <div className={styles['horizontal-scrollbar']}>
-                    <MainTabs />
-                </div>
-            </nav>
+            {
+                isShowTabs && !isActiveMenuRoute && (
+                    <nav className={styles.tabs}>
+                        <div className={styles.horizontalScrollbar}>
+                            <MainTabs />
+                        </div>
+                    </nav>
+                )
+            }
         </header>
     );
 };
