@@ -5,7 +5,7 @@ const SvgQuadras = (props: SVGProps<SVGSVGElement>) => (
     <svg
         width="1em"
         height="1em"
-        viewBox="0 0 76 16"
+        viewBox="0 0 76 36"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         {...props}

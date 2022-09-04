@@ -66,8 +66,9 @@
 
 .image {
     position: absolute;
-    right: $spacing-12;
-    top: $spacing-12;
+    right: $spacing-8;
+    top: -$spacing-4;
+    opacity: 0.25;
 }
 
 .elements {
@@ -130,4 +131,15 @@
     right: 8rem;
     z-index: 0;
     opacity: 0.75;
+}
+
+.iconCascade {
+    position: absolute;
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-end;
+    flex-direction: row-reverse;
+    top: $spacing-8;
+    right: $spacing-12;
+    opacity: 0.25;
 }

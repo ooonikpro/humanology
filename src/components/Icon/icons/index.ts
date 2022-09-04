@@ -1,3 +1,5 @@
+export * from '../circles';
+export * from '../images';
 export { default as Activity } from './Activity';
 export { default as Aggressor } from './Aggressor';
 export { default as AirMini } from './AirMini';
