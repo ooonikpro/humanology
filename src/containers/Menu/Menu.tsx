@@ -42,31 +42,47 @@ const MenuItem: React.FC<MenuItemProps> = ({
 };
 
 const Duals = [
-    ['ENTP', 'ISFP'],
-    ['ISFP', 'ENTP'],
-    ['ESFJ', 'INTJ'],
-    ['INTJ', 'ESFJ'],
-    ['ISTJ', 'ENFJ'],
-    ['ENFJ', 'ISTJ'],
-    ['INFP', 'ESTP'],
-    ['ESTP', 'INTP'],
-    ['INTP', 'ESFP'],
-    ['ESFP', 'INTP'],
-    ['ISFJ', 'ENTJ'],
-    ['ENTJ', 'ISFJ'],
-    ['ESTJ', 'INFJ'],
-    ['INFJ', 'ESTJ'],
-    ['ENFP', 'ISTP'],
-    ['ISTP', 'ENFP'],
+    ['ENTP', 'female', 'ISFP', 'male'],
+    ['ENTP', 'male', 'ISFP', 'female'],
+    ['ISFP', 'female', 'ENTP', 'male'],
+    ['ISFP', 'male', 'ENTP', 'female'],
+    ['ESFJ', 'female', 'INTJ', 'male'],
+    ['ESFJ', 'male', 'INTJ', 'female'],
+    ['INTJ', 'female', 'ESFJ', 'male'],
+    ['INTJ', 'male', 'ESFJ', 'female'],
+    ['ISTJ', 'female', 'ENFJ', 'male'],
+    ['ISTJ', 'male', 'ENFJ', 'female'],
+    ['ENFJ', 'female', 'ISTJ', 'male'],
+    ['ENFJ', 'male', 'ISTJ', 'female'],
+    ['INFP', 'female', 'ESTP', 'male'],
+    ['INFP', 'male', 'ESTP', 'female'],
+    ['ESTP', 'female', 'INFP', 'male'],
+    ['ESTP', 'male', 'INFP', 'female'],
+    ['INTP', 'female', 'ESFP', 'male'],
+    ['INTP', 'male', 'ESFP', 'female'],
+    ['ESFP', 'female', 'INTP', 'male'],
+    ['ESFP', 'male', 'INTP', 'female'],
+    ['ISFJ', 'female', 'ENTJ', 'male'],
+    ['ISFJ', 'male', 'ENTJ', 'female'],
+    ['ENTJ', 'female', 'ISFJ', 'male'],
+    ['ENTJ', 'male', 'ISFJ', 'female'],
+    ['ESTJ', 'female', 'INFJ', 'male'],
+    ['ESTJ', 'male', 'INFJ', 'female'],
+    ['INFJ', 'female', 'ESTJ', 'male'],
+    ['INFJ', 'male', 'ESTJ', 'female'],
+    ['ENFP', 'female', 'ISTP', 'male'],
+    ['ENFP', 'male', 'ISTP', 'female'],
+    ['ISTP', 'female', 'ENFP', 'male'],
+    ['ISTP', 'male', 'ENFP', 'female'],
 ];
 
 const RandomDual = () => {
-    const ids: [Socionics.SocionicsType, Socionics.SocionicsType] = getRandomIndex(Duals);
+    const ids: [Socionics.SocionicsType, Socionics.Gender, Socionics.SocionicsType, Socionics.Gender] = getRandomIndex(Duals);
 
     return (
         <>
-            <Portrait name={ids[0]} gender="female" className={styles.adult1} />
-            <Portrait name={ids[1]} gender="male" className={styles.adult2} />
+            <Portrait name={ids[0]} gender={ids[1]}  className={styles.adult1} />
+            <Portrait name={ids[2]} gender={ids[3]} className={styles.adult2} />
         </>
     );
 };

@@ -14,7 +14,7 @@ interface Props {
     communication: Socionics.CommunicationStyle;
     companion: Socionics.Companion;
     temperament: Socionics.Temperament;
-    ideology: Socionics.Alignment;
+    alignment: Socionics.Alignment;
     className?: string;
 }
 
@@ -52,7 +52,7 @@ export const CommunicationList: React.FC<Props> = (props) => {
         {
             textColor: 'black',
             label: 'Мировоззрение',
-            value: ALIGNMENT[props.ideology],
+            value: ALIGNMENT[props.alignment],
         },
     ];
 

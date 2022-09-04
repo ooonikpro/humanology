@@ -107,6 +107,7 @@ export namespace Socionics {
         | 'chaoticGood'
         | 'chaoticEvil'
         | 'lawfulNeutral'
+        | 'lawfulGood'
         | 'lawfulEvil'
         | 'trueNeutral'
         | 'neutralEvil'
@@ -185,7 +186,7 @@ export namespace Socionics {
         communication: CommunicationStyle;
         companion: Companion;
         temperament: Temperament;
-        ideology: Alignment;
+        alignment: Alignment;
         yungs: Dichotomy[];
         reinin: ReininSign[];
         intertypeRelations: Record<intertypeRelations, SocionicsType>

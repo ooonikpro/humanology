@@ -7,7 +7,7 @@ export default function INTJ() {
         <>
             <AuthorLine readTime='6'>Велта Микелсоне</AuthorLine>
 
-            <Text tag="p" color="role" size="h5">
+            <Text tag="b" color="role" size="h5">
             Мастер логического анализа, человек, способен разложить по полочкам все на свете. Искатель истины и справедливости.
             </Text>
 
