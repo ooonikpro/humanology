@@ -56,7 +56,6 @@ export const FunctionalCard: React.FC<Props> = (props) => {
     return (
         <div
             className={rootClasses}
-            style={{ opacity: props.opacity || 1 }}
             onClick={props.onClick}
         >
             {(props.striped || props.outline) && (
