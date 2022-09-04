@@ -83,7 +83,7 @@
 
 .adult1 {
     position: absolute;
-    height: 10.8rem;
+    height: 12.8rem;
     bottom: 0;
     right: 0;
     z-index: 1;
@@ -91,9 +91,9 @@
 
 .adult2 {
     position: absolute;
-    height: 9.6rem;
+    height: 10.8rem;
     bottom: 0;
-    right: 6.4rem;
+    right: 8rem;
     z-index: 0;
     opacity: 0.75;
 }
@@ -109,15 +109,15 @@
 
 .kid1 {
     position: absolute;
-    height: 9.6rem;
-    bottom: -$spacing-8;
-    right: 3.2rem;
+    height: 11.2rem;
+    bottom: -$spacing-4;
+    right: 4.8rem;
     z-index: 1;
 }
 
 .kid2 {
     position: absolute;
-    height: 8rem;
+    height: 10.8rem;
     bottom: -$spacing-8;
     right: 0rem;
     z-index: 0;
@@ -126,9 +126,9 @@
 
 .kid3 {
     position: absolute;
-    height: 8rem;
+    height: 9.6rem;
     bottom: -$spacing-8;
-    right: 8rem;
+    right: 10.8rem;
     z-index: 0;
     opacity: 0.75;
 }

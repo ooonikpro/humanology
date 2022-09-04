@@ -60,13 +60,32 @@ const Duals = [
     ['ISTP', 'ENFP'],
 ];
 
-const RandomSociatypes = () => {
+const Kids = [
+    ['ESFJ', 'female', 'INTJ', 'male', 'ENTP', 'female' ],
+    ['ESTP', 'male', 'INFP', 'female', 'ISTJ', 'male'],
+    ['ESFP', 'female', 'INTP', 'male', 'ISFJ', 'female'],
+    ['ESTJ', 'male', 'INFJ', 'female', 'ENFP', 'female'],
+];
+
+const RandomDual = () => {
     const ids: [Socionics.SocionicsType, Socionics.SocionicsType] = getRandomIndex(Duals);
 
     return (
         <>
             <Portrait name={ids[0]} gender="female" className={styles.adult1} />
             <Portrait name={ids[1]} gender="male" className={styles.adult2} />
+        </>
+    );
+};
+
+const RandomKids = () => {
+    const ids: [Socionics.SocionicsType, Socionics.Gender, Socionics.SocionicsType, Socionics.Gender, Socionics.SocionicsType, Socionics.Gender] = getRandomIndex(Kids);
+
+    return (
+        <>
+            <Portrait name={ids[0]} gender={ids[1]} kid className={styles.kid1} />
+            <Portrait name={ids[2]} gender={ids[3]} kid className={styles.kid2} />
+            <Portrait name={ids[4]} gender={ids[5]} kid className={styles.kid3} />
         </>
     );
 };
@@ -98,24 +117,13 @@ export default function Menu() {
                     </div>
                     <Icon size={24} className={styles.icon} color="accent" name="Square1" />
                     <Text size="h5" color="accent">Социотипы</Text>
-                    <div className={styles.dualstring}>
-                        <Text size="small" color="earth">Мастер</Text>
-                        <Text size="small" color="water">Советчик</Text>
-                    </div>
-                    <RandomSociatypes/>
+                    <RandomDual/>
                 </MenuItem>
 
-                <MenuItem onClick={goTo(ROUTES.SOCIOTYPES_PEOPLE)} doubleHeight>
-                    <Icon size={24} className={styles.icon} color="accent" name="Users" />
-                    <Text size="h6" color="accent">Люди</Text>
-                </MenuItem>
-
-                <MenuItem doubleHeight inactive>
+                <MenuItem doubleHeight fullWidth>
                     <Icon size={24} className={styles.icon} color="accent" name="StarSquare" />
                     <Text size="h6" color="accent">Дети</Text>
-                    <Portrait name="ESFJ" gender="female" kid className={styles.kid1} />
-                    <Portrait name="INTJ" gender="female" kid className={styles.kid2} />
-                    <Portrait name="ENTP" gender="male" kid className={styles.kid3} />
+                    <RandomKids/>
                 </MenuItem>
 
                 <MenuItem fullWidth onClick={goTo(ROUTES.RELATIONSHIPS)}>
@@ -140,7 +148,12 @@ export default function Menu() {
                     <Text size="smaller" color="accent">Профиль</Text>
                 </MenuItem>
 
-                <MenuItem  inactive>
+                <MenuItem doubleHeight inactive>
+                    <Icon size={24} className={styles.icon} color="accent" name="Users" />
+                    <Text size="smaller" color="accent">Люди</Text>
+                </MenuItem>
+
+                <MenuItem doubleHeight inactive >
                     <Icon size={24} className={styles.icon} color="accent" name="Unknown" />
                     <Text size="smaller" color="accent">Карта социальных связей</Text>
                 </MenuItem>

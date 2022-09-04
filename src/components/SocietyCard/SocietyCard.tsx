@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback, useState } from 'react';
 import styles from './SocietyCard.module.scss';
 import { Socionics } from '../../types';
 import { QUADRAS } from '../../constants/natureElements';
@@ -20,9 +20,13 @@ interface Props extends Socionics.IntertypeProp {
 }
 
 export const SocietyCard: React.FC<Props> = (props) => {
+    const [gender, setGender] = useState(props.gender);
+    const toggleGender = useCallback(() => { 
+        gender === 'male' ? setGender('female') : setGender('male');
+    }, [gender]);
     const text = {
         id: props.id,
-        gender: props.gender,
+        gender, 
         element: QUADRAS[props.element],
         role: ROLE[props.role].label,
         mindKey: MIND_KEY[props.mindKey],
@@ -106,7 +110,7 @@ export const SocietyCard: React.FC<Props> = (props) => {
                     id={props.id}
                     className={styles.quadra}
                 />
-                <Portrait name={props.id} gender={props.gender} className={styles.portrait} />
+                <Portrait name={props.id} gender={gender} className={styles.portrait} onClick={toggleGender} />
                 
                 {!props.mini && (
                     <Text
