@@ -43,9 +43,9 @@
 .quadra-img {
     position: absolute;
     margin-top: $spacing-4;
-    left: 50%*1.1;
+    left: 50%;
     opacity: 0.33;
-    transform: scale(1.1) translateX(-50%);
+    transform: scale(1) translateX(-50%);
 }
 
 .portrait {

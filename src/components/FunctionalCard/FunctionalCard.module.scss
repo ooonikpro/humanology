@@ -13,22 +13,6 @@
     min-width: 13.2rem;
     border-radius: 2px;
 
-    &:nth-child(1) {
-        background: linear-gradient(
-                    220deg,
-                    var(--f-block-color) 25%,
-                    var(--f-block-color-role) 100%
-        );
-    }
-
-    &:nth-child(2) {
-        background: linear-gradient(
-                    200deg,
-                    var(--f-block-color) 50%,
-                    var(--f-block-color-role) 150%
-        );
-    }
-
     &.size {
         &-xl,
         &-m {
@@ -53,7 +37,7 @@
 
             .aspect {
                 top: 0;
-                right: $spacing-20;
+                right: $spacing-16;
                 bottom: 0;
                 margin: auto;
             }
@@ -186,34 +170,43 @@
 
 .number {
     &-1 {
-        opacity: 0.5;
+        background: linear-gradient(
+                    220deg,
+                    var(--f-block-color) 25%,
+                    var(--f-block-color-role) 100%
+        );
     }
 
     &-2 {
-        opacity: 0.5;
+        opacity: 0.9;
+        background: linear-gradient(
+                    200deg,
+                    var(--f-block-color) 50%,
+                    var(--f-block-color-role) 150%
+        );
     }
 
     &-3 {
-        opacity: 0.5;
+        opacity: 0.6;
     }
 
     &-4 {
-        opacity: 0.5;
+        opacity: 0.75;
     }
 
     &-5 {
-        opacity: 0.5;
+        opacity: 1;
     }
 
     &-6 {
-        opacity: 0.5;
+        opacity: 0.9;
     }
 
     &-7 {
-        opacity: 0.5;
+        opacity: 0.6;
     }
 
     &-8 {
-        opacity: 0.5;
+        opacity: 0.75;
     }
 }

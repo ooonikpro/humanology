@@ -120,7 +120,7 @@ export default function Menu() {
                     <RandomDual/>
                 </MenuItem>
 
-                <MenuItem doubleHeight fullWidth>
+                <MenuItem doubleHeight fullWidth inactive>
                     <Icon size={24} className={styles.icon} color="accent" name="StarSquare" />
                     <Text size="h6" color="accent">Дети</Text>
                     <RandomKids/>
@@ -153,7 +153,7 @@ export default function Menu() {
                     <Text size="smaller" color="accent">Люди</Text>
                 </MenuItem>
 
-                <MenuItem doubleHeight inactive >
+                <MenuItem doubleHeight inactive>
                     <Icon size={24} className={styles.icon} color="accent" name="Unknown" />
                     <Text size="smaller" color="accent">Карта социальных связей</Text>
                 </MenuItem>
