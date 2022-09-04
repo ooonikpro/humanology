@@ -23,6 +23,7 @@ export const FunctionalCard: React.FC<Props> = (props) => {
     const rootClasses = [
         styles.root,
         styles[`size-${props.size}`],
+        styles[`number-${props.number}`],
         props.outline && styles.outline,
         props.transparent && styles.transparent,
         props.striped && styles.striped,

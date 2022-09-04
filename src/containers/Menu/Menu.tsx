@@ -5,6 +5,9 @@ import { useNavigate } from 'react-router-dom';
 import { Text } from '../../components/Text';
 import { Icon } from '../../components/Icon';
 import { Portrait } from '../../components/Portrait';
+import { Socionics } from 'src/types';
+
+const getRandomIndex = (arr: Array<any>) => arr[Math.round(Math.random() * arr.length - 1)];
 interface MenuItemProps {
     children: React.ReactNode;
     className?: string;
@@ -57,6 +60,17 @@ const Duals = [
     ['ISTP', 'ENFP'],
 ];
 
+const RandomSociatypes = () => {
+    const ids: [Socionics.SocionicsType, Socionics.SocionicsType] = getRandomIndex(Duals);
+
+    return (
+        <>
+            <Portrait name={ids[0]} gender="female" className={styles.adult1} />
+            <Portrait name={ids[1]} gender="male" className={styles.adult2} />
+        </>
+    );
+};
+
 export default function Menu() {
     const navigate = useNavigate();
     const goTo = (route: string) => () => navigate(route);
@@ -88,8 +102,7 @@ export default function Menu() {
                         <Text size="small" color="earth">Мастер</Text>
                         <Text size="small" color="water">Советчик</Text>
                     </div>
-                    <Portrait name="ENFP" gender="female" className={styles.adult1} />
-                    <Portrait name="ISTP" gender="male" className={styles.adult2} />
+                    <RandomSociatypes/>
                 </MenuItem>
 
                 <MenuItem onClick={goTo(ROUTES.SOCIOTYPES_PEOPLE)} doubleHeight>
