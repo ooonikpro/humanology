@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { SVGProps } from 'react';
 
-const SvgParallels = (props: SVGProps<SVGSVGElement>) => (
+const SvgParallel = (props: SVGProps<SVGSVGElement>) => (
     <svg
         width="1em"
         height="1em"
@@ -19,4 +19,4 @@ const SvgParallels = (props: SVGProps<SVGSVGElement>) => (
     </svg>
 );
 
-export default SvgParallels;
+export default SvgParallel;

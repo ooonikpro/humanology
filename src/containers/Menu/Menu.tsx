@@ -7,7 +7,7 @@ import { Icon } from '../../components/Icon';
 import { Portrait } from '../../components/Portrait';
 import { Socionics } from 'src/types';
 
-const getRandomIndex = (arr: Array<any>) => arr[Math.round(Math.random() * arr.length - 1)];
+const getRandomIndex = (arr: Array<any>) => arr[Math.floor(Math.random() * arr.length)];
 interface MenuItemProps {
     children: React.ReactNode;
     className?: string;
@@ -60,13 +60,6 @@ const Duals = [
     ['ISTP', 'ENFP'],
 ];
 
-const Kids = [
-    ['ESFJ', 'female', 'INTJ', 'male', 'ENTP', 'female' ],
-    ['ESTP', 'male', 'INFP', 'female', 'ISTJ', 'male'],
-    ['ESFP', 'female', 'INTP', 'male', 'ISFJ', 'female'],
-    ['ESTJ', 'male', 'INFJ', 'female', 'ENFP', 'female'],
-];
-
 const RandomDual = () => {
     const ids: [Socionics.SocionicsType, Socionics.SocionicsType] = getRandomIndex(Duals);
 
@@ -77,6 +70,13 @@ const RandomDual = () => {
         </>
     );
 };
+
+const Kids = [
+    ['ESFJ', 'female', 'INTJ', 'male', 'ENTP', 'female' ],
+    ['ESTP', 'male', 'INFP', 'female', 'ISTJ', 'male'],
+    ['ESFP', 'female', 'INTP', 'male', 'ISFJ', 'female'],
+    ['ESTJ', 'male', 'INFJ', 'female', 'ENFP', 'female'],
+];
 
 const RandomKids = () => {
     const ids: [Socionics.SocionicsType, Socionics.Gender, Socionics.SocionicsType, Socionics.Gender, Socionics.SocionicsType, Socionics.Gender] = getRandomIndex(Kids);
@@ -129,6 +129,11 @@ export default function Menu() {
                 <MenuItem fullWidth onClick={goTo(ROUTES.RELATIONSHIPS)}>
                     <Icon size={24} className={styles.icon} color="accent" name="Square2" />
                     <Text size="smaller" color="accent">Интертипные отношения</Text>
+                    <div className={styles.iconCascade}>
+                        <Icon size={48} color="accent" name="Kindred" />
+                        <Icon size={40} color="accent" name="Illusionary" />
+                        <Icon size={32} color="accent" name="Parallel" />
+                    </div>
                 </MenuItem>
             </div>
 
@@ -174,25 +179,25 @@ export default function Menu() {
                     <Text size="smaller" color="accent">Информационный метаболизм</Text>
                 </MenuItem>
 
-                <MenuItem onClick={goTo(ROUTES.FUNCTIONS)}>
-                    <Icon size={24} className={styles.icon} color="accent" name="Square4" />
-                    <Text size="smaller" color="accent">Функции</Text>
-                    <Icon name="Functions" size={80} className={styles.image} />
-                </MenuItem>
-
-                <MenuItem onClick={goTo(ROUTES.BLOCKS)}>
-                    <Icon size={24} className={styles.icon} color="accent" name="Square5" />
-                    <Text size="smaller" color="accent">Блоки и кольца</Text>
-                </MenuItem>
-
                 <MenuItem fullWidth onClick={goTo(ROUTES.ASPECTS)}>
-                    <Icon size={24} className={styles.icon} color="accent" name="Square6" />
+                    <Icon size={24} className={styles.icon} color="accent" name="Square4" />
                     <Text size="smaller" color="accent">Аспекты</Text>
                     <div className={styles.iconCascade}>
                         <Icon size={48} color="accent" name="AspectComfort" />
                         <Icon size={40} color="accent" name="AspectPeople" />
                         <Icon size={32} color="accent" name="AspectIdeas" />
                     </div>
+                </MenuItem>
+
+                <MenuItem onClick={goTo(ROUTES.FUNCTIONS)}>
+                    <Icon size={24} className={styles.icon} color="accent" name="Square5" />
+                    <Text size="smaller" color="accent">Функции</Text>
+                    <Icon name="Functions" size={80} className={styles.image} />
+                </MenuItem>
+
+                <MenuItem onClick={goTo(ROUTES.BLOCKS)}>
+                    <Icon size={24} className={styles.icon} color="accent" name="Square6" />
+                    <Text size="smaller" color="accent">Блоки и кольца</Text>
                 </MenuItem>
 
                 <MenuItem onClick={goTo(ROUTES.QUADRAS)}>
@@ -223,7 +228,7 @@ export default function Menu() {
                     <Text size="smaller" color="accent">Признаки Рейнина</Text>
                 </MenuItem>
 
-                <MenuItem fullWidth onClick={goTo(ROUTES.MINDSETS)}>
+                <MenuItem onClick={goTo(ROUTES.MINDSETS)}>
                     <Icon size={24} className={styles.icon} color="accent" name="Square12" />
                     <Text size="smaller" color="accent">Типы мышления</Text>
                 </MenuItem>

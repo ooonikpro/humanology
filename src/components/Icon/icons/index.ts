@@ -76,7 +76,7 @@ export { default as Mirror } from './Mirror';
 export { default as MoreVertical } from './MoreVertical';
 export { default as More } from './More';
 export { default as Paige } from './Paige';
-export { default as Parallels } from './Parallels';
+export { default as Parallel } from './Parallel';
 export { default as Pentacles } from './Pentacles';
 export { default as Phlegmatic } from './Phlegmatic';
 export { default as PlaySquare } from './PlaySquare';
