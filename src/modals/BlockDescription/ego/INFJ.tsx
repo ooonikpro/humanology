@@ -5,7 +5,7 @@ import { AuthorLine } from '../../../components/AuthorLine';
 export default function INFJ() {
     return (
         <>
-            <AuthorLine readTime='2'>Виктор Пятницкий</AuthorLine>
+            <AuthorLine text="Читать меньше минуты" iconName="Time">Виктор Пятницкий</AuthorLine>
 
             <Text tag="p" color="role" size="h5">
                 Видит мир как общество взаимодействующих личностей, между которыми складываются тонкие сети взаимных симпатий и антипатий.

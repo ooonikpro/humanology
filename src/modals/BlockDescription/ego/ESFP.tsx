@@ -5,7 +5,7 @@ import { AuthorLine } from '../../../components/AuthorLine';
 export default function ESFP() {
     return (
         <>
-            <AuthorLine readTime='2'>Виктор Пятницкий</AuthorLine>
+            <AuthorLine text="Читать меньше минуты" iconName="Time">Виктор Пятницкий</AuthorLine>
 
             <Text tag="p" color="role" size="h5">
                 Хорошо понимает, как нужно сопротивляться давлению, противостоять попыткам волевого воздействия, сохранять независимость и имеющуюся сферу влияния.

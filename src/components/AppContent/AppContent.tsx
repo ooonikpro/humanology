@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './AppContent.module.scss';
 import { EndPoint } from '../../components/EndPoint';
+import { MainTabs } from '../Tabs/MainTabs';
 
 export const AppContent: React.FC<{ children: React.ReactNode | React.ReactNode[] }> = ({ children }) => {
     return (

@@ -5,7 +5,7 @@ import { AuthorLine } from '../../../../components/AuthorLine';
 export default function ISTJ() {
     return (
         <>
-            <AuthorLine readTime='4'>Аушра Аугустинавичюте</AuthorLine>
+            <AuthorLine text="Читать пока нечего" iconName="Unknown">Неизвестен</AuthorLine>
             <Text tag="b" size="h5" color="role">
                 Инспектор / Совместимость
             </Text>

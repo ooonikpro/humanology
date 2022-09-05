@@ -5,7 +5,7 @@ import { AuthorLine } from '../../../components/AuthorLine';
 export default function ENFJ() {
     return (
         <> 
-            <AuthorLine readTime='2'>Виктор Пятницкий</AuthorLine>
+            <AuthorLine text="Читать меньше минуты" iconName="Time">Виктор Пятницкий</AuthorLine>
 
             <Text tag="p" color="role" size="h5">
                 Строит в целом удобные ему отношения с окружающими.  

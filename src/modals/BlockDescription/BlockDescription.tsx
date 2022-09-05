@@ -56,8 +56,8 @@ export const BlockDescription: React.FC<Props> = ({
                     <React.Suspense>
                         <Description />
                     </React.Suspense>
+                    <EndPoint />
                 </div>
-                <EndPoint />
             </WhiteCard>
         );
     };

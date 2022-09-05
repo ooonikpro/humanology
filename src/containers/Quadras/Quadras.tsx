@@ -82,7 +82,7 @@ export default function Quadras() {
                 <Text tag="h1" size="h4" font="additional" className={styles.title}>
                     Квадры
                 </Text>
-                <AuthorLine readTime='5'>äлеша</AuthorLine> 
+                <AuthorLine text='Читать 5 минут' iconName='Time'>Неизвестен</AuthorLine>
 
                 <Text tag="p" className={styles.text}>
                     Совокупность социотипов, которые совместимы между собой, их

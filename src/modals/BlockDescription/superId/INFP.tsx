@@ -5,7 +5,7 @@ import { AuthorLine } from '../../../components/AuthorLine';
 export default function INFP() {
     return (
         <>
-            <AuthorLine readTime='2'>Виктор Пятницкий</AuthorLine>
+            <AuthorLine text="Читать меньше минуты" iconName="Time">Виктор Пятницкий</AuthorLine>
 
             <Text tag="p" color="role" size="h5">
                 Привлекает информация о силовой стороне жизни, а особенно конкретные приемы защиты своего жизненного пространства, своих интересов.

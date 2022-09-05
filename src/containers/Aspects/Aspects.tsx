@@ -34,7 +34,7 @@ export default function Aspects() {
                 <Text tag="h1" size="h4" font="additional" className={styles.title}>
                     Аспекты
                 </Text>
-                <AuthorLine readTime='5'>äлеша</AuthorLine> 
+                <AuthorLine text='Читать 3 минуты' iconName='Time'>äлеша</AuthorLine>
 
                 <Text tag="p" color="accent" className={styles.text}>
                     Макроаспекты

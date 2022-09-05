@@ -5,7 +5,7 @@ import { AuthorLine } from '../../../components/AuthorLine';
 export default function ISFP() {
     return (
         <>
-            <AuthorLine readTime='2'>Виктор Пятницкий</AuthorLine>
+            <AuthorLine text="Читать меньше минуты" iconName="Time">Виктор Пятницкий</AuthorLine>
 
             <Text tag="p" color="role" size="h5">
                 Умение оценить перспективу, сделать прогноз, предвидеть развитие ситуации основывается на наработанных стереотипах, заимствованных приемов решения подобных задач.

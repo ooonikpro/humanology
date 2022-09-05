@@ -5,7 +5,7 @@ import { AuthorLine } from '../../../components/AuthorLine';
 export default function ISTP() {
     return (
         <>
-            <AuthorLine readTime='1'>О соционике</AuthorLine>
+            <AuthorLine text="Читать меньше минуты" iconName="Time">О соционике</AuthorLine>
 
             <Text tag="p" color="role" size="h5">
                 Очень интересуют человеческие отношения. Для него важно знать, что люди к нему относятся положительно, любят, ценят. 

@@ -5,7 +5,7 @@ import { AuthorLine } from '../../../components/AuthorLine';
 export default function ESTP() {
     return (
         <>
-            <AuthorLine readTime='1'>О соционике</AuthorLine>
+            <AuthorLine text="Читать меньше минуты" iconName="Time">О соционике</AuthorLine>
             
             <Text tag="p" color="role" size="h5">
                 Умеет жонглировать фактами и данными. С помощью анализа данных выбирает наиболее правильный путь решения проблем. 

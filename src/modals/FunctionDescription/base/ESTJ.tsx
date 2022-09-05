@@ -5,7 +5,7 @@ import { AuthorLine } from '../../../components/AuthorLine';
 export default function ESTJ() {
     return (
         <>  
-            <AuthorLine readTime='1'>О соционике</AuthorLine>
+            <AuthorLine text="Читать меньше минуты" iconName="Time">О соционике</AuthorLine>
             
             <Text tag="p" color="role" size="h5">
                 Крайне работоспособны, они готовы заниматься делом хоть сутки напролет, если знают, что это принесет нужный результат.

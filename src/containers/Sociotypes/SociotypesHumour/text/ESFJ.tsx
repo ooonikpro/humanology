@@ -6,7 +6,7 @@ import { EndPoint } from 'src/components/EndPoint';
 export default function ESFJ() {
     return (
         <>  
-            <AuthorLine readTime='2'>Люркмор</AuthorLine>
+            <AuthorLine text="Читать 2 минуты" iconName="Time">Люркмор</AuthorLine>
 
             <Text tag="p" size="base" color="accent">
                 <i>быдло, пиздабол, ГСМ, ТП, ГК, хиппи, анальный клоун, школьник, халявщик, модник, феечка, смайлофаг</i>
@@ -42,7 +42,7 @@ export default function ESFJ() {
 
             <hr />
 
-            <AuthorLine readTime='4'>Юрий Селютин. Грязелечебница</AuthorLine>
+            <AuthorLine text="Читать 4 минуты" iconName="Time">Юрий Селютин. Грязелечебница</AuthorLine>
 
             <Text tag="p" size="h6" color="role">
                 Пошлый торгаш, у которого жизнь — торжище, где продается и покупается все. Лишен интеллигентности и интеллектуальной грации. На язык — острый.
@@ -126,7 +126,7 @@ export default function ESFJ() {
             
             <hr />
 
-            <AuthorLine readTime='2'>Эльвира Фея</AuthorLine>
+            <AuthorLine text="Читать 2 минуты" iconName="Time">Эльвира Фея</AuthorLine>
 
             <Text tag="p" size="h6" color="role">
                 Потому что Энтузиасты — они, сука, оптимисты до мозга кости, массовики-затейники от бога.

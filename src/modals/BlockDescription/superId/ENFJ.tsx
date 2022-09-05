@@ -5,7 +5,7 @@ import { AuthorLine } from '../../../components/AuthorLine';
 export default function ENFJ() {
     return (
         <>
-            <AuthorLine readTime='2'>Виктор Пятницкий</AuthorLine>
+            <AuthorLine text="Читать меньше минуты" iconName="Time">Виктор Пятницкий</AuthorLine>
 
             <Text tag="p" color="role" size="h5">
                 Привлекает информация об объективных законах бытия, о существующих в мире взаимосвязях и соотношениях между его элементами, о теориях, а также привлекают примеры последовательного, ясного логического мышления.

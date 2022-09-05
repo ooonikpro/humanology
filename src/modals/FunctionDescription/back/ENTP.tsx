@@ -5,7 +5,7 @@ import { AuthorLine } from '../../../components/AuthorLine';
 export default function ENTP() {
     return (
         <>
-            <AuthorLine readTime='1'>О соционике</AuthorLine>
+            <AuthorLine text="Читать меньше минуты" iconName="Time">О соционике</AuthorLine>
 
             <Text tag="p" color="role" size="h5">
                 Неплохо умеет работать над несколькими проектами одновременно и старается быть максимально эффективным.

@@ -9,7 +9,7 @@ export default function History() {
         <div className={styles.root}>
             <WhiteCard color="white">
                 <Text tag="h4" size="h4" font="additional" className={styles.title}>История</Text>
-                <AuthorLine readTime='5'>äлеша</AuthorLine> 
+                <AuthorLine text='Читать 5 минут' iconName='Time'>Неизвестен</AuthorLine>
 
             </WhiteCard>
         </div>

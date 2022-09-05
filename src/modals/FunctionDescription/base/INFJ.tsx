@@ -5,7 +5,7 @@ import { AuthorLine } from '../../../components/AuthorLine';
 export default function INFJ() {
     return (
         <>  
-            <AuthorLine readTime='1'>О соционике</AuthorLine>
+            <AuthorLine text="Читать меньше минуты" iconName="Time">О соционике</AuthorLine>
             
             <Text tag="p" color="role" size="h5">
                 Видит отношения людей в коллективе. Прекрасно понимает, кто как к кому относится, при этом отношение к себе улавливает хуже.

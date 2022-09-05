@@ -5,7 +5,7 @@ import { AuthorLine } from '../../../components/AuthorLine';
 export default function ENTP() {
     return (
         <>
-            <AuthorLine readTime='2'>Виктор Пятницкий</AuthorLine>
+            <AuthorLine text="Читать меньше минуты" iconName="Time">Виктор Пятницкий</AuthorLine>
             
             <Text tag="p" color="role" size="h5">
                 Воспринимает мир как мир смысла, идей, загадок и поиска решения для ответов на интересующие его вопросы.

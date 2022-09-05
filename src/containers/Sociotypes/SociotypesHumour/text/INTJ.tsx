@@ -6,7 +6,7 @@ import { EndPoint } from 'src/components/EndPoint';
 export default function INTJ() {
     return (
         <>
-            <AuthorLine readTime='2'>Люркмор</AuthorLine>
+            <AuthorLine text="Читать 2 минуты" iconName="Time">Люркмор</AuthorLine>
 
             <Text tag="p" size="base" color="accent">
                 <i>небыдло, нерд, задрот, программист, гик, отаку, геймер, хикки</i>
@@ -66,7 +66,7 @@ export default function INTJ() {
 
             <hr />
 
-            <AuthorLine readTime='4'>Юрий Селютин. Грязелечебница</AuthorLine>
+            <AuthorLine text="Читать 4 минуты" iconName="Time">Юрий Селютин. Грязелечебница</AuthorLine>
 
             <Text tag="p" size="h6" color="role">
                 Мстительная натура и ужасно обидчивая, не умеет выделить главного из своих многочисленных очень часто дельных идей.
@@ -148,7 +148,7 @@ export default function INTJ() {
             
             <hr />
 
-            <AuthorLine readTime='2'>Эльвира Фея</AuthorLine>
+            <AuthorLine text="Читать 2 минуты" iconName="Time">Эльвира Фея</AuthorLine>
 
             <Text tag="p" size="h6" color="role">
                 Хотя по идее Аналитики — они, сука, умные. Но если Новатор умный от балды, и над его бредом иногда можно даже посмеяться — когда выйдешь из больницы — то Аналитики умные в натуре. И это в них так бесит!

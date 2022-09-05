@@ -5,7 +5,7 @@ import { AuthorLine } from '../../../../components/AuthorLine';
 export default function ENFP() {
     return (
         <>
-            <AuthorLine readTime='4'>Виктор Гуленко</AuthorLine>
+            <AuthorLine text='Читать 4 минуты' iconName="Time">Виктор Гуленко</AuthorLine>
 
             <Text tag="p" size="h5" color="role">
                 Сильной стороной вашей личности является хорошо развитая интуиция, позволяющая вам безошибочно определять скрытые возможности и способности других людей.

@@ -55,6 +55,7 @@
 
     &.inactive {
         opacity: 0.5;
+        cursor: default;
     }
 }
 
@@ -141,5 +142,28 @@
     flex-direction: row-reverse;
     top: $spacing-8;
     right: $spacing-12;
+    opacity: 0.5;
+}
+
+.iconCascadeIntertype {
+    position: absolute;
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-end;
+    flex-direction: row-reverse;
+    top: $spacing-16;
+    right: $spacing-12;
+    opacity: 0.5;
+}
+
+.icon1 {
+    opacity: 0.75;
+}
+
+.icon2 {
+    opacity: 0.5;
+}
+
+.icon3 {
     opacity: 0.25;
 }

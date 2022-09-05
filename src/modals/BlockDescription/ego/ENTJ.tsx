@@ -5,7 +5,7 @@ import { AuthorLine } from '../../../components/AuthorLine';
 export default function ENTJ() {
     return (
         <>
-            <AuthorLine readTime='2'>Виктор Пятницкий</AuthorLine>
+            <AuthorLine text="Читать меньше минуты" iconName="Time">Виктор Пятницкий</AuthorLine>
 
             <Text tag="p" color="role" size="h5">
                 Видит и умеет гибко использовать разнообразие объектов и их свойств. Имеет развитое технологическое мышление — знает как создать оптимальный и продуктивный способ работы, новый инструмент.

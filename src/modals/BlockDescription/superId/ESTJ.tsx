@@ -5,7 +5,7 @@ import { AuthorLine } from '../../../components/AuthorLine';
 export default function ESTJ() {
     return (
         <>
-            <AuthorLine readTime='2'>Виктор Пятницкий</AuthorLine>
+            <AuthorLine text="Читать меньше минуты" iconName="Time">Виктор Пятницкий</AuthorLine>
 
             <Text tag="p" color="role" size="h5">
                 Привлекает информация о каких-либо событиях, изменениях, о том, как избежать крупных неблагоприятных событий, повторения ошибок прошлого, об общей перспективе и историческом опыте.

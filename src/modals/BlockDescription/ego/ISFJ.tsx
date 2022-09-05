@@ -5,7 +5,7 @@ import { AuthorLine } from '../../../components/AuthorLine';
 export default function ISFJ() {
     return (
         <>
-            <AuthorLine readTime='2'>Виктор Пятницкий</AuthorLine>
+            <AuthorLine text="Читать меньше минуты" iconName="Time">Виктор Пятницкий</AuthorLine>
             
             <Text tag="p" color="role" size="h5">
                 Хорошо видит, кто как к кому относится, знает, как формируются, проявляются и изменяются отношения в различных ситуациях, знает принятую в обществе норму проявления отношений, а также имеет собственное понимание нравственности.

@@ -93,7 +93,7 @@ export default function Functions() {
         <div className={styles.root}>
             <WhiteCard color="white">
                 <Text tag="h1" size="h4" font="additional" className={styles.title}>Функции</Text>
-                <AuthorLine readTime='5'>äлеша</AuthorLine> 
+                <AuthorLine text='Читать 5 минут' iconName='Time'>Неизвестен</AuthorLine>
 
                 <Text tag="p" className={styles.text}>
                     Целостное психологическое образование, которое также содержит: некоторое целостное внутренние

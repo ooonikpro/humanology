@@ -20,7 +20,6 @@ export function SociotypesHumour() {
                         Ненормативная лексика и сексуальные темы, оскорбление чувств всех причастных. Но весело и остроумно. Авторская орфография и пунктуация соблюдена.
                     </Text>
                 </div>
-                
                 <div className={styles.text}>
                     <React.Suspense>
                         <Description />

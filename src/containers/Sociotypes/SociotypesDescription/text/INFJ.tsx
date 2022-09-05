@@ -5,7 +5,7 @@ import { AuthorLine } from '../../../../components/AuthorLine';
 export default function ESFP() {
     return (
         <>
-            <AuthorLine readTime='6'>Велта Микелсоне</AuthorLine>
+            <AuthorLine text="Читать 6 минут" iconName="Time">Велта Микелсоне</AuthorLine>
 
             <Text tag="b" size="h5" color="role">
                 Миссия — своим личным этическим поведением быть примером для других.

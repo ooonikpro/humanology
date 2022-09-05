@@ -6,7 +6,7 @@ import { EndPoint } from 'src/components/EndPoint';
 export default function ESTP() {
     return (
         <>
-            <AuthorLine readTime='2'>Люркмор</AuthorLine>
+            <AuthorLine text="Читать 2 минуты" iconName="Time">Люркмор</AuthorLine>
 
             <Text tag="p" size="base" color="accent">
                 <i>скинхэд, альфа-самец, говнарь, байкер, пират, быдло, дальнобойщик, нохча, гопник, колхозник, десантник, новый русский, ЧСВ, Свиборг, военком, жлоб</i>
@@ -54,7 +54,7 @@ export default function ESTP() {
 
             <hr />
 
-            <AuthorLine readTime='4'>Юрий Селютин. Грязелечебница</AuthorLine>
+            <AuthorLine text="Читать 4 минуты" iconName="Time">Юрий Селютин. Грязелечебница</AuthorLine>
 
             <Text tag="p" size="h6" color="role">
                 Жесткий и жестокий нападающий, предпочитающий игру без правил, страдающий словоблудием и этической нечистоплотностью. С ними не договоришься.
@@ -154,7 +154,7 @@ export default function ESTP() {
             
             <hr />
 
-            <AuthorLine readTime='2'>Эльвира Фея</AuthorLine>
+            <AuthorLine text="Читать 2 минуты" iconName="Time">Эльвира Фея</AuthorLine>
 
             <Text tag="p" size="h6" color="role">
                 Лидеры – они, сука, как попрут, так ложись, воздушная тревога, все умерли. Не обманывайтесь их порой хрупким видом: любой Лидер способен устроить писец котенку, а размеры писеца зависят исключительно от его возможностей.

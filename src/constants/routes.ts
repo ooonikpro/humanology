@@ -12,7 +12,7 @@ export const ROUTES = {
     SOCIOTYPES_STORIES: 'stories',
     SOCIOTYPES_PEOPLE: 'people',
     SOCIOTYPES_HUMOUR: 'humour',
-    MENU: '/',
+    MENU: '/menu',
     DISCLAIMER: '/disclaimer',
     HISTORY: '/history',
     METABOLISM: '/information-metabolism',
@@ -32,15 +32,15 @@ export const ROUTES = {
     RELATIONSHIPS: '/relationships',
     RELATIONSHIPS_ITEM: '/relationships/:id',
     MINDSETS: '/mindsets',
-    START: '/start'
+    START: '/'
 };
 
 export const MAIN_LINKS: Tabs[] = [
     {
-        label: 'Быстрый старт',
+        label: 'Начало',
         path: ROUTES.START,
         order: 0,
-        iconName: 'StarSquare'
+        iconName: 'Square0'
     },
     {
         label: 'Социотипы',

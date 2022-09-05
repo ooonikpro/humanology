@@ -5,7 +5,7 @@ import { AuthorLine } from '../../../components/AuthorLine';
 export default function ISTP() {
     return (
         <>
-            <AuthorLine readTime='2'>Виктор Пятницкий</AuthorLine>
+            <AuthorLine text="Читать меньше минуты" iconName="Time">Виктор Пятницкий</AuthorLine>
 
             <Text tag="p" color="role" size="h5">
                 Обладает гибким видением пространственных соотношений и пропорций. Воспринимает мир как гармонию линий в пространстве, гармонию физических ощущений, которая есть равновесие между простотой и изяществом форм.  

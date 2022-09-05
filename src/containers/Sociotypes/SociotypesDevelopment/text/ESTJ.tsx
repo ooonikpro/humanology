@@ -5,7 +5,7 @@ import { AuthorLine } from '../../../../components/AuthorLine';
 export default function ESTJ() {
     return (
         <>
-            <AuthorLine readTime='4'>Виктор Гуленко</AuthorLine>
+            <AuthorLine text='Читать 4 минуты' iconName="Time">Виктор Гуленко</AuthorLine>
 
             <Text tag="p" size="h5" color="role">
                 Вашей сильной стороной является строгая логика фактов, позволяющая вам точно просчитать практическую сторону любого дела.

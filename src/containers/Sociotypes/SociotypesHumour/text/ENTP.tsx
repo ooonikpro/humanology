@@ -6,7 +6,7 @@ import { EndPoint } from 'src/components/EndPoint';
 export default function ENTP() {
     return (
         <>
-            <AuthorLine readTime='2'>Люркмор</AuthorLine>
+            <AuthorLine text="Читать 2 минуты" iconName="Time">Люркмор</AuthorLine>
 
             <Text tag="p" size="base" color="accent">
                 <i>небыдло, админ, распиздяй, анархист, битард, панк, нищеброд, хакер, говнарь, пиздабол, мизантроп, тролль</i>
@@ -58,7 +58,7 @@ export default function ENTP() {
 
             <hr />
 
-            <AuthorLine readTime='4'>Юрий Селютин. Грязелечебница</AuthorLine>
+            <AuthorLine text="Читать 4 минуты" iconName="Time">Юрий Селютин. Грязелечебница</AuthorLine>
 
             <Text tag="p" size="h6" color="role">
                 Безапелляционный хам.
@@ -182,7 +182,7 @@ export default function ENTP() {
             
             <hr />
 
-            <AuthorLine readTime='2'>Эльвира Фея</AuthorLine>
+            <AuthorLine text="Читать 2 минуты" iconName="Time">Эльвира Фея</AuthorLine>
 
             <Text tag="p" size="h6" color="role">
                 Сами Новаторы — они, сука, обаятельные уроды. 

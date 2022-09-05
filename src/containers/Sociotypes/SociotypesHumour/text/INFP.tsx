@@ -6,7 +6,7 @@ import { EndPoint } from 'src/components/EndPoint';
 export default function INFP() {
     return (
         <>
-            <AuthorLine readTime='2'>Люркмор</AuthorLine>
+            <AuthorLine text="Читать 2 минуты" iconName="Time">Люркмор</AuthorLine>
 
             <Text tag="p" size="base" color="accent">
                 <i>небыдло, омега, СПГС, ОЯШ, ГК, ТП, ТКП, ОБВМ, хипстер, пейсатель, DJ</i>
@@ -50,7 +50,7 @@ export default function INFP() {
 
             <hr />
 
-            <AuthorLine readTime='4'>Юрий Селютин. Грязелечебница</AuthorLine>
+            <AuthorLine text="Читать 4 минуты" iconName="Time">Юрий Селютин. Грязелечебница</AuthorLine>
 
             <Text tag="p" size="h6" color="role">
                 Увалень, витающий в облаках. Обидчивый до крайностей — не тронь его!
@@ -140,7 +140,7 @@ export default function INFP() {
             
             <hr />
 
-            <AuthorLine readTime='2'>Эльвира Фея</AuthorLine>
+            <AuthorLine text="Читать 2 минуты" iconName="Time">Эльвира Фея</AuthorLine>
 
             <Text tag="p" size="h6" color="role">
                 А Лирики — вечные нытики, считающие себя, сука, жутко гениальными. Попробуйте только не восхититься талантом Лирика – это все равно, что не вострепетать перед идеями Новатора.

@@ -47,13 +47,13 @@ export const FunctionDescription: React.FC<Props> = (props) => {
                                 size={24}
                                 className={styles['icon-mini']}
                             />
-                            <Icon name={aspectIcon} size={96} color="accent" />
+                            <Icon name={aspectIcon} size={108} color="role" className={styles.aspectIcon} />
 
                             <div className={styles['aspect-details-text']}>
-                                <Text size="h4" color="accent" font="additional">
+                                <Text size="h3" color="role" font="additional">
                                     {aspectTitle}
                                 </Text>
-                                <Text size="base">{aspectSubtitle}</Text>
+                                <Text size="base" color="accent">{aspectSubtitle}</Text>
                             </div>
                             <Icon
                                 name="Help"
@@ -61,10 +61,9 @@ export const FunctionDescription: React.FC<Props> = (props) => {
                                 size={24}
                                 className={styles['icon-help']}
                             />
-
                         </div>
+                        <EndPoint />
                     </div>
-                    <EndPoint />
                 </WhiteCard>
             </>
         );

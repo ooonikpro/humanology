@@ -6,7 +6,7 @@ import { EndPoint } from 'src/components/EndPoint';
 export default function ISTP() {
     return (
         <>
-            <AuthorLine readTime='2'>Люркмор</AuthorLine>
+            <AuthorLine text="Читать 2 минуты" iconName="Time">Люркмор</AuthorLine>
 
             <Text tag="p" size="base" color="accent">
                 <i>жлоб, быдло, настоящий мужык, УГ, хикки, руссо туристо, бард, шансонье, не такой как все</i>
@@ -46,7 +46,7 @@ export default function ISTP() {
 
             <hr />
 
-            <AuthorLine readTime='4'>Юрий Селютин. Грязелечебница</AuthorLine>
+            <AuthorLine text="Читать 4 минуты" iconName="Time">Юрий Селютин. Грязелечебница</AuthorLine>
 
             <Text tag="p" size="h6" color="role">
                 Немножко честности мне не повредит. Льстец.
@@ -82,7 +82,7 @@ export default function ISTP() {
             
             <hr />
 
-            <AuthorLine readTime='2'>Эльвира Фея</AuthorLine>
+            <AuthorLine text="Читать 2 минуты" iconName="Time">Эльвира Фея</AuthorLine>
 
             <Text tag="p" size="h6" color="role">
                 Ведь Мастера — они, сука, тихие как мыши, и сидят по жизни в уголку, прикрывшись ветошью.

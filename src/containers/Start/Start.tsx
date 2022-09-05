@@ -9,8 +9,7 @@ export default function Menu() {
         <div className={styles.root}>
             <WhiteCard color="white">
                 <Text tag="h1" size="h4" font="additional" className={styles.title}>Начало</Text>
-                <AuthorLine readTime='2'>äлеша</AuthorLine> 
-
+                <AuthorLine text="Читать 2 минуты" iconName="Time">äлеша</AuthorLine>
             </WhiteCard>
         </div>
     );

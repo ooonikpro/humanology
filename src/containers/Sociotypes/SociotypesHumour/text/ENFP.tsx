@@ -6,7 +6,7 @@ import { EndPoint } from 'src/components/EndPoint';
 export default function ENFP() {
     return (
         <>
-            <AuthorLine readTime='2'>Люркмор</AuthorLine>
+            <AuthorLine text="Читать 2 минуты" iconName="Time">Люркмор</AuthorLine>
 
             <Text tag="p" size="base" color="accent">
                 <i>генки, небыдло, пиздабол, ГСМ, ТП, похуист, ламер, толстый тролль, журнализд, юрист, позёр, яндере, феечка</i>
@@ -66,7 +66,7 @@ export default function ENFP() {
 
             <hr />
 
-            <AuthorLine readTime='4'>Юрий Селютин. Грязелечебница</AuthorLine>
+            <AuthorLine text="Читать 4 минуты" iconName="Time">Юрий Селютин. Грязелечебница</AuthorLine>
 
             <Text tag="p" size="h6" color="role">
                 «Толку было с него, правда, как с козла молока, но вреда, однако ж, тоже никакого.» Завистливая «пустышка».
@@ -128,7 +128,7 @@ export default function ENFP() {
             
             <hr />
 
-            <AuthorLine readTime='2'>Эльвира Фея</AuthorLine>
+            <AuthorLine text="Читать 2 минуты" iconName="Time">Эльвира Фея</AuthorLine>
 
             <Text tag="p" size="h6" color="role">
                 Ибо Советчики — они, сука, веселые. Причем не узнать об этом у вас просто никаких шансов — они веселы всегда, и даже на похоронах это те самые люди, что вспоминают, как покойник в мохнатом 19.. году перелез через забор и порвал штаны в интересном месте.

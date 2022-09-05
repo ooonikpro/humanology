@@ -5,7 +5,7 @@ import { AuthorLine } from '../../../components/AuthorLine';
 export default function ESFP() {
     return (
         <>  
-            <AuthorLine readTime='1'>О соционике</AuthorLine>
+            <AuthorLine text="Читать меньше минуты" iconName="Time">О соционике</AuthorLine>
             
             <Text tag="p" color="role" size="h5">
                 Способен быстро оценить, какой человек слабый, а какой сильный, понять, на кого можно давить, а на кого не стоит.

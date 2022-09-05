@@ -5,7 +5,7 @@ import { AuthorLine } from '../../../../components/AuthorLine';
 export default function INFP() {
     return (
         <>
-            <AuthorLine readTime='4'>Виктор Гуленко</AuthorLine>
+            <AuthorLine text='Читать 4 минуты' iconName="Time">Виктор Гуленко</AuthorLine>
 
             <Text tag="p" size="h5" color="role">
                 Ваша сильная сторона — предчувствие событий будущего: вы можете предсказать развитие ситуации во времени и дать своевременный полезный совет, предупредить о грядущих неприятностях или трудностях.

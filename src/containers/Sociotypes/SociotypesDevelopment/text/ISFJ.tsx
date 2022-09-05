@@ -5,7 +5,7 @@ import { AuthorLine } from '../../../../components/AuthorLine';
 export default function ISFJ() {
     return (
         <>
-            <AuthorLine readTime='4'>Виктор Гуленко</AuthorLine>
+            <AuthorLine text='Читать 4 минуты' iconName="Time">Виктор Гуленко</AuthorLine>
 
             <Text tag="p" size="h5" color="role">
                 Ваша сильная сторона — умение давать справедливую моральную оценку поступкам человека.

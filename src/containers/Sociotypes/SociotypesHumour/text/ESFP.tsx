@@ -6,7 +6,7 @@ import { EndPoint } from 'src/components/EndPoint';
 export default function ESFP() {
     return (
         <>
-            <AuthorLine readTime='2'>Люркмор</AuthorLine>
+            <AuthorLine text="Читать 2 минуты" iconName="Time">Люркмор</AuthorLine>
 
             <Text tag="p" size="base" color="accent">
                 <i>быдло, ГСМ, генки, альфа-самец, яндере, лоли, анархист, угнетатель, шлюха, камвхора, ЧСВ, VIP, понты, НЕНАВИСТЬ</i>
@@ -50,7 +50,7 @@ export default function ESFP() {
 
             <hr />
 
-            <AuthorLine readTime='4'>Юрий Селютин. Грязелечебница</AuthorLine>
+            <AuthorLine text="Читать 4 минуты" iconName="Time">Юрий Селютин. Грязелечебница</AuthorLine>
 
             <Text tag="p" size="h6" color="role">
                 Я сам себя перехитрил! Искренне полагает, что его все обожают, но — это смешно!
@@ -132,7 +132,7 @@ export default function ESFP() {
             
             <hr />
 
-            <AuthorLine readTime='2'>Эльвира Фея</AuthorLine>
+            <AuthorLine text="Читать 2 минуты" iconName="Time">Эльвира Фея</AuthorLine>
 
             <Text tag="p" size="h6" color="role">
                 Политики – они, сука, центр вселенной и ниипет.

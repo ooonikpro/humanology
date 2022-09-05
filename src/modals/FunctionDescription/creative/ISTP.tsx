@@ -5,7 +5,7 @@ import { AuthorLine } from '../../../components/AuthorLine';
 export default function ISTP() {
     return (
         <>
-            <AuthorLine readTime='1'>О соционике</AuthorLine>
+            <AuthorLine text="Читать меньше минуты" iconName="Time">О соционике</AuthorLine>
             
             <Text tag="p" color="role" size="h5">
                 Никогда не возьмется за бессмысленную работу. Он умелый мастер, способен починить практически любую вещь, прекрасно работает руками.

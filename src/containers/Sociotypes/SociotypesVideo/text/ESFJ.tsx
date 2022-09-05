@@ -5,7 +5,7 @@ import { AuthorLine } from '../../../../components/AuthorLine';
 export default function ESFJ() {
     return (
         <>
-            <AuthorLine readTime='4'>Аушра Аугустинавичюте</AuthorLine>
+            <AuthorLine text="Читать пока нечего" iconName="Unknown">Неизвестен</AuthorLine>
             <Text tag="b" size="h5" color="role">
                 Энтузиаст / Видео
             </Text>

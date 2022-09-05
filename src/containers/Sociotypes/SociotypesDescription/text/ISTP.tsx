@@ -5,7 +5,7 @@ import { AuthorLine } from '../../../../components/AuthorLine';
 export default function ISTP() {
     return (
         <>
-            <AuthorLine readTime='6'>Велта Микелсоне</AuthorLine>
+            <AuthorLine text="Читать 6 минут" iconName="Time">Велта Микелсоне</AuthorLine>
 
             <Text tag="b" size="h5" color="role">
                 Хозяйственный и уравновешенный человек, которого мало что может вывести из себя.

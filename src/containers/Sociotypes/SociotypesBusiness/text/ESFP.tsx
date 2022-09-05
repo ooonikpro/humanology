@@ -5,7 +5,7 @@ import { AuthorLine } from '../../../../components/AuthorLine';
 export default function ESFP() {
     return (
         <>
-            <AuthorLine readTime='5'>Виктор Гуленко</AuthorLine>
+            <AuthorLine text='Читать 4 минуты' iconName='Time'>Виктор Гуленко</AuthorLine>
 
             <Text tag="h2" font="additional" size="h5" color="accent">
                 Сильные стороны

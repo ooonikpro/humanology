@@ -6,7 +6,7 @@ import { EndPoint } from 'src/components/EndPoint';
 export default function ENTJ() {
     return (
         <>
-            <AuthorLine readTime='2'>Люркмор</AuthorLine>
+            <AuthorLine text="Читать 2 минуты" iconName="Time">Люркмор</AuthorLine>
 
             <Text tag="p" size="base" color="accent">
                 <i>небыдло, чиновник, позёр, гик, бард, буржуй, герой, школьник, трудоголик, автомобилист, пират, PROFIT</i>
@@ -58,7 +58,7 @@ export default function ENTJ() {
 
             <hr />
 
-            <AuthorLine readTime='4'>Юрий Селютин. Грязелечебница</AuthorLine>
+            <AuthorLine text="Читать 4 минуты" iconName="Time">Юрий Селютин. Грязелечебница</AuthorLine>
 
             <Text tag="p" size="h6" color="role">
                 Абсолютно лишенный чести, совести, честности и такта проходимец. Все делает только для себя.
@@ -116,7 +116,7 @@ export default function ENTJ() {
             
             <hr />
 
-            <AuthorLine readTime='2'>Эльвира Фея</AuthorLine>
+            <AuthorLine text="Читать 2 минуты" iconName="Time">Эльвира Фея</AuthorLine>
 
             <Text tag="p" size="h6" color="role">
                 Предприниматели – они вообще, сука, прохвосты еще те, живчики, для которых на всем белом свете не существует никого, кроме них, любимых. 

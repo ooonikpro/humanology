@@ -5,7 +5,7 @@ import { AuthorLine } from '../../../components/AuthorLine';
 export default function ISTJ() {
     return (
         <>    
-            <AuthorLine readTime='2'>Виктор Пятницкий</AuthorLine>
+            <AuthorLine text="Читать меньше минуты" iconName="Time">Виктор Пятницкий</AuthorLine>
 
             <Text tag="p" color="role" size="h5">
                 Видение мира как системы правил, законов, знаний, иерархий. Воспринимает окружающее в рамках детально продуманной им системы мировоззрения. Каждое понятие или явление вписывает в эту систему.

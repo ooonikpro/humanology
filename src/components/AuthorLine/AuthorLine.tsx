@@ -2,19 +2,21 @@ import React from 'react';
 import styles from './AuthorLine.module.scss';
 import { Icon } from '../Icon';
 import { Text } from '../Text';
+import * as Icons from '../Icon/icons';
 
 interface Props {
-	readTime?: string;
+	text?: string;
+    iconName: keyof typeof Icons;
 	children: React.ReactNode;
 }
 
-export const AuthorLine : React.FC<Props> = ({ readTime,  children }) => {
+export const AuthorLine : React.FC<Props> = ({ text, iconName, children }) => {
     return (
         <div className={styles.root}>
             <span className={styles.pair}>
-                <Icon name="Clock" color="accent" size={16}/>
+                <Icon name={iconName} color="accent" size={16}/>
                 <Text size="small" color="accent">
-					Читать {readTime} минут
+                    {text}
                 </Text>
             </span>
             <span className={styles.pair}>

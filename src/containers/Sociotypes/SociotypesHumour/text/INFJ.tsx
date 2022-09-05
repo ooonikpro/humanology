@@ -6,7 +6,7 @@ import { EndPoint } from 'src/components/EndPoint';
 export default function INFJ() {
     return (
         <>
-            <AuthorLine readTime='2'>Люркмор</AuthorLine>
+            <AuthorLine text="Читать 2 минуты" iconName="Time">Люркмор</AuthorLine>
 
             <Text tag="p" size="base" color="accent">
                 <i>небыдло, ОБВМ, СПГС, козёл отпущения, задрот, омега, кудере, хикки, интеллигент, internet white knight, веган</i>
@@ -66,7 +66,7 @@ export default function INFJ() {
 
             <hr />
 
-            <AuthorLine readTime='4'>Юрий Селютин. Грязелечебница</AuthorLine>
+            <AuthorLine text="Читать 4 минуты" iconName="Time">Юрий Селютин. Грязелечебница</AuthorLine>
 
             <Text tag="p" size="h6" color="role">
                 Томный сноб. Тормоз. Всепрощение и морализм, сочетающиеся самым удивительным образом. Душевный мазохизм. Ищет мораль там, где надо просто радоваться жизни.
@@ -120,7 +120,7 @@ export default function INFJ() {
             
             <hr />
 
-            <AuthorLine readTime='2'>Эльвира Фея</AuthorLine>
+            <AuthorLine text="Читать 2 минуты" iconName="Time">Эльвира Фея</AuthorLine>
 
             <Text tag="p" size="h6" color="role">
                 А Гуманисты — они, сука, жалостливые и сердобольные сволочи, которым непременно надо быть в каждой бочке дегтя медовой затычкой.

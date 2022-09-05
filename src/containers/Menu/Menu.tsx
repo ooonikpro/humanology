@@ -3,7 +3,7 @@ import styles from './Menu.module.scss';
 import { ROUTES } from '../../constants/routes';
 import { useNavigate } from 'react-router-dom';
 import { Text } from '../../components/Text';
-import { Icon } from '../../components/Icon';
+import { Icon, getIconName } from '../../components/Icon';
 import { Portrait } from '../../components/Portrait';
 import { Socionics } from 'src/types';
 
@@ -142,13 +142,13 @@ export default function Menu() {
                     <RandomKids/>
                 </MenuItem>
 
-                <MenuItem fullWidth onClick={goTo(ROUTES.RELATIONSHIPS)}>
+                <MenuItem fullWidth doubleHeight onClick={goTo(ROUTES.RELATIONSHIPS)}>
                     <Icon size={24} className={styles.icon} color="accent" name="Square2" />
                     <Text size="smaller" color="accent">Интертипные отношения</Text>
-                    <div className={styles.iconCascade}>
-                        <Icon size={48} color="accent" name="Kindred" />
-                        <Icon size={40} color="accent" name="Illusionary" />
-                        <Icon size={32} color="accent" name="Parallel" />
+                    <div className={styles.iconCascadeIntertype}>
+                        <Icon size={64} color="accent" name="Kindred" className={styles.icon1} />
+                        <Icon size={48} color="accent" name="Illusionary" className={styles.icon2} />
+                        <Icon size={40} color="accent" name="Parallel" className={styles.icon3} />
                     </div>
                 </MenuItem>
             </div>
@@ -160,7 +160,7 @@ export default function Menu() {
                 </MenuItem>
 
                 <MenuItem inactive>
-                    <Icon size={24} className={styles.icon} color="accent" name="Unknown" />
+                    <Icon size={24} className={styles.icon} color="accent" name="Specialist" />
                     <Text size="smaller" color="accent">Специалисты</Text>
                 </MenuItem>
 
@@ -175,12 +175,12 @@ export default function Menu() {
                 </MenuItem>
 
                 <MenuItem doubleHeight inactive>
-                    <Icon size={24} className={styles.icon} color="accent" name="Unknown" />
+                    <Icon size={24} className={styles.icon} color="accent" name="Map" />
                     <Text size="smaller" color="accent">Карта социальных связей</Text>
                 </MenuItem>
 
                 <MenuItem inactive>
-                    <Icon size={24} className={styles.icon} color="accent" name="Unknown" />
+                    <Icon size={24} className={styles.icon} color="accent" name="Atom" />
                     <Text size="smaller" color="accent">Коллективы</Text>
                 </MenuItem>
             </div>
@@ -199,9 +199,9 @@ export default function Menu() {
                     <Icon size={24} className={styles.icon} color="accent" name="Square4" />
                     <Text size="smaller" color="accent">Аспекты</Text>
                     <div className={styles.iconCascade}>
-                        <Icon size={48} color="accent" name="AspectComfort" />
-                        <Icon size={40} color="accent" name="AspectPeople" />
-                        <Icon size={32} color="accent" name="AspectIdeas" />
+                        <Icon size={48} color="accent" name="AspectComfort" className={styles.icon1}/>
+                        <Icon size={40} color="accent" name="AspectPeople" className={styles.icon2}/>
+                        <Icon size={32} color="accent" name="AspectIdeas" className={styles.icon3}/>
                     </div>
                 </MenuItem>
 

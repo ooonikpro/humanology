@@ -9,7 +9,7 @@ export default function Metabolism() {
         <div className={styles.root}>
             <WhiteCard color="white">
                 <Text tag="h1" size="h4" font="additional" className={styles.title}>Информационный метаболизм</Text>
-                <AuthorLine readTime='5'>äлеша</AuthorLine>
+                <AuthorLine text='Читать 5 минут' iconName='Time'>Антон Кемпинский</AuthorLine>
 
                 <Text tag="p" size="base">
                     В биологии существует термин — метаболизм, что дословно означает обмен, усвоение и переработку. 
@@ -68,6 +68,8 @@ export default function Metabolism() {
                 <Text tag="p" size="base">
                     Прием и передача сигналов обусловливаются образованием энергетических импульсов в системе, которая эти сигналы принимает. То есть процесс информационного метаболизма в организме начинается образованием мелких энергетических зарядов.
                 </Text>
+
+                <hr />
 
                 <Text tag="p" size="h6" color="accent">
                     Для того, чтобы мозг функционировал как аппарат информационного метаболизма, он должен постоянно обеспечиваться сигналами, получаемыми как извне, так и из самого организма.

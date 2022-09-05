@@ -53,7 +53,7 @@ export default function Suits() {
                 <Text tag="h1" size="h4" font="additional" className={styles.title}>
                     Карты и масти
                 </Text>
-                <AuthorLine readTime='5'>äлеша</AuthorLine> 
+                <AuthorLine text="Читать 5 минут" iconName="Time">äлеша</AuthorLine>
 
                 <Text tag="p" className={styles.text}>
                     Авторы этой идеи, Ирина и Сергей Савченко обратили внимание

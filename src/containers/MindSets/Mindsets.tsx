@@ -9,7 +9,7 @@ export default function MindSets() {
         <div className={styles.root}>
             <WhiteCard color="white">
                 <Text tag="h1" size="h4" font="additional" className={styles.title}>Типы мышления</Text>
-                <AuthorLine readTime='5'>äлеша</AuthorLine>
+                <AuthorLine text='Читать 5 минут' iconName='Time'>Неизвестен</AuthorLine>
 
                 <Text tag="p" className={styles.text}>
                     Разные стили мышления, соответствующие тем или иным типам личности определяют особенности интеллекта, а значит и склонность к тем или иным видам деятельности.

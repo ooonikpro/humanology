@@ -6,7 +6,7 @@ import { EndPoint } from 'src/components/EndPoint';
 export default function ISFP() {
     return (
         <>
-            <AuthorLine readTime='2'>Люркмор</AuthorLine>
+            <AuthorLine text="Читать 2 минуты" iconName="Time">Люркмор</AuthorLine>
 
             <Text tag="p" size="base" color="accent">
                 <i>быдло, жлоб, овуляшки, пикапер, кулинарный сноб, лирушечка, педовка</i>
@@ -38,7 +38,7 @@ export default function ISFP() {
 
             <hr />
 
-            <AuthorLine readTime='3'>Юрий Селютин. Грязелечебница</AuthorLine>
+            <AuthorLine text="Читать 3 минуты" iconName="Time">Юрий Селютин. Грязелечебница</AuthorLine>
 
             <Text tag="p" size="h6" color="role">
                 Ленивый, хитрейший интриган, приторно сладкий, вязкий, липучий. Лицемер. Обволакивает. Через какое-то время тесно и душно.
@@ -128,7 +128,7 @@ export default function ISFP() {
             
             <hr />
 
-            <AuthorLine readTime='2'>Эльвира Фея</AuthorLine>
+            <AuthorLine text="Читать 2 минуты" iconName="Time">Эльвира Фея</AuthorLine>
 
             <Text tag="p" size="h6" color="role">
                 Потому что Дипломаты — они, сука, положительные такие, что оторопь берет.

@@ -5,7 +5,7 @@ import { AuthorLine } from '../../../components/AuthorLine';
 export default function ESFJ() {
     return (
         <>  
-            <AuthorLine readTime='1'>О соционике</AuthorLine>
+            <AuthorLine text="Читать меньше минуты" iconName="Time">О соционике</AuthorLine>
             
             <Text tag="p" color="role" size="h5">
                 Живет эмоциями. Способен различать тончайшие нюансы любой эмоции. Часто люди боятся его эмоционального напора.

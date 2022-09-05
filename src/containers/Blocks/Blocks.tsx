@@ -10,7 +10,7 @@ export default function Blocks() {
             <WhiteCard color="white">
                 <Text tag="h1" size="h4" font="additional" className={styles.title}>Блоки и кольца функций</Text>
 
-                <AuthorLine readTime='5'>äлеша</AuthorLine> 
+                <AuthorLine text='Читать 3 минуты' iconName='Time'>Неизвестен</AuthorLine>
 
                 <Text tag="p" size="h6" className={styles.text}>
                     Каждая функция работает с определенным аспектом жизни.

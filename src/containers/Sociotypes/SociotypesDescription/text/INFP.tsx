@@ -5,7 +5,7 @@ import { AuthorLine } from '../../../../components/AuthorLine';
 export default function INFP() {
     return (
         <>
-            <AuthorLine readTime='8'>Велта Микелсоне</AuthorLine>
+            <AuthorLine text="Читать 8 минут" iconName="Time">Велта Микелсоне</AuthorLine>
 
             <Text tag="b" size="h5" color="role">
                 Самый мечтательный соционический тип. Представители этого типа часто уходят «в себя», в свои фантазии и мысли.

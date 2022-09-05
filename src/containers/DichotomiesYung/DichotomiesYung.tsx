@@ -9,7 +9,7 @@ export default function DichotomiesYung() {
         <div className={styles.root}>
             <WhiteCard color="white">
                 <Text tag="h1" size="h4" font="additional" className={styles.title}>Дихотомии Юнга</Text>
-                <AuthorLine readTime='5'>äлеша</AuthorLine> 
+                <AuthorLine text='Пока нечего читать' iconName='Time'>Неизвестен</AuthorLine>
 
             </WhiteCard>
         </div>
