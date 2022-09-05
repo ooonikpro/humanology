@@ -10,10 +10,10 @@ const SvgAspectLogicMini = (props: SVGProps<SVGSVGElement>) => (
         xmlns="http://www.w3.org/2000/svg"
         {...props}
     >
-        <path fill="#fff" stroke="#230000" d="M3.5 3.5h17v17h-17z" />
+        <path fill="#fff" stroke="#202322" d="M3.5 3.5h17v17h-17z" />
         <path
             d="M10.283 16h3.996c.416 0 .692-.246.692-.639 0-.392-.281-.638-.692-.638h-3.24V8.23c0-.498-.281-.785-.756-.785-.469 0-.756.287-.756.785v6.985c0 .492.287.785.756.785Z"
-            fill="currentColor"
+            fill="#202322"
         />
     </svg>
 );
