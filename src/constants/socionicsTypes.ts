@@ -488,7 +488,7 @@ export const INTERTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
     ESTP: {
         element: 'fire',
         role: 'king',
-        alias: 'Жуков',
+        alias: 'Маршал Жуков',
         mindKey: 'irrational-1',
         mindset: 'vortical',
         name: 'Лидер',

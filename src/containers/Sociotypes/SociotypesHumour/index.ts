@@ -1,1 +1,1 @@
-export { default } from './SociotypesHumour';
+export { SociotypesHumour as default } from './SociotypesHumour';
