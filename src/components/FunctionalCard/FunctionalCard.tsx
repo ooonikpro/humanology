@@ -37,14 +37,14 @@ export const FunctionalCard: React.FC<Props> = (props) => {
     const functionLabel = FUNCTION_LABELS[props.function];
     const getAspectIconSize = (size: Props['size']) => {
         switch (size) {
-            case 'xl':
-                return 96;
-            case 'l':
-                return 72;
-            case 'm':
-                return 64;
-            default:
-                return 0;
+        case 'xl':
+            return 96;
+        case 'l':
+            return 72;
+        case 'm':
+            return 64;
+        default:
+            return 0;
         }
     };
     const aspectIconSize = getAspectIconSize(props.size);
