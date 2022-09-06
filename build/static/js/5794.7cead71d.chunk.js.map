@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/5794.7cead71d.chunk.js","mappings":"gLAEe,SAASA,IACpB,OACI","sources":["containers/SuitsCard/SuitsCard.tsx"],"sourcesContent":["import React from 'react';\r\n\r\nexport default function SuitsCard() {\r\n    return (\r\n        <div>SuitsCard</div>\r\n    );\r\n}\r\n"],"names":["SuitsCard"],"sourceRoot":""}
