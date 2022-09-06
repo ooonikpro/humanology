@@ -109,39 +109,38 @@ export default function Functions() {
                     на его поведение, обозначает определенные признаки характера и побуждает принимать соответствующее
                     только ему решение.
                 </Text>
-            </WhiteCard>
+                {
+                    DATA.map((item, $itemKey) => (
+                        <div className={styles.functionDetailCard} key={$itemKey}>
+                            <TitleInfo align="start" render={() => (
+                                <SimpleFunctionCard function={item.function} />
+                            )} className={styles.title} />
 
-            {
-                DATA.map((item, $itemKey) => (
-                    <WhiteCard key={$itemKey}>
-                        <TitleInfo align="start" render={() => (
-                            <SimpleFunctionCard function={item.function} />
-                        )} className={styles.title} />
+                            <TextInline className={styles.text}>
+                                {
+                                    item.labels.map((label, $labelKey) => (
+                                        <Text color="grey" size="small" key={$labelKey}>
+                                            {label}
+                                        </Text>
+                                    ))
+                                }
+                            </TextInline>
 
-                        <TextInline className={styles.text}>
+                            <Text tag="p" size="h6" color="accent" className={styles.text}>
+                                {item.intro}
+                            </Text>
+
                             {
-                                item.labels.map((label, $labelKey) => (
-                                    <Text color="grey" size="small" key={$labelKey}>
-                                        {label}
+                                item.text.map((text, $textKey) => (
+                                    <Text tag="p" className={styles.text} key={$textKey}>
+                                        {text}
                                     </Text>
                                 ))
                             }
-                        </TextInline>
-
-                        <Text tag="p" size="h6" color="accent" className={styles.text}>
-                            {item.intro}
-                        </Text>
-
-                        {
-                            item.text.map((text, $textKey) => (
-                                <Text tag="p" className={styles.text} key={$textKey}>
-                                    {text}
-                                </Text>
-                            ))
-                        }
-                    </WhiteCard>
-                ))
-            }
+                        </div>
+                    ))
+                }
+            </WhiteCard>
         </div>
     );
 }

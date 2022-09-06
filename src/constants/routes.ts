@@ -43,23 +43,23 @@ export const MAIN_LINKS: Tabs[] = [
         iconName: 'Square0'
     },
     {
+        label: 'Дисклеймер',
+        path: ROUTES.DISCLAIMER,
+        order: 1,
+        iconName: 'AlertSquare'
+    },
+    {
         label: 'Социотипы',
         path: ROUTES.HOME,
-        order: 1,
+        order: 2,
         iconName: 'Square1'
     },
     {
         label: 'Интертипные отношения',
         path: ROUTES.RELATIONSHIPS,
-        order: 2,
-        iconName: 'Square2'
-    },
-    {
-        label: 'Дисклеймер',
-        path: ROUTES.DISCLAIMER,
         order: 3,
-        iconName: 'AlertSquare'
-    },
+        iconName: 'Square2'
+    },    
     {
         label: 'История',
         path: ROUTES.HISTORY,
@@ -73,23 +73,23 @@ export const MAIN_LINKS: Tabs[] = [
         iconName: 'Square3'
     },
     {
-        label: 'Функции',
-        path: ROUTES.FUNCTIONS,
+        label: 'Аспекты',
+        path: ROUTES.ASPECTS,
         order: 6,
         iconName: 'Square4'
     },
     {
-        label: 'Блоки и кольца',
-        path: ROUTES.BLOCKS,
+        label: 'Функции',
+        path: ROUTES.FUNCTIONS,
         order: 7,
         iconName: 'Square5'
     },
     {
-        label: 'Аспекты',
-        path: ROUTES.ASPECTS,
+        label: 'Блоки и кольца',
+        path: ROUTES.BLOCKS,
         order: 8,
         iconName: 'Square6'
-    },
+    },    
     {
         label: 'Квадры',
         path: ROUTES.QUADRAS,
@@ -103,7 +103,7 @@ export const MAIN_LINKS: Tabs[] = [
         iconName: 'Square8'
     },
     {
-        label: 'Клубы',
+        label: 'Клубы и психотипы',
         path: ROUTES.CLUBS,
         order: 11,
         iconName: 'Square9'

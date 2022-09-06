@@ -3,7 +3,7 @@ import styles from './Menu.module.scss';
 import { ROUTES } from '../../constants/routes';
 import { useNavigate } from 'react-router-dom';
 import { Text } from '../../components/Text';
-import { Icon, getIconName } from '../../components/Icon';
+import { Icon } from '../../components/Icon';
 import { Portrait } from '../../components/Portrait';
 import { Socionics } from 'src/types';
 

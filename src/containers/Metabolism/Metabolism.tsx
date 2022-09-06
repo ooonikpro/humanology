@@ -3,6 +3,7 @@ import styles from './Metabolism.module.scss';
 import { WhiteCard } from '../../components/WhiteCard';
 import { Text } from '../../components/Text';
 import { AuthorLine } from '../../components/AuthorLine';
+import { EndPoint } from '../../components/EndPoint';
 
 export default function Metabolism() {
     return (
@@ -31,7 +32,7 @@ export default function Metabolism() {
                     Она может преобразоваться и частично выводится вовне для взаимодействия с внешним миром. А часть ее остается внутри и составляет внутренний мир человека.
                 </Text>
 
-                <Text tag="p" size="base">
+                <Text tag="p" size="h6" color="accent">
                     Следовательно, информационный метаболизм — это процесс усвоения, обработки и передачи информации психикой человека.
                 </Text>
 
@@ -121,7 +122,13 @@ export default function Metabolism() {
 
                 <Text tag="p" size="base">
                     Итак, можно сказать, что у человека, как и у каждого живого существа, есть четыре функции, или четыре способности приспособления к внешнему миру.
-                </Text>         
+                </Text>
+
+                <Text tag="p" size="base">
+                    Способность собирать информацию о внешних процессах условно будем называть логикой — L, способность собирать информацию о внутренних процессах, которые происходят во внутреннем мире человека — этикой — E, способность иметь точную информацию о форме и внешности окружающих объектов — сенсорикой — S, и способность разбираться в структуре и потенциальных способностях — интуицией — I. 
+                </Text>
+
+                <EndPoint />
             </WhiteCard>
         </div>
     );
