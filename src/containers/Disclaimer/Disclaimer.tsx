@@ -39,7 +39,7 @@ export default function Disclaimer() {
                 </Text>
 
                 <Text tag="p" color="accent" className={styles.text}>
-                    Кроме того, есть люди с менее уравновешенной психикой.<br /> Это те, чье окружение образовано из людей с неподходящими типами.
+                    Кроме того, есть люди с менее уравновешенной психикой. Это те, чье окружение образовано из людей с неподходящими типами.
                 </Text>
 
                 <Text tag="p" color="accent" className={styles.text}>

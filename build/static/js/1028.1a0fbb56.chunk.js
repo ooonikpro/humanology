@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkhumanology=self.webpackChunkhumanology||[]).push([[1028],{1028:function(n,u,t){t.r(u),t.d(u,{default:function(){return r}});t(2791);var e=t(184);function r(){return(0,e.jsx)("div",{children:"SuitsTarot"})}}}]);
-//# sourceMappingURL=1028.1a0fbb56.chunk.js.map
