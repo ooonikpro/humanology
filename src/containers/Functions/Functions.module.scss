@@ -1,7 +1,7 @@
 @import '../_commons/text.module.scss';
 
 .functionDetailCard {
-	background: $color-basic-beige;
+	background: rgba($color-basic-beige, 0.5);
 	padding: $spacing-8;
 	margin-top: $spacing-8;
 }
