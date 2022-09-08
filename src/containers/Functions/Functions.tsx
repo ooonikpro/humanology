@@ -2,7 +2,6 @@ import React from 'react';
 import styles from './Functions.module.scss';
 import { WhiteCard } from '../../components/WhiteCard';
 import { Text } from '../../components/Text';
-import { SimpleFunctionCard } from '../../components/SimpleFunctionCard';
 import { Socionics } from 'src/types';
 import { TextInline } from 'src/components/TextInline';
 import { TitleInfo } from 'src/components/TitleInfo';
@@ -53,9 +52,9 @@ const DATA: IData[] = [
     {
         function: 'suggestive',
         labels: ['Витальная', 'Ценностная', 'Слабая'],
-        intro: 'Самая слабая из всех функций.Нравится в других. Получая достаточно информации по суггестивной функции, человек становится более счастливым.',
+        intro: 'Самая слабая из всех функций. Нравится в других. Получая достаточно информации по внушаемой функции, человек становится более счастливым.',
         text: [
-            'Не получая информации по суггестивной функции, человек теряет интерес к жизни. Ему крайне нужна эта ценная информация и, подсознательно настраиваясь на дуала (ваша суггестивная функция — базовая функция дуала), человек готов слушать информацию по ней постоянно.'
+            'Не получая информации по этой функции, человек теряет интерес к жизни. Ему крайне нужна эта ценная информация и, подсознательно настраиваясь на дуала (ваша внушаемая функция — базовая функция дуала), человек готов слушать информацию по ней постоянно.'
         ]
     },
     {
@@ -101,25 +100,25 @@ export default function Functions() {
                 </Text>
 
                 <Text tag="p" size="h5" color="accent" className={styles.text}>
-                    Каждая функция работает
-                    с определенным аспектом жизни.
+                    Каждая функция работает с определенным аспектом жизни.
                 </Text>
 
-                <Text tag="p" className={styles.text}>Каждая функция психики человека влияет
-                    на его поведение, обозначает определенные признаки характера и побуждает принимать соответствующее
-                    только ему решение.
+                <Text tag="p" className={styles.text}>Каждая функция психики человека влияет на его поведение, обозначает определенные признаки характера и побуждает принимать соответствующее только ему решение.
                 </Text>
+
+                <hr />
+                
                 {
                     DATA.map((item, $itemKey) => (
                         <div className={styles.functionDetailCard} key={$itemKey}>
                             <TitleInfo align="start" render={() => (
-                                <SimpleFunctionCard function={item.function} />
-                            )} className={styles.title} />
+                                <img src={require(`../../assets/simpleFunctions/${item.function}-example.svg`)} alt="Функция" className={styles.function}/>
+                            )} />
 
-                            <TextInline className={styles.text}>
+                            <TextInline className={styles.labels}>
                                 {
                                     item.labels.map((label, $labelKey) => (
-                                        <Text color="grey" size="small" key={$labelKey}>
+                                        <Text color="grey" size="smaller" key={$labelKey}>
                                             {label}
                                         </Text>
                                     ))

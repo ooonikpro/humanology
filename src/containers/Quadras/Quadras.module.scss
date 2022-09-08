@@ -1,1 +1,21 @@
 @import '../_commons/text.module.scss';
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: grid;
+	gap: 0;
+}
+
+.list {
+	margin-top: $spacing-24;
+  	padding: 0;
+
+	li::before {
+		content: '';
+		background: center/contain no-repeat url("../../assets/bullet.svg");
+		width: $spacing-20;
+		height: $spacing-20;
+	}
+}

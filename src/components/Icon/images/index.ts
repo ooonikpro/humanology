@@ -1,4 +1,12 @@
+export { default as AffraidExample } from './AffraidExample';
+export { default as BaseExample } from './BaseExample';
 export { default as Clubs } from './Clubs';
+export { default as CreateExample } from './CreateExample';
+export { default as DesiresExample } from './DesiresExample';
+export { default as DoesExample } from './DoesExample';
 export { default as Functions } from './Functions';
+export { default as LikesExample } from './LikesExample';
+export { default as MadExample } from './MadExample';
 export { default as Quadras } from './Quadras';
+export { default as SuffersExample } from './SuffersExample';
 export { default as Suits } from './Suits';
