@@ -1,10 +1,10 @@
 import React from 'react';
-import styles from './Mindsets.module.scss';
+import styles from './Minds.module.scss';
 import { WhiteCard } from '../../components/WhiteCard';
 import { Text } from '../../components/Text';
 import { AuthorLine } from '../../components/AuthorLine';
 
-export default function Mindsets() {
+export default function Minds() {
     return (
         <div className={styles.root}>
             <WhiteCard color="white">
