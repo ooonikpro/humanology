@@ -30,6 +30,7 @@
         "lint": "eslint --ext .ts,.tsx src --color",
         "lint:fix": "npm run lint -- --fix",
         "prepare": "husky install",
+        "eject": "react-scripts eject",
         "svgr": "npm run svgr:icons & npm run svgr:images & npm run svgr:circles",
         "svgr:icons": "svgr -d src/components/Icon/icons src/assets/icons --config-file .svgrrc",
         "svgr:images": "svgr -d src/components/Icon/images src/assets/images --config-file .svgrrc",
