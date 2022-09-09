@@ -59,7 +59,7 @@ export const MAIN_LINKS: Tabs[] = [
         path: ROUTES.RELATIONSHIPS,
         order: 3,
         iconName: 'Square2'
-    },    
+    },
     {
         label: 'История',
         path: ROUTES.HISTORY,
@@ -89,7 +89,7 @@ export const MAIN_LINKS: Tabs[] = [
         path: ROUTES.BLOCKS,
         order: 8,
         iconName: 'Square6'
-    },    
+    },
     {
         label: 'Квадры',
         path: ROUTES.QUADRAS,

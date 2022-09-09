@@ -7,6 +7,7 @@ import { Icon } from '../../components/Icon';
 import { Portrait } from '../../components/Portrait';
 import { Socionics } from 'src/types';
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const getRandomIndex = (arr: Array<any>) => arr[Math.floor(Math.random() * arr.length)];
 
 interface MenuItemProps {
