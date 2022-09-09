@@ -129,7 +129,7 @@ export const routes: Route[] = [
     },
     {
         path: ROUTES.MINDSETS,
-        container: () => import('./containers/Mindsets/Mindsets')
+        container: () => import('./containers/Mindsets')
     },
     {
         path: ROUTES.CLUBS,

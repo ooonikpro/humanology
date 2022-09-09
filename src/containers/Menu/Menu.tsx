@@ -8,6 +8,7 @@ import { Portrait } from '../../components/Portrait';
 import { Socionics } from 'src/types';
 
 const getRandomIndex = (arr: Array<any>) => arr[Math.floor(Math.random() * arr.length)];
+
 interface MenuItemProps {
     children: React.ReactNode;
     className?: string;
