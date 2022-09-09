@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { App } from './components/App';
+import { register as registerServiceWorker } from './serviceWorkerRegistration';
 
 import './styles/app.scss';
 
@@ -10,3 +11,5 @@ root.render(
         <App />
     </React.StrictMode>
 );
+
+registerServiceWorker();

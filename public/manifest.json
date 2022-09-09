@@ -1,13 +1,13 @@
 {
-    "name": "Socionics",
-    "short_name": "Socionics",
+    "name": "Humanology",
+    "short_name": "Humanology",
     "theme_color": "#faf5ec",
     "background_color": "#faf5ec",
     "display": "standalone",
     "orientation": "portrait",
     "lang": "ru",
     "dir": "ltr",
-    "start_url": "/",
+    "start_url": "https://humanology.app/",
     "scope": "/",
     "icons": [
         {
@@ -16,7 +16,7 @@
             "type": "image/svg"
         },
         {
-            "src": "assets/google-touch-icon.png",
+            "src": "assets/touch-icon.png",
             "sizes": "512x512",
             "type": "image/png"
         }
