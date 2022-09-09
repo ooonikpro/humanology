@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkhumanology=self.webpackChunkhumanology||[]).push([[6529],{46529:function(n,u,e){e.r(u),e.d(u,{default:function(){return c}});e(72791);var t={},o=e(80184);function c(){return(0,o.jsx)("div",{className:t.root,children:"FunctionsItem"})}}}]);
-//# sourceMappingURL=6529.84b1666c.chunk.js.map

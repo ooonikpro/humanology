@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkhumanology=self.webpackChunkhumanology||[]).push([[5794],{95794:function(n,u,e){e.r(u),e.d(u,{default:function(){return t}});e(72791);var r=e(80184);function t(){return(0,r.jsx)("div",{children:"SuitsCard"})}}}]);
-//# sourceMappingURL=5794.f292ea19.chunk.js.map
