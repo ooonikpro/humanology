@@ -31,7 +31,7 @@ hr {
     font-size: 62.5%;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: subpixel-antialiased;
-    height: 100vh;
+    overflow-x: hidden;
 }
 
 html.no-scroll {
@@ -76,7 +76,6 @@ body {
     flex-direction: column;
     max-width: $app-max-width;
     min-width: $app-min-width;
-    min-height: 100vh;
     margin: auto;
     padding-bottom: calc(#{$spacing-4} - #{$spacing-8});
 }
