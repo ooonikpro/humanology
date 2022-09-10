@@ -1,0 +1,3 @@
+RewriteEngine On
+ RewriteCond %{HTTP_HOST} ^blog\.humanology\.app$ [NC]
+ RewriteRule ^(.*) https://teletype.in/@humanology
