@@ -28,7 +28,8 @@ export const BlockDescription: React.FC<Props> = ({
 }) => {
     const blockId = data.blockId;
     const title = BLOCKS[blockId];
-    const Description = React.lazy(() => import(`./${blockId}/${intertype}.tsx`));
+    // eslint-disable-next-line @typescript-eslint/no-var-requires
+    const Description = require(`./${blockId}/${intertype}.tsx`).default;
 
     const swipeableHandlers = useSwipeable({
         onSwipedDown: modalProps.onClose
