@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import React from 'react';
 import { Route as RouteType, routes } from '../../routes';
 import { Route, Routes } from 'react-router-dom';
 
