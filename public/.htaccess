@@ -11,5 +11,5 @@ RewriteRule ^(.*)(/)$ $1 [L,R=301]
 
 # Front-controller (exclude static resources)
 RewriteRule ^index\.html$ - [L]
-RewriteCond %{REQUEST_URI} !^/(css|img|js|static|public)/
+RewriteCond %{REQUEST_URI} !^/(css|img|js|static|public|service-worker\.js)/
 RewriteRule . index.html [L]
