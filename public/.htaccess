@@ -1,15 +1,18 @@
-RewriteEngine on
+Options -MultiViews
+RewriteEngine On
 RewriteCond %{HTTP:X-Forwarded-Proto} !https
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
 
 RewriteCond %{HTTP_HOST} !^humanology.app$
 RewriteRule ^(.*) http://humanology.app/$1 [R=301,L]
 
-RewriteBase /
-RewriteCond %{REQUEST_URI} /$ [NC]
-RewriteRule ^(.*)(/)$ $1 [L,R=301]
+# index.html in current directory, followed by /index.html (in root)
+DirectoryIndex index.html /index.html
 
-# Front-controller (exclude static resources)
+# Abort early if request is already for index.html in the root
 RewriteRule ^index\.html$ - [L]
-RewriteCond %{REQUEST_URI} !^/(css|img|js|static|public|service-worker\.js)/
+
+# Route all non-file/directory to index.html in the root
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule . index.html [L]
