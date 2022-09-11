@@ -1,10 +1,7 @@
 import React from 'react';
 import styles from './FunctionDescription.module.scss';
-import { getIconName, Icon } from '../../components/Icon';
 import { Modal, ModalProps } from '../../components/Modal';
-import { Text } from '../../components/Text';
 import { TitleInfo } from '../../components/TitleInfo';
-import { ASPECTS, ASPECTS_LABEL } from '../../constants/aspects';
 import { FUNCTION } from '../../constants/functions';
 import { Socionics } from '../../types';
 import { useSwipeable } from 'react-swipeable';
