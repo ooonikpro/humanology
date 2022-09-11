@@ -4,7 +4,7 @@ import styles from './TextInline.module.scss';
 export interface Props {
     className?: string;
     children: React.ReactNode[];
-    align?: 'center' | 'start' | 'stretch';
+    align?: 'center' | 'start' | 'stretch' | 'baseline';
     justify?: 'start' | 'between';
 }
 

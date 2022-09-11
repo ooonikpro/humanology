@@ -3,6 +3,8 @@ import styles from './Minds.module.scss';
 import { WhiteCard } from '../../components/WhiteCard';
 import { Text } from '../../components/Text';
 import { AuthorLine } from '../../components/AuthorLine';
+import { EndPoint } from '../../components/EndPoint';
+
 
 export default function Minds() {
     return (
@@ -18,6 +20,7 @@ export default function Minds() {
                 <Text tag="p" className={styles.text}>
                     Но не только это. Цельность натуры или ее сложность и противоречивость, порождающая множество скрытых внутренних проблем, тоже зависят от стилей мышления, а точнее — от их сочетаний, так как в чистом виде стили мышления, описанные американскими исследователями Харрисоном и Брэмсоном, обычно не встречаются.
                 </Text>
+                <EndPoint />
             </WhiteCard>
         </div>
     );

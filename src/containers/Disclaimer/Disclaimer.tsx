@@ -3,6 +3,7 @@ import styles from './Disclaimer.module.scss';
 import { WhiteCard } from '../../components/WhiteCard';
 import { Text } from '../../components/Text';
 import { AuthorLine } from '../../components/AuthorLine';
+import { EndPoint } from '../../components/EndPoint';
 
 export default function Disclaimer() {
     return (
@@ -79,7 +80,7 @@ export default function Disclaimer() {
                 <Text tag="p" className={styles.text}>
                     Если вы нашли ошибку или неточность — напишите, пожалуйста, туда же.
                 </Text>
-                
+                <EndPoint />
             </WhiteCard>
         </div>
     );

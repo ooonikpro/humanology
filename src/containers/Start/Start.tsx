@@ -3,6 +3,7 @@ import styles from './Start.module.scss';
 import { WhiteCard } from '../../components/WhiteCard';
 import { Text } from '../../components/Text';
 import { AuthorLine } from '../../components/AuthorLine';
+import { EndPoint } from '../../components/EndPoint';
 
 export default function Menu() {
     return (
@@ -14,6 +15,7 @@ export default function Menu() {
                 <Text tag="p" size="base" font="base">Тут будет ликбез по соционике и всякие статьи для начинающих постигать истину.</Text>
                 <hr />
                 <Text tag="p" size="base" font="base">А пока читайте <a href="https://teletype.in/@humanology">девблог на Телетайпе</a>.</Text>
+                <EndPoint />
             </WhiteCard>
         </div>
     );

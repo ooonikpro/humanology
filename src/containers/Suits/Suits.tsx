@@ -11,6 +11,7 @@ import { DATA_ROLES, DATA_SUITS } from './data';
 import { useNavigate } from 'react-router-dom';
 import { ROUTES } from '../../constants/routes';
 import { AuthorLine } from '../../components/AuthorLine';
+import { EndPoint } from '../../components/EndPoint';
 
 type CardRoleProps<K extends string, T> = {
     [key in K]: T;
@@ -163,6 +164,7 @@ export default function Suits() {
             {DATA_SUITS.map((tarot, $t) => {
                 return <CardTarot {...tarot} key={$t} onClick={goToSuitsTarot(tarot.tarot)} />;
             })}
+            <EndPoint />
         </div>
     );
 }

@@ -8,6 +8,7 @@ import { Socionics } from '../../types';
 import { ASPECTS, ASPECTS_GROUPS, ASPECTS_LABEL } from '../../constants/aspects';
 import { useNavigate } from 'react-router-dom';
 import { AuthorLine } from '../../components/AuthorLine';
+import { EndPoint } from '../../components/EndPoint';
 
 const AspectCard: React.FC<{ aspect: Socionics.Aspect; onClick: () => void; }> = ({ aspect, onClick }) => {
     const aspectIconMini = getIconName(`aspect-${aspect}-mini`);
@@ -18,9 +19,9 @@ const AspectCard: React.FC<{ aspect: Socionics.Aspect; onClick: () => void; }> =
     return (
         <div className={styles.card} onClick={onClick}>
             <Icon name={aspectIconMini} size={24} className={styles['mini-icon']}/>
-            <Icon color="accent" name={aspectIcon} size={96}/>
-            <Text tag="h6" size="h6" className={styles.mb8}>{aspectTitle}</Text>
-            <Text color="accent">{aspectSubtitle}</Text>
+            <Icon color="accent" name={aspectIcon} className={styles['aspect-icon']} size={96}/>
+            <Text tag="p" size="h4" font="additional" color="accent" className={styles['aspect-title']}>{aspectTitle}</Text>
+            <Text color="accent" className={styles.subtitle}>{aspectSubtitle}</Text>
         </div>
     );
 };
@@ -34,59 +35,63 @@ export default function Aspects() {
                 <Text tag="h1" size="h4" font="additional" className={styles.title}>
                     Аспекты
                 </Text>
-                <AuthorLine text='Читать 3 минуты' iconName='Time'>äлеша</AuthorLine>
+                <AuthorLine text='Читать 3 минуты' iconName='Time'>Виктор Гуленко</AuthorLine>
 
-                <Text tag="p" color="accent" className={styles.text}>
-                    Макроаспекты
+                <Text tag="p" color="accent" size="h6" className={styles.text}>
+                    Одна из восьми составляющих информационного потока, на которые его разделяет психика индивида для ориентации в коммуникативном пространстве.
+                </Text>
+                <Text tag="p" size="base" className={styles.text}>
+                    Необходимость восьмичленного деления информации вытекает из фундаментальной коммуникативной константы — <a href="https://ru.wikipedia.org/wiki/Магическое_число_семь_плюс-минус_два" target="_blank" rel="noreferrer">числа Миллера 7 ± 2</a> — именно столько единиц информации способна удерживать оперативная память человка одновременно.
                 </Text>
 
-                <Text tag="ul" className={styles.list}>
-                    <Text tag="li"><b>Объекты:</b> черная логика, она же – деловая, объектная, экстравертная и белая логика, структурная, субъектная, интровертная.</Text>
-                    <Text tag="li"><b>Энергия:</b> черная этика, объектная, экстравертная, этика эмоций и белая этика, субъектная, интровертная, этика отношений.</Text>
-                    <Text tag="li"><b>Пространство:</b> черная сенсорика, волевая, объектная, экстравертная и белая сенсорика, субъективная, интровертная, сенсорика ощущений.</Text>
-                    <Text tag="li">
-                        <b>Время:</b> черная интуиция, объектная, экстравертная, интуиция возможностей и белая интуиция, субъектная, интровертная, интуиция времени.
-                    </Text>
+                <Text tag="p" size="base" className={styles.text}>
+                    Инфоаспекты принимаются и обрабатываются соционическими функциями. Поэтому эти термины иногда употребляются как синонимы. Упорядоченный набор соционических функций образует соционический тип личности.
                 </Text>
 
-                <hr/>
+                <Text tag="p" size="base" className={styles.text}>
+                    Спектр информационных аспектов прдставляет собой универсальну сетку понятий, при помощи которой поддаются анализу любые интеллектуальные, психологические и социальные явления.
+                </Text>
 
-                <Text tag="p" className={styles.text}>Каждый макроаспект делится на 2 аспекта:</Text>
+                <Text tag="p" size="base" className={styles.text}>
+                    Система соционических функций является логическим завершением учения К. Г. Юнга о четырех не сводимых друг к другу способах отражения окружающего мира человеком — ощущения (сенсорика), мышление (логика), чувства (этика) и интуиция.
+                </Text>
 
-                <TextInline align="start">
+                <Text tag="p" size="base" className={styles.text}>
+                    Каждая из четырех психологических функций Юнга может проявляться своей экстравертной (активной) и интровертной (пассивной) сторонами. Таким образом, число функций удваивается и мы получаем восемь базовых понятий.
+                </Text>
+
+                <hr />
+
+                <div className={styles.blackwhite}>
                     <div className={styles.grower}>
-                        <Icon name="Extravertniy" size={48} className={styles.text}/>
-
+                        <Icon name="Extravertniy" size={48} />
                         <Text tag="p" className={styles.text}>
-                            <b>Экстравертный</b> <br/> «черный» <br/> объективный
+                            <b>Экстравертный</b>, <br />«черный», <br />объективный
                         </Text>
-
-                        <Text tag="p" size="small" className={styles.text}>
-                            Сущность аспекта, <br/> его свойства
+                        <Text tag="p" size="smaller" className={styles.text}>
+                            Сущность аспекта, <br />его свойства
                         </Text>
                     </div>
 
                     <div className={styles.grower}>
-                        <Icon name="Introvertniy" size={48} className={styles.text}/>
-
+                        <Icon name="Introvertniy" size={48} />
                         <Text tag="p" className={styles.text}>
-                            <b>Интровертный</b> <br/> «белый» <br/> cубъективный
+                            <b>Интровертный</b>, <br />«белый», <br />cубъективный
                         </Text>
-
-                        <Text tag="p" size="small" className={styles.text}>
-                            Отношения сущностей аспекта, сопоставление
+                        <Text tag="p" size="smaller" className={styles.text}>
+                            Отношения сущностей, <br />сопоставление.
                         </Text>
                     </div>
-                </TextInline>
+                </div>
 
                 <hr/>
 
                 {
                     ASPECTS_GROUPS.map((item, $a) => {
                         return (
-                            <div key={$a}>
-                                <TextInline justify="between" className={styles.text}>
-                                    <Text tag="h3" size="h3" color="accent">{item.title}</Text>
+                            <div key={$a} className={styles['aspect-pair']}>
+                                <TextInline justify="between" align="baseline" className={styles['macroaspect-title']}>
+                                    <Text tag="p" size="h5" font="additional">{item.title}</Text>
                                     <Text>{item.subtitle}</Text>
                                 </TextInline>
 
@@ -95,11 +100,12 @@ export default function Aspects() {
                                     <AspectCard aspect={item.aspects[1]} onClick={() => goTo(item.aspects[1])}/>
                                 </TextInline>
 
-                                <hr/>
+                                <hr />
                             </div>
                         );
                     })
                 }
+                <EndPoint />
             </WhiteCard>
         </div>
     );

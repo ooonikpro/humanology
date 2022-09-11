@@ -3,6 +3,7 @@ import styles from './Blocks.module.scss';
 import { WhiteCard } from '../../components/WhiteCard';
 import { Text } from '../../components/Text';
 import { AuthorLine } from '../../components/AuthorLine';
+import { EndPoint } from '../../components/EndPoint';
 
 export default function Blocks() {
     return (
@@ -21,6 +22,7 @@ export default function Blocks() {
                     на его поведение, обозначает определенные признаки характера и побуждает принимать соответствующее
                     только ему решение.
                 </Text>
+                <EndPoint />
             </WhiteCard>
         </div>
     );

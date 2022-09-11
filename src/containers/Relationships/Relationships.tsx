@@ -3,6 +3,7 @@ import styles from './Relationships.module.scss';
 import { WhiteCard } from '../../components/WhiteCard';
 import { Text } from '../../components/Text';
 import { AuthorLine } from '../../components/AuthorLine';
+import { EndPoint } from '../../components/EndPoint';
 
 export default function Relationships() {
     return (
@@ -40,6 +41,7 @@ export default function Relationships() {
                     в неблагоприятных отношениях будет
                     на порядок выше, чем в благоприятных.
                 </Text>
+                <EndPoint />
             </WhiteCard>
         </div>
     );

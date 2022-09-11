@@ -6,6 +6,7 @@ import { Socionics } from 'src/types';
 import { TextInline } from 'src/components/TextInline';
 import { TitleInfo } from 'src/components/TitleInfo';
 import { AuthorLine } from '../../components/AuthorLine';
+import { EndPoint } from '../../components/EndPoint';
 
 interface IData {
     function: Socionics.Function;
@@ -139,6 +140,7 @@ export default function Functions() {
                         </div>
                     ))
                 }
+                <EndPoint />
             </WhiteCard>
         </div>
     );

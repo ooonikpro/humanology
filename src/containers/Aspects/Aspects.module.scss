@@ -1,15 +1,64 @@
 @import '../_commons/text.module.scss';
 
+.aspect-pair {
+    margin: $spacing-24 0;
+}
+
 .card {
     flex: 1 1 50%;
     position: relative;
-    padding: $spacing-16;
-    background-color: var(--color-basic-beige);
+    padding: $spacing-8;
+    background-color: rgba($color-basic-beige, 0.5);
     cursor: pointer;
+    height: 16rem;
 
     .mini-icon {
         position: absolute;
-        top: $spacing-16;
-        right: $spacing-16;
+        top: $spacing-8;
+        left: $spacing-8;
+        opacity: 0.75;
     }
+
+    .aspect-title {
+        position: absolute;
+        bottom: $spacing-20;
+    }
+
+    .subtitle {
+        opacity: 0.5;
+        position: absolute;
+        bottom: $spacing-8;
+    }
+
+    .aspect-icon {
+        position: absolute;
+        right: $spacing-12;
+    }
+}
+
+.macroaspect-title {
+    margin-top: $spacing-12;
+}
+
+.grower {
+    flex: 1 1 50%;
+
+    .text {
+        margin: 0;
+        margin-top: $spacing-8;
+        line-height: $spacing-20;
+    }
+}
+
+.blackwhite {
+    margin: $spacing-16 0;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    gap: $spacing-12;
+    width: 100%;
+}
+
+.mb8 {
+    margin-bottom: 0;
 }

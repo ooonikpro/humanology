@@ -37,31 +37,32 @@ export const FunctionDescription: React.FC<Props> = (props) => {
                             {name} функция
                         </TitleInfo>
                     </div>
+                    <div className={styles['aspect-details']}>
+                        <Icon
+                            name={aspectIconMini}
+                            size={24}
+                            className={styles['icon-mini']}
+                        />
+                        <Icon name={aspectIcon} size={108} color="role" className={styles.aspectIcon} />
+
+                        <div className={styles['aspect-details-text']}>
+                            <Text size="h3" color="role" font="additional">
+                                {aspectTitle}
+                            </Text>
+                            <Text size="base" color="accent">{aspectSubtitle}</Text>
+                        </div>
+                        <Icon
+                            name="Help"
+                            color="accent"
+                            size={24}
+                            className={styles['icon-help']}
+                        />
+                    </div>
                     <div className={styles.body}>
                         <React.Suspense>
                             <Description />
                         </React.Suspense>
-                        <div className={styles['aspect-details']}>
-                            <Icon
-                                name={aspectIconMini}
-                                size={24}
-                                className={styles['icon-mini']}
-                            />
-                            <Icon name={aspectIcon} size={108} color="role" className={styles.aspectIcon} />
 
-                            <div className={styles['aspect-details-text']}>
-                                <Text size="h3" color="role" font="additional">
-                                    {aspectTitle}
-                                </Text>
-                                <Text size="base" color="accent">{aspectSubtitle}</Text>
-                            </div>
-                            <Icon
-                                name="Help"
-                                color="accent"
-                                size={24}
-                                className={styles['icon-help']}
-                            />
-                        </div>
                         <EndPoint />
                     </div>
                 </WhiteCard>

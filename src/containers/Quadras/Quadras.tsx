@@ -5,6 +5,7 @@ import { Text } from '../../components/Text';
 import { WhiteCard } from '../../components/WhiteCard';
 import { Props as QuadraCardProps, QuadraCard } from '../../components/QuadraCard';
 import { AuthorLine } from '../../components/AuthorLine';
+import { EndPoint } from '../../components/EndPoint';
 
 const QUADRAS_DATA: Array<Omit<QuadraCardProps, 'onClick'>> = [
     {
@@ -115,11 +116,12 @@ export default function Quadras() {
                     </Text>
                     <Text tag="li">Комплекс квадры</Text>
                 </Text>
-            </WhiteCard>
 
+            </WhiteCard>
             {QUADRAS_DATA.map((item, $i) => {
                 return <QuadraCard {...item} onClick={() => goTo(item.element)} key={$i}/>;
             })}
+            <EndPoint />
         </div>
     );
 }

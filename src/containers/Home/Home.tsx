@@ -7,6 +7,7 @@ import { Socionics } from '../../types';
 import { SocietyCardMini } from '../../components/SocietyCardMini';
 import { ROUTES } from 'src/constants/routes';
 import { Link, Outlet } from 'react-router-dom';
+import { EndPoint } from '../../components/EndPoint';
 
 const intertypes = (Object.keys(INTERTYPES) as Socionics.SocionicsType[]).map(
     (key) => ({
@@ -46,6 +47,7 @@ export default function Home() {
             {renderGroups}
 
             <Outlet />
+            <EndPoint />
         </div>
     );
 }
