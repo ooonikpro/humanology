@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect } from 'react';
 import styles from './Sociotypes.module.scss';
 import { Outlet, useNavigate } from 'react-router-dom';
-import { useIntertype } from '../../hooks/useSocionicsType';
+import { useSociotype } from '../../hooks/useSociotype';
 import { SocietyCard } from '../../components/SocietyCard';
 import { SociotypeTabs } from '../../components/Tabs/SociotypeTabs';
 import { WhiteCard } from '../../components/WhiteCard';
@@ -12,7 +12,7 @@ import { ROUTES } from '../../constants/routes';
 import { Modal } from '../../components/Modal';
 
 export default function Sociotypes() {
-    const { intertypeProps, styles: inlineStyles } = useIntertype();
+    const { sociotypeProps: intertypeProps, styles: inlineStyles } = useSociotype();
     const isActiveRouteSociatypeCard = useIsSociatypeCardRoute();
     const isActiveRouteSociatypeRoute = useIsSociatypeRoute();
 

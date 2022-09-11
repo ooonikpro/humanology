@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './SociotypesCard.module.scss';
 import { Socionics } from '../../../types';
-import { useIntertype } from '../../../hooks/useSocionicsType';
+import { useSociotype } from '../../../hooks/useSociotype';
 import { WhiteCard } from '../../../components/WhiteCard';
 import { YUNGS_DICHTOMIES } from '../../../constants/yungsDichotomies';
 import { REININ_SIGNS } from '../../../constants/reininSigns';
@@ -49,7 +49,7 @@ const reininRows: Array<Socionics.ReininSign[]> = [
 ];
 
 export default function SociotypesCard() {
-    const { intertypeProps } = useIntertype();
+    const { sociotypeProps: intertypeProps } = useSociotype();
 
     const dichotomyYungs = intertypeProps.yungs.map(
         getRow(Dichotomy, YUNGS_DICHTOMIES)

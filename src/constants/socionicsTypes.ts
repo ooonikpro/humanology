@@ -1,6 +1,6 @@
 import { Socionics } from '../types';
 
-export const INTERTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp> = {
+export const SOCIOTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp> = {
     ENTP: {
         element: 'air',
         role: 'knight',
@@ -840,7 +840,7 @@ export const INTERTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         typeName: 'administrator',
         gender: 'male',
         club: 'practice',
-        tarot: 'pentacles', 
+        tarot: 'pentacles',
         psychotype: 'care',
         populationPercentage: '8 ~ 12%',
         aspects: {

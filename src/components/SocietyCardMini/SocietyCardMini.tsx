@@ -11,7 +11,10 @@ import { useColorRole } from '../../hooks';
 import { CircleQuadra } from '../../components/CircleQuadra';
 import { Tag } from '../../components/Tag';
 
-type Props = Socionics.IntertypeProp & { id: Socionics.SocionicsType };
+type Props = Socionics.IntertypeProp & {
+    id: Socionics.SocionicsType;
+    className?: string;
+ };
 
 export const SocietyCardMini: React.FC<Props> = (props) => {
     const text = {
@@ -22,11 +25,11 @@ export const SocietyCardMini: React.FC<Props> = (props) => {
         name: props.name,
         alias: props.alias,
     };
-    
+
     const { color: roleColor } = useColorRole(props.role);
 
     return (
-        <WhiteCard className={styles.root} style={roleColor}>
+        <WhiteCard className={[styles.root, props.className].join(' ')} style={roleColor}>
             <div className={styles.body}>
                 <div className={styles.tags}>
 

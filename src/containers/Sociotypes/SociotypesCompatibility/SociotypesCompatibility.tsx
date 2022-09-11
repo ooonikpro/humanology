@@ -1,16 +1,22 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import styles from './SociotypesCompatibility.module.scss';
 import { WhiteCard } from 'src/components/WhiteCard';
 import { Text } from 'src/components/Text';
-import { useParams } from 'react-router-dom';
+import { useSociotype } from 'src/hooks';
+import { IntertypesCard } from 'src/components/IntertypesCard';
 import { Socionics } from 'src/types';
 
 
 export default function SociotypesCompatibility() {
-    const params = useParams();
-    const id = params.id?.toUpperCase() as Socionics.SocionicsType;
+    const { sociotypeProps: { id, intertypeRelations } } = useSociotype();
     // eslint-disable-next-line @typescript-eslint/no-var-requires
     const Description = require(`./text/${id}.tsx`).default;
+
+    const intertypes = useMemo(() => {
+        return (Object.entries(intertypeRelations) as Array<[Socionics.IntertypeRelations, Socionics.SocionicsType]>).map(([intertype, id]) => (
+            <IntertypesCard id={id} intertype={intertype} key={intertype}/>
+        ));
+    }, [intertypeRelations]);
 
     return (
         <div className={styles.wrap}>
@@ -20,6 +26,12 @@ export default function SociotypesCompatibility() {
                     <React.Suspense>
                         <Description />
                     </React.Suspense>
+                </div>
+
+                <br />
+
+                <div className={styles.intertypes}>
+                    {intertypes}
                 </div>
             </WhiteCard>
         </div>

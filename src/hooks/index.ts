@@ -4,4 +4,4 @@ export * from './useColorRoleDual';
 export * from './useIsActiveRoute';
 export * from './useIsSociatypeCardRoute';
 export * from './useIsSociatypeRoute';
-export * from './useSocionicsType';
+export * from './useSociotype';

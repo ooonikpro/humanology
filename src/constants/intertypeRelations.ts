@@ -1,7 +1,6 @@
 import { Socionics } from '../types';
 
-export const INTERTYPE_RELATIONS : Record<Socionics.intertypeRelations, {name: string, lvl: number}> = {
-
+export const INTERTYPE_RELATIONS : Record<Socionics.IntertypeRelations, {name: string, lvl: number}> = {
     dual: {
         name: 'Дуальные',
         lvl: 4

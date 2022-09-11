@@ -1,0 +1,153 @@
+@import '../../styles/utils.scss';
+
+.root {
+    width: 100%;
+    display: flex;
+    border-radius: 2px;
+    padding: $spacing-4;
+
+    &.dual,
+    &.activity,
+    &.mirror,
+    &.identical {
+        background-color: rgba($color-pastel-turquoise, .5);
+
+        .icon,
+        .help {
+            color: $color-pastel-turquoise;
+        }
+    }
+
+    &.kindred,
+    &.semidual,
+    &.pragmatic,
+    &.illusionary {
+        background-color: rgba($color-pastel-green, .5);
+
+        .icon,
+        .help {
+            color: $color-pastel-green;
+        }
+    }
+
+    &.beneficiary,
+    &.giver,
+    &.supervisor,
+    &.underling {
+        background-color: rgba($color-pastel-yellow, .5);
+
+        .icon,
+        .help {
+            color: $color-pastel-yellow;
+        }
+    }
+
+    &.quasidentical,
+    &.parallel,
+    &.contrary,
+    &.superego {
+        background-color: rgba($color-pastel-pink, .5);
+
+        .icon,
+        .help {
+            color: $color-pastel-pink;
+        }
+    }
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+}
+
+.intertype {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: $spacing-4 $spacing-8;
+    width: 50%;
+}
+
+.help {
+    position: absolute;
+    top: $spacing-4;
+    right: $spacing-8;
+}
+
+.line {
+    flex: 0;
+    margin-bottom: $spacing-12;
+}
+
+
+.lvl {
+    display: flex;
+    align-items: flex-end;
+    gap: $spacing-4;
+    height: 1.6rem;
+    margin-bottom: $spacing-4;
+
+    span {
+        width: $spacing-4;
+        background-color: $color-basic-accent;
+        opacity: 0.1;
+
+        &:nth-child(1) {
+            height: 1.6rem;
+        }
+
+        &:nth-child(2) {
+            height: 1.2rem;
+        }
+
+        &:nth-child(3) {
+            height: 0.8rem;
+        }
+
+        &:nth-child(4) {
+            height: 0.4rem;
+        }
+    }
+
+    &.lvl-1 {
+        span {
+            &:nth-child(4) {
+                opacity: 0.5;
+            }
+        }
+    }
+
+    &.lvl-2 {
+        span {
+            &:nth-child(4),
+            &:nth-child(3) {
+                opacity: 0.5;
+            }
+        }
+    }
+
+    &.lvl-3 {
+        span {
+            &:nth-child(4),
+            &:nth-child(3),
+            &:nth-child(2) {
+                opacity: 0.5;
+            }
+        }
+    }
+
+    &.lvl-4 {
+        span {
+            opacity: 0.5;
+        }
+    }
+}
+
+.sociotype {
+    width: 50%;
+}
+
+.footnote {
+    opacity: 0.5;
+}

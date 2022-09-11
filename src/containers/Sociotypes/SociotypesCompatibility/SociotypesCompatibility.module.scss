@@ -28,3 +28,10 @@
         opacity: 0.25;
     }
 }
+
+.intertypes {
+    display: flex;
+    flex-direction: column;
+    padding-top: $spacing-12;
+    gap: $spacing-12;
+}

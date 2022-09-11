@@ -2,17 +2,17 @@ import React, { useMemo } from 'react';
 import styles from './Home.module.scss';
 import { CardGroupByElement } from '../../components/CardGroupByElement';
 import { QUADRAS } from '../../constants/natureElements';
-import { INTERTYPES } from '../../constants/socionicsTypes';
+import { SOCIOTYPES } from '../../constants/socionicsTypes';
 import { Socionics } from '../../types';
 import { SocietyCardMini } from '../../components/SocietyCardMini';
 import { ROUTES } from 'src/constants/routes';
 import { Link, Outlet } from 'react-router-dom';
 import { EndPoint } from '../../components/EndPoint';
 
-const intertypes = (Object.keys(INTERTYPES) as Socionics.SocionicsType[]).map(
+const intertypes = (Object.keys(SOCIOTYPES) as Socionics.SocionicsType[]).map(
     (key) => ({
         id: key,
-        ...INTERTYPES[key],
+        ...SOCIOTYPES[key],
     })
 );
 

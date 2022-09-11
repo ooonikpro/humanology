@@ -122,7 +122,7 @@ export namespace Socionics {
         | 'irrational'
         | 'rational';
 
-    export type intertypeRelations =
+    export type IntertypeRelations =
         | 'dual'
         | 'activity'
         | 'mirror'
@@ -189,7 +189,7 @@ export namespace Socionics {
         alignment: Alignment;
         yungs: Dichotomy[];
         reinin: ReininSign[];
-        intertypeRelations: Record<intertypeRelations, SocionicsType>
+        intertypeRelations: Record<IntertypeRelations, SocionicsType>
     };
 }
 
