@@ -1,83 +1,99 @@
 import { Socionics } from '../types';
 
-export const INTERTYPE_RELATIONS : Record<Socionics.IntertypeRelations, {name: string, lvl: number}> = {
+export const INTERTYPE_RELATIONS : Record<Socionics.IntertypeRelations, {name: string, description: string, lvl: number}> = {
     dual: {
         name: 'Дуальные',
+        description: 'Взаимодополнение',
         lvl: 4
     },
 
     activity: {
         name: 'Активации',
+        description: 'Откровенность',
         lvl: 3
     },
 
     mirror: {
         name: 'Зеркальные',
+        description: 'Уважение',
         lvl: 2
     },
 
     identical: {
-        name: 'Тождественные',
+        name: 'Тождество',
+        description: 'Самооценка',
         lvl: 2
     },
 
     kindred: {
         name: 'Родственные',
+        description: 'Обмен мнениями',
         lvl: 2
     },
 
     semidual: {
         name: 'Полудуальные',
+        description: 'Поддержка',
         lvl: 3
     },
 
     pragmatic: {
         name: 'Деловые',
+        description: 'Сотрудничество',
         lvl: 2
     },
 
     illusionary: {
         name: 'Миражные',
+        description: 'Расслабление',
         lvl: 3
     },
 
     beneficiary: {
-        name: 'Заказа',
+        name: 'Заказчик',
+        description: 'Бессмысленность',
         lvl: 2
     },
 
     giver: {
         name: 'Подзаказный',
+        description: 'Подталкивание',
         lvl: 1
     },
 
     supervisor: {
         name: 'Ревизор',
+        description: 'Напряжение',
         lvl: 2
     },
 
     underling: {
         name: 'Подревизный',
+        description: 'Перегрузка',
         lvl: 2
     },
 
     quasidentical: {
-        name: 'Квазитождественные',
+        name: 'Квазитождество',
+        description: 'Заблуждение',
         lvl: 2
     },
 
     parallel: {
         name: 'Паралелльные',
+        description: 'Опустошение',
         lvl: 2
     },
 
     contrary: {
-        name: 'Погашения',
+        name: 'Погашение',
+        description: 'Скука',
         lvl: 1
     },
 
     superego: {
         name: 'Суперэго',
+        description: 'Переутомление',
         lvl: 1
     },
 

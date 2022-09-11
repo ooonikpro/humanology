@@ -51,29 +51,29 @@ export const SocietyCard: React.FC<Props> = (props) => {
                     ].join(' ')}
                 >
                     <div className={styles['params-line']}>
-                        <Text tag="p" size="small" color="accent">
+                        <Text tag="p" size="smaller" color="accent">
                             {text.id}
                         </Text>
-                        <Text tag="p" size="small" color="grey">
+                        <Text tag="p" size="smaller" color="grey">
                             {text.alias}
                         </Text>
                     </div>
                     <div className={styles['params-line']}>
                         <span className={styles.pair}>
                             <Tag sign={props.element} color='element' size={16}/>
-                            <Text tag="p" color="element" size="small">
+                            <Text tag="p" color="element" size="smaller">
                                 {text.element}
                             </Text>
                         </span>
                         <span className={styles.pair}>
                             <Tag sign={props.role} color='role' size={16}/>
-                            <Text tag="p" color="role" size="small">
+                            <Text tag="p" color="role" size="smaller">
                                 {text.role}
                             </Text>
                         </span>
                         <span className={styles.pair}>
                             <Tag sign={props.tarot} color='accent' size={16}/>
-                            <Text tag="p" color="accent" size="small">
+                            <Text tag="p" color="accent" size="smaller">
                                 {text.tarot}
                             </Text>
                         </span>
@@ -83,13 +83,13 @@ export const SocietyCard: React.FC<Props> = (props) => {
                             <div className={styles['params-line']}>       
                                 <span className={styles.pair}>
                                     <Tag sign={props.club} color='accent' size={16}/>
-                                    <Text tag="p" color="accent" size="small">
+                                    <Text tag="p" color="accent" size="smaller">
                                         {text.club}
                                     </Text>                                
                                 </span>
                                 <span className={styles.pair}>
                                     <Tag sign={props.psychotype} color='accent' size={16}/>
-                                    <Text tag="p" color="accent" size="small">
+                                    <Text tag="p" color="accent" size="smaller">
                                         {text.psychotype}
                                     </Text>                              
                                 </span>                            
@@ -135,7 +135,7 @@ export const SocietyCard: React.FC<Props> = (props) => {
                         {text.yungs.map((row, $i) => (
                             <Text
                                 tag="span"
-                                size="small"
+                                size="smaller"
                                 color="accent"
                                 key={$i}
                                 className={styles['footer-text']}

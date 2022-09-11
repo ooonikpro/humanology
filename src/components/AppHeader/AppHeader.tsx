@@ -17,7 +17,7 @@ export const AppHeader: React.FC<{ isShowTabs?: boolean }> = ({ isShowTabs = tru
                     className={[styles.menu, isActiveMenuRoute ? styles.active : ''].join(' ')}
                     onClick={() => goTo(ROUTES.MENU)}
                 >
-                    <Icon name="Menu" color="accent" size={24} />
+                    <Icon name="Menu" color="accent" size={32} />
                 </button>
 
                 <button
@@ -28,7 +28,7 @@ export const AppHeader: React.FC<{ isShowTabs?: boolean }> = ({ isShowTabs = tru
                 </button>
 
                 <button className={`${styles.btn} ${styles['btn-opacity-2']}`}>
-                    <Icon name="UserSquare" color="accent" size={24} />
+                    <Icon name="UserSquare" color="accent" size={32} />
                 </button>
             </div>
 

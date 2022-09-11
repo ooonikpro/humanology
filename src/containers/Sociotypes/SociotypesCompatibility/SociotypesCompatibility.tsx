@@ -9,8 +9,6 @@ import { Socionics } from 'src/types';
 
 export default function SociotypesCompatibility() {
     const { sociotypeProps: { id, intertypeRelations } } = useSociotype();
-    // eslint-disable-next-line @typescript-eslint/no-var-requires
-    const Description = require(`./text/${id}.tsx`).default;
 
     const intertypes = useMemo(() => {
         return (Object.entries(intertypeRelations) as Array<[Socionics.IntertypeRelations, Socionics.SocionicsType]>).map(([intertype, id]) => (
@@ -22,14 +20,6 @@ export default function SociotypesCompatibility() {
         <div className={styles.wrap}>
             <WhiteCard color="white">
                 <Text tag="h1" size="h4" color="accent" font="additional" className={styles.title}>Совместимость</Text>
-                <div className={styles.text}>
-                    <React.Suspense>
-                        <Description />
-                    </React.Suspense>
-                </div>
-
-                <br />
-
                 <div className={styles.intertypes}>
                     {intertypes}
                 </div>

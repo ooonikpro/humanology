@@ -15,6 +15,10 @@ export const ROUTES = {
     MENU: '/menu',
     DISCLAIMER: '/disclaimer',
     HISTORY: '/history',
+    HISTORY_CARL: '/history/carl',
+    HISTORY_KATRIN: '/history/katrin',
+    HISTORY_ANTON: '/history/anton',
+    HISTORY_AUSHRA: '/history/aushra',
     METABOLISM: '/information-metabolism',
     FUNCTIONS: '/functions',
     FUNCTIONS_ITEM: '/functions/:functionName',
@@ -188,5 +192,28 @@ export const SOCIOTYPES_LINKS = (id: string) => [
         path: `${ROUTES.SOCIOTYPES(id)}/${ROUTES.SOCIOTYPES_HUMOUR}`,
         order: 9,
         iconName: 'EmojiSadSquare'
+    },
+];
+
+export const HISTORY_LINKS = [
+    {
+        label: 'Карл ',
+        path: `${ROUTES.HISTORY_CARL}`,
+        order: 1,
+    },
+    {
+        label: 'Кэтрин и Изабель',
+        path: `${ROUTES.HISTORY_KATRIN}`,
+        order: 2,
+    },
+    {
+        label: 'Антон',
+        path: `${ROUTES.HISTORY_ANTON}`,
+        order: 3,
+    },
+    {
+        label: 'Аушра',
+        path: `${ROUTES.HISTORY_AUSHRA}`,
+        order: 4,
     },
 ];

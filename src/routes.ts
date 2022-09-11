@@ -16,6 +16,10 @@ import Menu from './containers/Menu';
 import Start from './containers/Start';
 import Disclaimer from './containers/Disclaimer';
 import History from './containers/History';
+import HistoryCarl from './containers/History/Tabs/Carl';
+import HistoryKatrin from './containers/History/Tabs/Katrin';
+import HistoryAnton from './containers/History/Tabs/Anton';
+import HistoryAushra from './containers/History/Tabs/Aushra';
 import Aspects from './containers/Aspects';
 import Blocks from './containers/Blocks';
 import BlocksItem from './containers/BlocksItem';
@@ -94,7 +98,6 @@ export const routes: Route[] = [
     },
     {
         path: ROUTES.MENU,
-        index: true,
         container: Menu
     },
     {
@@ -109,6 +112,25 @@ export const routes: Route[] = [
     {
         path: ROUTES.HISTORY,
         container: History,
+        children: [
+            {
+                path: ROUTES.HISTORY_CARL,
+                index: true,
+                container: HistoryCarl,
+            },
+            {
+                path: ROUTES.HISTORY_KATRIN,
+                container: HistoryKatrin,
+            },
+            {
+                path: ROUTES.HISTORY_ANTON,
+                container: HistoryAnton,
+            },
+            {
+                path: ROUTES.HISTORY_AUSHRA,
+                container: HistoryAushra,
+            },
+        ]
     },
     {
         path: ROUTES.ASPECTS,

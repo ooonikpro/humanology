@@ -19,7 +19,7 @@ const AspectCard: React.FC<{ aspect: Socionics.Aspect; onClick: () => void; }> =
     return (
         <div className={styles.card} onClick={onClick}>
             <Icon name={aspectIconMini} size={24} className={styles['mini-icon']}/>
-            <Icon color="accent" name={aspectIcon} className={styles['aspect-icon']} size={96}/>
+            <Icon color="accent" name={aspectIcon} className={styles['aspect-icon']} size={108}/>
             <Text tag="p" size="h4" font="additional" color="accent" className={styles['aspect-title']}>{aspectTitle}</Text>
             <Text color="accent" className={styles.subtitle}>{aspectSubtitle}</Text>
         </div>
@@ -41,7 +41,7 @@ export default function Aspects() {
                     Одна из восьми составляющих информационного потока, на которые его разделяет психика индивида для ориентации в коммуникативном пространстве.
                 </Text>
                 <Text tag="p" size="base" className={styles.text}>
-                    Необходимость восьмичленного деления информации вытекает из фундаментальной коммуникативной константы — <a href="https://ru.wikipedia.org/wiki/Магическое_число_семь_плюс-минус_два" target="_blank" rel="noreferrer">числа Миллера 7 ± 2</a> — именно столько единиц информации способна удерживать оперативная память человка одновременно.
+                    Необходимость восьмеричного деления информации вытекает из фундаментальной коммуникативной константы — <a href="https://ru.wikipedia.org/wiki/Магическое_число_семь_плюс-минус_два" target="_blank" rel="noreferrer">числа Миллера 7 ± 2</a> — именно столько единиц информации способна удерживать оперативная память человека одновременно.
                 </Text>
 
                 <Text tag="p" size="base" className={styles.text}>
@@ -49,7 +49,7 @@ export default function Aspects() {
                 </Text>
 
                 <Text tag="p" size="base" className={styles.text}>
-                    Спектр информационных аспектов прдставляет собой универсальну сетку понятий, при помощи которой поддаются анализу любые интеллектуальные, психологические и социальные явления.
+                    Спектр информационных аспектов представляет собой универсальную сетку понятий, при помощи которой поддаются анализу любые интеллектуальные, психологические и социальные явления.
                 </Text>
 
                 <Text tag="p" size="base" className={styles.text}>
@@ -83,8 +83,6 @@ export default function Aspects() {
                         </Text>
                     </div>
                 </div>
-
-                <hr/>
 
                 {
                     ASPECTS_GROUPS.map((item, $a) => {

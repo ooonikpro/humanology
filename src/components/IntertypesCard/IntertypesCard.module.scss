@@ -10,7 +10,7 @@
     &.activity,
     &.mirror,
     &.identical {
-        background-color: rgba($color-pastel-turquoise, .5);
+        background-color: rgba($color-pastel-turquoise, .25);
 
         .icon,
         .help {
@@ -22,7 +22,7 @@
     &.semidual,
     &.pragmatic,
     &.illusionary {
-        background-color: rgba($color-pastel-green, .5);
+        background-color: rgba($color-pastel-green, .25);
 
         .icon,
         .help {
@@ -34,7 +34,7 @@
     &.giver,
     &.supervisor,
     &.underling {
-        background-color: rgba($color-pastel-yellow, .5);
+        background-color: rgba($color-pastel-yellow, .25);
 
         .icon,
         .help {
@@ -46,7 +46,7 @@
     &.parallel,
     &.contrary,
     &.superego {
-        background-color: rgba($color-pastel-pink, .5);
+        background-color: rgba($color-pastel-pink, .25);
 
         .icon,
         .help {
@@ -65,7 +65,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: $spacing-4 $spacing-8;
+    padding: $spacing-20 $spacing-8;
     width: 50%;
 }
 
@@ -77,69 +77,71 @@
 
 .line {
     flex: 0;
-    margin-bottom: $spacing-12;
+    margin-bottom: $spacing-8;
 }
 
 
 .lvl {
+    align-self: flex-end;
     display: flex;
     align-items: flex-end;
     gap: $spacing-4;
     height: 1.6rem;
-    margin-bottom: $spacing-4;
+    margin-bottom: $spacing-8;
+    margin-right: $spacing-4;
 
     span {
         width: $spacing-4;
         background-color: $color-basic-accent;
         opacity: 0.1;
 
-        &:nth-child(1) {
+        &:nth-child(4) {
             height: 1.6rem;
         }
 
-        &:nth-child(2) {
+        &:nth-child(3) {
             height: 1.2rem;
         }
 
-        &:nth-child(3) {
+        &:nth-child(2) {
             height: 0.8rem;
         }
 
-        &:nth-child(4) {
+        &:nth-child(1) {
             height: 0.4rem;
         }
     }
 
     &.lvl-1 {
         span {
-            &:nth-child(4) {
-                opacity: 0.5;
+            &:nth-child(1) {
+                opacity: 0.75;
             }
         }
     }
 
     &.lvl-2 {
         span {
-            &:nth-child(4),
-            &:nth-child(3) {
-                opacity: 0.5;
+            &:nth-child(1),
+            &:nth-child(2) {
+                opacity: 0.75;
             }
         }
     }
 
     &.lvl-3 {
         span {
-            &:nth-child(4),
-            &:nth-child(3),
-            &:nth-child(2) {
-                opacity: 0.5;
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3) {
+                opacity: 0.75;
             }
         }
     }
 
     &.lvl-4 {
         span {
-            opacity: 0.5;
+            opacity: 0.75;
         }
     }
 }
@@ -148,6 +150,12 @@
     width: 50%;
 }
 
-.footnote {
-    opacity: 0.5;
+.description {
+    opacity: 0.75;
+}
+
+.icon {
+    position: absolute;
+    margin-top: 0;
+    margin-bottom: 5.6rem;
 }

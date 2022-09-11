@@ -7,7 +7,7 @@
 
 .container {
     @extend .root;
-    padding: 0 $spacing-4;
+    padding: 0 $spacing-8;
 
     @include fullscreen {
         overflow-y: scroll;

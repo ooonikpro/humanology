@@ -11,7 +11,7 @@ import { useIsActiveRoute } from 'src/hooks/useIsActiveRoute';
 interface Props {
     path: string;
     label: string;
-    icon: keyof typeof Icons;
+    icon?: keyof typeof Icons;
 }
 
 export const Tab: React.FC<Props> = ({ path, label, icon }) => {
@@ -42,12 +42,15 @@ export const Tab: React.FC<Props> = ({ path, label, icon }) => {
             className={classes}
             onClick={onClick}
         >
-            <Icon
-                className={styles.icon}
-                size={24}
-                color='accent'
-                name={icon}
-            />
+            { icon ?
+                <Icon
+                    className={styles.icon}
+                    size={24}
+                    color='accent'
+                    name={icon}
+                />
+                : ''
+            }
             {label}
         </Text>
     );
