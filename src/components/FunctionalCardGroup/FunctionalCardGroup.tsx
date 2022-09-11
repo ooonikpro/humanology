@@ -167,6 +167,7 @@ export const FunctionalCardGroup: React.FC<Props> = (props) => {
 
             <FunctionDescription
                 {...functionDescriptionData}
+                {...blockDescriptionData}
                 isOpen={isOpenFunctionModal}
                 onClose={onCloseFunctionModal}
             />

@@ -10,19 +10,17 @@ import { Socionics } from '../../types';
 import { useSwipeable } from 'react-swipeable';
 import { WhiteCard } from '../../components/WhiteCard';
 import { EndPoint } from '../../components/EndPoint';
+import { FunctionalCardRow, FunctionCardRowItem } from 'src/components/FunctionalCardRow';
 
 interface Props extends ModalProps {
     function: Socionics.Function;
     aspect: Socionics.Aspect;
+    data: FunctionCardRowItem;
     intertype: Socionics.SocionicsType;
 }
 
 export const FunctionDescription: React.FC<Props> = (props) => {
     const name = FUNCTION[props.function];
-    const aspectTitle = ASPECTS[props.aspect];
-    const aspectSubtitle = ASPECTS_LABEL[props.aspect];
-    const aspectIconMini = getIconName(`aspect-${props.aspect}-mini`);
-    const aspectIcon = getIconName(`aspect-${props.aspect}`);
     // eslint-disable-next-line @typescript-eslint/no-var-requires
     const Description = require(`./${props.function}/${props.intertype}.tsx`).default;
     const swipeableHandlers = useSwipeable({
@@ -34,32 +32,20 @@ export const FunctionDescription: React.FC<Props> = (props) => {
             <>
                 <WhiteCard color="beige-title" className={styles.root}>
                     <div className={styles.header} {...swipeableHandlers}>
-                        <TitleInfo iconSize={24} iconColor="accent" className={styles.title}>
+                        <TitleInfo
+                            className={styles.title}
+                            iconSize={24}
+                            iconColor="accent"
+                        >
                             {name} функция
                         </TitleInfo>
                     </div>
-                    <div className={styles['aspect-details']}>
-                        <Icon
-                            name={aspectIconMini}
-                            size={24}
-                            className={styles['icon-mini']}
-                        />
-                        <Icon name={aspectIcon} size={108} color="role" className={styles.aspectIcon} />
-
-                        <div className={styles['aspect-details-text']}>
-                            <Text size="h3" color="role" font="additional">
-                                {aspectTitle}
-                            </Text>
-                            <Text size="base" color="accent">{aspectSubtitle}</Text>
-                        </div>
-                        <Icon
-                            name="Help"
-                            color="accent"
-                            size={24}
-                            className={styles['icon-help']}
-                        />
-                    </div>
                     <div className={styles.body}>
+                        <FunctionalCardRow
+                            items={props.data.data}
+                            activeFunction={props.function}
+                        />
+
                         <React.Suspense>
                             <Description />
                         </React.Suspense>

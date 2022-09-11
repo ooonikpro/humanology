@@ -5,6 +5,7 @@ import {
 } from '../../components/FunctionalCard';
 import { BLOCKS } from 'src/constants/blocks';
 import styles from './FunctionalCardRow.module.scss';
+import { Socionics } from 'src/types';
 
 export interface FunctionCardRowItem {
     id: string;
@@ -14,6 +15,7 @@ export interface FunctionCardRowItem {
 
 interface Props {
     items: [Omit<CardProps, 'element'>, Omit<CardProps, 'element'>];
+    activeFunction?: CardProps['function'];
     onClickLeft?: (data: Omit<CardProps, 'element'>) => void;
     onClickRight?: (data: Omit<CardProps, 'element'>) => void;
     className?: string;
@@ -22,19 +24,24 @@ interface Props {
 export const FunctionalCardRow: React.FC<Props> = ({
     items,
     className,
-    onClickLeft = () => void 0,
-    onClickRight = () => void 0,
+    activeFunction,
+    onClickLeft,
+    onClickRight,
 }) => {
+    const isDisable = (f: Socionics.Function) => activeFunction && f !== activeFunction;
+
     return (
         <div className={[styles.root, className].join(' ')}>
             <FunctionalCard
                 {...items[0]}
-                onClick={() => onClickLeft(items[0])}
+                disabled={isDisable(items[0].function)}
+                onClick={onClickLeft ? () => onClickLeft(items[0]) : undefined}
             />
 
             <FunctionalCard
                 {...items[1]}
-                onClick={() => onClickRight(items[1])}
+                disabled={isDisable(items[1].function)}
+                onClick={onClickRight ? () => onClickRight(items[1]) : undefined}
             />
         </div>
     );

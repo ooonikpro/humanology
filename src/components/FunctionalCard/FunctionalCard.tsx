@@ -16,6 +16,7 @@ export interface Props {
     opacity?: 1 | 0.75 | 0.5;
     lvl: 1 | 2 | 3 | 4 ;
     size: 'xl' | 'l' | 'm' | 's';
+    disabled?: boolean;
     onClick?: () => void;
 }
 
@@ -27,6 +28,8 @@ export const FunctionalCard: React.FC<Props> = (props) => {
         props.outline && styles.outline,
         props.transparent && styles.transparent,
         props.striped && styles.striped,
+        props.disabled && styles.disabled,
+        props.onClick && styles.clickable
     ].join(' ');
 
     const isElementColor = props.outline || props.transparent || props.striped;
@@ -53,10 +56,12 @@ export const FunctionalCard: React.FC<Props> = (props) => {
         return new Array(props.lvl).fill(null).map((_, $i) => <span key={$i} />);
     }, [props.lvl]);
 
+    const onClick = props.onClick || (() => void(0));
+
     return (
         <div
             className={rootClasses}
-            onClick={props.onClick}
+            onClick={onClick}
         >
             {(props.striped || props.outline) && (
                 <div className={styles.stripe} />
