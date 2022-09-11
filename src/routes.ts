@@ -1,61 +1,92 @@
 import React from 'react';
 import { ROUTES } from './constants/routes';
 
+import Home from './containers/Home';
+import Sociotypes from './containers/Sociotypes';
+import SociotypesCard from './containers/Sociotypes/SociotypesCard';
+import SociotypesVideo from './containers/Sociotypes/SociotypesVideo';
+import SociotypesDescription from './containers/Sociotypes/SociotypesDescription';
+import SociotypesCompatibility from './containers/Sociotypes/SociotypesCompatibility';
+import SociotypesBusiness from './containers/Sociotypes/SociotypesBusiness';
+import SociotypesDevelopment from './containers/Sociotypes/SociotypesDevelopment';
+import SociotypesStories from './containers/Sociotypes/SociotypesStories';
+import SociotypesPeople from './containers/Sociotypes/SociotypesPeople';
+import SociotypesHumour from './containers/Sociotypes/SociotypesHumour';
+import Menu from './containers/Menu';
+import Start from './containers/Start';
+import Disclaimer from './containers/Disclaimer';
+import History from './containers/History';
+import Aspects from './containers/Aspects';
+import Blocks from './containers/Blocks';
+import BlocksItem from './containers/BlocksItem';
+import Suits from './containers/Suits';
+import SuitsCard from './containers/SuitsCard';
+import SuitsTarot from './containers/SuitsTarot';
+import Functions from './containers/Functions';
+import FunctionsItem from './containers/FunctionsItem';
+import Metabolism from './containers/Metabolism';
+import Quadras from './containers/Quadras';
+import Relationships from './containers/Relationships';
+import RelationshipsItem from './containers/RelationshipsItem';
+import Minds from './containers/Minds';
+import Clubs from './containers/Clubs';
+import ReininSigns from './containers/ReininSigns';
+import DichotomiesYung from './containers/DichotomiesYung';
+import Other from './containers/Other';
+
 export interface Route {
     path: string;
     index?: boolean;
-    container: () => Promise<{
-        default: React.ComponentType<{ children?: React.ReactChild[] }>;
-    }>;
+    container: React.ComponentType<{ children?: React.ReactChild[] }>;
     children?: Route[];
 }
 
 export const routes: Route[] = [
     {
         path: ROUTES.HOME, // /types
-        container: () => import('./containers/Home'),
+        container: Home,
         children: [
             {
                 path: ROUTES.SOCIOTYPES(), // /types/:id
-                container: () => import('./containers/Sociotypes'),
+                container: Sociotypes,
                 children: [
                     {
                         path: ROUTES.SOCIOTYPES_CARD,
                         index: true,
-                        container: () => import('./containers/Sociotypes/SociotypesCard'),
+                        container: SociotypesCard,
                     },
                     {
                         path: ROUTES.SOCIOTYPES_VIDEO,
                         index: true,
-                        container: () => import('./containers/Sociotypes/SociotypesVideo'),
+                        container: SociotypesVideo,
                     },
                     {
                         path: ROUTES.SOCIOTYPES_DESCRIPTION,
-                        container: () => import('./containers/Sociotypes/SociotypesDescription'),
+                        container: SociotypesDescription,
                     },
                     {
                         path: ROUTES.SOCIOTYPES_COMPATIBILITY,
-                        container: () => import('./containers/Sociotypes/SociotypesCompatibility'),
+                        container: SociotypesCompatibility,
                     },
                     {
                         path: ROUTES.SOCIOTYPES_BUSINESS,
-                        container: () => import('./containers/Sociotypes/SociotypesBusiness'),
+                        container: SociotypesBusiness,
                     },
                     {
                         path: ROUTES.SOCIOTYPES_DEVELOPMENT,
-                        container: () => import('./containers/Sociotypes/SociotypesDevelopment'),
+                        container: SociotypesDevelopment,
                     },
                     {
                         path: ROUTES.SOCIOTYPES_STORIES,
-                        container: () => import('./containers/Sociotypes/SociotypesStories'),
+                        container: SociotypesStories,
                     },
                     {
                         path: ROUTES.SOCIOTYPES_PEOPLE,
-                        container: () => import('./containers/Sociotypes/SociotypesPeople'),
+                        container: SociotypesPeople,
                     },
                     {
                         path: ROUTES.SOCIOTYPES_HUMOUR,
-                        container: () => import('./containers/Sociotypes/SociotypesHumour'),
+                        container: SociotypesHumour,
                     },
                 ],
             },
@@ -64,87 +95,87 @@ export const routes: Route[] = [
     {
         path: ROUTES.MENU,
         index: true,
-        container: () => import('./containers/Menu')
+        container: Menu
     },
     {
         path: ROUTES.START,
         index: true,
-        container: () => import('./containers/Start')
+        container: Start,
     },
     {
         path: ROUTES.DISCLAIMER,
-        container: () => import('./containers/Disclaimer'),
+        container: Disclaimer,
     },
     {
         path: ROUTES.HISTORY,
-        container: () => import('./containers/History'),
+        container: History,
     },
     {
         path: ROUTES.ASPECTS,
-        container: () => import('./containers/Aspects'),
+        container: Aspects,
     },
     {
         path: ROUTES.BLOCKS,
-        container: () => import('./containers/Blocks'),
+        container: Blocks
     },
     {
         path: ROUTES.BLOCKS_ITEM,
-        container: () => import('./containers/BlocksItem'),
+        container: BlocksItem,
     },
     {
         path: ROUTES.SUITS,
-        container: () => import('./containers/Suits'),
+        container: Suits,
     },
     {
         path: ROUTES.SUITS_CARD(),
-        container: () => import('./containers/SuitsCard')
+        container: SuitsCard,
     },
     {
         path: ROUTES.SUITS_TAROT(),
-        container: () => import('./containers/SuitsTarot')
+        container: SuitsTarot
     },
     {
         path: ROUTES.FUNCTIONS,
-        container: () => import('./containers/Functions'),
+        container: Functions,
     },
     {
         path: ROUTES.FUNCTIONS_ITEM,
-        container: () => import('./containers/FunctionsItem'),
+        container: FunctionsItem,
     },
     {
         path: ROUTES.METABOLISM,
-        container: () => import('./containers/Metabolism'),
+        container: Metabolism,
     },
     {
         path: ROUTES.QUADRAS,
-        container: () => import('./containers/Quadras'),
+        container: Quadras,
     },
     {
         path: ROUTES.RELATIONSHIPS,
-        container: () => import('./containers/Relationships'),
+        container: Relationships,
     },
     {
         path: ROUTES.RELATIONSHIPS_ITEM,
-        container: () => import('./containers/RelationshipsItem'),
+        container: RelationshipsItem,
     },
     {
         path: ROUTES.MINDSETS,
-        container: () => import('./containers/Minds')
+        container: Minds,
     },
     {
         path: ROUTES.CLUBS,
-        container: () => import('./containers/Clubs')
+        container: Clubs
     },
     {
         path: ROUTES.REININ,
-        container: () => import('./containers/ReininSigns')
+        container: ReininSigns
     },
     {
         path: ROUTES.YUNG,
-        container: () => import('./containers/DichotomiesYung')
+        container: DichotomiesYung
     },
     {
         path: ROUTES.OTHER,
-        container: () => import('./containers/Other')
+        container: Other
     }
 ];

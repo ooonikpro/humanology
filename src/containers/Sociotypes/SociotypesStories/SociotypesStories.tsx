@@ -8,7 +8,8 @@ import styles from './SociotypesStories.module.scss';
 export default function SociotypesStories() {
     const params = useParams();
     const id = params.id?.toUpperCase() as Socionics.SocionicsType;
-    const Description = React.lazy(() => import(`./text/${id}.tsx`));
+    // eslint-disable-next-line @typescript-eslint/no-var-requires
+    const Description = require(`./text/${id}.tsx`).default;
 
     return (
         <div className={styles.wrap}>

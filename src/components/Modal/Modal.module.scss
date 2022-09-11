@@ -3,7 +3,7 @@
 .root {
     position: fixed;
     justify-content: center;
-    top: 0;
+    top: $spacing-40;
     right: 0;
     bottom: 0;
     left: 0;
@@ -17,12 +17,6 @@
 
         .container {
             transform: translateY(0);
-        }
-    }
-
-    &.lvl_1 {
-        .container {
-            top: $spacing-40;
         }
     }
 

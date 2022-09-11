@@ -11,12 +11,12 @@
     "scope": "/",
     "icons": [
         {
-            "src": "assets/favicon.svg",
+            "src": "https://humanology.app/public/favicon.svg",
             "sizes": "any",
             "type": "image/svg"
         },
         {
-            "src": "assets/touch-icon.png",
+            "src": "https://humanology.app/public/touch-icon.png",
             "sizes": "512x512",
             "type": "image/png"
         }

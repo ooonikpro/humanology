@@ -23,7 +23,8 @@ export const FunctionDescription: React.FC<Props> = (props) => {
     const aspectSubtitle = ASPECTS_LABEL[props.aspect];
     const aspectIconMini = getIconName(`aspect-${props.aspect}-mini`);
     const aspectIcon = getIconName(`aspect-${props.aspect}`);
-    const Description = React.lazy(() => import(`./${props.function}/${props.intertype}.tsx`));
+    // eslint-disable-next-line @typescript-eslint/no-var-requires
+    const Description = require(`./${props.function}/${props.intertype}.tsx`).default;
     const swipeableHandlers = useSwipeable({
         onSwipedDown: props.onClose
     });

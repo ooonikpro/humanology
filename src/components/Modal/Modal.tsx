@@ -63,7 +63,7 @@ export const Modal: React.FC<Props> = ({ isOpen, render, onClose }) => {
     const rootClasses = [
         styles.root,
         animate ? styles.open : '',
-        styles[`lvl_${openedModals.length - 1}`]
+        styles[`lvl_${openedModals.length}`]
     ].join(' ');
 
     useEffect(() => {
