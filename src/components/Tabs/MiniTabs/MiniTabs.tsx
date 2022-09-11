@@ -1,5 +1,4 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
 import { HISTORY_LINKS } from 'src/constants/routes';
 import { Tab } from '../../Tab/Tab';
 import styles from './MiniTabs.module.scss';
