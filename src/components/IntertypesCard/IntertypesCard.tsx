@@ -25,8 +25,7 @@ export const IntertypesCard: React.FC<Props> = ({ id, intertype }) => {
         <div className={classNames}>
             <div className={styles.intertype}>
                 <Icon name="Help" size={24}  className={styles.help}/>
-                {/*{getIconName(intertype)}*/}
-                <Icon name="Parallel" size={108} className={styles.icon} />
+                <Icon name={getIconName(intertype)} size={128} className={styles.icon} />
 
                 <div className={[styles.lvl, styles[`lvl-${info.lvl}`]].join(' ')}>
                     { new Array(4).fill(undefined).map((i) => <span key={i} />) }

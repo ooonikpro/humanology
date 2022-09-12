@@ -24,7 +24,7 @@ export { default as AspectTime } from './AspectTime';
 export { default as AspectWillMini } from './AspectWillMini';
 export { default as AspectWill } from './AspectWill';
 export { default as Atom } from './Atom';
-export { default as Benefeciary } from './Benefeciary';
+export { default as Beneficiary } from './Beneficiary';
 export { default as Book } from './Book';
 export { default as Bookmark } from './Bookmark';
 export { default as BriefcaseAlt } from './BriefcaseAlt';
