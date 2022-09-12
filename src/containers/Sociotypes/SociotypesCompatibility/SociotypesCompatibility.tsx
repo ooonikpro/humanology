@@ -8,7 +8,7 @@ import { Socionics } from 'src/types';
 
 
 export default function SociotypesCompatibility() {
-    const { sociotypeProps: { id, intertypeRelations } } = useSociotype();
+    const { sociotypeProps: { intertypeRelations } } = useSociotype();
 
     const intertypes = useMemo(() => {
         return (Object.entries(intertypeRelations) as Array<[Socionics.IntertypeRelations, Socionics.SocionicsType]>).map(([intertype, id]) => (
