@@ -115,7 +115,6 @@ export const routes: Route[] = [
         children: [
             {
                 path: ROUTES.HISTORY_CARL,
-                index: true,
                 container: HistoryCarl,
             },
             {
