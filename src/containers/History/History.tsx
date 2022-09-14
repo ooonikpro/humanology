@@ -4,7 +4,7 @@ import { WhiteCard } from '../../components/WhiteCard';
 import { Text } from '../../components/Text';
 import { EndPoint } from '../../components/EndPoint';
 import { MiniTabs } from '../../components/Tabs/MiniTabs/MiniTabs';
-import { Outlet, useHref, useLocation, useMatch, useNavigate } from 'react-router-dom';
+import { Outlet, useNavigate } from 'react-router-dom';
 import { ROUTES } from 'src/constants/routes';
 import { useIsActiveRoute } from 'src/hooks';
 

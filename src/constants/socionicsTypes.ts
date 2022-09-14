@@ -53,7 +53,7 @@ export const SOCIOTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         intertypeRelations: {
             dual : 'ISFP',
             identical : 'ENTP',
-            activity : 'ESFP',
+            activity : 'ESFJ',
             mirror : 'INTJ',
             kindred : 'ENFP',
             semidual: 'ISTP',
