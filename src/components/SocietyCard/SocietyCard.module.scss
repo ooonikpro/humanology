@@ -141,9 +141,13 @@
 .footer {
     display: flex;
     flex-wrap: wrap;
+    @media (max-width: 400px) {
+        width: 50%;
+    }
     margin-top: -$spacing-4;
     margin-bottom: $spacing-8;
-    gap: $spacing-8;
+    row-gap: $spacing-2;
+    column-gap: $spacing-8;
 
     &-text {
         opacity: 0.75;

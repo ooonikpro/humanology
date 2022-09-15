@@ -12,7 +12,7 @@
 }
 
 .title {
-    display: sticky;
+    position: sticky;
     padding-top: $spacing-4;
 }
 
@@ -28,4 +28,9 @@
     h2 {
         margin-bottom: $spacing-12;
     }
+}
+.labels {
+    position: relative;
+    margin-left: $spacing-12;
+    opacity: 0.5;
 }

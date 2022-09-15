@@ -2,6 +2,7 @@ import React from 'react';
 import { Text } from '../../../components/Text';
 import { AuthorLine } from '../../../components/AuthorLine';
 import styles from '../History.module.scss';
+import { BlockLink } from '../../../components/BlockLink';
 
 export default function Anton() {
     return (
@@ -69,6 +70,8 @@ export default function Anton() {
             <Text tag="p" size="base" color="accent">
                 Аналогии между энергетическим метаболизмом и информационным подтверждает верность известного выражения «психическое несварение»…
             </Text>
+
+            <BlockLink path="/history/aushra" label="Дальше: Аушра Аугустинавичюте" icon="ArrowRightSquare" />
         </>
     );
 }

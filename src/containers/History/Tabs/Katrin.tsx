@@ -2,6 +2,7 @@ import React from 'react';
 import { Text } from '../../../components/Text';
 import { AuthorLine } from '../../../components/AuthorLine';
 import styles from '../History.module.scss';
+import { BlockLink } from '../../../components/BlockLink';
 
 export default function Katrin() {
     return (
@@ -103,6 +104,8 @@ export default function Katrin() {
             <Text tag="p" size="base" color="accent">
                 MBTI подвергается критике со стороны некоторых, кто утверждает, что Бриггс разработала оценку у себя дома до проведения каких-либо обширных научных исследований, а не наоборот.
             </Text>
+
+            <BlockLink path="/history/anton" label="Дальше: Антон Кемпинский" icon="ArrowRightSquare" />
         </>
     );
 }

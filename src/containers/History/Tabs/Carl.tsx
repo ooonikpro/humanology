@@ -2,6 +2,7 @@ import React from 'react';
 import { Text } from '../../../components/Text';
 import { AuthorLine } from '../../../components/AuthorLine';
 import styles from '../History.module.scss';
+import { BlockLink } from '../../../components/BlockLink';
 
 export default function Carl() {
     return (
@@ -92,6 +93,8 @@ export default function Carl() {
                 Равномерная сознательность и бессознательность функций есть, следовательно, признак примитивного
                 состояния духа.
             </Text>
+
+            <BlockLink path="/history/katrin" label="Дальше: Кэтрин и Изабель Бриггс" icon="ArrowRightSquare" />
         </>
     );
 }

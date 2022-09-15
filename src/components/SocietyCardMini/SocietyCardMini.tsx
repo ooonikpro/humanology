@@ -4,12 +4,12 @@ import { Portrait } from '../Portrait';
 import { Socionics } from '../../types';
 import { QUADRAS } from '../../constants/natureElements';
 import { ROLE } from '../../constants/role';
-import { WhiteCard } from '../../components/WhiteCard';
-import { getIconName, Icon } from '../../components/Icon';
-import { Text } from '../../components/Text';
+import { WhiteCard } from '../WhiteCard';
+import { getIconName, Icon } from '../Icon';
+import { Text } from '../Text';
 import { useColorRole } from '../../hooks';
-import { CircleQuadra } from '../../components/CircleQuadra';
-import { Tag } from '../../components/Tag';
+import { CircleQuadra } from '../CircleQuadra';
+import { Tag } from '../Tag';
 
 type Props = Socionics.IntertypeProp & {
     id: Socionics.SocionicsType;
@@ -71,7 +71,7 @@ export const SocietyCardMini: React.FC<Props> = (props) => {
                     </span>
                 </span>
                 <span className={styles['id-alias']}>
-                    <Text tag="p" size="smaller" color="grey">
+                    <Text tag="p" size="smaller" color="grey" className={styles.alias}>
                         {props.alias}
                     </Text>
                     <Text tag="p" size="smaller" color="accent">

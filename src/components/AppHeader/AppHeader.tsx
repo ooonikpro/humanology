@@ -21,10 +21,10 @@ export const AppHeader: React.FC<{ isShowTabs?: boolean }> = ({ isShowTabs = tru
                 </button>
 
                 <button
-                    className={`${styles.btn} ${styles['btn-opacity-5']}`}
+                    className={`${styles.btn} ${styles['btn-opacity-2']}`}
                     onClick={() => goTo(ROUTES.HOME)}
                 >
-                    <Icon name="Logo" color="accent" size={24} />
+                    <Icon name="Logo" color="accent" size={28} />
                 </button>
 
                 <button className={`${styles.btn} ${styles['btn-opacity-2']}`}>
