@@ -4,6 +4,7 @@ import { WhiteCard } from '../../components/WhiteCard';
 import { Text } from '../../components/Text';
 import { AuthorLine } from '../../components/AuthorLine';
 import { EndPoint } from '../../components/EndPoint';
+import { BlockLink } from '../../components/BlockLink';
 
 export default function Blocks() {
     return (
@@ -22,6 +23,9 @@ export default function Blocks() {
                     на его поведение, обозначает определенные признаки характера и побуждает принимать соответствующее
                     только ему решение.
                 </Text>
+
+                <BlockLink path="/functions" label="Функции" icon="Square5" />
+
                 <EndPoint />
             </WhiteCard>
         </div>

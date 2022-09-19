@@ -7,7 +7,7 @@ import { TextInline } from 'src/components/TextInline';
 import { TitleInfo } from 'src/components/TitleInfo';
 import { AuthorLine } from '../../components/AuthorLine';
 import { EndPoint } from '../../components/EndPoint';
-import { FUNCTION, FUNCTION_LABELS, FUNCTION_KEYWORDS, FUNCTION_INTRO, FUNCTION_DESCRIPTION } from '../../constants/functions';
+import { BlockLink } from '../../components/BlockLink';
 
 interface IData {
     function: Socionics.Function;
@@ -105,16 +105,23 @@ export default function Functions() {
                     Каждая функция работает с определенным аспектом жизни.
                 </Text>
 
-                <Text tag="p" className={styles.text}>Каждая функция психики человека влияет на его поведение, обозначает определенные признаки характера и побуждает принимать соответствующее только ему решение.
+                <Text tag="p" className={styles.text}>
+                    Каждая функция психики человека влияет на его поведение, обозначает определенные признаки характера и побуждает принимать соответствующее только ему решение.
                 </Text>
 
+                <Text tag="p" className={styles.text}>
+                    Невозможно рассматривать функции, отдельно от колец и блоков.
+                </Text>
+
+                <BlockLink path="/blocks" label="Блоки и кольца функций" icon="Square6" />
+
                 <hr />
-                
+
                 {
                     DATA.map((item, $itemKey) => (
                         <div className={styles.functionDetailCard} key={$itemKey}>
                             <TitleInfo align="start" render={() => (
-                                <img src={require(`../../assets/simpleFunctions/${item.function}-example.svg`)} alt="Функция" className={styles.function}/>
+                                <img src={require(`../../assets/simpleFunctions/${item.function}-example.svg`)} alt="Функция" className={styles.function} />
                             )} />
 
                             <TextInline className={styles.labels}>

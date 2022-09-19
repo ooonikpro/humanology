@@ -5,7 +5,8 @@
     flex-direction: column;
     gap: $spacing-4;
 
-    p, hr {
+    p,
+    hr {
         margin-bottom: $spacing-12;
     }
 
@@ -26,4 +27,12 @@
 
 .ul {
     list-style-image: url("../../assets/bullet.svg");
+}
+
+a {
+    color: rgba($color-basic-accent, 1);
+}
+
+a:hover {
+    color: rgba($color-basic-accent, 0.8)
 }
