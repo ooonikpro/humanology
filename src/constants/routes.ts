@@ -25,6 +25,7 @@ export const ROUTES = {
     BLOCKS: '/blocks',
     BLOCKS_ITEM: '/blocks/:blockName',
     ASPECTS: '/aspects',
+    ASPECT: '/aspects/:aspectName',
     SUITS: '/suits',
     SUITS_CARD: (cardName = ':cardName') => `/suits/card/${cardName}`,
     SUITS_TAROT: (tarotName = ':tarotName') => `/suits/tarot/${tarotName}`,

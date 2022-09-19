@@ -1,0 +1,11 @@
+@import '../../styles/utils';
+
+.root {
+  background: rgba($color-basic-beige, 0.5);
+  padding: $spacing-8;
+  margin-top: $spacing-8;
+}
+
+.labels {
+  margin-top: $spacing-16;
+}

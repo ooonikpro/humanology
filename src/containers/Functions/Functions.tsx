@@ -7,6 +7,7 @@ import { TextInline } from 'src/components/TextInline';
 import { TitleInfo } from 'src/components/TitleInfo';
 import { AuthorLine } from '../../components/AuthorLine';
 import { EndPoint } from '../../components/EndPoint';
+import { FUNCTION, FUNCTION_LABELS, FUNCTION_KEYWORDS, FUNCTION_INTRO, FUNCTION_DESCRIPTION } from '../../constants/functions';
 
 interface IData {
     function: Socionics.Function;

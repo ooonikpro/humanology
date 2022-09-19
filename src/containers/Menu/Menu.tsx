@@ -96,6 +96,58 @@ const Kids = [
     ['ESTJ', 'male', 'INFJ', 'female', 'ENFP', 'female'],
 ];
 
+const Intertype = [
+    'Dual',
+    'Activity',
+    'Mirror',
+    'Identical',
+    'Kindred',
+    'Semidual',
+    'Pragmatic',
+    'Illusionary',
+    'Beneficiary',
+    'Giver',
+    'Supervisor',
+    'Underling',
+    'Quasidentical',
+    'Parallel',
+    'Contrary',
+    'Superego',
+];
+
+const Aspect = [
+    'AspectBusiness',
+    'AspectLogic',
+    'AspectEmotions',
+    'AspectPeople',
+    'AspectWill',
+    'AspectComfort',
+    'AspectIdeas',
+    'AspectTime',
+];
+
+const RandomIntertype = () => {
+
+    return (
+        <>
+            <Icon size={64} color="accent" name={getRandomIndex(Intertype)} className={styles.icon1} />
+            <Icon size={48} color="accent" name={getRandomIndex(Intertype)} className={styles.icon2} />
+            <Icon size={40} color="accent" name={getRandomIndex(Intertype)} className={styles.icon3} />
+        </>
+    );
+};
+
+const RandomAspect = () => {
+
+    return (
+        <>
+            <Icon size={48} color="accent" name={getRandomIndex(Aspect)} className={styles.icon1}/>
+            <Icon size={40} color="accent" name={getRandomIndex(Aspect)} className={styles.icon2}/>
+            <Icon size={32} color="accent" name={getRandomIndex(Aspect)} className={styles.icon3}/>
+        </>
+    );
+};
+
 const RandomKids = () => {
     const ids: [Socionics.SocionicsType, Socionics.Gender, Socionics.SocionicsType, Socionics.Gender, Socionics.SocionicsType, Socionics.Gender] = getRandomIndex(Kids);
 
@@ -148,9 +200,7 @@ export default function Menu() {
                     <Icon size={24} className={styles.icon} color="accent" name="Square2" />
                     <Text size="smaller" color="accent">Интертипные отношения</Text>
                     <div className={styles.iconCascadeIntertype}>
-                        <Icon size={64} color="accent" name="Kindred" className={styles.icon1} />
-                        <Icon size={48} color="accent" name="Illusionary" className={styles.icon2} />
-                        <Icon size={40} color="accent" name="Parallel" className={styles.icon3} />
+                        <RandomIntertype />
                     </div>
                 </MenuItem>
             </div>
@@ -201,9 +251,7 @@ export default function Menu() {
                     <Icon size={24} className={styles.icon} color="accent" name="Square4" />
                     <Text size="smaller" color="accent">Аспекты</Text>
                     <div className={styles.iconCascade}>
-                        <Icon size={48} color="accent" name="AspectComfort" className={styles.icon1}/>
-                        <Icon size={40} color="accent" name="AspectPeople" className={styles.icon2}/>
-                        <Icon size={32} color="accent" name="AspectIdeas" className={styles.icon3}/>
+                        <RandomAspect />
                     </div>
                 </MenuItem>
 

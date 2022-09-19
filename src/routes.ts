@@ -21,6 +21,7 @@ import HistoryKatrin from './containers/History/Tabs/Katrin';
 import HistoryAnton from './containers/History/Tabs/Anton';
 import HistoryAushra from './containers/History/Tabs/Aushra';
 import Aspects from './containers/Aspects';
+import AspectItem from './containers/AspectItem';
 import Blocks from './containers/Blocks';
 import BlocksItem from './containers/BlocksItem';
 import Suits from './containers/Suits';
@@ -134,6 +135,10 @@ export const routes: Route[] = [
     {
         path: ROUTES.ASPECTS,
         container: Aspects,
+    },
+    {
+        path: ROUTES.ASPECT,
+        container: AspectItem,
     },
     {
         path: ROUTES.BLOCKS,
