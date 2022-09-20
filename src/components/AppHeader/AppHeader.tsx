@@ -32,7 +32,7 @@ export const AppHeader: React.FC<{ isShowTabs?: boolean }> = ({ isShowTabs = tru
                 </button>
             </div>
 
-            <hr className={styles.hr}/>
+            <hr className={styles.hr} />
 
             {
                 isShowTabs && !isActiveMenuRoute && (

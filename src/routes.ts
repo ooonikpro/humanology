@@ -137,7 +137,7 @@ export const routes: Route[] = [
         container: Aspects,
     },
     {
-        path: ROUTES.ASPECT,
+        path: ROUTES.ASPECT(),
         container: AspectItem,
     },
     {
@@ -165,7 +165,7 @@ export const routes: Route[] = [
         container: Functions,
     },
     {
-        path: ROUTES.FUNCTIONS_ITEM,
+        path: ROUTES.FUNCTIONS_ITEM(),
         container: FunctionsItem,
     },
     {

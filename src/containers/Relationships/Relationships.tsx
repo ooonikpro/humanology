@@ -4,7 +4,6 @@ import { WhiteCard } from '../../components/WhiteCard';
 import { Text } from '../../components/Text';
 import { AuthorLine } from '../../components/AuthorLine';
 import { EndPoint } from '../../components/EndPoint';
-import { DetailCard } from '../../components/DetailCard';
 
 export default function Relationships() {
     return (
@@ -42,7 +41,7 @@ export default function Relationships() {
                     в неблагоприятных отношениях будет
                     на порядок выше, чем в благоприятных.
                 </Text>
-                <DetailCard path="#" label="Что-то там" />
+
                 <EndPoint />
             </WhiteCard>
         </div>
