@@ -199,3 +199,5 @@ export type Tabs = {
     order: number;
     iconName: keyof typeof Icons;
 };
+
+export type UnixDate = string; // mm/dd/yyyy

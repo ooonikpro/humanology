@@ -5,9 +5,17 @@ import { useColorRole } from './useColorRole';
 import { useColorRoleDual } from './useColorRoleDual';
 import { useParams } from 'react-router-dom';
 
-export const useSociotype = () => {
-    const params = useParams();
-    const id = params.id?.toUpperCase() as Socionics.SocionicsType;
+export const useSociotype = (socionicType?: Socionics.SocionicsType) => {
+    let id;
+
+    if (!socionicType) {
+        const params = useParams();
+        id = params.id?.toUpperCase() as Socionics.SocionicsType;
+    } else {
+        id = socionicType;
+    }
+
+
     const sociotypeProps: Socionics.IntertypeProp & { id: Socionics.SocionicsType } = {
         id,
         ...SOCIOTYPES[id],
