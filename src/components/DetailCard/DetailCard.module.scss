@@ -1,9 +1,14 @@
 @import '../../styles/utils';
 
-.root {
+a.root {
   background: rgba($color-basic-accent, 0.05);
   padding: $spacing-8;
   margin-top: $spacing-8;
+  text-decoration: none;
+
+  a {
+    text-decoration: none;
+  }
 }
 
 .labels {
