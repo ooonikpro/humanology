@@ -23,7 +23,6 @@ module.exports = {
         'react/jsx-uses-react': 'error',
         'react/jsx-uses-vars': 'error',
         indent: ['error', 4],
-        'linebreak-style': [1, 'unix'],
         quotes: ['error', 'single'],
         semi: ['error', 'always'],
         'object-curly-spacing': ['error', 'always', { objectsInObjects: true }],
