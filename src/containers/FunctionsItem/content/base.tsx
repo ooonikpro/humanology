@@ -1,5 +1,5 @@
-export default function Base () {
+export default function Base() {
     return (
-        <div>Base function</div>
+        <div>Базовая функция</div>
     );
 }

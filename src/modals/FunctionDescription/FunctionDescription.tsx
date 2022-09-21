@@ -26,31 +26,29 @@ export const FunctionDescription: React.FC<Props> = (props) => {
 
     const render = () => {
         return (
-            <>
-                <WhiteCard color="beige-title" className={styles.root}>
-                    <div className={styles.header} {...swipeableHandlers}>
-                        <TitleInfo
-                            className={styles.title}
-                            iconSize={24}
-                            iconColor="accent"
-                        >
-                            {name} функция
-                        </TitleInfo>
-                    </div>
-                    <div className={styles.body}>
-                        <FunctionalCardRow
-                            items={props.data.data}
-                            activeFunction={props.function}
-                        />
+            <WhiteCard color="beige-title" className={styles.root}>
+                <div className={styles.header} {...swipeableHandlers}>
+                    <TitleInfo
+                        className={styles.title}
+                        iconSize={24}
+                        iconColor="accent"
+                    >
+                        {name} функция
+                    </TitleInfo>
+                </div>
+                <div className={styles.body}>
+                    <FunctionalCardRow
+                        items={props.data.data}
+                        activeFunction={props.function}
+                    />
 
-                        <React.Suspense>
-                            <Description />
-                        </React.Suspense>
+                    <React.Suspense>
+                        <Description />
+                    </React.Suspense>
 
-                        <EndPoint />
-                    </div>
-                </WhiteCard>
-            </>
+                    <EndPoint />
+                </div>
+            </WhiteCard>
         );
     };
 

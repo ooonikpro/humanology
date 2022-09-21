@@ -9,6 +9,7 @@ import { useIsActiveRoute } from 'src/hooks';
 export const AppHeader: React.FC<{ isShowTabs?: boolean }> = ({ isShowTabs = true }) => {
     const goTo = useNavigate();
     const isActiveMenuRoute = useIsActiveRoute(ROUTES.MENU);
+    const isActiveHomeRoute = useIsActiveRoute(ROUTES.HOME);
 
     return (
         <header className={styles.root}>
@@ -21,13 +22,13 @@ export const AppHeader: React.FC<{ isShowTabs?: boolean }> = ({ isShowTabs = tru
                 </button>
 
                 <button
-                    className={`${styles.btn} ${styles['btn-opacity-2']}`}
+                    className={[styles.home, isActiveHomeRoute ? styles.active : ''].join(' ')}
                     onClick={() => goTo(ROUTES.HOME)}
                 >
                     <Icon name="Logo" color="accent" size={28} />
                 </button>
 
-                <button className={`${styles.btn} ${styles['btn-opacity-2']}`}>
+                <button className={styles.profile}>
                     <Icon name="UserSquare" color="accent" size={32} />
                 </button>
             </div>

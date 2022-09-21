@@ -1,16 +1,18 @@
 @import '../../styles/utils';
 
-a.root {
-  background: rgba($color-basic-accent, 0.05);
+.root {
+  background: rgba($color-basic-beige, 0.5);
   padding: $spacing-8;
   margin-top: $spacing-8;
   text-decoration: none;
+  cursor: pointer;
 
   a {
     text-decoration: none;
   }
 }
 
-.labels {
-  margin-top: $spacing-16;
+.tags {
+  margin-top: $spacing-12;
+  opacity: 0.75;
 }

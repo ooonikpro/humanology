@@ -1,11 +1,12 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import { PeopleCard } from 'src/components/PeopleCard';
-import { Text } from 'src/components/Text';
-import { WhiteCard } from 'src/components/WhiteCard';
-import { Socionics } from 'src/types';
+import { PeopleCard } from '../../../components/PeopleCard';
+import { Text } from '../../../components/Text';
+import { WhiteCard } from '../../../components/WhiteCard';
+import { Socionics } from '../../../types';
 import styles from './SociotypesPeople.module.scss';
-import { PEOPLE } from 'src/constants/people';
+import { PEOPLE } from '../../../constants/people';
+import { EndPoint } from '../../../components/EndPoint';
 
 export default function SociotypesPeople() {
     const params = useParams();
@@ -17,13 +18,14 @@ export default function SociotypesPeople() {
         <div className={styles.wrap}>
             <WhiteCard color="white">
                 <Text tag="h1" size="h4" color="accent" font="additional" className={styles.title}>Люди</Text>
-                <div className={styles.text}>
+                <div className={styles.people}>
                     {
                         people.map((item, $index) => (
-                            <PeopleCard {...item} key={$index}/>
+                            <PeopleCard {...item} key={$index} />
                         ))
                     }
                 </div>
+                <EndPoint />
             </WhiteCard>
         </div>
     );

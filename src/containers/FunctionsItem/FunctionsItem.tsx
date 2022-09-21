@@ -11,7 +11,6 @@ export default function FunctionsItem() {
     return (
         <div className={styles.root}>
             FunctionsItem
-
             <Content />
         </div>
     );

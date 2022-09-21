@@ -1,11 +1,10 @@
-import React, { useCallback } from 'react';
+import React from 'react';
 import { Text } from '../Text';
 import styles from './DetailCard.module.scss';
-import * as Icons from '../Icon/icons';
 import { TitleInfo } from '../TitleInfo';
 import { TextInline } from '../TextInline';
 import { getIconName, Icon } from '../Icon';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { Socionics } from 'src/types';
 import { ROUTES } from 'src/constants/routes';
 
@@ -56,7 +55,7 @@ export const DetailCard: React.FC<DetailCardProps> = ({
         }
 
         if (icon) {
-            return <Icon name={getIconName(icon)} size={72}/>;
+            return <Icon name={getIconName(icon)} size={72} />;
         }
 
         return null;
@@ -66,7 +65,7 @@ export const DetailCard: React.FC<DetailCardProps> = ({
 
     return (
         <div className={rootClasses} onClick={goTo}>
-            <TitleInfo align="start" render={renderTitleInfoChild}/>
+            <TitleInfo align="start" render={renderTitleInfoChild} />
 
             <Text tag="h4" size="h4" className={styles.text}>
                 {title}
@@ -75,7 +74,7 @@ export const DetailCard: React.FC<DetailCardProps> = ({
             <TextInline className={styles.tags}>
                 {
                     tags.map((tag, $tagKey) => (
-                        <Text color="grey" size="smaller" key={$tagKey}>
+                        <Text color="accent" size="smaller" key={$tagKey}>
                             {tag}
                         </Text>
                     ))

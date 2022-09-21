@@ -29,27 +29,28 @@
     opacity: 0.5;
 }
 
-.btn {
-    width: $size-header-section-height;
-    height: $size-header-section-height;
-    color: inherit;
-
-    &-opacity-2 {
-        opacity: 0.25;
-    }
-
-    &-opacity-5 {
-        opacity: 0.5;
-    }
-}
-
-.menu {
-    opacity: 0.5;
+.home {
+    opacity: 0.25;
 
     @include transition(opacity);
 
     &.active {
-        opacity: 1;
+        opacity: 0.75;
+    }
+}
+
+.profile {
+    opacity: 0.25;
+    cursor: default;
+}
+
+.menu {
+    opacity: 0.25;
+
+    @include transition(opacity);
+
+    &.active {
+        opacity: 0.75;
     }
 }
 
@@ -65,14 +66,14 @@
 }
 
 .pair-icons {
-    width:fit-content;
+    width: fit-content;
     display: flex;
     flex-direction: row;
     gap: $spacing-12;
 }
 
 .pair-icon-text {
-    width:fit-content;
+    width: fit-content;
     display: flex;
     flex-direction: row;
     gap: $spacing-2;

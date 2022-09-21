@@ -3,11 +3,12 @@
 .root {
     position: fixed;
     justify-content: center;
-    top: $spacing-40;
+    top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     z-index: 9999;
+    height: 100%;
     cursor: pointer;
 
     &.open {
@@ -22,11 +23,17 @@
 
     &.lvl_2 {
         .container {
-            top: $spacing-40 * 2;
+            top: $spacing-40;
         }
     }
 
     &.lvl_3 {
+        .container {
+            top: $spacing-40 * 2;
+        }
+    }
+
+    &.lvl_4 {
         .container {
             top: $spacing-40 * 3;
         }

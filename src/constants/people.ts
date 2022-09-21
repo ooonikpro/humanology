@@ -11,11 +11,43 @@ export type PeopleItem = {
 
 export const PEOPLE: PeopleItem[] = [
     {
-        uid: 'carl_gustav_ug',
+        uid: 'ilon-mask',
         id: 'ENTP',
-        name: 'Карл Густав Юнг',
-        subtitle: '1875 — 1961',
-        birthDate: '07/26/1875',
+        name: 'Илон Маск',
+        subtitle: 'Миллиардер',
+        birthDate: '06/28/1971',
         gender: 'male'
-    }
+    },
+    {
+        uid: 'danila-poperechniy',
+        id: 'ENTP',
+        name: 'Данила Поперечный',
+        subtitle: 'Стендап-комик',
+        birthDate: '03/10/1994',
+        gender: 'male'
+    },
+    {
+        uid: 'brad-pitt',
+        id: 'ENTP',
+        name: 'Брэд Питт',
+        subtitle: 'Актер',
+        birthDate: '12/18/1963',
+        gender: 'male'
+    },
+    {
+        uid: 'richard-branson',
+        id: 'ENTP',
+        name: 'Ричард Бренсон',
+        subtitle: 'Бизнесмен',
+        birthDate: '07/18/1950',
+        gender: 'male'
+    },
+    {
+        uid: 'alexander-pushnoy',
+        id: 'ENTP',
+        name: 'Александр Пушной',
+        subtitle: 'Телеведущий',
+        birthDate: '05/16/1975',
+        gender: 'male'
+    },
 ];
