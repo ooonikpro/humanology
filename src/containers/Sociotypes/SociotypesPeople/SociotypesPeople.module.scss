@@ -16,15 +16,5 @@
     padding-top: $spacing-12;
     display: flex;
     flex-wrap: wrap;
-    column-gap: $spacing-4;
     row-gap: $spacing-8;
-}
-
-.peopleCard {
-    flex: 1 1 auto;
-    max-width: 50%;
-
-    &:last-child:nth-child(odd) {
-        max-width: calc(50% - $spacing-4);
-    }
 }

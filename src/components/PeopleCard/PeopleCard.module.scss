@@ -1,15 +1,27 @@
 @import '../../styles/utils.scss';
 
-.root {}
+.root {
+    width: 100%;
+    min-width: 18rem;
+
+    @media screen and (min-width: 380px) {
+        width: 50%;
+
+        &:nth-of-type(odd) {
+            padding-right: $spacing-4 /2;
+        }
+
+        &:nth-of-type(even) {
+            padding-left: $spacing-4 /2;
+        }
+    }
+}
 
 .upper {
     @include colorRole(--card-border-color);
     @include colorElement(--background-color);
 
     width: 100%;
-    min-width: 16rem;
-    min-height: 24rem;
-    overflow: hidden;
     border: 1px solid rgba($color-basic-accent, 0.1);
     border-radius: 0.2rem;
     padding: $spacing-4;
@@ -69,19 +81,14 @@
 }
 
 .info {
-    margin-top: $spacing-4;
-    margin-bottom: $spacing-4;
+    position: relative;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.name {
-    width: 30%;
+    flex-direction: column;
+    padding: $spacing-4 80% $spacing-4 0;
+    height: 5.6rem;
 }
 
 .subtitle {
-    width: 70%;
     line-height: $spacing-20;
     margin-top: $spacing-4;
     opacity: 0.75;
@@ -98,6 +105,9 @@
 }
 
 .genderIcon {
+    position: absolute;
+    top: $spacing-4;
+    right: 0;
     opacity: 0.5;
 }
 
