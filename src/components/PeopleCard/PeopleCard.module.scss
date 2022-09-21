@@ -1,15 +1,14 @@
 @import '../../styles/utils.scss';
 
-.root {
-    min-width: 18rem;
-}
+.root {}
 
 .upper {
     @include colorRole(--card-border-color);
     @include colorElement(--background-color);
 
     width: 100%;
-    min-width: 17.4rem;
+    min-width: 16rem;
+    min-height: 24rem;
     overflow: hidden;
     border: 1px solid rgba($color-basic-accent, 0.1);
     border-radius: 0.2rem;
@@ -89,10 +88,11 @@
 }
 
 .footer {
-    margin-top: $spacing-12;
+    margin-top: $spacing-24;
     margin-right: $spacing-2;
     display: flex;
     flex-direction: row;
+    align-self: flex-end;
     justify-content: space-between;
     align-items: center;
 }
@@ -108,7 +108,7 @@
 
 .downtown {
     margin-top: $spacing-4;
-    min-width: 17.4rem;
+    min-width: 16rem;
     overflow: hidden;
     border: 1px solid rgba($color-basic-accent, 0.1);
     border-radius: 0.2rem;

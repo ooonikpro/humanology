@@ -16,7 +16,8 @@
     padding-top: $spacing-12;
     display: flex;
     flex-wrap: wrap;
-    gap: $spacing-4;
+    column-gap: $spacing-4;
+    -gap: $spacing-8;
 }
 
 .peopleCard {

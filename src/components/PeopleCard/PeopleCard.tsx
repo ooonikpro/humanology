@@ -32,7 +32,7 @@ export const PeopleCard: React.FC<PeopleCardProps> = ({
         <div className={[styles.root, className].join(' ')}>
             <div className={styles.upper}>
                 <div className={styles.header}>
-                    <div className={styles.userpic} style={{ backgroundImage: `url(${require(`../../assets/people/${uid}.png`)})` }}/>
+                    <div className={styles.userpic} style={{ backgroundImage: `url(${require(`../../assets/people/${uid}.png`)})` }} />
                     <div className={styles.portraitCircle}>
                         <Portrait name={id} gender={gender} className={styles.portrait} />
                         <CircleQuadra id={id} className={styles.circle} />
@@ -62,7 +62,7 @@ export const PeopleCard: React.FC<PeopleCardProps> = ({
                     <Icon name={getIconName(sociotypeProps.club)} size={24} color="accent" className={styles.icon50} />
                     <Icon name={getIconName(sociotypeProps.psychotype)} size={24} color="accent" className={styles.icon50} />
                 </div>
-                <Text font="additional" size="h6" color="role">
+                <Text font="additional" size="base" color="role">
                     {sociotypeProps.name}
                 </Text>
             </div>
