@@ -7,7 +7,9 @@ import { Text } from '../Text';
 import { Icon, getIconName } from '../Icon';
 import styles from './PeopleCard.module.scss';
 
-export type PeopleCardProps = PeopleItem;
+export type PeopleCardProps = PeopleItem & {
+    className?: string
+};
 
 export const PeopleCard: React.FC<PeopleCardProps> = ({
     id,
@@ -16,6 +18,7 @@ export const PeopleCard: React.FC<PeopleCardProps> = ({
     subtitle,
     birthDate,// dd.mm.YYYY
     gender,
+    className = ''
 }) => {
     const { sociotypeProps } = useSociotype(id);
     const options: Intl.DateTimeFormatOptions = {
@@ -26,10 +29,10 @@ export const PeopleCard: React.FC<PeopleCardProps> = ({
     const readyBirthDate = localDate.slice(0, -3);
 
     return (
-        <div className={styles.root}>
+        <div className={[styles.root, className].join(' ')}>
             <div className={styles.upper}>
                 <div className={styles.header}>
-                    <img src={require(`../../assets/people/${uid}.png`)} className={styles.userpic} />
+                    <div className={styles.userpic} style={{ backgroundImage: `url(${require(`../../assets/people/${uid}.png`)})` }}/>
                     <div className={styles.portraitCircle}>
                         <Portrait name={id} gender={gender} className={styles.portrait} />
                         <CircleQuadra id={id} className={styles.circle} />

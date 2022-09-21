@@ -13,11 +13,17 @@
 }
 
 .people {
-    margin-top: $spacing-12;
-    display: inline-flex;
-    flex-flow: row wrap;
-    align-items: stretch;
-    align-content: stretch;
-    column-gap: $spacing-4;
-    row-gap: $spacing-4;
+    padding-top: $spacing-12;
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacing-4;
+}
+
+.peopleCard {
+    flex: 1 1 auto;
+    max-width: 50%;
+
+    &:last-child:nth-child(odd) {
+        max-width: calc(50% - $spacing-4);
+    }
 }

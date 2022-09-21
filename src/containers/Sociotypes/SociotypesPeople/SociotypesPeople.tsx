@@ -21,7 +21,7 @@ export default function SociotypesPeople() {
                 <div className={styles.people}>
                     {
                         people.map((item, $index) => (
-                            <PeopleCard {...item} key={$index} />
+                            <PeopleCard {...item} key={$index} className={styles.peopleCard}/>
                         ))
                     }
                 </div>
