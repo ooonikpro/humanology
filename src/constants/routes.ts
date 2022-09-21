@@ -12,6 +12,9 @@ export const ROUTES = {
     SOCIOTYPES_STORIES: 'stories',
     SOCIOTYPES_PEOPLE: 'people',
     SOCIOTYPES_HUMOUR: 'humour',
+    SOCIOTYPES_HUMOUR_LURKMORE: 'humour/lurkmore',
+    SOCIOTYPES_HUMOUR_SELUTIN: 'humour/selutin',
+    SOCIOTYPES_HUMOUR_ELVIRA: 'humour/elvira',
     MENU: '/menu',
     DISCLAIMER: '/disclaimer',
     HISTORY: '/history',
@@ -30,7 +33,9 @@ export const ROUTES = {
     SUITS_CARD: (cardName = ':cardName') => `/suits/card/${cardName}`,
     SUITS_TAROT: (tarotName = ':tarotName') => `/suits/tarot/${tarotName}`,
     QUADRAS: '/quadras',
+    QUADRA: (quadraName = ':quadraName') => `/quadras/${quadraName}`,
     CLUBS: '/clubs',
+    CLUB: (clubName = ':clubName') => `/clubs/${clubName}`,
     REININ: '/reinin',
     YUNG: '/yung',
     OTHER: '/other',
@@ -216,5 +221,23 @@ export const HISTORY_LINKS = [
         label: 'Аушра',
         path: `${ROUTES.HISTORY_AUSHRA}`,
         order: 4,
+    },
+];
+
+export const HUMOUR_LINKS = [
+    {
+        label: 'Люркмор',
+        path: `${ROUTES.SOCIOTYPES_HUMOUR_LURKMORE}`,
+        order: 1,
+    },
+    {
+        label: 'Селютин',
+        path: `${ROUTES.SOCIOTYPES_HUMOUR_SELUTIN}`,
+        order: 2,
+    },
+    {
+        label: 'Эльвира Фея',
+        path: `${ROUTES.SOCIOTYPES_HUMOUR_ELVIRA}`,
+        order: 3,
     },
 ];

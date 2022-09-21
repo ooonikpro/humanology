@@ -16,6 +16,7 @@
     p {
         margin-bottom: $spacing-12;
     }
+
     i {
         opacity: 0.75;
     }
@@ -30,6 +31,9 @@
 
 .warning {
     display: block;
+    padding: $spacing-8;
+    border: 1px solid rgba($color-basic-accent, 0.25);
     margin-top: $spacing-16;
+    margin-bottom: $spacing-12;
     line-height: $spacing-20;
 }

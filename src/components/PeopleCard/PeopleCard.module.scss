@@ -8,11 +8,11 @@
         width: 50%;
 
         &:nth-of-type(odd) {
-            padding-right: $spacing-4 /2;
+            padding-right: calc($spacing-4 /2);
         }
 
         &:nth-of-type(even) {
-            padding-left: $spacing-4 /2;
+            padding-left: calc($spacing-4 /2);
         }
     }
 }

@@ -12,6 +12,9 @@ import SociotypesDevelopment from './containers/Sociotypes/SociotypesDevelopment
 import SociotypesStories from './containers/Sociotypes/SociotypesStories';
 import SociotypesPeople from './containers/Sociotypes/SociotypesPeople';
 import SociotypesHumour from './containers/Sociotypes/SociotypesHumour';
+import HumourLurkmore from './containers/Sociotypes/SociotypesHumour/Tabs/HumourLurkmore';
+import HumourSelutin from './containers/Sociotypes/SociotypesHumour/Tabs/HumourSelutin';
+import HumourElvira from './containers/Sociotypes/SociotypesHumour/Tabs/HumourElvira';
 import Menu from './containers/Menu';
 import Start from './containers/Start';
 import Disclaimer from './containers/Disclaimer';
@@ -92,6 +95,20 @@ export const routes: Route[] = [
                     {
                         path: ROUTES.SOCIOTYPES_HUMOUR,
                         container: SociotypesHumour,
+                        children: [
+                            {
+                                path: ROUTES.SOCIOTYPES_HUMOUR_LURKMORE,
+                                container: HumourLurkmore,
+                            },
+                            {
+                                path: ROUTES.SOCIOTYPES_HUMOUR_SELUTIN,
+                                container: HumourSelutin,
+                            },
+                            {
+                                path: ROUTES.SOCIOTYPES_HUMOUR_ELVIRA,
+                                container: HumourElvira,
+                            },
+                        ],
                     },
                 ],
             },
