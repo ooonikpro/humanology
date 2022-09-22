@@ -10,7 +10,6 @@ import { DETAIL_CARD_ASPECTS } from '../../constants/detailCard';
 import { DetailCard } from '../../components/DetailCard';
 
 export default function Aspects() {
-    const goTo = useNavigate();
 
     return (
         <div className={styles.root}>
