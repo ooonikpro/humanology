@@ -3,7 +3,6 @@ import styles from './Aspects.module.scss';
 import { WhiteCard } from '../../components/WhiteCard';
 import { Text } from '../../components/Text';
 import { Icon } from '../../components/Icon';
-import { useNavigate } from 'react-router-dom';
 import { AuthorLine } from '../../components/AuthorLine';
 import { EndPoint } from '../../components/EndPoint';
 import { DETAIL_CARD_ASPECTS } from '../../constants/detailCard';
