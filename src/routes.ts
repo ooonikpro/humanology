@@ -16,6 +16,7 @@ import HumourLurkmore from './containers/Sociotypes/SociotypesHumour/Tabs/Humour
 import HumourSelutin from './containers/Sociotypes/SociotypesHumour/Tabs/HumourSelutin';
 import HumourElvira from './containers/Sociotypes/SociotypesHumour/Tabs/HumourElvira';
 import Menu from './containers/Menu';
+import Loading from './containers/Loading';
 import Start from './containers/Start';
 import Disclaimer from './containers/Disclaimer';
 import History from './containers/History';
@@ -24,7 +25,7 @@ import HistoryKatrin from './containers/History/Tabs/Katrin';
 import HistoryAnton from './containers/History/Tabs/Anton';
 import HistoryAushra from './containers/History/Tabs/Aushra';
 import Aspects from './containers/Aspects';
-import AspectItem from './containers/AspectItem';
+import AspectItem from './containers/AspectsItem';
 import Blocks from './containers/Blocks';
 import BlocksItem from './containers/BlocksItem';
 import Suits from './containers/Suits';
@@ -115,6 +116,10 @@ export const routes: Route[] = [
         ]
     },
     {
+        path: ROUTES.LOADING,
+        container: Loading
+    },
+    {
         path: ROUTES.MENU,
         container: Menu
     },
@@ -154,7 +159,7 @@ export const routes: Route[] = [
         container: Aspects,
     },
     {
-        path: ROUTES.ASPECT(),
+        path: ROUTES.ASPECT_ITEM(),
         container: AspectItem,
     },
     {
@@ -198,7 +203,7 @@ export const routes: Route[] = [
         container: Relationships,
     },
     {
-        path: ROUTES.RELATIONSHIPS_ITEM,
+        path: ROUTES.RELATIONSHIPS_ITEM(),
         container: RelationshipsItem,
     },
     {

@@ -1,14 +1,13 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import styles from './AspectsItem.module.scss';
 import { WhiteCard } from '../../components/WhiteCard';
-import styles from './FunctionsItem.module.scss';
 
-
-export default function FunctionsItem() {
-    const { functionName } = useParams();
+export default function AspectsItem() {
+    const { aspectName } = useParams();
 
     // eslint-disable-next-line @typescript-eslint/no-var-requires
-    const Content = require(`./Content/${functionName}.tsx`).default;
+    const Content = require(`./Content/${aspectName}.tsx`).default;
 
     return (
         <WhiteCard color="white" className={styles.root}>

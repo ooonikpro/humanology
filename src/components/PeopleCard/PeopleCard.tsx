@@ -24,6 +24,7 @@ export const PeopleCard: React.FC<PeopleCardProps> = ({
     const options: Intl.DateTimeFormatOptions = {
         day: 'numeric', month: 'long', year: 'numeric'
     };
+
     const date = new Date(birthDate);
     const localDate = date.toLocaleDateString('ru-RU', options);
     const readyBirthDate = localDate.slice(0, -3);

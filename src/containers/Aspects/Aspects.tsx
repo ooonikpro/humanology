@@ -2,29 +2,12 @@ import React from 'react';
 import styles from './Aspects.module.scss';
 import { WhiteCard } from '../../components/WhiteCard';
 import { Text } from '../../components/Text';
-import { TextInline } from '../../components/TextInline';
-import { getIconName, Icon } from '../../components/Icon';
-import { Socionics } from '../../types';
-import { ASPECTS, ASPECTS_GROUPS, ASPECTS_LABEL } from '../../constants/aspects';
+import { Icon } from '../../components/Icon';
 import { useNavigate } from 'react-router-dom';
 import { AuthorLine } from '../../components/AuthorLine';
 import { EndPoint } from '../../components/EndPoint';
-
-const AspectCard: React.FC<{ aspect: Socionics.Aspect; onClick: () => void; }> = ({ aspect, onClick }) => {
-    const aspectIconMini = getIconName(`aspect-${aspect}-mini`);
-    const aspectIcon = getIconName(`aspect-${aspect}`);
-    const aspectTitle = ASPECTS[aspect];
-    const aspectSubtitle = ASPECTS_LABEL[aspect];
-
-    return (
-        <div className={styles.card} onClick={onClick}>
-            <Icon name={aspectIconMini} size={24} className={styles['mini-icon']} />
-            <Icon color="accent" name={aspectIcon} className={styles['aspect-icon']} size={108} />
-            <Text tag="p" size="h4" font="additional" color="accent" className={styles['aspect-title']}>{aspectTitle}</Text>
-            <Text color="accent" className={styles.subtitle}>{aspectSubtitle}</Text>
-        </div>
-    );
-};
+import { DETAIL_CARD_ASPECTS } from '../../constants/detailCard';
+import { DetailCard } from '../../components/DetailCard';
 
 export default function Aspects() {
     const goTo = useNavigate();
@@ -86,25 +69,12 @@ export default function Aspects() {
                     </div>
                 </div>
 
+                <hr />
+
                 {
-                    ASPECTS_GROUPS.map((item, $a) => {
-                        return (
-                            <div key={$a} className={styles['aspect-pair']}>
-                                <TextInline justify="between" align="baseline" className={styles['macroaspect-title']}>
-                                    <Text tag="p" size="h5" font="additional">{item.title}</Text>
-                                    <Text>{item.subtitle}</Text>
-                                </TextInline>
-
-                                <TextInline align="stretch">
-                                    <AspectCard aspect={item.aspects[0]} onClick={() => goTo(item.aspects[0])} />
-                                    <AspectCard aspect={item.aspects[1]} onClick={() => goTo(item.aspects[1])} />
-                                </TextInline>
-
-                                <hr />
-                            </div>
-                        );
-                    })
+                    DETAIL_CARD_ASPECTS.map((item, $itemKey) => <DetailCard {...item} key={$itemKey} />)
                 }
+
                 <EndPoint />
             </WhiteCard>
         </div>

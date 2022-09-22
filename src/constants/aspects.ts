@@ -1,25 +1,25 @@
 import { Socionics } from '../types';
 
 export const ASPECTS: Record<Socionics.Aspect, string> = {
-    ideas: 'Идеи',
     business: 'Дела',
-    will: 'Воля',
-    emotions: 'Эмоции',
-    time: 'Время',
     logic: 'Разум',
-    comfort: 'Комфорт',
+    emotions: 'Эмоции',
     people: 'Люди',
+    will: 'Воля',
+    comfort: 'Комфорт',
+    ideas: 'Идеи',
+    time: 'Время',
 } as const;
 
 export const ASPECTS_LABEL: Record<Socionics.Aspect, string> = {
-    ideas: 'Интуиция возможностей',
     business: 'Деловая логика',
-    will: 'Волевая сенсорика',
-    emotions: 'Этика эмоций',
-    time: 'Интуиция времени',
     logic: 'Структурная логика',
-    comfort: 'Сенсорика ощущений',
+    emotions: 'Этика эмоций',
     people: 'Этика отношений',
+    will: 'Волевая сенсорика',
+    comfort: 'Сенсорика ощущений',
+    time: 'Интуиция времени',
+    ideas: 'Интуиция возможностей',
 } as const;
 
 export const ASPECTS_GROUPS: Array<{ title: string; subtitle: string; aspects: Socionics.Aspect[] }> = [

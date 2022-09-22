@@ -28,21 +28,22 @@ export const ROUTES = {
     BLOCKS: '/blocks',
     BLOCKS_ITEM: '/blocks/:blockName',
     ASPECTS: '/aspects',
-    ASPECT: (aspectName = ':aspectName') => `/aspects/${aspectName}`,
+    ASPECT_ITEM: (aspectName = ':aspectName') => `/aspects/${aspectName}`,
     SUITS: '/suits',
     SUITS_CARD: (cardName = ':cardName') => `/suits/card/${cardName}`,
     SUITS_TAROT: (tarotName = ':tarotName') => `/suits/tarot/${tarotName}`,
     QUADRAS: '/quadras',
-    QUADRA: (quadraName = ':quadraName') => `/quadras/${quadraName}`,
+    QUADRA_ITEM: (quadraName = ':quadraName') => `/quadras/${quadraName}`,
     CLUBS: '/clubs',
-    CLUB: (clubName = ':clubName') => `/clubs/${clubName}`,
+    CLUB_ITEM: (clubName = ':clubName') => `/clubs/${clubName}`,
     REININ: '/reinin',
     YUNG: '/yung',
     OTHER: '/other',
     RELATIONSHIPS: '/relationships',
-    RELATIONSHIPS_ITEM: '/relationships/:id',
+    RELATIONSHIPS_ITEM: (relationshipsItem = ':relationshipsItem') => `/relationships/${relationshipsItem}`,
     MINDSETS: '/mindsets',
-    START: '/'
+    START: '/start',
+    LOADING: '/'
 };
 
 export const MAIN_LINKS: Tabs[] = [

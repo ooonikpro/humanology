@@ -33,7 +33,6 @@
     flex-direction: row;
     justify-content: space-between;
     border-bottom: 1px solid var(--card-border-color);
-    padding-bottom: 1px;
 
     &::before {
         content: '';
@@ -106,7 +105,7 @@
 
 .genderIcon {
     position: absolute;
-    top: $spacing-4;
+    top: $spacing-6;
     right: 0;
     opacity: 0.5;
 }

@@ -14,6 +14,7 @@ export type DetailCardProps = {
     aspect?: Socionics.Aspect;
     className?: string;
     title: string;
+    alias?: Array<string>;
     subtitle?: string;
     tags: Array<string>
     content: Array<string>;
@@ -25,6 +26,7 @@ export const DetailCard: React.FC<DetailCardProps> = ({
     socionicFn,
     aspect,
     title,
+    alias,
     subtitle,
     tags,
     content,
@@ -47,7 +49,7 @@ export const DetailCard: React.FC<DetailCardProps> = ({
         }
 
         if (type === 'aspect') {
-            url = ROUTES.ASPECT(aspect);
+            url = ROUTES.ASPECT_ITEM(aspect);
         }
 
         if (image) {
@@ -56,6 +58,27 @@ export const DetailCard: React.FC<DetailCardProps> = ({
 
         if (icon) {
             return <Icon name={getIconName(icon)} size={72} />;
+        }
+
+        if (alias) {
+            const aspectIconMini = getIconName(`aspect-${aspect}-mini`);
+            const aspectIcon = getIconName(`aspect-${aspect}`);
+
+            return (
+                <>
+                    <div className={styles.header}>
+                        <Icon name={aspectIconMini} size={24} className={styles.aspecticonmini} />
+                        {
+                            alias.map((alias, $aliasKey) => (
+                                <Text tag="span" color="black" size="smaller" className={styles.alias} key={$aliasKey}>
+                                    {alias}
+                                </Text>
+                            ))
+                        }
+                    </div>
+                    <Icon name={getIconName(aspectIcon)} size={108} color="accent" className={styles.aspectIcon} />
+                </>
+            );
         }
 
         return null;
@@ -67,9 +90,17 @@ export const DetailCard: React.FC<DetailCardProps> = ({
         <div className={rootClasses} onClick={goTo}>
             <TitleInfo align="start" render={renderTitleInfoChild} />
 
-            <Text tag="h4" size="h4" className={styles.text}>
+            <Text tag="h4" size="h4" font="additional" className={styles.text}>
                 {title}
             </Text>
+
+            {
+                subtitle && (
+                    <Text tag="p" size="h6" color="accent" className={styles.subtitle}>
+                        {subtitle}
+                    </Text>
+                )
+            }
 
             <TextInline className={styles.tags}>
                 {
@@ -80,14 +111,6 @@ export const DetailCard: React.FC<DetailCardProps> = ({
                     ))
                 }
             </TextInline>
-
-            {
-                subtitle && (
-                    <Text tag="p" size="h6" color="accent" className={styles.text}>
-                        {subtitle}
-                    </Text>
-                )
-            }
 
             {
                 content.map((paragraph, $textKey) => (

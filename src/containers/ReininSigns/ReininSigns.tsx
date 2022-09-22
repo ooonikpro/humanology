@@ -10,7 +10,7 @@ export default function ReininSigns() {
         <div className={styles.root}>
             <WhiteCard color="white">
                 <Text tag="h1" size="h4" font="additional" className={styles.title}>Признаки Рейнина</Text>
-                <AuthorLine text='Читать 5 минут' iconName='Time'>Неизвестен</AuthorLine>
+                <AuthorLine text='Пока нечего читать' iconName='Unknown'>Неизвестен</AuthorLine>
                 <EndPoint />
             </WhiteCard>
         </div>

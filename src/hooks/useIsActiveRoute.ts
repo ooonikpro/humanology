@@ -1,5 +1,4 @@
 import { useLocation, useMatch, useResolvedPath } from 'react-router';
-import { ROUTES } from 'src/constants/routes';
 
 export const useIsActiveRoute = (path: string, strict = false) => {
     const { pathname } = useResolvedPath(path);
@@ -10,5 +9,5 @@ export const useIsActiveRoute = (path: string, strict = false) => {
 
     const location = useLocation();
 
-    return (pathname !== ROUTES.START && location.pathname.includes(pathname));
+    return (pathname && location.pathname.includes(pathname));
 };
