@@ -26,29 +26,29 @@ export const PropList: React.FC<Props> = (props) => {
                     return (
                         <div key={$i} className={styles.row}>
                             <div className={styles.label}>
-                                <Text size="smaller" color="grey">{row.label}</Text>
+                                <Text size="body" color="grey">{row.label}</Text>
                             </div>
                             <div className={styles.value}>
                                 <Text color={row.textColor}>{row.value}</Text>
-                                
+
                                 {
                                     row.icon &&
-                                        <Icon
-                                            name={getIconName(row.icon)}
-                                            size={row.iconSize || 24}
-                                            color={row.iconColor}
-                                            className={styles.icon}
-                                        />
+                                    <Icon
+                                        name={getIconName(row.icon)}
+                                        size={row.iconSize || 24}
+                                        color={row.iconColor}
+                                        className={styles.icon}
+                                    />
                                 }
 
                                 {
                                     row.subLabel &&
-                                        <Text
-                                            color="grey" size="smaller"
-                                            className={styles.sublabel}
-                                        >
-                                            { row.subLabel }
-                                        </Text>
+                                    <Text
+                                        color="grey" size="body"
+                                        className={styles.sublabel}
+                                    >
+                                        {row.subLabel}
+                                    </Text>
                                 }
                             </div>
 

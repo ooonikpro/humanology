@@ -21,12 +21,12 @@ interface Props extends Socionics.IntertypeProp {
 
 export const SocietyCard: React.FC<Props> = (props) => {
     const [gender, setGender] = useState(props.gender);
-    const toggleGender = useCallback(() => { 
+    const toggleGender = useCallback(() => {
         gender === 'male' ? setGender('female') : setGender('male');
     }, [gender]);
     const text = {
         id: props.id,
-        gender, 
+        gender,
         element: QUADRAS[props.element],
         role: ROLE[props.role].label,
         mindKey: MIND_KEY[props.mindKey],
@@ -51,48 +51,48 @@ export const SocietyCard: React.FC<Props> = (props) => {
                     ].join(' ')}
                 >
                     <div className={styles['params-line']}>
-                        <Text tag="p" size="smaller" color="accent">
+                        <Text tag="p" size="body" color="accent">
                             {text.id}
                         </Text>
-                        <Text tag="p" size="smaller" color="grey">
+                        <Text tag="p" size="body" color="grey">
                             {text.alias}
                         </Text>
                     </div>
                     <div className={styles['params-line']}>
                         <span className={styles.pair}>
-                            <Tag sign={props.element} color='element' size={16}/>
-                            <Text tag="p" color="element" size="smaller">
+                            <Tag sign={props.element} color='element' size={16} />
+                            <Text tag="p" color="element" size="body">
                                 {text.element}
                             </Text>
                         </span>
                         <span className={styles.pair}>
-                            <Tag sign={props.role} color='role' size={16}/>
-                            <Text tag="p" color="role" size="smaller">
+                            <Tag sign={props.role} color='role' size={16} />
+                            <Text tag="p" color="role" size="body">
                                 {text.role}
                             </Text>
                         </span>
                         <span className={styles.pair}>
-                            <Tag sign={props.tarot} color='accent' size={16}/>
-                            <Text tag="p" color="accent" size="smaller">
+                            <Tag sign={props.tarot} color='accent' size={16} />
+                            <Text tag="p" color="accent" size="body">
                                 {text.tarot}
                             </Text>
                         </span>
                     </div>
                     {!props.mini && (
                         <>
-                            <div className={styles['params-line']}>       
+                            <div className={styles['params-line']}>
                                 <span className={styles.pair}>
-                                    <Tag sign={props.club} color='accent' size={16}/>
-                                    <Text tag="p" color="accent" size="smaller">
+                                    <Tag sign={props.club} color='accent' size={16} />
+                                    <Text tag="p" color="accent" size="body">
                                         {text.club}
-                                    </Text>                                
+                                    </Text>
                                 </span>
                                 <span className={styles.pair}>
-                                    <Tag sign={props.psychotype} color='accent' size={16}/>
-                                    <Text tag="p" color="accent" size="smaller">
+                                    <Tag sign={props.psychotype} color='accent' size={16} />
+                                    <Text tag="p" color="accent" size="body">
                                         {text.psychotype}
-                                    </Text>                              
-                                </span>                            
+                                    </Text>
+                                </span>
                             </div>
                         </>)}
                 </div>
@@ -111,7 +111,7 @@ export const SocietyCard: React.FC<Props> = (props) => {
                     className={styles.quadra}
                 />
                 <Portrait name={props.id} gender={gender} className={styles.portrait} onClick={toggleGender} />
-                
+
                 {!props.mini && (
                     <Text
                         color="role"
@@ -135,7 +135,7 @@ export const SocietyCard: React.FC<Props> = (props) => {
                         {text.yungs.map((row, $i) => (
                             <Text
                                 tag="span"
-                                size="smaller"
+                                size="body"
                                 color="accent"
                                 key={$i}
                                 className={styles['footer-text']}

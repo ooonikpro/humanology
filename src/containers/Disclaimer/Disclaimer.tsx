@@ -11,7 +11,7 @@ export default function Disclaimer() {
             <WhiteCard color="white">
                 <Text tag="h1" size="h4" font="additional" className={styles.title}>Дисклеймер</Text>
                 <AuthorLine text='Читать 5 минут' iconName='Time'>äлеша</AuthorLine>
-                
+
                 <Text tag="p" className={styles.text}>
                     Верить, проверять, доверять — дело ваше.
                 </Text>
@@ -30,7 +30,7 @@ export default function Disclaimer() {
                 <Text tag="p" className={styles.text}>
                     Процитирую Аушру:
                 </Text>
-                
+
                 <Text tag="p" size="h6" color="accent" className={styles.text}>
                     Основная цель — показать, что в проявлениях любви, как и во всех других областях человеческого общения, нет правых и неправых, хороших и плохих.
                 </Text>
@@ -66,8 +66,8 @@ export default function Disclaimer() {
                 <Text tag="p" size="h6" color="accent" className={styles.text}>
                     Трудно сказать, когда сбудется эта мечта, но другой дороги нет.
                 </Text>
-                
-                <Text tag="p" size="smaller" color="accent" className={styles['text-right']}>
+
+                <Text tag="p" size="body" color="accent" className={styles['text-right']}>
                     <i>Аушра Аугустинавичюте, 1983</i>
                 </Text>
 

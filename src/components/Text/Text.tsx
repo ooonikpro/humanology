@@ -3,7 +3,7 @@ import styles from './Text.module.scss';
 
 export type Props<T extends keyof JSX.IntrinsicElements> = {
     tag?: T;
-    size?: 'base' | 'small' | 'smaller' | 'h6' | 'h5' | 'h4' | 'h3' | 'h2' | 'h1';
+    size?: 'large' | 'small' | 'body' | 'h6' | 'h5' | 'h4' | 'h3' | 'h2' | 'h1';
     color?: 'black' | 'white' | 'accent' | 'grey' | 'element' | 'role';
     font?: 'base' | 'additional';
     markerColor?: 'element' | 'role';
@@ -15,7 +15,7 @@ export type Props<T extends keyof JSX.IntrinsicElements> = {
 export const Text = React.forwardRef<HTMLElement, Props<any>>(function Text(
     {
         tag: TagName = 'span',
-        size = 'base',
+        size = 'large',
         color = 'black',
         font = 'base',
         markerColor,

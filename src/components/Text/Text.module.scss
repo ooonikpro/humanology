@@ -29,24 +29,24 @@ h6 {
         --text-line-height: #{$spacing-16};
     }
 
-    &-smaller {
-        --text-size: #{$font-size-smaller};
-        --text-line-height: #{$spacing-16};
+    &-body {
+        --text-size: #{$font-size-body};
+        --text-line-height: 2.0rem;
     }
 
-    &-base {
-        --text-size: #{$font-size-base};
-        --text-line-height: #{$spacing-24};
+    &-large {
+        --text-size: #{$font-size-large};
+        --text-line-height: 2.25rem;
     }
 
     &-h6 {
         --text-size: #{$font-size-h6};
-        --text-line-height: #{$spacing-32};
+        --text-line-height: 2.75rem;
     }
 
     &-h5 {
         --text-size: #{$font-size-h5};
-        --text-line-height: #{$spacing-32};
+        --text-line-height: 3.0rem;
     }
 
     &-h4 {
@@ -111,12 +111,12 @@ h6 {
 .font {
     &-base {
         --text-font-family: #{$font-family-base};
-        letter-spacing: -0.02rem;
+        letter-spacing: -0.03rem;
     }
 
     &-additional {
         --text-font-family: #{$font-family-alternative};
-        letter-spacing: -0.05rem;
+        letter-spacing: -0.03rem;
     }
 }
 

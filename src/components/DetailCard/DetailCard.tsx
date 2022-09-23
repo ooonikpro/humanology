@@ -70,7 +70,7 @@ export const DetailCard: React.FC<DetailCardProps> = ({
                         <Icon name={aspectIconMini} size={24} className={styles.aspecticonmini} />
                         {
                             alias.map((alias, $aliasKey) => (
-                                <Text tag="span" color="black" size="smaller" className={styles.alias} key={$aliasKey}>
+                                <Text tag="span" color="black" size="body" className={styles.alias} key={$aliasKey}>
                                     {alias}
                                 </Text>
                             ))
@@ -105,7 +105,7 @@ export const DetailCard: React.FC<DetailCardProps> = ({
             <TextInline className={styles.tags}>
                 {
                     tags.map((tag, $tagKey) => (
-                        <Text color="accent" size="smaller" key={$tagKey}>
+                        <Text color="accent" size="body" key={$tagKey}>
                             {tag}
                         </Text>
                     ))

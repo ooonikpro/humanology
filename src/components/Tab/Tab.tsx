@@ -37,12 +37,12 @@ export const Tab: React.FC<Props> = ({ path, label, icon }) => {
         <Text
             ref={ref}
             tag="button"
-            size="smaller"
+            size="body"
             color="accent"
             className={classes}
             onClick={onClick}
         >
-            { icon ?
+            {icon ?
                 <Icon
                     className={styles.icon}
                     size={24}

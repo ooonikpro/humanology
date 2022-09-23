@@ -59,22 +59,22 @@ export const SocietyCardMini: React.FC<Props> = (props) => {
                 <span className={styles['element-role']}>
                     <span className={styles.pair}>
                         <Tag sign={props.element} color='element' size={16} />
-                        <Text tag="p" size="smaller" color="element">
+                        <Text tag="p" size="body" color="element">
                             {text.element}
                         </Text>
                     </span>
                     <span className={styles.pair}>
                         <Tag sign={props.role} color='role' size={16} />
-                        <Text tag="p" size="smaller" color="role">
+                        <Text tag="p" size="body" color="role">
                             {text.role}
                         </Text>
                     </span>
                 </span>
                 <span className={styles['id-alias']}>
-                    <Text tag="p" size="smaller" color="grey" className={styles.alias}>
+                    <Text tag="p" size="body" color="grey" className={styles.alias}>
                         {props.alias}
                     </Text>
-                    <Text tag="p" size="smaller" color="accent">
+                    <Text tag="p" size="body" color="accent">
                         {props.id}
                     </Text>
                 </span>

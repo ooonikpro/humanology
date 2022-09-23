@@ -19,12 +19,12 @@ export const BlockLink: React.FC<Props> = ({ path, label, icon, className }) => 
 
     const classes = [styles.root, className, isActiveRoute ? styles.active : ''].join(' ');
     const ref = useRef<HTMLElement>(null);
-    
+
     const onClick = useCallback(() => goTo(path), [path]);
 
     return (
         <div className={classes} onClick={onClick}>
-            { icon ?
+            {icon ?
                 <Icon
                     className={styles.icon}
                     size={24}
@@ -36,7 +36,7 @@ export const BlockLink: React.FC<Props> = ({ path, label, icon, className }) => 
             <Text
                 ref={ref}
                 tag="button"
-                size="smaller"
+                size="body"
                 color="accent"
                 className={styles.label}
             >

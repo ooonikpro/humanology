@@ -42,7 +42,7 @@ export const SuitCard: React.FC<Props> = ({
                     name={icon}
                     className={styles.icon}
                 />
-                <TitleInfo textColor={color} iconColor={color} textSize="base">
+                <TitleInfo textColor={color} iconColor={color} textSize="large">
                     {status}
                 </TitleInfo>
             </TextInline>

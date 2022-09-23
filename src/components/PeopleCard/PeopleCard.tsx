@@ -45,11 +45,11 @@ export const PeopleCard: React.FC<PeopleCardProps> = ({
                     </Text>
                     <Icon name={getIconName(gender)} color="accent" size={20} className={styles.genderIcon} />
                 </div>
-                <Text tag="p" size="base" color="black" className={styles.subtitle}>
+                <Text tag="p" size="large" color="black" className={styles.subtitle}>
                     {subtitle}
                 </Text>
                 <div className={styles.footer}>
-                    <Text tag="span" size="smaller" color="accent" className={styles.birthDate}>
+                    <Text tag="span" size="body" color="accent" className={styles.birthDate}>
                         {readyBirthDate}
                     </Text>
                     <Icon name="Logo" size={16} color="accent" className={styles.logo} />
@@ -63,7 +63,7 @@ export const PeopleCard: React.FC<PeopleCardProps> = ({
                     <Icon name={getIconName(sociotypeProps.club)} size={24} color="accent" className={styles.icon50} />
                     <Icon name={getIconName(sociotypeProps.psychotype)} size={24} color="accent" className={styles.icon50} />
                 </div>
-                <Text font="additional" size="base" color="role">
+                <Text font="additional" size="large" color="role">
                     {sociotypeProps.name}
                 </Text>
             </div>

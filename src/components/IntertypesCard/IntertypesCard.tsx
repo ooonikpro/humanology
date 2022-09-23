@@ -24,22 +24,22 @@ export const IntertypesCard: React.FC<Props> = ({ id, intertype }) => {
     return (
         <div className={classNames}>
             <div className={styles.intertype}>
-                <Icon name="Help" size={24}  className={styles.help}/>
+                <Icon name="Help" size={24} className={styles.help} />
                 <Icon name={getIconName(intertype)} size={128} className={styles.icon} />
 
                 <div className={[styles.lvl, styles[`lvl-${info.lvl}`]].join(' ')}>
-                    { new Array(4).fill(undefined).map((i) => <span key={i} />) }
+                    {new Array(4).fill(undefined).map((i) => <span key={i} />)}
                 </div>
 
-                <hr className={styles.line}/>
+                <hr className={styles.line} />
 
                 <div className={styles.text}>
                     <Text color="accent" size="h6" font="additional">{info.name}</Text>
-                    <Text color="accent" size="base" className={styles.description}>{info.description}</Text>
+                    <Text color="accent" size="large" className={styles.description}>{info.description}</Text>
                 </div>
             </div>
 
-            <SocietyCardMini id={id} {...sociatype} className={styles.sociotype}/>
+            <SocietyCardMini id={id} {...sociatype} className={styles.sociotype} />
         </div>
     );
 };

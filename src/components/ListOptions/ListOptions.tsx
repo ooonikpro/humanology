@@ -14,8 +14,8 @@ export const ListOptions: React.FC<Props> = (props) => {
                 props.options.map((item, $i) => {
                     return (
                         <div className={styles.row} key={$i}>
-                            <Text tag="p" color="grey" size="smaller">{item.label}</Text>
-                            <hr className={styles.divider}/>
+                            <Text tag="p" color="grey" size="body">{item.label}</Text>
+                            <hr className={styles.divider} />
                             <Text tag="p" color="black">{item.value}</Text>
                         </div>
                     );

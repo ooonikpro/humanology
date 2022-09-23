@@ -22,7 +22,7 @@ export function SociotypesHumour() {
             <WhiteCard color="white">
                 <Text tag="h1" size="h4" color="accent" font="additional" className={styles.title}>Юмор</Text>
                 <div className={styles.warning}>
-                    <Text tag="span" size="smaller" color="accent">
+                    <Text tag="span" size="body" color="accent">
                         Если вы не умеет воспринимать юмор, обидчивы или зависимы от мнений незнакомцев, пожалуйста, не читайте. Ненормативная лексика и сексуальные темы, оскорбление чувств всех причастных. Но весело и остроумно. Авторская орфография и пунктуация соблюдена.
                     </Text>
                 </div>

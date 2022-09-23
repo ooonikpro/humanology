@@ -1,4 +1,4 @@
-import React  from 'react';
+import React from 'react';
 import styles from './BlockDescription.module.scss';
 import {
     FunctionalCardRow,
@@ -46,7 +46,7 @@ export const BlockDescription: React.FC<Props> = ({
                         iconColor="accent"
                     >
                         {title}
-                        <Text tag="span" color="accent" size="smaller" className={styles.labels}>
+                        <Text tag="span" color="accent" size="body" className={styles.labels}>
                             {labels}
                         </Text>
                     </TitleInfo>
