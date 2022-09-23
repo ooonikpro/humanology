@@ -1,20 +1,20 @@
 @import '../../../styles/utils.scss';
 
 .root {
-  overflow: hidden;
-  height: 5.6rem;
-  background: $color-basic-beige;
-  padding: $spacing-4;
+    overflow: hidden;
+    height: 5.6rem;
+    background: $color-basic-beige;
+    padding: $spacing-4;
 
 }
 
 .horizontal-scrollbar {
-  background-color: var(--color-basic-beige);
-  display: flex;
-  width: 100%;
-  height: calc(4.8rem + 17px);
-  overflow-x: scroll;
-  overflow-y: hidden;
-  column-gap: $spacing-4;
-  scroll-behavior: smooth;
+    background-color: var(--color-basic-beige);
+    display: flex;
+    width: 100%;
+    height: calc(4.8rem + 20px);
+    overflow-x: scroll;
+    overflow-y: hidden;
+    column-gap: $spacing-4;
+    scroll-behavior: smooth;
 }

@@ -8,10 +8,10 @@ export default function Carl() {
     return (
         <>
             <div className={styles.person}>
-                <img src={require('../../../assets/history/carl.png')} alt="Карл Густав Юнг" className={styles.userpic}/>
+                <img src={require('../../../assets/history/carl.png')} alt="Карл Густав Юнг" className={styles.userpic} />
                 <span className={styles.text}>
-                    <Text tag="b" size="h5" color="accent">Карл Густав Юнг</Text>
-                    <Text tag="p" size="smaller" color="accent">1875 — 1961, Цюрих</Text>
+                    <Text tag="p" size="h5" color="accent">Карл Густав Юнг</Text>
+                    <Text tag="p" size="smaller" color="grey">1875 — 1961, Цюрих</Text>
                 </span>
             </div>
             <Text tag="p" size="h5" font="additional" color="accent">
@@ -57,7 +57,7 @@ export default function Carl() {
                 оценочных суждениях: хорошо — плохо, красиво — некрасиво.
             </Text>
 
-            <hr/>
+            <hr />
 
             <Text tag="p" size="base">
                 Цитата из книги «Психологические типы»:

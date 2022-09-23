@@ -3,17 +3,17 @@
 @import '../fonts', './buttons';
 
 :root {
-    --color-basic-white    : #{$color-basic-white};
-    --color-basic-beige    : #{$color-basic-beige};
-    --color-basic-black    : #{$color-basic-black};
-    --color-basic-accent   : #{$color-basic-accent};
-    --color-basic-greener  : #d7dd93;
-    --color-basic-pink     : #f6c0b1;
+    --color-basic-white : #{$color-basic-white};
+    --color-basic-beige : #{$color-basic-beige};
+    --color-basic-black : #{$color-basic-black};
+    --color-basic-accent : #{$color-basic-accent};
+    --color-basic-greener: #d7dd93;
+    --color-basic-pink: #f6c0b1;
     --color-basic-turquoise: #b6d1c5;
-    --color-basic-yellow   : #fece30;
+    --color-basic-yellow: #fece30;
 
-    --color-elements-air   : #{map-get($color-elements, 'air')};
-    --color-elements-fire  : #{map-get($color-elements, 'fire')};
+    --color-elements-air : #{map-get($color-elements, 'air')};
+    --color-elements-fire : #{map-get($color-elements, 'fire')};
     --color-elements-water : #{map-get($color-elements, 'water')};
     --color-elements-earth : #{map-get($color-elements, 'earth')};
 }
@@ -42,6 +42,7 @@ html.no-scroll {
 }
 
 * {
+
     &,
     &::before,
     &::after {
@@ -54,7 +55,8 @@ html.no-scroll {
 
     &::-webkit-scrollbar {
         width: 4px;
-        background-color: var(--color-basic-beige);;
+        background-color: var(--color-basic-beige);
+        ;
     }
 
     &::-webkit-scrollbar-thumb {

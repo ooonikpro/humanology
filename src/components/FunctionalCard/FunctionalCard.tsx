@@ -14,7 +14,7 @@ export interface Props {
     function: Socionics.Function;
     number: number;
     opacity?: 1 | 0.75 | 0.5;
-    lvl: 1 | 2 | 3 | 4 ;
+    lvl: 1 | 2 | 3 | 4;
     size: 'xl' | 'l' | 'm' | 's';
     disabled?: boolean;
     onClick?: () => void;
@@ -56,7 +56,7 @@ export const FunctionalCard: React.FC<Props> = (props) => {
         return new Array(props.lvl).fill(null).map((_, $i) => <span key={$i} />);
     }, [props.lvl]);
 
-    const onClick = props.onClick || (() => void(0));
+    const onClick = props.onClick || (() => void (0));
 
     return (
         <div

@@ -11,12 +11,12 @@
 }
 
 .body {
-       
+
     height: 100%;
     padding: 0;
 
-    p, hr {
+    p,
+    hr {
         margin-bottom: $spacing-12;
-        line-height: $spacing-24;
     }
 }

@@ -3,7 +3,6 @@
 .row {
     position: relative;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: baseline;
     padding: $spacing-8 0;
@@ -18,10 +17,12 @@
         opacity: 0.05;
         background-color: var(--color-basic-accent);
     }
+
     &:last-child::after {
         opacity: 0;
     }
 }
+
 .value {
     display: flex;
     flex-wrap: wrap;

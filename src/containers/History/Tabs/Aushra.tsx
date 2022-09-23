@@ -9,8 +9,8 @@ export default function Aushra() {
             <div className={styles.person}>
                 <img src={require('../../../assets/history/aushra.png')} alt="Аушра Аугустинавичюте" className={styles.userpic} />
                 <span className={styles.text}>
-                    <Text tag="b" size="h5" color="accent">Аушра Аугустинавичюте</Text>
-                    <Text tag="p" size="smaller" color="accent">1928 — 2005, Вильнюс</Text>
+                    <Text tag="p" size="h5" color="accent">Аушра Аугустинавичюте</Text>
+                    <Text tag="p" size="smaller" color="grey">1928 — 2005, Вильнюс</Text>
                 </span>
             </div>
 

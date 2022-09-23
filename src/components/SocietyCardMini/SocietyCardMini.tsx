@@ -14,7 +14,7 @@ import { Tag } from '../Tag';
 type Props = Socionics.IntertypeProp & {
     id: Socionics.SocionicsType;
     className?: string;
- };
+};
 
 export const SocietyCardMini: React.FC<Props> = (props) => {
     const text = {
@@ -43,14 +43,14 @@ export const SocietyCardMini: React.FC<Props> = (props) => {
                     id={props.id}
                     className={styles['quadra-img']}
                 />
-                <Portrait name={props.id} gender={props.gender} className={styles.portrait}/>
+                <Portrait name={props.id} gender={props.gender} className={styles.portrait} />
             </div>
 
             <div className={styles.footer}>
                 <Text
                     font="additional"
                     color="role"
-                    size="h6"
+                    size="h5"
                     className={styles.name}
                 >
                     {props.name}
@@ -58,13 +58,13 @@ export const SocietyCardMini: React.FC<Props> = (props) => {
 
                 <span className={styles['element-role']}>
                     <span className={styles.pair}>
-                        <Tag sign={props.element} color='element' size={16}/>
+                        <Tag sign={props.element} color='element' size={16} />
                         <Text tag="p" size="smaller" color="element">
                             {text.element}
                         </Text>
                     </span>
                     <span className={styles.pair}>
-                        <Tag sign={props.role} color='role' size={16}/>
+                        <Tag sign={props.role} color='role' size={16} />
                         <Text tag="p" size="smaller" color="role">
                             {text.role}
                         </Text>

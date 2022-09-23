@@ -10,8 +10,8 @@ export default function Katrin() {
             <div className={styles.person}>
                 <img src={require('../../../assets/history/katrin.png')} alt="Кэтрин и Изабель Бриггс" className={styles.userpic} />
                 <span className={styles.text}>
-                    <Text tag="b" size="h5" color="accent">Кэтрин и Изабель Бриггс</Text>
-                    <Text tag="p" size="smaller" color="accent">1875 — 1968, США</Text>
+                    <Text tag="p" size="h5" color="accent">Кэтрин и Изабель Бриггс</Text>
+                    <Text tag="p" size="smaller" color="grey">1875 — 1968, США</Text>
                 </span>
             </div>
 

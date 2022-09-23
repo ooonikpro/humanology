@@ -16,6 +16,7 @@ h3,
 h4,
 h5,
 h6 {
+
     &,
     &.root {
         font-weight: $font-weight-bolder;
@@ -40,12 +41,12 @@ h6 {
 
     &-h6 {
         --text-size: #{$font-size-h6};
-        --text-line-height: #{$spacing-24};
+        --text-line-height: #{$spacing-32};
     }
 
     &-h5 {
         --text-size: #{$font-size-h5};
-        --text-line-height: #{$spacing-24};
+        --text-line-height: #{$spacing-32};
     }
 
     &-h4 {
@@ -110,10 +111,12 @@ h6 {
 .font {
     &-base {
         --text-font-family: #{$font-family-base};
+        letter-spacing: -0.02rem;
     }
 
     &-additional {
         --text-font-family: #{$font-family-alternative};
+        letter-spacing: -0.05rem;
     }
 }
 
