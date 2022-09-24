@@ -1,6 +1,6 @@
 import { Socionics } from '../types';
 
-export const INTERTYPE_RELATIONS : Record<Socionics.IntertypeRelations, {name: string, description: string, lvl: number}> = {
+export const INTERTYPE_RELATIONS: Record<Socionics.IntertypeRelations, { name: string, description: string, lvl: number }> = {
     dual: {
         name: 'Дуальные',
         description: 'Взаимодополнение',
@@ -70,7 +70,7 @@ export const INTERTYPE_RELATIONS : Record<Socionics.IntertypeRelations, {name: s
     underling: {
         name: 'Подревизный',
         description: 'Перегрузка',
-        lvl: 2
+        lvl: 1
     },
 
     quasidentical: {
@@ -80,7 +80,7 @@ export const INTERTYPE_RELATIONS : Record<Socionics.IntertypeRelations, {name: s
     },
 
     parallel: {
-        name: 'Паралелльные',
+        name: 'Параллельные',
         description: 'Опустошение',
         lvl: 2
     },

@@ -1,10 +1,16 @@
-import { Text } from '../../../components/Text';
 import styles from '../AspectsItem.module.scss';
+import { PageTitle } from '../../../components/PageTitle';
+import { Text } from '../../../components/Text';
+import { AuthorLine } from '../../../components/AuthorLine';
 
 export default function People() {
     return (
-        <Text tag="h1" size="h4" font="additional" color="accent" className={styles.title}>
-            Этика отношений
-        </Text>
+        <div className={styles.root}>
+            <PageTitle iconName='AspectPeople' back>Этика отношений</PageTitle>
+            <AuthorLine text='Читать 4 минуты' iconName='Time'>Неизвестен</AuthorLine>
+            <Text tag="p" className={styles.text}>
+                Офигеть, все работает.
+            </Text>
+        </div>
     );
 }

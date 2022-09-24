@@ -5,8 +5,9 @@ import { Text } from '../../components/Text';
 import { EndPoint } from '../../components/EndPoint';
 import { MiniTabsHistory } from '../../components/Tabs/MiniTabsHistory/MiniTabsHistory';
 import { Outlet, useNavigate } from 'react-router-dom';
-import { ROUTES } from 'src/constants/routes';
-import { useIsActiveRoute } from 'src/hooks';
+import { ROUTES } from '../../constants/routes';
+import { useIsActiveRoute } from '../../hooks';
+import { PageTitle } from '../../components/PageTitle';
 
 export default function History() {
     const isActiveRoute = useIsActiveRoute(ROUTES.HISTORY, true);
@@ -17,15 +18,13 @@ export default function History() {
     }, [isActiveRoute]);
 
     return (
-        <div className={styles.root}>
-            <WhiteCard color="white">
-                <Text tag="h4" size="h4" font="additional" className={styles.title}>
-                    История
-                </Text>
+        <WhiteCard color="white" className={styles.root}>
+            <PageTitle iconName='Time'>История</PageTitle>
+            <div className={styles.minitabs}>
                 <MiniTabsHistory />
-                <Outlet />
-                <EndPoint />
-            </WhiteCard>
-        </div>
+            </div>
+            <Outlet />
+            <EndPoint />
+        </WhiteCard>
     );
 }

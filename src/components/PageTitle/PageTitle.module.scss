@@ -1,0 +1,60 @@
+@import '../../styles/utils.scss';
+
+.root {
+    margin-top: $spacing-24;
+}
+
+.pageTitle {
+    padding-top: $spacing-24;
+    margin-left: $spacing-24;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: $spacing-6;
+
+    &::before {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        left: 0;
+        height: 4.8rem;
+        display: block;
+        background: radial-gradient(75% 60% at 50% -25%,
+                $color-basic-accent 0,
+                transparent);
+        opacity: 0.05;
+    }
+}
+
+.icon {
+    opacity: 0.5;
+}
+
+.iconWaves {
+    position: absolute;
+    transform: translateY(-0.4rem);
+    margin-left: -$spacing-4;
+    z-index: -1;
+    opacity: 0.5
+}
+
+.back {
+    position: absolute;
+    margin-top: -$spacing-24;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: $spacing-4;
+    z-index: 2;
+    opacity: 0.5;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.title {
+    white-space: nowrap;
+}

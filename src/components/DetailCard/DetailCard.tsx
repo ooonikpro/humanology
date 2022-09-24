@@ -90,7 +90,7 @@ export const DetailCard: React.FC<DetailCardProps> = ({
         <div className={rootClasses} onClick={goTo}>
             <TitleInfo align="start" line={false} render={renderTitleInfoChild} />
 
-            <Text tag="h4" size="h4" font="additional" className={styles.text}>
+            <Text tag="h4" size="h4" font="additional" className={styles.title}>
                 {title}
             </Text>
 

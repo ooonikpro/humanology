@@ -12,6 +12,7 @@ import { useNavigate } from 'react-router-dom';
 import { ROUTES } from '../../constants/routes';
 import { AuthorLine } from '../../components/AuthorLine';
 import { EndPoint } from '../../components/EndPoint';
+import { PageTitle } from 'src/components/PageTitle';
 
 type CardRoleProps<K extends string, T> = {
     [key in K]: T;
@@ -49,122 +50,112 @@ export default function Suits() {
     const goToSuitsTarot = (tarotName: Socionics.Tarot) => () => navigate(ROUTES.SUITS_TAROT(tarotName));
 
     return (
-        <div className={styles.root}>
-            <WhiteCard color="white">
-                <Text tag="h1" size="h4" font="additional" className={styles.title}>
-                    Карты и масти
-                </Text>
-                <AuthorLine text="Читать 5 минут" iconName="Time">äлеша</AuthorLine>
+        <WhiteCard color="white" className={styles.root}>
+            <PageTitle iconName='Square8'>Карты и масти</PageTitle>
+            <AuthorLine text="Читать 5 минут" iconName="Time">äлеша</AuthorLine>
 
-                <Text tag="p" className={styles.text}>
-                    Авторы этой идеи, Ирина и Сергей Савченко обратили внимание
-                    на определенную близость описаний соционических типов и
-                    персонажей квадрата Придворных карт колоды Таро.
-                </Text>
+            <Text tag="p" className={styles.text}>
+                Авторы этой идеи, Ирина и Сергей Савченко обратили внимание
+                на определенную близость описаний соционических типов и
+                персонажей квадрата Придворных карт колоды Таро.
+            </Text>
 
+            <hr />
+
+            <Text tag="p" size="h6" color="accent" className={styles.text}>
+                Карты
+            </Text>
+
+            <Text tag="p" className={styles.text}>
+                Группы стимулов к деятельности. У каждой группы типов,
+                составленной таким образом, свои движущие мотивы, которые
+                кажутся достойными внимания, заставляют проявлять
+                активность.
+            </Text>
+
+            <TextInline>
+                <Text size="h6" color="grey">
+                    Интроверт
+                </Text>
                 <hr />
-
-                <Text tag="p" size="h6" color="accent" className={styles.text}>
-                    Карты
+                <Text size="h6" color="grey">
+                    Экстраверт
                 </Text>
+            </TextInline>
 
-                <Text tag="p" className={styles.text}>
-                    Группы стимулов к деятельности. У каждой группы типов,
-                    составленной таким образом, свои движущие мотивы, которые
-                    кажутся достойными внимания, заставляют проявлять
-                    активность.
+            <TextInline>
+                <Text size="h6" color="grey">
+                    Интуит
                 </Text>
-
-                <TextInline>
-                    <Text size="h6" color="grey">
-                        Интроверт
-                    </Text>
-                    <hr />
-                    <Text size="h6" color="grey">
-                        Экстраверт
-                    </Text>
-                </TextInline>
-
-                <TextInline>
-                    <Text size="h6" color="grey">
-                        Интуит
-                    </Text>
-                    <hr />
-                    <Text size="h6" color="grey">
-                        Сенсорик
-                    </Text>
-                </TextInline>
-
-                <TextInline>
-                    <Text size="h6" color="grey">
-                        Предусмотрительный
-                    </Text>
-                    <hr />
-                    <Text size="h6" color="grey">
-                        Беспечный
-                    </Text>
-                </TextInline>
-
                 <hr />
-
-                <Text tag="p" size="h6" color="accent" className={styles.text}>
-                    Масти
+                <Text size="h6" color="grey">
+                    Сенсорик
                 </Text>
-                <Text tag="p" className={styles.text}>
-                    Группируются немного по другим признакам.
+            </TextInline>
+
+            <TextInline>
+                <Text size="h6" color="grey">
+                    Предусмотрительный
                 </Text>
-
-                <TextInline>
-                    <Text size="h6" color="grey">
-                        Логик
-                    </Text>
-                    <hr />
-                    <Text size="h6" color="grey">
-                        Этик
-                    </Text>
-                </TextInline>
-
-                <TextInline>
-                    <Text size="h6" color="grey">
-                        Иррационал
-                    </Text>
-                    <hr />
-                    <Text size="h6" color="grey">
-                        Рационал
-                    </Text>
-                </TextInline>
-
-                <TextInline>
-                    <Text size="h6" color="grey">
-                        Эмотивист
-                    </Text>
-                    <hr />
-                    <Text size="h6" color="grey">
-                        Конструктивист
-                    </Text>
-                </TextInline>
-            </WhiteCard>
-
-            <WhiteCard color="beige">
-                <Text tag="h3" size="h3">
-                    Карты
+                <hr />
+                <Text size="h6" color="grey">
+                    Беспечный
                 </Text>
-            </WhiteCard>
+            </TextInline>
 
+            <hr />
+
+            <Text tag="p" size="h6" color="accent" className={styles.text}>
+                Масти
+            </Text>
+            <Text tag="p" className={styles.text}>
+                Группируются немного по другим признакам.
+            </Text>
+
+            <TextInline>
+                <Text size="h6" color="grey">
+                    Логик
+                </Text>
+                <hr />
+                <Text size="h6" color="grey">
+                    Этик
+                </Text>
+            </TextInline>
+
+            <TextInline>
+                <Text size="h6" color="grey">
+                    Иррационал
+                </Text>
+                <hr />
+                <Text size="h6" color="grey">
+                    Рационал
+                </Text>
+            </TextInline>
+
+            <TextInline>
+                <Text size="h6" color="grey">
+                    Эмотивист
+                </Text>
+                <hr />
+                <Text size="h6" color="grey">
+                    Конструктивист
+                </Text>
+            </TextInline>
+            <Text tag="h3" size="h3">
+                Карты
+            </Text>
             {DATA_ROLES.map((role, $i) => {
                 return <CardRole {...role} key={$i} onClick={goToSuitsCard(role.role)} />;
             })}
+            <Text tag="h3" size="h3">
+                Масти
+            </Text>
+            {
+                DATA_SUITS.map((tarot, $t) => {
+                    return <CardTarot {...tarot} key={$t} onClick={goToSuitsTarot(tarot.tarot)} />;
 
-            <WhiteCard color="beige">
-                <Text tag="h3" size="h3">
-                    Масти
-                </Text>
-            </WhiteCard>
-
-            {DATA_SUITS.map((tarot, $t) => {
-                return <CardTarot {...tarot} key={$t} onClick={goToSuitsTarot(tarot.tarot)} />;
-            })}
+                })}
             <EndPoint />
-        </div>
+        </WhiteCard>
     );
 }

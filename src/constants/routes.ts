@@ -24,6 +24,8 @@ export const ROUTES = {
     HISTORY_AUSHRA: '/history/aushra',
     METABOLISM: '/information-metabolism',
     FUNCTIONS: '/functions',
+    FUNCTIONS_TAGS: '/functions/tags',
+    FUNCTIONS_SIGNS: '/functions/signs',
     FUNCTIONS_ITEM: (functionName = ':functionName') => `/functions/${functionName}`,
     BLOCKS: '/blocks',
     BLOCKS_ITEM: '/blocks/:blockName',

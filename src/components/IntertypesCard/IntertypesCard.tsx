@@ -34,7 +34,7 @@ export const IntertypesCard: React.FC<Props> = ({ id, intertype }) => {
                 <hr className={styles.line} />
 
                 <div className={styles.text}>
-                    <Text color="accent" size="h6" font="additional">{info.name}</Text>
+                    <Text color="black" size="h5" font="additional">{info.name}</Text>
                     <Text color="accent" size="large" className={styles.description}>{info.description}</Text>
                 </div>
             </div>

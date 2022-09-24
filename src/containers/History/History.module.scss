@@ -14,8 +14,16 @@
         width: 10.4rem;
         height: 10.4rem;
     }
+}
 
-    .dates {
-        margin-top: $spacing-2;
-    }
+.minitabs {
+    margin-top: $spacing-40;
+}
+
+.name {
+    line-height: $spacing-24;
+}
+
+.date {
+    margin-top: $spacing-4;
 }

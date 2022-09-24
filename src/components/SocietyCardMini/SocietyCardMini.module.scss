@@ -79,19 +79,19 @@
 .element-role {
     display: flex;
     flex-direction: column;
-    gap: $spacing-2;
+    gap: 0;
 }
 
 .id-alias {
     display: flex;
     flex-direction: column;
-    gap: $spacing-2;
+    gap: 0;
     text-align: right;
 }
 
 .alias {
     @media (max-width: 400px) {
-        width: 6.4rem;
+        width: 6.0rem;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;

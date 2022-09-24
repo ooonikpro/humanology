@@ -1,8 +1,9 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import { Text } from 'src/components/Text';
-import { WhiteCard } from 'src/components/WhiteCard';
-import { Socionics } from 'src/types';
+import { EndPoint } from '../../../components/EndPoint';
+import { Text } from '../../../components/Text';
+import { WhiteCard } from '../../../components/WhiteCard';
+import { Socionics } from '../../../types';
 import styles from './SociotypesDescription.module.scss';
 
 export default function SociotypesDescription() {
@@ -20,6 +21,7 @@ export default function SociotypesDescription() {
                         <Description />
                     </React.Suspense>
                 </div>
+                <EndPoint />
             </WhiteCard>
         </div>
     );

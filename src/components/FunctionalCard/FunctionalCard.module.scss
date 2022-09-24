@@ -18,6 +18,7 @@
     }
 
     &.size {
+
         &-xl,
         &-m {
             flex-grow: 1;
@@ -53,11 +54,9 @@
 
         &-m,
         &-s {
-            background: linear-gradient(
-                60deg,
-                var(--f-block-color) 25%,
-                transparent 250%
-            );
+            background: linear-gradient(60deg,
+                    var(--f-block-color) 25%,
+                    transparent 250%);
         }
     }
 
@@ -71,11 +70,9 @@
 
     &.outline {
         .stripe {
-            background: linear-gradient(
-                200deg,
-                var(--f-block-color-role-dual) 20%,
-                transparent 30%
-            );
+            background: linear-gradient(200deg,
+                    var(--f-block-color-role-dual) 20%,
+                    transparent 30%);
             opacity: 0.1;
         }
     }
@@ -91,13 +88,11 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background: repeating-linear-gradient(
-                    -30deg,
-                    transparent,
-                    transparent 1.6rem,
-                    var(--f-block-color) 0,
-                    var(--f-block-color) 3.2rem
-    );
+    background: repeating-linear-gradient(-30deg,
+            transparent,
+            transparent 1.6rem,
+            var(--f-block-color) 0,
+            var(--f-block-color) 3.2rem);
     opacity: 0.15;
     z-index: 0;
 }
@@ -131,7 +126,7 @@
 .bottom {
     bottom: $spacing-4;
     left: $spacing-4;
-    right: $spacing-8;
+    right: 1rem;
 }
 
 .function {
@@ -178,20 +173,16 @@
 
 .number {
     &-1 {
-        background: linear-gradient(
-                    220deg,
-                    var(--f-block-color) 25%,
-                    var(--f-block-color-role) 100%
-        );
+        background: linear-gradient(220deg,
+                var(--f-block-color) 25%,
+                var(--f-block-color-role) 100%);
     }
 
     &-2 {
         opacity: 0.9;
-        background: linear-gradient(
-                    200deg,
-                    var(--f-block-color) 50%,
-                    var(--f-block-color-role) 150%
-        );
+        background: linear-gradient(200deg,
+                var(--f-block-color) 50%,
+                var(--f-block-color-role) 150%);
     }
 
     &-3 {

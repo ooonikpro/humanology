@@ -10,12 +10,5 @@ ul {
 
 .list {
 	margin-top: $spacing-24;
-  	padding: 0;
-
-	li::before {
-		content: '';
-		background: center/contain no-repeat url("../../assets/bullet.svg");
-		width: $spacing-20;
-		height: $spacing-20;
-	}
+	padding: 0;
 }

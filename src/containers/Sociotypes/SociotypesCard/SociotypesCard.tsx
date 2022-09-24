@@ -90,8 +90,8 @@ export default function SociotypesCard() {
                         className={styles.list}
                     />
                 ))}
+                <EndPoint />
             </WhiteCard>
-            <EndPoint />
         </div>
     );
 }

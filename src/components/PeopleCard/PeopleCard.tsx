@@ -45,11 +45,11 @@ export const PeopleCard: React.FC<PeopleCardProps> = ({
                     </Text>
                     <Icon name={getIconName(gender)} color="accent" size={20} className={styles.genderIcon} />
                 </div>
-                <Text tag="p" size="large" color="black" className={styles.subtitle}>
+                <Text tag="p" size="large" color="accent" className={styles.subtitle}>
                     {subtitle}
                 </Text>
                 <div className={styles.footer}>
-                    <Text tag="span" size="body" color="accent" className={styles.birthDate}>
+                    <Text tag="span" size="body" color="grey" className={styles.birthDate}>
                         {readyBirthDate}
                     </Text>
                     <Icon name="Logo" size={16} color="accent" className={styles.logo} />

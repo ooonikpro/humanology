@@ -9,7 +9,7 @@
 
 .title {
     display: block;
-    margin-top: $spacing-12;
+    margin-top: $spacing-16;
 }
 
 .text {
@@ -32,6 +32,6 @@
 .intertypes {
     display: flex;
     flex-direction: column;
-    padding-top: $spacing-12;
-    gap: $spacing-12;
+    padding-top: $spacing-20;
+    gap: $spacing-8;
 }

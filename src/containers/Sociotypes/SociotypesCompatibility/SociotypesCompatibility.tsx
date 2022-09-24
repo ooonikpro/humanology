@@ -1,10 +1,11 @@
 import React, { useMemo } from 'react';
 import styles from './SociotypesCompatibility.module.scss';
-import { WhiteCard } from 'src/components/WhiteCard';
-import { Text } from 'src/components/Text';
-import { useSociotype } from 'src/hooks';
-import { IntertypesCard } from 'src/components/IntertypesCard';
-import { Socionics } from 'src/types';
+import { WhiteCard } from '../../../components/WhiteCard';
+import { Text } from '../../../components/Text';
+import { useSociotype } from '../../../hooks';
+import { IntertypesCard } from '../../../components/IntertypesCard';
+import { Socionics } from '../../../types';
+import { EndPoint } from '../../../components/EndPoint';
 
 
 export default function SociotypesCompatibility() {
@@ -12,7 +13,7 @@ export default function SociotypesCompatibility() {
 
     const intertypes = useMemo(() => {
         return (Object.entries(intertypeRelations) as Array<[Socionics.IntertypeRelations, Socionics.SocionicsType]>).map(([intertype, id]) => (
-            <IntertypesCard id={id} intertype={intertype} key={intertype}/>
+            <IntertypesCard id={id} intertype={intertype} key={intertype} />
         ));
     }, [intertypeRelations]);
 
@@ -23,6 +24,7 @@ export default function SociotypesCompatibility() {
                 <div className={styles.intertypes}>
                     {intertypes}
                 </div>
+                <EndPoint />
             </WhiteCard>
         </div>
     );

@@ -1,9 +1,10 @@
 import React from 'react';
 import styles from './SociotypesBusiness.module.scss';
-import { WhiteCard } from 'src/components/WhiteCard';
-import { Text } from 'src/components/Text';
+import { WhiteCard } from '../../../components/WhiteCard';
+import { Text } from '../../../components/Text';
 import { useParams } from 'react-router-dom';
-import { Socionics } from 'src/types';
+import { Socionics } from '../../../types';
+import { EndPoint } from '../../../components/EndPoint';
 
 
 export default function SociotypesBusiness() {
@@ -21,6 +22,7 @@ export default function SociotypesBusiness() {
                         <Description />
                     </React.Suspense>
                 </div>
+                <EndPoint />
             </WhiteCard>
         </div>
     );

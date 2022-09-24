@@ -10,4 +10,8 @@
 	margin-top: $spacing-16;
 }
 
-
+.linkblock {
+	display: flex;
+	flex-direction: column;
+	gap: $spacing-8;
+}

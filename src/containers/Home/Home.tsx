@@ -8,6 +8,8 @@ import { SocietyCardMini } from '../../components/SocietyCardMini';
 import { ROUTES } from 'src/constants/routes';
 import { Link, Outlet } from 'react-router-dom';
 import { EndPoint } from '../../components/EndPoint';
+import { PageTitle } from '../../components/PageTitle';
+import { WhiteCard } from 'src/components/WhiteCard';
 
 const intertypes = (Object.keys(SOCIOTYPES) as Socionics.SocionicsType[]).map(
     (key) => ({
@@ -43,11 +45,15 @@ export default function Home() {
     }, [elements]);
 
     return (
-        <div className={styles.root}>
-            {renderGroups}
-
-            <Outlet />
-            <EndPoint />
-        </div>
+        <>
+            <WhiteCard color="beige" className={styles.root}>
+                <PageTitle iconName='Square1'>Социотипы</PageTitle>
+            </WhiteCard>
+            <div className={styles.root}>
+                {renderGroups}
+                <Outlet />
+                <EndPoint />
+            </div>
+        </>
     );
 }

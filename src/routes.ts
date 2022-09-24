@@ -32,6 +32,8 @@ import Suits from './containers/Suits';
 import SuitsCard from './containers/SuitsCard';
 import SuitsTarot from './containers/SuitsTarot';
 import Functions from './containers/Functions';
+import FunctionsSigns from './containers/FunctionsSigns';
+import FunctionsTags from './containers/FunctionsTags';
 import FunctionsItem from './containers/FunctionsItem';
 import Metabolism from './containers/Metabolism';
 import Quadras from './containers/Quadras';
@@ -185,6 +187,14 @@ export const routes: Route[] = [
     {
         path: ROUTES.FUNCTIONS,
         container: Functions,
+    },
+    {
+        path: ROUTES.FUNCTIONS_TAGS,
+        container: FunctionsTags,
+    },
+    {
+        path: ROUTES.FUNCTIONS_SIGNS,
+        container: FunctionsSigns,
     },
     {
         path: ROUTES.FUNCTIONS_ITEM(),
