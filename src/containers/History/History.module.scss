@@ -9,12 +9,13 @@
     margin-bottom: $spacing-24;
     margin-top: $spacing-24;
 
-    .text {
-
-    }
     .userpic {
         border-radius: $spacing-2;
         width: 10.4rem;
         height: 10.4rem;
+    }
+
+    .dates {
+        margin-top: $spacing-2;
     }
 }

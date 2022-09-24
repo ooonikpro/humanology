@@ -1,51 +1,5 @@
 @import '../_commons/text.module.scss';
 
-.aspect-pair {
-    margin: $spacing-24 0;
-
-    hr {
-        border-color: rgba($color-basic-accent, 0.5);
-    }
-}
-
-.card {
-    flex: 1 1 50%;
-    position: relative;
-    padding: $spacing-8;
-    background-color: rgba($color-basic-beige, 0.5);
-    cursor: pointer;
-    height: 16rem;
-
-    .mini-icon {
-        position: absolute;
-        top: $spacing-8;
-        left: $spacing-8;
-        opacity: 0.75;
-    }
-
-    .aspect-title {
-        position: absolute;
-        bottom: $spacing-20;
-    }
-
-    .subtitle {
-        opacity: 0.5;
-        position: absolute;
-        bottom: $spacing-8;
-    }
-
-    .aspect-icon {
-        position: absolute;
-        right: $spacing-12;
-    }
-}
-
-.macroaspect-title {
-    margin-top: $spacing-12;
-    margin-bottom: $spacing-4;
-    opacity: 0.75;
-}
-
 .grower {
     flex: 1 1 50%;
 

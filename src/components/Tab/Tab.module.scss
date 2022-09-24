@@ -10,7 +10,7 @@
     background-color: var(--color-basic-white);
     border-radius: 2px;
     opacity: 0.5;
-    white-space: nowrap;
+    line-height: $spacing-16;
     padding: 1.2rem 2rem 0.6rem 0.6rem;
 
     @include transition(opacity);

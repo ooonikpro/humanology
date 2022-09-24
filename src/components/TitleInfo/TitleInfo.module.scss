@@ -1,6 +1,35 @@
 @import '../../styles/utils.scss';
 
+.root {
+    margin-top: $spacing-12;
+}
+
 .icon {
-    flex-shrink: 0;
     opacity: 0.25;
+}
+
+.line {
+    background-color: $color-basic-accent;
+    border-color: $color-basic-accent;
+    color: $color-basic-accent;
+    opacity: 0.1;
+    width: calc(100% + $spacing-16);
+    margin: $spacing-12 -$spacing-8 0 -$spacing-8;
+
+    &::before {
+        position: absolute;
+        right: 0;
+        top: $spacing-16;
+        left: 0;
+        height: 2.4em;
+        z-index: 0;
+        display: block;
+        content: '';
+        background: linear-gradient(180deg, $color-basic-white 0%, $color-basic-accent 100%);
+        opacity: 0.5;
+    }
+}
+
+.title {
+    opacity: 0.75;
 }

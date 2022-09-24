@@ -10,8 +10,8 @@ export default function Anton() {
             <div className={styles.person}>
                 <img src={require('../../../assets/history/anton.png')} alt="Антон Кемпинский" className={styles.userpic} />
                 <span className={styles.text}>
-                    <Text tag="p" size="h5" color="accent">Антон Кемпинский</Text>
-                    <Text tag="p" size="body" color="grey">1918 — 1972, Краков</Text>
+                    <Text tag="h2" size="h5" color="accent">Антон Кемпинский</Text>
+                    <Text tag="p" size="body" color="grey" className={styles.dates}>1918 — 1972, Краков</Text>
                 </span>
             </div>
 

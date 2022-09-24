@@ -76,7 +76,7 @@ export const DetailCard: React.FC<DetailCardProps> = ({
                             ))
                         }
                     </div>
-                    <Icon name={getIconName(aspectIcon)} size={108} color="accent" className={styles.aspectIcon} />
+                    <Icon name={getIconName(aspectIcon)} size={128} color="accent" className={styles.aspectIcon} />
                 </>
             );
         }
@@ -88,7 +88,7 @@ export const DetailCard: React.FC<DetailCardProps> = ({
 
     return (
         <div className={rootClasses} onClick={goTo}>
-            <TitleInfo align="start" render={renderTitleInfoChild} />
+            <TitleInfo align="start" line={false} render={renderTitleInfoChild} />
 
             <Text tag="h4" size="h4" font="additional" className={styles.text}>
                 {title}

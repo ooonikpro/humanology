@@ -13,10 +13,13 @@
 }
 
 .text {
-    p, h1, h2 {
+
+    p,
+    h1,
+    h2 {
         margin-bottom: $spacing-16;
-        line-height: $spacing-24;
     }
+
     i {
         opacity: 0.75;
     }

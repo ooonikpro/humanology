@@ -75,13 +75,13 @@
 
 .drag {
     position: absolute;
-    top: $spacing-6;
+    top: $spacing-4;
     left: 50%;
     z-index: 999;
     transform: translateX(-50%);
-    width: 8.8rem;
+    width: 9.6rem;
     height: 0.2rem;
     border-radius: 2px;
     background-color: var(--color-basic-accent);
-    opacity: 0.25;
+    opacity: 0.15;
 }

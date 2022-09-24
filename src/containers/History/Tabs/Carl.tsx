@@ -10,7 +10,7 @@ export default function Carl() {
             <div className={styles.person}>
                 <img src={require('../../../assets/history/carl.png')} alt="Карл Густав Юнг" className={styles.userpic} />
                 <span className={styles.text}>
-                    <Text tag="p" size="h5" color="accent">Карл Густав Юнг</Text>
+                    <Text tag="h2" size="h5" color="accent">Карл Густав Юнг</Text>
                     <Text tag="p" size="body" color="grey">1875 — 1961, Цюрих</Text>
                 </span>
             </div>

@@ -13,34 +13,45 @@ interface Props {
     align?: TextInlineProps['align'],
     children?: React.ReactNode | React.ReactNode[];
     className?: string;
+    line?: boolean;
     render?: () => Props['children'];
 }
 
 export const TitleInfo: React.FC<Props> = ({
     textColor = 'accent',
-    textSize = 'base',
+    textSize = 'large',
     iconColor = 'accent',
     iconSize = 24,
+    line = true,
     align,
     children,
     className,
     render,
 }) => {
     return (
-        <TextInline align={align} className={className} justify="between">
+        <>
+            <TextInline align={align} className={className} justify="between">
+                {
+                    render ? render() :
+                        <Text tag="p" color={textColor} size={textSize} className={styles.title}>
+                            {children}
+                        </Text>
+                }
+
+                <Icon
+                    name="Help"
+                    color={iconColor}
+                    size={iconSize}
+                    className={styles.icon}
+                />
+            </TextInline>
+
             {
-                render ? render() :
-                    <Text tag="p" color={textColor} size={textSize} className={styles.text}>
-                        {children}
-                    </Text>
+                line && (
+                    <hr className={styles.line} />
+                )
             }
 
-            <Icon
-                name="Help"
-                color={iconColor}
-                size={iconSize}
-                className={styles.icon}
-            />
-        </TextInline>
+        </>
     );
 };

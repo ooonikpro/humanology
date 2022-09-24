@@ -5,7 +5,7 @@
 
     display: flex;
     flex-direction: column;
-    height: 22.4rem;
+    height: 24rem;
     overflow: hidden;
     text-decoration: none;
     outline: none;
@@ -63,7 +63,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: $spacing-4;
+    padding-top: $spacing-8;
     gap: $spacing-4;
 }
 
@@ -72,6 +72,7 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    line-height: $spacing-24;
     letter-spacing: -0.1rem;
 }
 

@@ -6,17 +6,12 @@
     margin-bottom: $spacing-8;
 }
 
-.header {
-    position: sticky;
-    top: 0;
-}
 
 .title-icon {
     margin-right: $spacing-8;
 }
 
 .body {
-    margin-top: $spacing-4;
 
     hr {
         border-color: var(--color-role);
@@ -26,49 +21,6 @@
     }
 }
 
-.aspect-details {
-    position: relative;
-    align-items: center;
-    background-color: rgba($color-basic-beige, 0.5);
-    border: 1px solid rgba($color-basic-beige, 1);
-    border-radius: $spacing-2;
-    padding: $spacing-8;
-    margin-top: $spacing-16;
-    padding-top: $spacing-48;
-    padding-bottom: $spacing-12;
-
-
-    &,
-    &-text {
-        display: flex;
-    }
-
-    &-text {
-        margin-top: -$spacing-4;
-        flex-direction: column;
-        row-gap: 0;
-    }
-}
-
-.icon-mini {
-    position: absolute;
-    top: $spacing-8;
-    left: $spacing-8;
-}
-
-.icon-help {
-    position: absolute;
-    top: $spacing-8;
-    right: $spacing-8;
-    opacity: 0.25;
-}
-
-.aspectIcon {
-    position: absolute;
-    top: $spacing-8;
-    right: $spacing-8;
-}
-
 .title {
-    padding-top: $spacing-4;
+    padding-bottom: $spacing-4;
 }

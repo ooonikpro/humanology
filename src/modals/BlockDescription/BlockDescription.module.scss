@@ -2,19 +2,13 @@
 
 .root {
     margin: 0;
-    margin-bottom: $spacing-8;
     height: 100vh;
+    margin-bottom: $spacing-8;
 
 }
 
 .header {
-    position: sticky;
-    top: 0;
-}
-
-.title {
-    position: sticky;
-    padding-top: $spacing-4;
+    top: $spacing-8;
 }
 
 .body {
@@ -27,7 +21,7 @@
     }
 
     h2 {
-        margin-bottom: $spacing-12;
+        margin-bottom: $spacing-4;
     }
 }
 
