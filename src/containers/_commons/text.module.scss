@@ -32,3 +32,9 @@ a {
 a:hover {
     color: rgba($color-basic-accent, 0.8)
 }
+
+.linkblock {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-8;
+}

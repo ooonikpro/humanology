@@ -9,9 +9,11 @@ import { Socionics } from 'src/types';
 import { ROUTES } from 'src/constants/routes';
 
 export type DetailCardProps = {
-    type: 'function' | 'aspect';
+    type: 'function' | 'aspect' | 'block' | 'ring'
     socionicFn?: Socionics.Function;
     aspect?: Socionics.Aspect;
+    ring?: 'mental' | 'vital'
+    block?: 'ego' | 'superego' | 'id' | 'superid'
     className?: string;
     title: string;
     alias?: Array<string>;
@@ -25,6 +27,8 @@ export const DetailCard: React.FC<DetailCardProps> = ({
     type,
     socionicFn,
     aspect,
+    ring,
+    block,
     title,
     alias,
     subtitle,
@@ -46,6 +50,14 @@ export const DetailCard: React.FC<DetailCardProps> = ({
         if (type === 'function') {
             image = require(`../../assets/simpleFunctions/${socionicFn}-example.svg`);
             url = ROUTES.FUNCTIONS_ITEM(socionicFn);
+        }
+
+        if (type === 'block') {
+            image = require(`../../assets/images/block-${block}.svg`);
+        }
+
+        if (type === 'ring') {
+            image = require(`../../assets/images/${ring}-ring.svg`);
         }
 
         if (type === 'aspect') {
@@ -89,10 +101,11 @@ export const DetailCard: React.FC<DetailCardProps> = ({
     return (
         <div className={rootClasses} onClick={goTo}>
             <TitleInfo align="start" line={false} render={renderTitleInfoChild} />
-
-            <Text tag="h4" size="h4" font="additional" className={styles.title}>
-                {title}
-            </Text>
+            {
+                <Text tag="h2" size="h5" font="additional" className={styles.title}>
+                    {title}
+                </Text>
+            }
 
             {
                 subtitle && (

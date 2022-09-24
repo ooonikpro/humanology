@@ -1,1 +1,7 @@
 @import '../_commons/text.module.scss';
+
+.image {
+    @media (max-width: 400px) {
+        width: 320px;
+    }
+}

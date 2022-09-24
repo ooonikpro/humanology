@@ -33,7 +33,6 @@ export default function Functions() {
             </Text>
 
             <div className={styles.linkblock}>
-
                 <BlockLink path="/blocks" label="Блоки и кольца" icon="Square6" />
                 <BlockLink path="/functions/tags" label="Бинарные признаки" icon="Document" />
                 <BlockLink path="/functions/signs" label="Мерности и направленность" icon="Document" />
