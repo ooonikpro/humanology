@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import styles from './History.module.scss';
 import { WhiteCard } from '../../components/WhiteCard';
-import { Text } from '../../components/Text';
 import { EndPoint } from '../../components/EndPoint';
 import { MiniTabsHistory } from '../../components/Tabs/MiniTabsHistory/MiniTabsHistory';
 import { Outlet, useNavigate } from 'react-router-dom';
