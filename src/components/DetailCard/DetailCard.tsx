@@ -9,9 +9,15 @@ import { Socionics } from 'src/types';
 import { ROUTES } from 'src/constants/routes';
 
 export type DetailCardProps = {
-    type: 'function' | 'aspect' | 'block' | 'ring'
+    type: 'function' | 'aspect' | 'block' | 'ring' | 'quadra' | 'suit' | 'role' | 'club' | 'psychotype' | 'mindset'
     socionicFn?: Socionics.Function;
     aspect?: Socionics.Aspect;
+    quadra?: Socionics.Quadras;
+    suit?: Socionics.Tarot;
+    role?: Socionics.Role;
+    club?: Socionics.Club;
+    psychotype?: Socionics.Psychotype;
+    mindset?: Socionics.Mindset;
     ring?: 'mental' | 'vital'
     block?: 'ego' | 'superego' | 'id' | 'superid'
     className?: string;
@@ -27,6 +33,12 @@ export const DetailCard: React.FC<DetailCardProps> = ({
     type,
     socionicFn,
     aspect,
+    quadra,
+    suit,
+    role,
+    club,
+    psychotype,
+    mindset,
     ring,
     block,
     title,
@@ -64,6 +76,18 @@ export const DetailCard: React.FC<DetailCardProps> = ({
             url = ROUTES.ASPECT_ITEM(aspect);
         }
 
+        if (type === 'quadra') {
+            url = ROUTES.QUADRA_ITEM(quadra);
+        }
+
+        if (type === 'role') {
+            url = ROUTES.SUITS_CARD(role);
+        }
+
+        if (type === 'suit') {
+            url = ROUTES.SUITS_TAROT(suit);
+        }
+
         if (image) {
             return <img src={image} alt="" className={styles.image} />;
         }
@@ -91,6 +115,30 @@ export const DetailCard: React.FC<DetailCardProps> = ({
                     <Icon name={getIconName(aspectIcon)} size={128} color="accent" className={styles.aspectIcon} />
                 </>
             );
+        }
+
+        if (quadra) {
+            return <Icon name={getIconName(quadra)} size={64} className={styles.quadraIcon} />;
+        }
+
+        if (suit) {
+            return <Icon name={getIconName(suit)} size={64} className={styles.suitIcon} />;
+        }
+
+        if (role) {
+            return <Icon name={getIconName(role)} size={64} className={styles.roleIcon} />;
+        }
+
+        if (club) {
+            return <Icon name={getIconName(club)} size={64} className={styles.clubIcon} />;
+        }
+
+        if (psychotype) {
+            return <Icon name={getIconName(psychotype)} size={64} className={styles.psychotypeIcon} />;
+        }
+
+        if (mindset) {
+            image = require(`../../assets/images/${mindset}.svg`);
         }
 
         return null;

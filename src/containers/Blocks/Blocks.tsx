@@ -15,7 +15,7 @@ export default function Blocks() {
         <WhiteCard color="white" className={styles.root}>
             <PageTitle iconName='Square6'>Блоки и кольца функций</PageTitle>
 
-            <AuthorLine text='Читать 3 минуты' iconName='Time'>Неизвестен</AuthorLine>
+            <AuthorLine text='Читать 5 минуты' iconName='Time'>Викизнание</AuthorLine>
 
             <Text tag="p" className={styles.text}>
                 Аспекты всегда используются в блоке, состоящем из пары аспектов, что обеспечивает возможность согласовывать процессы непосредственного восприятия и оценки полученной информации.
@@ -42,7 +42,7 @@ export default function Blocks() {
                 DETAIL_CARD_RINGS.map((item, $itemKey) => <DetailCard {...item} key={$itemKey} />)
             }
 
-            <PageBreak>Блоки</PageBreak>
+            <PageBreak>Блоки функций</PageBreak>
 
             {
                 DETAIL_CARD_BLOCKS.map((item, $itemKey) => <DetailCard {...item} key={$itemKey} />)

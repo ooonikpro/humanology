@@ -60,3 +60,13 @@
     margin-bottom: $spacing-4;
     opacity: 1;
 }
+
+.quadraIcon,
+.roleIcon,
+.suitIcon,
+.clubIcon,
+.psychotypeIcon,
+.mindIcon {
+    color: $color-basic-accent;
+    opacity: 0.75;
+}

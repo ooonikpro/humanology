@@ -16,6 +16,7 @@
     p {
         margin-bottom: $spacing-12;
     }
+
     i {
         opacity: 0.75;
     }
@@ -26,4 +27,14 @@
         margin-bottom: $spacing-12;
         opacity: 0.25;
     }
+}
+
+.storiesplaceholder {
+    background: rgba($color-basic-beige, 0.25);
+    border: 1px solid rgba($color-basic-accent, 0.1);
+    border-radius: 0.2rem;
+    height: 36rem;
+    display: flex;
+    align-items: center;
+    align-content: center;
 }

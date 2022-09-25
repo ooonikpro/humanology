@@ -8,13 +8,14 @@ import { EndPoint } from '../../components/EndPoint';
 import { DETAIL_CARD_ASPECTS } from '../../constants/detailCard';
 import { DetailCard } from '../../components/DetailCard';
 import { PageTitle } from '../../components/PageTitle';
+import { PageBreak } from '../../components/PageBreak';
 
 export default function Aspects() {
 
     return (
         <WhiteCard color="white" className={styles.root}>
             <PageTitle iconName='Square4'>Аспекты</PageTitle>
-            <AuthorLine text='Читать 3 минуты' iconName='Time'>Виктор Гуленко</AuthorLine>
+            <AuthorLine text='Читать 5 минут' iconName='Time'>Виктор Гуленко</AuthorLine>
 
             <Text tag="p" color="accent" size="h6" className={styles.text}>
                 Одна из восьми составляющих информационного потока, на которые его разделяет психика индивида для ориентации в коммуникативном пространстве.
@@ -70,6 +71,8 @@ export default function Aspects() {
             </div>
 
             <hr />
+
+            <PageBreak>Аспекты</PageBreak>
 
             {
                 DETAIL_CARD_ASPECTS.map((item, $itemKey) => <DetailCard {...item} key={$itemKey} />)

@@ -1,14 +1,10 @@
 import React from 'react';
-import { Text } from '../../../../components/Text';
-import { AuthorLine } from '../../../../components/AuthorLine';
+import styles from '../SociotypesVideo.module.scss';
 
 export default function ENFP() {
     return (
         <>
-            <AuthorLine text="Читать пока нечего" iconName="Unknown">Неизвестен</AuthorLine>
-            <Text tag="b" size="h5" color="role">
-                Советчик / Видео
-            </Text>
+            <div className={styles.videoplaceholder} />
         </>
     );
 }

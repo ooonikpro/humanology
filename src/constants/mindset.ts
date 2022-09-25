@@ -8,7 +8,7 @@ export const MIND_KEY: Record<Socionics.MindKey, string> = {
 };
 
 export const mindset: Record<Socionics.Mindset, string> = {
-    casual: 'Причинно-следственное',
+    causal: 'Причинно-следственное',
     algorithmic: 'Диалектико-алгоритмическое',
     vortical: 'Вихревое',
     holographic: 'Голографическое',

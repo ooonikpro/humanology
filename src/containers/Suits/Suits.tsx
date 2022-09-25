@@ -2,69 +2,30 @@ import React from 'react';
 import styles from './Suits.module.scss';
 import { WhiteCard } from '../../components/WhiteCard';
 import { Text } from '../../components/Text';
-import { TextInline } from '../../components/TextInline';
-import { getIconName } from '../../components/Icon';
-import { Socionics } from '../../types';
-import { useColorRole } from '../../hooks';
-import { SuitCard, Props as SuitCardProps } from '../../components/SuitCard';
-import { DATA_ROLES, DATA_SUITS } from './data';
 import { useNavigate } from 'react-router-dom';
-import { ROUTES } from '../../constants/routes';
 import { AuthorLine } from '../../components/AuthorLine';
 import { EndPoint } from '../../components/EndPoint';
-import { PageTitle } from 'src/components/PageTitle';
+import { DetailCard } from '../../components/DetailCard';
+import { DETAIL_CARD_SUITS, DETAIL_CARD_ROLES } from '../../constants/detailCard';
+import { PageTitle } from '../../components/PageTitle';
+import { PageBreak } from '../../components/PageBreak';
 
-type CardRoleProps<K extends string, T> = {
-    [key in K]: T;
-} & Omit<SuitCardProps, 'icon' | 'color' | 'style'>;
-
-const CardRole: React.FC<CardRoleProps<'role', Socionics.Role>> = ({
-    role,
-    ...otherProps
-}) => {
-    const { color } = useColorRole(role);
-
-    return (
-        <SuitCard
-            style={color}
-            color="role"
-            icon={getIconName(role)}
-            {...otherProps}
-        />
-    );
-};
-
-const CardTarot: React.FC<CardRoleProps<'tarot', Socionics.Tarot>> = ({
-    tarot,
-    ...otherProps
-}) => {
-    return (
-        <SuitCard color="accent" icon={getIconName(tarot)} {...otherProps} />
-    );
-};
 
 export default function Suits() {
     const navigate = useNavigate();
 
-    const goToSuitsCard = (cardName: Socionics.Role) => () => navigate(ROUTES.SUITS_CARD(cardName));
-    const goToSuitsTarot = (tarotName: Socionics.Tarot) => () => navigate(ROUTES.SUITS_TAROT(tarotName));
-
     return (
         <WhiteCard color="white" className={styles.root}>
             <PageTitle iconName='Square8'>Карты и масти</PageTitle>
-            <AuthorLine text="Читать 5 минут" iconName="Time">äлеша</AuthorLine>
+            <AuthorLine text="Читать 5 минут" iconName="Time">Сергей Савченко</AuthorLine>
 
             <Text tag="p" className={styles.text}>
-                Авторы этой идеи, Ирина и Сергей Савченко обратили внимание
+                Авторы этой идеи, Сергей и Ирина Савченко обратили внимание
                 на определенную близость описаний соционических типов и
-                персонажей квадрата Придворных карт колоды Таро.
+                персонажей квадрата придворных карт колоды Таро.
             </Text>
 
-            <hr />
-
-            <Text tag="p" size="h6" color="accent" className={styles.text}>
-                Карты
-            </Text>
+            <PageBreak>Карты</PageBreak>
 
             <Text tag="p" className={styles.text}>
                 Группы стимулов к деятельности. У каждой группы типов,
@@ -73,88 +34,57 @@ export default function Suits() {
                 активность.
             </Text>
 
-            <TextInline>
-                <Text size="h6" color="grey">
-                    Интроверт
-                </Text>
-                <hr />
-                <Text size="h6" color="grey">
-                    Экстраверт
-                </Text>
-            </TextInline>
+            <div className={styles.row}>
+                <Text size="body" color="grey">Интроверт</Text>
+                <Text size="body" color="grey">Экстраверт</Text>
+            </div>
 
-            <TextInline>
-                <Text size="h6" color="grey">
-                    Интуит
-                </Text>
-                <hr />
-                <Text size="h6" color="grey">
-                    Сенсорик
-                </Text>
-            </TextInline>
+            <div className={styles.row}>
+                <Text size="body" color="grey">Интуит</Text>
+                <Text size="body" color="grey">Сенсорик</Text>
+            </div>
 
-            <TextInline>
-                <Text size="h6" color="grey">
-                    Предусмотрительный
-                </Text>
-                <hr />
-                <Text size="h6" color="grey">
-                    Беспечный
-                </Text>
-            </TextInline>
+            <div className={styles.row}>
+                <Text size="body" color="grey">Предусмотрительный</Text>
+                <Text size="body" color="grey">Беспечный</Text>
+            </div>
 
-            <hr />
+            {
+                DETAIL_CARD_ROLES.map((item, $itemKey) => <DetailCard {...item} key={$itemKey} />)
+            }
 
-            <Text tag="p" size="h6" color="accent" className={styles.text}>
-                Масти
+            <PageBreak>Масти</PageBreak>
+
+            <Text tag="p" className={styles.text}>
+                Это не только образ мышления, но и в какой-то мере — образ, стиль жизни. Иногда какая-то особая ситуация может соотноситься с какой-то мастью и требовать своего рассмотрения именно с определенной позиции.
+            </Text>
+
+            <Text tag="p" className={styles.text}>
+                Каждая масть имеет свой набор ключевых слов, в которые она укладывается и которыми предпочитают пользоваться представители данной масти, т.е. «мечи» видят одно, а «посохи» — другое.
             </Text>
             <Text tag="p" className={styles.text}>
-                Группируются немного по другим признакам.
+                Масти — это то, что людей объединяет...
             </Text>
 
-            <TextInline>
-                <Text size="h6" color="grey">
-                    Логик
-                </Text>
-                <hr />
-                <Text size="h6" color="grey">
-                    Этик
-                </Text>
-            </TextInline>
+            <div className={styles.row}>
+                <Text size="body" color="grey">Логик</Text>
+                <Text size="body" color="grey">Этик</Text>
+            </div>
 
-            <TextInline>
-                <Text size="h6" color="grey">
-                    Иррационал
-                </Text>
-                <hr />
-                <Text size="h6" color="grey">
-                    Рационал
-                </Text>
-            </TextInline>
+            <div className={styles.row}>
+                <Text size="body" color="grey">Иррационал</Text>
+                <Text size="body" color="grey">Рационал</Text>
+            </div>
 
-            <TextInline>
-                <Text size="h6" color="grey">
-                    Эмотивист
-                </Text>
-                <hr />
-                <Text size="h6" color="grey">
-                    Конструктивист
-                </Text>
-            </TextInline>
-            <Text tag="h3" size="h3">
-                Карты
-            </Text>
-            {DATA_ROLES.map((role, $i) => {
-                return <CardRole {...role} key={$i} onClick={goToSuitsCard(role.role)} />;
-            })}
-            <Text tag="h3" size="h3">
-                Масти
-            </Text>
+            <div className={styles.row}>
+                <Text size="body" color="grey">Эмотивист</Text>
+                <Text size="body" color="grey">Конструктивист</Text>
+            </div>
+
             {
-                DATA_SUITS.map((tarot, $t) => {
-                    return <CardTarot {...tarot} key={$t} onClick={goToSuitsTarot(tarot.tarot)} />;
+                DETAIL_CARD_SUITS.map((item, $itemKey) => <DetailCard {...item} key={$itemKey} />)
+            }
 
-                })}
             <EndPoint />
         </WhiteCard>
     );

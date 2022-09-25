@@ -78,7 +78,7 @@ h6 {
 
     &-black {
         --text-color: var(--color-basic-black);
-        opacity: 0.8;
+        opacity: 0.9;
     }
 
     &-accent {
@@ -130,27 +130,21 @@ strong.root {
 ul.root {
     position: relative;
     list-style: none;
-    padding-left: $spacing-8;
 
     li {
-        padding-left: $spacing-16;
+        padding-left: $spacing-32;
         margin-bottom: $spacing-12;
 
         &::before {
-            --color-li-marker: var(--color-basic-black);
-
-            position: absolute;
-            left: 0;
-            display: block;
-            flex-shrink: 0;
             content: '';
-            width: 0.8rem;
-            height: 0.8rem;
-            margin-top: $spacing-8;
-            margin-right: $spacing-16;
-            border-radius: 50%;
-            opacity: 0.25;
-            background-color: var(--color-li-marker);
+            position: absolute;
+            margin-left: -$spacing-32;
+            height: 2rem;
+            width: 2.4rem;
+            background-image: url("../../assets/bullet.svg");
+            background-size: 2.4rem;
+            background-position: -0.4rem;
+            background-repeat: no-repeat;
         }
     }
 }

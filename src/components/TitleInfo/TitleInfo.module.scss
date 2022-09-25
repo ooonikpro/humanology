@@ -6,6 +6,10 @@
 
 .icon {
     opacity: 0.25;
+
+    &:hover {
+        opacity: 0.5;
+    }
 }
 
 .line {

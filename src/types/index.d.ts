@@ -12,7 +12,7 @@ export namespace Socionics {
         | 'irrational-2'
         | 'rational-1'
         | 'rational-4';
-    export type Mindset = 'casual' | 'algorithmic' | 'vortical' | 'holographic';
+    export type Mindset = 'causal' | 'algorithmic' | 'vortical' | 'holographic';
     export type SocionicsType =
         | 'ENTP'
         | 'ISFP'
@@ -31,22 +31,22 @@ export namespace Socionics {
         | 'ENFP'
         | 'ISTP';
     export type SocionicsTypeName =
-		| 'innovator'
-		| 'diplomat'
-		| 'enthusiast'
-		| 'analytic'
-		| 'inspector'
-		| 'mentor'
-		| 'lyricist'
-		| 'leader'
-		| 'critic'
-		| 'politic'
-		| 'guardian'
-		| 'businessman'
-		| 'administrator'
-		| 'humanist'
-		| 'adviser'
-		| 'master';
+        | 'innovator'
+        | 'diplomat'
+        | 'enthusiast'
+        | 'analytic'
+        | 'inspector'
+        | 'mentor'
+        | 'lyricist'
+        | 'leader'
+        | 'critic'
+        | 'politic'
+        | 'guardian'
+        | 'businessman'
+        | 'administrator'
+        | 'humanist'
+        | 'adviser'
+        | 'master';
     export type Aspect =
         | 'ideas'
         | 'business'

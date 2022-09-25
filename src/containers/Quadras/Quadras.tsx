@@ -1,103 +1,50 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import styles from './Quadras.module.scss';
 import { Text } from '../../components/Text';
 import { WhiteCard } from '../../components/WhiteCard';
-import { Props as QuadraCardProps, QuadraCard } from '../../components/QuadraCard';
 import { AuthorLine } from '../../components/AuthorLine';
 import { EndPoint } from '../../components/EndPoint';
 import { PageTitle } from '../../components/PageTitle';
-
-const QUADRAS_DATA: Array<Omit<QuadraCardProps, 'onClick'>> = [
-    {
-        element: 'air',
-        status: 'Альфа',
-        types: ['Демократия', 'Рассудительность'],
-        intro: 'Создать и распространить в обществе принципиально новые идеи социального развития.',
-        description: [
-            {
-                title: 'Демократы',
-                content: 'Открытость, плюрализм, преобладание горизонтальных управленческих связей.'
-            },
-            {
-                title: 'Рассудительные',
-                content: 'Совещательность, отсутствие силового компонента в принятии решений.'
-            }
-        ]
-    },
-    {
-        element: 'fire',
-        status: 'Бета',
-        types: ['Аристократия', 'Решительность'],
-        intro: 'Превратить первоначальную концепцию в законченную идеологию и внедрить новые порядки, создавая организационные структуры.',
-        description: [
-            {
-                title: 'Аристократия',
-                content: 'Закрытость, преобладание вертикальных, иерархических, управленческих связей.'
-            },
-            {
-                title: 'Решительность',
-                content: 'Приоритет силовых методов, решительные и активные действия'
-            }
-        ]
-    },
-    {
-        element: 'water',
-        status: 'Гамма',
-        types: ['Демократия', 'Решительность'],
-        intro: 'Снять накопившиеся на предыдущем этапе противоречия через критику допущенных ошибок и провести реформирование отживших жестких структур.',
-        description: [
-            {
-                title: 'Демократия',
-                content: 'Открытость, плюрализм, преобладание горизонтальных управленческих связей.'
-            },
-            {
-                title: 'Решительность',
-                content: 'Приоритет силовых методов, решительные и активные действия'
-            }
-        ]
-    },
-    {
-        element: 'earth',
-        status: 'Дельта',
-        types: ['Аристократия', 'Рассудительность'],
-        intro: 'Снять накопившиеся на предыдущем этапе противоречия через критику допущенных ошибок и провести реформирование отживших жестких структур.',
-        description: [
-            {
-                title: 'Аристократия',
-                content: 'Закрытость, преобладание вертикальных, иерархических, управленческих связей.'
-            },
-            {
-                title: 'Рассудительность',
-                content: 'Совещательность, отсутствие силового компонента в принятии решений.'
-            }
-        ]
-    }
-];
+import { DETAIL_CARD_QUADRAS } from 'src/constants/detailCard';
+import { DetailCard } from '../../components/DetailCard';
+import { PageBreak } from '../../components/PageBreak';
 
 export default function Quadras() {
-    const goTo = useNavigate();
 
     return (
         <WhiteCard color="white" className={styles.root}>
             <PageTitle iconName='Square7'>Квадры</PageTitle>
-            <AuthorLine text='Читать 5 минут' iconName='Time'>Неизвестен</AuthorLine>
+            <AuthorLine text='Читать 5 минут' iconName='Time'>Виталий Воробьёв</AuthorLine>
 
             <Text tag="p" className={styles.text}>
-                Совокупность социотипов, которые совместимы между собой, их
-                связывают общие цели, жизненные позиции и способы достижения
-                замыслов.
+                Квадра — это группа из четырех типов, которые связаны дуальными, активационными и зеркальными отношениями.
+            </Text>
+
+            <Text tag="p" color="accent" className={styles.text}>
+                <i>Это наиболее хорошо изученная малая группа.</i>
+            </Text>
+
+            <Text tag="p" size="h6" className={styles.text}>
+                Всего существует четыре квадры — <br /> Воздух <i>Альфа</i>, Огонь <i>Бета</i>, <br />Вода <i>Гамма</i> и Земля <i>Дельта</i>.
+            </Text>
+
+            <Text tag="p" size="h6" className={styles.text}>
+                Квадра выполняет определенную социальную миссию в обществе.
+                Внутри такой группы действуют установки и ценности, объединяющие людей общей для них программой действий.
             </Text>
 
             <Text tag="p" className={styles.text}>
-                Всего существует четыре квадры — Альфа, Бета, Гамма и
-                Дельта.
+                В квадре существует некий общий язык, изначальное фоновое взаимопонимание. В этом смысле квадра сильно отличается от обычной компании.
             </Text>
 
             <Text tag="p" className={styles.text}>
-                В каждой квадре властвует особая психологическая атмосфера,
-                или дух квадры.
+                Это люди, которые могут вместе работать и вместе отдыхать.
             </Text>
+
+            <Text tag="p" size="h6" className={styles.text}>
+                В этой группе у людей разные способности и они поддерживают и дополняют друг друга.
+            </Text>
+
 
             <Text tag="p" className={styles.text}>
                 В квадре находятся четыре разных социотипа, их объединяют
@@ -114,9 +61,25 @@ export default function Quadras() {
                 </Text>
                 <Text tag="li">Комплекс квадры</Text>
             </Text>
-            {QUADRAS_DATA.map((item, $i) => {
+
+            <PageBreak>О конфликтах в квадре</PageBreak>
+
+            <Text tag="p" className={styles.text}>
+                Следует понимать, что бесконфликтных групп не существует: конфликты могут возникнуть везде: и между дуалами, и в квадре.
+            </Text>
+
+            <Text tag="p" className={styles.text}>
+                Но здесь, в отличие от других групп, существует язык, на котором люди всегда могут договориться: они понимают смысл претензий друг к другу.
+            </Text>
+
+            <PageBreak>Квадры</PageBreak>
+            {
+                DETAIL_CARD_QUADRAS.map((item, $itemKey) => <DetailCard {...item} key={$itemKey} />)
+            }
+
+            {/* {QUADRAS_DATA.map((item, $i) => {
                 return <QuadraCard {...item} onClick={() => goTo(item.element)} key={$i} />;
-            })}
+            })} */}
             <EndPoint />
 
         </WhiteCard>
