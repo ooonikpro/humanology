@@ -5,6 +5,9 @@ import { Text } from '../../components/Text';
 import { AuthorLine } from '../../components/AuthorLine';
 import { EndPoint } from '../../components/EndPoint';
 import { PageTitle } from '../../components/PageTitle';
+import { PageBreak } from '../../components/PageBreak';
+import { DETAIL_CARD_INTERTYPE } from '../../constants/detailCard';
+import { DetailCard } from '../../components/DetailCard';
 
 export default function Relationships() {
     return (
@@ -42,6 +45,12 @@ export default function Relationships() {
                     в неблагоприятных отношениях будет
                     на порядок выше, чем в благоприятных.
                 </Text>
+
+                <PageBreak>Благоприятные</PageBreak>
+
+                {
+                    DETAIL_CARD_INTERTYPE.map((item, $itemKey) => <DetailCard {...item} key={$itemKey} />)
+                }
 
                 <EndPoint />
             </WhiteCard>

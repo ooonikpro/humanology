@@ -9,7 +9,7 @@ import { Socionics } from 'src/types';
 import { ROUTES } from 'src/constants/routes';
 
 export type DetailCardProps = {
-    type: 'function' | 'aspect' | 'block' | 'ring' | 'quadra' | 'suit' | 'role' | 'club' | 'psychotype' | 'mindset'
+    type: 'function' | 'aspect' | 'block' | 'ring' | 'quadra' | 'suit' | 'role' | 'club' | 'psychotype' | 'mindset' | 'intertype'
     socionicFn?: Socionics.Function;
     aspect?: Socionics.Aspect;
     quadra?: Socionics.Quadras;
@@ -18,6 +18,7 @@ export type DetailCardProps = {
     club?: Socionics.Club;
     psychotype?: Socionics.Psychotype;
     mindset?: Socionics.Mindset;
+    intertype?: Socionics.IntertypeRelations;
     ring?: 'mental' | 'vital'
     block?: 'ego' | 'superego' | 'id' | 'superid'
     className?: string;
@@ -39,6 +40,7 @@ export const DetailCard: React.FC<DetailCardProps> = ({
     club,
     psychotype,
     mindset,
+    intertype,
     ring,
     block,
     title,
@@ -139,6 +141,16 @@ export const DetailCard: React.FC<DetailCardProps> = ({
 
         if (mindset) {
             image = require(`../../assets/images/${mindset}.svg`);
+        }
+
+        if (intertype) {
+            url = ROUTES.RELATIONSHIPS_ITEM(intertype);
+            return (
+                <>
+                    <Icon name={getIconName(intertype)} size={108} className={styles.intertypeIcon} />
+                    <Icon name="IntertypeBg" size={128} className={styles.intertypeBg} />
+                </>
+            );
         }
 
         return null;
