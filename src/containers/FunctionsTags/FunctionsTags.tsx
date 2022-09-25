@@ -4,6 +4,7 @@ import { Text } from '../../components/Text';
 import styles from './FunctionsTags.module.scss';
 import { PageTitle } from '../../components/PageTitle';
 import { AuthorLine } from '../../components/AuthorLine';
+import { EndPoint } from '../../components/EndPoint';
 
 export default function FunctionsTags() {
     return (
@@ -11,7 +12,7 @@ export default function FunctionsTags() {
             <PageTitle iconName='Document' back>Бинарные признаки функций</PageTitle>
             <AuthorLine iconName='Time' text='Читать 3 минуты'>Викизнание</AuthorLine>
             <Text tag="p" size="h5" color="accent" className={styles.text}>
-                Сильная — Слабая
+                Сильная · Слабая
             </Text>
             <Text tag="p" size="large" color="accent" className={styles.text}>
                 Сильные (управляющие) функции
@@ -37,7 +38,7 @@ export default function FunctionsTags() {
             <br />
             <br />
             <Text tag="p" size="h5" color="accent" className={styles.text}>
-                Ментальная — Витальная
+                Ментальная · Витальная
             </Text>
             <Text tag="p" size="large" color="accent" className={styles.text}>
                 Ментальные функции
@@ -63,7 +64,7 @@ export default function FunctionsTags() {
             <br />
             <br />
             <Text tag="p" size="h5" color="accent" className={styles.text}>
-                Акцептная — Продуктивная
+                Акцептная · Продуктивная
             </Text>
             <Text tag="p" size="large" color="accent" className={styles.text}>
                 Акцептные функции
@@ -83,7 +84,7 @@ export default function FunctionsTags() {
             <br />
             <br />
             <Text tag="p" size="h5" color="accent" className={styles.text}>
-                Инертная — Контактная
+                Инертная · Контактная
             </Text>
             <Text tag="p" size="large" color="accent" className={styles.text}>
                 Инертные (эталонные) функции
@@ -103,7 +104,7 @@ export default function FunctionsTags() {
             <br />
             <br />
             <Text tag="p" size="h5" color="accent" className={styles.text}>
-                Вербальная — Невербальная
+                Вербальная · Невербальная
             </Text>
             <Text tag="p" size="large" color="accent" className={styles.text}>
                 Вербальные (дискутивные) функции — Сверхценности
@@ -130,7 +131,7 @@ export default function FunctionsTags() {
             <br />
             <br />
             <Text tag="p" size="h5" color="accent" className={styles.text}>
-                Оценочная — ситуативная
+                Оценочная · ситуативная
             </Text>
             <Text tag="p" size="large" color="accent" className={styles.text}>
                 Оценочные функции
@@ -156,8 +157,8 @@ export default function FunctionsTags() {
             <br />
             <br />
 
-            <Text tag="p" size="h5" color="accent" className={styles.text}>
-                Внешняя — внутренняя
+            <Text tag="p" size="h5" color="accent" className={styles.title}>
+                Внешняя · внутренняя
             </Text>
             <Text tag="p" size="large" color="accent" className={styles.text}>
                 Внешние (постоянные) функции

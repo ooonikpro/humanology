@@ -12,9 +12,16 @@
 	background-color: var(--color-basic-beige);
 	display: flex;
 	width: 100%;
-	height: calc(4.8rem + 17px);
+	height: 4.8rem;
 	overflow-x: scroll;
 	overflow-y: hidden;
 	column-gap: $spacing-4;
 	scroll-behavior: smooth;
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+
+	&::-webkit-scrollbar {
+		display: none;
+		width: 0px;
+	}
 }

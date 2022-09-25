@@ -12,9 +12,10 @@ const SvgSquareMinus = (props: SVGProps<SVGSVGElement>) => (
     >
         <path
             d="M3 12c0-7.412 1.588-9 9-9s9 1.588 9 9-1.588 9-9 9-9-1.588-9-9Z"
-            stroke="#6B360D"
+            stroke="currentColor"
+            fill="none"
         />
-        <path d="M8 12.125 16 12" stroke="#6B360D" strokeLinecap="round" />
+        <path d="M8 12.125 16 12" stroke="currentColor" strokeLinecap="round" />
     </svg>
 );
 

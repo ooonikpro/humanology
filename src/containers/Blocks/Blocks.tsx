@@ -35,13 +35,17 @@ export default function Blocks() {
                 <BlockLink path="/functions/tags" label="Бинарные признаки" icon="Document" />
                 <BlockLink path="/functions/signs" label="Мерности и направленность" icon="Document" />
             </div>
-
+            <hr />
+            <Text tag="h2" size="h5" color="accent" className={styles.text}>
+                Кольца
+            </Text>
             {
                 DETAIL_CARD_RINGS.map((item, $itemKey) => <DetailCard {...item} key={$itemKey} />)
             }
-
-            <br />
-            <br />
+            <hr />
+            <Text tag="h2" size="h5" color="accent" className={styles.text}>
+                Блоки
+            </Text>
 
             {
                 DETAIL_CARD_BLOCKS.map((item, $itemKey) => <DetailCard {...item} key={$itemKey} />)

@@ -7,6 +7,8 @@ import { Socionics } from '../../../types';
 import styles from './SociotypesPeople.module.scss';
 import { PEOPLE } from '../../../constants/people';
 import { EndPoint } from '../../../components/EndPoint';
+import { PageTitle } from '../../../components/PageTitle';
+
 
 export default function SociotypesPeople() {
     const params = useParams();
@@ -15,18 +17,16 @@ export default function SociotypesPeople() {
     const people = PEOPLE.filter((item) => item.id === id);
 
     return (
-        <div className={styles.wrap}>
-            <WhiteCard color="white">
-                <Text tag="h1" size="h4" color="accent" font="additional" className={styles.title}>Люди</Text>
-                <div className={styles.people}>
-                    {
-                        people.map((item, $index) => (
-                            <PeopleCard {...item} key={$index} className={styles.peopleCard}/>
-                        ))
-                    }
-                </div>
-                <EndPoint />
-            </WhiteCard>
-        </div>
+        <WhiteCard color="white" className={styles.wrap}>
+            <PageTitle iconName="Users">Люди</PageTitle>
+            <div className={styles.people}>
+                {
+                    people.map((item, $index) => (
+                        <PeopleCard {...item} key={$index} className={styles.peopleCard} />
+                    ))
+                }
+            </div>
+            <EndPoint />
+        </WhiteCard>
     );
 }

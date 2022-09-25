@@ -4,6 +4,8 @@ import { Text } from '../../components/Text';
 import styles from './FunctionsSigns.module.scss';
 import { PageTitle } from '../../components/PageTitle';
 import { AuthorLine } from '../../components/AuthorLine';
+import { EndPoint } from '../../components/EndPoint';
+import { Icon } from '../../components/Icon';
 
 export default function FunctionSigns() {
     return (
@@ -61,42 +63,51 @@ export default function FunctionSigns() {
             <Text tag="p" size="large" color="accent" className={styles.text}>
                 Качество
             </Text>
-            <Text tag="p" className={styles.text}>
-                + Максимизация позитива. Компетентность только в области позитивных свойств. Избегание, опасение негатива.
+            <Text tag="p" className={styles.pair}>
+                <Icon name="SquarePlus" color="accent" size={24} className={styles.iconbullet} />
+                Максимизация позитива. Компетентность только в области позитивных свойств. Избегание, опасение негатива.
             </Text>
-            <Text tag="p" className={styles.text}>
-                – Приоритет на уход от негатива. Компетентность как в области позитива, так и негатива.
+            <Text tag="p" className={styles.pair}>
+                <Icon name="SquareMinus" color="accent" size={24} className={styles.iconbullet} />
+                Приоритет на уход от негатива. Компетентность как в области позитива, так и негатива.
             </Text>
             <hr />
             <Text tag="p" size="large" color="accent" className={styles.text}>
                 Масштабность
             </Text>
-            <Text tag="p" className={styles.text}>
-                + Крупный план, локальность, детальность в ограниченной области компетенции.
+            <Text tag="p" className={styles.pair}>
+                <Icon name="SquarePlus" color="accent" size={24} className={styles.iconbullet} />
+                Крупный план, локальность, детальность в ограниченной области компетенции.
             </Text>
-            <Text tag="p" className={styles.text}>
-                – Общий план, глобальность, всеобщность.
+            <Text tag="p" className={styles.pair}>
+                <Icon name="SquareMinus" color="accent" size={24} className={styles.iconbullet} />
+                Общий план, глобальность, всеобщность.
             </Text>
             <hr />
             <Text tag="p" size="large" color="accent" className={styles.text}>
                 Направленность
             </Text>
-            <Text tag="p" className={styles.text}>
-                + Внутрь, в область отвественности. Защита своего.
+            <Text tag="p" className={styles.pair}>
+                <Icon name="SquarePlus" color="accent" size={24} className={styles.iconbullet} />
+                Внутрь, в область отвественности. Защита своего.
             </Text>
-            <Text tag="p" className={styles.text}>
-                – Наружу, захват нового, влияние.
+            <Text tag="p" className={styles.pair}>
+                <Icon name="SquareMinus" color="accent" size={24} className={styles.iconbullet} />
+                Наружу, захват нового, влияние.
             </Text>
             <hr />
             <Text tag="p" size="large" color="accent" className={styles.text}>
                 Дистанция
             </Text>
-            <Text tag="p" className={styles.text}>
-                + Близкая психологическая дистанция.
+            <Text tag="p" className={styles.pair}>
+                <Icon name="SquarePlus" color="accent" size={24} className={styles.iconbullet} />
+                Близкая психологическая дистанция.
             </Text>
-            <Text tag="p" className={styles.text}>
-                – Далёкая психологическая дистанция.
+            <Text tag="p" className={styles.pair}>
+                <Icon name="SquareMinus" color="accent" size={24} className={styles.iconbullet} />
+                Далёкая психологическая дистанция.
             </Text>
+            <EndPoint />
         </WhiteCard>
     );
 }

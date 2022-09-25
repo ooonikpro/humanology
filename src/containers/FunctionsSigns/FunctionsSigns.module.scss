@@ -1,1 +1,11 @@
 @import '../_commons/text.module.scss';
+
+.pair {
+    display: flex;
+    flex-direction: row;
+    gap: $spacing-6;
+}
+
+.iconbullet {
+    opacity: 0.5;
+}

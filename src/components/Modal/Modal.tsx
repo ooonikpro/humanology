@@ -5,7 +5,7 @@ import styles from './Modal.module.scss';
 
 let openedModals: Array<HTMLElement> = [];
 
-const ANIMATE_DURATION = 180;
+const ANIMATE_DURATION = 50;
 const target = document.getElementById('modals') as HTMLElement;
 
 export interface ModalProps {

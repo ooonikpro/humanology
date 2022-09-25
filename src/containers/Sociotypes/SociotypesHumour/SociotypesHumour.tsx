@@ -7,6 +7,8 @@ import { useIsActiveRoute } from '../../../hooks';
 import { MiniTabsHumour } from '../../../components/Tabs/MiniTabsHumour/MiniTabsHumour';
 import styles from './SociotypesHumour.module.scss';
 import { EndPoint } from 'src/components/EndPoint';
+import { PageTitle } from '../../../components/PageTitle';
+
 
 export function SociotypesHumour() {
 
@@ -18,18 +20,20 @@ export function SociotypesHumour() {
     }, [isActiveRoute]);
 
     return (
-        <div className={styles.wrap}>
-            <WhiteCard color="white">
-                <Text tag="h1" size="h4" color="accent" font="additional" className={styles.title}>Юмор</Text>
-                <div className={styles.warning}>
-                    <Text tag="span" size="body" color="accent">
-                        Если вы не умеет воспринимать юмор, обидчивы или зависимы от мнений незнакомцев, пожалуйста, не читайте. Ненормативная лексика и сексуальные темы, оскорбление чувств всех причастных. Но весело и остроумно. Авторская орфография и пунктуация соблюдена.
-                    </Text>
-                </div>
-                <MiniTabsHumour />
-                <Outlet />
-                <EndPoint />
-            </WhiteCard>
-        </div>
+        <WhiteCard color="white" className={styles.wrap}>
+            <PageTitle iconName="EmojiSadSquare">Юмор</PageTitle>
+            <div className={styles.warning}>
+                <Text tag="p" size="body" color="accent" className={styles.text}>
+                    Если вы не умеет воспринимать юмор, обидчивы или зависимы от мнений незнакомцев, пожалуйста, не читайте все что ниже.
+                </Text>
+                <hr className={styles.line} />
+                <Text tag="p" size="body" color="accent" className={styles.text}>
+                    Ненормативная лексика и сексуальные темы, оскорбление чувств всех причастных. Но весело и остроумно. Соблюдена авторская орфография и пунктуация.
+                </Text>
+            </div>
+            <MiniTabsHumour />
+            <Outlet />
+            <EndPoint />
+        </WhiteCard>
     );
 }
