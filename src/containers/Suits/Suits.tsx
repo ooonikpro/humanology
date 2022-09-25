@@ -2,7 +2,6 @@ import React from 'react';
 import styles from './Suits.module.scss';
 import { WhiteCard } from '../../components/WhiteCard';
 import { Text } from '../../components/Text';
-import { useNavigate } from 'react-router-dom';
 import { AuthorLine } from '../../components/AuthorLine';
 import { EndPoint } from '../../components/EndPoint';
 import { DetailCard } from '../../components/DetailCard';
@@ -12,7 +11,6 @@ import { PageBreak } from '../../components/PageBreak';
 
 
 export default function Suits() {
-    const navigate = useNavigate();
 
     return (
         <WhiteCard color="white" className={styles.root}>
