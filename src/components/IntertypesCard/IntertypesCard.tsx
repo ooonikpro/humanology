@@ -21,9 +21,15 @@ export const IntertypesCard: React.FC<Props> = ({ id, intertype }) => {
         styles[intertype],
     ].join(' ');
 
+    const classNamesBackground = [
+        styles.background,
+        styles[intertype],
+    ].join(' ');
+
     return (
         <div className={classNames}>
             <div className={styles.intertype}>
+                <Icon name="IntertypeBg" size={{ width: 160, height: 128 }} className={classNamesBackground} />
                 <Icon name="Help" size={24} className={styles.help} />
                 <Icon name={getIconName(intertype)} size={128} className={styles.icon} />
 

@@ -1,21 +1,21 @@
 @import '../_commons/text.module.scss';
 
 .grower {
-    flex: 1 1 50%;
+    display: flex;
+    flex-direction: row;
+    align-content: baseline;
+    gap: $spacing-12;
 
     .text {
-        margin-top: $spacing-12;
         line-height: $spacing-20;
     }
 }
 
 .blackwhite {
-    margin: $spacing-16 0;
     display: flex;
-    flex-direction: row;
-    align-content: space-between;
-    gap: $spacing-12;
-    width: 100%;
+    flex-direction: column;
+    align-content: flex-start;
+    gap: $spacing-8;
 }
 
 .mb8 {

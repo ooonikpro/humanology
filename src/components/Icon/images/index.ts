@@ -1,10 +1,11 @@
 export { default as BlockEgo } from './BlockEgo';
 export { default as BlockId } from './BlockId';
 export { default as BlockSuperEgo } from './BlockSuperEgo';
+export { default as BlockSuperid } from './BlockSuperid';
 export { default as Clubs } from './Clubs';
 export { default as Functions } from './Functions';
+export { default as IntertypeBg } from './IntertypeBg';
 export { default as MentalRing } from './MentalRing';
 export { default as Quadras } from './Quadras';
 export { default as Suits } from './Suits';
-export { default as SuperId } from './SuperId';
 export { default as VitalRing } from './VitalRing';

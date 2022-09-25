@@ -45,23 +45,27 @@ export default function Aspects() {
 
             <div className={styles.blackwhite}>
                 <div className={styles.grower}>
-                    <Icon name="Extravertniy" size={48} />
-                    <Text tag="p" className={styles.text}>
-                        <b>Экстравертный</b>, <br />«черный», <br />объективный
-                    </Text>
-                    <Text tag="p" size="body" className={styles.text}>
-                        Сущность аспекта, <br />его свойства
-                    </Text>
+                    <Icon name="Extravertniy" size={40} />
+                    <span>
+                        <Text tag="b" className={styles.text}>
+                            Экстравертный, «черный», объективный
+                        </Text>
+                        <Text tag="p" size="body" className={styles.text}>
+                            Сущность аспекта, его свойства
+                        </Text>
+                    </span>
                 </div>
 
                 <div className={styles.grower}>
-                    <Icon name="Introvertniy" size={48} />
-                    <Text tag="p" className={styles.text}>
-                        <b>Интровертный</b>, <br />«белый», <br />cубъективный
-                    </Text>
-                    <Text tag="p" size="body" className={styles.text}>
-                        Отношения сущностей, <br />сопоставление.
-                    </Text>
+                    <Icon name="Introvertniy" size={40} />
+                    <span>
+                        <Text tag="b" className={styles.text}>
+                            Интровертный, «белый», cубъективный
+                        </Text>
+                        <Text tag="p" size="body" className={styles.text}>
+                            Отношения сущностей, сопоставление.
+                        </Text>
+                    </span>
                 </div>
             </div>
 

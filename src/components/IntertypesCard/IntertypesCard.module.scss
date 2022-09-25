@@ -13,7 +13,8 @@
         background-color: rgba($color-pastel-turquoise, .25);
 
         .icon,
-        .help {
+        .help,
+        .background {
             color: $color-pastel-turquoise;
         }
     }
@@ -25,9 +26,11 @@
         background-color: rgba($color-pastel-green, .25);
 
         .icon,
-        .help {
+        .help,
+        .background {
             color: $color-pastel-green;
         }
+
     }
 
     &.beneficiary,
@@ -37,7 +40,8 @@
         background-color: rgba($color-pastel-yellow, .25);
 
         .icon,
-        .help {
+        .help,
+        .background {
             color: $color-pastel-yellow;
         }
     }
@@ -49,7 +53,8 @@
         background-color: rgba($color-pastel-pink, .25);
 
         .icon,
-        .help {
+        .help,
+        .background {
             color: $color-pastel-pink;
         }
     }
@@ -159,4 +164,9 @@
 .icon {
     position: absolute;
     margin-bottom: 6.4rem;
+}
+
+.background {
+    position: absolute;
+    margin-bottom: 5.9rem;
 }

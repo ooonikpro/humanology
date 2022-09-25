@@ -6,6 +6,8 @@ import styles from '../History.module.scss';
 export default function Aushra() {
     return (
         <>
+            <AuthorLine text='Читать 2 минуты' iconName='Time'>Интернет</AuthorLine>
+
             <div className={styles.person}>
                 <img src={require('../../../assets/history/aushra.png')} alt="Аушра Аугустинавичюте" className={styles.userpic} />
                 <span className={styles.text}>
@@ -14,11 +16,10 @@ export default function Aushra() {
                 </span>
             </div>
 
-            <Text tag="p" size="h5" font="additional" color="accent">
+            <Text tag="p" size="h4" font="additional" color="accent">
                 На задворках империи…
             </Text>
 
-            <AuthorLine text='Читать 2 минуты' iconName='Time'>Интернет</AuthorLine>
 
             <Text tag="p" size="large">
                 Основоположница соционики — концепции типов личности и взаимоотношений между ними, основанной на типологии известного швейцарского психолога К. Г. Юнга и теории информационного метаболизма А. Кемпинского.

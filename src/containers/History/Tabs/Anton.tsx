@@ -7,6 +7,8 @@ import { BlockLink } from '../../../components/BlockLink';
 export default function Anton() {
     return (
         <>
+            <AuthorLine text='Читать 2 минуты' iconName='Time'>Интернет</AuthorLine>
+
             <div className={styles.person}>
                 <img src={require('../../../assets/history/anton.png')} alt="Антон Кемпинский" className={styles.userpic} />
                 <span>
@@ -15,11 +17,9 @@ export default function Anton() {
                 </span>
             </div>
 
-            <Text tag="p" size="h5" font="additional" color="accent">
+            <Text tag="p" size="h4" font="additional" color="accent">
                 Польский метаболизм
             </Text>
-
-            <AuthorLine text='Читать 2 минуты' iconName='Time'>Интернет</AuthorLine>
 
             <Text tag="p" size="large">
                 Польский психиатр, психолог, философ. Первым начал внедрять в Польше новый гуманистический подход в психиатрии и психотерапии. Был одним из первых исследователей, которого заинтересовали психологические проблемы бывших узников нацистских лагерей смерти.

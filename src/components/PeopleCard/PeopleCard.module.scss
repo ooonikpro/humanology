@@ -2,7 +2,7 @@
 
 .root {
     width: 100%;
-    min-width: 18rem;
+    min-width: 16rem;
 
     @media screen and (min-width: 380px) {
         width: 50%;
@@ -22,9 +22,10 @@
     @include colorElement(--background-color);
 
     width: 100%;
-    border: 1px solid rgba($color-basic-accent, 0.1);
+    background: rgba($color-basic-white, 0.9);
     border-radius: 0.2rem;
     padding: $spacing-4;
+
 }
 
 .header {
@@ -33,14 +34,17 @@
     flex-direction: row;
     justify-content: space-between;
     border-bottom: 1px solid var(--card-border-color);
+    padding-bottom: 0.4rem;
 
     &::before {
         content: '';
         position: absolute;
+        width: calc(100% + $spacing-8);
         margin: -$spacing-4;
-        background: var(--background-color);
-        opacity: 0.05;
-        z-index: -1;
+        height: 50%;
+        border-radius: 0.2rem;
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, var(--background-color) 100%);
+        opacity: 0.15;
     }
 }
 
@@ -48,6 +52,7 @@
     width: 50%;
     padding-top: 50%;
     position: relative;
+    z-index: 2;
 }
 
 .userpic {
@@ -63,7 +68,7 @@
 .portrait {
     position: absolute;
     width: 100%;
-    bottom: 0;
+    bottom: -0.4rem;
     z-index: 1;
 }
 
@@ -120,21 +125,19 @@
 }
 
 .downtown {
-    margin-top: $spacing-4;
+    margin-top: $spacing-6;
+    padding-top: $spacing-6;
     min-width: 16rem;
     overflow: hidden;
-    border: 1px solid rgba($color-basic-accent, 0.1);
+    background-color: rgba($color-basic-white, 0.9);
     border-radius: 0.2rem;
-    padding: $spacing-4;
+    border-top: 1px solid rgba($color-basic-accent, 0.1);
 }
 
 .iconrow {
     display: flex;
     flex-direction: row;
     gap: $spacing-4;
-    padding-bottom: $spacing-4;
-    margin-bottom: $spacing-4;
-    border-bottom: 1px solid rgba($color-basic-accent, 0.1);
 
     .icon50 {
         opacity: 0.5;

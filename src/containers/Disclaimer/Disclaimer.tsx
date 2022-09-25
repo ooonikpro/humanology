@@ -13,10 +13,11 @@ export default function Disclaimer() {
             <AuthorLine text='Читать 5 минут' iconName='Time'>äлеша</AuthorLine>
 
             <Text tag="p" className={styles.text}>
-                Верить, проверять, доверять — дело ваше.
+                Верить, проверять, доверять соционике — дело ваше.
+                Убедить до появления какого-то материального индикатора не представляется возможным.
             </Text>
 
-            <Text tag="p" size="h5" className={styles.text} color="accent">
+            <Text tag="p" size="h6" className={styles.text} color="accent">
                 Все что тут написано, собрано в интернете <br /> и авторски переработано.
             </Text>
 
@@ -31,39 +32,39 @@ export default function Disclaimer() {
                 Процитирую Аушру:
             </Text>
 
-            <Text tag="p" size="h6" color="accent" className={styles.text}>
+            <Text tag="p" size="h6" className={styles.text}>
                 Основная цель — показать, что в проявлениях любви, как и во всех других областях человеческого общения, нет правых и неправых, хороших и плохих.
             </Text>
 
-            <Text tag="p" size="h6" color="accent" className={styles.text}>
+            <Text tag="p" size="h6" className={styles.text}>
                 Есть лишь люди с подходящими и неподходящими типами личности.
             </Text>
 
-            <Text tag="p" color="accent" className={styles.text}>
+            <Text tag="p" className={styles.text}>
                 Кроме того, есть люди с менее уравновешенной психикой. Это те, чье окружение образовано из людей с неподходящими типами.
             </Text>
 
-            <Text tag="p" color="accent" className={styles.text}>
+            <Text tag="p" className={styles.text}>
                 Есть люди с более уравновешенной психикой.<br /> Чье окружение образовано из людей с подходящими типами.
             </Text>
 
-            <Text tag="p" size="h6" color="accent" className={styles.text}>
+            <Text tag="p" size="h6" className={styles.text}>
                 Люди всегда мечтали жить в хороших отношениях с друг другом, мечтали быть понятыми и понимать других.
             </Text>
 
-            <Text tag="p" color="accent" className={styles.text}>
+            <Text tag="p" className={styles.text}>
                 Хотели видеть кругом доброжелательность и сами быть доброжелательными. Мечтали все, удавалось немногим.
             </Text>
 
-            <Text tag="p" color="accent" className={styles.text}>
+            <Text tag="p" className={styles.text}>
                 Сегодня мы знаем, что нельзя мечтать о по-настоящему гармоничной, мирной и творческой жизни общества, пока люди не поняли своей разнотипной природы и скрытых за своими типами закономерностей общения.
             </Text>
 
-            <Text tag="p" color="accent" className={styles.text}>
+            <Text tag="p" className={styles.text}>
                 Совершенно новым этапом в жизни общества будет такая его реорганизация, которая каждому человеку предоставит возможность для достаточно количества контактов с нужными для его психосоматического здоровья людьми.
             </Text>
 
-            <Text tag="p" size="h6" color="accent" className={styles.text}>
+            <Text tag="p" size="h6" className={styles.text}>
                 Трудно сказать, когда сбудется эта мечта, но другой дороги нет.
             </Text>
 
@@ -79,6 +80,7 @@ export default function Disclaimer() {
 
             <Text tag="p" className={styles.text}>
                 Если вы нашли ошибку или неточность — напишите, пожалуйста, туда же.
+                За скриншот и версию браузера / телефонной оси — лучи добра.
             </Text>
             <EndPoint />
         </WhiteCard>

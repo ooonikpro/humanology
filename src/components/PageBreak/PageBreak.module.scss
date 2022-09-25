@@ -1,0 +1,14 @@
+@import '../../styles/utils.scss';
+
+.root {
+    margin-top: $spacing-40;
+    padding-bottom: $spacing-8;
+    border-bottom: 1px solid rgba($color-basic-accent, 0.05);
+    display: flex;
+    align-items: center;
+    gap: $spacing-8;
+}
+
+.icon {
+    opacity: 0.5;
+}

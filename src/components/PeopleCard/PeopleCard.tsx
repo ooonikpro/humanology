@@ -54,18 +54,19 @@ export const PeopleCard: React.FC<PeopleCardProps> = ({
                     </Text>
                     <Icon name="Logo" size={16} color="accent" className={styles.logo} />
                 </div>
-            </div>
-            <div className={styles.downtown}>
-                <div className={styles.iconrow}>
-                    <Icon name={getIconName(sociotypeProps.element)} size={24} color="element" />
-                    <Icon name={getIconName(sociotypeProps.role)} size={24} color="role" />
-                    <Icon name={getIconName(sociotypeProps.tarot)} size={24} color="accent" className={styles.icon50} />
-                    <Icon name={getIconName(sociotypeProps.club)} size={24} color="accent" className={styles.icon50} />
-                    <Icon name={getIconName(sociotypeProps.psychotype)} size={24} color="accent" className={styles.icon50} />
+                <div className={styles.downtown}>
+                    <Text font="additional" size="large" color="role">
+                        {sociotypeProps.name}
+                    </Text>
+                    <div className={styles.iconrow}>
+                        <Icon name={getIconName(sociotypeProps.element)} size={24} color="element" />
+                        <Icon name={getIconName(sociotypeProps.role)} size={24} color="role" />
+                        <Icon name={getIconName(sociotypeProps.tarot)} size={24} color="accent" className={styles.icon50} />
+                        <Icon name={getIconName(sociotypeProps.club)} size={24} color="accent" className={styles.icon50} />
+                        <Icon name={getIconName(sociotypeProps.psychotype)} size={24} color="accent" className={styles.icon50} />
+                    </div>
+
                 </div>
-                <Text font="additional" size="large" color="role">
-                    {sociotypeProps.name}
-                </Text>
             </div>
         </div>
     );

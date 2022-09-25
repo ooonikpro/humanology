@@ -7,6 +7,8 @@ import { BlockLink } from '../../../components/BlockLink';
 export default function Katrin() {
     return (
         <>
+            <AuthorLine text='Читать 2 минуты' iconName='Time'>Интернет</AuthorLine>
+
             <div className={styles.person}>
                 <img src={require('../../../assets/history/katrin.png')} alt="Кэтрин и Изабель Бриггс" className={styles.userpic} />
                 <span className={styles.text}>
@@ -15,11 +17,9 @@ export default function Katrin() {
                 </span>
             </div>
 
-            <Text tag="p" size="h5" font="additional" color="accent">
+            <Text tag="p" size="h4" font="additional" color="accent">
                 Дочки-матери типологии
             </Text>
-
-            <AuthorLine text='Читать 2 минуты' iconName='Time'>Интернет</AuthorLine>
 
             <Text tag="p" size="large">
                 Бриггс училась дома у своего отца. Утверждала, что она не помнит, кто научил ее писать, но он или

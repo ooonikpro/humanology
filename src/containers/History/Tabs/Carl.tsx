@@ -7,6 +7,7 @@ import { BlockLink } from '../../../components/BlockLink';
 export default function Carl() {
     return (
         <>
+            <AuthorLine text='Читать 2 минуты' iconName='Time'>Интернет</AuthorLine>
             <div className={styles.person}>
                 <img src={require('../../../assets/history/carl.png')} alt="Карл Густав Юнг" className={styles.userpic} />
                 <span className={styles.text}>
@@ -14,12 +15,9 @@ export default function Carl() {
                     <Text tag="p" size="body" color="grey" className={styles.date}>1875 — 1961, Цюрих</Text>
                 </span>
             </div>
-            <Text tag="p" size="h5" font="additional" color="accent">
+            <Text tag="p" size="h4" font="additional" color="accent">
                 Психические функции, Карл
             </Text>
-
-            <AuthorLine text='Читать 2 минуты' iconName='Time'>Интернет</AuthorLine>
-
             <Text tag="p" size="large">
                 Ввёл в психологию понятия «психических функций», характеристики индивидуальных психических процессов
                 которые в комбинации с его же «психическими установками» позволяют описать различные «типы личности».

@@ -1,7 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { PeopleCard } from '../../../components/PeopleCard';
-import { Text } from '../../../components/Text';
 import { WhiteCard } from '../../../components/WhiteCard';
 import { Socionics } from '../../../types';
 import styles from './SociotypesPeople.module.scss';
@@ -17,7 +16,7 @@ export default function SociotypesPeople() {
     const people = PEOPLE.filter((item) => item.id === id);
 
     return (
-        <WhiteCard color="white" className={styles.wrap}>
+        <WhiteCard color="beige" className={styles.wrap}>
             <PageTitle iconName="Users">Люди</PageTitle>
             <div className={styles.people}>
                 {

@@ -1,10 +1,12 @@
 @import '../../styles/utils';
 
 .root {
-    background: rgba($color-basic-beige, 0.5);
+    background: rgba($color-basic-beige, 0.25);
     padding: $spacing-8;
-    margin-top: $spacing-8;
+    margin-top: $spacing-4;
     text-decoration: none;
+    border: 1px solid rgba($color-basic-accent, 0.1);
+    border-radius: 0.2rem;
     cursor: pointer;
 
     a {
@@ -12,7 +14,8 @@
     }
 
     &:hover {
-        background: rgba($color-basic-beige, 1);
+        background: rgba($color-basic-beige, 0.5);
+        border: 1px solid rgba($color-basic-accent, 0.25);
     }
 
     .text {
@@ -26,7 +29,7 @@
     opacity: 0.75;
     column-gap: $spacing-6;
     row-gap: $spacing-4;
-    margin-bottom: $spacing-12;
+    margin-bottom: $spacing-8;
 }
 
 .alias {
