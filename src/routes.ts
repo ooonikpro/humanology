@@ -56,66 +56,64 @@ export const routes: Route[] = [
     {
         path: ROUTES.HOME, // /types
         container: Home,
+    },
+    {
+        path: ROUTES.SOCIOTYPES(), // /types/:id
+        container: Sociotypes,
         children: [
             {
-                path: ROUTES.SOCIOTYPES(), // /types/:id
-                container: Sociotypes,
+                path: ROUTES.SOCIOTYPES_CARD,
+                index: true,
+                container: SociotypesCard,
+            },
+            {
+                path: ROUTES.SOCIOTYPES_VIDEO,
+                index: true,
+                container: SociotypesVideo,
+            },
+            {
+                path: ROUTES.SOCIOTYPES_DESCRIPTION,
+                container: SociotypesDescription,
+            },
+            {
+                path: ROUTES.SOCIOTYPES_COMPATIBILITY,
+                container: SociotypesCompatibility,
+            },
+            {
+                path: ROUTES.SOCIOTYPES_BUSINESS,
+                container: SociotypesBusiness,
+            },
+            {
+                path: ROUTES.SOCIOTYPES_DEVELOPMENT,
+                container: SociotypesDevelopment,
+            },
+            {
+                path: ROUTES.SOCIOTYPES_STORIES,
+                container: SociotypesStories,
+            },
+            {
+                path: ROUTES.SOCIOTYPES_PEOPLE,
+                container: SociotypesPeople,
+            },
+            {
+                path: ROUTES.SOCIOTYPES_HUMOUR,
+                container: SociotypesHumour,
                 children: [
                     {
-                        path: ROUTES.SOCIOTYPES_CARD,
-                        index: true,
-                        container: SociotypesCard,
+                        path: ROUTES.SOCIOTYPES_HUMOUR_LURKMORE,
+                        container: HumourLurkmore,
                     },
                     {
-                        path: ROUTES.SOCIOTYPES_VIDEO,
-                        index: true,
-                        container: SociotypesVideo,
+                        path: ROUTES.SOCIOTYPES_HUMOUR_SELUTIN,
+                        container: HumourSelutin,
                     },
                     {
-                        path: ROUTES.SOCIOTYPES_DESCRIPTION,
-                        container: SociotypesDescription,
-                    },
-                    {
-                        path: ROUTES.SOCIOTYPES_COMPATIBILITY,
-                        container: SociotypesCompatibility,
-                    },
-                    {
-                        path: ROUTES.SOCIOTYPES_BUSINESS,
-                        container: SociotypesBusiness,
-                    },
-                    {
-                        path: ROUTES.SOCIOTYPES_DEVELOPMENT,
-                        container: SociotypesDevelopment,
-                    },
-                    {
-                        path: ROUTES.SOCIOTYPES_STORIES,
-                        container: SociotypesStories,
-                    },
-                    {
-                        path: ROUTES.SOCIOTYPES_PEOPLE,
-                        container: SociotypesPeople,
-                    },
-                    {
-                        path: ROUTES.SOCIOTYPES_HUMOUR,
-                        container: SociotypesHumour,
-                        children: [
-                            {
-                                path: ROUTES.SOCIOTYPES_HUMOUR_LURKMORE,
-                                container: HumourLurkmore,
-                            },
-                            {
-                                path: ROUTES.SOCIOTYPES_HUMOUR_SELUTIN,
-                                container: HumourSelutin,
-                            },
-                            {
-                                path: ROUTES.SOCIOTYPES_HUMOUR_ELVIRA,
-                                container: HumourElvira,
-                            },
-                        ],
+                        path: ROUTES.SOCIOTYPES_HUMOUR_ELVIRA,
+                        container: HumourElvira,
                     },
                 ],
             },
-        ]
+        ],
     },
     {
         path: ROUTES.LOADING,
