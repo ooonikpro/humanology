@@ -6,7 +6,7 @@ import { SOCIOTYPES } from '../../constants/socionicsTypes';
 import { Socionics } from '../../types';
 import { SocietyCardMini } from '../../components/SocietyCardMini';
 import { ROUTES } from '../../constants/routes';
-import { Link, Outlet } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { EndPoint } from '../../components/EndPoint';
 import { PageTitle } from '../../components/PageTitle';
 import { WhiteCard } from '../../components/WhiteCard';
@@ -94,9 +94,10 @@ export default function Home() {
                     </MenuItem>
                 </div>
             </WhiteCard>
-            {renderGroups}
-            <Outlet />
-            <EndPoint />
+            <div>
+                {renderGroups}
+                <EndPoint />
+            </div>
         </>
     );
 }
