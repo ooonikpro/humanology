@@ -4,11 +4,20 @@
     display: flex;
     flex-direction: column;
     row-gap: $spacing-4;
-    margin-bottom: $spacing-16;
+    padding-bottom: $spacing-24;
+    margin-bottom: $spacing-20;
+    border-bottom: 1px solid rgba($color-basic-accent, 0.25);
 }
 
 .link {
     width: calc(50% - #{calc($spacing-4 / 2)});
     min-width: 16rem;
     text-decoration: none;
+}
+
+.linkblock {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-8;
+    margin-bottom: $spacing-8;
 }

@@ -140,7 +140,7 @@ export const PEOPLE: PeopleItem[] = [
     },
     {
         uid: 'natali-portman',
-        id: 'ENTP',
+        id: 'ISTJ',
         name: 'Натали Портман',
         subtitle: 'Актриса',
         birthDate: '06/09/1981',
@@ -154,4 +154,16 @@ export const PEOPLE: PeopleItem[] = [
         birthDate: '08/04/1961',
         gender: 'male'
     },
+    {
+        uid: 'silvester-stalone',
+        id: 'ISTP',
+        name: 'Сильвестр Сталоне',
+        subtitle: 'Актер',
+        birthDate: '07/06/1946',
+        gender: 'male'
+    },
+
+
+
+
 ];

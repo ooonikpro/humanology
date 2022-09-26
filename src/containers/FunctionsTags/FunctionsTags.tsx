@@ -5,15 +5,22 @@ import styles from './FunctionsTags.module.scss';
 import { PageTitle } from '../../components/PageTitle';
 import { AuthorLine } from '../../components/AuthorLine';
 import { EndPoint } from '../../components/EndPoint';
+import { PageBreak } from '../../components/PageBreak';
 
 export default function FunctionsTags() {
     return (
         <WhiteCard color="white" className={styles.root}>
             <PageTitle iconName='Document' back>Бинарные признаки функций</PageTitle>
             <AuthorLine iconName='Time' text='Читать 3 минуты'>Викизнание</AuthorLine>
-            <Text tag="p" size="h5" color="accent" className={styles.text}>
-                Сильная · Слабая
+            <Text tag="p" size="large" className={styles.text}>
+                Каждая из 8-и функций характеризуется тремя ортогональными бинарными признаками:
             </Text>
+
+            <PageBreak>
+                Сильная · Слабая
+            </PageBreak>
+
+
             <Text tag="p" size="large" color="accent" className={styles.text}>
                 Сильные (управляющие) функции
             </Text>
@@ -35,11 +42,9 @@ export default function FunctionsTags() {
                 Это совесть и антисовесть человека, по ним происходит подстройка под общество. Зона вечных колебаний и неуверенности. Собственная точка зрения либо отсутствует, либо слаба, так что человека можно достаточно легко склонить к другой точке зрения.
             </Text>
 
-            <br />
-            <br />
-            <Text tag="p" size="h5" color="accent" className={styles.text}>
+            <PageBreak>
                 Ментальная · Витальная
-            </Text>
+            </PageBreak>
             <Text tag="p" size="large" color="accent" className={styles.text}>
                 Ментальные функции
             </Text>
@@ -61,11 +66,9 @@ export default function FunctionsTags() {
                 Мир познается через собственные ощущения и переживания, через проекцию внутрь. Характерна субъективность, индивидуальное представление. Результат как правило воплощается в деятельности, рассуждения идут от первого лица.
             </Text>
 
-            <br />
-            <br />
-            <Text tag="p" size="h5" color="accent" className={styles.text}>
+            <PageBreak>
                 Акцептная · Продуктивная
-            </Text>
+            </PageBreak>
             <Text tag="p" size="large" color="accent" className={styles.text}>
                 Акцептные функции
             </Text>
@@ -81,11 +84,10 @@ export default function FunctionsTags() {
                 Средство изменения действительности. Находясь в модели после акцептных функций, они находят решения задач поставленных перед ними, таким образом они не отражают действительность, как акцептные, а генерируют искаженную, воображаемую картину мира, представляющую собой решение поставленных перед ними задач.
             </Text>
 
-            <br />
-            <br />
-            <Text tag="p" size="h5" color="accent" className={styles.text}>
+            <PageBreak>
                 Инертная · Контактная
-            </Text>
+            </PageBreak>
+
             <Text tag="p" size="large" color="accent" className={styles.text}>
                 Инертные (эталонные) функции
             </Text>
@@ -101,11 +103,10 @@ export default function FunctionsTags() {
                 Весьма подвижны и способны хорошо управлять своим внутренним состоянием. Именно с них идёт первичная реакция на воздействие извне. Они производят начальную обработку поступившей информации, они же порождают окончательные решения. Активность определяется тем, что происходит вокруг или текущими задачами, между которыми они легко переключаются.
             </Text>
 
-            <br />
-            <br />
-            <Text tag="p" size="h5" color="accent" className={styles.text}>
+            <PageBreak>
                 Вербальная · Невербальная
-            </Text>
+            </PageBreak>
+
             <Text tag="p" size="large" color="accent" className={styles.text}>
                 Вербальные (дискутивные) функции — Сверхценности
             </Text>
@@ -128,11 +129,10 @@ export default function FunctionsTags() {
                 Активность ограничена насущными потребностями и запросом общества.
             </Text>
 
-            <br />
-            <br />
-            <Text tag="p" size="h5" color="accent" className={styles.text}>
+            <PageBreak>
                 Оценочная · ситуативная
-            </Text>
+            </PageBreak>
+
             <Text tag="p" size="large" color="accent" className={styles.text}>
                 Оценочные функции
             </Text>
@@ -154,12 +154,10 @@ export default function FunctionsTags() {
                 Этим функциям, наоборот, свойственна подстройка под текущую ситуацию, и избегание ставить оценки другим. Напротив, оценки ставятся только конкретным действиям.
             </Text>
 
-            <br />
-            <br />
-
-            <Text tag="p" size="h5" color="accent" className={styles.title}>
+            <PageBreak>
                 Внешняя · внутренняя
-            </Text>
+            </PageBreak>
+
             <Text tag="p" size="large" color="accent" className={styles.text}>
                 Внешние (постоянные) функции
             </Text>

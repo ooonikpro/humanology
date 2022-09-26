@@ -74,6 +74,10 @@ export const DetailCard: React.FC<DetailCardProps> = ({
             image = require(`../../assets/images/${ring}-ring.svg`);
         }
 
+        if (type === 'mindset') {
+            image = require(`../../assets/images/${mindset}.svg`);
+        }
+
         if (type === 'aspect') {
             url = ROUTES.ASPECT_ITEM(aspect);
         }
@@ -137,10 +141,6 @@ export const DetailCard: React.FC<DetailCardProps> = ({
 
         if (psychotype) {
             return <Icon name={getIconName(psychotype)} size={64} className={styles.psychotypeIcon} />;
-        }
-
-        if (mindset) {
-            image = require(`../../assets/images/${mindset}.svg`);
         }
 
         if (intertype) {

@@ -1,11 +1,13 @@
 @import '../../../styles/utils.scss';
 
-.wrap {
+.root {
     display: flex;
     flex-direction: column;
-    gap: $spacing-4;
+    row-gap: $spacing-4;
+    padding-bottom: $spacing-24;
+    margin-bottom: $spacing-12;
+    border-bottom: 1px solid rgba($color-basic-accent, 0.25);
 }
-
 
 .title {
     display: block;
@@ -13,7 +15,6 @@
 }
 
 .people {
-    padding-top: $spacing-32;
     display: flex;
     flex-wrap: wrap;
     row-gap: $spacing-4;
