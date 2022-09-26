@@ -102,8 +102,8 @@ export const DetailCard: React.FC<DetailCardProps> = ({
         if (role === 'king') {
             return (
                 <div className={styles.kings}>
-                    <Icon name={getIconName(role)} size={64} className={styles.detailCardIcon} />
-                    <Icon name="Queen" size={64} className={styles.detailCardIcon} />
+                    <Icon name={getIconName(role)} size={80} className={styles.detailCardIcon} />
+                    <Icon name="Queen" size={80} className={styles.detailCardIcon} />
                 </div>
             );
         }
@@ -113,7 +113,7 @@ export const DetailCard: React.FC<DetailCardProps> = ({
         }
 
         if (icon) {
-            return <Icon name={getIconName(icon)} size={72} />;
+            return <Icon name={getIconName(icon)} size={80} />;
         }
 
         if (alias) {
@@ -174,9 +174,9 @@ export const DetailCard: React.FC<DetailCardProps> = ({
 
     return (
         <div className={rootClasses} onClick={goTo}>
-            <TitleInfo align="start" line={false} render={renderTitleInfoChild} />
+            <TitleInfo icon align="start" line={false} render={renderTitleInfoChild} />
             {
-                <Text tag="h2" size="h5" font="additional" className={styles.title}>
+                <Text tag="h2" size="h4" font="additional" className={styles.title}>
                     {title}
                 </Text>
             }

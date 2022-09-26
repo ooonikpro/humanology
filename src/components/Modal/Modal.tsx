@@ -1,6 +1,5 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { createPortal } from 'react-dom';
-import { Socionics } from 'src/types';
 import { WhiteCard } from '../WhiteCard';
 import styles from './Modal.module.scss';
 

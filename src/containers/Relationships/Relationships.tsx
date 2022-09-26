@@ -47,29 +47,30 @@ export default function Relationships() {
                 </Text>
 
                 <PageBreak>Благоприятные</PageBreak>
-
-                {
-                    DETAIL_CARD_INTERTYPE.slice(0, 4).map((item, $itemKey) => <DetailCard {...item} key={$itemKey} />)
-                }
+                <div className={styles.linkblock}>
+                    {
+                        DETAIL_CARD_INTERTYPE.slice(0, 4).map((item, $itemKey) => <DetailCard {...item} key={$itemKey} />)
+                    }
+                </div>
 
                 <PageBreak>Приятные</PageBreak>
-
-                {
-                    DETAIL_CARD_INTERTYPE.slice(4, 8).map((item, $itemKey) => <DetailCard {...item} key={$itemKey} />)
-                }
-
+                <div className={styles.linkblock}>
+                    {
+                        DETAIL_CARD_INTERTYPE.slice(4, 8).map((item, $itemKey) => <DetailCard {...item} key={$itemKey} />)
+                    }
+                </div>
                 <PageBreak>Нейтральные</PageBreak>
-
-                {
-                    DETAIL_CARD_INTERTYPE.slice(8, 12).map((item, $itemKey) => <DetailCard {...item} key={$itemKey} />)
-                }
-
+                <div className={styles.linkblock}>
+                    {
+                        DETAIL_CARD_INTERTYPE.slice(8, 12).map((item, $itemKey) => <DetailCard {...item} key={$itemKey} />)
+                    }
+                </div>
                 <PageBreak>Неприятные</PageBreak>
-
-                {
-                    DETAIL_CARD_INTERTYPE.slice(12, 16).map((item, $itemKey) => <DetailCard {...item} key={$itemKey} />)
-                }
-
+                <div className={styles.linkblock}>
+                    {
+                        DETAIL_CARD_INTERTYPE.slice(12, 16).map((item, $itemKey) => <DetailCard {...item} key={$itemKey} />)
+                    }
+                </div>
                 <EndPoint />
             </WhiteCard>
         </div>

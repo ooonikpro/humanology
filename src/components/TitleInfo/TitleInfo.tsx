@@ -14,6 +14,7 @@ interface Props {
     children?: React.ReactNode | React.ReactNode[];
     className?: string;
     line?: boolean;
+    icon?: boolean;
     render?: () => Props['children'];
 }
 
@@ -23,6 +24,7 @@ export const TitleInfo: React.FC<Props> = ({
     iconColor = 'accent',
     iconSize = 24,
     line = true,
+    icon = false,
     align,
     children,
     className,
@@ -37,13 +39,17 @@ export const TitleInfo: React.FC<Props> = ({
                             {children}
                         </Text>
                 }
+                {
+                    icon && (
+                        <Icon
+                            name="Document"
+                            color={iconColor}
+                            size={iconSize}
+                            className={styles.icon}
+                        />
+                    )
+                }
 
-                <Icon
-                    name="Help"
-                    color={iconColor}
-                    size={iconSize}
-                    className={styles.icon}
-                />
             </TextInline>
 
             {

@@ -67,28 +67,28 @@ export default function SociotypesCard() {
     return (
         <div className={styles.wrap}>
             <WhiteCard color="white">
-                <TitleInfo className={styles.title}>Ментальность</TitleInfo>
+                <TitleInfo icon className={styles.title}>Ментальность</TitleInfo>
                 <CommunicationList
                     {...intertypeProps}
                     className={styles.list}
                 />
             </WhiteCard>
             <WhiteCard color="white" onClick={() => setisShowGroupQuadrasModal(true)} className={styles.groupQuadras}>
-                <TitleInfo className={styles.title}>Группы и квадры</TitleInfo>
+                <TitleInfo icon className={styles.title}>Группы и квадры</TitleInfo>
                 <GroupsAndQuadsList
                     {...intertypeProps}
                     className={styles.list}
                 />
             </WhiteCard>
             <WhiteCard color="white">
-                <TitleInfo className={styles.title}>Дихотомии Юнга</TitleInfo>
+                <TitleInfo icon className={styles.title}>Дихотомии Юнга</TitleInfo>
                 <ListOptions
                     options={dichotomyYungs}
                     className={styles.list}
                 />
             </WhiteCard>
             <WhiteCard color="white">
-                <TitleInfo className={styles.title}>Признаки Рейнина</TitleInfo>
+                <TitleInfo icon className={styles.title}>Признаки Рейнина</TitleInfo>
                 {reininList.map((list, $i) => (
                     <ListOptions
                         options={list}

@@ -1,4 +1,4 @@
-import React, { createContext, useCallback, useState } from 'react';
+import React, { createContext, useState } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { AppHeader } from '../AppHeader';
 import { AppContent } from '../AppContent';
@@ -16,7 +16,7 @@ export const AppContext = createContext({
     menu: {
         isOpen: false,
         // eslint-disable-next-line @typescript-eslint/no-empty-function
-        toggle: () => {},
+        toggle: () => { },
     }
 });
 
@@ -35,9 +35,9 @@ export const App = () => {
             <BrowserRouter>
                 <AppHeader />
                 <AppContent>
-                    <AppRouter/>
+                    <AppRouter />
                 </AppContent>
-                <AppMenu/>
+                <AppMenu />
             </BrowserRouter>
         </AppContext.Provider>
     );

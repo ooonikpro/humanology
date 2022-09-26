@@ -101,6 +101,7 @@
     opacity: 0.75;
     column-gap: $spacing-6;
     row-gap: $spacing-4;
+    margin-top: $spacing-6;
     margin-bottom: $spacing-8;
 
     span:first-child {
@@ -133,7 +134,7 @@
 
 .title {
     line-height: $spacing-24;
-    margin-bottom: $spacing-4;
+    margin-bottom: $spacing-8;
     opacity: 1;
     color: var(--color-detailcard-title, $color-basic-accent);
 }
