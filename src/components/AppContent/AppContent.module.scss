@@ -4,12 +4,3 @@
     width: 100%;
     height: 100%;
 }
-
-.container {
-    @extend .root;
-    padding: 0 $spacing-8;
-
-    @include fullscreen {
-        overflow-y: scroll;
-    }
-}

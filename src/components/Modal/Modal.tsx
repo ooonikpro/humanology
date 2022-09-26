@@ -1,12 +1,13 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { createPortal } from 'react-dom';
+import { Socionics } from 'src/types';
 import { WhiteCard } from '../WhiteCard';
 import styles from './Modal.module.scss';
 
 let openedModals: Array<HTMLElement> = [];
 
 const ANIMATE_DURATION = 50;
-const target = document.getElementById('modals') as HTMLElement;
+const target = document.querySelector('.app-modals') as HTMLElement;
 
 export interface ModalProps {
     isOpen: boolean;

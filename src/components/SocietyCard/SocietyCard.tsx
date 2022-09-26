@@ -39,16 +39,13 @@ export const SocietyCard: React.FC<Props> = (props) => {
         yungs: props.yungs.map((item) => YUNGS_DICHTOMIES[item]),
     };
 
-    const rootClasses = [styles.root, props.mini && styles.mini].join(' ');
+    const rootClasses = [styles.root, props.mini && styles.mini].filter(Boolean).join(' ');
 
     return (
         <WhiteCard className={rootClasses}>
             <div className={styles.header}>
                 <div
-                    className={[
-                        styles.params,
-                        props.mini && styles.inline,
-                    ].join(' ')}
+                    className={styles.params}
                 >
                     <div className={styles['params-line']}>
                         <Text tag="p" size="body" color="accent">
@@ -78,23 +75,20 @@ export const SocietyCard: React.FC<Props> = (props) => {
                             </Text>
                         </span>
                     </div>
-                    {!props.mini && (
-                        <>
-                            <div className={styles['params-line']}>
-                                <span className={styles.pair}>
-                                    <Tag sign={props.club} color='accent' size={16} />
-                                    <Text tag="p" color="accent" size="body">
-                                        {text.club}
-                                    </Text>
-                                </span>
-                                <span className={styles.pair}>
-                                    <Tag sign={props.psychotype} color='accent' size={16} />
-                                    <Text tag="p" color="accent" size="body">
-                                        {text.psychotype}
-                                    </Text>
-                                </span>
-                            </div>
-                        </>)}
+                    <div className={[styles['params-line'], styles.secondParams].join(' ')}>
+                        <span className={styles.pair}>
+                            <Tag sign={props.club} color='accent' size={16} />
+                            <Text tag="p" color="accent" size="body">
+                                {text.club}
+                            </Text>
+                        </span>
+                        <span className={styles.pair}>
+                            <Tag sign={props.psychotype} color='accent' size={16} />
+                            <Text tag="p" color="accent" size="body">
+                                {text.psychotype}
+                            </Text>
+                        </span>
+                    </div>
                 </div>
 
                 <Icon
@@ -112,15 +106,13 @@ export const SocietyCard: React.FC<Props> = (props) => {
                 />
                 <Portrait name={props.id} gender={gender} className={styles.portrait} onClick={toggleGender} />
 
-                {!props.mini && (
-                    <Text
-                        color="role"
-                        size="small"
-                        className={styles.population}
-                    >
-                        {text.percentage}
-                    </Text>
-                )}
+                <Text
+                    color="role"
+                    size="small"
+                    className={styles.population}
+                >
+                    {text.percentage}
+                </Text>
                 <Text
                     font="additional"
                     color="role"
@@ -130,21 +122,19 @@ export const SocietyCard: React.FC<Props> = (props) => {
                     {text.name}
                 </Text>
 
-                {!props.mini && (
-                    <div className={styles.footer}>
-                        {text.yungs.map((row, $i) => (
-                            <Text
-                                tag="span"
-                                size="body"
-                                color="accent"
-                                key={$i}
-                                className={styles['footer-text']}
-                            >
-                                {row}
-                            </Text>
-                        ))}
-                    </div>
-                )}
+                <div className={styles.footer}>
+                    {text.yungs.map((row, $i) => (
+                        <Text
+                            tag="span"
+                            size="body"
+                            color="accent"
+                            key={$i}
+                            className={styles['footer-text']}
+                        >
+                            {row}
+                        </Text>
+                    ))}
+                </div>
             </div>
         </WhiteCard>
     );

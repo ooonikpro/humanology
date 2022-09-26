@@ -5,20 +5,21 @@ import { Icon } from '../Icon';
 import { ROUTES } from 'src/constants/routes';
 import { MainTabs } from '../Tabs/MainTabs';
 import { useIsActiveRoute } from 'src/hooks';
+import { useMenuCtx } from 'src/hooks/useMenuCtx';
 
-export const AppHeader: React.FC<{ isShowTabs?: boolean }> = ({ isShowTabs = true }) => {
+export const AppHeader = () => {
     const goTo = useNavigate();
-    const isActiveMenuRoute = useIsActiveRoute(ROUTES.MENU);
     const isActiveHomeRoute = useIsActiveRoute(ROUTES.HOME);
+    const { isOpen: menuIsOpen, toggle: toggleMenu } = useMenuCtx();
 
     return (
-        <header className={styles.root}>
-            <div className={styles.headerTop}>
+        <>
+            <header className={styles.headerTop}>
                 <button
-                    className={[styles.menu, isActiveMenuRoute ? styles.active : ''].join(' ')}
-                    onClick={() => goTo(ROUTES.MENU)}
+                    className={[styles.menu, menuIsOpen ? styles.active : ''].join(' ')}
+                    onClick={toggleMenu}
                 >
-                    <Icon name="Menu" color="accent" size={32} />
+                    <Icon name={menuIsOpen ? 'Close' : 'Menu'} color="accent" size={32} />
                 </button>
 
                 <button
@@ -31,19 +32,13 @@ export const AppHeader: React.FC<{ isShowTabs?: boolean }> = ({ isShowTabs = tru
                 <button className={styles.profile}>
                     <Icon name="UserSquare" color="accent" size={32} />
                 </button>
-            </div>
+            </header>
 
-            <hr className={styles.hr} />
-
-            {
-                isShowTabs && !isActiveMenuRoute && (
-                    <nav className={styles.tabs}>
-                        <div className={styles.horizontalScrollbar}>
-                            <MainTabs />
-                        </div>
-                    </nav>
-                )
-            }
-        </header>
+            <nav className={styles.tabs}>
+                <div className={styles.horizontalScrollbar}>
+                    <MainTabs />
+                </div>
+            </nav>
+        </>
     );
 };

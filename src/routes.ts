@@ -15,7 +15,6 @@ import SociotypesHumour from './containers/Sociotypes/SociotypesHumour';
 import HumourLurkmore from './containers/Sociotypes/SociotypesHumour/Tabs/HumourLurkmore';
 import HumourSelutin from './containers/Sociotypes/SociotypesHumour/Tabs/HumourSelutin';
 import HumourElvira from './containers/Sociotypes/SociotypesHumour/Tabs/HumourElvira';
-import Menu from './containers/Menu';
 import Loading from './containers/Loading';
 import Start from './containers/Start';
 import Disclaimer from './containers/Disclaimer';
@@ -118,10 +117,6 @@ export const routes: Route[] = [
     {
         path: ROUTES.LOADING,
         container: Loading
-    },
-    {
-        path: ROUTES.MENU,
-        container: Menu
     },
     {
         path: ROUTES.START,
@@ -233,5 +228,9 @@ export const routes: Route[] = [
     {
         path: ROUTES.OTHER,
         container: Other
+    },
+    {
+        path: '*',
+        container: Start,
     }
 ];

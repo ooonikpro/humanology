@@ -5,8 +5,7 @@ import { register as registerServiceWorker } from './serviceWorkerRegistration';
 
 import './styles/app.scss';
 
-const root = ReactDOM.createRoot(document.getElementById('app') as HTMLDivElement);
-root.render(
+ReactDOM.createRoot(document.querySelector('.app-content') as HTMLDivElement).render(
     <React.StrictMode>
         <App />
     </React.StrictMode>
