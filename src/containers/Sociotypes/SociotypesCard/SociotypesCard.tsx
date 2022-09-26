@@ -10,7 +10,7 @@ import { TitleInfo } from '../../../components/TitleInfo';
 import { ListOptions } from '../../../components/ListOptions';
 import { GroupsAndQuadsList } from '../../../components/GroupsAndQuadsList';
 import { EndPoint } from '../../../components/EndPoint';
-import { Mental } from 'src/modals/Mental/Mental';
+import { GroupQuadras } from '../../../modals/GroupQuadras';
 
 const getRow = (
     options: Array<string[]>,
@@ -51,8 +51,8 @@ const reininRows: Array<Socionics.ReininSign[]> = [
 
 export default function SociotypesCard() {
     const [
-        isShowMentalModal,
-        setisShowMentalModal,
+        isShowGroupQuadrasModal,
+        setisShowGroupQuadrasModal,
     ] = useState(false);
 
     const { sociotypeProps: intertypeProps } = useSociotype();
@@ -66,28 +66,28 @@ export default function SociotypesCard() {
 
     return (
         <div className={styles.wrap}>
-            <WhiteCard color="beige-title" onClick={() => setisShowMentalModal(true)}>
+            <WhiteCard color="white">
                 <TitleInfo className={styles.title}>Ментальность</TitleInfo>
                 <CommunicationList
                     {...intertypeProps}
                     className={styles.list}
                 />
             </WhiteCard>
-            <WhiteCard color="beige-title">
+            <WhiteCard color="white" onClick={() => setisShowGroupQuadrasModal(true)} className={styles.groupQuadras}>
                 <TitleInfo className={styles.title}>Группы и квадры</TitleInfo>
                 <GroupsAndQuadsList
                     {...intertypeProps}
                     className={styles.list}
                 />
             </WhiteCard>
-            <WhiteCard color="beige-title">
+            <WhiteCard color="white">
                 <TitleInfo className={styles.title}>Дихотомии Юнга</TitleInfo>
                 <ListOptions
                     options={dichotomyYungs}
                     className={styles.list}
                 />
             </WhiteCard>
-            <WhiteCard color="beige-title">
+            <WhiteCard color="white">
                 <TitleInfo className={styles.title}>Признаки Рейнина</TitleInfo>
                 {reininList.map((list, $i) => (
                     <ListOptions
@@ -98,7 +98,7 @@ export default function SociotypesCard() {
                 ))}
                 <EndPoint />
             </WhiteCard>
-            <Mental isOpen={isShowMentalModal} onClose={() => setisShowMentalModal(false)} />
+            <GroupQuadras isOpen={isShowGroupQuadrasModal} onClose={() => setisShowGroupQuadrasModal(false)} />
         </div>
     );
 }

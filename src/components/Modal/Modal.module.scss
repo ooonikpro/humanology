@@ -21,21 +21,15 @@
         }
     }
 
-    &.lvl_2 {
+    &.lvl_1 {
         .container {
             top: $spacing-40;
         }
     }
 
-    &.lvl_3 {
+    &.lvl_2 {
         .container {
             top: $spacing-40 * 2;
-        }
-    }
-
-    &.lvl_4 {
-        .container {
-            top: $spacing-40 * 3;
         }
     }
 }

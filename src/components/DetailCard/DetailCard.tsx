@@ -161,8 +161,8 @@ export const DetailCard: React.FC<DetailCardProps> = ({
             url = ROUTES.RELATIONSHIPS_ITEM(intertype);
             return (
                 <>
-                    <Icon name={getIconName(intertype)} size={108} className={styles.detailCardIcon} />
-                    <Icon name="IntertypeBg" size={128} className={styles.intertypeBg} />
+                    <Icon name={getIconName(intertype)} size={128} className={styles.detailCardIcon} />
+                    <Icon name="IntertypeBg" size={152} className={styles.intertypeBg} />
                 </>
             );
         }
