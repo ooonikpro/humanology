@@ -53,6 +53,10 @@ export const DetailCard: React.FC<DetailCardProps> = ({
 
     const rootClasses = [
         styles.root,
+        intertype && styles[intertype],
+        quadra && styles[quadra],
+        role && styles[role],
+        psychotype && styles[psychotype],
         className
     ].join(' ');
 
@@ -67,6 +71,7 @@ export const DetailCard: React.FC<DetailCardProps> = ({
         }
 
         if (type === 'block') {
+            url = ROUTES.BLOCKS_ITEM(block);
             image = require(`../../assets/images/block-${block}.svg`);
         }
 
@@ -118,36 +123,36 @@ export const DetailCard: React.FC<DetailCardProps> = ({
                             ))
                         }
                     </div>
-                    <Icon name={getIconName(aspectIcon)} size={128} color="accent" className={styles.aspectIcon} />
+                    <Icon name={getIconName(aspectIcon)} size={128} color="accent" className={styles.detailCardIcon} />
                 </>
             );
         }
 
         if (quadra) {
-            return <Icon name={getIconName(quadra)} size={64} className={styles.quadraIcon} />;
+            return <Icon name={getIconName(quadra)} size={64} className={styles.detailCardIcon} />;
         }
 
         if (suit) {
-            return <Icon name={getIconName(suit)} size={64} className={styles.suitIcon} />;
+            return <Icon name={getIconName(suit)} size={64} className={styles.detailCardIcon} />;
         }
 
         if (role) {
-            return <Icon name={getIconName(role)} size={64} className={styles.roleIcon} />;
+            return <Icon name={getIconName(role)} size={64} className={styles.detailCardIcon} />;
         }
 
         if (club) {
-            return <Icon name={getIconName(club)} size={64} className={styles.clubIcon} />;
+            return <Icon name={getIconName(club)} size={64} className={styles.detailCardIcon} />;
         }
 
         if (psychotype) {
-            return <Icon name={getIconName(psychotype)} size={64} className={styles.psychotypeIcon} />;
+            return <Icon name={getIconName(psychotype)} size={64} className={styles.detailCardIcon} />;
         }
 
         if (intertype) {
             url = ROUTES.RELATIONSHIPS_ITEM(intertype);
             return (
                 <>
-                    <Icon name={getIconName(intertype)} size={108} className={styles.intertypeIcon} />
+                    <Icon name={getIconName(intertype)} size={108} className={styles.detailCardIcon} />
                     <Icon name="IntertypeBg" size={128} className={styles.intertypeBg} />
                 </>
             );

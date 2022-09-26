@@ -28,7 +28,7 @@ export const ROUTES = {
     FUNCTIONS_SIGNS: '/functions/signs',
     FUNCTIONS_ITEM: (functionName = ':functionName') => `/functions/${functionName}`,
     BLOCKS: '/blocks',
-    BLOCKS_ITEM: '/blocks/:blockName',
+    BLOCKS_ITEM: (blockName = ':blockName') => `/blocks/${blockName}`,
     ASPECTS: '/aspects',
     ASPECT_ITEM: (aspectName = ':aspectName') => `/aspects/${aspectName}`,
     SUITS: '/suits',

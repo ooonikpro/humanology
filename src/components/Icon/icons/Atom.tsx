@@ -20,7 +20,7 @@ const SvgAtom = (props: SVGProps<SVGSVGElement>) => (
             stroke="currentColor"
             fill="none"
         />
-        <path d="M14.5 11.75a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z" stroke="currentColor" />
+        <path d="M14.5 11.75a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z" stroke="currentColor" fill="none" />
     </svg>
 );
 

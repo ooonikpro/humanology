@@ -9,18 +9,90 @@
     border-radius: 0.2rem;
     cursor: pointer;
 
-    a {
-        text-decoration: none;
+    &.dual,
+    &.activity,
+    &.mirror,
+    &.identical,
+    &.infantile {
+        --color-detailcard-icon: #{$color-pastel-turquoise};
+        --color-detailcard-title: #{$color-pastel-turquoise};
+        --color-detailcard-intertypeBg: #{$color-pastel-turquoise};
+        --color-detailcard-tag: #{$color-pastel-turquoise};
     }
 
-    &:hover {
-        background: rgba($color-basic-beige, 0.5);
-        border: 1px solid rgba($color-basic-accent, 0.25);
+    &.kindred,
+    &.semidual,
+    &.pragmatic,
+    &.illusionary,
+    &.care {
+        --color-detailcard-icon: #{$color-pastel-green};
+        --color-detailcard-title: #{$color-pastel-green};
+        --color-detailcard-intertypeBg: #{$color-pastel-green};
+        --color-detailcard-tag: #{$color-pastel-green};
+    }
+
+    &.beneficiary,
+    &.giver,
+    &.supervisor,
+    &.underling,
+    &.victim {
+        --color-detailcard-icon: #{$color-pastel-yellow};
+        --color-detailcard-title: #{$color-pastel-yellow};
+        --color-detailcard-intertypeBg: #{$color-pastel-yellow};
+        --color-detailcard-tag: #{$color-pastel-yellow};
+    }
+
+    &.quasidentical,
+    &.parallel,
+    &.contrary,
+    &.superego,
+    &.aggressor {
+        --color-detailcard-icon: #{$color-pastel-pink};
+        --color-detailcard-title: #{$color-pastel-pink};
+        --color-detailcard-intertypeBg: #{$color-pastel-pink};
+        --color-detailcard-tag: #{$color-pastel-pink};
+    }
+
+    &.air,
+    &.paige {
+        --color-detailcard-icon: #{$color-elements-air};
+        --color-detailcard-title: #{$color-elements-air};
+        --color-detailcard-intertypeBg: #{$color-elements-air};
+        --color-detailcard-tag: #{$color-elements-air};
+    }
+
+    &.fire,
+    &.king {
+        --color-detailcard-icon: #{$color-elements-fire};
+        --color-detailcard-title: #{$color-elements-fire};
+        --color-detailcard-intertypeBg: #{$color-elements-fire};
+        --color-detailcard-tag: #{$color-elements-fire};
+    }
+
+    &.water,
+    &.knight {
+        --color-detailcard-icon: #{$color-elements-water};
+        --color-detailcard-title: #{$color-elements-water};
+        --color-detailcard-intertypeBg: #{$color-elements-water};
+        --color-detailcard-tag: #{$color-elements-water};
+    }
+
+    &.earth,
+    &.lady {
+        --color-detailcard-icon: #{$color-elements-earth};
+        --color-detailcard-title: #{$color-elements-earth};
+        --color-detailcard-intertypeBg: #{$color-elements-earth};
+        --color-detailcard-tag: #{$color-elements-earth};
+    }
+
+    a {
+        text-decoration: none;
     }
 
     .text {
         margin-bottom: $spacing-8;
     }
+
 }
 
 .tags {
@@ -30,6 +102,10 @@
     column-gap: $spacing-6;
     row-gap: $spacing-4;
     margin-bottom: $spacing-8;
+
+    span:first-child {
+        color: var(--color-detailcard-tag, $color-basic-accent);
+    }
 }
 
 .alias {
@@ -59,23 +135,22 @@
     line-height: $spacing-24;
     margin-bottom: $spacing-4;
     opacity: 1;
+    color: var(--color-detailcard-title, $color-basic-accent);
 }
 
-.quadraIcon,
-.roleIcon,
-.suitIcon,
-.clubIcon,
-.psychotypeIcon,
-.mindIcon,
-.intertypeIcon {
+.subtitle {
     color: $color-basic-accent;
+}
+
+.detailCardIcon {
+    color: var(--color-detailcard-icon, $color-basic-accent);
     opacity: 0.75;
 }
 
 .intertypeBg {
     position: absolute;
     margin-top: -$spacing-12;
-    color: $color-basic-accent;
-    opacity: 0.5;
+    color: var(--color-detailcard-intertypeBg);
+    opacity: 1;
     z-index: -1;
 }

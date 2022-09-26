@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './SociotypesCard.module.scss';
 import { Socionics } from '../../../types';
 import { useSociotype } from '../../../hooks/useSociotype';
@@ -10,6 +10,7 @@ import { TitleInfo } from '../../../components/TitleInfo';
 import { ListOptions } from '../../../components/ListOptions';
 import { GroupsAndQuadsList } from '../../../components/GroupsAndQuadsList';
 import { EndPoint } from '../../../components/EndPoint';
+import { Mental } from 'src/modals/Mental/Mental';
 
 const getRow = (
     options: Array<string[]>,
@@ -49,6 +50,11 @@ const reininRows: Array<Socionics.ReininSign[]> = [
 ];
 
 export default function SociotypesCard() {
+    const [
+        isShowMentalModal,
+        setisShowMentalModal,
+    ] = useState(false);
+
     const { sociotypeProps: intertypeProps } = useSociotype();
 
     const dichotomyYungs = intertypeProps.yungs.map(
@@ -60,7 +66,7 @@ export default function SociotypesCard() {
 
     return (
         <div className={styles.wrap}>
-            <WhiteCard color="beige-title">
+            <WhiteCard color="beige-title" onClick={() => setisShowMentalModal(true)}>
                 <TitleInfo className={styles.title}>Ментальность</TitleInfo>
                 <CommunicationList
                     {...intertypeProps}
@@ -92,6 +98,8 @@ export default function SociotypesCard() {
                 ))}
                 <EndPoint />
             </WhiteCard>
+            <Mental isOpen={isShowMentalModal} onClose={() => setisShowMentalModal(false)} />
         </div>
     );
 }
+

@@ -3,10 +3,7 @@
 .root {
     display: flex;
     flex-direction: column;
-    row-gap: $spacing-4;
-    padding-bottom: $spacing-24;
-    margin-bottom: $spacing-20;
-    border-bottom: 1px solid rgba($color-basic-accent, 0.25);
+    row-gap: $spacing-8;
 }
 
 .link {
@@ -15,9 +12,43 @@
     text-decoration: none;
 }
 
-.linkblock {
+.menuList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacing-4;
+    margin-top: $spacing-32;
+    margin-bottom: $spacing-12;
+}
+
+.menuItem {
     display: flex;
     flex-direction: column;
-    gap: $spacing-8;
-    margin-bottom: $spacing-8;
+    justify-content: flex-end;
+    flex: 1 1 auto;
+    position: relative;
+    border-radius: 2px;
+    color: $color-basic-accent;
+    background-color: $color-basic-white;
+    border: 1px solid rgba($color-basic-accent, 0.1);
+    cursor: pointer;
+    padding: 0 $spacing-6 $spacing-6 $spacing-6;
+    width: 40%;
+    height: 6.4rem;
+
+    &.doubleHeight {
+        height: 9.6rem;
+    }
+}
+
+.icon {
+    position: relative;
+    bottom: $spacing-6;
+    opacity: 0.5;
+}
+
+.image {
+    position: absolute;
+    right: $spacing-8;
+    top: -$spacing-4;
+    opacity: 0.25;
 }

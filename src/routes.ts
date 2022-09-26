@@ -169,7 +169,7 @@ export const routes: Route[] = [
         container: Blocks
     },
     {
-        path: ROUTES.BLOCKS_ITEM,
+        path: ROUTES.BLOCKS_ITEM(),
         container: BlocksItem,
     },
     {

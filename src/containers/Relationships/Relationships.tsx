@@ -49,7 +49,25 @@ export default function Relationships() {
                 <PageBreak>Благоприятные</PageBreak>
 
                 {
-                    DETAIL_CARD_INTERTYPE.map((item, $itemKey) => <DetailCard {...item} key={$itemKey} />)
+                    DETAIL_CARD_INTERTYPE.slice(0, 4).map((item, $itemKey) => <DetailCard {...item} key={$itemKey} />)
+                }
+
+                <PageBreak>Приятные</PageBreak>
+
+                {
+                    DETAIL_CARD_INTERTYPE.slice(4, 8).map((item, $itemKey) => <DetailCard {...item} key={$itemKey} />)
+                }
+
+                <PageBreak>Нейтральные</PageBreak>
+
+                {
+                    DETAIL_CARD_INTERTYPE.slice(8, 12).map((item, $itemKey) => <DetailCard {...item} key={$itemKey} />)
+                }
+
+                <PageBreak>Неприятные</PageBreak>
+
+                {
+                    DETAIL_CARD_INTERTYPE.slice(12, 16).map((item, $itemKey) => <DetailCard {...item} key={$itemKey} />)
                 }
 
                 <EndPoint />

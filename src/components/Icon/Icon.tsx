@@ -22,7 +22,7 @@ export const Icon: React.FC<Props> = ({ name, color, size, className }) => {
         height: `${height / 10}rem`,
     };
 
-    const classes = [styles.root, styles[color || 'black'], className].join(
+    const classes = [styles.root, color && styles[color], className].join(
         ' '
     );
 

@@ -4,9 +4,6 @@
     display: flex;
     flex-direction: column;
     row-gap: $spacing-4;
-    padding-bottom: $spacing-24;
-    margin-bottom: $spacing-12;
-    border-bottom: 1px solid rgba($color-basic-accent, 0.25);
 }
 
 .title {
@@ -18,4 +15,5 @@
     display: flex;
     flex-wrap: wrap;
     row-gap: $spacing-4;
+    margin-top: $spacing-32;
 }

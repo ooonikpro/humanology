@@ -17,10 +17,8 @@ export default function SociotypesPeople() {
 
     return (
         <>
-            <WhiteCard color="white" className={styles.root}>
+            <WhiteCard color="beige" className={styles.root}>
                 <PageTitle iconName="Users">Люди</PageTitle>
-            </WhiteCard>
-            <WhiteCard color="beige" className={styles.wrap}>
                 <div className={styles.people}>
                     {
                         people.map((item, $index) => (
