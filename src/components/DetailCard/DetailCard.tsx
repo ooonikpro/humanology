@@ -99,6 +99,15 @@ export const DetailCard: React.FC<DetailCardProps> = ({
             url = ROUTES.SUITS_TAROT(suit);
         }
 
+        if (role === 'king') {
+            return (
+                <div className={styles.kings}>
+                    <Icon name={getIconName(role)} size={64} className={styles.detailCardIcon} />
+                    <Icon name="Queen" size={64} className={styles.detailCardIcon} />
+                </div>
+            );
+        }
+
         if (image) {
             return <img src={image} alt="" className={styles.image} />;
         }
@@ -123,7 +132,7 @@ export const DetailCard: React.FC<DetailCardProps> = ({
                             ))
                         }
                     </div>
-                    <Icon name={getIconName(aspectIcon)} size={128} color="accent" className={styles.detailCardIcon} />
+                    <Icon name={getIconName(aspectIcon)} size={128} color="accent" className={styles.aspectIcon} />
                 </>
             );
         }
