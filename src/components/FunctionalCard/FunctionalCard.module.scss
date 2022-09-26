@@ -1,5 +1,19 @@
 @import '../../styles/utils.scss';
 
+@keyframes gradientDance {
+    0% {
+        background-position: 100% 25%;
+    }
+
+    50% {
+        background-position: 50% 10%;
+    }
+
+    100% {
+        background-position: 100% 25%;
+    }
+}
+
 .root {
     @include colorElement(--f-block-color);
     --lvl-color: var(--color-basic-white);
@@ -71,9 +85,11 @@
     &.outline {
         .stripe {
             background: linear-gradient(200deg,
-                    var(--f-block-color-role-dual) 20%,
+                    var(--f-block-color-role-dual) 10%,
                     transparent 30%);
-            opacity: 0.1;
+            background-size: 200% 200%;
+            animation: gradientDance 1.5s ease-in-out infinite;
+            opacity: 0.25;
         }
     }
 
@@ -93,6 +109,8 @@
             transparent 1.6rem,
             var(--f-block-color) 0,
             var(--f-block-color) 3.2rem);
+    background-size: 200% 200%;
+    animation: gradientDance 30s ease-in-out infinite;
     opacity: 0.15;
     z-index: 0;
 }
@@ -175,14 +193,18 @@
     &-1 {
         background: linear-gradient(220deg,
                 var(--f-block-color) 25%,
-                var(--f-block-color-role) 100%);
+                var(--f-block-color-role) 75%);
+        background-size: 200% 200%;
+        animation: gradientDance 2s ease-in-out infinite;
     }
 
     &-2 {
         opacity: 0.9;
         background: linear-gradient(200deg,
-                var(--f-block-color) 50%,
-                var(--f-block-color-role) 150%);
+                var(--f-block-color) 25%,
+                var(--f-block-color-role) 50%);
+        background-size: 200% 200%;
+        animation: gradientDance 2s ease-in-out infinite;
     }
 
     &-3 {
