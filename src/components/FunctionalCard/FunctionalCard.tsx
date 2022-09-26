@@ -21,6 +21,7 @@ export interface Props {
 }
 
 export const FunctionalCard: React.FC<Props> = (props) => {
+
     const rootClasses = [
         styles.root,
         styles[`size-${props.size}`],

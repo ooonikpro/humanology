@@ -3,6 +3,7 @@ import { SOCIOTYPES } from '../constants/socionicsTypes';
 import { useColorElement } from './useColorElement';
 import { useColorRole } from './useColorRole';
 import { useColorRoleDual } from './useColorRoleDual';
+import { useColorGradient } from './useColorGradient';
 import { useParams } from 'react-router-dom';
 
 export const useSociotype = (socionicType?: Socionics.SocionicsType) => {
@@ -23,10 +24,12 @@ export const useSociotype = (socionicType?: Socionics.SocionicsType) => {
     const { color: colorElement } = useColorElement(sociotypeProps.element);
     const { color: colorRole } = useColorRole(sociotypeProps.role);
     const { color: colorRoleDual } = useColorRoleDual(sociotypeProps.role);
+    const colorGradient = useColorGradient(id);
     const styles = {
         ...colorElement,
         ...colorRole,
         ...colorRoleDual,
+        ...colorGradient
     };
 
     return {

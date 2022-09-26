@@ -20,6 +20,7 @@
 
     @include colorRole(--f-block-color-role);
     @include colorRoleDual(--f-block-color-role-dual);
+    @include colorGradient(--f-block-color-gradient);
 
     position: relative;
     width: 100%;
@@ -193,7 +194,7 @@
     &-1 {
         background: linear-gradient(220deg,
                 var(--f-block-color) 25%,
-                var(--f-block-color-role) 75%);
+                var(--f-block-color-gradient) 75%);
         background-size: 200% 200%;
         animation: gradientDance 4s ease-in-out infinite;
     }
@@ -202,7 +203,7 @@
         opacity: 0.9;
         background: linear-gradient(200deg,
                 var(--f-block-color) 25%,
-                var(--f-block-color-role) 50%);
+                var(--f-block-color-gradient) 50%);
         background-size: 200% 200%;
         animation: gradientDance 6s ease-in-out infinite;
     }

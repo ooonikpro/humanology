@@ -16,6 +16,11 @@
     --color-elements-fire : #{map-get($color-elements, 'fire')};
     --color-elements-water : #{map-get($color-elements, 'water')};
     --color-elements-earth : #{map-get($color-elements, 'earth')};
+
+    --color-elements-air-dark : #{$color-elements-air-dark};
+    --color-elements-fire-dark : #{$color-elements-fire-dark};
+    --color-elements-water-dark : #{$color-elements-water-dark};
+    --color-elements-earth-dark : #{$color-elements-earth-dark};
 }
 
 hr {

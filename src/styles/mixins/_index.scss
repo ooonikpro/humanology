@@ -2,7 +2,7 @@
     $str: '';
 
     @each $prop in $props {
-        $str: '#{$prop} 300ms ease, #{$str}';
+        $str: '#{$prop} 200ms ease, #{$str}';
     }
 
     transition: #{$str};
@@ -24,4 +24,8 @@
 
 @mixin colorRoleDual($var) {
     #{$var}: var(--color-role-dual);
+}
+
+@mixin colorGradient($var) {
+    #{$var}: var(--color-gradient);
 }
