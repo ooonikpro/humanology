@@ -103,6 +103,7 @@ export default function DichotomiesYung() {
                 Чересчур оторваны от реалий жизни. Редко доводят задуманное до реализации.
             </Text>
 
+            <hr />
 
             <Text tag="P" size="h6" color="accent" className={styles.text}>
                 Зачем они друг другу?

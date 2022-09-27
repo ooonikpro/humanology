@@ -2,7 +2,6 @@ import React, { useMemo } from 'react';
 import styles from './Start.module.scss';
 import { WhiteCard } from '../../components/WhiteCard';
 import { Text } from '../../components/Text';
-import { AuthorLine } from '../../components/AuthorLine';
 import { EndPoint } from '../../components/EndPoint';
 import { BlockLink } from '../../components/BlockLink';
 import { PageTitle } from '../../components/PageTitle';

@@ -50,13 +50,13 @@ export default function Clubs() {
             </Text>
 
             <div className={styles.row}>
-                <Text size="body" color="grey">Логик</Text>
-                <Text size="body" color="grey">Этик</Text>
+                <Text size="body" color="grey">Сенсорик</Text>
+                <Text size="body" color="grey">Интуит</Text>
             </div>
 
             <div className={styles.row}>
-                <Text size="body" color="grey">Интуит</Text>
-                <Text size="body" color="grey">Сенсорик</Text>
+                <Text size="body" color="grey">Этик</Text>
+                <Text size="body" color="grey">Логик</Text>
             </div>
 
             {
