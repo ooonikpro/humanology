@@ -12,6 +12,11 @@ export default function Sociotypes() {
     const { sociotypeProps: intertypeProps, styles: inlineStyles } = useSociotype();
     const isActiveRouteSociatypeCard = useIsSociatypeCardRoute();
 
+    const whiteCardClasses = [
+        styles.functionalBlock,
+        !isActiveRouteSociatypeCard && styles.hidden,
+    ].filter(Boolean).join(' ');
+
     useEffect(() => {
         document.documentElement.style.cssText=inlineStyles;
     }, [intertypeProps]);
@@ -20,16 +25,13 @@ export default function Sociotypes() {
         <div className={styles.root}>
             <SocietyCard {...intertypeProps} mini={!isActiveRouteSociatypeCard}/>
 
-            {
-                isActiveRouteSociatypeCard &&
-                    <WhiteCard className={styles.functionalBlock}>
-                        <FunctionalCardGroup
-                            element={intertypeProps.element}
-                            intertype={intertypeProps.id}
-                            {...intertypeProps.aspects}
-                        />
-                    </WhiteCard>
-            }
+            <WhiteCard className={whiteCardClasses}>
+                <FunctionalCardGroup
+                    element={intertypeProps.element}
+                    intertype={intertypeProps.id}
+                    {...intertypeProps.aspects}
+                />
+            </WhiteCard>
 
             <SociotypeTabs />
 
