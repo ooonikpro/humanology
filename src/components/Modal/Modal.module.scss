@@ -47,6 +47,7 @@
 }
 
 .container {
+    @include transition(transform);
     position: absolute;
     top: 0;
     bottom: 0;
@@ -60,7 +61,6 @@
     z-index: 1;
     cursor: auto;
     transform: translateY(100%);
-    transition: transform 230ms ease;
     overflow-y: scroll;
     overflow-x: hidden;
     display: flex;

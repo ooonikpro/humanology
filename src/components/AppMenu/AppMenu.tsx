@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useMemo } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import styles from './AppMenu.module.scss';
 import { ROUTES } from '../../constants/routes';
 import { useLocation, useNavigate } from 'react-router-dom';
@@ -7,6 +7,7 @@ import { Icon } from '../Icon';
 import { Portrait } from '../Portrait';
 import { Socionics } from 'src/types';
 import { useMenuCtx } from 'src/hooks/useMenuCtx';
+import data from './data';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const getRandomIndex = (arr: Array<any>) => arr[Math.floor(Math.random() * arr.length)];
@@ -44,48 +45,13 @@ const MenuItem: React.FC<MenuItemProps> = ({
     );
 };
 
-const Duals = [
-    ['ENTP', 'female', 'ISFP', 'male'],
-    ['ENTP', 'male', 'ISFP', 'female'],
-    ['ISFP', 'female', 'ENTP', 'male'],
-    ['ISFP', 'male', 'ENTP', 'female'],
-    ['ESFJ', 'female', 'INTJ', 'male'],
-    ['ESFJ', 'male', 'INTJ', 'female'],
-    ['INTJ', 'female', 'ESFJ', 'male'],
-    ['INTJ', 'male', 'ESFJ', 'female'],
-    ['ISTJ', 'female', 'ENFJ', 'male'],
-    ['ISTJ', 'male', 'ENFJ', 'female'],
-    ['ENFJ', 'female', 'ISTJ', 'male'],
-    ['ENFJ', 'male', 'ISTJ', 'female'],
-    ['INFP', 'female', 'ESTP', 'male'],
-    ['INFP', 'male', 'ESTP', 'female'],
-    ['ESTP', 'female', 'INFP', 'male'],
-    ['ESTP', 'male', 'INFP', 'female'],
-    ['INTP', 'female', 'ESFP', 'male'],
-    ['INTP', 'male', 'ESFP', 'female'],
-    ['ESFP', 'female', 'INTP', 'male'],
-    ['ESFP', 'male', 'INTP', 'female'],
-    ['ISFJ', 'female', 'ENTJ', 'male'],
-    ['ISFJ', 'male', 'ENTJ', 'female'],
-    ['ENTJ', 'female', 'ISFJ', 'male'],
-    ['ENTJ', 'male', 'ISFJ', 'female'],
-    ['ESTJ', 'female', 'INFJ', 'male'],
-    ['ESTJ', 'male', 'INFJ', 'female'],
-    ['INFJ', 'female', 'ESTJ', 'male'],
-    ['INFJ', 'male', 'ESTJ', 'female'],
-    ['ENFP', 'female', 'ISTP', 'male'],
-    ['ENFP', 'male', 'ISTP', 'female'],
-    ['ISTP', 'female', 'ENFP', 'male'],
-    ['ISTP', 'male', 'ENFP', 'female'],
-];
-
 const RandomDual = () => {
     const ids: [
         Socionics.SocionicsType,
         Socionics.Gender,
         Socionics.SocionicsType,
         Socionics.Gender
-    ] = getRandomIndex(Duals);
+    ] = getRandomIndex(data.duals);
 
     return (
         <>
@@ -95,67 +61,35 @@ const RandomDual = () => {
     );
 };
 
-const Kids = [
-    ['ESFJ', 'female', 'INTJ', 'male', 'ENTP', 'female'],
-    ['ESTP', 'male', 'INFP', 'female', 'ISTJ', 'male'],
-    ['ESFP', 'female', 'INTP', 'male', 'ISFJ', 'female'],
-    ['ESTJ', 'male', 'INFJ', 'female', 'ENFP', 'female'],
-];
-
-const Intertype = [
-    'Dual',
-    'Activity',
-    'Mirror',
-    'Identical',
-    'Kindred',
-    'Semidual',
-    'Pragmatic',
-    'Illusionary',
-    'Beneficiary',
-    'Giver',
-    'Supervisor',
-    'Underling',
-    'Quasidentical',
-    'Parallel',
-    'Contrary',
-    'Superego',
-];
-
-const Aspect = [
-    'AspectBusiness',
-    'AspectLogic',
-    'AspectEmotions',
-    'AspectPeople',
-    'AspectWill',
-    'AspectComfort',
-    'AspectIdeas',
-    'AspectTime',
-];
 
 const RandomIntertype = () => {
-
     return (
         <>
-            <Icon size={64} color="accent" name={getRandomIndex(Intertype)} className={styles.icon1} />
-            <Icon size={48} color="accent" name={getRandomIndex(Intertype)} className={styles.icon2} />
-            <Icon size={40} color="accent" name={getRandomIndex(Intertype)} className={styles.icon3} />
+            <Icon size={64} color="accent" name={getRandomIndex(data.intertypes)} className={styles.icon1} />
+            <Icon size={48} color="accent" name={getRandomIndex(data.intertypes)} className={styles.icon2} />
+            <Icon size={40} color="accent" name={getRandomIndex(data.intertypes)} className={styles.icon3} />
         </>
     );
 };
 
 const RandomAspect = () => {
-
     return (
         <>
-            <Icon size={48} color="accent" name={getRandomIndex(Aspect)} className={styles.icon1} />
-            <Icon size={40} color="accent" name={getRandomIndex(Aspect)} className={styles.icon2} />
-            <Icon size={32} color="accent" name={getRandomIndex(Aspect)} className={styles.icon3} />
+            <Icon size={48} color="accent" name={getRandomIndex(data.aspects)} className={styles.icon1} />
+            <Icon size={40} color="accent" name={getRandomIndex(data.aspects)} className={styles.icon2} />
+            <Icon size={32} color="accent" name={getRandomIndex(data.aspects)} className={styles.icon3} />
         </>
     );
 };
 
 const RandomKids = () => {
-    const ids: [Socionics.SocionicsType, Socionics.Gender, Socionics.SocionicsType, Socionics.Gender, Socionics.SocionicsType, Socionics.Gender] = getRandomIndex(Kids);
+    const ids: [
+        Socionics.SocionicsType,
+        Socionics.Gender,
+        Socionics.SocionicsType,
+        Socionics.Gender,
+        Socionics.SocionicsType,
+        Socionics.Gender] = getRandomIndex(data.kids);
 
     return (
         <>
@@ -167,6 +101,13 @@ const RandomKids = () => {
 };
 
 export const AppMenu = () => {
+    const [randomCards, setRandomCards] = useState({
+        dual: RandomDual(),
+        kids: RandomKids(),
+        aspect: RandomAspect(),
+        intertype: RandomIntertype()
+    });
+
     const { isOpen, toggle } = useMenuCtx();
     const navigate = useNavigate();
     const goTo = (route: string) => () => navigate(route);
@@ -174,13 +115,22 @@ export const AppMenu = () => {
 
     const rootClasses = [styles.root, isOpen && styles.open].filter(Boolean).join(' ');
 
-    const closeCallback = useCallback(() => {
+    useEffect(() => {
         if (isOpen) {
             toggle();
         }
-    }, [isOpen]);
+    }, [location]);
 
-    useEffect(closeCallback, [location]);
+    useEffect(() => {
+        if (isOpen) {
+            setRandomCards({
+                kids: RandomKids(),
+                aspect: RandomAspect(),
+                dual: RandomDual(),
+                intertype: RandomIntertype()
+            });
+        }
+    }, [isOpen]);
 
     return (
         <div className={rootClasses}>
@@ -206,20 +156,20 @@ export const AppMenu = () => {
                         </div>
                         <Icon size={24} className={styles.icon} color="accent" name="Square1" />
                         <Text size="h5" color="accent">Социотипы</Text>
-                        <RandomDual/>
+                        {randomCards.dual}
                     </MenuItem>
 
                     <MenuItem doubleHeight fullWidth inactive>
                         <Icon size={24} className={styles.icon} color="accent" name="StarSquare" />
                         <Text size="h6" color="accent">Дети</Text>
-                        <RandomKids />
+                        {randomCards.kids}
                     </MenuItem>
 
                     <MenuItem fullWidth doubleHeight onClick={goTo(ROUTES.RELATIONSHIPS)}>
                         <Icon size={24} className={styles.icon} color="accent" name="Square2" />
                         <Text size="body" color="accent">Интертипные отношения</Text>
                         <div className={styles.iconCascadeIntertype}>
-                            <RandomIntertype />
+                            {randomCards.intertype}
                         </div>
                     </MenuItem>
                 </div>
@@ -270,7 +220,7 @@ export const AppMenu = () => {
                         <Icon size={24} className={styles.icon} color="accent" name="Square4" />
                         <Text size="body" color="accent">Аспекты</Text>
                         <div className={styles.iconCascade}>
-                            <RandomAspect />
+                            {randomCards.aspect}
                         </div>
                     </MenuItem>
 

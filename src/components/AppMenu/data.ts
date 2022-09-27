@@ -1,0 +1,78 @@
+const duals = [
+    ['ENTP', 'female', 'ISFP', 'male'],
+    ['ENTP', 'male', 'ISFP', 'female'],
+    ['ISFP', 'female', 'ENTP', 'male'],
+    ['ISFP', 'male', 'ENTP', 'female'],
+    ['ESFJ', 'female', 'INTJ', 'male'],
+    ['ESFJ', 'male', 'INTJ', 'female'],
+    ['INTJ', 'female', 'ESFJ', 'male'],
+    ['INTJ', 'male', 'ESFJ', 'female'],
+    ['ISTJ', 'female', 'ENFJ', 'male'],
+    ['ISTJ', 'male', 'ENFJ', 'female'],
+    ['ENFJ', 'female', 'ISTJ', 'male'],
+    ['ENFJ', 'male', 'ISTJ', 'female'],
+    ['INFP', 'female', 'ESTP', 'male'],
+    ['INFP', 'male', 'ESTP', 'female'],
+    ['ESTP', 'female', 'INFP', 'male'],
+    ['ESTP', 'male', 'INFP', 'female'],
+    ['INTP', 'female', 'ESFP', 'male'],
+    ['INTP', 'male', 'ESFP', 'female'],
+    ['ESFP', 'female', 'INTP', 'male'],
+    ['ESFP', 'male', 'INTP', 'female'],
+    ['ISFJ', 'female', 'ENTJ', 'male'],
+    ['ISFJ', 'male', 'ENTJ', 'female'],
+    ['ENTJ', 'female', 'ISFJ', 'male'],
+    ['ENTJ', 'male', 'ISFJ', 'female'],
+    ['ESTJ', 'female', 'INFJ', 'male'],
+    ['ESTJ', 'male', 'INFJ', 'female'],
+    ['INFJ', 'female', 'ESTJ', 'male'],
+    ['INFJ', 'male', 'ESTJ', 'female'],
+    ['ENFP', 'female', 'ISTP', 'male'],
+    ['ENFP', 'male', 'ISTP', 'female'],
+    ['ISTP', 'female', 'ENFP', 'male'],
+    ['ISTP', 'male', 'ENFP', 'female'],
+];
+
+const kids = [
+    ['ESFJ', 'female', 'INTJ', 'male', 'ENTP', 'female'],
+    ['ESTP', 'male', 'INFP', 'female', 'ISTJ', 'male'],
+    ['ESFP', 'female', 'INTP', 'male', 'ISFJ', 'female'],
+    ['ESTJ', 'male', 'INFJ', 'female', 'ENFP', 'female'],
+];
+
+const intertypes = [
+    'Dual',
+    'Activity',
+    'Mirror',
+    'Identical',
+    'Kindred',
+    'Semidual',
+    'Pragmatic',
+    'Illusionary',
+    'Beneficiary',
+    'Giver',
+    'Supervisor',
+    'Underling',
+    'Quasidentical',
+    'Parallel',
+    'Contrary',
+    'Superego',
+];
+
+const aspects = [
+    'AspectBusiness',
+    'AspectLogic',
+    'AspectEmotions',
+    'AspectPeople',
+    'AspectWill',
+    'AspectComfort',
+    'AspectIdeas',
+    'AspectTime',
+];
+
+export default {
+    duals,
+    kids,
+    intertypes,
+    aspects,
+};

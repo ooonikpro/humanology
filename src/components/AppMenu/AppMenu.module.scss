@@ -1,16 +1,19 @@
 @import '../../styles/utils';
 
 .root {
+    @include transition(all);
     position: absolute;
-    inset: $size-header-section-height 0 0;
+    inset: 0;
     background-color: $color-basic-beige;
     z-index: 1;
+    padding: $spacing-8;
 
     opacity: 0;
     visibility: hidden;
-    transition: all 300ms ease;
 
     &.open {
+        top: $size-header-section-height;
+        padding: 0;
         opacity: 1;
         visibility: visible;
     }
