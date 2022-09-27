@@ -29,6 +29,7 @@ export const ROUTES = {
     FUNCTIONS_ITEM: (functionName = ':functionName') => `/functions/${functionName}`,
     BLOCKS: '/blocks',
     BLOCKS_ITEM: (blockName = ':blockName') => `/blocks/${blockName}`,
+    RING_ITEM: (ringName = ':ringName') => `/rings/${ringName}`,
     ASPECTS: '/aspects',
     ASPECT_ITEM: (aspectName = ':aspectName') => `/aspects/${aspectName}`,
     SUITS: '/suits',
@@ -42,7 +43,7 @@ export const ROUTES = {
     YUNG: '/yung',
     OTHER: '/other',
     RELATIONSHIPS: '/relationships',
-    RELATIONSHIPS_ITEM: (relationshipsItem = ':relationshipsItem') => `/relationships/${relationshipsItem}`,
+    RELATIONSHIPS_ITEM: (relationshipsName = ':relationshipsName') => `/relationships/${relationshipsName}`,
     MINDSETS: '/mindsets',
     START: '/start',
     LOADING: '/'
@@ -56,10 +57,10 @@ export const MAIN_LINKS: Tabs[] = [
         iconName: 'Square0'
     },
     {
-        label: 'Дисклеймер',
+        label: 'Как определить?',
         path: ROUTES.DISCLAIMER,
         order: 1,
-        iconName: 'AlertSquare'
+        iconName: 'Mug'
     },
     {
         label: 'Социотипы',

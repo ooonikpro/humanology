@@ -75,9 +75,9 @@ const RandomIntertype = () => {
 const RandomAspect = () => {
     return (
         <>
-            <Icon size={48} color="accent" name={getRandomIndex(data.aspects)} className={styles.icon1} />
-            <Icon size={40} color="accent" name={getRandomIndex(data.aspects)} className={styles.icon2} />
-            <Icon size={32} color="accent" name={getRandomIndex(data.aspects)} className={styles.icon3} />
+            <Icon size={64} color="accent" name={getRandomIndex(data.aspects)} className={styles.icon1} />
+            <Icon size={48} color="accent" name={getRandomIndex(data.aspects)} className={styles.icon2} />
+            <Icon size={40} color="accent" name={getRandomIndex(data.aspects)} className={styles.icon3} />
         </>
     );
 };
@@ -139,12 +139,12 @@ export const AppMenu = () => {
 
                     <MenuItem onClick={goTo(ROUTES.START)}>
                         <Icon size={24} className={styles.icon} color="accent" name="Square0" />
-                        <Text size="body" color="accent">Начало</Text>
+                        <Text size="large" color="accent">Начало</Text>
                     </MenuItem>
 
                     <MenuItem onClick={goTo(ROUTES.DISCLAIMER)}>
-                        <Icon size={24} className={styles.icon} color="accent" name="AlertSquare" />
-                        <Text size="body" color="accent">Дисклеймер</Text>
+                        <Icon size={24} className={styles.icon} color="accent" name="Mug" />
+                        <Text size="large" color="accent">Как определять?</Text>
                     </MenuItem>
 
                     <MenuItem fullWidth big onClick={goTo(ROUTES.SOCIOTYPES(''))}>
@@ -161,13 +161,13 @@ export const AppMenu = () => {
 
                     <MenuItem doubleHeight fullWidth inactive>
                         <Icon size={24} className={styles.icon} color="accent" name="StarSquare" />
-                        <Text size="h6" color="accent">Дети</Text>
+                        <Text size="h5" color="accent">Дети</Text>
                         {randomCards.kids}
                     </MenuItem>
 
                     <MenuItem fullWidth doubleHeight onClick={goTo(ROUTES.RELATIONSHIPS)}>
                         <Icon size={24} className={styles.icon} color="accent" name="Square2" />
-                        <Text size="body" color="accent">Интертипные отношения</Text>
+                        <Text size="large" color="accent">Интертипные отношения</Text>
                         <div className={styles.iconCascadeIntertype}>
                             {randomCards.intertype}
                         </div>
@@ -177,100 +177,100 @@ export const AppMenu = () => {
                 <div className={styles.menuList}>
                     <MenuItem>
                         <Icon size={24} className={styles.icon} color="accent" name="PresentationChart" />
-                        <Text size="body" color="accent">Тесты</Text>
+                        <Text size="large" color="accent">Тесты</Text>
                     </MenuItem>
 
                     <MenuItem inactive>
                         <Icon size={24} className={styles.icon} color="accent" name="Specialist" />
-                        <Text size="body" color="accent">Специалисты</Text>
+                        <Text size="large" color="accent">Специалисты</Text>
                     </MenuItem>
 
                     <MenuItem fullWidth inactive>
                         <Icon size={24} className={styles.icon} color="accent" name="UserSquare" />
-                        <Text size="body" color="accent">Профиль</Text>
+                        <Text size="large" color="accent">Профиль</Text>
                     </MenuItem>
 
                     <MenuItem doubleHeight inactive>
                         <Icon size={24} className={styles.icon} color="accent" name="Users" />
-                        <Text size="body" color="accent">Люди</Text>
+                        <Text size="large" color="accent">Люди</Text>
                     </MenuItem>
 
                     <MenuItem doubleHeight inactive>
                         <Icon size={24} className={styles.icon} color="accent" name="Map" />
-                        <Text size="body" color="accent">Карта социальных связей</Text>
+                        <Text size="large" color="accent">Карта социальных связей</Text>
                     </MenuItem>
 
                     <MenuItem inactive>
                         <Icon size={24} className={styles.icon} color="accent" name="Atom" />
-                        <Text size="body" color="accent">Коллективы</Text>
+                        <Text size="large" color="accent">Коллективы</Text>
                     </MenuItem>
                 </div>
 
                 <div className={styles.menuList}>
                     <MenuItem onClick={goTo(ROUTES.HISTORY)}>
                         <Icon size={24} className={styles.icon} color="accent" name="Time" />
-                        <Text size="body" color="accent">История</Text>
+                        <Text size="large" color="accent">История</Text>
                     </MenuItem>
                     <MenuItem fullWidth onClick={goTo(ROUTES.METABOLISM)}>
                         <Icon size={24} className={styles.icon} color="accent" name="Square3" />
-                        <Text size="body" color="accent">Информационный метаболизм</Text>
+                        <Text size="large" color="accent">Информационный метаболизм</Text>
                     </MenuItem>
 
-                    <MenuItem fullWidth onClick={goTo(ROUTES.ASPECTS)}>
+                    <MenuItem fullWidth doubleHeight onClick={goTo(ROUTES.ASPECTS)}>
                         <Icon size={24} className={styles.icon} color="accent" name="Square4" />
-                        <Text size="body" color="accent">Аспекты</Text>
+                        <Text size="large" color="accent">Аспекты</Text>
                         <div className={styles.iconCascade}>
                             {randomCards.aspect}
                         </div>
                     </MenuItem>
 
-                    <MenuItem onClick={goTo(ROUTES.FUNCTIONS)}>
+                    <MenuItem doubleHeight onClick={goTo(ROUTES.FUNCTIONS)}>
                         <Icon size={24} className={styles.icon} color="accent" name="Square5" />
-                        <Text size="body" color="accent">Функции</Text>
-                        <Icon name="Functions" size={80} className={styles.image} />
+                        <Text size="large" color="accent">Функции</Text>
+                        <Icon name="Functions" size={96} className={styles.image} />
                     </MenuItem>
 
-                    <MenuItem onClick={goTo(ROUTES.BLOCKS)}>
+                    <MenuItem doubleHeight onClick={goTo(ROUTES.BLOCKS)}>
                         <Icon size={24} className={styles.icon} color="accent" name="Square6" />
-                        <Text size="body" color="accent">Блоки и кольца</Text>
+                        <Text size="large" color="accent">Блоки и кольца</Text>
                     </MenuItem>
 
-                    <MenuItem onClick={goTo(ROUTES.QUADRAS)}>
+                    <MenuItem doubleHeight onClick={goTo(ROUTES.QUADRAS)}>
                         <Icon size={24} className={styles.icon} color="accent" name="Square7" />
-                        <Text size="body" color="accent">Квадры</Text>
-                        <Icon name="Quadras" size={80} className={styles.image} />
+                        <Text size="large" color="accent">Квадры</Text>
+                        <Icon name="Quadras" size={96} className={styles.image} />
                     </MenuItem>
 
-                    <MenuItem onClick={goTo(ROUTES.SUITS)}>
+                    <MenuItem doubleHeight onClick={goTo(ROUTES.SUITS)}>
                         <Icon size={24} className={styles.icon} color="accent" name="Square8" />
-                        <Text size="body" color="accent">Карты и масти</Text>
-                        <Icon name="Suits" size={80} className={styles.image} />
+                        <Text size="large" color="accent">Карты и масти</Text>
+                        <Icon name="Suits" size={96} className={styles.image} />
                     </MenuItem>
 
-                    <MenuItem onClick={goTo(ROUTES.CLUBS)}>
+                    <MenuItem doubleHeight onClick={goTo(ROUTES.CLUBS)}>
                         <Icon size={24} className={styles.icon} color="accent" name="Square9" />
-                        <Text size="body" color="accent">Клубы и психотипы</Text>
-                        <Icon name="Clubs" size={80} className={styles.image} />
+                        <Text size="large" color="accent">Клубы и психотипы</Text>
+                        <Icon name="Clubs" size={96} className={styles.image} />
                     </MenuItem>
 
-                    <MenuItem onClick={goTo(ROUTES.YUNG)}>
+                    <MenuItem doubleHeight onClick={goTo(ROUTES.MINDSETS)}>
                         <Icon size={24} className={styles.icon} color="accent" name="Square10" />
-                        <Text size="body" color="accent">Дихотомии Юнга</Text>
+                        <Text size="large" color="accent">Типы мышления</Text>
                     </MenuItem>
 
-                    <MenuItem onClick={goTo(ROUTES.REININ)}>
+                    <MenuItem doubleHeight onClick={goTo(ROUTES.YUNG)}>
                         <Icon size={24} className={styles.icon} color="accent" name="Square11" />
-                        <Text size="body" color="accent">Признаки Рейнина</Text>
+                        <Text size="large" color="accent">Дихотомии Юнга</Text>
                     </MenuItem>
 
-                    <MenuItem onClick={goTo(ROUTES.MINDSETS)}>
+                    <MenuItem doubleHeight onClick={goTo(ROUTES.REININ)}>
                         <Icon size={24} className={styles.icon} color="accent" name="Square12" />
-                        <Text size="body" color="accent">Типы мышления</Text>
+                        <Text size="large" color="accent">Признаки Рейнина</Text>
                     </MenuItem>
 
                     <MenuItem fullWidth onClick={goTo(ROUTES.OTHER)}>
                         <Icon size={24} className={styles.icon} color="accent" name="SquareDots" />
-                        <Text size="body" color="accent">Прочее</Text>
+                        <Text size="large" color="accent">Прочее</Text>
                     </MenuItem>
                 </div>
             </div>

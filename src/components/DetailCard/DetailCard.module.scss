@@ -1,11 +1,10 @@
 @import '../../styles/utils';
 
 .root {
-    background: rgba($color-basic-beige, 0.25);
     padding: $spacing-8;
     margin-top: $spacing-4;
     text-decoration: none;
-    border: 1px solid rgba($color-basic-accent, 0.1);
+
     border-radius: 0.2rem;
     cursor: pointer;
 
@@ -18,6 +17,7 @@
         --color-detailcard-title: #{$color-pastel-turquoise};
         --color-detailcard-intertypeBg: #{$color-pastel-turquoise};
         --color-detailcard-tag: #{$color-pastel-turquoise};
+        --color-detailcard-border: #{$color-pastel-turquoise};
     }
 
     &.kindred,
@@ -29,6 +29,7 @@
         --color-detailcard-title: #{$color-pastel-green};
         --color-detailcard-intertypeBg: #{$color-pastel-green};
         --color-detailcard-tag: #{$color-pastel-green};
+        --color-detailcard-border: #{rgba($color-pastel-green, 0.5)};
     }
 
     &.beneficiary,
@@ -40,6 +41,7 @@
         --color-detailcard-title: #{$color-pastel-yellow};
         --color-detailcard-intertypeBg: #{$color-pastel-yellow};
         --color-detailcard-tag: #{$color-pastel-yellow};
+        --color-detailcard-border: #{rgba($color-pastel-yellow, 0.5)};
     }
 
     &.quasidentical,
@@ -51,6 +53,7 @@
         --color-detailcard-title: #{$color-pastel-pink};
         --color-detailcard-intertypeBg: #{$color-pastel-pink};
         --color-detailcard-tag: #{$color-pastel-pink};
+        --color-detailcard-border: #{rgba($color-pastel-pink, 0.5)};
     }
 
     &.air,
@@ -59,6 +62,7 @@
         --color-detailcard-title: #{$color-elements-air};
         --color-detailcard-intertypeBg: #{$color-elements-air};
         --color-detailcard-tag: #{$color-elements-air};
+        --color-detailcard-border: #{rgba($color-elements-air, 0.5)};
     }
 
     &.fire,
@@ -67,6 +71,7 @@
         --color-detailcard-title: #{$color-elements-fire};
         --color-detailcard-intertypeBg: #{$color-elements-fire};
         --color-detailcard-tag: #{$color-elements-fire};
+        --color-detailcard-border: #{rgba($color-elements-fire, 0.5)};
     }
 
     &.water,
@@ -75,6 +80,7 @@
         --color-detailcard-title: #{$color-elements-water};
         --color-detailcard-intertypeBg: #{$color-elements-water};
         --color-detailcard-tag: #{$color-elements-water};
+        --color-detailcard-border: #{rgba($color-elements-water, 0.5)};
     }
 
     &.earth,
@@ -83,6 +89,7 @@
         --color-detailcard-title: #{$color-elements-earth};
         --color-detailcard-intertypeBg: #{$color-elements-earth};
         --color-detailcard-tag: #{$color-elements-earth};
+        --color-detailcard-border: #{rgba($color-elements-earth, 0.5)};
     }
 
     a {
@@ -92,6 +99,8 @@
     .text {
         margin-bottom: $spacing-8;
     }
+
+    border: 1px solid var(--color-detailcard-border, #{rgba($color-basic-accent, 0.15)});
 
 }
 

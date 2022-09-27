@@ -32,6 +32,12 @@
             top: $spacing-40 * 2;
         }
     }
+
+    &.lvl_3 {
+        .container {
+            top: $spacing-40 * 3;
+        }
+    }
 }
 
 .bg {

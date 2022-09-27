@@ -27,6 +27,7 @@ import Aspects from './containers/Aspects';
 import AspectItem from './containers/AspectsItem';
 import Blocks from './containers/Blocks';
 import BlocksItem from './containers/BlocksItem';
+import RingItem from './containers/RingItem';
 import Suits from './containers/Suits';
 import SuitsCard from './containers/SuitsCard';
 import SuitsTarot from './containers/SuitsTarot';
@@ -164,6 +165,10 @@ export const routes: Route[] = [
     {
         path: ROUTES.BLOCKS_ITEM(),
         container: BlocksItem,
+    },
+    {
+        path: ROUTES.RING_ITEM(),
+        container: RingItem,
     },
     {
         path: ROUTES.SUITS,

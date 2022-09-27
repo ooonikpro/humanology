@@ -75,11 +75,11 @@
 .circle {
     position: absolute;
     top: 0;
-    left: 0;
+    left: $spacing-4;
     right: 0;
-    bottom: 0;
+    bottom: $spacing-8;
     margin: auto;
-    width: 100%;
+    width: 90%;
     opacity: 0.5;
     z-index: -1;
 }

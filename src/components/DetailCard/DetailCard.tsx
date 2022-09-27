@@ -76,6 +76,7 @@ export const DetailCard: React.FC<DetailCardProps> = ({
         }
 
         if (type === 'ring') {
+            url = ROUTES.RING_ITEM(ring);
             image = require(`../../assets/images/${ring}-ring.svg`);
         }
 
@@ -171,6 +172,7 @@ export const DetailCard: React.FC<DetailCardProps> = ({
     };
 
     const goTo = () => navigate(url);
+
 
     return (
         <div className={rootClasses} onClick={goTo}>

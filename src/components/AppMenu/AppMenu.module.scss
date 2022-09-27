@@ -6,7 +6,7 @@
     inset: 0;
     background-color: $color-basic-beige;
     z-index: 1;
-    padding: $spacing-8;
+    padding: $spacing-4;
 
     opacity: 0;
     visibility: hidden;
@@ -20,7 +20,7 @@
 }
 
 .container {
-    padding: $spacing-4 $spacing-8 0 $spacing-4;
+    padding: $spacing-4 $spacing-8 0 $spacing-8;
     height: 100%;
     overflow: auto;
     scroll-behavior: smooth;
@@ -69,15 +69,15 @@
 
 .icon {
     position: relative;
-    bottom: $spacing-6;
+    bottom: $spacing-4;
     opacity: 0.5;
 }
 
 .image {
     position: absolute;
-    right: $spacing-8;
-    top: -$spacing-4;
-    opacity: 0.25;
+    right: $spacing-12;
+    top: -$spacing-12;
+    opacity: 0.5;
 }
 
 .elements {
@@ -148,7 +148,7 @@
     align-items: flex-start;
     align-content: flex-end;
     flex-direction: row-reverse;
-    top: $spacing-8;
+    top: $spacing-16;
     right: $spacing-12;
     opacity: 0.5;
 }
@@ -165,13 +165,13 @@
 }
 
 .icon1 {
-    opacity: 0.75;
+    opacity: 1;
 }
 
 .icon2 {
-    opacity: 0.5;
+    opacity: 0.75;
 }
 
 .icon3 {
-    opacity: 0.25;
+    opacity: 0.50;
 }

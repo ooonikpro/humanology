@@ -86,7 +86,7 @@ export default function Home() {
                 <div className={styles.menuList}>
                     <MenuItem doubleHeight>
                         <Icon size={24} className={styles.icon} color="accent" name="Mug" />
-                        <Text size="large" color="accent">Как определять тип?</Text>
+                        <Text size="large" color="accent">Как определять социотип?</Text>
                     </MenuItem>
                     <MenuItem doubleHeight>
                         <Icon size={24} className={styles.icon} color="accent" name="Globe" />
