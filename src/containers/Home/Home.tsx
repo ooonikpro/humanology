@@ -6,7 +6,7 @@ import { SOCIOTYPES } from '../../constants/socionicsTypes';
 import { Socionics } from '../../types';
 import { SocietyCardMini } from '../../components/SocietyCardMini';
 import { ROUTES } from '../../constants/routes';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { EndPoint } from '../../components/EndPoint';
 import { PageTitle } from '../../components/PageTitle';
 import { WhiteCard } from '../../components/WhiteCard';
@@ -79,18 +79,21 @@ export default function Home() {
         });
     }, [elements]);
 
+    const navigate = useNavigate();
+    const goTo = (route: string) => () => navigate(route);
+
     return (
         <>
             <WhiteCard color="beige" className={styles.root}>
                 <PageTitle iconName='Square1'>Социотипы</PageTitle>
                 <div className={styles.menuList}>
-                    <MenuItem doubleHeight>
+                    <MenuItem doubleHeight onClick={goTo(ROUTES.IDENTIFY)}>
                         <Icon size={24} className={styles.icon} color="accent" name="Mug" />
-                        <Text size="large" color="accent">Как определять социотип?</Text>
+                        <Text size="large" color="accent" className={styles.text}>Как определять тип?</Text>
                     </MenuItem>
-                    <MenuItem doubleHeight>
+                    <MenuItem doubleHeight onClick={goTo(ROUTES.SOCION)}>
                         <Icon size={24} className={styles.icon} color="accent" name="Globe" />
-                        <Text size="large" color="accent">Устройство социона</Text>
+                        <Text size="large" color="accent" className={styles.text}>Устройство социона</Text>
                     </MenuItem>
                 </div>
             </WhiteCard>

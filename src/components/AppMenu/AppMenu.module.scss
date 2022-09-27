@@ -65,6 +65,10 @@
         opacity: 0.5;
         cursor: default;
     }
+
+    .text {
+        line-height: $spacing-20;
+    }
 }
 
 .icon {

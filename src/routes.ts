@@ -17,6 +17,8 @@ import HumourSelutin from './containers/Sociotypes/SociotypesHumour/Tabs/HumourS
 import HumourElvira from './containers/Sociotypes/SociotypesHumour/Tabs/HumourElvira';
 import Loading from './containers/Loading';
 import Start from './containers/Start';
+import Identify from './containers/Identify';
+import WhatIsSocionics from './containers/WhatIsSocionics';
 import Disclaimer from './containers/Disclaimer';
 import History from './containers/History';
 import HistoryCarl from './containers/History/Tabs/Carl';
@@ -37,13 +39,19 @@ import FunctionsTags from './containers/FunctionsTags';
 import FunctionsItem from './containers/FunctionsItem';
 import Metabolism from './containers/Metabolism';
 import Quadras from './containers/Quadras';
+import QuadrasItem from './containers/QuadrasItem';
 import Relationships from './containers/Relationships';
 import RelationshipsItem from './containers/RelationshipsItem';
 import Minds from './containers/Minds';
+import MindsItem from './containers/MindsItem';
 import Clubs from './containers/Clubs';
+import ClubsItem from './containers/ClubsItem';
+import ClubsPsychotype from './containers/ClubsPsychotype';
 import ReininSigns from './containers/ReininSigns';
 import DichotomiesYung from './containers/DichotomiesYung';
+import DichotomiesYungItem from './containers/DichotomiesYungItem';
 import Other from './containers/Other';
+import Socion from './containers/Socion';
 
 export interface Route {
     path: string;
@@ -123,6 +131,18 @@ export const routes: Route[] = [
         path: ROUTES.START,
         index: true,
         container: Start,
+    },
+    {
+        path: ROUTES.IDENTIFY,
+        container: Identify,
+    },
+    {
+        path: ROUTES.WHAT_IS_SOCIONICS,
+        container: WhatIsSocionics,
+    },
+    {
+        path: ROUTES.SOCION,
+        container: Socion,
     },
     {
         path: ROUTES.DISCLAIMER,
@@ -207,6 +227,10 @@ export const routes: Route[] = [
         container: Quadras,
     },
     {
+        path: ROUTES.QUADRAS_ITEM(),
+        container: QuadrasItem,
+    },
+    {
         path: ROUTES.RELATIONSHIPS,
         container: Relationships,
     },
@@ -219,8 +243,20 @@ export const routes: Route[] = [
         container: Minds,
     },
     {
+        path: ROUTES.MINDSETS_ITEM(),
+        container: MindsItem,
+    },
+    {
         path: ROUTES.CLUBS,
         container: Clubs
+    },
+    {
+        path: ROUTES.CLUBS_ITEM(),
+        container: ClubsItem,
+    },
+    {
+        path: ROUTES.CLUBS_PSYCHOTYPE(),
+        container: ClubsPsychotype,
     },
     {
         path: ROUTES.REININ,
@@ -229,6 +265,10 @@ export const routes: Route[] = [
     {
         path: ROUTES.YUNG,
         container: DichotomiesYung
+    },
+    {
+        path: ROUTES.DICHOTOMIES_YUNG(),
+        container: DichotomiesYungItem
     },
     {
         path: ROUTES.OTHER,

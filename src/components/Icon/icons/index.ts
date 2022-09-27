@@ -1,5 +1,6 @@
 export * from '../circles';
 export * from '../images';
+
 export { default as Activity } from './Activity';
 export { default as Aggressor } from './Aggressor';
 export { default as AirMini } from './AirMini';
@@ -80,6 +81,7 @@ export { default as Logo } from './Logo';
 export { default as Male } from './Male';
 export { default as Map } from './Map';
 export { default as Melancholic } from './Melancholic';
+export { default as MentalRing } from './MentalRing';
 export { default as MenuSquare } from './MenuSquare';
 export { default as Menu } from './Menu';
 export { default as Mirror } from './Mirror';
@@ -135,6 +137,7 @@ export { default as UserCheck } from './UserCheck';
 export { default as UserSquare } from './UserSquare';
 export { default as Users } from './Users';
 export { default as Victim } from './Victim';
+export { default as VitalRing } from './VitalRing';
 export { default as Wands } from './Wands';
 export { default as WaterMini } from './WaterMini';
 export { default as Water } from './Water';

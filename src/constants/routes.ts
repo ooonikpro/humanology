@@ -23,6 +23,9 @@ export const ROUTES = {
     HISTORY_ANTON: '/history/anton',
     HISTORY_AUSHRA: '/history/aushra',
     METABOLISM: '/information-metabolism',
+    IDENTIFY: '/identify',
+    WHAT_IS_SOCIONICS: '/what',
+    SOCION: '/socion',
     FUNCTIONS: '/functions',
     FUNCTIONS_TAGS: '/functions/tags',
     FUNCTIONS_SIGNS: '/functions/signs',
@@ -33,18 +36,21 @@ export const ROUTES = {
     ASPECTS: '/aspects',
     ASPECT_ITEM: (aspectName = ':aspectName') => `/aspects/${aspectName}`,
     SUITS: '/suits',
-    SUITS_CARD: (cardName = ':cardName') => `/suits/card/${cardName}`,
-    SUITS_TAROT: (tarotName = ':tarotName') => `/suits/tarot/${tarotName}`,
+    SUITS_CARD: (cardName = ':cardName') => `/suits/${cardName}`,
+    SUITS_TAROT: (tarotName = ':tarotName') => `/tarot/${tarotName}`,
     QUADRAS: '/quadras',
-    QUADRA_ITEM: (quadraName = ':quadraName') => `/quadras/${quadraName}`,
+    QUADRAS_ITEM: (quadraName = ':quadraName') => `/quadras/${quadraName}`,
     CLUBS: '/clubs',
-    CLUB_ITEM: (clubName = ':clubName') => `/clubs/${clubName}`,
+    CLUBS_ITEM: (clubName = ':clubName') => `/clubs/${clubName}`,
+    CLUBS_PSYCHOTYPE: (psychotypeName = ':psychotypeName') => `/psychotypes/${psychotypeName}`,
     REININ: '/reinin',
-    YUNG: '/yung',
+    YUNG: '/yungs',
+    DICHOTOMIES_YUNG: (yungDichotomyName = ':yungDichotomyName') => `/yungs/${yungDichotomyName}`,
     OTHER: '/other',
     RELATIONSHIPS: '/relationships',
     RELATIONSHIPS_ITEM: (relationshipsName = ':relationshipsName') => `/relationships/${relationshipsName}`,
     MINDSETS: '/mindsets',
+    MINDSETS_ITEM: (mindsetsName = ':mindsetsName') => `/mindsets/${mindsetsName}`,
     START: '/start',
     LOADING: '/'
 };
@@ -57,15 +63,15 @@ export const MAIN_LINKS: Tabs[] = [
         iconName: 'Square0'
     },
     {
-        label: 'Как определить?',
-        path: ROUTES.DISCLAIMER,
-        order: 1,
+        label: 'Как определять?',
+        path: ROUTES.IDENTIFY,
+        order: 2,
         iconName: 'Mug'
     },
     {
         label: 'Социотипы',
         path: ROUTES.HOME,
-        order: 2,
+        order: 1,
         iconName: 'Square1'
     },
     {

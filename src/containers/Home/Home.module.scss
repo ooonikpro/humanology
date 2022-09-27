@@ -35,6 +35,10 @@
     width: 40%;
     height: 6.4rem;
 
+    .text {
+        line-height: $spacing-20;
+    }
+
     &.doubleHeight {
         height: 9.6rem;
     }

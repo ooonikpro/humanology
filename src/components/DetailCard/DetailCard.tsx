@@ -9,7 +9,7 @@ import { Socionics } from 'src/types';
 import { ROUTES } from 'src/constants/routes';
 
 export type DetailCardProps = {
-    type: 'function' | 'aspect' | 'block' | 'ring' | 'quadra' | 'suit' | 'role' | 'club' | 'psychotype' | 'mindset' | 'intertype'
+    type: 'function' | 'aspect' | 'block' | 'ring' | 'quadra' | 'suit' | 'role' | 'club' | 'psychotype' | 'mindset' | 'intertype' | 'yung'
     socionicFn?: Socionics.Function;
     aspect?: Socionics.Aspect;
     quadra?: Socionics.Quadras;
@@ -21,6 +21,7 @@ export type DetailCardProps = {
     intertype?: Socionics.IntertypeRelations;
     ring?: 'mental' | 'vital'
     block?: 'ego' | 'superego' | 'id' | 'superid'
+    yung?: Socionics.Dichotomy;
     className?: string;
     title: string;
     alias?: Array<string>;
@@ -43,6 +44,7 @@ export const DetailCard: React.FC<DetailCardProps> = ({
     intertype,
     ring,
     block,
+    yung,
     title,
     alias,
     subtitle,
@@ -81,6 +83,7 @@ export const DetailCard: React.FC<DetailCardProps> = ({
         }
 
         if (type === 'mindset') {
+            url = ROUTES.MINDSETS_ITEM(mindset);
             image = require(`../../assets/images/${mindset}.svg`);
         }
 
@@ -88,8 +91,12 @@ export const DetailCard: React.FC<DetailCardProps> = ({
             url = ROUTES.ASPECT_ITEM(aspect);
         }
 
+        if (type === 'yung') {
+            url = ROUTES.QUADRAS_ITEM(quadra);
+        }
+
         if (type === 'quadra') {
-            url = ROUTES.QUADRA_ITEM(quadra);
+            url = ROUTES.QUADRAS_ITEM(quadra);
         }
 
         if (type === 'role') {
@@ -98,6 +105,18 @@ export const DetailCard: React.FC<DetailCardProps> = ({
 
         if (type === 'suit') {
             url = ROUTES.SUITS_TAROT(suit);
+        }
+
+        if (type === 'club') {
+            url = ROUTES.CLUBS_ITEM(club);
+        }
+
+        if (type === 'psychotype') {
+            url = ROUTES.CLUBS_PSYCHOTYPE(psychotype);
+        }
+
+        if (type === 'yung') {
+            url = ROUTES.DICHOTOMIES_YUNG(yung);
         }
 
         if (role === 'king') {

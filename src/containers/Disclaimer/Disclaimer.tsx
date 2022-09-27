@@ -9,7 +9,7 @@ import { PageTitle } from '../../components/PageTitle';
 export default function Disclaimer() {
     return (
         <WhiteCard color="white" className={styles.root}>
-            <PageTitle iconName='AlertSquare'>Дисклеймер</PageTitle>
+            <PageTitle back iconName='AlertSquare'>Дисклеймер</PageTitle>
             <AuthorLine text='Читать 5 минут' iconName='Time'>äлёша</AuthorLine>
 
             <Text tag="p" className={styles.text}>

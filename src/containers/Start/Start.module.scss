@@ -1,1 +1,46 @@
 @import '../_commons/text.module';
+
+.menuList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacing-4;
+    margin-top: $spacing-32;
+    margin-bottom: $spacing-24;
+}
+
+.menuItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex: 1 1 auto;
+    position: relative;
+    border-radius: 2px;
+    color: $color-basic-accent;
+    background-color: $color-basic-white;
+    border: 1px solid rgba($color-basic-accent, 0.1);
+    cursor: pointer;
+    padding: 0 $spacing-6 $spacing-6 $spacing-6;
+    width: 40%;
+    height: 6.4rem;
+
+    &.doubleHeight {
+        height: 9.6rem;
+    }
+
+    .text {
+        line-height: $spacing-20;
+    }
+}
+
+.icon {
+    position: relative;
+    bottom: $spacing-6;
+    opacity: 0.5;
+}
+
+.image {
+    position: absolute;
+    right: $spacing-8;
+    top: -$spacing-4;
+    opacity: 0.25;
+}
