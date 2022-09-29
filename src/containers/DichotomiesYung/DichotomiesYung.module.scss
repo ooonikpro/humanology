@@ -1,24 +1,5 @@
 @import '../_commons/text.module';
 
-.row {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    padding: $spacing-8 0;
-
-    &:after {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        content: '';
-        height: 1px;
-        opacity: 0.1;
-        background-color: var(--color-basic-accent);
-    }
-}
-
 .detailCards {
     margin-bottom: $spacing-20;
     display: flex;

@@ -43,8 +43,8 @@ export default function Suits() {
             </div>
 
             <div className={styles.row}>
-                <Text size="body" color="grey">Предусмотрительный</Text>
                 <Text size="body" color="grey">Беспечный</Text>
+                <Text size="body" color="grey">Предусмотрительный</Text>
             </div>
 
             {
@@ -65,13 +65,13 @@ export default function Suits() {
             </Text>
 
             <div className={styles.row}>
-                <Text size="body" color="grey">Логик</Text>
-                <Text size="body" color="grey">Этик</Text>
+                <Text size="body" color="grey">Иррационал</Text>
+                <Text size="body" color="grey">Рационал</Text>
             </div>
 
             <div className={styles.row}>
-                <Text size="body" color="grey">Иррационал</Text>
-                <Text size="body" color="grey">Рационал</Text>
+                <Text size="body" color="grey">Логик</Text>
+                <Text size="body" color="grey">Этик</Text>
             </div>
 
             <div className={styles.row}>

@@ -90,10 +90,12 @@ export default function Home() {
                     <MenuItem doubleHeight onClick={goTo(ROUTES.IDENTIFY)}>
                         <Icon size={24} className={styles.icon} color="accent" name="Mug" />
                         <Text size="large" color="accent" className={styles.text}>Как определять тип?</Text>
+                        <Icon name="SortingHat" color="accent" size={56} className={styles.image} />
                     </MenuItem>
                     <MenuItem doubleHeight onClick={goTo(ROUTES.SOCION)}>
                         <Icon size={24} className={styles.icon} color="accent" name="Globe" />
                         <Text size="large" color="accent" className={styles.text}>Устройство социона</Text>
+                        <Icon name="Dna" color="accent" size={56} className={styles.image} />
                     </MenuItem>
                 </div>
             </WhiteCard>

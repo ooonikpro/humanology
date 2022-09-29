@@ -9,7 +9,7 @@ import { PageTitle } from '../../components/PageTitle';
 export default function Identify() {
     return (
         <WhiteCard color="white" className={styles.root}>
-            <PageTitle iconName='Mug'>Как определять социотип?</PageTitle>
+            <PageTitle iconName='SortingHat'>Как определять социотип?</PageTitle>
             <AuthorLine text='Читать 5 минут' iconName='Time'>Неизвестно</AuthorLine>
 
             <Text tag="p" size="large">

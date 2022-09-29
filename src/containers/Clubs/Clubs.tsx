@@ -95,8 +95,8 @@ export default function Clubs() {
 
 
             <div className={styles.row}>
-                <Text size="body" color="grey">Интуит</Text>
                 <Text size="body" color="grey">Сенсорик</Text>
+                <Text size="body" color="grey">Интуит</Text>
             </div>
 
             <div className={styles.row}>

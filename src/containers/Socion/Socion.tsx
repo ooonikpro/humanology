@@ -9,7 +9,7 @@ import { PageTitle } from '../../components/PageTitle';
 export default function Socion() {
     return (
         <WhiteCard color="white" className={styles.root}>
-            <PageTitle back iconName='Unknown'>Устройство социона</PageTitle>
+            <PageTitle back iconName='Dna'>Устройство социона</PageTitle>
             <AuthorLine text='Читать 5 минут' iconName='Time'>Неизвестно</AuthorLine>
 
             <Text tag="p" size="large">

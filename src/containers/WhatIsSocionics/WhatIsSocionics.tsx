@@ -9,7 +9,7 @@ import { PageTitle } from '../../components/PageTitle';
 export default function WhatIsSocionics() {
     return (
         <WhiteCard color="white" className={styles.root}>
-            <PageTitle back iconName='Unknown'>Что такое соционика</PageTitle>
+            <PageTitle back iconName='Help'>Что такое соционика</PageTitle>
             <AuthorLine text='Читать 5 минут' iconName='Time'>Неизвестно</AuthorLine>
 
             <Text tag="p" size="large">

@@ -6,7 +6,7 @@ import { AuthorLine } from '../../../components/AuthorLine';
 export default function Sensory() {
     return (
         <div className={styles.root}>
-            <PageTitle iconName='Document' back>Сенсорики</PageTitle>
+            <PageTitle iconName='Sensory' back>Сенсорики</PageTitle>
             <AuthorLine text='Читать 4 минуты' iconName='Time'>Неизвестен</AuthorLine>
             <Text tag="p" className={styles.text}>
                 Текст про сенсориков.

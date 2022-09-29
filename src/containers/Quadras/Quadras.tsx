@@ -72,6 +72,16 @@ export default function Quadras() {
                 Но здесь, в отличие от других групп, существует язык, на котором люди всегда могут договориться: они понимают смысл претензий друг к другу.
             </Text>
 
+            <div className={styles.row}>
+                <Text size="body" color="grey">Решительный</Text>
+                <Text size="body" color="grey">Рассудительный</Text>
+            </div>
+
+            <div className={styles.row}>
+                <Text size="body" color="grey">Аристократ</Text>
+                <Text size="body" color="grey">Демократ</Text>
+            </div>
+
             <PageBreak>Квадры</PageBreak>
             {
                 DETAIL_CARD_QUADRAS.map((item, $itemKey) => <DetailCard {...item} key={$itemKey} />)

@@ -6,7 +6,8 @@ import { EndPoint } from '../../components/EndPoint';
 import { BlockLink } from '../../components/BlockLink';
 import { PageTitle } from '../../components/PageTitle';
 import { Icon } from '../../components/Icon';
-import { ROUTES } from 'src/constants/routes';
+import { ROUTES } from '../../constants/routes';
+import { AuthorLine } from '../../components/AuthorLine';
 import { useNavigate } from 'react-router-dom';
 
 interface MenuItemProps {
@@ -48,20 +49,25 @@ export default function Start() {
     const goTo = (route: string) => () => navigate(route);
 
     return (
-        <WhiteCard color="white" className={styles.root}>
+        <WhiteCard color="beige" className={styles.root}>
             <PageTitle iconName='Square0'>Начало</PageTitle>
-            {/* <AuthorLine text="Читать меньше минуты" iconName="Time">äлёша</AuthorLine> */}
+            <AuthorLine text="Читать меньше минуты" iconName="Time">äлёша</AuthorLine>
 
             <div className={styles.menuList}>
                 <MenuItem doubleHeight onClick={goTo(ROUTES.WHAT_IS_SOCIONICS)}>
-                    <Icon size={24} className={styles.icon} color="accent" name="Unknown" />
+                    <Icon size={24} className={styles.icon} color="accent" name="Help" />
                     <Text size="large" color="accent" className={styles.text}>Что это такое?</Text>
+                    <Icon name="Neuron" color="accent" size={64} className={styles.image} />
                 </MenuItem>
                 <MenuItem doubleHeight onClick={goTo(ROUTES.DISCLAIMER)}>
                     <Icon size={24} className={styles.icon} color="accent" name="AlertSquare" />
                     <Text size="large" color="accent" className={styles.text}>Дисклеймер</Text>
+                    <Icon name="Glvrd" color="accent" size={56} className={styles.glvrdimage} />
                 </MenuItem>
             </div>
+
+            <hr />
+
             <Text tag="p" size="h4" color="accent" font="additional">
                 Это пока Альфаверсия.
             </Text>

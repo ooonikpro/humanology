@@ -1,10 +1,16 @@
 @import '../_commons/text.module';
 
+.root {
+    display: flex;
+    flex-direction: column;
+    row-gap: $spacing-8;
+}
+
 .menuList {
     display: flex;
     flex-wrap: wrap;
     gap: $spacing-4;
-    margin-top: $spacing-32;
+    margin-top: 0;
     margin-bottom: $spacing-24;
 }
 
@@ -40,7 +46,14 @@
 
 .image {
     position: absolute;
-    right: $spacing-8;
+    right: $spacing-12;
     top: -$spacing-4;
+    opacity: 0.25;
+}
+
+.glvrdimage {
+    position: absolute;
+    right: $spacing-12;
+    top: $spacing-8;
     opacity: 0.25;
 }

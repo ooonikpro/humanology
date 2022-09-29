@@ -18,7 +18,7 @@ export default function History() {
 
     return (
         <WhiteCard color="white" className={styles.root}>
-            <PageTitle iconName='Time'>История</PageTitle>
+            <PageTitle iconName='SquareTime'>История</PageTitle>
             <div className={styles.minitabs}>
                 <MiniTabsHistory />
             </div>

@@ -23,6 +23,16 @@ export default function Minds() {
                 Но не только это. Цельность натуры или ее сложность и противоречивость, порождающая множество скрытых внутренних проблем, тоже зависят от стилей мышления, а точнее — от их сочетаний, так как в чистом виде стили мышления, описанные американскими исследователями Харрисоном и Брэмсоном, обычно не встречаются.
             </Text>
 
+            <div className={styles.row}>
+                <Text size="body" color="grey">Динамик</Text>
+                <Text size="body" color="grey">Статик</Text>
+            </div>
+
+            <div className={styles.row}>
+                <Text size="body" color="grey">Негативист</Text>
+                <Text size="body" color="grey">Позитивист</Text>
+            </div>
+
             {
                 DETAIL_CARD_MINDS.map((item, $itemKey) => <DetailCard {...item} key={$itemKey} />)
             }

@@ -84,7 +84,7 @@ export const MAIN_LINKS: Tabs[] = [
         label: 'История',
         path: ROUTES.HISTORY,
         order: 4,
-        iconName: 'Time'
+        iconName: 'SquareTime'
     },
     {
         label: 'Информационный метаболизм',

@@ -1,1 +1,81 @@
 @import '../_commons/text.module';
+
+.intertypeIcons {
+    color: $color-pastel-turquoise;
+    display: flex;
+    flex-direction: column;
+    margin-top: -$spacing-32;
+    margin-bottom: 0;
+
+    .intertypeBg {
+        position: absolute;
+    }
+
+    .intertypeIcon {
+        margin-top: $spacing-20;
+    }
+}
+
+.intertypeText {
+    color: $color-pastel-turquoise;
+}
+
+.intertypeIconsGreen {
+    color: $color-pastel-green;
+    display: flex;
+    flex-direction: column;
+    margin-top: -$spacing-32;
+    margin-bottom: 0;
+
+    .intertypeBg {
+        position: absolute;
+    }
+
+    .intertypeIconGreen {
+        margin-top: $spacing-20;
+    }
+}
+
+.intertypeTextGreen {
+    color: $color-pastel-green;
+}
+
+.intertypeIconsYellow {
+    color: $color-pastel-yellow;
+    display: flex;
+    flex-direction: column;
+    margin-top: -$spacing-32;
+    margin-bottom: 0;
+
+    .intertypeBg {
+        position: absolute;
+    }
+
+    .intertypeIconYellow {
+        margin-top: $spacing-20;
+    }
+}
+
+.intertypeTextYellow {
+    color: $color-pastel-yellow;
+}
+
+.intertypeIconsPink {
+    color: $color-pastel-pink;
+    display: flex;
+    flex-direction: column;
+    margin-top: -$spacing-32;
+    margin-bottom: 0;
+
+    .intertypeBg {
+        position: absolute;
+    }
+
+    .intertypeIconPink {
+        margin-top: $spacing-20;
+    }
+}
+
+.intertypeTextPink {
+    color: $color-pastel-pink;
+}

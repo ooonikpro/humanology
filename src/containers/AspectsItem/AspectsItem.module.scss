@@ -1,1 +1,29 @@
 @import '../_commons/text.module.scss';
+
+.iconAspect {
+    margin-top: -$spacing-32;
+}
+
+.tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: $spacing-8;
+    row-gap: $spacing-4;
+    margin-bottom: $spacing-16;
+}
+
+.aspectMini {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    text-align: right;
+    gap: $spacing-6;
+    margin-top: -$spacing-20;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.iconAspectMini {
+    opacity: 0.9;
+}

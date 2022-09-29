@@ -11,6 +11,14 @@ export type PeopleItem = {
 
 export const PEOPLE: PeopleItem[] = [
     {
+        uid: 'aushra-augustinavichiute',
+        id: 'ENTP',
+        name: 'Аушра Аугустинавичюте',
+        subtitle: 'Психолог, автор',
+        birthDate: '04/04/1927',
+        gender: 'female'
+    },
+    {
         uid: 'ilon-mask',
         id: 'ENTJ',
         name: 'Илон Маск',
@@ -28,7 +36,7 @@ export const PEOPLE: PeopleItem[] = [
     },
     {
         uid: 'brad-pitt',
-        id: 'ENTP',
+        id: 'ENTJ',
         name: 'Брэд Питт',
         subtitle: 'Актер',
         birthDate: '12/18/1963',
@@ -44,7 +52,7 @@ export const PEOPLE: PeopleItem[] = [
     },
     {
         uid: 'alexander-pushnoy',
-        id: 'ENTP',
+        id: 'ENFJ',
         name: 'Александр Пушной',
         subtitle: 'Телеведущий',
         birthDate: '05/16/1975',
@@ -68,7 +76,7 @@ export const PEOPLE: PeopleItem[] = [
     },
     {
         uid: 'dmitriy-nagiev',
-        id: 'ENTP',
+        id: 'ESFP',
         name: 'Дмитрий Нагиев',
         subtitle: 'Актер',
         birthDate: '04/04/1967',
@@ -161,9 +169,5 @@ export const PEOPLE: PeopleItem[] = [
         subtitle: 'Актер',
         birthDate: '07/06/1946',
         gender: 'male'
-    },
-
-
-
-
+    }
 ];

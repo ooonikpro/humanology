@@ -36,7 +36,7 @@ export const BlockLink: React.FC<Props> = ({ path, label, icon, className }) => 
             <Text
                 ref={ref}
                 tag="button"
-                size="body"
+                size="large"
                 color="accent"
                 className={styles.label}
             >
