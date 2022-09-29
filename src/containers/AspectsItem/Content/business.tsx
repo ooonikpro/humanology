@@ -4,7 +4,6 @@ import { Text } from '../../../components/Text';
 import { AuthorLine } from '../../../components/AuthorLine';
 import { Icon } from '../../../components/Icon';
 import { EndPoint } from '../../../components/EndPoint';
-import { SocietyCardMini } from 'src/components/SocietyCardMini';
 
 export default function Business() {
     return (
