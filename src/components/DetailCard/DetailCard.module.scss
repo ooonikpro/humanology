@@ -66,7 +66,8 @@
     }
 
     &.fire,
-    &.king {
+    &.king,
+    &.queen {
         --color-detailcard-icon: #{$color-elements-fire};
         --color-detailcard-title: #{$color-elements-fire};
         --color-detailcard-intertypeBg: #{$color-elements-fire};

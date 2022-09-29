@@ -128,6 +128,15 @@ export const DetailCard: React.FC<DetailCardProps> = ({
             );
         }
 
+        if (role === 'queen') {
+            return (
+                <div className={styles.kings}>
+                    <Icon name={getIconName(role)} size={80} className={styles.detailCardIcon} />
+                    <Icon name="King" size={80} className={styles.detailCardIcon} />
+                </div>
+            );
+        }
+
         if (image) {
             return <img src={image} alt="" className={styles.image} />;
         }

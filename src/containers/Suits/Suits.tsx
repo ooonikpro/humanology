@@ -48,7 +48,7 @@ export default function Suits() {
             </div>
 
             {
-                DETAIL_CARD_ROLES.map((item, $itemKey) => <DetailCard {...item} key={$itemKey} />)
+                DETAIL_CARD_ROLES.slice(1, 5).map((item, $itemKey) => <DetailCard {...item} key={$itemKey} />)
             }
 
             <PageBreak>Масти</PageBreak>
