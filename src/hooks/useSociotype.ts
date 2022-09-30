@@ -35,5 +35,6 @@ export const useSociotype = (socionicType?: Socionics.SocionicsType) => {
     return {
         sociotypeProps,
         styles: Object.entries(styles).reduce((str, [key, val]) => str += `${key}:${val};`, ''),
+        cssColors: styles,
     };
 };

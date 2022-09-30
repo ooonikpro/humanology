@@ -53,6 +53,7 @@ export { default as Female } from './Female';
 export { default as FireMini } from './FireMini';
 export { default as Fire } from './Fire';
 export { default as FolderOpen } from './FolderOpen';
+export { default as Fractal } from './Fractal';
 export { default as FunctionActivate } from './FunctionActivate';
 export { default as FunctionBack } from './FunctionBack';
 export { default as FunctionBase } from './FunctionBase';

@@ -57,12 +57,12 @@ export default function Start() {
                 <MenuItem doubleHeight onClick={goTo(ROUTES.WHAT_IS_SOCIONICS)}>
                     <Icon size={24} className={styles.icon} color="accent" name="Help" />
                     <Text size="large" color="accent" className={styles.text}>Что это?</Text>
-                    <Icon name="Neuron" color="accent" size={64} className={styles.image} />
+                    <Icon name="Fractal" color="accent" size={56} className={styles.image} />
                 </MenuItem>
                 <MenuItem doubleHeight onClick={goTo(ROUTES.DISCLAIMER)}>
                     <Icon size={24} className={styles.icon} color="accent" name="AlertSquare" />
                     <Text size="large" color="accent" className={styles.text}>Дисклеймер</Text>
-                    <Icon name="Glvrd" color="accent" size={56} className={styles.glvrdimage} />
+                    <Icon name="Glvrd" color="accent" size={56} className={styles.image} />
                 </MenuItem>
             </div>
 
@@ -76,7 +76,7 @@ export default function Start() {
             </Text>
 
 
-            <Text tag="p" size="large" font="base">А пока…</Text>
+            <Text tag="p" size="large" font="base">Тем временем…</Text>
             <div className={styles.linkblock}>
                 <a href='https://teletype.in/@humanology' target="_blank" rel="noreferrer">
                     <BlockLink path="#" label="Читайте девблог на Телетайпе" icon="ExternalLink" />

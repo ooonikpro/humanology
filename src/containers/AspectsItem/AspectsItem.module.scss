@@ -39,3 +39,16 @@
         line-height: $spacing-24;
     }
 }
+
+.sociotype {
+    width: calc(50% - #{calc($spacing-4 / 2)});
+    min-width: 16rem;
+    text-decoration: none;
+}
+
+.pairSociocards {
+    display: flex;
+    vertical-align: middle;
+    flex-wrap: wrap;
+    gap: $spacing-4;
+}

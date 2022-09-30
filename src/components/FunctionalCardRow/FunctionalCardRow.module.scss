@@ -2,11 +2,62 @@
 
 .root {
     @include colorElement(--line-color);
+    @include colorRole(--line-color-role);
 
     display: flex;
     column-gap: $spacing-4;
 
+    &:nth-child(1)::before {
+        content: '';
+        position: absolute;
+        border: 1px solid transparent;
+        border-image: linear-gradient(180deg, var(--line-color) 0%, rgba(white, 0) 100%);
+        opacity: 0.5;
+        border-image-slice: 1;
+        margin: -$spacing-4;
+        width: calc(100% - $spacing-8);
+        height: $spacing-40;
+    }
+
+    &:nth-child(3)::before {
+        content: '';
+        position: absolute;
+        border: 1px solid transparent;
+        border-image: linear-gradient(180deg, var(--line-color-role) 0%, rgba(white, 0) 100%);
+        border-image-slice: 1;
+        opacity: 0.25;
+        margin: -$spacing-4;
+        width: calc(100% - $spacing-8);
+        height: $spacing-40;
+    }
+
     &:nth-child(2) {
         margin-bottom: $spacing-12;
+    }
+
+    &:nth-child(2)::after {
+        content: '';
+        position: absolute;
+        border: 1px solid transparent;
+        border-image: linear-gradient(0deg, var(--line-color) 0%, rgba(white, 0) 100%);
+        border-image-slice: 1;
+        opacity: 0.25;
+        margin: -$spacing-4;
+        margin-top: $spacing-24;
+        width: calc(100% - $spacing-8);
+        height: $spacing-40;
+    }
+
+    &:nth-child(4)::after {
+        content: '';
+        position: absolute;
+        border: 1px dotted transparent;
+        border-image: linear-gradient(0deg, var(--line-color-role) 0%, rgba(white, 0) 100%);
+        border-image-slice: 1;
+        opacity: 0.5;
+        margin: -$spacing-4;
+        margin-top: 6.0rem;
+        width: calc(100% - $spacing-8);
+        height: $spacing-40;
     }
 }

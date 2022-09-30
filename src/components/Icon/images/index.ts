@@ -1,4 +1,5 @@
 export { default as Algorithmic } from './Algorithmic';
+export { default as BaseFunctionAnimation } from './BaseFunctionAnimation';
 export { default as BlockEgo } from './BlockEgo';
 export { default as BlockId } from './BlockId';
 export { default as BlockSuperEgo } from './BlockSuperEgo';

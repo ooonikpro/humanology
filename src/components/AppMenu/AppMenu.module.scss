@@ -3,18 +3,21 @@
 .root {
     @include transition(all);
     position: absolute;
-    inset: 0;
+    top: $size-header-section-height;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background-color: $color-basic-beige;
     z-index: 1;
-    padding: $spacing-4;
+    padding: 0;
+    transform: translateY(-$spacing-16);
 
     opacity: 0;
     visibility: hidden;
 
     &.open {
-        top: $size-header-section-height;
-        padding: 0;
         opacity: 1;
+        transform: translateY(0);
         visibility: visible;
     }
 }
@@ -123,7 +126,7 @@
 .kid1 {
     position: absolute;
     height: 11.2rem;
-    bottom: -$spacing-4;
+    bottom: 0;
     right: 4.8rem;
     z-index: 1;
 }
@@ -131,7 +134,7 @@
 .kid2 {
     position: absolute;
     height: 10.8rem;
-    bottom: -$spacing-8;
+    bottom: 0;
     right: 0rem;
     z-index: 0;
     opacity: 0.75;
@@ -140,7 +143,7 @@
 .kid3 {
     position: absolute;
     height: 9.6rem;
-    bottom: -$spacing-8;
+    bottom: 0;
     right: 10.8rem;
     z-index: 0;
     opacity: 0.75;

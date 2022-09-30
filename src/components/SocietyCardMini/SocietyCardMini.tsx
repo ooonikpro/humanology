@@ -7,43 +7,43 @@ import { ROLE } from '../../constants/role';
 import { WhiteCard } from '../WhiteCard';
 import { getIconName, Icon } from '../Icon';
 import { Text } from '../Text';
-import { useColorRole } from '../../hooks';
+import { useSociotype } from '../../hooks';
 import { CircleQuadra } from '../CircleQuadra';
 import { Tag } from '../Tag';
 
-type Props = Socionics.IntertypeProp & {
+type Props = {
     id: Socionics.SocionicsType;
     className?: string;
 };
 
 export const SocietyCardMini: React.FC<Props> = (props) => {
+    const { cssColors: sociotypeColors, sociotypeProps } = useSociotype(props.id);
+
     const text = {
-        id: props.id,
-        gender: props.gender,
-        element: QUADRAS[props.element],
-        role: ROLE[props.role].label,
-        name: props.name,
-        alias: props.alias,
+        id: sociotypeProps.id,
+        gender: sociotypeProps.gender,
+        element: QUADRAS[sociotypeProps.element],
+        role: ROLE[sociotypeProps.role].label,
+        name: sociotypeProps.name,
+        alias: sociotypeProps.alias,
     };
 
-    const { color: roleColor } = useColorRole(props.role);
-
     return (
-        <WhiteCard className={[styles.root, props.className].join(' ')} style={roleColor}>
+        <WhiteCard className={[styles.root, props.className].join(' ')} style={sociotypeColors}>
             <div className={styles.body}>
                 <div className={styles.tags}>
 
                     <Icon
-                        name={getIconName(props.mindKey)}
+                        name={getIconName(sociotypeProps.mindKey)}
                         size={{ width: 32, height: 6 }}
                         className={styles['mindset-key']}
                     />
                 </div>
                 <CircleQuadra
-                    id={props.id}
+                    id={sociotypeProps.id}
                     className={styles['quadra-img']}
                 />
-                <Portrait name={props.id} gender={props.gender} className={styles.portrait} />
+                <Portrait name={sociotypeProps.id} gender={sociotypeProps.gender} className={styles.portrait} />
             </div>
 
             <div className={styles.footer}>
@@ -53,29 +53,29 @@ export const SocietyCardMini: React.FC<Props> = (props) => {
                     size="h5"
                     className={styles.name}
                 >
-                    {props.name}
+                    {sociotypeProps.name}
                 </Text>
 
                 <span className={styles['element-role']}>
                     <span className={styles.pair}>
-                        <Tag sign={props.element} color='element' size={16} />
-                        <Text tag="p" size="body" color="element">
+                        <Tag sign={sociotypeProps.element} color='element' size={16} />
+                        <Text tag="span" size="body" color="element">
                             {text.element}
                         </Text>
                     </span>
                     <span className={styles.pair}>
-                        <Tag sign={props.role} color='role' size={16} />
-                        <Text tag="p" size="body" color="role">
+                        <Tag sign={sociotypeProps.role} color='role' size={16} />
+                        <Text tag="span" size="body" color="role">
                             {text.role}
                         </Text>
                     </span>
                 </span>
                 <span className={styles['id-alias']}>
-                    <Text tag="p" size="body" color="grey" className={styles.alias}>
-                        {props.alias}
+                    <Text tag="span" size="body" color="grey" className={styles.alias}>
+                        {sociotypeProps.alias}
                     </Text>
-                    <Text tag="p" size="body" color="accent">
-                        {props.id}
+                    <Text tag="span" size="body" color="accent">
+                        {sociotypeProps.id}
                     </Text>
                 </span>
             </div>

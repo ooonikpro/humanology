@@ -30,7 +30,9 @@ export const IntertypesCard: React.FC<Props> = ({ id, intertype }) => {
 
     return (
         <div className={classNames}>
-            <div className={styles.intertype}>
+            <Link
+                to={`${ROUTES.RELATIONSHIPS_ITEM(intertype)}`}
+                className={styles.intertype}>
                 <Icon name="IntertypeBg" size={{ width: 160, height: 128 }} className={classNamesBackground} />
                 <Icon name="Help" size={24} className={styles.help} />
                 <Icon name={getIconName(intertype)} size={128} className={styles.icon} />
@@ -45,7 +47,7 @@ export const IntertypesCard: React.FC<Props> = ({ id, intertype }) => {
                     <Text color="black" size="h5" font="additional">{info.name}</Text>
                     <Text color="accent" size="large" className={styles.description}>{info.description}</Text>
                 </div>
-            </div>
+            </Link>
             <Link
                 to={`${ROUTES.SOCIOTYPES(id)}/card`}
                 className={styles.sociotype}

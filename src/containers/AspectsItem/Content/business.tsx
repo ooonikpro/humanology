@@ -5,9 +5,13 @@ import { AuthorLine } from '../../../components/AuthorLine';
 import { Icon } from '../../../components/Icon';
 import { EndPoint } from '../../../components/EndPoint';
 import { PageBreak } from '../../../components/PageBreak';
+import { SocietyCardMini } from '../../../components/SocietyCardMini';
 
 
 export default function Business() {
+
+
+
     return (
         <div className={styles.root}>
             <PageTitle iconName='AspectBusiness' back>Дела</PageTitle>
@@ -124,6 +128,12 @@ export default function Business() {
             <Text tag="p" size="body" className={styles.text}>
                 Аспект находится на базовой функции
             </Text>
+
+            <div className={styles.pairSociocards}>
+                <SocietyCardMini id="ESTJ" className={styles.sociotype} />
+                <SocietyCardMini id="ENTJ" className={styles.sociotype} />
+            </div>
+
             <EndPoint />
         </div >
     );
