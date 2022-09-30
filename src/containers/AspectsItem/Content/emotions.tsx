@@ -4,6 +4,7 @@ import { Text } from '../../../components/Text';
 import { AuthorLine } from '../../../components/AuthorLine';
 import { Icon } from '../../../components/Icon';
 import { EndPoint } from '../../../components/EndPoint';
+import { PageBreak } from '../../../components/PageBreak';
 
 export default function Emotions() {
     return (
@@ -119,9 +120,22 @@ export default function Emotions() {
 
             <hr />
 
-            <Text tag="b" size="h6" color="accent" className={styles.text}>
-                Эксперты этики эмоций
-            </Text>
+            <PageBreak>Знаки аспекта</PageBreak>
+            <div className={styles.grower}>
+                <Icon name="SquarePlus" color="accent" size={24} />
+                <Text tag="p" size="large" className={styles.text}>
+                    Положительные эмоции, радость веселье, эмоциональный подъём, воодушевление, улыбка, смех, энтузиазм, оптимизм, хорошее настроение, переживание счастья.
+                </Text>
+            </div>
+            <div className={styles.grower}>
+                <Icon name="SquareMinus" color="accent" size={24} />
+                <Text tag="p" size="large" className={styles.text}>
+                    Отрицательные эмоции, горе, печаль, грусть, эмоциональный спад, депрессия, плач, слезы, недовольство, пессимизм, плохое настроение, переживание несчастья.
+                </Text>
+            </div>
+
+
+            <PageBreak>Эксперты этики эмоций</PageBreak>
             <Text tag="p" size="body" className={styles.text}>
                 Аспект находится на базовой функции
             </Text>

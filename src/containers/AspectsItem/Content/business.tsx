@@ -4,6 +4,8 @@ import { Text } from '../../../components/Text';
 import { AuthorLine } from '../../../components/AuthorLine';
 import { Icon } from '../../../components/Icon';
 import { EndPoint } from '../../../components/EndPoint';
+import { PageBreak } from '../../../components/PageBreak';
+
 
 export default function Business() {
     return (
@@ -102,15 +104,26 @@ export default function Business() {
                 </Text>
             </Text>
 
-            <hr />
 
-            <Text tag="p" size="h6" color="accent" className={styles.text}>
-                Эксперты деловой логики
-            </Text>
+            <PageBreak>Знаки аспекта</PageBreak>
+            <div className={styles.grower}>
+                <Icon name="SquarePlus" color="accent" size={24} />
+                <Text tag="p" size="large" className={styles.text}>
+                    Польза, выгода, экономность, технология, факты, приобретения, накопление, купля, сбережения, наведение порядка, практичность.
+                </Text>
+            </div>
+            <div className={styles.grower}>
+                <Icon name="SquareMinus" color="accent" size={24} />
+                <Text tag="p" size="large" className={styles.text}>
+                    Бесполезность, невыгодность, использование, применение, износ, расходы, траты,, рискованность, эксперимент, продажа, торговля, действия в условия хаоса, и изобретательность.
+                </Text>
+            </div>
+
+
+            <PageBreak>Эксперты деловой логики</PageBreak>
             <Text tag="p" size="body" className={styles.text}>
                 Аспект находится на базовой функции
             </Text>
-
             <EndPoint />
         </div >
     );

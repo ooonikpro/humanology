@@ -54,15 +54,15 @@ export default function Start() {
             <AuthorLine text="Читать меньше минуты" iconName="Time">äлёша</AuthorLine>
 
             <div className={styles.menuList}>
+                <MenuItem doubleHeight onClick={goTo(ROUTES.WHAT_IS_SOCIONICS)}>
+                    <Icon size={24} className={styles.icon} color="accent" name="Help" />
+                    <Text size="large" color="accent" className={styles.text}>Что это?</Text>
+                    <Icon name="Neuron" color="accent" size={64} className={styles.image} />
+                </MenuItem>
                 <MenuItem doubleHeight onClick={goTo(ROUTES.DISCLAIMER)}>
                     <Icon size={24} className={styles.icon} color="accent" name="AlertSquare" />
                     <Text size="large" color="accent" className={styles.text}>Дисклеймер</Text>
                     <Icon name="Glvrd" color="accent" size={56} className={styles.glvrdimage} />
-                </MenuItem>
-                <MenuItem doubleHeight onClick={goTo(ROUTES.WHAT_IS_SOCIONICS)}>
-                    <Icon size={24} className={styles.icon} color="accent" name="Help" />
-                    <Text size="large" color="accent" className={styles.text}>Что это такое?</Text>
-                    <Icon name="Neuron" color="accent" size={64} className={styles.image} />
                 </MenuItem>
             </div>
 
@@ -72,7 +72,7 @@ export default function Start() {
                 Это пока Альфаверсия.
             </Text>
             <Text tag="p" size="large" font="base">
-                Могут присутствовать бесячие баги и зависания. <br />Пока просто перезагружайте страницу.
+                Могут присутствовать бесячие баги и зависания. <br />Перезагружайте страницу.
             </Text>
 
 

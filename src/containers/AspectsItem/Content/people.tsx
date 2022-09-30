@@ -4,6 +4,7 @@ import { Text } from '../../../components/Text';
 import { AuthorLine } from '../../../components/AuthorLine';
 import { Icon } from '../../../components/Icon';
 import { EndPoint } from '../../../components/EndPoint';
+import { PageBreak } from '../../../components/PageBreak';
 
 export default function People() {
     return (
@@ -109,9 +110,22 @@ export default function People() {
 
             <hr />
 
-            <Text tag="b" size="h6" color="accent" className={styles.text}>
-                Эксперты этики отношений
-            </Text>
+            <PageBreak>Знаки аспекта</PageBreak>
+            <div className={styles.grower}>
+                <Icon name="SquarePlus" color="accent" size={24} />
+                <Text tag="p" size="large" className={styles.text}>
+                    Хорошие отношения, любовь, дружба, симпатия, притяжение, теплота отношений, общительность, близкая психологическая дистанция, добро, жалость.
+                </Text>
+            </div>
+            <div className={styles.grower}>
+                <Icon name="SquareMinus" color="accent" size={24} />
+                <Text tag="p" size="large" className={styles.text}>
+                    Плохие отношения, ненависть, вражда, антипатия, отталкивание, холодность отношений, отчужденность, необщительность, далекая психологическая дистанция, зло, безжалостность.
+                </Text>
+            </div>
+
+
+            <PageBreak>Эксперты этики отношений</PageBreak>
             <Text tag="p" size="body" className={styles.text}>
                 Аспект находится на базовой функции
             </Text>

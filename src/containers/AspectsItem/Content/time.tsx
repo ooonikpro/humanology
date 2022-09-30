@@ -4,6 +4,7 @@ import { Text } from '../../../components/Text';
 import { AuthorLine } from '../../../components/AuthorLine';
 import { Icon } from '../../../components/Icon';
 import { EndPoint } from '../../../components/EndPoint';
+import { PageBreak } from '../../../components/PageBreak';
 
 export default function Time() {
     return (
@@ -114,9 +115,22 @@ export default function Time() {
 
             <hr />
 
-            <Text tag="b" size="h6" color="accent" className={styles.text}>
-                Эксперты интуиции времени
-            </Text>
+            <PageBreak>Знаки аспекта</PageBreak>
+            <div className={styles.grower}>
+                <Icon name="SquarePlus" color="accent" size={24} />
+                <Text tag="p" size="large" className={styles.text}>
+                    Будущее, изменение ситуации во времени, предсказание, предвидение, постепенное развитие, эволюция, восхождение, динамика перемен, временной поток, воображение, непротиворечивое описание, не завистные перемены, шаг за шагом, схождение, конвергенция.
+                </Text>
+            </div>
+            <div className={styles.grower}>
+                <Icon name="SquareMinus" color="accent" size={24} />
+                <Text tag="p" size="large" className={styles.text}>
+                    Прошлое, учет ошибок, избегание опасности, тревожность, смутное чувство, предупреждение, назревание кризиса, революция, скачек во времени, умение застраховаться от неприятностей, резкие сдвиги, противоречивость, момент решительных действий, расхождение, дивергенция.
+                </Text>
+            </div>
+
+
+            <PageBreak>Эксперты интуиции времени</PageBreak>
             <Text tag="p" size="body" className={styles.text}>
                 Аспект находится на базовой функции
             </Text>

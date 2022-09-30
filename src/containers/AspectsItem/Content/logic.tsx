@@ -4,6 +4,7 @@ import { Text } from '../../../components/Text';
 import { AuthorLine } from '../../../components/AuthorLine';
 import { Icon } from '../../../components/Icon';
 import { EndPoint } from '../../../components/EndPoint';
+import { PageBreak } from '../../../components/PageBreak';
 
 export default function Logic() {
     return (
@@ -104,9 +105,22 @@ export default function Logic() {
 
             <hr />
 
-            <Text tag="b" size="h6" color="accent" className={styles.text}>
-                Эксперты структурной логики
-            </Text>
+            <PageBreak>Знаки аспекта</PageBreak>
+            <div className={styles.grower}>
+                <Icon name="SquarePlus" color="accent" size={24} />
+                <Text tag="p" size="large" className={styles.text}>
+                    Конкретность, подробность, детальная проработка, тщательность, строгость, место в иерархии, законы, постановления, инструкции, выбор лучшего варианта, чёткость функционирования, логика организации, показатели, отчётность.
+                </Text>
+            </div>
+            <div className={styles.grower}>
+                <Icon name="SquareMinus" color="accent" size={24} />
+                <Text tag="p" size="large" className={styles.text}>
+                    Абстрактность, всеобщность, универсальность, система, классификация, типология, общие закономерности, объективность, истина, справедливость, всестороннее рассмотрение, анализ, расчленение, логика науки, критерии.
+                </Text>
+            </div>
+
+
+            <PageBreak>Эксперты структурной логики</PageBreak>
             <Text tag="p" size="body" className={styles.text}>
                 Аспект находится на базовой функции
             </Text>

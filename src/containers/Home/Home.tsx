@@ -46,6 +46,7 @@ const MenuItem: React.FC<MenuItemProps> = ({
     big = false,
     onClick = () => void (0)
 }) => {
+
     const classes = useMemo(() => [
         styles.menuItem,
         fullWidth && styles.fullWidth,

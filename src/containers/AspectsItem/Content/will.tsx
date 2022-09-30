@@ -4,6 +4,7 @@ import { Text } from '../../../components/Text';
 import { AuthorLine } from '../../../components/AuthorLine';
 import { Icon } from '../../../components/Icon';
 import { EndPoint } from '../../../components/EndPoint';
+import { PageBreak } from '../../../components/PageBreak';
 
 export default function Will() {
     return (
@@ -118,9 +119,22 @@ export default function Will() {
 
             <hr />
 
-            <Text tag="b" size="h6" color="accent" className={styles.text}>
-                Эксперты волевой сенсорики
-            </Text>
+            <PageBreak>Знаки аспекта</PageBreak>
+            <div className={styles.grower}>
+                <Icon name="SquarePlus" color="accent" size={24} />
+                <Text tag="p" size="large" className={styles.text}>
+                    Удержание власти, неподчинение, защита, оборона, ответный удар, контратака, твёрдость, отстаивание своих интересов, волевое давление снизу вверх, сила, воля, обладание.
+                </Text>
+            </div>
+            <div className={styles.grower}>
+                <Icon name="SquareMinus" color="accent" size={24} />
+                <Text tag="p" size="large" className={styles.text}>
+                    Захват власти, подчинение, нападение, агрессия, атака, инициатива, настойчивость, требовательность, волевое давление сверху вниз, утверждение своих интересов за счёт других, свержение, слабость, безволие, овладение.
+                </Text>
+            </div>
+
+
+            <PageBreak>Эксперты волевой сенсорики</PageBreak>
             <Text tag="p" size="body" className={styles.text}>
                 Аспект находится на базовой функции
             </Text>

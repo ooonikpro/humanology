@@ -4,6 +4,7 @@ import { Text } from '../../../components/Text';
 import { AuthorLine } from '../../../components/AuthorLine';
 import { Icon } from '../../../components/Icon';
 import { EndPoint } from '../../../components/EndPoint';
+import { PageBreak } from '../../../components/PageBreak';
 
 export default function Ideas() {
     return (
@@ -112,9 +113,24 @@ export default function Ideas() {
 
             <hr />
 
-            <Text tag="b" size="h6" color="accent" className={styles.text}>
-                Эксперты интуиции возможностей
-            </Text>
+            <PageBreak>Знаки аспекта</PageBreak>
+            <div className={styles.grower}>
+                <Icon name="SquarePlus" color="accent" size={24} />
+                <Text tag="p" size="large" className={styles.text}>
+                    Перспективы, возможности, положительный потенциал, суть, сущность, пришит, новые идеи, выдвижение гипотез, теория, проницательность, интерес, оригинальность, необычность, фантастичность, вера.
+
+                </Text>
+            </div>
+            <div className={styles.grower}>
+                <Icon name="SquareMinus" color="accent" size={24} />
+                <Text tag="p" size="large" className={styles.text}>
+                    Бесперспективность, альтернатива, отрицательный потенциал, отсутствие сути, бессмысленность, парадокс, забытое старое, проницательность, серость, заурядность, скука, подавленные возможности, реальность, неверие, сенсация.
+
+                </Text>
+            </div>
+
+
+            <PageBreak>Эксперты интуиции возможностей</PageBreak>
             <Text tag="p" size="body" className={styles.text}>
                 Аспект находится на базовой функции
             </Text>

@@ -4,6 +4,7 @@ import { Text } from '../../../components/Text';
 import { AuthorLine } from '../../../components/AuthorLine';
 import { Icon } from '../../../components/Icon';
 import { EndPoint } from '../../../components/EndPoint';
+import { PageBreak } from '../../../components/PageBreak';
 
 export default function Comfort() {
     return (
@@ -96,29 +97,27 @@ export default function Comfort() {
 
             <hr />
 
-            <Text tag="ul" className={styles.list}>
-                <Text tag="li">
-                    Существование в среде ощущений, восприятие окружающего мира через любые ощущения своего тела осязание, обоняние, вкус, самочувствие, чистоплотность.
+            <PageBreak>Знаки аспекта</PageBreak>
+            <div className={styles.grower}>
+                <Icon name="SquarePlus" color="accent" size={24} />
+                <Text tag="p" size="large" className={styles.text}>
+                    Приятные ощущения, комфорт, удобство, гармония, красота, привлекательность, отдых, здоровье, расслабленность, хорошее самочувствие, удовольствие, наслаждение, чувствительность.
                 </Text>
-                <Text tag="li">
-                    Оценка свойств окружающих предметов через ощущения, которые от них возникают.
+            </div>
+            <div className={styles.grower}>
+                <Icon name="SquareMinus" color="accent" size={24} />
+                <Text tag="p" size="large" className={styles.text}>
+                    Неприятные, острые ощущения, дискомфорт, неудобство, дисгармония, безобразие, непривлекательность, работа, усталость, напряжение, болезнь, плохое самочувствие, страдание, боль.
                 </Text>
-                <Text tag="li">
-                    Способность различать качества ощущений.
-                </Text>
-                <Text tag="li">
-                    Ощущение окружающего пространства, эстетическое удовольствие, физическое удовлетворение (телесные удовольствия), комфорт.
-                </Text>
-            </Text>
+            </div>
 
-            <hr />
 
-            <Text tag="p" size="h6" color="accent" className={styles.text}>
-                Эксперты сенсорики ощущений
-            </Text>
+            <PageBreak>Эксперты сенсорики ощущений</PageBreak>
             <Text tag="p" size="body" className={styles.text}>
                 Аспект находится на базовой функции
             </Text>
+
+            <EndPoint />
 
             <EndPoint />
         </div>

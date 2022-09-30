@@ -27,3 +27,15 @@
 .iconAspectMini {
     opacity: 0.9;
 }
+
+.grower {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    gap: $spacing-12;
+    margin-top: $spacing-8;
+
+    .text {
+        line-height: $spacing-24;
+    }
+}

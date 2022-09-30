@@ -6,6 +6,8 @@ import { Icon, getIconName } from '../Icon';
 import { Text } from '../Text';
 import { SocietyCardMini } from '../SocietyCardMini';
 import styles from './IntertypesCard.module.scss';
+import { Link } from 'react-router-dom';
+import { ROUTES } from 'src/constants/routes';
 
 export interface Props {
     id: Socionics.SocionicsType;
@@ -14,7 +16,7 @@ export interface Props {
 
 export const IntertypesCard: React.FC<Props> = ({ id, intertype }) => {
     const info = INTERTYPE_RELATIONS[intertype];
-    const sociatype = SOCIOTYPES[id];
+    const sociotype = SOCIOTYPES[id];
 
     const classNames = [
         styles.root,
@@ -44,8 +46,12 @@ export const IntertypesCard: React.FC<Props> = ({ id, intertype }) => {
                     <Text color="accent" size="large" className={styles.description}>{info.description}</Text>
                 </div>
             </div>
-
-            <SocietyCardMini id={id} {...sociatype} className={styles.sociotype} />
+            <Link
+                to={`${ROUTES.SOCIOTYPES(id)}/card`}
+                className={styles.sociotype}
+            >
+                <SocietyCardMini id={id} {...sociotype} />
+            </Link>
         </div>
     );
 };
