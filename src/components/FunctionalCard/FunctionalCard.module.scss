@@ -14,6 +14,20 @@
     }
 }
 
+@keyframes baseFunctionAnimation {
+    0% {
+        background-position: 75% 200%, 100% 25%;
+    }
+
+    50% {
+        background-position: 75% 75%, 50% 10%;
+    }
+
+    100% {
+        background-position: 75% 0%, 100% 25%;
+    }
+}
+
 .root {
     @include colorElement(--f-block-color);
     --lvl-color: var(--color-basic-white);
@@ -192,11 +206,13 @@
 
 .number {
     &-1 {
-        background: linear-gradient(220deg,
+        background: url(../../assets/images/base-function-animation.svg) no-repeat,
+            linear-gradient(220deg,
                 var(--f-block-color) 25%,
                 var(--f-block-color-gradient) 75%);
         background-size: 200% 200%;
-        animation: gradientDance 4s ease-in-out infinite;
+        animation: baseFunctionAnimation 4s ease-in-out infinite;
+
     }
 
     &-2 {
