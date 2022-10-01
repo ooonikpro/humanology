@@ -11,6 +11,7 @@ import { ListOptions } from '../../../components/ListOptions';
 import { GroupsAndQuadsList } from '../../../components/GroupsAndQuadsList';
 import { EndPoint } from '../../../components/EndPoint';
 import { GroupQuadras } from '../../../modals/GroupQuadras';
+import { YungDichotomies } from 'src/modals/YungDichotomies';
 
 const getRow = (
     options: Array<string[]>,
@@ -55,6 +56,11 @@ export default function SociotypesCard() {
         setisShowGroupQuadrasModal,
     ] = useState(false);
 
+    const [
+        isShowYungsDichotomiesModal,
+        setisShowYungsDichotomieModal,
+    ] = useState(false);
+
     const { sociotypeProps: intertypeProps } = useSociotype();
 
     const dichotomyYungs = intertypeProps.yungs.map(
@@ -80,7 +86,7 @@ export default function SociotypesCard() {
                     className={styles.list}
                 />
             </WhiteCard>
-            <WhiteCard color="white">
+            <WhiteCard color="white" onClick={() => setisShowYungsDichotomieModal(true)} className={styles.yungsDichotomies}>
                 <TitleInfo icon className={styles.title}>Дихотомии Юнга</TitleInfo>
                 <ListOptions
                     options={dichotomyYungs}
@@ -99,6 +105,7 @@ export default function SociotypesCard() {
                 <EndPoint />
             </WhiteCard>
             <GroupQuadras isOpen={isShowGroupQuadrasModal} onClose={() => setisShowGroupQuadrasModal(false)} />
+            <YungDichotomies isOpen={isShowYungsDichotomiesModal} onClose={() => setisShowYungsDichotomieModal(false)} />
         </div>
     );
 }
