@@ -101,7 +101,7 @@ export const PEOPLE: PeopleItem[] = [
     {
         uid: 'evgeniy-chichivarkin',
         id: 'ENTP',
-        name: 'Евгений Чичиваркин',
+        name: 'Евгений Чичваркин',
         subtitle: 'Бизнесмен',
         birthDate: '09/10/1974',
         gender: 'male'

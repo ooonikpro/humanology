@@ -103,7 +103,7 @@
                     var(--f-block-color-role-dual) 10%,
                     transparent 30%);
             background-size: 200% 200%;
-            animation: gradientDance 2s ease-in-out infinite;
+            animation: gradientDance 5s ease-in-out infinite;
             opacity: 0.25;
         }
     }
@@ -125,7 +125,7 @@
             var(--f-block-color) 0,
             var(--f-block-color) 3.2rem);
     background-size: 200% 200%;
-    animation: gradientDance 30s linear infinite;
+    animation: gradientDance 30s ease-in-out infinite;
     opacity: 0.15;
     z-index: 0;
 }
@@ -211,7 +211,7 @@
                 var(--f-block-color) 25%,
                 var(--f-block-color-gradient) 75%);
         background-size: 200% 200%;
-        animation: baseFunctionAnimation 4s ease-in-out infinite;
+        animation: baseFunctionAnimation 5s ease-in-out infinite;
 
     }
 
@@ -220,8 +220,8 @@
         background: linear-gradient(200deg,
                 var(--f-block-color) 25%,
                 var(--f-block-color-gradient) 50%);
-        background-size: 200% 200%;
-        animation: gradientDance 6s ease-in-out infinite;
+        background-size: 300% 300%;
+        animation: gradientDance 10s ease-in-out infinite;
     }
 
     &-3 {

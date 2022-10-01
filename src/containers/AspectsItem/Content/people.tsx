@@ -5,6 +5,9 @@ import { AuthorLine } from '../../../components/AuthorLine';
 import { Icon } from '../../../components/Icon';
 import { EndPoint } from '../../../components/EndPoint';
 import { PageBreak } from '../../../components/PageBreak';
+import { Link } from 'react-router-dom';
+import { SocietyCardMini } from '../../../components/SocietyCardMini';
+import { ROUTES } from '../../../constants/routes';
 
 export default function People() {
     return (
@@ -129,6 +132,19 @@ export default function People() {
             <Text tag="p" size="body" className={styles.text}>
                 Аспект находится на базовой функции
             </Text>
+
+            <div className={styles.pairSociocards}>
+                <Link
+                    to={`${ROUTES.SOCIOTYPES('ISFJ')}/card`}
+                    className={styles.link} >
+                    <SocietyCardMini id="ISFJ" className={styles.sociotype} />
+                </Link>
+                <Link
+                    to={`${ROUTES.SOCIOTYPES('INFJ')}/card`}
+                    className={styles.link} >
+                    <SocietyCardMini id="INFJ" className={styles.sociotype} />
+                </Link>
+            </div>
 
             <EndPoint />
         </div>

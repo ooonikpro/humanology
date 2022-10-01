@@ -71,13 +71,12 @@ export default function Start() {
             <Text tag="p" size="h4" color="accent" font="additional">
                 Это пока Альфаверсия.
             </Text>
-            <Text tag="p" size="large" font="base">
+            <Text tag="p" size="large">
                 Могут присутствовать бесячие баги и зависания. <br />Перезагружайте страницу.
             </Text>
 
-
-            <Text tag="p" size="large" font="base">Тем временем…</Text>
             <div className={styles.linkblock}>
+                <Text tag="span" size="large" color="grey">Тем временем…</Text>
                 <a href='https://teletype.in/@humanology' target="_blank" rel="noreferrer">
                     <BlockLink path="#" label="Читайте девблог на Телетайпе" icon="ExternalLink" />
                 </a>

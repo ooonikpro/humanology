@@ -193,7 +193,7 @@ export const DETAIL_CARD_BLOCKS: DetailCardProps[] = [
     {
         type: 'block',
         block: 'ego',
-        tags: ['Взрослый блок', 'Воздействие на мир'],
+        tags: ['Взрослый', 'Воздействие на мир'],
         title: 'Блок Эго',
         subtitle: 'Блок принятия решений, творчества. Состоит из двух осознанных сильных функций.',
         content: [
@@ -204,7 +204,7 @@ export const DETAIL_CARD_BLOCKS: DetailCardProps[] = [
     {
         type: 'block',
         block: 'id',
-        tags: ['Социальная реализация'],
+        tags: ['Родитель', 'Социальная реализация'],
         title: 'Блок Айди',
         subtitle: 'Блок индивидуального контроля',
         content: [
@@ -215,7 +215,7 @@ export const DETAIL_CARD_BLOCKS: DetailCardProps[] = [
     {
         type: 'block',
         block: 'superego',
-        tags: ['Ориентация в мире'],
+        tags: ['Подросток', 'Ориентация в мире'],
         title: 'Блок Суперэго',
         subtitle: 'Блок социальной адаптации. Совесть, социальные знания',
         content: [
@@ -226,7 +226,7 @@ export const DETAIL_CARD_BLOCKS: DetailCardProps[] = [
     {
         type: 'block',
         block: 'superid',
-        tags: ['Детский блок', 'Самочувствие'],
+        tags: ['Ребенок', 'Самочувствие'],
         title: 'Блок Суперайди',
         subtitle: 'Блок индивидуальной деятельности. Слабые неосознанные функции',
         content: [

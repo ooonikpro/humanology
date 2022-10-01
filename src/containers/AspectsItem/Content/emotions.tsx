@@ -5,6 +5,9 @@ import { AuthorLine } from '../../../components/AuthorLine';
 import { Icon } from '../../../components/Icon';
 import { EndPoint } from '../../../components/EndPoint';
 import { PageBreak } from '../../../components/PageBreak';
+import { Link } from 'react-router-dom';
+import { SocietyCardMini } from '../../../components/SocietyCardMini';
+import { ROUTES } from '../../../constants/routes';
 
 export default function Emotions() {
     return (
@@ -124,7 +127,7 @@ export default function Emotions() {
             <div className={styles.grower}>
                 <Icon name="SquarePlus" color="accent" size={24} />
                 <Text tag="p" size="large" className={styles.text}>
-                    Положительные эмоции, радость веселье, эмоциональный подъём, воодушевление, улыбка, смех, энтузиазм, оптимизм, хорошее настроение, переживание счастья.
+                    Положительные эмоции, радость, веселье, эмоциональный подъём, воодушевление, улыбка, смех, энтузиазм, оптимизм, хорошее настроение, переживание счастья.
                 </Text>
             </div>
             <div className={styles.grower}>
@@ -139,6 +142,19 @@ export default function Emotions() {
             <Text tag="p" size="body" className={styles.text}>
                 Аспект находится на базовой функции
             </Text>
+
+            <div className={styles.pairSociocards}>
+                <Link
+                    to={`${ROUTES.SOCIOTYPES('ESFJ')}/card`}
+                    className={styles.link} >
+                    <SocietyCardMini id="ESFJ" className={styles.sociotype} />
+                </Link>
+                <Link
+                    to={`${ROUTES.SOCIOTYPES('ENFJ')}/card`}
+                    className={styles.link} >
+                    <SocietyCardMini id="ENFJ" className={styles.sociotype} />
+                </Link>
+            </div>
 
             <EndPoint />
         </div>

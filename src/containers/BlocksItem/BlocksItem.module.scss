@@ -1,1 +1,15 @@
 @import '../_commons/text.module.scss';
+
+.block {
+    margin-top: -$spacing-20;
+    margin-bottom: $spacing-12;
+}
+
+.tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: $spacing-8;
+    row-gap: $spacing-4;
+    margin-bottom: $spacing-16;
+}

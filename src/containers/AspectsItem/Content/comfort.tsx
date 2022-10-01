@@ -5,6 +5,9 @@ import { AuthorLine } from '../../../components/AuthorLine';
 import { Icon } from '../../../components/Icon';
 import { EndPoint } from '../../../components/EndPoint';
 import { PageBreak } from '../../../components/PageBreak';
+import { SocietyCardMini } from '../../../components/SocietyCardMini';
+import { Link } from 'react-router-dom';
+import { ROUTES } from '../../../constants/routes';
 
 export default function Comfort() {
     return (
@@ -117,7 +120,18 @@ export default function Comfort() {
                 Аспект находится на базовой функции
             </Text>
 
-            <EndPoint />
+            <div className={styles.pairSociocards}>
+                <Link
+                    to={`${ROUTES.SOCIOTYPES('ISFP')}/card`}
+                    className={styles.link} >
+                    <SocietyCardMini id="ISFP" className={styles.sociotype} />
+                </Link>
+                <Link
+                    to={`${ROUTES.SOCIOTYPES('ISTP')}/card`}
+                    className={styles.link} >
+                    <SocietyCardMini id="ISTP" className={styles.sociotype} />
+                </Link>
+            </div>
 
             <EndPoint />
         </div>

@@ -5,6 +5,9 @@ import { AuthorLine } from '../../../components/AuthorLine';
 import { Icon } from '../../../components/Icon';
 import { EndPoint } from '../../../components/EndPoint';
 import { PageBreak } from '../../../components/PageBreak';
+import { Link } from 'react-router-dom';
+import { SocietyCardMini } from '../../../components/SocietyCardMini';
+import { ROUTES } from '../../../constants/routes';
 
 export default function Will() {
     return (
@@ -138,6 +141,19 @@ export default function Will() {
             <Text tag="p" size="body" className={styles.text}>
                 Аспект находится на базовой функции
             </Text>
+
+            <div className={styles.pairSociocards}>
+                <Link
+                    to={`${ROUTES.SOCIOTYPES('ESTP')}/card`}
+                    className={styles.link} >
+                    <SocietyCardMini id="ESTP" className={styles.sociotype} />
+                </Link>
+                <Link
+                    to={`${ROUTES.SOCIOTYPES('ESFP')}/card`}
+                    className={styles.link} >
+                    <SocietyCardMini id="ESFP" className={styles.sociotype} />
+                </Link>
+            </div>
 
             <EndPoint />
         </div>

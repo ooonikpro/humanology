@@ -11,7 +11,7 @@
         content: '';
         position: absolute;
         border: 1px solid transparent;
-        border-image: linear-gradient(180deg, var(--line-color) 0%, rgba(white, 0) 100%);
+        border-image: linear-gradient(180deg, var(--line-color-role) 0%, rgba(white, 0) 100%);
         opacity: 0.5;
         border-image-slice: 1;
         margin: -$spacing-4;
@@ -23,7 +23,7 @@
         content: '';
         position: absolute;
         border: 1px solid transparent;
-        border-image: linear-gradient(180deg, var(--line-color-role) 0%, rgba(white, 0) 100%);
+        border-image: linear-gradient(180deg, var(--line-color) 0%, rgba(white, 0) 100%);
         border-image-slice: 1;
         opacity: 0.25;
         margin: -$spacing-4;
@@ -39,20 +39,21 @@
         content: '';
         position: absolute;
         border: 1px solid transparent;
-        border-image: linear-gradient(0deg, var(--line-color) 0%, rgba(white, 0) 100%);
+        border-image: linear-gradient(0deg, var(--line-color-role) 0%, rgba(white, 0) 100%);
         border-image-slice: 1;
         opacity: 0.25;
         margin: -$spacing-4;
         margin-top: $spacing-24;
         width: calc(100% - $spacing-8);
         height: $spacing-40;
+        z-index: -1;
     }
 
     &:nth-child(4)::after {
         content: '';
         position: absolute;
         border: 1px dotted transparent;
-        border-image: linear-gradient(0deg, var(--line-color-role) 0%, rgba(white, 0) 100%);
+        border-image: linear-gradient(0deg, var(--line-color) 0%, rgba(white, 0) 100%);
         border-image-slice: 1;
         opacity: 0.5;
         margin: -$spacing-4;

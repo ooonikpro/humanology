@@ -6,11 +6,11 @@ import { Icon } from '../../../components/Icon';
 import { EndPoint } from '../../../components/EndPoint';
 import { PageBreak } from '../../../components/PageBreak';
 import { SocietyCardMini } from '../../../components/SocietyCardMini';
+import { Link } from 'react-router-dom';
+import { ROUTES } from '../../../constants/routes';
 
 
 export default function Business() {
-
-
 
     return (
         <div className={styles.root}>
@@ -130,8 +130,16 @@ export default function Business() {
             </Text>
 
             <div className={styles.pairSociocards}>
-                <SocietyCardMini id="ESTJ" className={styles.sociotype} />
-                <SocietyCardMini id="ENTJ" className={styles.sociotype} />
+                <Link
+                    to={`${ROUTES.SOCIOTYPES('ENTJ')}/card`}
+                    className={styles.link} >
+                    <SocietyCardMini id="ENTJ" className={styles.sociotype} />
+                </Link>
+                <Link
+                    to={`${ROUTES.SOCIOTYPES('ESTJ')}/card`}
+                    className={styles.link} >
+                    <SocietyCardMini id="ESTJ" className={styles.sociotype} />
+                </Link>
             </div>
 
             <EndPoint />
