@@ -1,1 +1,89 @@
 @import '../_commons/text.module.scss';
+
+.infantileText,
+.infantileIcon {
+    color: $color-pastel-turquoise;
+}
+
+.careText,
+.careIcon {
+    color: $color-pastel-green;
+}
+
+.victimText,
+.victimIcon {
+    color: $color-pastel-yellow;
+}
+
+.aggressorText,
+.aggressorIcon {
+    color: $color-pastel-pink;
+}
+
+
+.waterText {
+    color: $color-elements-water;
+}
+
+.earthText {
+    color: $color-elements-earth;
+}
+
+.tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: $spacing-8;
+    row-gap: $spacing-4;
+    margin-bottom: $spacing-16;
+}
+
+.psychotypeBlock {
+    margin-top: -$spacing-12;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: $spacing-12;
+}
+
+.pairSociocards {
+    display: flex;
+    vertical-align: middle;
+    flex-wrap: wrap;
+    gap: $spacing-4;
+}
+
+.link {
+    width: calc(50% - #{calc($spacing-4 / 2)});
+    min-width: 16rem;
+    text-decoration: none;
+}
+
+.infantileBlock {
+    padding: $spacing-12;
+    margin-bottom: $spacing-12;
+    border: 1px solid rgba($color-pastel-turquoise, 0.25);
+    background: rgba($color-pastel-turquoise, 0.05);
+}
+
+.careBlock {
+    padding: $spacing-12;
+    margin-bottom: $spacing-12;
+    border: 1px solid rgba($color-pastel-green, 0.25);
+    background: rgba($color-pastel-green, 0.05);
+}
+
+.victimBlock {
+    padding: $spacing-12;
+    margin-bottom: $spacing-12;
+    border: 1px solid rgba($color-pastel-yellow, 0.25);
+    background: rgba($color-pastel-yellow, 0.05);
+}
+
+.aggressorBlock {
+    padding: $spacing-12;
+    margin-bottom: $spacing-12;
+    border: 1px solid rgba($color-pastel-pink, 0.25);
+    background: rgba($color-pastel-pink, 0.05);
+}

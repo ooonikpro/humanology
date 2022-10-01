@@ -1,1 +1,52 @@
 @import '../_commons/text.module.scss';
+
+.airText {
+    color: $color-elements-air;
+}
+
+.fireText {
+    color: $color-elements-fire;
+}
+
+.waterText {
+    color: $color-elements-water;
+}
+
+.earthText {
+    color: $color-elements-earth;
+}
+
+.tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: $spacing-8;
+    row-gap: $spacing-4;
+    margin-bottom: $spacing-16;
+}
+
+.suitBlock {
+    margin-top: -$spacing-8;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 0;
+}
+
+.suitTitle {
+    padding-top: $spacing-16;
+}
+
+.pairSociocards {
+    display: flex;
+    vertical-align: middle;
+    flex-wrap: wrap;
+    gap: $spacing-4;
+}
+
+.link {
+    width: calc(50% - #{calc($spacing-4 / 2)});
+    min-width: 16rem;
+    text-decoration: none;
+}

@@ -33,18 +33,18 @@ export default function Suits() {
             </Text>
 
             <div className={styles.row}>
+                <Text size="body" color="grey">Сенсорик</Text>
+                <Text size="body" color="grey">Интуит</Text>
+            </div>
+
+            <div className={styles.row}>
                 <Text size="body" color="grey">Интроверт</Text>
                 <Text size="body" color="grey">Экстраверт</Text>
             </div>
 
             <div className={styles.row}>
-                <Text size="body" color="grey">Интуит</Text>
-                <Text size="body" color="grey">Сенсорик</Text>
-            </div>
-
-            <div className={styles.row}>
-                <Text size="body" color="grey">Беспечный</Text>
                 <Text size="body" color="grey">Предусмотрительный</Text>
+                <Text size="body" color="grey">Беспечный</Text>
             </div>
 
             {
@@ -65,13 +65,13 @@ export default function Suits() {
             </Text>
 
             <div className={styles.row}>
-                <Text size="body" color="grey">Иррационал</Text>
                 <Text size="body" color="grey">Рационал</Text>
+                <Text size="body" color="grey">Иррационал</Text>
             </div>
 
             <div className={styles.row}>
-                <Text size="body" color="grey">Логик</Text>
                 <Text size="body" color="grey">Этик</Text>
+                <Text size="body" color="grey">Логик</Text>
             </div>
 
             <div className={styles.row}>
