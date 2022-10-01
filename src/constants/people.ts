@@ -169,5 +169,29 @@ export const PEOPLE: PeopleItem[] = [
         subtitle: 'Актер',
         birthDate: '07/06/1946',
         gender: 'male'
+    },
+    {
+        uid: 'tom-hardy',
+        id: 'ENTP',
+        name: 'Том Харди',
+        subtitle: 'Актер',
+        birthDate: '09/15/1977',
+        gender: 'male'
+    },
+    {
+        uid: 'grigoriy-perelman',
+        id: 'INTP',
+        name: 'Григорий Перельман',
+        subtitle: 'Математик',
+        birthDate: '06/13/1966',
+        gender: 'male'
+    },
+    {
+        uid: 'pavel-durov',
+        id: 'ENTJ',
+        name: 'Павел Дуров',
+        subtitle: 'Бизнесмен',
+        birthDate: '10/10/1984',
+        gender: 'male'
     }
 ];

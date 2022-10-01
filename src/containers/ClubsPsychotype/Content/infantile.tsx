@@ -57,7 +57,7 @@ export default function Infantile() {
             </Text>
 
             <Text tag="p" size="h6" color="accent" className={styles.text}>
-                Люди, которые не хочет иметь ограничений, для которого свобода выбора — во главе угла.
+                Люди, которые не хотят иметь ограничений, для которого свобода выбора — во главе угла.
             </Text>
 
             <Text tag="p" className={styles.text}>
@@ -90,10 +90,6 @@ export default function Infantile() {
 
             <Text tag="p" className={styles.text}>
                 В силу своих внутренних установок они не умеют этими инструментами пользоваться, и почти сразу же априори воспринимают их как средство ограничения в большей степени, чем способ познания мира.
-            </Text>
-
-            <Text tag="p" className={styles.text}>
-                <i>Исключение тут — Новаторы, которые и придумали соционику. Но опять-таки, это они ее придумали, и поэтому они ей доверяют до какой-то степени.</i>
             </Text>
 
             <Text tag="p" size="h6" className={styles.text}>
