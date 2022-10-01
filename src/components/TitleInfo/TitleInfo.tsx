@@ -42,7 +42,7 @@ export const TitleInfo: React.FC<Props> = ({
                 {
                     icon && (
                         <Icon
-                            name="Document"
+                            name="Help"
                             color={iconColor}
                             size={iconSize}
                             className={styles.icon}
