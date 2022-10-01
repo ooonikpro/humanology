@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { SVGProps } from 'react';
 
-const SvgAffraidExample = (props: SVGProps<SVGSVGElement>) => (
+const SvgRoleExample = (props: SVGProps<SVGSVGElement>) => (
     <svg
         width="1em"
         height="1em"
@@ -10,7 +10,7 @@ const SvgAffraidExample = (props: SVGProps<SVGSVGElement>) => (
         xmlns="http://www.w3.org/2000/svg"
         {...props}
     >
-        <g clipPath="url(#affraid-example_svg__a)">
+        <g clipPath="url(#role-example_svg__a)">
             <path fill="#fff" d="M0 0h128v60H0z" />
             <rect
                 opacity={0.5}
@@ -44,11 +44,11 @@ const SvgAffraidExample = (props: SVGProps<SVGSVGElement>) => (
             </g>
         </g>
         <defs>
-            <clipPath id="affraid-example_svg__a">
+            <clipPath id="role-example_svg__a">
                 <path fill="#fff" d="M0 0h128v60H0z" />
             </clipPath>
         </defs>
     </svg>
 );
 
-export default SvgAffraidExample;
+export default SvgRoleExample;

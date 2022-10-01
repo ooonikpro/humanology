@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { SVGProps } from 'react';
 
-const SvgSuffersExample = (props: SVGProps<SVGSVGElement>) => (
+const SvgPainExample = (props: SVGProps<SVGSVGElement>) => (
     <svg
         width="1em"
         height="1em"
@@ -10,10 +10,10 @@ const SvgSuffersExample = (props: SVGProps<SVGSVGElement>) => (
         xmlns="http://www.w3.org/2000/svg"
         {...props}
     >
-        <g clipPath="url(#suffers-example_svg__a)">
+        <g clipPath="url(#pain-example_svg__a)">
             <path fill="#fff" d="M52 0h204v60.001H52z" />
             <g opacity={0.1} fill="#6B360D">
-                <path d="M241.384 0h-21.021L256 20.577V8.439L241.384.001ZM256 38.781 188.83.001h-21.021L256 50.918V38.78ZM240.199 60 136.276 0h-21.021l103.923 60h21.021ZM187.645 60 83.722 0H62.701l103.923 60h21.021ZM135.092 60 52 12.029v12.136l62.07 35.837h21.022ZM82.538 60 52 42.37v12.137L61.516 60h21.022Z" />
+                <path d="M241.384 0h-21.021L256 20.576V8.439L241.384 0ZM256 38.78 188.83 0h-21.021L256 50.918V38.78ZM240.199 60 136.276 0h-21.021l103.923 60h21.021ZM187.645 60 83.722 0H62.701l103.923 60h21.021ZM135.092 60 52 12.029v12.136l62.07 35.837h21.022ZM82.538 60 52 42.37v12.136l9.516 5.495h21.022Z" />
             </g>
             <rect
                 opacity={0.6}
@@ -34,7 +34,7 @@ const SvgSuffersExample = (props: SVGProps<SVGSVGElement>) => (
                 <path d="M61 16h2v2h-2z" />
             </g>
             <path
-                d="M245.535 17.535a.499.499 0 0 0 0-.707L242.707 14l2.828-2.828a.5.5 0 1 0-.707-.707L242 13.292l-2.829-2.829a.5.5 0 1 0-.707.708L241.293 14l-2.829 2.828a.5.5 0 0 0 .707.707L242 14.707l2.828 2.828a.5.5 0 0 0 .707 0ZM245.215 48.188h-1.38V50h-.864v-1.812h-3.972v-.804c.416-.904.76-1.776 1.032-2.616.272-.84.488-1.72.648-2.64h.888v.144a22.168 22.168 0 0 1-1.62 5.112h3.024v-3.84h.864v3.84h1.38v.804Z"
+                d="M245.535 17.535a.499.499 0 0 0 0-.707L242.707 14l2.828-2.829a.5.5 0 0 0-.707-.707L242 13.293l-2.829-2.829a.5.5 0 0 0-.707.707L241.293 14l-2.829 2.828a.5.5 0 0 0 .707.707L242 14.707l2.828 2.828a.5.5 0 0 0 .707 0ZM245.215 48.188h-1.38V50h-.864v-1.812h-3.972v-.804c.416-.904.76-1.776 1.032-2.616.272-.84.488-1.72.648-2.64h.888v.144a22.168 22.168 0 0 1-1.62 5.112h3.024v-3.84h.864v3.84h1.38v.804Z"
                 fill="#6B360D"
                 opacity={0.75}
             />
@@ -43,8 +43,8 @@ const SvgSuffersExample = (props: SVGProps<SVGSVGElement>) => (
                 fill="#6B360D"
             />
         </g>
-        <g clipPath="url(#suffers-example_svg__b)">
-            <g clipPath="url(#suffers-example_svg__c)" opacity={0.25}>
+        <g clipPath="url(#pain-example_svg__b)">
+            <g clipPath="url(#pain-example_svg__c)" opacity={0.25}>
                 <path fill="#fff" d="M-80 0H48v60H-80z" />
                 <rect
                     opacity={0.5}
@@ -71,17 +71,17 @@ const SvgSuffersExample = (props: SVGProps<SVGSVGElement>) => (
             </g>
         </g>
         <defs>
-            <clipPath id="suffers-example_svg__a">
+            <clipPath id="pain-example_svg__a">
                 <path fill="#fff" transform="translate(52)" d="M0 0h204v60.001H0z" />
             </clipPath>
-            <clipPath id="suffers-example_svg__b">
+            <clipPath id="pain-example_svg__b">
                 <path fill="#fff" d="M0 0h48v60H0z" />
             </clipPath>
-            <clipPath id="suffers-example_svg__c">
+            <clipPath id="pain-example_svg__c">
                 <path fill="#fff" transform="translate(-80)" d="M0 0h128v60H0z" />
             </clipPath>
         </defs>
     </svg>
 );
 
-export default SvgSuffersExample;
+export default SvgPainExample;

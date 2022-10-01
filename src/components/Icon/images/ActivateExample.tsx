@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { SVGProps } from 'react';
 
-const SvgLikesExample = (props: SVGProps<SVGSVGElement>) => (
+const SvgActivateExample = (props: SVGProps<SVGSVGElement>) => (
     <svg
         width="1em"
         height="1em"
@@ -48,8 +48,8 @@ const SvgLikesExample = (props: SVGProps<SVGSVGElement>) => (
             fill="#6B360D"
             opacity={0.75}
         />
-        <g clipPath="url(#likes-example_svg__a)">
-            <g clipPath="url(#likes-example_svg__b)" opacity={0.25}>
+        <g clipPath="url(#activate-example_svg__a)">
+            <g clipPath="url(#activate-example_svg__b)" opacity={0.25}>
                 <rect
                     x={-0.5}
                     y={0.5}
@@ -71,21 +71,21 @@ const SvgLikesExample = (props: SVGProps<SVGSVGElement>) => (
                     fill="#6B360D"
                 />
                 <path
-                    d="M30.207 17.085a.48.48 0 0 1 0-.012V12.07a.5.5 0 1 1 1 0v3.793l5.51-5.51a.5.5 0 0 1 .708.707l-5.51 5.51h3.792a.5.5 0 1 1 0 1h-5a.5.5 0 0 1-.5-.486ZM34.123 81.008c.768 0 1.38.204 1.836.612.464.408.696.952.696 1.632v.564c0 .704-.236 1.268-.708 1.692-.472.416-1.1.624-1.884.624-.792 0-1.42-.176-1.884-.528-.464-.36-.696-.852-.696-1.476v-.12h.852v.12c0 .376.152.672.456.888.304.216.716.324 1.236.324.544 0 .972-.132 1.284-.396.312-.272.468-.644.468-1.116v-.564c0-.448-.16-.8-.48-1.056-.312-.264-.736-.396-1.272-.396-.472 0-.86.108-1.164.324-.304.208-.468.484-.492.828h-.84l.252-4.836h4.56v.804h-3.78l-.132 2.64c.424-.376.988-.564 1.692-.564Z"
+                    d="M30.207 17.085V12.07a.5.5 0 1 1 1 0v3.793l5.51-5.51a.5.5 0 1 1 .708.707l-5.51 5.51h3.792a.5.5 0 1 1 0 1h-5a.5.5 0 0 1-.5-.486ZM34.123 81.008c.768 0 1.38.204 1.836.612.464.408.696.952.696 1.632v.564c0 .704-.236 1.268-.708 1.692-.472.416-1.1.624-1.884.624-.792 0-1.42-.176-1.884-.528-.464-.36-.696-.852-.696-1.476v-.12h.852v.12c0 .376.152.672.456.888.304.216.716.324 1.236.324.544 0 .972-.132 1.284-.396.312-.272.468-.644.468-1.116v-.564c0-.448-.16-.8-.48-1.056-.312-.264-.736-.396-1.272-.396-.472 0-.86.108-1.164.324-.304.208-.468.484-.492.828h-.84l.252-4.836h4.56v.804h-3.78l-.132 2.64c.424-.376.988-.564 1.692-.564Z"
                     fill="#6B360D"
                     opacity={0.75}
                 />
             </g>
         </g>
         <defs>
-            <clipPath id="likes-example_svg__a">
+            <clipPath id="activate-example_svg__a">
                 <path fill="#fff" d="M0 0h48v96H0z" />
             </clipPath>
-            <clipPath id="likes-example_svg__b">
+            <clipPath id="activate-example_svg__b">
                 <path fill="#fff" transform="translate(-156)" d="M0 0h204v96H0z" />
             </clipPath>
         </defs>
     </svg>
 );
 
-export default SvgLikesExample;
+export default SvgActivateExample;

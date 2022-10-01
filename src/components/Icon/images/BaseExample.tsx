@@ -19,7 +19,7 @@ const SvgBaseExample = (props: SVGProps<SVGSVGElement>) => (
             />
             <path
                 opacity={0.1}
-                d="m0 43.622 204-26.747V12L0 38.747v4.875Z"
+                d="m0 43.623 204-26.747V12L0 38.747v4.876Z"
                 fill="#fff"
             />
             <path

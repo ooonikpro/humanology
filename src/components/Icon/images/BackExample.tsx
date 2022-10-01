@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { SVGProps } from 'react';
 
-const SvgDoesExample = (props: SVGProps<SVGSVGElement>) => (
+const SvgBackExample = (props: SVGProps<SVGSVGElement>) => (
     <svg
         width="1em"
         height="1em"
@@ -10,7 +10,7 @@ const SvgDoesExample = (props: SVGProps<SVGSVGElement>) => (
         xmlns="http://www.w3.org/2000/svg"
         {...props}
     >
-        <g clipPath="url(#does-example_svg__a)">
+        <g clipPath="url(#back-example_svg__a)">
             <rect
                 opacity={0.75}
                 width={204}
@@ -38,8 +38,8 @@ const SvgDoesExample = (props: SVGProps<SVGSVGElement>) => (
                 <path d="M75 10h-2v8h2zM71 12h-2v6h2zM67 14h-2v4h2zM63 16h-2v2h2z" />
             </g>
         </g>
-        <g clipPath="url(#does-example_svg__b)">
-            <g clipPath="url(#does-example_svg__c)" opacity={0.25}>
+        <g clipPath="url(#back-example_svg__b)">
+            <g clipPath="url(#back-example_svg__c)" opacity={0.25}>
                 <rect
                     opacity={0.75}
                     width={128}
@@ -63,17 +63,17 @@ const SvgDoesExample = (props: SVGProps<SVGSVGElement>) => (
             </g>
         </g>
         <defs>
-            <clipPath id="does-example_svg__a">
+            <clipPath id="back-example_svg__a">
                 <path fill="#fff" transform="translate(52)" d="M0 0h204v60H0z" />
             </clipPath>
-            <clipPath id="does-example_svg__b">
+            <clipPath id="back-example_svg__b">
                 <path fill="#fff" d="M0 0h48v60H0z" />
             </clipPath>
-            <clipPath id="does-example_svg__c">
+            <clipPath id="back-example_svg__c">
                 <path fill="#fff" transform="translate(-80)" d="M0 0h128v60H0z" />
             </clipPath>
         </defs>
     </svg>
 );
 
-export default SvgDoesExample;
+export default SvgBackExample;

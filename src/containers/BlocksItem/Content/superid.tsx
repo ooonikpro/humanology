@@ -13,7 +13,7 @@ export default function Superid() {
         <div className={styles.root}>
             <PageTitle iconName='Document' back>Блок Суперайди</PageTitle>
             <AuthorLine text='Читать 3 минуты' iconName='Time'>Татьяна Прокофьева</AuthorLine>
-            <Icon name="BlockSuperid" size={{ width: 320, height: 120 }} color="white" className={styles.block} />
+            <Icon name="BlockSuperid" size={{ width: 320, height: 100 }} color="white" className={styles.block} />
 
             <Text tag="b" size="h4" color="black" className={styles.text}>
                 Блок Суперайди

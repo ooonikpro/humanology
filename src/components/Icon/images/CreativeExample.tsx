@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { SVGProps } from 'react';
 
-const SvgCreateExample = (props: SVGProps<SVGSVGElement>) => (
+const SvgCreativeExample = (props: SVGProps<SVGSVGElement>) => (
     <svg
         width="1em"
         height="1em"
@@ -10,7 +10,7 @@ const SvgCreateExample = (props: SVGProps<SVGSVGElement>) => (
         xmlns="http://www.w3.org/2000/svg"
         {...props}
     >
-        <g clipPath="url(#create-example_svg__a)">
+        <g clipPath="url(#creative-example_svg__a)">
             <rect x={52} width={168} height={96} rx={2} fill="#6B360D" />
             <path
                 opacity={0.75}
@@ -30,13 +30,13 @@ const SvgCreateExample = (props: SVGProps<SVGSVGElement>) => (
                 fill="#fff"
             />
             <path
-                d="M209.07 10.207h-4.999a.5.5 0 0 0 0 1h3.793l-5.511 5.51a.5.5 0 0 0 .708.708l5.51-5.51v3.792a.5.5 0 0 0 1 0v-5.001a.501.501 0 0 0-.493-.499"
+                d="M209.07 10.207h-4.999a.5.5 0 0 0 0 1h3.793l-5.511 5.51a.5.5 0 0 0 .708.707l5.51-5.51v3.793a.5.5 0 0 0 1 0v-5.001a.501.501 0 0 0-.493-.499"
                 fill="#fff"
                 opacity={0.75}
             />
         </g>
-        <g clipPath="url(#create-example_svg__b)">
-            <g clipPath="url(#create-example_svg__c)" opacity={0.25}>
+        <g clipPath="url(#creative-example_svg__b)">
+            <g clipPath="url(#creative-example_svg__c)" opacity={0.25}>
                 <rect x={-156} width={204} height={96} rx={2} fill="#6B360D" />
                 <path
                     opacity={0.05}
@@ -45,7 +45,7 @@ const SvgCreateExample = (props: SVGProps<SVGSVGElement>) => (
                 />
                 <path
                     opacity={0.1}
-                    d="M-156 43.622 48 16.875V12l-204 26.747v4.875Z"
+                    d="M-156 43.623 48 16.876V12l-204 26.747v4.876Z"
                     fill="#fff"
                 />
                 <path
@@ -61,17 +61,17 @@ const SvgCreateExample = (props: SVGProps<SVGSVGElement>) => (
             </g>
         </g>
         <defs>
-            <clipPath id="create-example_svg__a">
+            <clipPath id="creative-example_svg__a">
                 <path fill="#fff" transform="translate(52)" d="M0 0h168v96H0z" />
             </clipPath>
-            <clipPath id="create-example_svg__b">
+            <clipPath id="creative-example_svg__b">
                 <path fill="#fff" d="M0 0h48v96H0z" />
             </clipPath>
-            <clipPath id="create-example_svg__c">
+            <clipPath id="creative-example_svg__c">
                 <path fill="#fff" transform="translate(-156)" d="M0 0h204v96H0z" />
             </clipPath>
         </defs>
     </svg>
 );
 
-export default SvgCreateExample;
+export default SvgCreativeExample;

@@ -7,9 +7,9 @@ export default function Mental() {
     return (
         <div className={styles.root}>
             <PageTitle iconName='MentalRing' back>Ментальное кольцо</PageTitle>
-            <AuthorLine text='Читать 4 минуты' iconName='Time'>Неизвестен</AuthorLine>
+            <AuthorLine text='Читать пока нечего' iconName='Document'>Неизвестен</AuthorLine>
             <Text tag="p" className={styles.text}>
-                Офигеть, все работает.
+                Тут будет статья про ментальное кольцо
             </Text>
         </div>
     );

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { SVGProps } from 'react';
 
-const SvgMadExample = (props: SVGProps<SVGSVGElement>) => (
+const SvgLimitExample = (props: SVGProps<SVGSVGElement>) => (
     <svg
         width="1em"
         height="1em"
@@ -10,7 +10,7 @@ const SvgMadExample = (props: SVGProps<SVGSVGElement>) => (
         xmlns="http://www.w3.org/2000/svg"
         {...props}
     >
-        <g clipPath="url(#mad-example_svg__a)">
+        <g clipPath="url(#limit-example_svg__a)">
             <rect
                 opacity={0.75}
                 width={128}
@@ -41,11 +41,11 @@ const SvgMadExample = (props: SVGProps<SVGSVGElement>) => (
             </g>
         </g>
         <defs>
-            <clipPath id="mad-example_svg__a">
+            <clipPath id="limit-example_svg__a">
                 <path fill="#fff" d="M0 0h128v60H0z" />
             </clipPath>
         </defs>
     </svg>
 );
 
-export default SvgMadExample;
+export default SvgLimitExample;

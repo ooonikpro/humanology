@@ -13,7 +13,7 @@ export default function SuperEgo() {
         <div className={styles.root}>
             <PageTitle iconName='Document' back>Блок Суперэго</PageTitle>
             <AuthorLine text='Читать 3 минуты' iconName='Time'>Татьяна Прокофьева</AuthorLine>
-            <Icon name="BlockSuperEgo" size={{ width: 320, height: 80 }} color="white" className={styles.block} />
+            <Icon name="BlockSuperego" size={{ width: 320, height: 80 }} color="white" className={styles.block} />
 
             <Text tag="b" size="h4" color="black" className={styles.text}>
                 Блок Суперэго
