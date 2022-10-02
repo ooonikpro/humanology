@@ -97,18 +97,18 @@ export default function Start() {
                 <PageBreak>Свежие материалы</PageBreak>
 
                 <div className={styles.linkblock}>
-                    <BlockLink path="/quadras/compatibility" label="Сексуальные программы квадр" icon="Document" />
-                    <BlockLink path="/psychotypes/compatibility" label="Совместимость психосексуальных групп" icon="Document" />
+                    <BlockLink path="/quadras/compatibility" label="Сексуальные программы квадр" icon="Dildo" />
+                    <BlockLink path="/psychotypes/compatibility" label="Совместимость психосексуальных групп" icon="Cockring" />
                 </div>
 
                 <PageBreak>Подписывайтесь и читайте</PageBreak>
 
                 <div className={styles.linkblock}>
-                    <a href='https://teletype.in/@humanology' target="_blank" rel="noreferrer">
-                        <BlockLink path="#" label="Читайте девблог на Телетайпе" icon="ExternalLink" />
-                    </a>
                     <a href='https://t.me/+zNxs67GvQZljZDAy' target="_blank" rel="noreferrer">
                         <BlockLink path="#" label="Подпишитесь в Телеграмме" icon="Telegram" />
+                    </a>
+                    <a href='https://teletype.in/@humanology' target="_blank" rel="noreferrer">
+                        <BlockLink path="#" label="Читайте девблог на Телетайпе" icon="ExternalLink" />
                     </a>
                 </div>
                 <EndPoint />

@@ -11,7 +11,7 @@ export default function QuadrasCompatibility() {
 
     return (
         <WhiteCard color="white" className={styles.root}>
-            <PageTitle iconName='Document' back >Сексуальные программы квадр</PageTitle>
+            <PageTitle iconName='Dildo' back >Сексуальные программы квадр</PageTitle>
             <AuthorLine text='Читать 5 минут' iconName='Time'>Александр Букалов</AuthorLine>
             <Icon name="QuadrasCompatibility" size={{ width: 240, height: 64 }} className={styles.titleIcon} />
 

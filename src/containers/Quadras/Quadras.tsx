@@ -64,7 +64,7 @@ export default function Quadras() {
             </Text>
 
             <div className={styles.linkblock}>
-                <BlockLink path="/quadras/compatibility" label="Сексуальные программы квадр" icon="Document" />
+                <BlockLink path="/quadras/compatibility" label="Сексуальные программы квадр" icon="Dildo" />
             </div>
 
             <PageBreak>О конфликтах в квадре</PageBreak>

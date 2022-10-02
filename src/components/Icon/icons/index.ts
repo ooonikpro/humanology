@@ -1,5 +1,5 @@
-export * from '../circles';
 export * from '../images';
+export * from '../circles';
 export { default as Activity } from './Activity';
 export { default as Aggressor } from './Aggressor';
 export { default as AirMini } from './AirMini';
@@ -36,9 +36,11 @@ export { default as Care } from './Care';
 export { default as Choleric } from './Choleric';
 export { default as Clock } from './Clock';
 export { default as Close } from './Close';
+export { default as Cockring } from './Cockring';
 export { default as Cone } from './Cone';
 export { default as Contrary } from './Contrary';
 export { default as Cups } from './Cups';
+export { default as Dildo } from './Dildo';
 export { default as Dna } from './Dna';
 export { default as Document } from './Document';
 export { default as Dual } from './Dual';
