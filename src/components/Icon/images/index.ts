@@ -18,6 +18,8 @@ export { default as LimitExample } from './LimitExample';
 export { default as MentalRing } from './MentalRing';
 export { default as PainExample } from './PainExample';
 export { default as PsychoCompatibility } from './PsychoCompatibility';
+export { default as PsychotypesCompatibility } from './PsychotypesCompatibility';
+export { default as QuadrasCompatibility } from './QuadrasCompatibility';
 export { default as Quadras } from './Quadras';
 export { default as RoleExample } from './RoleExample';
 export { default as SuggestiveExample } from './SuggestiveExample';

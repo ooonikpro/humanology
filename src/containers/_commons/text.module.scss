@@ -58,3 +58,27 @@ a:hover {
         background-color: var(--color-basic-accent);
     }
 }
+
+mark {
+    background: none;
+
+    &.air {
+        color: $color-elements-air;
+    }
+
+    &.fire {
+        color: $color-elements-fire;
+    }
+
+    &.water {
+        color: $color-elements-water;
+    }
+
+    &.earth {
+        color: $color-elements-earth;
+    }
+
+    &.accent {
+        color: $color-basic-accent;
+    }
+}

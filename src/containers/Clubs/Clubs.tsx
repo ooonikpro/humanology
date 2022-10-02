@@ -73,12 +73,9 @@ export default function Clubs() {
                 Любые отношения между людьми предполагают обмен информацией, а значит, они не могут не зависеть от типов информационного метаболизма.
             </Text>
 
-            <Text tag="p" color="accent" className={styles.text}>
-                Статья про совместимость
-            </Text>
 
             <div className={styles.linkblock}>
-                <BlockLink path="/clubs/psycho-compatibility" label="Совместимость психосексуальных групп" icon="Document" />
+                <BlockLink path="/psychotypes/compatibility" label="Совместимость психосексуальных групп" icon="Document" />
             </div>
 
             <Text tag="p" className={styles.text}>

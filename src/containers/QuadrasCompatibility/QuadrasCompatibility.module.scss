@@ -1,0 +1,54 @@
+@import '../_commons/text.module.scss';
+
+.titleIcon {
+    margin-top: -$spacing-12;
+    margin-bottom: $spacing-8;
+}
+
+.airBlock {
+    padding: $spacing-8;
+    background: rgba($color-elements-air, 0.05);
+    border: 1px solid rgba($color-elements-air, 0.25);
+    margin-bottom: $spacing-12;
+}
+
+.airIcon,
+.airText {
+    color: $color-elements-air;
+}
+
+.fireBlock {
+    padding: $spacing-8;
+    background: rgba($color-elements-fire, 0.05);
+    border: 1px solid rgba($color-elements-fire, 0.25);
+    margin-bottom: $spacing-12;
+}
+
+.fireIcon,
+.fireText {
+    color: $color-elements-fire;
+}
+
+.waterBlock {
+    padding: $spacing-8;
+    background: rgba($color-elements-water, 0.05);
+    border: 1px solid rgba($color-elements-water, 0.25);
+    margin-bottom: $spacing-12;
+}
+
+.waterIcon,
+.waterText {
+    color: $color-elements-water;
+}
+
+.earthBlock {
+    padding: $spacing-8;
+    background: rgba($color-elements-earth, 0.05);
+    border: 1px solid rgba($color-elements-earth, 0.25);
+    margin-bottom: $spacing-12;
+}
+
+.earthIcon,
+.earthText {
+    color: $color-elements-earth;
+}

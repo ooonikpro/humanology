@@ -5,6 +5,7 @@ import { Text } from '../../components/Text';
 import { AuthorLine } from '../../components/AuthorLine';
 import { EndPoint } from '../../components/EndPoint';
 import { PageTitle } from '../../components/PageTitle';
+import { BlockLink } from '../../components/BlockLink';
 
 export default function Other() {
     return (
@@ -12,8 +13,13 @@ export default function Other() {
             <PageTitle iconName='SquareDots'>Прочее</PageTitle>
             <AuthorLine text='Пока нечего читать' iconName='Time'>Разные</AuthorLine>
             <Text tag="p" className={styles.text}>
-                Здесь будут всякие интересные статьи
+                Интересные статьи уже ниже. Будут добавлятся еще.
             </Text>
+
+            <div className={styles.linkblock}>
+                <BlockLink path="/quadras/compatibility" label="Сексуальные программы квадр" icon="Document" />
+                <BlockLink path="/psychotypes/compatibility" label="Совместимость психосексуальных групп" icon="Document" />
+            </div>
             <EndPoint />
         </WhiteCard>
     );

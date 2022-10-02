@@ -1,0 +1,29 @@
+@import '../_commons/text.module.scss';
+
+.titleIcon {
+    margin-top: -$spacing-12;
+    margin-bottom: $spacing-8;
+}
+
+.accentBlock {
+    padding: $spacing-8;
+    background: rgba($color-basic-beige, 0.25);
+    border: 1px solid rgba($color-basic-accent, 0.15);
+    margin-bottom: $spacing-12;
+}
+
+.infantileIcon {
+    color: $color-pastel-turquoise;
+}
+
+.careIcon {
+    color: $color-pastel-green;
+}
+
+.victimIcon {
+    color: $color-pastel-yellow;
+}
+
+.aggressorIcon {
+    color: $color-pastel-pink;
+}

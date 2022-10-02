@@ -40,6 +40,7 @@ import FunctionsItem from './containers/FunctionsItem';
 import Metabolism from './containers/Metabolism';
 import Quadras from './containers/Quadras';
 import QuadrasItem from './containers/QuadrasItem';
+import QuadrasCompatibility from './containers/QuadrasCompatibility';
 import Relationships from './containers/Relationships';
 import RelationshipsItem from './containers/RelationshipsItem';
 import Minds from './containers/Minds';
@@ -47,6 +48,7 @@ import MindsItem from './containers/MindsItem';
 import Clubs from './containers/Clubs';
 import ClubsItem from './containers/ClubsItem';
 import ClubsPsychotype from './containers/ClubsPsychotype';
+import PsychotypesCompatibility from './containers/PsychotypesCompatibility';
 import ReininSigns from './containers/ReininSigns';
 import DichotomiesYung from './containers/DichotomiesYung';
 import DichotomiesYungItem from './containers/DichotomiesYungItem';
@@ -231,6 +233,10 @@ export const routes: Route[] = [
         container: QuadrasItem,
     },
     {
+        path: ROUTES.QUADRAS_COMPATIBILITY,
+        container: QuadrasCompatibility,
+    },
+    {
         path: ROUTES.RELATIONSHIPS,
         container: Relationships,
     },
@@ -257,6 +263,10 @@ export const routes: Route[] = [
     {
         path: ROUTES.CLUBS_PSYCHOTYPE(),
         container: ClubsPsychotype,
+    },
+    {
+        path: ROUTES.PSYCHOTYPES_COMPATIBILITY,
+        container: PsychotypesCompatibility,
     },
     {
         path: ROUTES.REININ,

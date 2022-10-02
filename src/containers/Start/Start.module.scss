@@ -50,3 +50,9 @@
     top: $spacing-8;
     opacity: 0.25;
 }
+
+.warningBlock {
+    padding: $spacing-12;
+    border: 1px solid rgba($color-basic-accent, 0.25);
+    background: rgba($color-basic-accent, 0.05);
+}

@@ -8,6 +8,7 @@ import { PageTitle } from '../../components/PageTitle';
 import { DETAIL_CARD_QUADRAS } from 'src/constants/detailCard';
 import { DetailCard } from '../../components/DetailCard';
 import { PageBreak } from '../../components/PageBreak';
+import { BlockLink } from 'src/components/BlockLink';
 
 export default function Quadras() {
 
@@ -62,6 +63,10 @@ export default function Quadras() {
                 <Text tag="li">Комплекс квадры</Text>
             </Text>
 
+            <div className={styles.linkblock}>
+                <BlockLink path="/quadras/compatibility" label="Сексуальные программы квадр" icon="Document" />
+            </div>
+
             <PageBreak>О конфликтах в квадре</PageBreak>
 
             <Text tag="p" className={styles.text}>
@@ -86,10 +91,6 @@ export default function Quadras() {
             {
                 DETAIL_CARD_QUADRAS.map((item, $itemKey) => <DetailCard {...item} key={$itemKey} />)
             }
-
-            {/* {QUADRAS_DATA.map((item, $i) => {
-                return <QuadraCard {...item} onClick={() => goTo(item.element)} key={$i} />;
-            })} */}
             <EndPoint />
 
         </WhiteCard>
