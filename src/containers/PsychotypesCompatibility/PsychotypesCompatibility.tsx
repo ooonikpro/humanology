@@ -13,7 +13,7 @@ export default function PsychotypesCompatibility() {
     return (
         <WhiteCard color="white" className={styles.root}>
             <PageTitle iconName='Cockring' back >Совместимость психотипов</PageTitle>
-            <AuthorLine text='Читать 5 минут' iconName='Time'>Александр Букалов</AuthorLine>
+            <AuthorLine text='Читать 5 минут' iconName='Time'>Хелле Йенсен</AuthorLine>
             <Icon name="PsychotypesCompatibility" size={{ width: 240, height: 64 }} className={styles.titleIcon} />
 
             <Text tag="p" size="h4" color="accent" font="additional" className={styles.text}>
