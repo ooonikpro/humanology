@@ -8,7 +8,7 @@ import { EndPoint } from '../../../components/EndPoint';
 export default function Supervisor() {
     return (
         <div className={styles.root}>
-            <PageTitle iconName='Supervisor' back>Подзаказный</PageTitle>
+            <PageTitle iconName='Supervisor' back>Ревизор</PageTitle>
 
             <AuthorLine text='Читать 4 минуты' iconName='Time'>О соционике</AuthorLine>
 
