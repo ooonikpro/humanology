@@ -36,7 +36,7 @@ export const PEOPLE: PeopleItem[] = [
     },
     {
         uid: 'brad-pitt',
-        id: 'ENTJ',
+        id: 'ISFP',
         name: 'Брэд Питт',
         subtitle: 'Актер',
         birthDate: '12/18/1963',
@@ -193,5 +193,69 @@ export const PEOPLE: PeopleItem[] = [
         subtitle: 'Бизнесмен',
         birthDate: '10/10/1984',
         gender: 'male'
-    }
+    },
+    {
+        uid: 'eduard-hil',
+        id: 'ENFJ',
+        name: 'Эдуард Хиль',
+        subtitle: 'Певец СССР',
+        birthDate: '09/04/1934',
+        gender: 'male'
+    },
+    {
+        uid: 'victor-sukhorukov',
+        id: 'ENFJ',
+        name: 'Виктор Сухоруков',
+        subtitle: 'Актер',
+        birthDate: '11/10/1951',
+        gender: 'male'
+    },
+    {
+        uid: 'david-yan',
+        id: 'ENTP',
+        name: 'Давид Ян',
+        subtitle: 'Предприниматель',
+        birthDate: '06/03/1968',
+        gender: 'male'
+    },
+    {
+        uid: 'mikael-yan',
+        id: 'ENTP',
+        name: 'Микаэл Ян',
+        subtitle: 'Предприниматель',
+        birthDate: '03/29/1988',
+        gender: 'male'
+    },
+    {
+        uid: 'oleg-tinkov',
+        id: 'ENTJ',
+        name: 'Олег Тиньков',
+        subtitle: 'Предприниматель',
+        birthDate: '12/25/1967',
+        gender: 'male'
+    },
+    {
+        uid: 'alexander-gordon',
+        id: 'ENTP',
+        name: 'Александр Гордон',
+        subtitle: 'Телеведущий',
+        birthDate: '02/20/1964',
+        gender: 'male'
+    },
+    {
+        uid: 'irina-hakamada',
+        id: 'INTJ',
+        name: 'Ирина Хакамада',
+        subtitle: 'Медиаперсона',
+        birthDate: '05/13/1955',
+        gender: 'female'
+    },
+    {
+        uid: 'bryan-cranston',
+        id: 'ESTJ',
+        name: 'Брайан Крэнстон',
+        subtitle: 'Актер',
+        birthDate: '03/07/1956',
+        gender: 'male'
+    },
 ];
