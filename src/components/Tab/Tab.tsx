@@ -8,22 +8,20 @@ import * as Icons from '../Icon/icons';
 import { useIsActiveRoute } from 'src/hooks/useIsActiveRoute';
 
 
-interface Props {
+export interface Props {
     path: string;
     label: string;
     icon?: keyof typeof Icons;
 }
 
-export const Tab: React.FC<Props> = ({ path, label, icon }) => {
+export const Tab: React.FC<Props & {onActive: (left: number) => void}> = ({ path, label, icon, onActive }) => {
     const goTo = useNavigate();
     const isActiveRoute = useIsActiveRoute(path);
 
     const classes = [styles.root, isActiveRoute ? styles.active : ''].join(' ');
     const ref = useRef<HTMLElement>(null);
 
-    const scrollIntoView = useCallback(() => {
-        ref.current && ref.current.scrollIntoView({ inline: 'center', block: 'end' });
-    }, [ref]);
+    const scrollIntoView = () => onActive(ref.current?.offsetLeft || 0);
     const onClick = useCallback(() => goTo(path), [path]);
 
     useEffect(() => {
@@ -33,7 +31,6 @@ export const Tab: React.FC<Props> = ({ path, label, icon }) => {
     }, [isActiveRoute]);
 
     return (
-
         <Text
             ref={ref}
             tag="button"
