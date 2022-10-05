@@ -472,7 +472,7 @@ export const SOCIOTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
             mirror: 'ENFJ',
             kindred: 'INTP',
             semidual: 'ESFP',
-            pragmatic: 'INTP',
+            pragmatic: 'ISFP',
             illusionary: 'ENTP',
             beneficiary: 'INTJ',
             giver: 'ISFJ',

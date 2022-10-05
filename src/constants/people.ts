@@ -52,7 +52,7 @@ export const PEOPLE: PeopleItem[] = [
     },
     {
         uid: 'alexander-pushnoy',
-        id: 'ENFJ',
+        id: 'ISFJ',
         name: 'Александр Пушной',
         subtitle: 'Телеведущий',
         birthDate: '05/16/1975',
@@ -84,7 +84,7 @@ export const PEOPLE: PeopleItem[] = [
     },
     {
         uid: 'vladimir-putin',
-        id: 'ISTJ',
+        id: 'INTP',
         name: 'Владимир Путин',
         subtitle: 'Президент РФ',
         birthDate: '10/07/1952',
@@ -172,7 +172,7 @@ export const PEOPLE: PeopleItem[] = [
     },
     {
         uid: 'tom-hardy',
-        id: 'ENTP',
+        id: 'ISFP',
         name: 'Том Харди',
         subtitle: 'Актер',
         birthDate: '09/15/1977',
@@ -180,7 +180,7 @@ export const PEOPLE: PeopleItem[] = [
     },
     {
         uid: 'grigoriy-perelman',
-        id: 'INTP',
+        id: 'ENTP',
         name: 'Григорий Перельман',
         subtitle: 'Математик',
         birthDate: '06/13/1966',
@@ -257,5 +257,173 @@ export const PEOPLE: PeopleItem[] = [
         subtitle: 'Актер',
         birthDate: '03/07/1956',
         gender: 'male'
+    },
+    {
+        uid: 'angelina-jolie',
+        id: 'ESTJ',
+        name: 'Анжелина Джоли',
+        subtitle: 'Актриса',
+        birthDate: '06/04/1975',
+        gender: 'female'
+    },
+    {
+        uid: 'ivan-ohlobistin',
+        id: 'ENTJ',
+        name: 'Иван Охлобыстин',
+        subtitle: 'Актер',
+        birthDate: '07/22/1966',
+        gender: 'male'
+    },
+    {
+        uid: 'dmitriy-medvedev',
+        id: 'ISFJ',
+        name: 'Дмитрий Медведев',
+        subtitle: 'Бывший президент РФ',
+        birthDate: '09/14/1965',
+        gender: 'male'
+    },
+    {
+        uid: 'alexey-navalniy',
+        id: 'ESTJ',
+        name: 'Алексей Навальный',
+        subtitle: 'Политик',
+        birthDate: '06/04/1976',
+        gender: 'male'
+    },
+    {
+        uid: 'kira-knightly',
+        id: 'ENTP',
+        name: 'Кира Найтли',
+        subtitle: 'Актриса',
+        birthDate: '03/26/1985',
+        gender: 'female'
+    },
+    {
+        uid: 'cillian-murphy',
+        id: 'INTJ',
+        name: 'Киллиан Мерфи',
+        subtitle: 'Актер',
+        birthDate: '05/25/1976',
+        gender: 'male'
+    },
+    {
+        uid: 'dwayne-johnson',
+        id: 'ESTJ',
+        name: 'Дуэйн Джонсон',
+        subtitle: 'Актер',
+        birthDate: '05/02/1972',
+        gender: 'male'
+    },
+    {
+        uid: 'denis-semenikhin',
+        id: 'ESTJ',
+        name: 'Денис Семинихин',
+        subtitle: 'Видеоблогер',
+        birthDate: '07/03/1971',
+        gender: 'male'
+    },
+    {
+        uid: 'ilya-prusikin',
+        id: 'INFP',
+        name: 'Илья Прусикин',
+        subtitle: 'Певец',
+        birthDate: '04/08/1985',
+        gender: 'male'
+    },
+    {
+        uid: 'yuri-nikolaenko',
+        id: 'INFP',
+        name: 'Юрий Николаенко',
+        subtitle: 'Актер',
+        birthDate: '05/17/1989',
+        gender: 'male'
+    },
+    {
+        uid: 'uma-thurman',
+        id: 'ESTJ',
+        name: 'Ума Турман',
+        subtitle: 'Актриса',
+        birthDate: '05/29/1970',
+        gender: 'female'
+    },
+    {
+        uid: 'ben-affleck',
+        id: 'ESTJ',
+        name: 'Бен Аффлек',
+        subtitle: 'Актер',
+        birthDate: '08/15/1972',
+        gender: 'male'
+    },
+    {
+        uid: 'matt-daimon',
+        id: 'ENTJ',
+        name: 'Мэтт Дэймон',
+        subtitle: 'Актер',
+        birthDate: '10/08/1970',
+        gender: 'male'
+    },
+    {
+        uid: 'boris-elcin',
+        id: 'ESTJ',
+        name: 'Борис Ельцин',
+        subtitle: 'Бывший президент РФ',
+        birthDate: '02/01/1931',
+        gender: 'male'
+    },
+    {
+        uid: 'tom-cruz',
+        id: 'ISFP',
+        name: 'Том Круз',
+        subtitle: 'Актер',
+        birthDate: '07/03/1962',
+        gender: 'male'
+    },
+    {
+        uid: 'nicole-kidman',
+        id: 'ESTJ',
+        name: 'Николь Кидман',
+        subtitle: 'Актриса',
+        birthDate: '06/20/1967',
+        gender: 'female'
+    },
+    {
+        uid: 'javier-bardem',
+        id: 'ISFP',
+        name: 'Хавьер Бардем',
+        subtitle: 'Актер',
+        birthDate: '03/01/1969',
+        gender: 'male'
+    },
+    {
+        uid: 'maxim-averin',
+        id: 'ENFJ',
+        name: 'Максим Аверин',
+        subtitle: 'Актер',
+        birthDate: '11/26/1975',
+        gender: 'male'
+    },
+    {
+        uid: 'gabe-newell',
+        id: 'ISTP',
+        name: 'Гейб Ньюэлл',
+        subtitle: 'Бизнесмен',
+        birthDate: '11/03/1962',
+        gender: 'male'
+    },
+    {
+        uid: 'john-lennon',
+        id: 'ISTP',
+        name: 'Джон Леннон',
+        subtitle: 'Музыкант',
+        birthDate: '12/08/1980',
+        gender: 'male'
+    },
+    {
+        uid: 'yoko-ono',
+        id: 'ESFP',
+        name: 'Йоко Оно',
+        subtitle: 'Художник',
+        birthDate: '02/18/1933',
+        gender: 'female'
     },
 ];
