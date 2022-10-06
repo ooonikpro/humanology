@@ -8,6 +8,8 @@ import { useSwipeable } from 'react-swipeable';
 import { WhiteCard } from '../../components/WhiteCard';
 import { EndPoint } from '../../components/EndPoint';
 import { FunctionalCardRow, FunctionCardRowItem } from 'src/components/FunctionalCardRow';
+import { DetailCard } from 'src/components/DetailCard';
+import { DETAIL_CARD_ASPECTS, DETAIL_CARD_FUNCTIONS } from 'src/constants/detailCard';
 
 interface Props extends ModalProps {
     function: Socionics.Function;
@@ -45,6 +47,16 @@ export const FunctionDescription: React.FC<Props> = (props) => {
                     <React.Suspense>
                         <Description />
                     </React.Suspense>
+
+                    <div className={styles.detailCards}>
+                        {
+                            DETAIL_CARD_ASPECTS.filter(item => item.aspect === props.aspect).map((item, $item) => <DetailCard {...item} key={$item} />)
+                        }
+                        <br />
+                        {
+                            DETAIL_CARD_FUNCTIONS.filter(item => item.socionicFn === props.function).map((item, $item) => <DetailCard {...item} key={$item} />)
+                        }
+                    </div>
 
                     <EndPoint />
                 </div>

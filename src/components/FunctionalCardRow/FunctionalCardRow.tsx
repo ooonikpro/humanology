@@ -3,9 +3,9 @@ import {
     FunctionalCard,
     Props as CardProps,
 } from '../../components/FunctionalCard';
-import { BLOCKS } from 'src/constants/blocks';
+import { BLOCKS } from '../../constants/blocks';
 import styles from './FunctionalCardRow.module.scss';
-import { Socionics } from 'src/types';
+import { Socionics } from '../../types';
 
 export interface FunctionCardRowItem {
     id: string;

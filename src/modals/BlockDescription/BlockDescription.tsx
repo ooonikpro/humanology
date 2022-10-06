@@ -12,6 +12,8 @@ import { useSwipeable } from 'react-swipeable';
 import { WhiteCard } from '../../components/WhiteCard';
 import { EndPoint } from '../../components/EndPoint';
 import { Text } from '../../components/Text';
+import { DETAIL_CARD_BLOCKS } from '../../constants/detailCard';
+import { DetailCard } from '../../components/DetailCard';
 
 export interface Props extends ModalProps {
     intertype: Socionics.SocionicsType;
@@ -62,6 +64,15 @@ export const BlockDescription: React.FC<Props> = ({
                     <React.Suspense>
                         <Description />
                     </React.Suspense>
+
+                    <hr />
+
+                    <div className={styles.detailCards}>
+                        {
+                            DETAIL_CARD_BLOCKS.filter(item => item.block === blockId).map((item, $item) => <DetailCard {...item} key={$item} />)
+                        }
+                    </div>
+
                     <EndPoint />
                 </div>
             </WhiteCard>
