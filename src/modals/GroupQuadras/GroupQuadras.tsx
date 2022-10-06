@@ -33,19 +33,19 @@ export const GroupQuadras: React.FC<ModalProps> = (
                 </TitleInfo>
             </div>
             {
-                DETAIL_CARD_QUADRAS.filter(item => item.quadra === element).map((item, $itemKey) => <DetailCard {...item} key={$itemKey} />)
+                DETAIL_CARD_QUADRAS.filter(item => item.quadra === element).map((item, $itemKey) => <DetailCard {...item} key={$itemKey} paragraphs />)
             }
             {
-                DETAIL_CARD_ROLES.filter(item => item.role === role).map((item, $itemKey) => <DetailCard {...item} key={$itemKey} />)
+                DETAIL_CARD_ROLES.filter(item => item.role === role).map((item, $itemKey) => <DetailCard {...item} key={$itemKey} paragraphs />)
             }
             {
-                DETAIL_CARD_SUITS.filter(item => item.suit === tarot).map((item, $itemKey) => <DetailCard {...item} key={$itemKey} />)
+                DETAIL_CARD_SUITS.filter(item => item.suit === tarot).map((item, $itemKey) => <DetailCard {...item} key={$itemKey} paragraphs />)
             }
             {
-                DETAIL_CARD_PSYCHOTYPES.filter(item => item.psychotype === psychotype).map((item, $itemKey) => <DetailCard {...item} key={$itemKey} />)
+                DETAIL_CARD_PSYCHOTYPES.filter(item => item.psychotype === psychotype).map((item, $itemKey) => <DetailCard {...item} key={$itemKey} paragraphs />)
             }
             {
-                DETAIL_CARD_CLUBS.filter(item => item.club === club).map((item, $itemKey) => <DetailCard {...item} key={$itemKey} />)
+                DETAIL_CARD_CLUBS.filter(item => item.club === club).map((item, $itemKey) => <DetailCard {...item} key={$itemKey} paragraphs />)
             }
             <EndPoint />
         </WhiteCard>

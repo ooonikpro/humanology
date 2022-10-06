@@ -42,7 +42,7 @@ export default function Functions() {
             <PageBreak>Функции</PageBreak>
 
             {
-                DETAIL_CARD_FUNCTIONS.map((item, $itemKey) => <DetailCard {...item} key={$itemKey} />)
+                DETAIL_CARD_FUNCTIONS.map((item, $itemKey) => <DetailCard {...item} key={$itemKey} paragraphs />)
             }
 
             <EndPoint />

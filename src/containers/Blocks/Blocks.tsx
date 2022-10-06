@@ -39,13 +39,13 @@ export default function Blocks() {
             <PageBreak>Кольца функций</PageBreak>
 
             {
-                DETAIL_CARD_RINGS.map((item, $itemKey) => <DetailCard {...item} key={$itemKey} />)
+                DETAIL_CARD_RINGS.map((item, $itemKey) => <DetailCard {...item} key={$itemKey} paragraphs />)
             }
 
             <PageBreak>Блоки функций</PageBreak>
 
             {
-                DETAIL_CARD_BLOCKS.map((item, $itemKey) => <DetailCard {...item} key={$itemKey} />)
+                DETAIL_CARD_BLOCKS.map((item, $itemKey) => <DetailCard {...item} key={$itemKey} paragraphs />)
             }
 
             <EndPoint />

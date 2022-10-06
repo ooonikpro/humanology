@@ -34,7 +34,7 @@ export const YungDichotomies: React.FC<ModalProps> = (
             </div>
             <div className={styles.detailCards}>
                 {
-                    DETAIL_CARD_YUNG.map((item, $itemKey) => <DetailCard {...item} key={$itemKey} />)
+                    DETAIL_CARD_YUNG.map((item, $itemKey) => <DetailCard {...item} key={$itemKey} paragraphs />)
                 }
             </div>
             <EndPoint />

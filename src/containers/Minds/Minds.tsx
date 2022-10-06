@@ -34,7 +34,7 @@ export default function Minds() {
             </div>
 
             {
-                DETAIL_CARD_MINDS.map((item, $itemKey) => <DetailCard {...item} key={$itemKey} />)
+                DETAIL_CARD_MINDS.map((item, $itemKey) => <DetailCard {...item} key={$itemKey} paragraphs />)
             }
 
             <EndPoint />

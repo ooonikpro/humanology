@@ -28,6 +28,7 @@ export type DetailCardProps = {
     subtitle?: string;
     tags: Array<string>
     content: Array<string>;
+    paragraphs?: boolean;
 }
 
 export const DetailCard: React.FC<DetailCardProps> = ({
@@ -50,6 +51,7 @@ export const DetailCard: React.FC<DetailCardProps> = ({
     subtitle,
     tags,
     content,
+    paragraphs,
 }) => {
     const navigate = useNavigate();
 
@@ -205,7 +207,6 @@ export const DetailCard: React.FC<DetailCardProps> = ({
 
     const goTo = () => navigate(url);
 
-
     return (
         <div className={rootClasses} onClick={goTo}>
             <TitleInfo icon align="start" line={false} render={renderTitleInfoChild} />
@@ -234,11 +235,13 @@ export const DetailCard: React.FC<DetailCardProps> = ({
             </TextInline>
 
             {
-                content.map((paragraph, $textKey) => (
-                    <Text tag="p" className={styles.text} key={$textKey}>
-                        {paragraph}
-                    </Text>
-                ))
+                paragraphs && (
+                    content.map((paragraph, $textKey) => (
+                        <Text tag="p" className={styles.text} key={$textKey}>
+                            {paragraph}
+                        </Text>
+                    ))
+                )
             }
         </div>
     );

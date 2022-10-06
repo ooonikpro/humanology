@@ -58,7 +58,7 @@ export default function DichotomiesYung() {
 
             <div className={styles.detailCards}>
                 {
-                    DETAIL_CARD_YUNG.slice(0, 2).map((item, $itemKey) => <DetailCard {...item} key={$itemKey} />)
+                    DETAIL_CARD_YUNG.slice(0, 2).map((item, $itemKey) => <DetailCard {...item} key={$itemKey} paragraphs />)
                 }
             </div>
 
@@ -81,7 +81,7 @@ export default function DichotomiesYung() {
 
             <div className={styles.detailCards}>
                 {
-                    DETAIL_CARD_YUNG.slice(2, 4).map((item, $itemKey) => <DetailCard {...item} key={$itemKey} />)
+                    DETAIL_CARD_YUNG.slice(2, 4).map((item, $itemKey) => <DetailCard {...item} key={$itemKey} paragraphs />)
                 }
             </div>
 
@@ -129,7 +129,7 @@ export default function DichotomiesYung() {
 
             <div className={styles.detailCards}>
                 {
-                    DETAIL_CARD_YUNG.slice(4, 6).map((item, $itemKey) => <DetailCard {...item} key={$itemKey} />)
+                    DETAIL_CARD_YUNG.slice(4, 6).map((item, $itemKey) => <DetailCard {...item} key={$itemKey} paragraphs />)
                 }
             </div>
 
@@ -176,7 +176,7 @@ export default function DichotomiesYung() {
             </Text>
             <div className={styles.detailCards}>
                 {
-                    DETAIL_CARD_YUNG.slice(6, 8).map((item, $itemKey) => <DetailCard {...item} key={$itemKey} />)
+                    DETAIL_CARD_YUNG.slice(6, 8).map((item, $itemKey) => <DetailCard {...item} key={$itemKey} paragraphs />)
                 }
             </div>
 

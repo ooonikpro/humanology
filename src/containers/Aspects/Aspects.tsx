@@ -75,7 +75,7 @@ export default function Aspects() {
             <PageBreak>Аспекты</PageBreak>
 
             {
-                DETAIL_CARD_ASPECTS.map((item, $itemKey) => <DetailCard {...item} key={$itemKey} />)
+                DETAIL_CARD_ASPECTS.map((item, $itemKey) => <DetailCard {...item} key={$itemKey} paragraphs />)
             }
 
             <EndPoint />

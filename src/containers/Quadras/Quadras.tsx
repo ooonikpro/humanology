@@ -89,7 +89,7 @@ export default function Quadras() {
 
             <PageBreak>Квадры</PageBreak>
             {
-                DETAIL_CARD_QUADRAS.map((item, $itemKey) => <DetailCard {...item} key={$itemKey} />)
+                DETAIL_CARD_QUADRAS.map((item, $itemKey) => <DetailCard {...item} key={$itemKey} paragraphs />)
             }
             <EndPoint />
 

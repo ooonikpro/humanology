@@ -56,7 +56,7 @@ export default function Clubs() {
             </div>
 
             {
-                DETAIL_CARD_CLUBS.map((item, $itemKey) => <DetailCard {...item} key={$itemKey} />)
+                DETAIL_CARD_CLUBS.map((item, $itemKey) => <DetailCard {...item} key={$itemKey} paragraphs />)
             }
 
             <PageBreak>Психосексуальные группы</PageBreak>
@@ -98,7 +98,7 @@ export default function Clubs() {
             </div>
 
             {
-                DETAIL_CARD_PSYCHOTYPES.map((item, $itemKey) => <DetailCard {...item} key={$itemKey} />)
+                DETAIL_CARD_PSYCHOTYPES.map((item, $itemKey) => <DetailCard {...item} key={$itemKey} paragraphs />)
             }
 
             <EndPoint />

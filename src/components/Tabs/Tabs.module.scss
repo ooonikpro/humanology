@@ -1,14 +1,16 @@
 @import '../../styles/utils.scss';
 
 .root {
-	overflow: hidden;
+    overflow: hidden;
     height: 8.8rem;
     margin-bottom: -$spacing-8;
     background-color: $color-basic-beige;
     padding-bottom: 0.8rem;
 
     &.small {
-        height: 5.6rem;
+        height: 6.4rem;
+        padding: $spacing-4;
+        border-radius: $spacing-2;
 
         .horizontal-scrollbar {
             height: calc(5.6rem + 17px);
