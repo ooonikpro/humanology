@@ -175,7 +175,7 @@ export const AppMenu = () => {
                 </div>
 
                 <div className={styles.menuList}>
-                    <MenuItem>
+                    <MenuItem onClick={goTo(ROUTES.TESTS)}>
                         <Icon size={24} className={styles.icon} color="accent" name="PresentationChart" />
                         <Text size="large" color="accent" className={styles.text}>Тесты</Text>
                     </MenuItem>

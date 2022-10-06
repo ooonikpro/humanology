@@ -18,6 +18,7 @@ import HumourElvira from './containers/Sociotypes/SociotypesHumour/Tabs/HumourEl
 import Loading from './containers/Loading';
 import Start from './containers/Start';
 import Identify from './containers/Identify';
+import Tests from './containers/Tests';
 import WhatIsSocionics from './containers/WhatIsSocionics';
 import Disclaimer from './containers/Disclaimer';
 import History from './containers/History';
@@ -137,6 +138,10 @@ export const routes: Route[] = [
     {
         path: ROUTES.IDENTIFY,
         container: Identify,
+    },
+    {
+        path: ROUTES.TESTS,
+        container: Tests,
     },
     {
         path: ROUTES.WHAT_IS_SOCIONICS,

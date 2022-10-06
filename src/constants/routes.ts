@@ -24,6 +24,7 @@ export const ROUTES = {
     HISTORY_AUSHRA: '/history/aushra',
     METABOLISM: '/information-metabolism',
     IDENTIFY: '/identify',
+    TESTS: '/tests',
     WHAT_IS_SOCIONICS: '/what',
     SOCION: '/socion',
     FUNCTIONS: '/functions',
