@@ -5,6 +5,15 @@
     height: 8.8rem;
     margin-bottom: -$spacing-8;
     background-color: $color-basic-beige;
+    padding-bottom: 0.8rem;
+
+    &.small {
+        height: 5.6rem;
+
+        .horizontal-scrollbar {
+            height: calc(5.6rem + 17px);
+        }
+    }
 }
 
 .horizontal-scrollbar {
@@ -12,7 +21,7 @@
     background-color: var(--color-basic-beige);
     display: flex;
     width: 100%;
-    height: calc(8.8rem + 17px);
+    height: calc(100% + 17px);
     overflow-x: scroll;
     overflow-y: hidden;
     column-gap: $spacing-4;

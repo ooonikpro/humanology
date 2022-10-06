@@ -62,154 +62,154 @@ export const MAIN_LINKS: Tabs[] = [
         label: 'Начало',
         path: ROUTES.START,
         order: 0,
-        iconName: 'Square0'
+        icon: 'Square0'
     },
     {
         label: 'Как определять?',
         path: ROUTES.IDENTIFY,
         order: 2,
-        iconName: 'Mug'
+        icon: 'Mug'
     },
     {
         label: 'Социотипы',
         path: ROUTES.HOME,
         order: 1,
-        iconName: 'Square1'
+        icon: 'Square1'
     },
     {
         label: 'Интертипные отношения',
         path: ROUTES.RELATIONSHIPS,
         order: 3,
-        iconName: 'Square2'
+        icon: 'Square2'
     },
     {
         label: 'История',
         path: ROUTES.HISTORY,
         order: 4,
-        iconName: 'SquareTime'
+        icon: 'SquareTime'
     },
     {
         label: 'Информационный метаболизм',
         path: ROUTES.METABOLISM,
         order: 5,
-        iconName: 'Square3'
+        icon: 'Square3'
     },
     {
         label: 'Аспекты',
         path: ROUTES.ASPECTS,
         order: 6,
-        iconName: 'Square4'
+        icon: 'Square4'
     },
     {
         label: 'Функции',
         path: ROUTES.FUNCTIONS,
         order: 7,
-        iconName: 'Square5'
+        icon: 'Square5'
     },
     {
         label: 'Блоки и кольца',
         path: ROUTES.BLOCKS,
         order: 8,
-        iconName: 'Square6'
+        icon: 'Square6'
     },
     {
         label: 'Квадры',
         path: ROUTES.QUADRAS,
         order: 9,
-        iconName: 'Square7'
+        icon: 'Square7'
     },
     {
         label: 'Карты и масти',
         path: ROUTES.SUITS,
         order: 10,
-        iconName: 'Square8'
+        icon: 'Square8'
     },
     {
         label: 'Клубы и психотипы',
         path: ROUTES.CLUBS,
         order: 11,
-        iconName: 'Square9'
+        icon: 'Square9'
     },
     {
         label: 'Типы мышления',
         path: ROUTES.MINDSETS,
         order: 12,
-        iconName: 'Square10'
+        icon: 'Square10'
     },
     {
         label: 'Дихотомии Юнга',
         path: ROUTES.YUNG,
         order: 13,
-        iconName: 'Square11'
+        icon: 'Square11'
     },
     {
         label: 'Признаки Рейнина',
         path: ROUTES.REININ,
         order: 14,
-        iconName: 'Square12'
+        icon: 'Square12'
     },
     {
         label: 'Прочее',
         path: ROUTES.OTHER,
         order: 15,
-        iconName: 'SquareDots'
+        icon: 'SquareDots'
     }
 ];
 
-export const SOCIOTYPES_LINKS = (id: string) => [
+export const SOCIOTYPES_LINKS = (id: string): Tabs[] => [
     {
         label: 'Карточка',
         path: `${ROUTES.SOCIOTYPES(id)}/${ROUTES.SOCIOTYPES_CARD}`,
         order: 1,
-        iconName: 'Card'
+        icon: 'Card'
     },
     {
         label: 'Видео',
         path: `${ROUTES.SOCIOTYPES(id)}/${ROUTES.SOCIOTYPES_VIDEO}`,
         order: 2,
-        iconName: 'PlaySquare'
+        icon: 'PlaySquare'
     },
     {
         label: 'Описание',
         path: `${ROUTES.SOCIOTYPES(id)}/${ROUTES.SOCIOTYPES_DESCRIPTION}`,
         order: 3,
-        iconName: 'JustifyLeft'
+        icon: 'JustifyLeft'
     },
     {
         label: 'Совместимость',
         path: `${ROUTES.SOCIOTYPES(id)}/${ROUTES.SOCIOTYPES_COMPATIBILITY}`,
         order: 4,
-        iconName: 'Apps'
+        icon: 'Apps'
     },
     {
         label: 'Деловые качества',
         path: `${ROUTES.SOCIOTYPES(id)}/${ROUTES.SOCIOTYPES_BUSINESS}`,
         order: 5,
-        iconName: 'BriefcaseAlt'
+        icon: 'BriefcaseAlt'
     },
     {
         label: 'Развитие',
         path: `${ROUTES.SOCIOTYPES(id)}/${ROUTES.SOCIOTYPES_DEVELOPMENT}`,
         order: 6,
-        iconName: 'HappySquare'
+        icon: 'HappySquare'
     },
     {
         label: 'Истории',
         path: `${ROUTES.SOCIOTYPES(id)}/${ROUTES.SOCIOTYPES_STORIES}`,
         order: 7,
-        iconName: 'Annotation'
+        icon: 'Annotation'
     },
     {
         label: 'Люди',
         path: `${ROUTES.SOCIOTYPES(id)}/${ROUTES.SOCIOTYPES_PEOPLE}`,
         order: 8,
-        iconName: 'Users'
+        icon: 'Users'
     },
     {
         label: 'Юмор',
         path: `${ROUTES.SOCIOTYPES(id)}/${ROUTES.SOCIOTYPES_HUMOUR}`,
         order: 9,
-        iconName: 'EmojiSadSquare'
+        icon: 'EmojiSadSquare'
     },
 ];
 

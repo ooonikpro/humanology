@@ -4,7 +4,7 @@ import { Tabs } from './Tabs';
 
 export const MainTabs: React.FC = () => {
     const sortedLinks = useMemo(
-        () => MAIN_LINKS.map((item) => ({ ...item, icon: item.iconName })).sort((a, b) => a.order - b.order),
+        () => MAIN_LINKS.sort((a, b) => a.order - b.order),
         [MAIN_LINKS]
     );
 

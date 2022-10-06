@@ -6,9 +6,11 @@ import { getIconName } from '../Icon';
 
 interface Props {
     items: Array<TabProps>
+    small?: boolean
+    className?: string
 }
 
-export const Tabs: React.FC<Props> = ({ items }) => {
+export const Tabs: React.FC<Props> = ({ items, small, className }) => {
     const ref = useRef<HTMLDivElement>(null);
 
     const setScrollLeft = useCallback((left: number) => {
@@ -18,7 +20,7 @@ export const Tabs: React.FC<Props> = ({ items }) => {
     }, [ref]);
 
     return (
-        <div className={styles.root}>
+        <div className={[styles.root, small && styles.small, className].filter(Boolean).join(' ')}>
             <div ref={ref} className={styles['horizontal-scrollbar']}>
                 {useMemo(() => items.map((item, key) => {
                     return <Tab {...item}

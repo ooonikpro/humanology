@@ -197,7 +197,7 @@ export type Tabs = {
     label: string;
     path: string;
     order: number;
-    iconName: keyof typeof Icons;
+    icon: keyof typeof Icons;
 };
 
 export type UnixDate = string; // mm/dd/yyyy
