@@ -8,7 +8,7 @@ export default function ISTJ() {
             <AuthorLine text="Читать меньше минуты" iconName="Time">О соционике</AuthorLine>
 
             <Text tag="p" color="role" size="h5">
-                Не всегда понимает, какие эмоции он испытывает. 
+                Не всегда понимает, какие эмоции он испытывает.
             </Text>
 
             <Text tag="p">
@@ -30,8 +30,6 @@ export default function ISTJ() {
             <Text tag="p">
                 Лишь получив эмоциональный отклик (положительный или отрицательный, не важно), успокоится.
             </Text>
-
-            <hr />
         </>
     );
 }

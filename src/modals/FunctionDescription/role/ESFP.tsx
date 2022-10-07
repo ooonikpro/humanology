@@ -8,7 +8,7 @@ export default function ESFP() {
             <AuthorLine text="Читать меньше минуты" iconName="Time">О соционике</AuthorLine>
 
             <Text tag="p" color="role" size="h5">
-                Хочет, чтобы его считали не таким как все, особенным, другим. 
+                Хочет, чтобы его считали не таким как все, особенным, другим.
             </Text>
 
             <Text tag="p">
@@ -23,7 +23,6 @@ export default function ESFP() {
                 В компании с радостью поддержит разговор на тему новых идей, как для бизнеса, так и для отдыха.
             </Text>
 
-            <hr />
         </>
     );
 }

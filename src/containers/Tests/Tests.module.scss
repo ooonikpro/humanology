@@ -1,1 +1,15 @@
 @import '../_commons/text.module';
+
+.warning {
+    display: block;
+    padding: $spacing-8;
+    padding-bottom: 0;
+    border: 1px solid rgba($color-basic-accent, 0.25);
+    margin-top: $spacing-40;
+    margin-bottom: $spacing-12;
+
+    .line {
+        margin-top: $spacing-6;
+        margin-bottom: $spacing-6;
+    }
+}

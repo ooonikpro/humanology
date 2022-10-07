@@ -24,7 +24,6 @@ export default function INTJ() {
             </Text>
 
 
-            <hr />
         </>
     );
 }

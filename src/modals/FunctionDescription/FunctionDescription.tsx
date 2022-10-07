@@ -52,7 +52,6 @@ export const FunctionDescription: React.FC<Props> = (props) => {
                         {
                             DETAIL_CARD_ASPECTS.filter(item => item.aspect === props.aspect).map((item, $item) => <DetailCard {...item} key={$item} />)
                         }
-                        <br />
                         {
                             DETAIL_CARD_FUNCTIONS.filter(item => item.socionicFn === props.function).map((item, $item) => <DetailCard {...item} key={$item} />)
                         }

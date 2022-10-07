@@ -6,7 +6,7 @@ export default function ENFJ() {
     return (
         <>
             <AuthorLine text="Читать меньше минуты" iconName="Time">О соционике</AuthorLine>
-            
+
 
             <Text tag="p" color="role" size="h5">
                 Иногда любит испытывать себя на прочность, вступая в конфликты и говоря людям в лицо нелицеприятные вещи.
@@ -32,7 +32,6 @@ export default function ENFJ() {
                 Не всегда способен управлять своими эмоциями.
             </Text>
 
-            <hr />
         </>
     );
 }

@@ -4,12 +4,12 @@ import { AuthorLine } from '../../../components/AuthorLine';
 
 export default function ISTJ() {
     return (
-        <>  
+        <>
             <AuthorLine text="Читать меньше минуты" iconName="Time">О соционике</AuthorLine>
-            
+
             <Text tag="p" color="role" size="h5">
                 Очень любят порядок: в голове, в отношениях, в жизни.
-            </Text>            
+            </Text>
 
             <Text tag="p">
                 Всегда старается проанализировать ситуацию, вникнуть в суть дела досконально, просчитать все мелочи, собрать всю информацию.
@@ -26,12 +26,11 @@ export default function ISTJ() {
             <Text tag="p">
                 Именно поэтому очень остро реагирует, когда кто-то без спроса перекладывает его вещи.
             </Text>
-            
+
             <Text tag="p">
                 Очень любит контролировать близких людей и их жизнь.
             </Text>
 
-            <hr />
         </>
     );
 }

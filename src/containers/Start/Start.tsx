@@ -97,6 +97,7 @@ export default function Start() {
                 <PageBreak>Свежие материалы</PageBreak>
 
                 <div className={styles.linkblock}>
+                    <BlockLink path="/tests" label="Тесты" icon="PresentationChart" />
                     <BlockLink path="/quadras/compatibility" label="Сексуальные программы квадр" icon="Dildo" />
                     <BlockLink path="/psychotypes/compatibility" label="Совместимость психосексуальных групп" icon="Cockring" />
                 </div>

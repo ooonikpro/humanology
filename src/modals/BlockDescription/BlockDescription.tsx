@@ -65,8 +65,6 @@ export const BlockDescription: React.FC<Props> = ({
                         <Description />
                     </React.Suspense>
 
-                    <hr />
-
                     <div className={styles.detailCards}>
                         {
                             DETAIL_CARD_BLOCKS.filter(item => item.block === blockId).map((item, $item) => <DetailCard {...item} key={$item} />)

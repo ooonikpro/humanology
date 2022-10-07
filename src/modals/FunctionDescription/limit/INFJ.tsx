@@ -8,7 +8,7 @@ export default function INFJ() {
             <AuthorLine text="Читать меньше минуты" iconName="Time">О соционике</AuthorLine>
 
             <Text tag="p" color="role" size="h5">
-                Всегда отслеживает эмоциональную атмосферу в обществе. 
+                Всегда отслеживает эмоциональную атмосферу в обществе.
             </Text>
 
             <Text tag="p">
@@ -23,7 +23,6 @@ export default function INFJ() {
                 На людях старается не показывать сильные эмоции.
             </Text>
 
-            <hr />
         </>
     );
 }

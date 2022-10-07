@@ -8,7 +8,7 @@ export default function INFP() {
             <AuthorLine text="Читать меньше минуты" iconName="Time">О соционике</AuthorLine>
 
             <Text tag="p" color="role" size="h5">
-                С трудом переживает строгую дисциплину на работе и дома. 
+                С трудом переживает строгую дисциплину на работе и дома.
             </Text>
 
             <Text tag="p">
@@ -19,7 +19,6 @@ export default function INFP() {
                 Любит действовать по красивому и четкому плану, постепенно достигая цели.
             </Text>
 
-            <hr />
         </>
     );
 }

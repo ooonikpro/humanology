@@ -8,7 +8,7 @@ export default function ENFP() {
             <AuthorLine text="Читать меньше минуты" iconName="Time">О соционике</AuthorLine>
 
             <Text tag="p" color="role" size="h5">
-                Переживает по поводу того, что у него не осталось времени.  
+                Переживает по поводу того, что у него не осталось времени.
             </Text>
 
             <Text tag="p">
@@ -23,7 +23,6 @@ export default function ENFP() {
                 Ценит свое время, считает, что время — это невосполнимый ресурс.
             </Text>
 
-            <hr />
         </>
     );
 }

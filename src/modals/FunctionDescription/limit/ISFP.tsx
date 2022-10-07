@@ -8,7 +8,7 @@ export default function ISFP() {
             <AuthorLine text="Читать меньше минуты" iconName="Time">О соционике</AuthorLine>
 
             <Text tag="p" color="role" size="h5">
-                Не тот человек, который позволит на себе «ездить» и пользоваться своей добротой. 
+                Не тот человек, который позволит на себе «ездить» и пользоваться своей добротой.
             </Text>
 
             <Text tag="p">
@@ -23,7 +23,6 @@ export default function ISFP() {
                 Умеет отстоять свои интересы и интересы своих близких.
             </Text>
 
-            <hr />
         </>
     );
 }

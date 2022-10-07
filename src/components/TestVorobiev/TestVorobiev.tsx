@@ -1,6 +1,13 @@
 import React, { useCallback, useState } from 'react';
 import styles from './TestVorobiev.module.scss';
-import { VOROBIEV } from 'src/constants/tests';
+import { VOROBIEV } from '../../constants/tests';
+import { Text } from '../Text';
+import { Icon } from '../Icon';
+import { SocietyCardMini } from '../SocietyCardMini';
+import { Link } from 'react-router-dom';
+import { ROUTES } from '../../constants/routes';
+import { Socionics } from '../../types';
+import { EndPoint } from '../EndPoint';
 
 export const TestVorobiev = () => {
     const [step, setStep] = useState(0);
@@ -10,25 +17,61 @@ export const TestVorobiev = () => {
 
     console.log('ANSWERS >>', answers);
 
-    const calculate = () => {
+    const testResult = () => {
         const a = eval(answers.slice(0, 7).join('+'));
         const b = eval(answers.slice(7, 14).join('+'));
         const c = eval(answers.slice(14, 21).join('+'));
         const d = eval(answers.slice(21, 28).join('+'));
 
-        return <div>
-            {a} {b} {c} {d}
-        </div>;
+        let letter3 = 'T';
+        let letter4 = 'J';
+        let letter2 = 'S';
+        let letter1 = 'E';
+
+        if (a >= 4) {
+            letter4 = 'P';
+        }
+
+        if (b >= 4) {
+            letter3 = 'F';
+        }
+
+        if (c >= 4) {
+            letter2 = 'N';
+        }
+
+        if (d >= 4) {
+            letter1 = 'I';
+        }
+
+        const SociotypeID = [letter1, letter2, letter3, letter4].join('');
+        const id = SociotypeID as Socionics.SocionicsType;
+
+        return (
+            <div className={styles.resultCard}>
+                <Text tag="span" size="h6" color="accent">
+                    Ваш социотип
+                </Text>
+                <Text tag="p" size="body" color="accent">
+                    По результатам теста
+                </Text>
+                <Link
+                    to={`${ROUTES.SOCIOTYPES(SociotypeID)}/card`}
+                    className={styles.link} >
+                    <SocietyCardMini id={id} className={styles.sociotype} />
+                </Link>
+            </div>
+        );
     };
 
     const isAvailablePrev = step >= 1;
-    const isAvailableNext = step < VOROBIEV.length -1;
+    const isAvailableNext = step < VOROBIEV.length - 1;
 
     const next = () => {
         if (isAvailableNext) {
             setStep((prev: number) => prev + 1);
         } else {
-            calculate();
+            testResult();
             setIsFinished(true);
         }
     };
@@ -63,40 +106,75 @@ export const TestVorobiev = () => {
     };
 
     return (
-        <div>
-            {
-                !isFinished && isAvailablePrev && (
-                    <button onClick={prev}>Prev</button>
-                )
-            }
-            {
-                !isFinished && isAvailableNext && (
-                    <button onClick={next}>Next</button>
-                )
-            }
+        <div className={styles.test}>
+            <div className={styles.nextPrevButtons}>
+                <div>
+                    {
+                        !isFinished && isAvailablePrev && (
+                            <button onClick={prev}>
+                                <div className={styles.pair}>
+                                    <Icon name="ArrowLeftSquare" size={20} color="accent" />
+                                    <Text tag="span" size="body" color="accent">Предыдущая</Text>
+                                </div>
+                            </button>
+                        )
+                    }
+                </div>
+                {
+                    isFinished && <Text tag="span" size="large" color="accent">Тест пройден</Text>
+                }
+                <div>
+                    {
+                        !isFinished && isAvailableNext && (
+                            <button onClick={next}>
+                                <div className={styles.pair}>
+                                    <Text tag="span" size="body" color="accent">Следующая</Text>
+                                    <Icon name="ArrowRightSquare" size={20} color="accent" />
+                                </div>
+                            </button>
+                        )
+                    }
+                </div>
+            </div>
 
-            <br />
-
             {
-                !isFinished && VOROBIEV[step].answers.map((btn, key: number) =>
-                    <button
-                        key={key}
-                        onClick={addAnswer(btn.value)}
-                        disabled={isDisabled}
-                        className={[isActiveButton(btn.value) && styles.active].join(' ')}
-                    >
-                        {btn.label}
-                    </button>
-                )
-            }
-
-            {
-                isFinished && <div>
-                    My results {calculate()}
-
-                    <button onClick={() => reset()}>Go again</button>
+                !isFinished && <div className={styles.stepCounter}>
+                    <Text tag="p" size="body" color="accent">Выберите слово из пары</Text>
+                    <Text tag="p" size="body" color="grey">Пара {step + 1} из {VOROBIEV.length}</Text>
                 </div>
             }
-        </div>
+
+            {
+                !isFinished &&
+                <div className={styles.answerBlock}>
+                    {
+                        !isFinished && VOROBIEV[step].answers.map((btn, key: number) =>
+                            <button
+                                key={key}
+                                onClick={addAnswer(btn.value)}
+                                disabled={isDisabled}
+                                className={[isActiveButton(btn.value) && styles.active].join(' ')}
+                            >
+                                <Icon name={key === 0 ? 'SquareA' : 'SquareB'} size={24} color="accent" className={styles.answerIcon} />
+                                <Text tag="span" size="h5" font="additional">{btn.label}</Text>
+                            </button>
+                        )
+                    }
+                </div>
+            }
+
+            {
+                isFinished &&
+                <div className={styles.result}>
+                    {testResult()}
+                    <button onClick={() => reset()}>
+                        <Text tag="span" size="large" color="accent">
+                            Пройти еще раз
+                        </Text>
+                    </button>
+                </div>
+            }
+            <EndPoint />
+        </div >
     );
 };
