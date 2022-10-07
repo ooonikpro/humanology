@@ -5,6 +5,7 @@ import { Text } from '../../components/Text';
 import { AuthorLine } from '../../components/AuthorLine';
 import { EndPoint } from '../../components/EndPoint';
 import { PageTitle } from '../../components/PageTitle';
+import { TestVorobiev } from 'src/components/TestVorobiev';
 
 export default function Tests() {
     return (
@@ -19,6 +20,8 @@ export default function Tests() {
             <Text tag="p" size="large">
                 Длинный тест Екатерины Филатовой — 40 вопросов.
             </Text>
+
+            <TestVorobiev />
 
             <EndPoint />
         </WhiteCard>
