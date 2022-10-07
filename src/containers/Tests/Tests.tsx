@@ -29,36 +29,30 @@ export default function Tests() {
             </Text>
 
             <Text tag="p" className={styles.text}>
-                В 5% случаев было явно видно, что результат теста ошибочен.
+                В 5% случаев было явно видно, что результат теста ошибочен. В остальных 25% случаев испытуемые выявляли признаки искажения типа, в результате чего нельзя было с полной уверенностью ни утвердить, ни опровергнуть результат теста.
             </Text>
 
             <Text tag="p" className={styles.text}>
-                В остальных 25% случаев испытуемые выявляли признаки искажения типа, в результате чего нельзя было с полной уверенностью ни утвердить, ни опровергнуть результат теста.
-            </Text>
-
-            <div className={styles.linkblock}>
-                <BlockLink path="/tests/vorobiev" label="Начать тест Воробьева" icon="TestSimple" />
-            </div>
-
-            <Text tag="p" size="body" className={styles.text}>
                 При заполнении теста человеком, знающим соционику, тестирование получается необъективным, поскольку он если не сознательно, то подсознательно пытается предугадать результат.
             </Text>
 
-            <Text tag="p" size="body" className={styles.text}>
+            <Text tag="p" size="large" className={styles.text}>
                 Человек, не знающий соционику, внимательно и объективно заполняющий тест в 70% случаев получает правильный результат.
             </Text>
 
-
+            <div className={styles.buttonBlock}>
+                <BlockLink path="/tests/vorobiev" label="Начать тест Воробьева" icon="TestSimple" />
+            </div>
 
             <PageBreak>Тест Филатовой</PageBreak>
-
-            <div className={styles.linkblock}>
-                <BlockLink path="/tests/filatova" label="Начать тест Филатовой" icon="TestComplex" />
-            </div>
 
             <Text tag="p" className={styles.text}>
                 Пока еще не готово …
             </Text>
+
+            <div className={styles.buttonBlock}>
+                <BlockLink path="/tests/filatova" label="Начать тест Филатовой" icon="TestComplex" />
+            </div>
 
             <EndPoint />
         </WhiteCard>
