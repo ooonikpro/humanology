@@ -1,12 +1,12 @@
 import React from 'react';
 import { useSwipeable } from 'react-swipeable';
+import { useSociotype } from 'src/hooks';
 import { DetailCard } from '../../components/DetailCard';
 import { EndPoint } from '../../components/EndPoint';
 import { Modal, ModalProps } from '../../components/Modal';
 import { TitleInfo } from '../../components/TitleInfo';
 import { WhiteCard } from '../../components/WhiteCard';
 import { DETAIL_CARD_YUNG } from '../../constants/detailCard';
-// import { useSociotype } from 'src/hooks';
 import styles from './YungDichotomies.module.scss';
 
 
@@ -16,8 +16,7 @@ export const YungDichotomies: React.FC<ModalProps> = (
     }
 ) => {
 
-    // const { sociotypeProps: intertypeProps } = useSociotype();
-    // const { yungs } = intertypeProps;
+    const { sociotypeProps: { yungs } } = useSociotype();
     const swipeableHandlers = useSwipeable({
         onSwipedDown: modalProps.onClose
     });
@@ -34,7 +33,7 @@ export const YungDichotomies: React.FC<ModalProps> = (
             </div>
             <div className={styles.detailCards}>
                 {
-                    DETAIL_CARD_YUNG.map((item, $itemKey) => <DetailCard {...item} key={$itemKey} paragraphs />)
+                    DETAIL_CARD_YUNG.filter((item) => yungs.includes(item.yung)).map((item, $itemKey) => <DetailCard {...item} key={$itemKey} paragraphs />)
                 }
             </div>
             <EndPoint />

@@ -1,3 +1,4 @@
+import { Socionics } from 'src/types';
 import { DetailCardProps } from 'src/components/DetailCard';
 
 export const DETAIL_CARD_FUNCTIONS: DetailCardProps[] = [
@@ -738,7 +739,11 @@ export const DETAIL_CARD_INTERTYPE: DetailCardProps[] = [
     },
 ];
 
-export const DETAIL_CARD_YUNG: DetailCardProps[] = [
+type DetailCardYung = DetailCardProps & {
+    yung: Socionics.Dichotomy
+}
+
+export const DETAIL_CARD_YUNG: DetailCardYung[] = [
     {
         type: 'yung',
         yung: 'irrational',

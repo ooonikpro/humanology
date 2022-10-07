@@ -66,7 +66,7 @@ export const FunctionalCardGroup: React.FC<Props> = (props) => {
         },
         {
             id: 'BlockModal',
-            blockId: 'superEgo',
+            blockId: 'superego',
             data: [
                 {
                     aspect: props.afraid,
@@ -91,7 +91,7 @@ export const FunctionalCardGroup: React.FC<Props> = (props) => {
         },
         {
             id: 'BlockModal',
-            blockId: 'superId',
+            blockId: 'superid',
             data: [
                 {
                     aspect: props.desires,
