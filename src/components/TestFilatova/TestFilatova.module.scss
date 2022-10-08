@@ -2,5 +2,167 @@
 
 .test {
     margin-top: $spacing-20;
-    height: calc(80%);
+}
+
+.nextPrevButtons {
+    width: 100%;
+    height: $spacing-40;
+    padding-top: $spacing-6;
+    border-bottom: 1px solid rgba($color-basic-accent, 0.25);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+
+    .pair {
+        display: flex;
+        align-content: center;
+        gap: $spacing-4;
+        opacity: 0.5;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+.stepCounter {
+    display: flex;
+    justify-content: space-between;
+    margin-top: $spacing-12;
+}
+
+.answerBlock {
+    margin-top: 2.4rem;
+    margin-bottom: $spacing-48;
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-16;
+
+    .answer {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: $spacing-8;
+    }
+}
+
+.buttonBlock {
+    border-top: 1px solid rgba($color-basic-accent, 0.1);
+    padding-top: $spacing-12;
+    padding-bottom: $spacing-48;
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-8;
+
+    .buttonPair {
+        display: flex;
+        flex-direction: row;
+        gap: $spacing-8;
+
+        button {
+            height: 4.8rem;
+            width: 50%;
+            border: 1px solid rgba($color-basic-accent, 0.25);
+            border-radius: $spacing-4;
+
+            .buttonIconLeft {
+                position: absolute;
+                margin-right: calc(50% - 5.6rem);
+                opacity: 0.5;
+            }
+
+            .buttonIconRight {
+                position: absolute;
+                margin-left: calc(50% - 5.6rem);
+                opacity: 0.5;
+            }
+
+            &:hover {
+                background-color: rgba($color-basic-accent, 0.05);
+                border: 1px solid rgba($color-basic-accent, 0.5);
+
+                .buttonIconLeft,
+                .buttonIconRight {
+                    opacity: 1;
+                }
+            }
+
+            &.active {
+                background-color: rgba($color-basic-accent, 1);
+
+                span {
+                    color: $color-basic-white;
+                }
+
+                .buttonIconLeft {
+                    color: $color-basic-white;
+                    opacity: 1;
+                }
+
+                .buttonIconRight {
+                    color: $color-basic-white;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+
+
+    button {
+        height: 4.8rem;
+        width: 100%;
+        border: 1px solid rgba($color-basic-accent, 0.25);
+        border-radius: $spacing-4;
+
+        &:hover {
+            background-color: rgba($color-basic-accent, 0.05);
+            border: 1px solid rgba($color-basic-accent, 0.5);
+        }
+
+        &.active {
+            background-color: rgba($color-basic-accent, 1);
+
+            span {
+                color: $color-basic-white;
+            }
+        }
+    }
+}
+
+
+
+.resultCard {
+    margin-top: $spacing-16;
+    padding-top: $spacing-16;
+    padding-bottom: $spacing-40;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color-basic-beige;
+    border: 1px solid rgba($color-basic-accent, 0.1);
+
+    .link {
+        width: calc(50% - #{calc($spacing-4 / 2)});
+        min-width: 16rem;
+        text-decoration: none;
+        box-shadow: 0 $spacing-2 0 $spacing-2 rgba($color-basic-accent, 0.1);
+    }
+}
+
+.result {
+    padding-top: $spacing-24;
+
+    button {
+        margin-top: $spacing-12;
+        height: 4.8rem;
+        width: 100%;
+        border: 1px solid rgba($color-basic-accent, 0.25);
+        border-radius: $spacing-4;
+
+        &:hover {
+            border: 1px solid rgba($color-basic-accent, 0.5);
+        }
+    }
 }

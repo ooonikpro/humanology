@@ -102,6 +102,7 @@
         height: 4.8rem;
         width: 100%;
         border: 1px solid rgba($color-basic-accent, 0.25);
+        border-radius: $spacing-4;
 
         &:hover {
             border: 1px solid rgba($color-basic-accent, 0.5);
