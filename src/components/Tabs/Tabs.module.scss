@@ -11,12 +11,17 @@
         height: 6.4rem;
         padding: $spacing-4;
         border-radius: $spacing-2;
+        scrollbar-width: none;
 
         .horizontal-scrollbar {
-            height: calc(5.6rem + 17px);
+            height: calc(5.6rem);
 
-            @media screen and (min-width: 360px) {
-                height: calc(5.6rem);
+            &::-webkit-scrollbar {
+                width: 0;
+            }
+
+            @media only screen and (min-width : 480px) {
+                height: calc(5.6rem + 17px);
             }
         }
     }
@@ -27,15 +32,18 @@
     background-color: var(--color-basic-beige);
     display: flex;
     width: 100%;
-    height: calc(100% + 17px);
-
-    @media screen and (min-width: 360px) {
-        height: calc(100%);
-    }
-
+    height: calc(100%);
     overflow-x: scroll;
     overflow-y: hidden;
     column-gap: $spacing-4;
     scroll-behavior: smooth;
+    scrollbar-width: none;
 
+    @media only screen and (min-width : 480px) {
+        height: calc(100% + 17px);
+    }
+
+    &::-webkit-scrollbar {
+        width: 0;
+    }
 }

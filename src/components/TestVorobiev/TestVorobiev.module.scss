@@ -2,7 +2,6 @@
 
 .test {
     margin-top: $spacing-20;
-    height: calc(80%);
 }
 
 .nextPrevButtons {
@@ -53,15 +52,6 @@
             margin-bottom: 8.8rem;
             opacity: 0.5;
         }
-    }
-
-    button:first-child:after {
-        content: '';
-        position: absolute;
-        width: calc(100% - $spacing-16);
-        border-bottom: 1px solid rgba($color-basic-accent, 0.1);
-        top: 44rem;
-
     }
 
     button:hover {

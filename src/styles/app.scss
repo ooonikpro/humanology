@@ -54,10 +54,16 @@ body {
     margin: auto;
     height: 100vh;
     overflow: hidden;
+    padding-bottom: 12.8rem;
 
-    @media screen and (min-width: 360px) {
-        padding-bottom: 16rem;
+    @media only screen and (min-width : 480px) {
+        padding-bottom: $spacing-8;
     }
+
+    @include fullscreen() {
+        padding-bottom: 0;
+    }
+
 }
 
 .app-content {
