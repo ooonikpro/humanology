@@ -28,11 +28,13 @@
     background-color: var(--color-basic-beige);
 }
 
-html, body {
+html,
+body {
     overflow: hidden;
 }
 
 * {
+
     &,
     &::before,
     &::after {
@@ -52,7 +54,10 @@ html, body {
     margin: auto;
     height: 100vh;
     overflow: hidden;
-    padding-bottom: calc(#{$spacing-4} - #{$spacing-8});
+
+    @media screen and (min-width: 360px) {
+        padding-bottom: 16rem;
+    }
 }
 
 .app-content {

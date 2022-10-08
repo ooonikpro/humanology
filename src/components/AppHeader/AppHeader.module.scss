@@ -60,17 +60,6 @@
     }
 }
 
-.horizontalScrollbar {
-    align-self: flex-start;
-    display: flex;
-    width: 100%;
-    height: calc(8.8rem + 17px);
-    overflow-x: scroll;
-    overflow-y: hidden;
-    column-gap: $spacing-4;
-    scroll-behavior: smooth;
-}
-
 .pair-icons {
     width: fit-content;
     display: flex;

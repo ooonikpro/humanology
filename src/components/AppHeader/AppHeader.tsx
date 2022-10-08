@@ -35,9 +35,7 @@ export const AppHeader = () => {
             </header>
 
             <nav className={styles.tabs}>
-                <div className={styles.horizontalScrollbar}>
-                    <MainTabs />
-                </div>
+                <MainTabs />
             </nav>
         </>
     );

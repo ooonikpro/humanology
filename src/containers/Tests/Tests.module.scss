@@ -17,10 +17,10 @@
 .buttonBlock {
     margin-top: $spacing-8;
     margin-bottom: $spacing-16;
-    padding: $spacing-8;
-    background: rgba($color-basic-accent, 0.1);
+    padding: $spacing-4;
+    background: rgba($color-basic-accent, 0.05);
 
     div {
-        box-shadow: 0 0.1rem 0 0.1rem rgba($color-basic-accent, 0.1);
+        box-shadow: 0 0.1rem 0 0 rgba($color-basic-accent, 0.1);
     }
 }
