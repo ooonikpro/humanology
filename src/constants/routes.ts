@@ -25,6 +25,7 @@ export const ROUTES = {
     METABOLISM: '/information-metabolism',
     IDENTIFY: '/identify',
     TESTS: '/tests',
+    TEST_EXPRESS: '/tests/meged-ovcharova',
     TEST_SIMPLE: '/tests/vorobiev',
     TEST_COMPLEX: '/tests/filatova',
     WHAT_IS_SOCIONICS: '/what',

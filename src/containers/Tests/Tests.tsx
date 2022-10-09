@@ -29,6 +29,20 @@ export default function Tests() {
                 Наибольшую достоверность даёт применение разных методов и независимое определение типа несколькими людьми.
             </Text>
 
+            <PageBreak>Экспресс-тест Мегедь-Овчарова</PageBreak>
+
+            <Text tag="p" size="h6" color="accent" className={styles.text}>
+                Один из самых древних соционических тестов на русском языке.
+            </Text>
+
+            <Text tag="p" className={styles.text}>
+                Состоит из 4 вопросов по основным дихотомиям.
+            </Text>
+
+            <div className={styles.buttonBlock}>
+                <BlockLink path="/tests/meged-ovcharova" label="Начать экспресс-тест Мегедь-Овчарова" icon="TestSimple" />
+            </div>
+
             <PageBreak>Тест Воробьева</PageBreak>
 
             <Text tag="p" size="h6" color="accent" className={styles.text}>
@@ -61,12 +75,14 @@ export default function Tests() {
                 Cоздан Екатериной Филатовой и содержит 40 вопросов.
             </Text>
 
+            <Text tag="p" className={styles.text}>
+                Лично я сомневаюсь в достоверности любых тестов, но этот, судя по отзывам, вроде является самым точным.
+            </Text>
+
             <div className={styles.buttonBlock}>
                 <BlockLink path="/tests/filatova" label="Начать тест Филатовой" icon="TestComplex" />
             </div>
-            <Text tag="p" className={styles.text}>
-                <i>Лично я сомневаюсь в достоверности любых тестов, но этот по отзывам вроде является самым точным.</i>
-            </Text>
+
             <EndPoint />
         </WhiteCard>
     );

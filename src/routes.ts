@@ -21,6 +21,7 @@ import Identify from './containers/Identify';
 import Tests from './containers/Tests';
 import TestSimple from './containers/TestSimple';
 import TestComplex from './containers/TestComplex';
+import TestExpress from './containers/TestExpress';
 import WhatIsSocionics from './containers/WhatIsSocionics';
 import Disclaimer from './containers/Disclaimer';
 import History from './containers/History';
@@ -144,6 +145,10 @@ export const routes: Route[] = [
     {
         path: ROUTES.TESTS,
         container: Tests,
+    },
+    {
+        path: ROUTES.TEST_EXPRESS,
+        container: TestExpress,
     },
     {
         path: ROUTES.TEST_SIMPLE,
