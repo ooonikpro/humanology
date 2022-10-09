@@ -14,13 +14,25 @@
     }
 }
 
-.buttonBlock {
-    margin-top: $spacing-8;
-    margin-bottom: $spacing-16;
-    padding: $spacing-4;
-    background: rgba($color-basic-accent, 0.05);
+.test {
+    padding: $spacing-8;
+    border: 1px solid rgba($color-basic-accent, 0.1);
+    margin-top: $spacing-16;
 
-    div {
-        box-shadow: 0 0.1rem 0 0 rgba($color-basic-accent, 0.1);
+    .testTitle {
+        margin-top: $spacing-4;
+        padding-bottom: $spacing-8;
+        border-bottom: 1px solid rgba($color-basic-accent, 0.1);
+    }
+
+    .buttonBlock {
+        margin: -$spacing-8;
+        margin-top: $spacing-12;
+        padding: $spacing-8;
+        background: rgba($color-basic-accent, 0.05);
+
+        div {
+            box-shadow: 0 0.1rem 0 0 rgba($color-basic-accent, 0.1);
+        }
     }
 }
