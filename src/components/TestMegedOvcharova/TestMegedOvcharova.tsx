@@ -109,7 +109,7 @@ export const TestMegedOvcharova = () => {
                             <button onClick={prev}>
                                 <div className={styles.pair}>
                                     <Icon name="ArrowLeftSquare" size={20} color="accent" />
-                                    <Text tag="span" size="body" color="accent">Предыдущий</Text>
+                                    <Text tag="span" size="body" color="accent">Предыдущая</Text>
                                 </div>
                             </button>
                         )
@@ -123,7 +123,7 @@ export const TestMegedOvcharova = () => {
                         !isFinished && isAvailableNext && (
                             <button onClick={next}>
                                 <div className={styles.pair}>
-                                    <Text tag="span" size="body" color="accent">Следующий</Text>
+                                    <Text tag="span" size="body" color="accent">Следующая</Text>
                                     <Icon name="ArrowRightSquare" size={20} color="accent" />
                                 </div>
                             </button>
@@ -134,8 +134,8 @@ export const TestMegedOvcharova = () => {
 
             {
                 !isFinished && <div className={styles.stepCounter}>
-                    <Text tag="p" size="body" color="accent">Выберите подходящее для вас</Text>
-                    <Text tag="p" size="body" color="grey">Вопрос {step + 1} из {MEGED_OVCHAROVA.length}</Text>
+                    <Text tag="p" size="body" color="accent">Выберите подходящее утверждение</Text>
+                    <Text tag="p" size="body" color="grey">Пара {step + 1} из {MEGED_OVCHAROVA.length}</Text>
                 </div>
             }
 
