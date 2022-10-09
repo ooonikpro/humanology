@@ -21,7 +21,7 @@ export const TestMegedOvcharova = () => {
         let letter3 = 'T';
         let letter4 = 'J';
         let letter2 = 'S';
-        let letter1 = 'E';
+        let letter1 = 'I';
 
         if (answers[0] == 1) {
             letter4 = 'P';
@@ -36,7 +36,7 @@ export const TestMegedOvcharova = () => {
         }
 
         if (answers[3] == 1) {
-            letter1 = 'I';
+            letter1 = 'E';
         }
 
         const SociotypeID = [letter1, letter2, letter3, letter4].join('');
