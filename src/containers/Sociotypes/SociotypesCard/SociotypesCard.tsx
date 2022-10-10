@@ -11,7 +11,8 @@ import { ListOptions } from '../../../components/ListOptions';
 import { GroupsAndQuadsList } from '../../../components/GroupsAndQuadsList';
 import { EndPoint } from '../../../components/EndPoint';
 import { GroupQuadras } from '../../../modals/GroupQuadras';
-import { YungDichotomies } from 'src/modals/YungDichotomies';
+import { YungDichotomies } from '../../../modals/YungDichotomies';
+import { ReininSigns } from '../../../modals/ReininSigns';
 
 const getRow = (
     options: Array<string[]>,
@@ -58,7 +59,12 @@ export default function SociotypesCard() {
 
     const [
         isShowYungsDichotomiesModal,
-        setisShowYungsDichotomieModal,
+        setisShowYungsDichotomiesModal,
+    ] = useState(false);
+
+    const [
+        isShowReininSignsModal,
+        setisShowReininSignsModal,
     ] = useState(false);
 
     const { sociotypeProps: intertypeProps } = useSociotype();
@@ -86,14 +92,14 @@ export default function SociotypesCard() {
                     className={styles.list}
                 />
             </WhiteCard>
-            <WhiteCard color="white" onClick={() => setisShowYungsDichotomieModal(true)} className={styles.yungsDichotomies}>
+            <WhiteCard color="white" onClick={() => setisShowYungsDichotomiesModal(true)} className={styles.yungsDichotomies}>
                 <TitleInfo icon className={styles.title}>Дихотомии Юнга</TitleInfo>
                 <ListOptions
                     options={dichotomyYungs}
                     className={styles.list}
                 />
             </WhiteCard>
-            <WhiteCard color="white">
+            <WhiteCard color="white" onClick={() => setisShowReininSignsModal(true)} className={styles.reininSigns}>
                 <TitleInfo icon className={styles.title}>Признаки Рейнина</TitleInfo>
                 {reininList.map((list, $i) => (
                     <ListOptions
@@ -105,7 +111,8 @@ export default function SociotypesCard() {
                 <EndPoint />
             </WhiteCard>
             <GroupQuadras isOpen={isShowGroupQuadrasModal} onClose={() => setisShowGroupQuadrasModal(false)} />
-            <YungDichotomies isOpen={isShowYungsDichotomiesModal} onClose={() => setisShowYungsDichotomieModal(false)} />
+            <YungDichotomies isOpen={isShowYungsDichotomiesModal} onClose={() => setisShowYungsDichotomiesModal(false)} />
+            <ReininSigns isOpen={isShowReininSignsModal} onClose={() => setisShowReininSignsModal(false)} />
         </div>
     );
 }

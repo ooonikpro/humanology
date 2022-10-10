@@ -13,7 +13,7 @@ export default function Other() {
         <AppScrollbar>
             <WhiteCard color="white" className={styles.root}>
                 <PageTitle iconName='SquareDots'>Прочее</PageTitle>
-                <AuthorLine text='Пока нечего читать' iconName='Time'>Разные</AuthorLine>
+                <AuthorLine text='Разные статьи' iconName='Document'>Разные авторы</AuthorLine>
                 <Text tag="p" className={styles.text}>
                     Интересные статьи уже ниже. Будут добавлятся еще.
                 </Text>
