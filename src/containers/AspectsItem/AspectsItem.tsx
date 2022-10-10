@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import styles from './AspectsItem.module.scss';
 import { WhiteCard } from '../../components/WhiteCard';
+import { AppScrollbar } from '../../components/AppScrollbar';
 
 export default function AspectsItem() {
     const { aspectName } = useParams();
@@ -10,8 +11,10 @@ export default function AspectsItem() {
     const Content = require(`./Content/${aspectName}.tsx`).default;
 
     return (
-        <WhiteCard color="white" className={styles.root}>
-            <Content />
-        </WhiteCard>
+        <AppScrollbar>
+            <WhiteCard color="white" className={styles.root}>
+                <Content />
+            </WhiteCard>
+        </AppScrollbar>
     );
 }

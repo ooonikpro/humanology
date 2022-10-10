@@ -100,7 +100,7 @@ export default function Start() {
                 <div className={styles.linkblock}>
                     <BlockLink path="/tests" label="Тесты" icon="PresentationChart" />
                     <BlockLink path="/quadras/compatibility" label="Сексуальные программы квадр" icon="Dildo" />
-                    <BlockLink path="/psychotypes/compatibility" label="Совместимость психосексуальных групп" icon="Cockring" />
+                    <BlockLink path="/clubs/compatibility" label="Совместимость психосексуальных групп" icon="Cockring" />
                 </div>
 
                 <PageBreak>Подписывайтесь и читайте</PageBreak>

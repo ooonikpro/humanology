@@ -20,7 +20,7 @@ export default function Other() {
 
                 <div className={styles.linkblock}>
                     <BlockLink path="/quadras/compatibility" label="Сексуальные программы квадр" icon="Dildo" />
-                    <BlockLink path="/psychotypes/compatibility" label="Совместимость психосексуальных групп" icon="Cockring" />
+                    <BlockLink path="/clubs/compatibility" label="Совместимость психосексуальных групп" icon="Cockring" />
                 </div>
                 <EndPoint />
             </WhiteCard>

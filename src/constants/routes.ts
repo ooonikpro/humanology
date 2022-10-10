@@ -48,7 +48,7 @@ export const ROUTES = {
     CLUBS: '/clubs',
     CLUBS_ITEM: (clubName = ':clubName') => `/clubs/${clubName}`,
     CLUBS_PSYCHOTYPE: (psychotypeName = ':psychotypeName') => `/psychotypes/${psychotypeName}`,
-    PSYCHOTYPES_COMPATIBILITY: '/psychotypes/compatibility',
+    PSYCHOTYPES_COMPATIBILITY: '/clubs/compatibility',
     REININ: '/reinin',
     REININ_SIGNS: (reininSign = ':reininSign') => `/reinin/${reininSign}`,
     YUNG: '/yungs',

@@ -77,7 +77,7 @@ export default function Clubs() {
 
 
                 <div className={styles.linkblock}>
-                    <BlockLink path="/psychotypes/compatibility" label="Совместимость психосексуальных групп" icon="Cockring" />
+                    <BlockLink path="/clubs/compatibility" label="Совместимость психосексуальных групп" icon="Cockring" />
                 </div>
 
                 <Text tag="p" className={styles.text}>
