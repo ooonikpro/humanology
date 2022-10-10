@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import styles from './Sociotypes.module.scss';
-import { Outlet } from 'react-router-dom';
 import { useSociotype } from '../../hooks/useSociotype';
 import { SocietyCard } from '../../components/SocietyCard';
 import { SociotypeTabs } from '../../components/Tabs/SociotypeTabs';
@@ -19,12 +18,12 @@ export default function Sociotypes() {
     ].filter(Boolean).join(' ');
 
     useEffect(() => {
-        document.documentElement.style.cssText=inlineStyles;
+        document.documentElement.style.cssText = inlineStyles;
     }, [intertypeProps]);
 
     return (
         <AppScrollbar className={styles.root}>
-            <SocietyCard {...intertypeProps} mini={!isActiveRouteSociatypeCard}/>
+            <SocietyCard {...intertypeProps} mini={!isActiveRouteSociatypeCard} />
 
             <WhiteCard className={whiteCardClasses}>
                 <FunctionalCardGroup

@@ -145,7 +145,7 @@ export namespace Socionics {
         | 'positivist'
         | 'negativist'
         | 'questim'
-        | 'declamtim'
+        | 'declatim'
         | 'tactician'
         | 'strategist'
         | 'constructivist'

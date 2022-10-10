@@ -9,7 +9,7 @@ import { Socionics } from 'src/types';
 import { ROUTES } from 'src/constants/routes';
 
 export type DetailCardProps = {
-    type: 'function' | 'aspect' | 'block' | 'ring' | 'quadra' | 'suit' | 'role' | 'club' | 'psychotype' | 'mindset' | 'intertype' | 'yung'
+    type: 'function' | 'aspect' | 'block' | 'ring' | 'quadra' | 'suit' | 'role' | 'club' | 'psychotype' | 'mindset' | 'intertype' | 'yung' | 'reinin'
     socionicFn?: Socionics.Function;
     aspect?: Socionics.Aspect;
     quadra?: Socionics.Quadras;
@@ -22,6 +22,7 @@ export type DetailCardProps = {
     ring?: 'mental' | 'vital'
     block?: 'ego' | 'superego' | 'id' | 'superid'
     yung?: Socionics.Dichotomy;
+    reinin?: Socionics.ReininSign;
     className?: string;
     title: string;
     alias?: Array<string>;
@@ -46,6 +47,7 @@ export const DetailCard: React.FC<DetailCardProps> = ({
     ring,
     block,
     yung,
+    reinin,
     title,
     alias,
     subtitle,
@@ -119,6 +121,10 @@ export const DetailCard: React.FC<DetailCardProps> = ({
 
         if (type === 'yung') {
             url = ROUTES.DICHOTOMIES_YUNG(yung);
+        }
+
+        if (type === 'reinin') {
+            url = ROUTES.REININ_SIGNS(reinin);
         }
 
         if (role === 'king') {

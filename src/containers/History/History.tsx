@@ -7,6 +7,7 @@ import { Outlet, useNavigate } from 'react-router-dom';
 import { ROUTES } from '../../constants/routes';
 import { useIsActiveRoute } from '../../hooks';
 import { PageTitle } from '../../components/PageTitle';
+import { AppScrollbar } from '../../components/AppScrollbar';
 
 export default function History() {
     const isActiveRoute = useIsActiveRoute(ROUTES.HISTORY, true);
@@ -17,13 +18,15 @@ export default function History() {
     }, [isActiveRoute]);
 
     return (
-        <WhiteCard color="white" className={styles.root}>
-            <PageTitle iconName='SquareTime'>История</PageTitle>
-            <div className={styles.minitabs}>
-                <MiniTabsHistory />
-            </div>
-            <Outlet />
-            <EndPoint />
-        </WhiteCard>
+        <AppScrollbar>
+            <WhiteCard color="white" className={styles.root}>
+                <PageTitle iconName='SquareTime'>История</PageTitle>
+                <div className={styles.minitabs}>
+                    <MiniTabsHistory />
+                </div>
+                <Outlet />
+                <EndPoint />
+            </WhiteCard>
+        </AppScrollbar>
     );
 }

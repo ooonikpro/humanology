@@ -37,7 +37,7 @@ const Dichotomy: Array<Socionics.Dichotomy[]> = [
 const reininRows: Array<Socionics.ReininSign[]> = [
     ['static', 'dynamic'],
     ['positivist', 'negativist'],
-    ['questim', 'declamtim'],
+    ['questim', 'declatim'],
     ['tactician', 'strategist'],
     ['constructivist', 'emotivist'],
 

@@ -7,7 +7,7 @@
 .functionalBlock {
     @include transition(all);
     background-color: $color-basic-white;
-    margin-top: 0;
+    margin-top: $spacing-4;
     margin-bottom: 0;
     height: 356px;
 

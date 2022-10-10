@@ -1,14 +1,11 @@
 @import '../../styles/utils.scss';
 
 .root {
-    display: flex;
-    justify-content: space-around;
     position: relative;
     width: 100%;
     min-height: 4.8rem;
-    opacity: 0.5;
-    align-items: center;
-    align-content: center;
+    margin-top: $spacing-20;
+    margin-bottom: $spacing-20;
 }
 
 .icon {

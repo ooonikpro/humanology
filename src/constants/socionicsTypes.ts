@@ -107,7 +107,7 @@ export const SOCIOTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         reinin: [
             'dynamic',
             'negativist',
-            'declamtim',
+            'declatim',
             'strategist',
             'emotivist',
 
@@ -177,7 +177,7 @@ export const SOCIOTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         reinin: [
             'dynamic',
             'positivist',
-            'declamtim',
+            'declatim',
             'tactician',
             'constructivist',
 
@@ -315,7 +315,7 @@ export const SOCIOTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         reinin: [
             'static',
             'positivist',
-            'declamtim',
+            'declatim',
             'tactician',
             'emotivist',
 
@@ -522,7 +522,7 @@ export const SOCIOTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         reinin: [
             'static',
             'negativist',
-            'declamtim',
+            'declatim',
             'strategist',
             'constructivist',
 
@@ -591,7 +591,7 @@ export const SOCIOTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         reinin: [
             'dynamic',
             'negativist',
-            'declamtim',
+            'declatim',
             'tactician',
             'constructivist',
 
@@ -798,7 +798,7 @@ export const SOCIOTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         reinin: [
             'dynamic',
             'positivist',
-            'declamtim',
+            'declatim',
             'strategist',
             'emotivist',
 
@@ -936,7 +936,7 @@ export const SOCIOTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         reinin: [
             'static',
             'positivist',
-            'declamtim',
+            'declatim',
             'strategist',
             'constructivist',
 
@@ -1005,7 +1005,7 @@ export const SOCIOTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         reinin: [
             'static',
             'negativist',
-            'declamtim',
+            'declatim',
             'tactician',
             'emotivist',
 

@@ -9,9 +9,10 @@ interface Props {
 
 export const EndPoint: React.FC<Props> = ({ className }) => {
     return (
-        <div className={className}>
+        <div className={styles.root}>
             <Icon className={styles.icon} name="Logo" size={24} color="accent" />
             <Icon name="IconWaves" color="accent" size={72} className={styles.iconWaves} />
+            <span> </span>
         </div>
     );
 };
