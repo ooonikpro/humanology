@@ -12,6 +12,7 @@ import { PageTitle } from '../../components/PageTitle';
 import { WhiteCard } from '../../components/WhiteCard';
 import { Icon } from '../../components/Icon';
 import { Text } from '../../components/Text';
+import { AppScrollbar } from 'src/components/AppScrollbar';
 
 const intertypes = (Object.keys(SOCIOTYPES) as Socionics.SocionicsType[]).map(
     (key) => ({
@@ -84,7 +85,7 @@ export default function Home() {
     const goTo = (route: string) => () => navigate(route);
 
     return (
-        <>
+        <AppScrollbar>
             <WhiteCard color="beige" className={styles.root}>
                 <PageTitle iconName='Square1'>Социотипы</PageTitle>
                 <div className={styles.menuList}>
@@ -104,6 +105,6 @@ export default function Home() {
                 {renderGroups}
                 <EndPoint />
             </div>
-        </>
+        </AppScrollbar>
     );
 }

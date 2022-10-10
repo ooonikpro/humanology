@@ -10,6 +10,7 @@ import { ROUTES } from '../../constants/routes';
 import { AuthorLine } from '../../components/AuthorLine';
 import { useNavigate } from 'react-router-dom';
 import { PageBreak } from '../../components/PageBreak';
+import { AppScrollbar } from 'src/components/AppScrollbar';
 
 interface MenuItemProps {
     children: React.ReactNode;
@@ -50,7 +51,7 @@ export default function Start() {
     const goTo = (route: string) => () => navigate(route);
 
     return (
-        <>
+        <AppScrollbar>
             <WhiteCard color="beige" className={styles.root}>
                 <PageTitle iconName='Square0'>Начало</PageTitle>
                 <AuthorLine text="Читать меньше минуты" iconName="Time">äлёша</AuthorLine>
@@ -114,6 +115,6 @@ export default function Start() {
                 </div>
                 <EndPoint />
             </WhiteCard>
-        </>
+        </AppScrollbar>
     );
 }

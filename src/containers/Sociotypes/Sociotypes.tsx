@@ -7,6 +7,7 @@ import { SociotypeTabs } from '../../components/Tabs/SociotypeTabs';
 import { WhiteCard } from '../../components/WhiteCard';
 import { FunctionalCardGroup } from '../../components/FunctionalCardGroup';
 import { useIsSociatypeCardRoute } from '../../hooks/useIsSociatypeCardRoute';
+import { AppScrollbar } from 'src/components/AppScrollbar';
 
 export default function Sociotypes() {
     const { sociotypeProps: intertypeProps, styles: inlineStyles } = useSociotype();
@@ -22,7 +23,7 @@ export default function Sociotypes() {
     }, [intertypeProps]);
 
     return (
-        <div className={styles.root}>
+        <AppScrollbar className={styles.root}>
             <SocietyCard {...intertypeProps} mini={!isActiveRouteSociatypeCard}/>
 
             <WhiteCard className={whiteCardClasses}>
@@ -34,8 +35,6 @@ export default function Sociotypes() {
             </WhiteCard>
 
             <SociotypeTabs />
-
-            <Outlet />
-        </div>
+        </AppScrollbar>
     );
 }

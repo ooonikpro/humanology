@@ -13,16 +13,40 @@ export const TestFilatova = () => {
     const [step, setStep] = useState(0);
     const [isFinished, setIsFinished] = useState(false);
     const [isDisabled, setIsDisabled] = useState(false);
-    const [answers, setAnswer] = useState<number[]>([]);
+    const [answers, setAnswer] = useState<Array<number | undefined>>([]);
 
     console.log('ANSWERS >>', answers);
 
     const testResult = () => {
+        const numbersA = [0,4, 8,12,16,20,24,28,32,36];
+        const numbersB = [1,5, 9,13,17,21,25,29,33,37];
+        const numbersC = [2,6,10,14,18,22,26,30,34,38];
+        const numbersD = [3,7,11,15,19,23,27,31,35,39];
 
-        const a = answers[0] + answers[4] + answers[8] + answers[12] + answers[16] + answers[20] + answers[24] + answers[28] + answers[32] + answers[36];
-        const b = answers[1] + answers[5] + answers[9] + answers[13] + answers[17] + answers[21] + answers[25] + answers[29] + answers[33] + answers[37];
-        const c = answers[2] + answers[6] + answers[10] + answers[14] + answers[18] + answers[22] + answers[26] + answers[30] + answers[34] + answers[38];
-        const d = answers[3] + answers[7] + answers[11] + answers[15] + answers[19] + answers[23] + answers[27] + answers[31] + answers[35] + answers[39];
+        const { a, b, c, d } = answers.reduce((res, answer = 0, i) => {
+            if (numbersA.includes(i)) {
+                res.a += answer;
+            }
+
+            if (numbersB.includes(i)) {
+                res.b += answer;
+            }
+
+            if (numbersC.includes(i)) {
+                res.c += answer;
+            }
+
+            if (numbersD.includes(i)) {
+                res.d += answer;
+            }
+
+            return res;
+        }, {
+            a: 0,
+            b: 0,
+            c: 0,
+            d: 0,
+        });
 
         let letter3 = 'F';
         let letter4 = 'J';
@@ -45,8 +69,12 @@ export const TestFilatova = () => {
             letter2 = 'N';
         }
 
-        const SociotypeID = [letter1, letter2, letter3, letter4].join('');
-        const id = SociotypeID as Socionics.SocionicsType;
+        const id = [
+            letter1,
+            letter2,
+            letter3,
+            letter4,
+        ].join('') as Socionics.SocionicsType;
 
         return (
             <div className={styles.resultCard}>
@@ -57,13 +85,14 @@ export const TestFilatova = () => {
                     По результатам теста
                 </Text>
                 <Link
-                    to={`${ROUTES.SOCIOTYPES(SociotypeID)}/card`}
+                    to={`${ROUTES.SOCIOTYPES(id)}/card`}
                     className={styles.link} >
                     <SocietyCardMini id={id} className={styles.sociotype} />
                 </Link>
             </div>
         );
     };
+
 
     const isAvailablePrev = step >= 1;
     const isAvailableNext = step < FILATOVA.length - 1;
@@ -84,7 +113,7 @@ export const TestFilatova = () => {
     };
 
     const addAnswer = (answer: number) => () => {
-        setAnswer((res: number[]) => {
+        setAnswer((res) => {
             res[step] = answer;
 
             return res;

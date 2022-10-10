@@ -6,7 +6,7 @@
     text-align: left;
     justify-content: left;
     align-items: flex-end;
-    height: 100%;
+    height: calc(100% + 17px);
     background-color: var(--color-basic-white);
     border-radius: 2px;
     opacity: 0.5;

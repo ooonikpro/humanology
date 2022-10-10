@@ -1,24 +1,17 @@
 @import '../../styles/utils.scss';
 
 .root {
+    position: sticky;
     width: 100%;
     max-width: $app-max-width;
+    height: $size-header-height;
     background-color: var(--color-basic-beige);
     color: var(--color-basic-black);
-    padding: $spacing-8 0;
-}
-
-.headerTop {
-    @extend .root;
-    position: sticky;
     top: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: $size-header-section-height;
-    padding-bottom: $spacing-8;
-    margin-bottom: $spacing-4;
     background-color: $color-basic-beige;
     border-bottom: 0.1rem solid rgba($color-basic-accent, 0.1);
     color: inherit;
@@ -30,8 +23,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: $size-header-section-height;
-    height: $size-header-section-height;
+    width: $size-header-height;
+    height: $size-header-height;
     opacity: 0.5;
 }
 
@@ -72,10 +65,4 @@
     display: flex;
     flex-direction: row;
     gap: $spacing-2;
-}
-
-.tabs {
-    overflow: hidden;
-    height: 8.8rem;
-    margin-bottom: -$spacing-4;
 }

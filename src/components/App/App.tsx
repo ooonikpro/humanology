@@ -1,4 +1,4 @@
-import React, { createContext, useState } from 'react';
+import React, { createContext, useEffect, useState } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { AppHeader } from '../AppHeader';
 import { AppContent } from '../AppContent';
@@ -29,6 +29,14 @@ export const App = () => {
             toggle: () => setMenuIsOpen((prev: boolean) => !prev),
         }
     };
+
+    useEffect(() => {
+        window.addEventListener('scroll', (e) => {
+            e.preventDefault();
+            e.stopImmediatePropagation();
+            return false;
+        });
+    }, []);
 
     return (
         <AppContext.Provider value={ctxValue}>

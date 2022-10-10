@@ -8,6 +8,7 @@ import { Portrait } from '../Portrait';
 import { Socionics } from 'src/types';
 import { useMenuCtx } from 'src/hooks/useMenuCtx';
 import data from './data';
+import { AppScrollbar } from '../AppScrollbar';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const getRandomIndex = (arr: Array<any>) => arr[Math.floor(Math.random() * arr.length)];
@@ -134,7 +135,7 @@ export const AppMenu = () => {
 
     return (
         <div className={rootClasses}>
-            <div className={styles.container}>
+            <AppScrollbar hideTabs className={styles.container}>
                 <div className={styles.menuList}>
 
                     <MenuItem onClick={goTo(ROUTES.START)}>
@@ -273,7 +274,7 @@ export const AppMenu = () => {
                         <Text size="large" color="accent" className={styles.text}>Прочее</Text>
                     </MenuItem>
                 </div>
-            </div>
+            </AppScrollbar>
         </div>
     );
 };

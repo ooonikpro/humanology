@@ -44,8 +44,7 @@ export const TestVorobiev = () => {
             letter1 = 'I';
         }
 
-        const SociotypeID = [letter1, letter2, letter3, letter4].join('');
-        const id = SociotypeID as Socionics.SocionicsType;
+        const id = [letter1, letter2, letter3, letter4].join('') as Socionics.SocionicsType;
 
         return (
             <div className={styles.resultCard}>
@@ -56,7 +55,7 @@ export const TestVorobiev = () => {
                     По результатам теста
                 </Text>
                 <Link
-                    to={`${ROUTES.SOCIOTYPES(SociotypeID)}/card`}
+                    to={`${ROUTES.SOCIOTYPES(id)}/card`}
                     className={styles.link} >
                     <SocietyCardMini id={id} className={styles.sociotype} />
                 </Link>

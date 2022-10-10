@@ -23,24 +23,23 @@ export const TestMegedOvcharova = () => {
         let letter2 = 'S';
         let letter1 = 'I';
 
-        if (answers[0] == 1) {
+        if (answers[0] === 1) {
             letter4 = 'P';
         }
 
-        if (answers[1] == 1) {
+        if (answers[1] === 1) {
             letter3 = 'F';
         }
 
-        if (answers[2] == 1) {
+        if (answers[2] === 1) {
             letter2 = 'N';
         }
 
-        if (answers[3] == 1) {
+        if (answers[3] === 1) {
             letter1 = 'E';
         }
 
-        const SociotypeID = [letter1, letter2, letter3, letter4].join('');
-        const id = SociotypeID as Socionics.SocionicsType;
+        const id = [letter1, letter2, letter3, letter4].join('') as Socionics.SocionicsType;
 
         return (
             <div className={styles.resultCard}>
@@ -51,7 +50,7 @@ export const TestMegedOvcharova = () => {
                     По результатам теста
                 </Text>
                 <Link
-                    to={`${ROUTES.SOCIOTYPES(SociotypeID)}/card`}
+                    to={`${ROUTES.SOCIOTYPES(id)}/card`}
                     className={styles.link} >
                     <SocietyCardMini id={id} className={styles.sociotype} />
                 </Link>

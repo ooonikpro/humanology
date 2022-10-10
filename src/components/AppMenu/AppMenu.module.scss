@@ -3,7 +3,7 @@
 .root {
     @include transition(all);
     position: absolute;
-    top: $size-header-section-height;
+    top: $size-header-height;
     left: 0;
     right: 0;
     bottom: 0;
@@ -23,10 +23,9 @@
 }
 
 .container {
-    padding: $spacing-4 $spacing-8 0 $spacing-8;
-    height: 100%;
-    overflow: auto;
-    scroll-behavior: smooth;
+    padding-top: $spacing-4;
+    padding-left: $spacing-8;
+    padding-right: $spacing-8;
 }
 
 .menuList {

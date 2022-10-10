@@ -22,13 +22,15 @@ export const Tabs: React.FC<Props> = ({ items, small, className }) => {
     return (
         <div className={[styles.root, small && styles.small, className].filter(Boolean).join(' ')}>
             <div ref={ref} className={styles['horizontal-scrollbar']}>
-                {useMemo(() => items.map((item, key) => {
-                    return <Tab {...item}
-                        onActive={setScrollLeft}
-                        key={key}
-                        icon={item.icon ? getIconName(item.icon) : undefined}
-                    />;
-                }), [])}
+                <div className={styles.content}>
+                    {useMemo(() => items.map((item, key) => {
+                        return <Tab {...item}
+                            onActive={setScrollLeft}
+                            key={key}
+                            icon={item.icon ? getIconName(item.icon) : undefined}
+                        />;
+                    }), [])}
+                </div>
             </div>
         </div>
     );
