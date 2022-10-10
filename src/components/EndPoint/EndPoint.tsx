@@ -8,8 +8,14 @@ interface Props {
 }
 
 export const EndPoint: React.FC<Props> = ({ className }) => {
+
+    const classes = [
+        styles.root,
+        className,
+    ].join(' ');
+
     return (
-        <div className={styles.root}>
+        <div className={classes}>
             <Icon className={styles.icon} name="Logo" size={24} color="accent" />
             <Icon name="IconWaves" color="accent" size={72} className={styles.iconWaves} />
             <span> </span>

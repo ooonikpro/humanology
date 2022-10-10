@@ -71,6 +71,11 @@
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
+
+    &::-webkit-scrollbar {
+        width: 0;
+        opacity: 0;
+    }
 }
 
 .drag {
