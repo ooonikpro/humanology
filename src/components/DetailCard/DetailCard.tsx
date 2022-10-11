@@ -208,6 +208,10 @@ export const DetailCard: React.FC<DetailCardProps> = ({
             return <Icon name={getIconName(yung)} size={64} className={styles.detailCardIcon} />;
         }
 
+        if (reinin) {
+            return <Icon name={getIconName(reinin)} size={64} className={styles.detailCardIcon} />;
+        }
+
         return null;
     };
 

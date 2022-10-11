@@ -50,7 +50,7 @@ export const ROUTES = {
     CLUBS_PSYCHOTYPE: (psychotypeName = ':psychotypeName') => `/psychotypes/${psychotypeName}`,
     PSYCHOTYPES_COMPATIBILITY: '/clubs/compatibility',
     REININ: '/reinin',
-    REININ_SIGNS: (reininSign = ':reininSign') => `/reinin/${reininSign}`,
+    REININ_SIGNS: (reininSignName = ':reininSignName') => `/reinin/${reininSignName}`,
     YUNG: '/yungs',
     DICHOTOMIES_YUNG: (yungDichotomyName = ':yungDichotomyName') => `/yungs/${yungDichotomyName}`,
     OTHER: '/other',

@@ -54,6 +54,7 @@ import ClubsItem from './containers/ClubsItem';
 import ClubsPsychotype from './containers/ClubsPsychotype';
 import PsychotypesCompatibility from './containers/PsychotypesCompatibility';
 import ReininSigns from './containers/ReininSigns';
+import ReininSignsItem from './containers/ReininSignsItem';
 import DichotomiesYung from './containers/DichotomiesYung';
 import DichotomiesYungItem from './containers/DichotomiesYungItem';
 import Other from './containers/Other';
@@ -291,6 +292,10 @@ export const routes: Route[] = [
     {
         path: ROUTES.REININ,
         container: ReininSigns
+    },
+    {
+        path: ROUTES.REININ_SIGNS(),
+        container: ReininSignsItem
     },
     {
         path: ROUTES.YUNG,

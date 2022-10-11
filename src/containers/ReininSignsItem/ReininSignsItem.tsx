@@ -3,21 +3,21 @@ import { useParams } from 'react-router-dom';
 import { AppScrollbar } from '../../components/AppScrollbar';
 import { WhiteCard } from '../../components/WhiteCard';
 import { EndPoint } from '../../components/EndPoint';
-import styles from './DichotomiesYungItem.module.scss';
+import styles from './ReininSignsItem.module.scss';
 
 
-export default function DichotomiesYungItem() {
-    const { yungDichotomyName } = useParams();
+export default function ReininSignsItem() {
+    const { reininSignName } = useParams();
 
     // eslint-disable-next-line @typescript-eslint/no-var-requires
-    const Content = require(`./Content/${yungDichotomyName}.tsx`).default;
+    const Content = require(`./Content/${reininSignName}.tsx`).default;
 
     return (
         <AppScrollbar>
             <WhiteCard color="white" className={styles.root}>
                 <Content />
+                <EndPoint />
             </WhiteCard>
-            <EndPoint />
         </AppScrollbar>
     );
 }
