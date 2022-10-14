@@ -29,6 +29,8 @@ import HistoryCarl from './containers/History/Tabs/Carl';
 import HistoryKatrin from './containers/History/Tabs/Katrin';
 import HistoryAnton from './containers/History/Tabs/Anton';
 import HistoryAushra from './containers/History/Tabs/Aushra';
+import HistoryReinin from './containers/History/Tabs/Reinin';
+import HistoryNow from './containers/History/Tabs/Now';
 import Aspects from './containers/Aspects';
 import AspectItem from './containers/AspectsItem';
 import Blocks from './containers/Blocks';
@@ -190,6 +192,14 @@ export const routes: Route[] = [
             {
                 path: ROUTES.HISTORY_AUSHRA,
                 container: HistoryAushra,
+            },
+            {
+                path: ROUTES.HISTORY_REININ,
+                container: HistoryReinin,
+            },
+            {
+                path: ROUTES.HISTORY_NOW,
+                container: HistoryNow,
             },
         ]
     },

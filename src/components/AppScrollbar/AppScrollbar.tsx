@@ -6,10 +6,11 @@ import styles from './AppScrollbar.module.scss';
 interface Props {
     children: React.ReactChild | React.ReactChild[];
     hideTabs?: boolean;
+    hideOutlet?: boolean;
     className?: string;
 }
 
-export const AppScrollbar: React.FC<Props> = ({ children, hideTabs = false, className = '' }) => {
+export const AppScrollbar: React.FC<Props> = ({ children, hideTabs = false, hideOutlet = false, className = '' }) => {
     const ref = useRef<HTMLDivElement>(null);
     const location = useLocation();
     const scrollTop = () => {
@@ -34,8 +35,11 @@ export const AppScrollbar: React.FC<Props> = ({ children, hideTabs = false, clas
             <div className={styles.pageContent}>
                 {children}
             </div>
-
-            <Outlet />
+            {
+                !hideOutlet && (
+                    <Outlet />
+                )
+            }
         </div>
     );
 };

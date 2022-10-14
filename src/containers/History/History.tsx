@@ -18,7 +18,7 @@ export default function History() {
     }, [isActiveRoute]);
 
     return (
-        <AppScrollbar>
+        <AppScrollbar hideOutlet>
             <WhiteCard color="white" className={styles.root}>
                 <PageTitle iconName='SquareTime'>История</PageTitle>
                 <div className={styles.minitabs}>

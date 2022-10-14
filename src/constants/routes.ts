@@ -22,6 +22,8 @@ export const ROUTES = {
     HISTORY_KATRIN: '/history/katrin',
     HISTORY_ANTON: '/history/anton',
     HISTORY_AUSHRA: '/history/aushra',
+    HISTORY_REININ: '/history/grigoriy',
+    HISTORY_NOW: '/history/now',
     METABOLISM: '/information-metabolism',
     IDENTIFY: '/identify',
     TESTS: '/tests',
@@ -238,6 +240,16 @@ export const HISTORY_LINKS = [
         label: 'Аушра',
         path: `${ROUTES.HISTORY_AUSHRA}`,
         order: 4,
+    },
+    {
+        label: 'Григорий',
+        path: `${ROUTES.HISTORY_REININ}`,
+        order: 5,
+    },
+    {
+        label: 'Современники',
+        path: `${ROUTES.HISTORY_NOW}`,
+        order: 6,
     },
 ];
 

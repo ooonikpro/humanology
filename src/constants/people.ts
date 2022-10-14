@@ -268,7 +268,7 @@ export const PEOPLE: PeopleItem[] = [
     },
     {
         uid: 'ivan-ohlobistin',
-        id: 'ENTJ',
+        id: 'INFP',
         name: 'Иван Охлобыстин',
         subtitle: 'Актер',
         birthDate: '07/22/1966',
