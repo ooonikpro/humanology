@@ -1,1 +1,14 @@
 @import '../_commons/text.module.scss';
+
+.pairSociocards {
+	display: flex;
+	vertical-align: middle;
+	flex-wrap: wrap;
+	gap: $spacing-4;
+}
+
+.link {
+	width: calc(50% - #{calc($spacing-4 / 2)});
+	min-width: 16rem;
+	text-decoration: none;
+}

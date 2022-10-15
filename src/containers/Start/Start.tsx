@@ -70,7 +70,7 @@ export default function Start() {
                 </div>
 
                 <Text tag="p" color="accent" size="h4">
-                    Это пока Альфаверсия.
+                    Это пока Альфа версия.
                 </Text>
 
                 <Text tag="p" size="large">

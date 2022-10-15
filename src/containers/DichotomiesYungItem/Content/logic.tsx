@@ -3,7 +3,6 @@ import { PageTitle } from '../../../components/PageTitle';
 import { Text } from '../../../components/Text';
 import { AuthorLine } from '../../../components/AuthorLine';
 import { Link } from 'react-router-dom';
-import { EndPoint } from '../../../components/EndPoint';
 import { PageBreak } from '../../../components/PageBreak';
 import { SocietyCardMini } from '../../../components/SocietyCardMini';
 import { ROUTES } from '../../../constants/routes';
@@ -135,8 +134,6 @@ export default function Logic() {
                     <SocietyCardMini id="ISTP" className={styles.sociotype} />
                 </Link>
             </div>
-
-            <EndPoint />
         </div>
     );
 }

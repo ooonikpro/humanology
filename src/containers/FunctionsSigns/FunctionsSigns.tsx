@@ -118,7 +118,7 @@ export default function FunctionSigns() {
                 </Text>
                 <Text tag="p" className={styles.pair}>
                     <Icon name="SquarePlus" color="accent" size={24} className={styles.iconbullet} />
-                    Внутрь, в область отвественности. Защита своего.
+                    Внутрь, в область ответственности. Защита своего.
                 </Text>
                 <Text tag="p" className={styles.pair}>
                     <Icon name="SquareMinus" color="accent" size={24} className={styles.iconbullet} />

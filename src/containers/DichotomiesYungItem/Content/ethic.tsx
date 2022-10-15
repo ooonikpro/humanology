@@ -3,7 +3,6 @@ import { PageTitle } from '../../../components/PageTitle';
 import { Text } from '../../../components/Text';
 import { AuthorLine } from '../../../components/AuthorLine';
 import { Link } from 'react-router-dom';
-import { EndPoint } from '../../../components/EndPoint';
 import { PageBreak } from '../../../components/PageBreak';
 import { SocietyCardMini } from '../../../components/SocietyCardMini';
 import { ROUTES } from '../../../constants/routes';
@@ -111,9 +110,9 @@ export default function Ethic() {
 
             <div className={styles.pairSociocards}>
                 <Link
-                    to={`${ROUTES.SOCIOTYPES('ESFJ')}/card`}
+                    to={`${ROUTES.SOCIOTYPES('ENFJ')}/card`}
                     className={styles.link} >
-                    <SocietyCardMini id="ESFJ" className={styles.sociotype} />
+                    <SocietyCardMini id="ENFJ" className={styles.sociotype} />
                 </Link>
                 <Link
                     to={`${ROUTES.SOCIOTYPES('INFP')}/card`}
@@ -147,8 +146,6 @@ export default function Ethic() {
                     <SocietyCardMini id="ENFP" className={styles.sociotype} />
                 </Link>
             </div>
-
-            <EndPoint />
         </div>
     );
 }
