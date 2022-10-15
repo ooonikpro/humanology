@@ -7,6 +7,7 @@ import { EndPoint } from '../../../components/EndPoint';
 import { Link } from 'react-router-dom';
 import { SocietyCardMini } from '../../../components/SocietyCardMini';
 import { ROUTES } from '../../../constants/routes';
+import { PageBreak } from '../../../components/PageBreak';
 
 export default function Water() {
     return (
@@ -207,7 +208,7 @@ export default function Water() {
                 </Text>
             </Text>
 
-            <hr />
+            <PageBreak iconName='Water'>Вода</PageBreak>
 
             <div className={styles.waterBlock}>
                 <Text tag="p" size="h5" color="air" className={styles.waterText}>

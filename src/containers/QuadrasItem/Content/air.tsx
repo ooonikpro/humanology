@@ -7,6 +7,7 @@ import { EndPoint } from '../../../components/EndPoint';
 import { Link } from 'react-router-dom';
 import { SocietyCardMini } from '../../../components/SocietyCardMini';
 import { ROUTES } from '../../../constants/routes';
+import { PageBreak } from '../../../components/PageBreak';
 
 export default function Air() {
     return (
@@ -31,7 +32,7 @@ export default function Air() {
                 </Text>
 
                 <Text tag="span" size="large" className={styles.text}>
-                    Демокарты
+                    Демократы
                 </Text>
 
                 <Text tag="span" size="large" className={styles.text}>
@@ -100,7 +101,7 @@ export default function Air() {
             </Text>
 
             <Text tag="p" size="h6" className={styles.text}>
-                Ценят нестандартные решения, любят фантазировать и придумывать новое. Борятся за свободу слова, стремятся к обновлению мира и устоев.
+                Ценят нестандартные решения, любят фантазировать и придумывать новое. Борются за свободу слова, стремятся к обновлению мира и устоев.
             </Text>
 
             <Text tag="p" className={styles.text}>
@@ -136,7 +137,7 @@ export default function Air() {
             </Text>
 
             <Text tag="p" className={styles.text}>
-                Стараются с легкостью относиться к жизни, без необходимости не затрудняют ее проблемами, минимизируют количество негативных эмоций, переживаний.
+                Стараются с легкостью относиться к жизни, без необходимости не затрудняют её проблемами, минимизируют количество негативных эмоций, переживаний.
             </Text>
 
             <Text tag="p" size="h6" className={styles.text}>
@@ -191,7 +192,7 @@ export default function Air() {
                 </Text>
             </Text>
 
-            <hr />
+            <PageBreak iconName='Air'>Воздух</PageBreak>
 
             <div className={styles.airBlock}>
                 <Text tag="p" size="h5" color="air" className={styles.airText}>

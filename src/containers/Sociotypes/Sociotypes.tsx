@@ -5,12 +5,12 @@ import { SocietyCard } from '../../components/SocietyCard';
 import { SociotypeTabs } from '../../components/Tabs/SociotypeTabs';
 import { WhiteCard } from '../../components/WhiteCard';
 import { FunctionalCardGroup } from '../../components/FunctionalCardGroup';
-import { useIsSociatypeCardRoute } from '../../hooks/useIsSociatypeCardRoute';
+import { useIsSociotypeCardRoute } from '../../hooks/useIsSociotypeCardRoute';
 import { AppScrollbar } from 'src/components/AppScrollbar';
 
 export default function Sociotypes() {
     const { sociotypeProps: intertypeProps, styles: inlineStyles } = useSociotype();
-    const isActiveRouteSociatypeCard = useIsSociatypeCardRoute();
+    const isActiveRouteSociatypeCard = useIsSociotypeCardRoute();
 
     const whiteCardClasses = [
         styles.functionalBlock,

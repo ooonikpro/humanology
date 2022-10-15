@@ -7,6 +7,7 @@ import { EndPoint } from '../../../components/EndPoint';
 import { Link } from 'react-router-dom';
 import { SocietyCardMini } from '../../../components/SocietyCardMini';
 import { ROUTES } from '../../../constants/routes';
+import { PageBreak } from '../../../components/PageBreak';
 
 export default function Practice() {
     return (
@@ -94,7 +95,7 @@ export default function Practice() {
                 Очень хороши, когда требуется физическая сила, здравый смысл или волевой напор.
             </Text>
 
-            <hr />
+            <PageBreak iconName="Practice">Практики</PageBreak>
 
             <div className={styles.pairSociocards}>
                 <Link

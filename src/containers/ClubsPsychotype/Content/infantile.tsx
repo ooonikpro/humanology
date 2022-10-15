@@ -7,6 +7,7 @@ import { EndPoint } from '../../../components/EndPoint';
 import { Link } from 'react-router-dom';
 import { SocietyCardMini } from '../../../components/SocietyCardMini';
 import { ROUTES } from '../../../constants/routes';
+import { PageBreak } from '../../../components/PageBreak';
 
 export default function Infantile() {
     return (
@@ -81,7 +82,7 @@ export default function Infantile() {
             </Text>
 
             <Text tag="p" className={styles.text}>
-                И любые жесткие ограничения, и даже ограничения формальные и нежесткие для инфантила кажутся таковыми.
+                И любые жесткие ограничения, и даже ограничения формальные и не жесткие для инфантила кажутся таковыми.
             </Text>
 
             <Text tag="p" className={styles.text}>
@@ -140,7 +141,7 @@ export default function Infantile() {
                 </div>
 
                 <Text tag="p" size="h6" className={styles.text}>
-                    Идеал этой женщины — это добрый и опытный, хорошо приспособленный к жизни мужчина, обычно старше ее по возрасту.
+                    Идеал этой женщины — это добрый и опытный, хорошо приспособленный к жизни мужчина, обычно старше её по возрасту.
                 </Text>
 
                 <Text tag="p" className={styles.text}>
@@ -151,6 +152,8 @@ export default function Infantile() {
                     В любовной игре предпочтение отдает психологическому фактору — душевной беседе, располагающей музыке, созданию условий для релаксации. Превыше всего ценит снисходительность и заботу.
                 </Text>
             </div>
+
+            <PageBreak iconName="Infantile">Инфантилы</PageBreak>
 
             <div className={styles.pairSociocards}>
                 <Link

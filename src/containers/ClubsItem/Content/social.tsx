@@ -7,6 +7,7 @@ import { EndPoint } from '../../../components/EndPoint';
 import { Link } from 'react-router-dom';
 import { SocietyCardMini } from '../../../components/SocietyCardMini';
 import { ROUTES } from '../../../constants/routes';
+import { PageBreak } from '../../../components/PageBreak';
 
 export default function Social() {
     return (
@@ -106,7 +107,7 @@ export default function Social() {
                 Обычно «подкованы» в медицине, кулинарии, уходе за животными.
             </Text>
 
-            <hr />
+            <PageBreak iconName="Social">Социалы</PageBreak>
 
             <div className={styles.pairSociocards}>
                 <Link

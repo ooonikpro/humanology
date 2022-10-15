@@ -7,6 +7,7 @@ import { EndPoint } from '../../../components/EndPoint';
 import { Link } from 'react-router-dom';
 import { SocietyCardMini } from '../../../components/SocietyCardMini';
 import { ROUTES } from '../../../constants/routes';
+import { PageBreak } from '../../../components/PageBreak';
 
 export default function Humanitarian() {
     return (
@@ -118,7 +119,7 @@ export default function Humanitarian() {
                 Многие гуманитарии находят себя в политике — как идеологи. Их тонкое психологическое чутье может быть реализовано в маркетинге и управлении персоналом.
             </Text>
 
-            <hr />
+            <PageBreak iconName="Humanitarian">Гуманитарии</PageBreak>
 
             <div className={styles.pairSociocards}>
                 <Link

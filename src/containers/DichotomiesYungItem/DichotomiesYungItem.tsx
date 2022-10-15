@@ -2,7 +2,6 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { AppScrollbar } from '../../components/AppScrollbar';
 import { WhiteCard } from '../../components/WhiteCard';
-import { EndPoint } from '../../components/EndPoint';
 import styles from './DichotomiesYungItem.module.scss';
 
 
@@ -17,7 +16,6 @@ export default function DichotomiesYungItem() {
             <WhiteCard color="white" className={styles.root}>
                 <Content />
             </WhiteCard>
-            <EndPoint />
         </AppScrollbar>
     );
 }

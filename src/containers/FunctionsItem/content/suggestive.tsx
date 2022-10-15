@@ -78,7 +78,7 @@ export default function Suggestive() {
             </Text>
 
             <Text tag="p" className={styles.text}>
-                Если его настроили на какую-то мысль, он ее переживает некоторое время, а потом теряет энергию.
+                Если его настроили на какую-то мысль, он её переживает некоторое время, а потом теряет энергию.
             </Text>
 
             <Text tag="p" className={styles.text}>

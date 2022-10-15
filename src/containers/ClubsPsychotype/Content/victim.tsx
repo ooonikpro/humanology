@@ -7,6 +7,7 @@ import { EndPoint } from '../../../components/EndPoint';
 import { Link } from 'react-router-dom';
 import { SocietyCardMini } from '../../../components/SocietyCardMini';
 import { ROUTES } from '../../../constants/routes';
+import { PageBreak } from '../../../components/PageBreak';
 
 export default function Victim() {
     return (
@@ -93,7 +94,7 @@ export default function Victim() {
             </Text>
 
             <Text tag="p" className={styles.text}>
-                Попробуйте сказать виктиму, что он не должен того и того делать, туда ходить! Неет!
+                Попробуйте сказать виктиму, что он не должен того и того делать, туда ходить! Нет!
             </Text>
 
             <Text tag="p" size="h6" className={styles.text}>
@@ -155,7 +156,7 @@ export default function Victim() {
                 </div>
 
                 <Text tag="p" size="h6" className={styles.text}>
-                    Идеализирует властную женщину. Подстраивается под ее вкусы, уважает в ней волевые качества.
+                    Идеализирует властную женщину. Подстраивается под её вкусы, уважает в ней волевые качества.
                 </Text>
 
                 <Text tag="p" className={styles.text}>
@@ -166,6 +167,8 @@ export default function Victim() {
                     В отношениях с женщиной подсознательно ожидает распоряжений, подвохов, упреков. Не получая подобных реакций, невольно провоцирует их проявление.
                 </Text>
             </div>
+
+            <PageBreak iconName="Victim">Виктимы</PageBreak>
 
             <div className={styles.pairSociocards}>
                 <Link

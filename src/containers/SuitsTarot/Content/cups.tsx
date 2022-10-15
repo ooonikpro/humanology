@@ -7,6 +7,7 @@ import { EndPoint } from '../../../components/EndPoint';
 import { Link } from 'react-router-dom';
 import { SocietyCardMini } from '../../../components/SocietyCardMini';
 import { ROUTES } from '../../../constants/routes';
+import { PageBreak } from '../../../components/PageBreak';
 
 export default function Cups() {
     return (
@@ -76,10 +77,10 @@ export default function Cups() {
             </Text>
 
             <Text tag="p" size="h6" className={styles.text}>
-                Вливая эти сказки в уши других людей и наполняя их сердца потоком разнообразых чувств и эмоций.
+                Вливая эти сказки в уши других людей и наполняя их сердца потоком разнообразных чувств и эмоций.
             </Text>
 
-            <hr />
+            <PageBreak iconName="Cups">Кубки</PageBreak>
 
             <div className={styles.pairSociocards}>
                 <Link

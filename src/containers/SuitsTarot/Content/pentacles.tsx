@@ -7,6 +7,7 @@ import { EndPoint } from '../../../components/EndPoint';
 import { Link } from 'react-router-dom';
 import { SocietyCardMini } from '../../../components/SocietyCardMini';
 import { ROUTES } from '../../../constants/routes';
+import { PageBreak } from '../../../components/PageBreak';
 
 export default function Pentacles() {
     return (
@@ -95,7 +96,7 @@ export default function Pentacles() {
                 Что позволяет им сконцентрироваться на сохранении этих «наиболее ценных» благ.
             </Text>
 
-            <hr />
+            <PageBreak iconName="Pentacles">Пентакли</PageBreak>
 
             <div className={styles.pairSociocards}>
                 <Link

@@ -7,6 +7,7 @@ import { EndPoint } from '../../../components/EndPoint';
 import { Link } from 'react-router-dom';
 import { SocietyCardMini } from '../../../components/SocietyCardMini';
 import { ROUTES } from '../../../constants/routes';
+import { PageBreak } from '../../../components/PageBreak';
 
 export default function Earth() {
     return (
@@ -218,7 +219,7 @@ export default function Earth() {
                 </Text>
             </Text>
 
-            <hr />
+            <PageBreak iconName="Earth">Земля</PageBreak>
 
             <div className={styles.earthBlock}>
                 <Text tag="p" size="h5" color="air" className={styles.earthText}>

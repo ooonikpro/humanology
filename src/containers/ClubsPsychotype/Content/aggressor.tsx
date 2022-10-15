@@ -7,6 +7,7 @@ import { EndPoint } from '../../../components/EndPoint';
 import { Link } from 'react-router-dom';
 import { SocietyCardMini } from '../../../components/SocietyCardMini';
 import { ROUTES } from '../../../constants/routes';
+import { PageBreak } from '../../../components/PageBreak';
 
 export default function Aggressor() {
     return (
@@ -132,6 +133,8 @@ export default function Aggressor() {
                     Во время любовной игры ожидает от мужчины заискивания, показной слабости, эмоциональной нестойкости.
                 </Text>
             </div>
+
+            <PageBreak iconName="Aggressor">Агрессоры</PageBreak>
 
             <div className={styles.pairSociocards}>
                 <Link

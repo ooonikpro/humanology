@@ -7,6 +7,7 @@ import { EndPoint } from '../../../components/EndPoint';
 import { Link } from 'react-router-dom';
 import { SocietyCardMini } from '../../../components/SocietyCardMini';
 import { ROUTES } from '../../../constants/routes';
+import { PageBreak } from '../../../components/PageBreak';
 
 export default function Knight() {
     return (
@@ -64,7 +65,7 @@ export default function Knight() {
             </Text>
 
             <Text tag="p" className={styles.text}>
-                В работе их привлекает необычность, увлекательность задачи, ее сложность, далеко идущие и масштабные последствия предлагаемых проектов.
+                В работе их привлекает необычность, увлекательность задачи, её сложность, далеко идущие и масштабные последствия предлагаемых проектов.
             </Text>
 
             <Text tag="p" className={styles.text}>
@@ -105,7 +106,7 @@ export default function Knight() {
                 </Text>
             </Text>
 
-            <hr />
+            <PageBreak iconName='Knight'>Рыцари</PageBreak>
 
             <div className={styles.pairSociocards}>
                 <Link

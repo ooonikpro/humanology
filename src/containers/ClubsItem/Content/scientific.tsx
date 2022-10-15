@@ -7,6 +7,7 @@ import { EndPoint } from '../../../components/EndPoint';
 import { Link } from 'react-router-dom';
 import { SocietyCardMini } from '../../../components/SocietyCardMini';
 import { ROUTES } from '../../../constants/routes';
+import { PageBreak } from '../../../components/PageBreak';
 
 export default function Scientific() {
     return (
@@ -94,7 +95,7 @@ export default function Scientific() {
                 Находят себя в науке, неконсервативном бизнесе, частной предпринимательской деятельности, современном производстве. Многие увлекаются техникой, компьютерами, любят интеллектуальные игры, развивают кругозор, очень любознательны.
             </Text>
 
-            <hr />
+            <PageBreak iconName="Scientific">Исследователи</PageBreak>
 
             <div className={styles.pairSociocards}>
                 <Link

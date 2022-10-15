@@ -65,6 +65,12 @@ export default function Quadras() {
                     <Text tag="li">Комплекс квадры</Text>
                 </Text>
 
+                <hr />
+
+                <Text tag="p" color="accent" className={styles.text}>
+                    <i>Также есть интересная статья про сексуальные программы квадр.</i>
+                </Text>
+
                 <div className={styles.linkblock}>
                     <BlockLink path="/quadras/compatibility" label="Сексуальные программы квадр" icon="Dildo" />
                 </div>

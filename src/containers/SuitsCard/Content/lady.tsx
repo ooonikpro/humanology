@@ -7,6 +7,7 @@ import { EndPoint } from '../../../components/EndPoint';
 import { Link } from 'react-router-dom';
 import { SocietyCardMini } from '../../../components/SocietyCardMini';
 import { ROUTES } from '../../../constants/routes';
+import { PageBreak } from '../../../components/PageBreak';
 
 export default function Lady() {
     return (
@@ -98,7 +99,7 @@ export default function Lady() {
                 </Text>
             </Text>
 
-            <hr />
+            <PageBreak iconName="Lady">Дамы</PageBreak>
 
             <div className={styles.pairSociocards}>
                 <Link

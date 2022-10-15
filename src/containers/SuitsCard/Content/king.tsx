@@ -7,6 +7,7 @@ import { EndPoint } from '../../../components/EndPoint';
 import { Link } from 'react-router-dom';
 import { SocietyCardMini } from '../../../components/SocietyCardMini';
 import { ROUTES } from '../../../constants/routes';
+import { PageBreak } from '../../../components/PageBreak';
 
 export default function King() {
     return (
@@ -99,7 +100,7 @@ export default function King() {
                 </Text>
             </Text>
 
-            <hr />
+            <PageBreak iconName='King'>Короли и королевы</PageBreak>
 
             <div className={styles.pairSociocards}>
                 <Link
