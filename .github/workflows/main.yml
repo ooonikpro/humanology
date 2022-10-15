@@ -19,7 +19,7 @@ jobs:
         node-version: '16.17.0'
         
     - name: Install dependencies
-      run: yarn --no-progress --non-interactive --no-lockfile
+      run: yarn
     - run: yarn build
     
     - name: 📂 Sync files
