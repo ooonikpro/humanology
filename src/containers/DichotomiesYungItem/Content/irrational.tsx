@@ -11,9 +11,9 @@ import { ROUTES } from '../../../constants/routes';
 export default function Irrational() {
     return (
         <div className={styles.root}>
-            <PageTitle iconName='Irrational' back>Просоционик</PageTitle>
+            <PageTitle iconName='Irrational' back>Иррационалы</PageTitle>
 
-            <AuthorLine text='Читать 4 минуты' iconName='Time'>Неизвестен</AuthorLine>
+            <AuthorLine text='Читать 4 минуты' iconName='Time'>Просоционик</AuthorLine>
 
             <Text tag="p" size="h6" color="accent" className={styles.text}>
                 Воспринимают мир непосредственно, без предварительной оценки, через органы чувств или с помощью интуиции.
