@@ -68,28 +68,26 @@ export default function Start() {
                         <Icon name="Glvrd" color="accent" size={56} className={styles.image} />
                     </MenuItem>
                 </div>
+
+                <Text tag="p" color="accent" size="h4">
+                    Это пока Альфаверсия.
+                </Text>
+
+                <Text tag="p" size="large">
+                    Могут присутствовать различные баги и зависания. <br />Перезагружайте страницу.
+                </Text>
+
+
                 <div className={styles.warningBlock}>
-                    <Text tag="p" color="accent" size="h4">
-                        Это пока Альфаверсия.
-                    </Text>
 
-                    <Text tag="p" size="large">
-                        Могут присутствовать бесячие баги и зависания. <br />Перезагружайте страницу.
-                    </Text>
-
-                    <hr />
-
-                    <Text tag="span" size="h6">
-                        Хотите помочь проекту — задонатите*.
+                    <Text tag="span" size="h5">
+                        Хотите помочь проекту — задонатите.
                     </Text>
 
                     <Text tag="p" size="body">
-                        <i>* Пожертвуйте денег на развитие.</i>
+                        <i>Задонатить — пожертвовать денег на развитие проекта.</i>
                     </Text>
 
-                    <Text tag="p" size="large">
-                        Мы тратим много личного времени и не хотим добавлять какую-то дикую рекламу, либо еще как-то издеваться над пользователями.
-                    </Text>
                     <a href="https://yoomoney.ru/to/4100117278088361" target="_blank" rel="noreferrer">
                         <BlockLink path="#" label="Задонатить через Юмани" icon="Money" />
                     </a>
@@ -110,7 +108,7 @@ export default function Start() {
                         <BlockLink path="#" label="Подпишитесь в Телеграмме" icon="Telegram" />
                     </a>
                     <a href='https://teletype.in/@humanology' target="_blank" rel="noreferrer">
-                        <BlockLink path="#" label="Читайте девблог на Телетайпе" icon="ExternalLink" />
+                        <BlockLink path="#" label="Читайте блог на Телетайпе" icon="ExternalLink" />
                     </a>
                 </div>
                 <EndPoint />
