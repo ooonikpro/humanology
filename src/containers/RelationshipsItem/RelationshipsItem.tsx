@@ -8,13 +8,14 @@ import styles from './RelationshipsItem.module.scss';
 export default function RelationshipsItem() {
     const { relationshipsName } = useParams();
 
-    // eslint-disable-next-line @typescript-eslint/no-var-requires
-    const Content = require(`./Content/${relationshipsName}.tsx`).default;
+    const Content = React.lazy(() => import(`./Content/${relationshipsName}.tsx`));
 
     return (
         <AppScrollbar>
             <WhiteCard color="white" className={styles.root}>
-                <Content />
+                <React.Suspense>
+                    <Content />
+                </React.Suspense>
             </WhiteCard>
         </AppScrollbar>
     );

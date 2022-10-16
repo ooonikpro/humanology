@@ -9,8 +9,7 @@ import styles from './SociotypesDescription.module.scss';
 export default function SociotypesDescription() {
     const params = useParams();
     const id = params.id?.toUpperCase() as Socionics.SocionicsType;
-    // eslint-disable-next-line @typescript-eslint/no-var-requires
-    const Description = require(`./text/${id}.tsx`).default;
+    const Description = React.lazy(() => import(`./text/${id}.tsx`));
 
     return (
         <WhiteCard color="white" className={styles.wrap}>

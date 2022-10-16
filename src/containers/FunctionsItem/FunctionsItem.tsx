@@ -8,13 +8,14 @@ import styles from './FunctionsItem.module.scss';
 export default function FunctionsItem() {
     const { functionName } = useParams();
 
-    // eslint-disable-next-line @typescript-eslint/no-var-requires
-    const Content = require(`./Content/${functionName}.tsx`).default;
+    const Content = React.lazy(() => import(`./Content/${functionName}.tsx`));
 
     return (
         <AppScrollbar>
             <WhiteCard color="white" className={styles.root}>
-                <Content />
+                <React.Suspense>
+                    <Content />
+                </React.Suspense>
             </WhiteCard>
         </AppScrollbar>
     );

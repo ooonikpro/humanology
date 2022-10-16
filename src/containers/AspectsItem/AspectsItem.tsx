@@ -7,13 +7,14 @@ import { AppScrollbar } from '../../components/AppScrollbar';
 export default function AspectsItem() {
     const { aspectName } = useParams();
 
-    // eslint-disable-next-line @typescript-eslint/no-var-requires
-    const Content = require(`./Content/${aspectName}.tsx`).default;
+    const Content = React.lazy(() => import(`./Content/${aspectName}.tsx`));
 
     return (
         <AppScrollbar>
             <WhiteCard color="white" className={styles.root}>
-                <Content />
+                <React.Suspense>
+                    <Content />
+                </React.Suspense>
             </WhiteCard>
         </AppScrollbar>
     );

@@ -8,13 +8,14 @@ import styles from './SuitsCard.module.scss';
 export default function SuitsCard() {
     const { cardName } = useParams();
 
-    // eslint-disable-next-line @typescript-eslint/no-var-requires
-    const Content = require(`./Content/${cardName}.tsx`).default;
+    const Content = React.lazy(() => import(`./Content/${cardName}.tsx`));
 
     return (
         <AppScrollbar>
             <WhiteCard color="white" className={styles.root}>
-                <Content />
+                <React.Suspense>
+                    <Content />
+                </React.Suspense>
             </WhiteCard>
         </AppScrollbar>
     );

@@ -9,13 +9,14 @@ import styles from './ReininSignsItem.module.scss';
 export default function ReininSignsItem() {
     const { reininSignName } = useParams();
 
-    // eslint-disable-next-line @typescript-eslint/no-var-requires
-    const Content = require(`./Content/${reininSignName}.tsx`).default;
+    const Content = React.lazy(() => import(`./Content/${reininSignName}.tsx`));
 
     return (
         <AppScrollbar>
             <WhiteCard color="white" className={styles.root}>
-                <Content />
+                <React.Suspense>
+                    <Content />
+                </React.Suspense>
                 <EndPoint />
             </WhiteCard>
         </AppScrollbar>

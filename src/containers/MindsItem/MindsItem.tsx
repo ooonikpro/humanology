@@ -8,13 +8,14 @@ import styles from './MindsItem.module.scss';
 export default function MindsItem() {
     const { mindsetsName } = useParams();
 
-    // eslint-disable-next-line @typescript-eslint/no-var-requires
-    const Content = require(`./Content/${mindsetsName}.tsx`).default;
+    const Content = React.lazy(() => import(`./Content/${mindsetsName}.tsx`));
 
     return (
         <AppScrollbar>
             <WhiteCard color="white" className={styles.root}>
-                <Content />
+                <React.Suspense>
+                    <Content />
+                </React.Suspense>
             </WhiteCard>
         </AppScrollbar>
     );

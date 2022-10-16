@@ -8,13 +8,14 @@ import styles from './QuadrasItem.module.scss';
 export default function QuadrasItem() {
     const { quadraName } = useParams();
 
-    // eslint-disable-next-line @typescript-eslint/no-var-requires
-    const Content = require(`./Content/${quadraName}.tsx`).default;
+    const Content = React.lazy(() => import(`./Content/${quadraName}.tsx`));
 
     return (
         <AppScrollbar>
             <WhiteCard color="white" className={styles.root}>
-                <Content />
+                <React.Suspense>
+                    <Content />
+                </React.Suspense>
             </WhiteCard>
         </AppScrollbar>
     );

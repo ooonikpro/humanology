@@ -8,13 +8,14 @@ import styles from './BlocksItem.module.scss';
 export default function BlocksItem() {
     const { blockName } = useParams();
 
-    // eslint-disable-next-line @typescript-eslint/no-var-requires
-    const Content = require(`./Content/${blockName}.tsx`).default;
+    const Content = React.lazy(() => import(`./Content/${blockName}.tsx`));
 
     return (
         <AppScrollbar>
             <WhiteCard color="white" className={styles.root}>
-                <Content />
+                <React.Suspense>
+                    <Content />
+                </React.Suspense>
             </WhiteCard>
         </AppScrollbar>
     );

@@ -9,13 +9,14 @@ import styles from './DichotomiesYungItem.module.scss';
 export default function DichotomiesYungItem() {
     const { yungDichotomyName } = useParams();
 
-    // eslint-disable-next-line @typescript-eslint/no-var-requires
-    const Content = require(`./Content/${yungDichotomyName}.tsx`).default;
+    const Content = React.lazy(() => import(`./Content/${yungDichotomyName}.tsx`));
 
     return (
         <AppScrollbar>
             <WhiteCard color="white" className={styles.root}>
-                <Content />
+                <React.Suspense>
+                    <Content />
+                </React.Suspense>
                 <EndPoint />
             </WhiteCard>
         </AppScrollbar>

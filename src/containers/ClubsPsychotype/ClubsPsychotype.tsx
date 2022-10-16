@@ -8,13 +8,14 @@ import styles from './ClubsPsychotype.module.scss';
 export default function ClubsPsychotype() {
     const { psychotypeName } = useParams();
 
-    // eslint-disable-next-line @typescript-eslint/no-var-requires
-    const Content = require(`./Content/${psychotypeName}.tsx`).default;
+    const Content = React.lazy(() => import(`./Content/${psychotypeName}.tsx`));
 
     return (
         <AppScrollbar>
             <WhiteCard color="white" className={styles.root}>
-                <Content />
+                <React.Suspense>
+                    <Content />
+                </React.Suspense>
             </WhiteCard>
         </AppScrollbar>
     );
