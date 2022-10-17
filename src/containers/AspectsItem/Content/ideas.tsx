@@ -87,7 +87,7 @@ export default function Ideas() {
             </div>
 
             <Text tag="p" size="h6" color="accent" className={styles.text}>
-                Несет информацию обо всех перспективах, возможностях в разных ситуациях.
+                Несёт информацию обо всех перспективах, возможностях в разных ситуациях.
             </Text>
 
             <Text tag="p" size="large" className={styles.text}>

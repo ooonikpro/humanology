@@ -29,7 +29,7 @@ export default function Questim() {
             </Text>
 
             <Text tag="p" size="h6" className={styles.text}>
-                Выбирает наиболее подходящий способ как окружающим разглашать свое мнение.
+                Выбирает наиболее подходящий способ как окружающим разглашать своё мнение.
             </Text>
 
             <Text tag="p" className={styles.text}>

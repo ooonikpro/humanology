@@ -87,7 +87,7 @@ export default function Will() {
             </div>
 
             <Text tag="p" size="h6" color="accent" className={styles.text}>
-                Несет информацию относительно территории, пространства, власти, лидерства, воли человека.
+                Несёт информацию относительно территории, пространства, власти, лидерства, воли человека.
             </Text>
 
             <Text tag="p" size="large" className={styles.text}>

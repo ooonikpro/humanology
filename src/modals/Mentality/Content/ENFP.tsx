@@ -64,7 +64,7 @@ export default function ENFP() {
             </Text>
 
             <Text tag="p" className={styles.text}>
-                Настоящий же холерик, пока не выплеснет накопившееся раздражение наружу, не успокоится. Без особых последствий ссорятся и мирятся <mark className={styles.fire}>Политик</mark> и <mark className={styles.fire}>Лидер</mark>, легко переключают свое внимание с раздражающей темы на приятную <mark className={styles.water}>Советчик</mark> и <mark className={styles.water}>Новатор</mark>.
+                Настоящий же холерик, пока не выплеснет накопившееся раздражение наружу, не успокоится. Без особых последствий ссорятся и мирятся <mark className={styles.fire}>Политик</mark> и <mark className={styles.fire}>Лидер</mark>, легко переключают своё внимание с раздражающей темы на приятную <mark className={styles.water}>Советчик</mark> и <mark className={styles.water}>Новатор</mark>.
             </Text>
 
             <hr />

@@ -19,7 +19,7 @@ export default function Decisive() {
             </Text>
 
             <Text tag="p" className={styles.text}>
-                Сосредоточены на том, чтобы максимально было заполнить их время.
+                Сосредоточены на том, чтобы максимально было заполнено их время.
             </Text>
 
             <Text tag="p" size="h6" className={styles.text}>

@@ -91,7 +91,7 @@ export default function Comfort() {
             </div>
 
             <Text tag="p" size="h6" color="accent" className={styles.text}>
-                Несет информацию о соотношениях в пространстве, об ощущениях организма, о комфорте.
+                Несёт информацию о соотношениях в пространстве, об ощущениях организма, о комфорте.
             </Text>
 
             <Text tag="p" size="large" className={styles.text}>

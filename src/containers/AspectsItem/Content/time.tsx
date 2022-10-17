@@ -83,7 +83,7 @@ export default function Time() {
             </div>
 
             <Text tag="p" size="h6" color="accent" className={styles.text}>
-                Несет информацию о времени, об изменениях в мире, о цикличности явлений, о событиях, происходящих во времени.
+                Несёт информацию о времени, об изменениях в мире, о цикличности явлений, о событиях, происходящих во времени.
             </Text>
 
             <Text tag="p" size="large" className={styles.text}>

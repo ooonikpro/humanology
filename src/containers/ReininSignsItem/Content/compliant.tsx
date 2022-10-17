@@ -73,7 +73,7 @@ export default function Compliant() {
             </Text>
 
             <Text tag="p" className={styles.text}>
-                Не любят, когда им заглядывают с в книгу через плечо, не переносят, когда их берут за пуговицу.
+                Не любят, когда им заглядывают в книгу через плечо. Не переносят, когда их берут за пуговицу.
             </Text>
 
             <Text tag="p" className={styles.text}>

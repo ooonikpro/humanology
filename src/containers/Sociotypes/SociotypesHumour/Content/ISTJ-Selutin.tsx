@@ -96,7 +96,7 @@ export default function ISTJ() {
             <hr />
 
             <Text tag="p" size="h6" color="role">
-                Верят в свое особенное предназначение.
+                Верят в своё особенное предназначение.
             </Text>
 
             <Text tag="p" size="large">
