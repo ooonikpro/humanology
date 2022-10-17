@@ -1,0 +1,37 @@
+@import '../_common/text.module';
+
+.root {
+	margin: 0;
+	margin-bottom: $spacing-8;
+}
+
+
+.title-icon {
+	margin-right: $spacing-8;
+}
+
+.body {
+
+	hr {
+		border-color: var(--color-role);
+		margin-top: $spacing-16;
+		margin-bottom: $spacing-12;
+		opacity: 0.25;
+	}
+}
+
+.pair {
+	display: flex;
+	align-items: baseline;
+	gap: $spacing-4;
+}
+
+.title {
+	padding-bottom: $spacing-4;
+}
+
+.detailCards {
+	display: flex;
+	flex-direction: column;
+	gap: $spacing-8;
+}

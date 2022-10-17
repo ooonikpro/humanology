@@ -123,9 +123,9 @@ export default function Democrat() {
                     <SocietyCardMini id="ENTP" className={styles.sociotype} />
                 </Link>
                 <Link
-                    to={`${ROUTES.SOCIOTYPES('INTJ')}/card`}
+                    to={`${ROUTES.SOCIOTYPES('ISFP')}/card`}
                     className={styles.link} >
-                    <SocietyCardMini id="INTJ" className={styles.sociotype} />
+                    <SocietyCardMini id="ISFP" className={styles.sociotype} />
                 </Link>
             </div>
 

@@ -13,6 +13,7 @@ import { EndPoint } from '../../../components/EndPoint';
 import { GroupQuadras } from '../../../modals/GroupQuadras';
 import { YungDichotomies } from '../../../modals/YungDichotomies';
 import { ReininSigns } from '../../../modals/ReininSigns';
+import { Mentality } from '../../../modals/Mentality';
 
 const getRow = (
     options: Array<string[]>,
@@ -53,6 +54,11 @@ const reininRows: Array<Socionics.ReininSign[]> = [
 
 export default function SociotypesCard() {
     const [
+        isShowMentalityModal,
+        setisShowMentalityModal,
+    ] = useState(false);
+
+    const [
         isShowGroupQuadrasModal,
         setisShowGroupQuadrasModal,
     ] = useState(false);
@@ -78,7 +84,7 @@ export default function SociotypesCard() {
 
     return (
         <div className={styles.wrap}>
-            <WhiteCard color="white">
+            <WhiteCard color="white" onClick={() => setisShowMentalityModal(true)} className={styles.mentality}>
                 <TitleInfo icon className={styles.title}>Ментальность</TitleInfo>
                 <CommunicationList
                     {...intertypeProps}
@@ -110,6 +116,7 @@ export default function SociotypesCard() {
                 ))}
                 <EndPoint />
             </WhiteCard>
+            <Mentality isOpen={isShowMentalityModal} onClose={() => setisShowMentalityModal(false)} />
             <GroupQuadras isOpen={isShowGroupQuadrasModal} onClose={() => setisShowGroupQuadrasModal(false)} />
             <YungDichotomies isOpen={isShowYungsDichotomiesModal} onClose={() => setisShowYungsDichotomiesModal(false)} />
             <ReininSigns isOpen={isShowReininSignsModal} onClose={() => setisShowReininSignsModal(false)} />

@@ -20,3 +20,34 @@
         margin-bottom: $spacing-12;
     }
 }
+
+.linkblock {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-8;
+    margin-bottom: $spacing-8;
+}
+
+mark {
+    background: none;
+
+    &.air {
+        color: $color-elements-air;
+    }
+
+    &.fire {
+        color: $color-elements-fire;
+    }
+
+    &.water {
+        color: $color-elements-water;
+    }
+
+    &.earth {
+        color: $color-elements-earth;
+    }
+
+    &.accent {
+        color: $color-basic-accent;
+    }
+}
