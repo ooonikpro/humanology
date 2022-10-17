@@ -77,6 +77,33 @@ export default function Start() {
                     Могут присутствовать различные баги и зависания. <br />Перезагружайте страницу.
                 </Text>
 
+                <PageBreak>Свежие материалы</PageBreak>
+
+                <div className={styles.linkblock}>
+                    <BlockLink path="/tests" label="Тесты" icon="PresentationChart" />
+                    <BlockLink path="/quadras/compatibility" label="Сексуальные программы квадр" icon="Dildo" />
+                    <BlockLink path="/clubs/compatibility" label="Совместимость психосексуальных групп" icon="Cockring" />
+                </div>
+
+
+                <PageBreak>Подписывайтесь и читайте</PageBreak>
+
+                <div className={styles.linkblock}>
+                    <a href='https://teletype.in/@humanology' target="_blank" rel="noreferrer">
+                        <BlockLink path="#" label="Читайте девблог на Телетайпе" icon="ExternalLink" />
+                    </a>
+                    <a href='https://t.me/+zNxs67GvQZljZDAy' target="_blank" rel="noreferrer">
+                        <BlockLink path="#" label="Подпишитесь в Телеграмме" icon="Telegram" />
+                    </a>
+                    <a href='https://www.tiktok.com/@humanology.app?lang=en' target="_blank" rel="noreferrer">
+                        <BlockLink path="#" label="Подпишитесь в ТикТоке" icon="Tiktok" />
+                    </a>
+                    <a href='https://t.me/+zNxs67GvQZljZDAy' target="_blank" rel="noreferrer">
+                        <BlockLink path="#" label="Подпишитесь во Вконтакте" icon="Vk" />
+                    </a>
+                </div>
+
+                <PageBreak>Как помочь проекту?</PageBreak>
 
                 <div className={styles.warningBlock}>
 
@@ -90,25 +117,6 @@ export default function Start() {
 
                     <a href="https://yoomoney.ru/to/4100117278088361" target="_blank" rel="noreferrer">
                         <BlockLink path="#" label="Задонатить через Юмани" icon="Money" />
-                    </a>
-                </div>
-
-                <PageBreak>Свежие материалы</PageBreak>
-
-                <div className={styles.linkblock}>
-                    <BlockLink path="/tests" label="Тесты" icon="PresentationChart" />
-                    <BlockLink path="/quadras/compatibility" label="Сексуальные программы квадр" icon="Dildo" />
-                    <BlockLink path="/clubs/compatibility" label="Совместимость психосексуальных групп" icon="Cockring" />
-                </div>
-
-                <PageBreak>Подписывайтесь и читайте</PageBreak>
-
-                <div className={styles.linkblock}>
-                    <a href='https://t.me/+zNxs67GvQZljZDAy' target="_blank" rel="noreferrer">
-                        <BlockLink path="#" label="Подпишитесь в Телеграмме" icon="Telegram" />
-                    </a>
-                    <a href='https://teletype.in/@humanology' target="_blank" rel="noreferrer">
-                        <BlockLink path="#" label="Читайте блог на Телетайпе" icon="ExternalLink" />
                     </a>
                 </div>
                 <EndPoint />
