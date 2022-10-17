@@ -28,7 +28,7 @@ export const SOCIOTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         communication: 'business',
         companion: 'categorical',
         temperament: 'sanguine',
-        alignment: 'chaoticEvil',
+        alignment: 'chaoticNeutral',
         yungs: [
             'irrational',
             'intuit',
@@ -305,7 +305,7 @@ export const SOCIOTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         communication: 'coldBlooded',
         companion: 'sensitive',
         temperament: 'phlegmatic',
-        alignment: 'lawfulEvil',
+        alignment: 'lawfulNeutral',
         yungs: [
             'rational',
             'sensory',
@@ -581,7 +581,7 @@ export const SOCIOTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         communication: 'passionate',
         companion: 'provident',
         temperament: 'melancholic',
-        alignment: 'chaoticNeutral',
+        alignment: 'trueNeutral',
         yungs: [
             'irrational',
             'intuit',
@@ -788,7 +788,7 @@ export const SOCIOTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         communication: 'business',
         companion: 'stubborn',
         temperament: 'choleric',
-        alignment: 'trueNeutral',
+        alignment: 'lawfulEvil',
         yungs: [
             'rational',
             'intuit',
@@ -1064,7 +1064,7 @@ export const SOCIOTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
         communication: 'coldBlooded',
         companion: 'restrained',
         temperament: 'melancholic',
-        alignment: 'chaoticEvil',
+        alignment: 'neutralEvil',
         yungs: [
             'irrational',
             'sensory',

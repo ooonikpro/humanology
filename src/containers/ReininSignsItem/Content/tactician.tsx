@@ -13,6 +13,19 @@ export default function Tactician() {
             <PageTitle iconName='Tactician' back>Тактики</PageTitle>
             <AuthorLine text='Читать 6 минут' iconName='Time'>Екатерина Филатова</AuthorLine>
 
+            <Text tag="p" size="h6" className={styles.text}>
+                Имеют склонность к немедленной помощи в виде советов.
+            </Text>
+
+            <Text tag="p" className={styles.text}>
+                Фиксируют свое внимание на текущей ситуации, ближайших действиях, актуальном выборе, настроены в большей степени на путь, последовательность действий, а не на цель, которой он мог бы привести.
+            </Text>
+
+            <Text tag="p" className={styles.text}>
+                Цель ограничивает их со всех сторон. Но по ходу направления, в котором они движутся, может изменяться.
+            </Text>
+            <hr />
+
             <Text tag="p" size="h6" color="accent" className={styles.text}>
                 Неуравновешенность интуиции
             </Text>

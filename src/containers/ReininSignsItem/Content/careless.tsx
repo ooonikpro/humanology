@@ -11,7 +11,31 @@ export default function Careless() {
     return (
         <div className={styles.root}>
             <PageTitle iconName='Careless' back>Беспечные</PageTitle>
+
             <AuthorLine text='Читать 6 минут' iconName='Time'>Екатерина Филатова</AuthorLine>
+
+            <Text tag="p" size="h6" className={styles.text}>
+                Восприятие проблемной ситуации происходит через обнаружение в ней новых, незнакомых черт, а поиск решения проблемы ведется в рамках текущей ситуации.
+            </Text>
+
+            <Text tag="p" className={styles.text}>
+                Это вынуждает каждый раз составлять новый алгоритм, пригодный для конкретной задачи, и позволяет находить принципиально новые решения.
+            </Text>
+
+            <Text tag="p" className={styles.text}>
+                Склонны решать какую-либо проблему, искать решение, используя только ту информацию, которая доступна в данной ситуации (например, в условии задачи).
+            </Text>
+
+            <Text tag="p" size="h6" className={styles.text}>
+                Поэтому каждый раз составляют новый алгоритм — под конкретную задачу.
+            </Text>
+
+            <Text tag="p" className={styles.text}>
+                Полагаются на свои идеи или замыслы, чтобы получить доступ к ресурсам.
+            </Text>
+
+
+            <hr />
 
             <Text tag="p" size="h6" color="accent" className={styles.text}>
                 Низкосигнальная сенсорика
@@ -81,6 +105,10 @@ export default function Careless() {
 
             <Text tag="p" className={styles.text}>
                 Зрительный мир беспечных чаще состоит из одного выделяемого крупным планом уникального объекта со множеством столь же уникальных, правдоподобно реальных, безошибочно-конкретных и часто вкусно удивительных деталей, требующих от субъекта отдельного разглядывания.
+            </Text>
+
+            <Text tag="p" className={styles.text}>
+                Представлены <mark className={styles.earth}>дамами</mark> и <mark className={styles.water}>рыцарями</mark>.
             </Text>
 
             <PageBreak iconName='Careless'>Беспечные</PageBreak>

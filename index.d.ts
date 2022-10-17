@@ -1,13 +1,13 @@
 export namespace SocionicsType {
 
-	export type GenderRole = 
-		| 'male' 
+	export type GenderRole =
+		| 'male'
 		| 'female'
 
-	export type Quadra = 
-		| 'air' 
-		| 'fire' 
-		| 'water' 
+	export type Quadra =
+		| 'air'
+		| 'fire'
+		| 'water'
 		| 'earth';
 
 	export type Zodiac =
@@ -45,20 +45,20 @@ export namespace SocionicsType {
 		| 'metal'
 		| 'water';
 
-	export type Role = 
-		|	'king'
+	export type Role =
+		| 'king'
 		| 'queen'
 		| 'paige'
-		|	'knight' 
+		| 'knight'
 		| 'lady';
 
-	export type Psychotype = 
+	export type Psychotype =
 		| 'infantile'
 		| 'aggressor'
 		| 'care'
 		| 'victim';
 
-	export type Tarot = 
+	export type Tarot =
 		| 'swords'
 		| 'pentacles'
 		| 'cups'
@@ -76,7 +76,7 @@ export namespace SocionicsType {
 		| 'rational1'
 		| 'rational4';
 
-	export type Mindset = 
+	export type Mindset =
 		| 'causal'
 		| 'dialectic'
 		| 'vortex'
@@ -176,8 +176,8 @@ export namespace SocionicsType {
 		| 'phlegmatic';
 
 	export type Alignment =
-		|	'lawfulGood' 
-		|	'neutralGood'
+		| 'lawfulGood'
+		| 'neutralGood'
 		| 'chaoticGood'
 		| 'lawfulNeutral'
 		| 'trueNeutral'
@@ -219,21 +219,21 @@ export namespace SocionicsType {
 		| 'objective'
 		| 'democrat'
 		| 'aristocrat';
-		
+
 	export type BaziProp = {
 		label: string;
-		element: Humanology.Quadra;
-		};
+		element: SocionicsType.Quadra;
+	};
 
 	export type ZodiacProp = {
 		label: string;
-		element: Humanology.Quadra;
-		};
+		element: SocionicsType.Quadra;
+	};
 
 	export type RoleProp = {
-			label: string;
-			element: Humanology.Quadra;
-			};
+		label: string;
+		element: SocionicsType.Quadra;
+	};
 
 	export type SocionicsTypeProp = {
 		quadra: Quadra;
@@ -256,5 +256,5 @@ export namespace SocionicsType {
 		alignment: Alignment;
 		yung: YungDichotomy[];
 		reinin: ReininSign[];
-};
+	};
 }

@@ -14,6 +14,32 @@ export default function Compliant() {
 
             <AuthorLine text='Читать 6 минут' iconName='Time'>Екатерина Филатова</AuthorLine>
 
+            <Text tag="p" size="h6" className={styles.text}>
+                В непонятных и неясных ситуациях соблюдают безопасную дистанцию.
+            </Text>
+
+            <Text tag="p" className={styles.text}>
+                Проявление слабости — плач, рыдание, гнев, боль наружу показывает минимально.
+            </Text>
+
+            <Text tag="p" size="h6" className={styles.text}>
+                При конфликте защищается, но не отслеживает угрозы интересам, лучше выбирает сменить фон.
+            </Text>
+
+            <Text tag="p" className={styles.text}>
+                В своем окружение чувствуют постоянную потребность к активному образу жизни.
+            </Text>
+
+            <Text tag="p" className={styles.text}>
+                Полагаются на свои идеи или замыслы, чтобы получить доступ к ресурсам.
+            </Text>
+
+            <Text tag="p" className={styles.text}>
+                Не нападают первыми, а если напали, то не уступят.
+            </Text>
+
+            <hr />
+
             <Text tag="p" size="h6" color="accent" className={styles.text}>
                 Низкосигнальная этика
             </Text>

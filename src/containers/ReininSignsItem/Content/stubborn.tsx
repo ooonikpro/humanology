@@ -14,6 +14,32 @@ export default function Stubborn() {
 
             <AuthorLine text='Читать 6 минут' iconName='Time'>Екатерина Филатова</AuthorLine>
 
+            <Text tag="p" size="h6" className={styles.text}>
+                В непонятных ситуациях сохраняют свою привычную позицию.
+            </Text>
+
+            <Text tag="p" className={styles.text}>
+                Проявления слабости к внешнему окружению не стесняются проявить.
+            </Text>
+
+            <Text tag="p" size="h6" className={styles.text}>
+                При вторжении в сферу его интересов, защищается, с достаточно резкой реакцией.
+            </Text>
+
+            <Text tag="p" className={styles.text}>
+                В своем окружение чувствуют постоянную необходимость к эмоционально насыщенному образу жизни.
+            </Text>
+
+            <Text tag="p" className={styles.text}>
+                Легко вкладывает свои ресурсы, чтобы реализовать свои идеи, или замыслы.
+            </Text>
+
+            <Text tag="p" className={styles.text}>
+                Могут напасть первыми, но осознав превосходство сил, отступают.
+            </Text>
+
+            <hr />
+
             <Text tag="p" size="h6" color="accent" className={styles.text}>
                 Слабосигнальная логика
             </Text>

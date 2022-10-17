@@ -14,6 +14,24 @@ export default function Provident() {
 
             <AuthorLine text='Читать 6 минут' iconName='Time'>Екатерина Филатова</AuthorLine>
 
+            <Text tag="p" size="h6" className={styles.text}>
+                Восприятие проблемной ситуации происходит через узнавание в ней знакомых черт, а поиск решения проблемы ведется с привлечением всего накопленного опыта, своего и чужого, как для подобных ситуаций, так и для любых других.
+            </Text>
+
+            <Text tag="p" className={styles.text}>
+                Это позволяет пользоваться готовыми, проверенными алгоритмами, перенося их в другие области жизнедеятельности.
+            </Text>
+
+            <Text tag="p" size="h6" className={styles.text}>
+                Апелляция к уже имеющемуся опыту, оценка имеющегося опыта как позитивного фактора в решении вопросов.
+            </Text>
+
+            <Text tag="p" className={styles.text}>
+                Поэтому всё новое, что «выходит из-под пера» предусмотрительного на поверку оказывается рекомбинацией знакомых элементов.
+            </Text>
+
+            <hr />
+
             <Text tag="p" size="h6" color="accent" className={styles.text}>
                 Низкосигнальная интуиция
             </Text>
@@ -66,6 +84,10 @@ export default function Provident() {
 
             <Text tag="p" className={styles.text}>
                 Поэтому их зрительный мир состоит из множества в основном типовых объектов, и по причине люди порой кажутся им манекенами, а все окружающее — обыденным, плоским и нереальным, нередко странно искаженным из-за дефицита зрительной информации о деталях.
+            </Text>
+
+            <Text tag="p" className={styles.text}>
+                Представлены <mark className={styles.air}>пажами</mark>, <mark className={styles.fire}>королями</mark> и <mark className={styles.fire}>королевами</mark>.
             </Text>
 
             <PageBreak iconName='Provident'>Предусмотрительные</PageBreak>
