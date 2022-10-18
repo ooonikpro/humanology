@@ -1,1 +1,58 @@
 @import '../_commons/text.module';
+
+.socionModel {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: $spacing-24 $spacing-8 $spacing-24 $spacing-8;
+	background: $color-basic-beige;
+
+	.socionModelImage {
+		width: 100%;
+	}
+
+}
+
+.spiralBlock {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: $spacing-24 $spacing-8 $spacing-24 $spacing-8;
+	gap: $spacing-16;
+	background: $color-basic-beige;
+	margin-bottom: $spacing-12;
+
+	.spiralImage {
+		width: 24rem;
+	}
+
+}
+
+
+.spiralAirFire {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: $spacing-24;
+	padding-top: $spacing-24;
+	padding-bottom: $spacing-24;
+	background: $color-basic-beige url('../../assets/socion/spiral-air-fire-bg.png') no-repeat top center / cover;
+}
+
+.spiralEarthWater {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: $spacing-24;
+	padding-top: $spacing-24;
+	padding-bottom: $spacing-24;
+	background: $color-basic-beige url('../../assets/socion/spiral-earth-water-bg.png') no-repeat top center / cover;
+}
+
+.dualPicture {
+	width: 32rem;
+}
