@@ -1,1 +1,62 @@
 @import '../_commons/text.module';
+
+.typeBlock {
+	margin-top: $spacing-4;
+	background-color: $color-basic-beige;
+	padding: $spacing-12;
+	border-radius: 0.2rem;
+
+	.tags {
+		display: flex;
+		flex-direction: row;
+		gap: $spacing-8;
+	}
+
+	.portraitBlock {
+		width: 100%;
+		border-bottom: 0.1rem solid rgba($color-basic-accent, 0.2);
+		display: flex;
+		text-align: right;
+		flex-direction: row;
+		align-items: flex-end;
+		align-content: flex-end;
+		margin-bottom: $spacing-12;
+		margin-top: -$spacing-40;
+
+		.portrait {
+			margin-left: auto;
+			width: 16rem;
+			z-index: 1;
+		}
+
+		.portrait2 {
+			width: 16rem;
+			margin-left: -6.4rem;
+			z-index: 0;
+		}
+	}
+}
+
+.knightBlock {
+	background: rgba($color-elements-water, 0.05);
+	border: 0.1rem solid rgba($color-elements-water, 0.1);
+	padding: $spacing-12;
+}
+
+.kingBlock {
+	background: rgba($color-elements-fire, 0.05);
+	border: 0.1rem solid rgba($color-elements-fire, 0.1);
+	padding: $spacing-12;
+}
+
+.ladyBlock {
+	background: rgba($color-elements-earth, 0.05);
+	border: 0.1rem solid rgba($color-elements-earth, 0.1);
+	padding: $spacing-12;
+}
+
+.paigeBlock {
+	background: rgba($color-elements-air, 0.05);
+	border: 0.1rem solid rgba($color-elements-air, 0.1);
+	padding: $spacing-12;
+}

@@ -98,7 +98,7 @@ export default function Start() {
                     <a href='https://www.tiktok.com/@humanology.app?lang=en' target="_blank" rel="noreferrer">
                         <BlockLink path="#" label="Подпишитесь в ТикТоке" icon="Tiktok" />
                     </a>
-                    <a href='https://t.me/+zNxs67GvQZljZDAy' target="_blank" rel="noreferrer">
+                    <a href='https://vk.com/chelovekovedenye' target="_blank" rel="noreferrer">
                         <BlockLink path="#" label="Подпишитесь во Вконтакте" icon="Vk" />
                     </a>
                 </div>
