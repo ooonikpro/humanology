@@ -37,23 +37,33 @@ export default function Identify() {
                 <PageBreak>О правильном типировании</PageBreak>
 
                 <Text tag="p" className={styles.text}>
-                    Постараюсь развить тему, уверен что соционика выходит за пределы психики и является эдаким типом тела, структуры мозга, гормонального набора, наряду с генетическими признаками.
+                    Постараюсь развить тему — уверен, что соционика выходит за пределы психики и является эдаким типом тела, структуры мозга, набора гормонов, наряду с генетическими признаками.
                 </Text>
+
+                <Text tag="p" className={styles.text}>
+                    Поэтому вся многофакторная система действительно работает с исключениями, где среда выращивания, либо генетические предрасположенности перекрывают внешние соционические признаки.
+                </Text>
+
+                <hr />
 
                 <Text tag="p" size="h6" color="accent" className={styles.text}>
-                    Идеально — если вы разберетесь сами. Это не так сложно, как кажется.
+                    Идеально — если вы разберетесь сами. <br /> Это не так сложно, как кажется.
                 </Text>
 
                 <Text tag="p" className={styles.text}>
-                    Протипируете себя, верифицируете результат у специалистов, потому что никто не знает вас, лучше чем вы сами. Главное — не врать себе, и не приукрашивать.
+                    Протипируете себя сами, верифицируете результат у специалистов, потому что никто не знает вас, лучше чем вы сами. Главное — не врать себе, и не приукрашивать.
                 </Text>
 
                 <Text tag="p" className={styles.text}>
-                    Поэтому наблюдения за внешностью, речью, поступками, логические предположения, взаимосвязи множества факторов помогут вам — <mark className={styles.accent}>если вы логик</mark>.
+                    <mark className={styles.accent}>Если вы логик</mark>. Вам помогут наблюдения за внешностью, речью, поступками, логические заключения на основе совокупности факторов, взаимосвязи интертипных отношений.
                 </Text>
 
                 <Text tag="p" className={styles.text}>
-                    <mark className={styles.accent}>Если вы — этик</mark>. То вам, скорее всего, это не нужно. Достаточно загрузить в свою «чуйку на людей» (ваша библиотека эмоционально-этических образов) правильно протипированных людей в реальности, не на картинках. Сделать, так сказать, эталонные слепки, которые вы будете расширять и уточнять уже самостоятельно.
+                    <mark className={styles.accent}>Если вы — этик</mark>. То вам, скорее всего, это не нужно. Достаточно загрузить в свою «чуйку на людей» (ваша библиотека эмоционально-этических образов) правильно протипированных людей в реальности. Сделать, так сказать, эталонные слепки, которые вы будете расширять и уточнять уже самостоятельно.
+                </Text>
+
+                <Text tag="p" className={styles.text}>
+                    Только не на картинках и видео — «чуйка» не работает по дистанционной связи. Это могут делать логики через анализ.
                 </Text>
 
                 <PageBreak>Речь</PageBreak>
@@ -124,10 +134,57 @@ export default function Identify() {
                     Телосложения примерно такие…
                 </Text>
 
+                <div className={styles.bodyBlock}>
+                    <Text tag="p" className={styles.text}>
+                        У <mark className={styles.water}>рыцарей</mark> чаще встречается атлетическое телосложение с развитым грудным отделом (сенсорные), и чуть более астеническое (у интуитов). Походка целенаправленная.
+                    </Text>
 
+                    <div className={styles.bodyImages}>
+                        <img src={require('../../assets/bodytypes/body-type-2.png')} alt='Тип телосложения — песочные часы' className={styles.bodyImage} />
+                        <img src={require('../../assets/bodytypes/body-type-4.png')} alt='Тип телосложения — песочные часы' className={styles.bodyImage} />
+                    </div>
+
+                    <hr />
+
+                    <Text tag="p" className={styles.text}>
+                        <mark className={styles.earth}>Дамы</mark>, как правило, подтверждают свое название. Встречаются фигуры «песочные часы», либо грушевидные. Походка мягкая, осторожная, кроме разве что <mark className={styles.earth}>Инспектора</mark>, этот чеканит шаг.
+                    </Text>
+
+                    <div className={styles.bodyImages}>
+                        <img src={require('../../assets/bodytypes/body-type-1.png')} alt='Тип телосложения — песочные часы' className={styles.bodyImage} />
+                        <img src={require('../../assets/bodytypes/body-type-3.png')} alt='Тип телосложения — песочные часы' className={styles.bodyImage} />
+                    </div>
+
+                    <hr />
+
+                    <Text tag="p" className={styles.text}>
+                        Логические <mark className={styles.fire}>короли</mark> выглядят либо округлой, массивной фигурой. Этические <mark className={styles.fire}>королевы</mark> более женственны, и имеют грушевидную фигуру. Походка самоуверенная, обозревающая владения.
+                    </Text>
+
+                    <div className={styles.bodyImages}>
+                        <img src={require('../../assets/bodytypes/body-type-5.png')} alt='Тип телосложения — песочные часы' className={styles.bodyImage} />
+                        <img src={require('../../assets/bodytypes/body-type-3.png')} alt='Тип телосложения — песочные часы' className={styles.bodyImage} />
+                    </div>
+
+                    <hr />
+
+                    <Text tag="p" className={styles.text}>
+                        <mark className={styles.air}>Пажи</mark> логического склада имеют астеническую фигуру, как правило, с небольшой сутулостью в районе шеи. Этические <mark className={styles.air}>пажи</mark> — также астеничны, но ближе к «песочным часам». Походка тихая и незаметная.
+                    </Text>
+
+                    <div className={styles.bodyImages}>
+                        <img src={require('../../assets/bodytypes/body-type-4.png')} alt='Тип телосложения — песочные часы' className={styles.bodyImage} />
+                        <img src={require('../../assets/bodytypes/body-type-1.png')} alt='Тип телосложения — песочные часы' className={styles.bodyImage} />
+                    </div>
+                </div>
 
                 <Text tag="p" className={styles.text}>
-                    Достаточно просто понаблюдать за интересующими людьми и их поведением.
+                    Стоит отметить, что встречаются разные телосложения. Любой тип может накачать мышцы, увеличить грудной отдел или филейный. Человек занимающийся спортом, выглядит, естественно, менее рыхло и чахло, чем не занимающийся им. Но начальные данные примерно такие.
+                </Text>
+
+
+                <Text tag="p" color="accent" className={styles.text}>
+                    Поведение также типично.  Достаточно просто понаблюдать за интересующими вас людьми и их поведением.
                 </Text>
                 <div className={styles.knightBlock}>
                     <Icon name="Knight" size={40} color="water" />

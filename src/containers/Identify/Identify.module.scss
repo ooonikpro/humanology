@@ -37,26 +37,48 @@
 	}
 }
 
+.bodyBlock {
+	background: $color-basic-beige;
+	padding: $spacing-12;
+	margin-bottom: $spacing-16;
+
+	.bodyImages {
+		display: flex;
+		flex-direction: row;
+		gap: $spacing-12;
+		justify-content: center;
+
+	}
+
+	.bodyImage {
+		height: 24rem;
+	}
+}
+
 .knightBlock {
 	background: rgba($color-elements-water, 0.05);
 	border: 0.1rem solid rgba($color-elements-water, 0.1);
 	padding: $spacing-12;
+	margin-bottom: $spacing-4;
 }
 
 .kingBlock {
 	background: rgba($color-elements-fire, 0.05);
 	border: 0.1rem solid rgba($color-elements-fire, 0.1);
 	padding: $spacing-12;
+	margin-bottom: $spacing-4;
 }
 
 .ladyBlock {
 	background: rgba($color-elements-earth, 0.05);
 	border: 0.1rem solid rgba($color-elements-earth, 0.1);
 	padding: $spacing-12;
+	margin-bottom: $spacing-4;
 }
 
 .paigeBlock {
 	background: rgba($color-elements-air, 0.05);
 	border: 0.1rem solid rgba($color-elements-air, 0.1);
 	padding: $spacing-12;
+	margin-bottom: $spacing-4;
 }
