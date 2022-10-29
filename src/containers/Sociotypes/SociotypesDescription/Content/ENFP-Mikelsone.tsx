@@ -5,7 +5,7 @@ import { AuthorLine } from '../../../../components/AuthorLine';
 export default function ENFP() {
     return (
         <>
-            <AuthorLine text='Читать 7 минут' iconName="Time">Велта Микелсоне</AuthorLine>
+            <AuthorLine text='Читать 12 минут' iconName="Time">Велта Микелсоне</AuthorLine>
 
             <Text tag="b" size="h5" color="role">
                 Самый безбашенный и веселый соционический тип во всем соционе.

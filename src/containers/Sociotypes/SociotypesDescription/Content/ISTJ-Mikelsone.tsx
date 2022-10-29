@@ -5,7 +5,7 @@ import { AuthorLine } from '../../../../components/AuthorLine';
 export default function ISTJ() {
     return (
         <>
-            <AuthorLine text="Читать 8 минут" iconName="Time">Велта Микелсоне</AuthorLine>
+            <AuthorLine text="Читать 10 минут" iconName="Time">Велта Микелсоне</AuthorLine>
 
             <Text tag="b" size="h5" color="role">
                 Очень логичный тип, для которого жизнь — это система.
@@ -108,7 +108,7 @@ export default function ISTJ() {
             <hr />
 
             <Text tag="p" size="h5" color="role">
-                Вещи Инспектора нельзя трогать, передвигать, а также нарушать его порядок. Никогда.                
+                Вещи Инспектора нельзя трогать, передвигать, а также нарушать его порядок. Никогда.
             </Text>
 
             <Text tag="p">
@@ -120,7 +120,7 @@ export default function ISTJ() {
             </Text>
 
             <Text tag="p">
-                Терпеливо, вежливо и осторожно выслушивает собеседника. 
+                Терпеливо, вежливо и осторожно выслушивает собеседника.
             </Text>
 
             <Text tag="p">

@@ -172,7 +172,7 @@ export const PEOPLE: PeopleItem[] = [
     },
     {
         uid: 'tom-hardy',
-        id: 'ISFP',
+        id: 'ESFJ',
         name: 'Том Харди',
         subtitle: 'Актер',
         birthDate: '09/15/1977',
@@ -424,6 +424,22 @@ export const PEOPLE: PeopleItem[] = [
         name: 'Йоко Оно',
         subtitle: 'Художник',
         birthDate: '02/18/1933',
+        gender: 'female'
+    },
+    {
+        uid: 'ilya-glinnikov',
+        id: 'ENFJ',
+        name: 'Илья Глинников',
+        subtitle: 'Актер',
+        birthDate: '09/19/1984',
+        gender: 'male'
+    },
+    {
+        uid: 'gal-gadot',
+        id: 'INTJ',
+        name: 'Галь Гадот',
+        subtitle: 'Актриса',
+        birthDate: '04/30/1985',
         gender: 'female'
     },
 ];

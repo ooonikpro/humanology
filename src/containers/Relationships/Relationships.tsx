@@ -16,7 +16,7 @@ export default function Relationships() {
             <WhiteCard color="white" className={styles.root}>
                 <PageTitle iconName='Square2'>Интертипные отношения</PageTitle>
 
-                <AuthorLine text='Читать 5 минут' iconName='Time'>О соционике</AuthorLine>
+                <AuthorLine text='Читать 7 минут' iconName='Time'>О соционике</AuthorLine>
 
                 <Text tag="p" size="h6" color="accent" className={styles.text}>
                     Одной из главных причин, почему люди начинают изучать соционику, является упрощение взаимодействия с людьми вокруг себя.

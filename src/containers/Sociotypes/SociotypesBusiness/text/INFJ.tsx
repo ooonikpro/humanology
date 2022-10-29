@@ -5,7 +5,7 @@ import { AuthorLine } from '../../../../components/AuthorLine';
 export default function INFJ() {
     return (
         <>
-            <AuthorLine text='Читать 4 минуты' iconName='Time'>Виктор Гуленко</AuthorLine>
+            <AuthorLine text='Читать 3 минуты' iconName='Time'>Виктор Гуленко</AuthorLine>
 
             <Text tag="h2" font="additional" size="h5" color="accent">
                 Сильные стороны
@@ -58,7 +58,7 @@ export default function INFJ() {
             </Text>
 
             <Text tag="p">
-                Увязая в деталях дела, часто переутомляет себя. Ему с трудом дается оценка качества своей работы и затраченного на нее времени. 
+                Увязая в деталях дела, часто переутомляет себя. Ему с трудом дается оценка качества своей работы и затраченного на нее времени.
             </Text>
 
             <Text tag="p">
@@ -105,7 +105,7 @@ export default function INFJ() {
 
             <Text tag="p">
                 Успешно применяет свои способности в философско-гуманитарных сферах, а также в портретной и сюжетной фотографии
-            </Text>    
+            </Text>
         </>
     );
 }

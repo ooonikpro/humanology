@@ -16,7 +16,7 @@ export default function Identify() {
         <AppScrollbar>
             <WhiteCard color="white" className={styles.root}>
                 <PageTitle iconName='SortingHat'>Как определять социотип?</PageTitle>
-                <AuthorLine text='Читать 8 минут' iconName='Time'>Павел Цыпин и другие</AuthorLine>
+                <AuthorLine text='Читать 15 минут' iconName='Time'>Павел Цыпин и другие</AuthorLine>
 
                 <Text tag="p" className={styles.text}>
                     В своих книгах Аушра рассуждает, что проводить типирование можно и нужно <mark className={styles.accent}>из наблюдений, разговоров и поступков людей</mark>.
@@ -147,7 +147,7 @@ export default function Identify() {
                     <hr />
 
                     <Text tag="p" className={styles.text}>
-                        <mark className={styles.earth}>Дамы</mark>, как правило, подтверждают свое название. Встречаются фигуры «песочные часы», либо грушевидные. Походка мягкая, осторожная, кроме разве что <mark className={styles.earth}>Инспектора</mark>, этот чеканит шаг.
+                        <mark className={styles.earth}>Дамы</mark>, как правило, подтверждают своё название. Встречаются фигуры «песочные часы», либо грушевидные. Походка мягкая, осторожная, кроме разве что <mark className={styles.earth}>Инспектора</mark>, этот чеканит шаг.
                     </Text>
 
                     <div className={styles.bodyImages}>
@@ -242,7 +242,7 @@ export default function Identify() {
                 <PageBreak>Черты лица и морщины</PageBreak>
 
                 <Text tag="p" className={styles.text}>
-                    У <mark className={styles.accent}>интуитов</mark> форма лица чаще овальная и треугольная, а у <mark className={styles.accent}>сенсориков</mark> — округлая или прямоугольная с чётко выраженным подбородочным выступом
+                    У <mark className={styles.accent}>интуитов</mark> форма лица чаще овальная и треугольная, а у <mark className={styles.accent}>сенсориков</mark> — округлая или прямоугольная с чётко выраженным подбородочным выступом.
                 </Text>
 
                 <hr />
@@ -252,7 +252,7 @@ export default function Identify() {
                 </Text>
 
                 <Text tag="p" className={styles.text}>
-                    У <mark className={styles.accent}>динамиков</mark>, напротив, переносица и межбровное расстояние может быть «чистым», свободным от морщин, зато лоб покрыт волнообразными параллельными складками
+                    У <mark className={styles.accent}>динамиков</mark>, напротив, переносица и межбровное расстояние может быть «чистым», свободным от морщин, зато лоб покрыт волнообразными параллельными складками.
                 </Text>
 
                 <hr />

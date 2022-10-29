@@ -29,7 +29,7 @@ export const Tabs: React.FC<Props> = ({ items, small, className }) => {
                             key={key}
                             icon={item.icon ? getIconName(item.icon) : undefined}
                         />;
-                    }), [])}
+                    }), [items])}
                 </div>
             </div>
         </div>

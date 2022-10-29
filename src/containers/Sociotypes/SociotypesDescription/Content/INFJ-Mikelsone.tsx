@@ -2,10 +2,10 @@ import React from 'react';
 import { Text } from '../../../../components/Text';
 import { AuthorLine } from '../../../../components/AuthorLine';
 
-export default function ESFP() {
+export default function INFJ() {
     return (
         <>
-            <AuthorLine text="Читать 6 минут" iconName="Time">Велта Микелсоне</AuthorLine>
+            <AuthorLine text="Читать 13 минут" iconName="Time">Велта Микелсоне</AuthorLine>
 
             <Text tag="b" size="h5" color="role">
                 Миссия — своим личным этическим поведением быть примером для других.

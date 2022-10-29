@@ -5,7 +5,7 @@ import { AuthorLine } from '../../../../components/AuthorLine';
 export default function ESFP() {
     return (
         <>
-            <AuthorLine text='Читать 4 минуты' iconName="Time">Виктор Гуленко</AuthorLine>
+            <AuthorLine text='Читать 3 минуты' iconName="Time">Виктор Гуленко</AuthorLine>
 
             <Text tag="p" size="h5" color="role">
                 Ваша сильная сторона — решительность и предприимчивость. У вашего типа личности часто присутствует склонность к лидерству.

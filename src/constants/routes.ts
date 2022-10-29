@@ -5,6 +5,8 @@ export const ROUTES = {
     SOCIOTYPES: (id = ':id') => `/types/${id}`,
     SOCIOTYPES_CARD: 'card',
     SOCIOTYPES_DESCRIPTION: 'description',
+    SOCIOTYPES_DESCRIPTION_MIKELSONE: 'mikelsone',
+    SOCIOTYPES_DESCRIPTION_STRATIEVSKAYA: 'stratievskaya',
     SOCIOTYPES_COMPATIBILITY: 'compatibility',
     SOCIOTYPES_VIDEO: 'video',
     SOCIOTYPES_BUSINESS: 'business',
@@ -12,9 +14,9 @@ export const ROUTES = {
     SOCIOTYPES_STORIES: 'stories',
     SOCIOTYPES_PEOPLE: 'people',
     SOCIOTYPES_HUMOUR: 'humour',
-    SOCIOTYPES_HUMOUR_LURKMORE: 'humour/lurkmore',
-    SOCIOTYPES_HUMOUR_SELUTIN: 'humour/selutin',
-    SOCIOTYPES_HUMOUR_ELVIRA: 'humour/elvira',
+    SOCIOTYPES_HUMOUR_LURKMORE: 'lurkmore',
+    SOCIOTYPES_HUMOUR_SELUTIN: 'selutin',
+    SOCIOTYPES_HUMOUR_ELVIRA: 'elvira',
     MENU: '/menu',
     DISCLAIMER: '/disclaimer',
     HISTORY: '/history',
@@ -268,5 +270,18 @@ export const HUMOUR_LINKS = [
         label: 'Эльвира Фея',
         path: `${ROUTES.SOCIOTYPES_HUMOUR_ELVIRA}`,
         order: 3,
+    },
+];
+
+export const DESCRIPTION_LINKS = [
+    {
+        label: 'Велта Микелсоне',
+        path: `${ROUTES.SOCIOTYPES_DESCRIPTION_MIKELSONE}`,
+        order: 1,
+    },
+    {
+        label: 'Вера Стратиевская',
+        path: `${ROUTES.SOCIOTYPES_DESCRIPTION_STRATIEVSKAYA}`,
+        order: 2,
     },
 ];

@@ -14,7 +14,7 @@ export default function QuadrasCompatibility() {
         <AppScrollbar>
             <WhiteCard color="white" className={styles.root}>
                 <PageTitle iconName='Dildo' back >Сексуальные программы квадр</PageTitle>
-                <AuthorLine text='Читать 5 минут' iconName='Time'>Александр Букалов</AuthorLine>
+                <AuthorLine text='Читать 7 минут' iconName='Time'>Александр Букалов</AuthorLine>
                 <Icon name="QuadrasCompatibility" size={{ width: 240, height: 64 }} className={styles.titleIcon} />
 
                 <Text tag="p" size="h4" color="accent" font="additional" className={styles.text}>

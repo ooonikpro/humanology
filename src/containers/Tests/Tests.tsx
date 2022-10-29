@@ -43,6 +43,10 @@ export default function Tests() {
                         Состоит из 4 пару утверждений по основным дихотомиям. В каждой паре, помеченных буквами, необходимо выбрать только одно, которое вам больше подходит.
                     </Text>
 
+                    <Text tag="p" color="accent" className={styles.text}>
+                        <i>Примерно 3 минуты на прохождение теста.</i>
+                    </Text>
+
                     <div className={styles.buttonBlock}>
                         <BlockLink path="/tests/meged-ovcharova" label="Начать экспресс-тест Мегедь-Овчарова" icon="TestSimple" />
                     </div>
@@ -73,6 +77,10 @@ export default function Tests() {
                         <i>Человек, не знающий соционику, внимательно и объективно заполняющий тест в 70% случаев получает правильный результат.</i>
                     </Text>
 
+                    <Text tag="p" color="accent" className={styles.text}>
+                        <i>Примерно 5-6 минут на прохождение теста.</i>
+                    </Text>
+
                     <div className={styles.buttonBlock}>
                         <BlockLink path="/tests/vorobiev" label="Начать тест Воробьева" icon="TestSimple" />
                     </div>
@@ -89,6 +97,10 @@ export default function Tests() {
 
                     <Text tag="p" className={styles.text}>
                         Лично я сомневаюсь в достоверности любых тестов, но этот, судя по отзывам, вроде является самым точным.
+                    </Text>
+
+                    <Text tag="p" color="accent" className={styles.text}>
+                        <i>Примерно 10-12 минут на прохождение теста.</i>
                     </Text>
 
                     <div className={styles.buttonBlock}>

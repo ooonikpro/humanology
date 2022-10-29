@@ -5,7 +5,7 @@ import { AuthorLine } from '../../../../components/AuthorLine';
 export default function ESFJ() {
     return (
         <>
-            <AuthorLine text='Читать 4 минуты' iconName="Time">Виктор Гуленко</AuthorLine>
+            <AuthorLine text='Читать 3 минуты' iconName="Time">Виктор Гуленко</AuthorLine>
 
             <Text tag="p" size="h5" color="role">
                 В повседневной жизни вы — человек открытый, общительный, дружелюбно настроенный. За это вас любят окружающие.

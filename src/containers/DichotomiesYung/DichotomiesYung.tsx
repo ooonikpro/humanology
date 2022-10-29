@@ -15,7 +15,7 @@ export default function DichotomiesYung() {
         <AppScrollbar>
             <WhiteCard color="white" className={styles.root}>
                 <PageTitle iconName='Square11'>Дихотомии Юнга</PageTitle>
-                <AuthorLine text='Читать 7 минут' iconName='Time'>Интернет</AuthorLine>
+                <AuthorLine text='Читать 13 минут' iconName='Time'>Интернет</AuthorLine>
                 <Text tag="p" size="h6" className={styles.text}>
                     Откуда же взялись именно 16 типов?
                 </Text>

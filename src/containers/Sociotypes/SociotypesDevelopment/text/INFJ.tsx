@@ -5,7 +5,7 @@ import { AuthorLine } from '../../../../components/AuthorLine';
 export default function INFJ() {
     return (
         <>
-            <AuthorLine text='Читать 4 минуты' iconName="Time">Виктор Гуленко</AuthorLine>
+            <AuthorLine text='Читать 5 минуты' iconName="Time">Виктор Гуленко</AuthorLine>
 
             <Text tag="p" size="h5" color="role">
                 Вашей сильной стороной является глубокое понимание людей и человеческих взаимоотношений.

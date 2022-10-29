@@ -17,7 +17,7 @@ export default function Aspects() {
         <AppScrollbar>
             <WhiteCard color="white" className={styles.root}>
                 <PageTitle iconName='Square4'>Аспекты</PageTitle>
-                <AuthorLine text='Читать 5 минут' iconName='Time'>Виктор Гуленко</AuthorLine>
+                <AuthorLine text='Читать 6 минут' iconName='Time'>Виктор Гуленко</AuthorLine>
 
                 <Text tag="p" color="accent" size="h6" className={styles.text}>
                     Одна из восьми составляющих информационного потока, на которые его разделяет психика индивида для ориентации в коммуникативном пространстве.

@@ -15,7 +15,7 @@ export default function ReininSigns() {
         <AppScrollbar>
             <WhiteCard color="white" className={styles.root}>
                 <PageTitle iconName='Square12'>Признаки Рейнина</PageTitle>
-                <AuthorLine text='Читать 8 минут' iconName='Time'>Интернет</AuthorLine>
+                <AuthorLine text='Читать 14 минут' iconName='Time'>Интернет</AuthorLine>
                 <Text tag="p" className={styles.text}>
                     В своё время еще на начальном этапе работы Аушры Аугустинавичюте по формулированию и исследованию основных соционических положений она заметила проявление некоторых соционических признаков, не входящих в базис Юнга.
                 </Text>

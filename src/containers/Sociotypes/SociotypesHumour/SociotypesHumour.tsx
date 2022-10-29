@@ -23,7 +23,7 @@ export function SociotypesHumour() {
         <WhiteCard color="white" className={styles.wrap}>
             <PageTitle iconName="EmojiSadSquare">Юмор</PageTitle>
             <div className={styles.warning}>
-                <Text tag="p" size="body" color="accent" className={styles.text}>
+                <Text tag="p" color="accent" className={styles.text}>
                     Если вы не умеет воспринимать юмор, обидчивы или зависимы от мнений незнакомцев, пожалуйста, не читайте все что ниже.
                 </Text>
                 <hr className={styles.line} />

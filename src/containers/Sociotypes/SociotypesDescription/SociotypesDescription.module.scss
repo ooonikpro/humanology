@@ -1,4 +1,5 @@
 @import '../../../styles/utils.scss';
+@import '../../_commons/text.module.scss';
 
 .wrap {
     display: flex;
@@ -16,6 +17,7 @@
     p {
         margin-bottom: $spacing-12;
     }
+
     i {
         opacity: 0.75;
     }
@@ -25,5 +27,27 @@
         margin-top: $spacing-24;
         margin-bottom: $spacing-12;
         opacity: 0.25;
+    }
+}
+
+.aspectBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: -$spacing-24;
+    padding-top: $spacing-24;
+}
+
+.warning {
+    display: block;
+    padding: $spacing-8;
+    border: 1px solid rgba($color-basic-accent, 0.25);
+    margin-top: $spacing-32;
+    margin-bottom: $spacing-12;
+    line-height: $spacing-20;
+
+    .line {
+        margin-top: $spacing-6;
+        margin-bottom: $spacing-6;
     }
 }

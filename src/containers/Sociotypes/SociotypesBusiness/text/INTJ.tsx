@@ -5,7 +5,7 @@ import { AuthorLine } from '../../../../components/AuthorLine';
 export default function INTJ() {
     return (
         <>
-            <AuthorLine text='Читать 4 минуты' iconName='Time'>Виктор Гуленко</AuthorLine>
+            <AuthorLine text='Читать 3 минуты' iconName='Time'>Виктор Гуленко</AuthorLine>
 
             <Text tag="h2" font="additional" size="h5" color="accent">
                 Сильные стороны
@@ -24,7 +24,7 @@ export default function INTJ() {
             </Text>
 
             <Text tag="p" size="h6" color="role">
-                По натуре добр, но дело ставит выше личных интересов и отношений. 
+                По натуре добр, но дело ставит выше личных интересов и отношений.
             </Text>
 
             <Text tag="p">
@@ -50,7 +50,7 @@ export default function INTJ() {
             </Text>
 
             <Text tag="p">
-                Недостаточно гибок в отношениях. Предпочитает говорить о том, что его интересует, посторонние подробности в речи собеседника пропускает мимо ушей. 
+                Недостаточно гибок в отношениях. Предпочитает говорить о том, что его интересует, посторонние подробности в речи собеседника пропускает мимо ушей.
             </Text>
 
             <Text tag="p">

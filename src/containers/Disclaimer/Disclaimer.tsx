@@ -12,7 +12,7 @@ export default function Disclaimer() {
         <AppScrollbar hideTabs>
             <WhiteCard color="white" className={styles.root}>
                 <PageTitle back iconName='Glvrd'>Дисклеймер</PageTitle>
-                <AuthorLine text='Читать 5 минут' iconName='Time'>äлёша</AuthorLine>
+                <AuthorLine text='Читать 1 минуту' iconName='Time'>äлёша</AuthorLine>
 
                 <Text tag="p" size="h6" className={styles.text}>
                     Верить, проверять, доверять соционике — дело абсолютно добровольное.

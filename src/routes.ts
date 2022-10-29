@@ -6,6 +6,8 @@ const Sociotypes = () => import('./containers/Sociotypes');
 const SociotypesCard = () => import('./containers/Sociotypes/SociotypesCard');
 const SociotypesVideo = () => import('./containers/Sociotypes/SociotypesVideo');
 const SociotypesDescription = () => import('./containers/Sociotypes/SociotypesDescription');
+const DescriptionMikelsone = () => import('./containers/Sociotypes/SociotypesDescription/Tabs/DescriptionMikelsone');
+const DescriptionStratievskaya = () => import('./containers/Sociotypes/SociotypesDescription/Tabs/DescriptionStratievskaya');
 const SociotypesCompatibility = () => import('./containers/Sociotypes/SociotypesCompatibility');
 const SociotypesBusiness = () => import('./containers/Sociotypes/SociotypesBusiness');
 const SociotypesDevelopment = () => import('./containers/Sociotypes/SociotypesDevelopment');
@@ -93,6 +95,16 @@ export const routes: Route[] = [
             {
                 path: ROUTES.SOCIOTYPES_DESCRIPTION,
                 container: SociotypesDescription,
+                children: [
+                    {
+                        path: ROUTES.SOCIOTYPES_DESCRIPTION_MIKELSONE,
+                        container: DescriptionMikelsone,
+                    },
+                    {
+                        path: ROUTES.SOCIOTYPES_DESCRIPTION_STRATIEVSKAYA,
+                        container: DescriptionStratievskaya,
+                    },
+                ]
             },
             {
                 path: ROUTES.SOCIOTYPES_COMPATIBILITY,

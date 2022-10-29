@@ -5,7 +5,7 @@ import { AuthorLine } from '../../../../components/AuthorLine';
 export default function ENTJ() {
     return (
         <>
-            <AuthorLine text='Читать 7 минут' iconName="Time">Велта Микелсоне</AuthorLine>
+            <AuthorLine text='Читать 10 минут' iconName="Time">Велта Микелсоне</AuthorLine>
 
             <Text tag="b" size="h5" color="role">
                 Самый деловой и активный соционический тип в соционе.
