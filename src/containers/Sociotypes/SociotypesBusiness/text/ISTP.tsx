@@ -98,7 +98,7 @@ export default function ISTP() {
             </Text>
 
             <Text tag="p">
-                Ему удается рациональное ведение хозяйства.
+                Ему удаëтся рациональное ведение хозяйства.
             </Text>
 
             <Text tag="p">
