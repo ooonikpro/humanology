@@ -480,8 +480,8 @@ export const SOCIOTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
             underling: 'ENTJ',
             quasidentical: 'INFJ',
             parallel: 'ESTJ',
-            contrary: 'ISTP',
-            superego: 'ENFP',
+            contrary: 'ENFP',
+            superego: 'ISTP',
         },
     },
 
@@ -549,8 +549,8 @@ export const SOCIOTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
             underling: 'ISFJ',
             quasidentical: 'ESTJ',
             parallel: 'INFJ',
-            contrary: 'ENFP',
-            superego: 'ISTP',
+            contrary: 'ISTP',
+            superego: 'ENFP',
         },
     },
 

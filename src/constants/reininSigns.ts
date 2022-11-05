@@ -6,7 +6,7 @@ export const REININ_SIGNS: Record<Socionics.ReininSign, string> = {
     positivist: 'Позитивист',
     negativist: 'Негативист',
     questim: 'Квестим',
-    declatim: 'Декламтим',
+    declatim: 'Деклатим',
     tactician: 'Тактик',
     strategist: 'Стратег',
     constructivist: 'Конструктивист',
