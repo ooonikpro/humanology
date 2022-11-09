@@ -16,9 +16,9 @@ export const CardGroupByElement: React.FC<Props> = ({ element, children }) => {
     return (
         <div className={styles.root} style={color}>
             <div className={styles.header}>
-                <Icon className={styles.quadraCircle} name={getIconName(element.concat('Mini'))} color="element" size={64}/>
+                <Icon className={styles.quadraCircle} name={getIconName(element.concat('Mini'))} color="element" size={64} />
                 <Text tag="p" size="h4" font="additional" color="element" className={styles['header-title']}>{label}</Text>
-                <Icon name="Help" size={24} className={styles['header-icon']}/>
+                <Icon name="Help" size={24} className={styles['header-icon']} />
             </div>
 
             <div className={styles.body}>
