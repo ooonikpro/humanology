@@ -119,14 +119,14 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background: repeating-linear-gradient(-30deg,
+    background: repeating-linear-gradient(30deg,
             transparent,
             transparent 1.6rem,
             var(--f-block-color) 0,
-            var(--f-block-color) 3.2rem);
+            var(--f-block-color) 2.8rem);
     background-size: 200% 200%;
-    animation: gradientDance 30s ease-in-out infinite;
-    opacity: 0.15;
+    animation: gradientDance 20s linear infinite;
+    opacity: 0.1;
     z-index: 0;
 }
 
