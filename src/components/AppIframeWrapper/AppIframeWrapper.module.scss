@@ -21,10 +21,9 @@
   right: -0.8rem;
   width: 4rem;
   height: 4rem;
-  border-radius: 4px;
-  background-color: rgba($color-basic-beige, 1);
-  ;
   border: 1px solid rgba($color-basic-accent, .1);
+  background-color: $color-basic-beige;
+  border-radius: 8px;
   color: rgba($color-basic-accent, .25);
-  font-size: 4rem;
+  font-size: 4.8rem;
 }
