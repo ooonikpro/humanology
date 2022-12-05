@@ -196,7 +196,7 @@ export const PEOPLE: PeopleItem[] = [
     },
     {
         uid: 'eduard-hil',
-        id: 'ENFJ',
+        id: 'ESFJ',
         name: 'Эдуард Хиль',
         subtitle: 'Певец СССР',
         birthDate: '09/04/1934',
@@ -308,7 +308,7 @@ export const PEOPLE: PeopleItem[] = [
     },
     {
         uid: 'dwayne-johnson',
-        id: 'ESTJ',
+        id: 'ISFJ',
         name: 'Дуэйн Джонсон',
         subtitle: 'Актер',
         birthDate: '05/02/1972',
@@ -316,7 +316,7 @@ export const PEOPLE: PeopleItem[] = [
     },
     {
         uid: 'denis-semenikhin',
-        id: 'ESTJ',
+        id: 'ISFJ',
         name: 'Денис Семинихин',
         subtitle: 'Видеоблогер',
         birthDate: '07/03/1971',
@@ -436,10 +436,34 @@ export const PEOPLE: PeopleItem[] = [
     },
     {
         uid: 'gal-gadot',
-        id: 'INTJ',
+        id: 'ISTJ',
         name: 'Галь Гадот',
         subtitle: 'Актриса',
         birthDate: '04/30/1985',
         gender: 'female'
+    },
+    {
+        uid: 'carl-yung',
+        id: 'ENTJ',
+        name: 'Карл Юнг',
+        subtitle: 'Психоаналитик',
+        birthDate: '07/26/1875',
+        gender: 'male'
+    },
+    {
+        uid: 'zigmund-freid',
+        id: 'ESTJ',
+        name: 'Зигмунд Фрейд',
+        subtitle: 'Психоаналитик',
+        birthDate: '09/23/1856',
+        gender: 'male'
+    },
+    {
+        uid: 'monica-belucci',
+        id: 'ISTJ',
+        name: 'Моника Белуччи',
+        subtitle: 'Актриса',
+        birthDate: '09/23/1856',
+        gender: 'male'
     },
 ];

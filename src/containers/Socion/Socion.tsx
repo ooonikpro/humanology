@@ -73,7 +73,7 @@ export default function Socion() {
                     <img src={require('../../assets/socion/spiral-air-fire.png')} alt='Восходящая внешняя спираль' className={styles.spiralImage} />
 
                     <Text tag="p" size="h6" className={styles.text}>
-                        Состоит из квадр <mark className={styles.air}>Воздуха</mark> и <mark className={styles.fire}>Огня</mark>: <br /> 4 диад — дуальных пар и 8 типов.
+                        Состоит из квадр <mark className={styles.air}>Воздуха</mark> и <mark className={styles.fire}>Огня</mark>: <br /> 4 диады — дуальных пар и 8 типов.
                     </Text>
                 </div>
 
@@ -102,7 +102,7 @@ export default function Socion() {
                     <img src={require('../../assets/socion/spiral-earth-water.png')} alt='Нисходящая внутренняя спираль' className={styles.spiralImage} />
 
                     <Text tag="p" size="h6" className={styles.text}>
-                        Состоит из квадр <mark className={styles.water}>Воды</mark> и <mark className={styles.earth}>Земли</mark>: <br /> 4 диад — дуальных пар и 8 типов.
+                        Состоит из квадр <mark className={styles.water}>Воды</mark> и <mark className={styles.earth}>Земли</mark>: <br /> 4 диады — дуальных пар и 8 типов.
                     </Text>
                 </div>
 

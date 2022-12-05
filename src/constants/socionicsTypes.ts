@@ -328,8 +328,8 @@ export const SOCIOTYPES: Record<Socionics.SocionicsType, Socionics.IntertypeProp
             'aristocrat',
         ],
         intertypeRelations: {
-            dual: 'ISTJ',
-            identical: 'ENFJ',
+            dual: 'ENFJ',
+            identical: 'ISTJ',
             activity: 'INFP',
             mirror: 'ESTP',
             kindred: 'INTJ',
