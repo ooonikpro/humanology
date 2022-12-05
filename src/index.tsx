@@ -1,14 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { App } from './components/App';
+import { App } from './components/App/App';
+import { AppWrapper } from './components/AppWrapper';
 import { register as registerServiceWorker } from './serviceWorkerRegistration';
 
 import './styles/app.scss';
 
+const isDesktop = window.innerWidth >= 1024;
+const mobileApp = <App/>;
+const desktopApp = <AppWrapper/>;
+const app = isDesktop ? desktopApp : mobileApp;
+
 ReactDOM.createRoot(document.querySelector('.app-content') as HTMLDivElement).render(
-    <React.StrictMode>
-        <App />
-    </React.StrictMode>
+    <React.StrictMode>{app}</React.StrictMode>
 );
 
 registerServiceWorker();

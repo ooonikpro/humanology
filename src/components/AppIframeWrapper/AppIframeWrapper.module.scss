@@ -1,0 +1,28 @@
+@import '../../styles/utils.scss';
+
+.root {
+  position: relative;
+  border: 1px solid rgba($color-basic-accent, .05);
+  border-radius: 4px;
+  padding: 1.6rem;
+}
+
+.iframe {
+  width: 37.6rem;
+  border: 1px solid rgba($color-basic-accent, .05);
+  border-radius: 4px;
+  height: 100%;
+  padding: 0.8rem;
+}
+
+.closeBtn {
+  position: absolute;
+  top: -3.2rem;
+  right: -3.2rem;
+  width: 6.4rem;
+  height: 6.4rem;
+  border-radius: 6.4rem;
+  border: rgba($color-basic-accent, .1);
+  color: rgba($color-basic-accent, .1);
+  font-size: 4rem;
+}

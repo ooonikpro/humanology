@@ -1,24 +1,10 @@
-import React, { createContext, useEffect, useState } from 'react';
+import React, { useLayoutEffect, useState } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { AppHeader } from '../AppHeader';
 import { AppContent } from '../AppContent';
 import { AppRouter } from '../AppRouter';
 import { AppMenu } from '../AppMenu';
-
-export type AppContextType = {
-    menu: {
-        isOpen: boolean
-        toggle: () => void
-    }
-}
-
-export const AppContext = createContext({
-    menu: {
-        isOpen: false,
-        // eslint-disable-next-line @typescript-eslint/no-empty-function
-        toggle: () => { },
-    }
-});
+import { AppContext } from './AppContext';
 
 export const App = () => {
     const [menuIsOpen, setMenuIsOpen] = useState(false);
@@ -30,7 +16,7 @@ export const App = () => {
         }
     };
 
-    useEffect(() => {
+    useLayoutEffect(() => {
         window.addEventListener('scroll', (e) => {
             e.preventDefault();
             e.stopImmediatePropagation();
