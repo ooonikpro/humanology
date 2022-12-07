@@ -1,38 +1,25 @@
-import React, { useMemo, useState } from 'react';
+import React, { useCallback, useState } from 'react';
 import { AppIframeWrapper } from '../AppIframeWrapper/AppIframeWrapper';
 import styles from './AppWrapper.module.scss';
 
 const MAX_IFRAME_COPIES = 2;
 
+const createIframe = () => ({ uid: Date.now() });
+
 export const AppWrapper = () => {
-    const [count, setCount] = useState(1);
+    const [iframes, setIframes] = useState<Array<{uid: number}>>([createIframe()]);
+    const count = iframes.length;
     const isShowPlusBtn = count < MAX_IFRAME_COPIES;
 
-    const addCopy = () => {
-        if (isShowPlusBtn) {
-            setCount(count + 1);
-        }
-    };
+    const addCopy = () => setIframes((prevArr) => [...prevArr, createIframe()]);
 
-    const removeCopy = () => {
-        if (count > 0) {
-            setCount(count - 1);
-        }
-    };
-
-    const copies = useMemo(() => {
-        const iframes = [];
-
-        for (let i = 0; i < count; i++) {
-            iframes.push(<AppIframeWrapper key={i} isShowCloseBtn={ count > 1} onClickCloseBtn={removeCopy}/>);
-        }
-
-        return iframes;
-    }, [count]);
+    const removeCopy = (uid: number) => () => setIframes(arr => arr.filter((iframe) => iframe.uid !== uid));
 
     return (
         <div className={styles.wrapper}>
-            {copies}
+            {iframes.map((item) => (
+                <AppIframeWrapper key={item.uid} isShowCloseBtn={count > 1} onClickCloseBtn={removeCopy(item.uid)}/>
+            ))}
             {isShowPlusBtn ? <button onClick={addCopy} className={styles.addBtn}>+</button> : null}
         </div>
     );
