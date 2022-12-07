@@ -5,13 +5,16 @@ interface AppIframeWrapperProps {
   isShowCloseBtn?: boolean;
   onClickCloseBtn?: () => void;
   style?: CSSProperties
+  startUrl?: string
 }
 
-export const AppIframeWrapper: React.FC<AppIframeWrapperProps> = ({ isShowCloseBtn = false, onClickCloseBtn, style }) => {
+const Component: React.ForwardRefRenderFunction<HTMLIFrameElement, AppIframeWrapperProps> = ({ isShowCloseBtn = false, onClickCloseBtn, style, startUrl = '/' }, ref) => {
     return (
         <div className={styles.root} style={style}>
             { isShowCloseBtn && <button onClick={onClickCloseBtn} className={styles.closeBtn}>&times;</button> }
-            <iframe src="/" className={styles.iframe} frameBorder="0"/>
+            <iframe src={startUrl} ref={ref} className={styles.iframe} frameBorder="0"/>
         </div>
     );
 };
+
+export const AppIframeWrapper = React.forwardRef(Component);
