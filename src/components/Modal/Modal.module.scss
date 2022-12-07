@@ -90,3 +90,17 @@
     background-color: var(--color-basic-accent);
     opacity: 0.15;
 }
+
+.closeBtn {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 4px;
+    border: 1px solid rgba($color-basic-accent, .2);
+    color: $color-basic-accent;
+    opacity: 0.75;
+    font-size: 2rem;
+    position: absolute;
+    top: 0.8rem;
+    right: 0;
+    z-index: 1;
+}
