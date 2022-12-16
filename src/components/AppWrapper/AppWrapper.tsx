@@ -12,16 +12,16 @@ const MAX_IFRAME_COPIES = 2;
 
 const createIframe = (startUrl = '/') => ({ uid: Date.now(), startUrl, ref: React.createRef<HTMLIFrameElement>() });
 
-export const AppWrapper = () => {
-    const [iframes, setIframes] = useState<Array<IframePayload>>([createIframe()]);
+export const AppWrapper: React.FC<{ startUrl: string }> = ({ startUrl }) => {
+    const [iframes, setIframes] = useState<Array<IframePayload>>([createIframe(startUrl)]);
     const count = iframes.length;
     const isShowPlusBtn = count < MAX_IFRAME_COPIES;
 
     const addCopy = () => setIframes((prevArr) => {
         const prevIframe = prevArr.at(-1);
-        const startUrl = prevIframe?.ref.current?.contentDocument?.location.href;
+        const url = prevIframe?.ref.current?.contentDocument?.location.href;
 
-        return [...prevArr, createIframe(startUrl)];
+        return [...prevArr, createIframe(url)];
     });
 
     const removeCopy = (uid: number) => () => setIframes(arr => arr.filter((iframe) => iframe.uid !== uid));

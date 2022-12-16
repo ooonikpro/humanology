@@ -8,7 +8,7 @@ import './styles/app.scss';
 
 const isDesktop = window.innerWidth >= 1024;
 const mobileApp = <App/>;
-const desktopApp = <AppWrapper/>;
+const desktopApp = <AppWrapper startUrl={window.location.pathname}/>;
 const app = isDesktop ? desktopApp : mobileApp;
 
 ReactDOM.createRoot(document.querySelector('.app-content') as HTMLDivElement).render(
