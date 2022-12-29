@@ -84,7 +84,7 @@ export const PEOPLE: PeopleItem[] = [
     },
     {
         uid: 'vladimir-putin',
-        id: 'INTP',
+        id: 'ENTJ',
         name: 'Владимир Путин',
         subtitle: 'Президент РФ',
         birthDate: '10/07/1952',
@@ -292,7 +292,7 @@ export const PEOPLE: PeopleItem[] = [
     },
     {
         uid: 'kira-knightly',
-        id: 'ENTP',
+        id: 'ISTJ',
         name: 'Кира Найтли',
         subtitle: 'Актриса',
         birthDate: '03/26/1985',
@@ -308,7 +308,7 @@ export const PEOPLE: PeopleItem[] = [
     },
     {
         uid: 'dwayne-johnson',
-        id: 'ISFJ',
+        id: 'ESTJ',
         name: 'Дуэйн Джонсон',
         subtitle: 'Актер',
         birthDate: '05/02/1972',
@@ -316,7 +316,7 @@ export const PEOPLE: PeopleItem[] = [
     },
     {
         uid: 'denis-semenikhin',
-        id: 'ISFJ',
+        id: 'ESTJ',
         name: 'Денис Семинихин',
         subtitle: 'Видеоблогер',
         birthDate: '07/03/1971',
@@ -460,7 +460,7 @@ export const PEOPLE: PeopleItem[] = [
     },
     {
         uid: 'monica-belucci',
-        id: 'ISTJ',
+        id: 'ISFJ',
         name: 'Моника Белуччи',
         subtitle: 'Актриса',
         birthDate: '09/23/1856',

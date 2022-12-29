@@ -32,6 +32,7 @@ export const ROUTES = {
     TEST_EXPRESS: '/tests/meged-ovcharova',
     TEST_SIMPLE: '/tests/vorobiev',
     TEST_COMPLEX: '/tests/filatova',
+    TEST_COMPLEX2: '/tests/keirsey',
     WHAT_IS_SOCIONICS: '/what',
     SOCION: '/socion',
     FUNCTIONS: '/functions',

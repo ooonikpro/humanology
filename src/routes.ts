@@ -23,6 +23,7 @@ const Identify = () => import('./containers/Identify');
 const Tests = () => import('./containers/Tests');
 const TestSimple = () => import('./containers/TestSimple');
 const TestComplex = () => import('./containers/TestComplex');
+const TestComplex2 = () => import('./containers/TestComplex2');
 const TestExpress = () => import('./containers/TestExpress');
 const WhatIsSocionics = () => import('./containers/WhatIsSocionics');
 const Disclaimer = () => import('./containers/Disclaimer');
@@ -174,6 +175,10 @@ export const routes: Route[] = [
     {
         path: ROUTES.TEST_COMPLEX,
         container: TestComplex,
+    },
+    {
+        path: ROUTES.TEST_COMPLEX2,
+        container: TestComplex2,
     },
     {
         path: ROUTES.WHAT_IS_SOCIONICS,

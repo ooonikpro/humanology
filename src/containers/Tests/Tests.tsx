@@ -108,6 +108,28 @@ export default function Tests() {
                     </div>
                 </div>
 
+                <div className={styles.test}>
+                    <Text tag="p" size="h5" color="accent" className={styles.testTitle}>
+                        Опросник Кейрси
+                    </Text>
+
+                    <Text tag="p" className={styles.text}>
+                        Cоздан Дэвидом Кейрси и содержит 70 вопросов.
+                    </Text>
+
+                    <Text tag="p" className={styles.text}>
+                        Для изучения типичных способов поведения и личностных особенностей. Все ответы равноценны, правильных или неправильных среди них нет.
+                    </Text>
+
+                    <Text tag="p" color="accent" className={styles.text}>
+                        <i>Примерно 15-18 минут на прохождение опросника.</i>
+                    </Text>
+
+                    <div className={styles.buttonBlock}>
+                        <BlockLink path="/tests/keirsey" label="Начать тест Кейрси" icon="TestSimple" />
+                    </div>
+                </div>
+
                 <EndPoint />
             </WhiteCard>
         </AppScrollbar>
