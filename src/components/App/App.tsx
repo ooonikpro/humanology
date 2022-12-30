@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { AppHeader } from '../AppHeader';
 import { AppContent } from '../AppContent';
@@ -16,13 +16,6 @@ export const App = () => {
         }
     };
 
-    useLayoutEffect(() => {
-        window.addEventListener('scroll', (e) => {
-            e.preventDefault();
-            e.stopImmediatePropagation();
-            return false;
-        });
-    }, []);
 
     return (
         <AppContext.Provider value={ctxValue}>

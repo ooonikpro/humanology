@@ -16,3 +16,9 @@ ReactDOM.createRoot(document.querySelector('.app-content') as HTMLDivElement).re
 );
 
 registerServiceWorker();
+
+window.addEventListener('scroll', (e) => {
+    e.preventDefault();
+    e.stopImmediatePropagation();
+    return false;
+});
