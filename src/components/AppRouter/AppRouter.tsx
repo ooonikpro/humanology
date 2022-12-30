@@ -1,6 +1,7 @@
-import React, { Suspense } from 'react';
+import React, { Suspense, useEffect } from 'react';
 import { Route as RouteType, routes } from '../../routes';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
+import { EVENT } from '../../constants/events';
 
 const createRoute = (route: RouteType, key: number) => {
     const Container = React.lazy(route.container);
@@ -20,6 +21,13 @@ const createRoute = (route: RouteType, key: number) => {
 };
 
 export const AppRouter: React.FC = () => {
+    const location = useLocation();
+
+    useEffect(() => window.top?.postMessage(JSON.stringify({
+        eventName: EVENT.LOCATION_SYNC,
+        data: location.pathname
+    })), [location]);
+
     return (
         <Routes>
             { routes.map(createRoute) }

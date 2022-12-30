@@ -1,6 +1,12 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { BrowserRouter, useLocation, useNavigate } from 'react-router-dom';
+import { EVENT } from 'src/constants/events';
 import { AppIframeWrapper } from '../AppIframeWrapper/AppIframeWrapper';
 import styles from './AppWrapper.module.scss';
+
+interface Props {
+    startUrl: string
+ }
 
 interface IframePayload {
     uid: number,
@@ -12,10 +18,12 @@ const MAX_IFRAME_COPIES = 2;
 
 const createIframe = (startUrl = '/') => ({ uid: Date.now(), startUrl, ref: React.createRef<HTMLIFrameElement>() });
 
-export const AppWrapper: React.FC<{ startUrl: string }> = ({ startUrl }) => {
+const Wrapper: React.FC<Props> = ({ startUrl }) => {
     const [iframes, setIframes] = useState<Array<IframePayload>>([createIframe(startUrl)]);
     const count = iframes.length;
     const isShowPlusBtn = count < MAX_IFRAME_COPIES;
+    const location = useLocation();
+    const navigate = useNavigate();
 
     const addCopy = () => setIframes((prevArr) => {
         const prevIframe = prevArr.at(-1);
@@ -25,6 +33,21 @@ export const AppWrapper: React.FC<{ startUrl: string }> = ({ startUrl }) => {
     });
 
     const removeCopy = (uid: number) => () => setIframes(arr => arr.filter((iframe) => iframe.uid !== uid));
+
+    useEffect(() => {
+        window.addEventListener('message', (e) => {
+            try {
+                const data = JSON.parse(e.data);
+
+                if (data.eventName === EVENT.LOCATION_SYNC) {
+                    navigate(data.data);
+                }
+            } catch(e) {
+                //
+            }
+        });
+    });
+    useEffect(console.log, [location]);
 
     return (
         <div className={styles.wrapper}>
@@ -41,3 +64,7 @@ export const AppWrapper: React.FC<{ startUrl: string }> = ({ startUrl }) => {
         </div>
     );
 };
+
+export const AppWrapper: React.FC<Props> = ({ startUrl }) => (
+    <BrowserRouter><Wrapper startUrl={startUrl}/></BrowserRouter>
+);
