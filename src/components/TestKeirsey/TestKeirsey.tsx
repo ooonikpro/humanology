@@ -57,7 +57,7 @@ export const TestKeirsey = () => {
             letter1 = 'E';
         }
 
-        if (b >= 10) {
+        if (d >= 10) {
             letter4 = 'J';
         }
 
@@ -65,7 +65,7 @@ export const TestKeirsey = () => {
             letter3 = 'T';
         }
 
-        if (d >= 10) {
+        if (b >= 10) {
             letter2 = 'S';
         }
 
@@ -82,7 +82,7 @@ export const TestKeirsey = () => {
                     Ваш социотип
                 </Text>
                 <Text tag="p" size="body" color="accent">
-                    По результатам теста
+                    По результатам опросника
                 </Text>
                 <Link
                     to={`${ROUTES.SOCIOTYPES(id)}/card`}
