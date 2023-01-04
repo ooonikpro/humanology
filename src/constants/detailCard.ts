@@ -647,7 +647,7 @@ export const DETAIL_CARD_INTERTYPE: DetailCardProps[] = [
     {
         type: 'intertype',
         intertype: 'illusionary',
-        tags: ['Восхищение интеллектом', 'Смущение'],
+        tags: ['Расслабление', 'Смущение'],
         title: 'Миражные',
         subtitle: 'Отношения расслабления',
         content: [

@@ -94,6 +94,7 @@
     padding-left: $spacing-8;
     margin-right: -$spacing-8;
     padding-right: $spacing-8;
+    margin-bottom: -$spacing-8;
     @include transition(all);
 
     &::before {
