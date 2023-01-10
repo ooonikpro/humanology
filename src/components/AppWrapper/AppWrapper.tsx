@@ -14,8 +14,19 @@ interface IframePayload {
     ref: React.RefObject<HTMLIFrameElement>,
 }
 
-const MAX_IFRAME_COPIES = 2;
+const onMessage = (e: MessageEvent<string>) => {
+    try {
+        const data = JSON.parse(e.data);
 
+        if (data.eventName === EVENT.LOCATION_SYNC) {
+            window.history.replaceState(null, document.title, data.data);
+        }
+    } catch(e) {
+        //
+    }
+};
+
+const MAX_IFRAME_COPIES = 2;
 const createIframe = (startUrl = '/') => ({ uid: Date.now(), startUrl, ref: React.createRef<HTMLIFrameElement>() });
 
 const Wrapper: React.FC<Props> = ({ startUrl }) => {
@@ -33,17 +44,9 @@ const Wrapper: React.FC<Props> = ({ startUrl }) => {
     const removeCopy = (uid: number) => () => setIframes(arr => arr.filter((iframe) => iframe.uid !== uid));
 
     useEffect(() => {
-        window.addEventListener('message', (e) => {
-            try {
-                const data = JSON.parse(e.data);
+        window.addEventListener('message', onMessage);
 
-                if (data.eventName === EVENT.LOCATION_SYNC) {
-                    window.history.replaceState(null, document.title, data.data);
-                }
-            } catch(e) {
-                //
-            }
-        });
+        return () => window.removeEventListener('message', onMessage);
     });
 
     return (
