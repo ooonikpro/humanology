@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { BrowserRouter, useLocation, useNavigate } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import { EVENT } from 'src/constants/events';
 import { AppIframeWrapper } from '../AppIframeWrapper/AppIframeWrapper';
 import styles from './AppWrapper.module.scss';
@@ -22,8 +22,6 @@ const Wrapper: React.FC<Props> = ({ startUrl }) => {
     const [iframes, setIframes] = useState<Array<IframePayload>>([createIframe(startUrl)]);
     const count = iframes.length;
     const isShowPlusBtn = count < MAX_IFRAME_COPIES;
-    const location = useLocation();
-    const navigate = useNavigate();
 
     const addCopy = () => setIframes((prevArr) => {
         const prevIframe = prevArr.at(-1);
@@ -40,14 +38,13 @@ const Wrapper: React.FC<Props> = ({ startUrl }) => {
                 const data = JSON.parse(e.data);
 
                 if (data.eventName === EVENT.LOCATION_SYNC) {
-                    navigate(data.data);
+                    window.history.replaceState(null, document.title, data.data);
                 }
             } catch(e) {
                 //
             }
         });
     });
-    useEffect(console.log, [location]);
 
     return (
         <div className={styles.wrapper}>
