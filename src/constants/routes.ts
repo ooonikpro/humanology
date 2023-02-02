@@ -77,13 +77,13 @@ export const MAIN_LINKS: Tabs[] = [
     {
         label: 'Как определять?',
         path: ROUTES.IDENTIFY,
-        order: 2,
+        order: 1,
         icon: 'Mug'
     },
     {
         label: 'Социотипы',
         path: ROUTES.HOME,
-        order: 1,
+        order: 2,
         icon: 'Square1'
     },
     {

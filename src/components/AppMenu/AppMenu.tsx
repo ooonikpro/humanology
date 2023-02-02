@@ -160,18 +160,18 @@ export const AppMenu = () => {
                         {randomCards.dual}
                     </MenuItem>
 
-                    <MenuItem doubleHeight fullWidth inactive>
-                        <Icon size={24} className={styles.icon} color="accent" name="StarSquare" />
-                        <Text size="h5" color="accent" className={styles.text}>Дети</Text>
-                        {randomCards.kids}
-                    </MenuItem>
-
                     <MenuItem fullWidth doubleHeight onClick={goTo(ROUTES.RELATIONSHIPS)}>
                         <Icon size={24} className={styles.icon} color="accent" name="Square2" />
                         <Text size="large" color="accent" className={styles.text}>Интертипные отношения</Text>
                         <div className={styles.iconCascadeIntertype}>
                             {randomCards.intertype}
                         </div>
+                    </MenuItem>
+
+                    <MenuItem doubleHeight fullWidth inactive>
+                        <Icon size={24} className={styles.icon} color="accent" name="StarSquare" />
+                        <Text size="h5" color="accent" className={styles.text}>Дети</Text>
+                        {randomCards.kids}
                     </MenuItem>
                 </div>
 

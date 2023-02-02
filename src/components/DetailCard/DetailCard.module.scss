@@ -113,10 +113,6 @@
     row-gap: $spacing-4;
     margin-top: $spacing-6;
     margin-bottom: $spacing-8;
-
-    span:first-child {
-        color: var(--color-detailcard-tag, $color-basic-accent);
-    }
 }
 
 .alias {
