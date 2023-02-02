@@ -7,7 +7,6 @@ let openedModals: Array<HTMLElement> = [];
 
 const ANIMATE_DURATION = 50;
 const target = document.querySelector('.app-modals') as HTMLElement;
-const inIframe = window.self !== window.parent;
 
 export interface ModalProps {
     isOpen: boolean;
@@ -89,14 +88,7 @@ export const Modal: React.FC<Props> = ({ isOpen, render, onClose }) => {
                 <div className={styles.bg} onClick={closeModal} />
                 <div className={styles.inner}>
                     <WhiteCard color="beige" className={styles.container}>
-                        {
-                            !inIframe && <div className={styles.drag} onClick={closeModal} />
-                        }
-
-                        {
-                            inIframe && <button className={styles.closeBtn} onClick={closeModal}>&times;</button>
-                        }
-
+                        <button className={styles.closeBtn} onClick={closeModal}>&times;</button>
                         {render(closeModal)}
                     </WhiteCard>
                 </div>
