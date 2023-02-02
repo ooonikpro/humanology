@@ -46,6 +46,14 @@
             opacity: 1;
         }
     }
+
+    &_link {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: $spacing-8;
+        text-decoration: none;
+    }
 }
 
 .body {
