@@ -4,9 +4,9 @@ import { useColorElement } from '../../hooks';
 import { Socionics } from '../../types';
 import { Text } from '../Text';
 import { Icon, getIconName } from '../Icon';
-import { NATURE_LINKS } from 'src/constants/children';
 import { Link } from 'react-router-dom';
-import { ROUTES } from 'src/constants/routes';
+import { ROUTES } from '../../constants/routes';
+import { QUADRAS_SUBTITLE } from '../../constants/natureElements';
 
 interface Props {
     element: Socionics.Quadras;
@@ -16,7 +16,7 @@ interface Props {
 export const CardGroupByElement: React.FC<Props> = ({ element, children }) => {
     const { label, color } = useColorElement(element);
 
-    const texts = NATURE_LINKS[element];
+    const texts = QUADRAS_SUBTITLE[element];
     const link = ROUTES.QUADRAS_ITEM(element);
 
     return (
@@ -25,10 +25,10 @@ export const CardGroupByElement: React.FC<Props> = ({ element, children }) => {
                 <Icon className={styles.quadraCircle} name={getIconName(element.concat('Mini'))} color="element" size={64} />
                 <Text tag="p" size="h4" font="additional" color="element" className={styles['header-title']}>{label}</Text>
 
-                <Link to={link} className={styles.header_link}>
+                <Link to={link} className={styles.header_subtitle}>
                     {
                         texts.map((item, $i) => (
-                            <Text color="accent" key={$i}>{item}</Text>
+                            <Text color="element" key={$i}>{item}</Text>
                         ))
                     }
                     <Icon name="Help" size={24} className={styles['header-icon']} />
