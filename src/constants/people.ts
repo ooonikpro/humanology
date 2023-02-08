@@ -211,22 +211,6 @@ export const PEOPLE: PeopleItem[] = [
         gender: 'male'
     },
     {
-        uid: 'david-yan',
-        id: 'ENTP',
-        name: 'Давид Ян',
-        subtitle: 'Предприниматель',
-        birthDate: '06/03/1968',
-        gender: 'male'
-    },
-    {
-        uid: 'mikael-yan',
-        id: 'ENTP',
-        name: 'Микаэл Ян',
-        subtitle: 'Предприниматель',
-        birthDate: '03/29/1988',
-        gender: 'male'
-    },
-    {
         uid: 'oleg-tinkov',
         id: 'ENTJ',
         name: 'Олег Тиньков',
