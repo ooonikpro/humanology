@@ -8,7 +8,7 @@ import { EndPoint } from '../../../components/EndPoint';
 export default function Underling() {
     return (
         <div className={styles.root}>
-            <PageTitle iconName='Underling' back>Подзаказчик</PageTitle>
+            <PageTitle iconName='Underling' back>Подревзиный</PageTitle>
 
             <AuthorLine text='Читать 4 минуты' iconName='Time'>О соционике</AuthorLine>
 

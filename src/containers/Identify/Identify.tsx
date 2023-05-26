@@ -99,7 +99,7 @@ export default function Identify() {
                 </Text>
 
                 <Text tag="span" size="body" color="accent" className={styles.text}>
-                    Динамики
+                    Деклатимы
                 </Text>
 
                 <Text tag="p" className={styles.text}>
